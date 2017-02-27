@@ -1,0 +1,128 @@
+
+
+rem *** e_Detonator ***
+ObjectTemplate.create EffectBundle e_Detonator
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate DetonatorSpawner
+ObjectTemplate.timeToLive CRD_NONE/90/0/0
+rem -------------------------------------
+
+rem *** DetonatorSpawner*** 
+ObjectTemplate.create ObjectSpawner DetonatorSpawner
+ObjectTemplate.setObjectTemplate 1 DetonatorVehicle
+ObjectTemplate.setObjectTemplate 2 DetonatorVehicle
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 0 
+ObjectTemplate.maxSpawnDelay 0 
+objecttemplate.timetolive 0
+objecttemplate.distance 10
+objecttemplate.damagewhenlost 100
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.team 1 
+
+rem *** DetonatorVehicle ***
+ObjectTemplate.create PlayerControlObject DetonatorVehicle
+ObjectTemplate.setNetworkableInfo Detonator_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.explosionRadius 20
+ObjectTemplate.explosionDamage 100
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.material 85
+ObjectTemplate.drag 2
+ObjectTemplate.mass 25000
+ObjectTemplate.criticalDamage 101
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate Detonator_body
+rem -------------------------------------
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon ""
+ObjectTemplate.setVehicleIconPos 45/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** Detonator_body***
+ObjectTemplate.create Bundle Detonator_body
+ObjectTemplate.setNetworkableInfo Detonator_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDetonatorCockpit
+ObjectTemplate.addTemplate Detonatorengine
+ObjectTemplate.setPosition 0/0/0.0
+rem -------------------------------------
+
+rem *** lodDetonatorCockpit ***
+ObjectTemplate.create LodObject lodDetonatorCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate DetonatorCockpitExternal
+ObjectTemplate.addTemplate DetonatorCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector DetonatorCockpitSelector
+
+rem *** DetonatorCockpitExternal ***
+ObjectTemplate.create SimpleObject DetonatorCockpitExternal
+ObjectTemplate.geometry Wreck_M10_m1
+ObjectTemplate.createInvisible 1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** DetonatorCockpitInternal ***
+ObjectTemplate.create SimpleObject DetonatorCockpitInternal
+ObjectTemplate.geometry 
+
+rem *** DetonatorCockpitSelector***
+LodSelectorTemplate.create DistCompareSelector DetonatorCockpitSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** Detonatorengine ***
+ObjectTemplate.create Engine Detonatorengine
+ObjectTemplate.setNetworkableInfo DetonatorEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 10.5
+ObjectTemplate.setDifferential 7
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+rem *** DetonatorWheel ***
+ObjectTemplate.create Spring DetonatorWheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Wreckwheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5

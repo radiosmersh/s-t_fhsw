@@ -1,0 +1,63 @@
+newPatch
+load @ROOT/Sound/@RTD/flaksmall.wav
+minDistance 20
+priority 10
+randomStartPitch 0.05 / 0.05
+volume .9
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.75
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 180
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rcktlp1.wav
+loop
+minDistance 16
+randomStartPitch 0.05 / 0.05
+volume .5
+priority 1
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.9
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 60
+	param 1
+	param -1
+endEffect
+

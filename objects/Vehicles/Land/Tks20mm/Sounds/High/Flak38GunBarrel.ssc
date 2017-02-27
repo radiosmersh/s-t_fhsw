@@ -1,0 +1,60 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/20mmc.wav
+minDistance 200
+relativePosition 0/0/0
+mono
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1	
+endEffect
+
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1
+endEffect
+
+##############
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/PzII_rel.wav
+stereo
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect

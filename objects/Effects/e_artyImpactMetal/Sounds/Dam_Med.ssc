@@ -1,0 +1,62 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/ArtDamMed1.wav
+minDistance 25
+randomStartPitch 0.25 / 0.25
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 140
+	param 1
+	param -1
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/ArtDamMed2.wav
+minDistance 25
+randomStartPitch 0.25 / 0.25
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 140
+	param 1
+	param -1
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/ArtDamMed3.wav
+minDistance 25
+randomStartPitch 0.25 / 0.25
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 140
+	param 1
+	param -1
+endEffect
+
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1

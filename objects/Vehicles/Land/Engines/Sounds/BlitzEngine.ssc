@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/BlitzEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/BlitzEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/BlitzEngine.ssc

@@ -1,0 +1,429 @@
+newPatch
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/start1.wav
+minDistance 1
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 50
+	param 1
+	param -1	
+endEffect
+
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/veaartrun.wav
+loop
+minDistance 6
+relativePosition -.2/.4/.5
+volume .6
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.75
+	param 0.25
+	param 2
+        param 1.9
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 120
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+################
+### High RPM ###
+################
+
+load @ROOT/Sound/@RTD/shermhirpm.wav
+loop
+minDistance 15
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param ..1
+	param .2
+	param 0.1
+	param 0.2
+	param 2
+        param 1.4
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 60
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+
+#############################
+### Extra Engine High RPM ###
+#############################
+
+load @ROOT/Sound/@RTD/WillyHiRPM2.wav
+loop
+minDistance 5
+relativePosition .75/.4/.5
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.19
+	param 0.48
+	param 2
+        param 1.4
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param .7
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+#############################
+### Extra Engine High RPM ###
+#############################
+
+load @ROOT/Sound/@RTD/WillyHiRPM2.wav
+loop
+minDistance 5
+relativePosition -.75/.4/.5
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.40
+	param 0.60
+	param 1
+        param 1.4
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.6
+	param 0.9
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+###############
+### Cockpit ###
+###############
+
+load @ROOT/Sound/@RTD/cyltnk.wav
+loop
+minDistance 3
+volume .6
+relativePosition .75/.4/.5
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.65
+	param 0.35
+	param 0
+        param 1.8
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param -0.2
+	param 0.5
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+######################
+### Cockpit tomgång###
+######################
+
+load @ROOT/Sound/@RTD/instnktom.wav
+loop
+minDistance 3
+volume .4
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.96
+	param 0.04
+	param 2
+        param 1.8
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 0.9
+	param 1
+	param -1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+###################
+### Engine Stop ###
+###################
+
+load @ROOT/Sound/@RTD/prstngnstp.wav
+minDistance 1
+trigger Release
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 20
+	param 1
+	param -1	
+endEffect
+
+

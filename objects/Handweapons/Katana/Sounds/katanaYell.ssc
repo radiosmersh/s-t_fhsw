@@ -1,0 +1,2425 @@
+
+newPatch
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+
+
+load @ROOT/Sound/@RTD/katana1vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/katana2vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana4vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana3vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/katana5vALT.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

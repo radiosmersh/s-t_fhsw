@@ -1,0 +1,100 @@
+newPatch
+########################################################################################################
+### Fire ###
+############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+#########################################################################################################
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/PomPomReload.wav
+dopplerOff
+minDistance 1
+priority -2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.0
+	param 0.0
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+##########################################################################################################
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+############################
+### Mashine gun distance ###
+############################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/PompomNoEjct.wav
+minDistance 200
+stereo
+relativePosition 0/0/0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1	
+endEffect
+
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1
+endEffect
+

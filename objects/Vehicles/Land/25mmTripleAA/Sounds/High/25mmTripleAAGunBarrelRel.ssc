@@ -1,0 +1,170 @@
+newPatch
+########################################################################################################
+### Fire ###
+############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+#########################################################################################################
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/25mm_rel.wav
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 0.1
+	param 0
+	param 1
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/25mm_rel.wav
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.5
+	param 2.5
+	param 0
+	param 1
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/25mm_rel.wav
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 5.0
+	param 5.0
+	param 0
+	param 1
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
+	param 1
+	param -1
+endEffect
+
+##########################################################################################################
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+############################
+### Mashine gun distance ###
+############################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/25mmST.wav
+minDistance 2
+dopplerOff
+priority 10
+relativePosition 0/0/1
+stereo
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 2
+	param 1
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/25mmMO.wav
+minDistance 30
+dopplerOff
+priority 8
+relativePosition 0/0/1
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 200
+	param 1
+	param -1
+endEffect

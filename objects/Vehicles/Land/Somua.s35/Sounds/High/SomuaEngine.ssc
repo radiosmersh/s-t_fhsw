@@ -1,0 +1,657 @@
+newPatch
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/tnkstrt.wav
+minDistance 1
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 50
+	param 1
+	param -1	
+endEffect
+
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/wespeengine.wav
+loop
+minDistance 7
+relativePosition -.2/.4/.5
+volume .6
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.65
+	param 0.33
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 110
+	param 250
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+#############################
+### Extra Engine High RPM ###
+#############################
+
+load @ROOT/Sound/@RTD/wespbnd.wav
+loop
+volume .95
+minDistance 2
+relativePosition 0/0/-1.5
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.6
+	param 0.9
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Speed
+	envelope Linear
+	param 0.1
+	param 0.01
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 0.3
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 45
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+
+################
+### High RPM ###
+################
+
+load @ROOT/Sound/@RTD/lcvphirpm.wav
+loop
+minDistance 8
+relativePosition .3/.4/.5
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.55
+	param 0.2
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 60
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+####################
+### Extra Engine ###
+####################
+
+load @ROOT/Sound/@RTD/Willyengine3.wav
+loop
+minDistance 5
+relativePosition -.75/.4/.5
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0.3
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param -0.5
+	param 0.8
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 70
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+#############################
+### Extra Engine High RPM ###
+#############################
+
+load @ROOT/Sound/@RTD/WillyHiRPM2.wav
+loop
+minDistance 5
+relativePosition .75/.4/.5
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.4
+	param 0.32
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.4
+	param 1
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+#############################
+### Extra Engine High RPM ###
+#############################
+
+load @ROOT/Sound/@RTD/prstcyl.wav
+loop
+minDistance 5
+relativePosition -.75/.4/.5
+volume .6
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.52
+	param 0.48
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.4
+	param 0.9
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+###############
+### Cockpit ###
+###############
+
+load @ROOT/Sound/@RTD/tnkhispd.wav
+loop
+minDistance 3
+volume .4
+relativePosition .75/.4/.5
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.65
+	param 0.35
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param -0.2
+	param 0.5
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 3
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+######################
+### Cockpit tomgång###
+######################
+
+load @ROOT/Sound/@RTD/instnktom.wav
+loop
+minDistance 3
+volume .6
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0.2
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 0.9
+	param 1
+	param -1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 3
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+####################
+### bnd Distance ###
+####################
+
+load @ROOT/Sound/@RTD/tnkdst.wav
+minDistance 5
+loop
+priority -4
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 15
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 7
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 300
+	param 1
+	param -1
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+#################
+### bnd close ###
+#################
+
+load @ROOT/Sound/@RTD/wespbnd.wav
+minDistance 5
+loop
+volume .6
+priority 5
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 10
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 7
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 7
+	param 40
+	param 1
+	param -1
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+###################
+### Engine Stop ###
+###################
+
+load @ROOT/Sound/@RTD/prstngnstp.wav
+minDistance 1
+trigger Release
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 20
+	param 1
+	param -1	
+endEffect
+
+

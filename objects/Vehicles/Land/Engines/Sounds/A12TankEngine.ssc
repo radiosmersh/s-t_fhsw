@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/A12TankEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/LibertyL-12Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/LibertyL-12Engine.ssc

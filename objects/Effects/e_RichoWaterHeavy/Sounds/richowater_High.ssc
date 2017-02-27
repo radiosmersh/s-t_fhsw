@@ -1,0 +1,130 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/waterimpact1.wav
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/waterimpact2.wav
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/waterimpact3.wav
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/waterimpact4.wav
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffec
+
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/waterimpact5.wav
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/waterimpact6.wav
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1

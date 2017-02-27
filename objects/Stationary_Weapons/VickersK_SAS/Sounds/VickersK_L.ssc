@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include VickersK_LHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include VickersK_LMedium.ssc
+	
+#templateLevel LOW
+
+	#include VickersK_LLow.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RichoGrass_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include RichoGrass_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include RichoGrass_MedLow.ssc

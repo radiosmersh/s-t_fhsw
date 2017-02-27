@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include richoPHeavy_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include richoPHeavy_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include richoPHeavy_MedLow.ssc

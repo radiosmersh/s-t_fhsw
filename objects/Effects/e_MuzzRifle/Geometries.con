@@ -1,0 +1,2 @@
+GeometryTemplate.create StandardMesh muzzRifle_m1
+GeometryTemplate.file muzzGun_m1

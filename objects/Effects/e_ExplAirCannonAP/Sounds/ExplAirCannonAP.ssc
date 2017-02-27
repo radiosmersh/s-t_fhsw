@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include ExplAirCannonAP_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include ExplAirCannonAP_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include ExplAirCannonAP_MedLow.ssc

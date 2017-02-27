@@ -1,0 +1,42 @@
+newPatch
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/WSAAATURROT.wav
+loop
+minDistance 5
+relativePosition .75/.3/.8
+dopplerOff
+priority -7
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param .5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 30
+	param 1
+	param -1	
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param .1
+	param 60
+	param 0
+	param 1
+endEffect
+

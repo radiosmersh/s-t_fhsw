@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Push_Heavygun.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Push_Heavygun.ssc
+	
+#templateLevel LOW
+
+	#include Low/Push_Heavygun.ssc

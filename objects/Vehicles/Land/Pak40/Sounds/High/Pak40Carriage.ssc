@@ -1,0 +1,119 @@
+newPatch
+
+###################################
+load @ROOT/Sound/@RTD/VEFTRTYAW2.wav
+loop
+minDistance 10
+dopplerOff
+priority -7
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.2
+	param 0
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 20
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 40
+	param 1
+	param -1
+endEffect
+
+###################################
+load @ROOT/Sound/@RTD/Vehicle_AT25_wheel.wav
+loop
+volume 0.2
+minDistance 10
+dopplerOff
+randomStartPitch 0.0 / 0.08
+priority -7
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.3
+	param 0
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 20
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 40
+	param 1
+	param -1
+endEffect
+
+###################################
+load @ROOT/Sound/@RTD/Vehicle_common_gnissel.wav
+loop
+volume 0.2
+minDistance 10
+dopplerOff
+randomStartPitch 0.05 / 0.03
+priority -7
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 10
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 40
+	param 1
+	param -1
+endEffect

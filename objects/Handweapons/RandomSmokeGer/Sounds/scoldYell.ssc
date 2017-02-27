@@ -1,0 +1,18 @@
+newPatch
+load @ROOT/Sound/@RTD/German/WatchYourAim9.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect

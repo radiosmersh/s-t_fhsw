@@ -1,0 +1,49 @@
+newPatch
+
+load @ROOT/Sound/@RTD/37mmflakST.wav
+minDistance 12
+dopplerOff
+priority 10
+relativePosition 0/0/1
+stereo
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 12
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/37mmflakMO.wav
+minDistance 30
+dopplerOff
+priority 8
+relativePosition 0/0/1
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 12
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 300
+	param 1
+	param -1
+endEffect

@@ -1,0 +1,161 @@
+#include ../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+#include ../../../Common/Sounds/Dive.ssc
+
+####################
+### Engine Start ###
+####################
+
+load @ROOT/Sound/@RTD/Jumo/Jumo_Start.wav
+minDistance 1
+randomStartPitch .0/.05
+dopplerOff
+priority -2
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.75
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/MultiEngine/Jumo_Multi.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .1
+	param .7
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param .6
+	param 0.60
+	param 0.30
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.3
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.5
+	param 1
+	param -1	
+endEffect
+
+###############
+### Hi Prop ###
+###############
+
+load @ROOT/Sound/@RTD/MultiEngine/Hiprop_multi.wav
+loop
+minDistance 200
+volume 1.0
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param .3
+	param 1.2
+	param 0.68
+	param 0.3
+	
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.7
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 600
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+

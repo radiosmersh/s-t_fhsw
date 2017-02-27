@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Springfield03A3_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Springfield03A3_Medium.ssc
+	
+#templateLevel LOW
+
+	#include Springfield03A3_Low.ssc

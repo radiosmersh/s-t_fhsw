@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RichoMetal_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include RichoMetal_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include RichoMetal_MedLow.ssc

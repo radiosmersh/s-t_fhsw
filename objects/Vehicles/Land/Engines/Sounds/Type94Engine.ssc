@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Type94Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Type94Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/Type94Engine.ssc

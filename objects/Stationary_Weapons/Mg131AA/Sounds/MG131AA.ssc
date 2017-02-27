@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include MG131AAHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include MG131AAMedium.ssc
+	
+#templateLevel LOW
+
+	#include MG131AALow.ssc

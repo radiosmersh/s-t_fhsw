@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/PantherEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HL230Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/HL230Engine.ssc

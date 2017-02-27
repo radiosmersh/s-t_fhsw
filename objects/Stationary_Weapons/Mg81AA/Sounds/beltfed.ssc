@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include beltfed_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include beltfed_Low.ssc
+
+#templateLevel LOW
+
+	#include beltfed_Mid.ssc

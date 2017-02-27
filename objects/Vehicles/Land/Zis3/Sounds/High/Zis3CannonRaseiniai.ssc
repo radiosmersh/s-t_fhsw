@@ -1,0 +1,93 @@
+newPatch
+
+###########
+### far ###
+###########
+load bf1942/levels/Raseiniai/sounds/@RTD/76.2mmZis.wav
+minDistance 200
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 160
+	param 1
+	param -1	
+endEffect
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/postfiretnk.wav
+minDistance 1
+relativePosition -.3/0/.3
+randomStartPitch 0.08 / 0.08
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.15
+	param 0.15
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/Tnkheavrel_03.wav
+minDistance 2
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.0
+	param 2.0
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+

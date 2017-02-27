@@ -1,0 +1,10 @@
+NetworkableInfo.createNewInfo Ar234Bombrun_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Ar234BombrunEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo Ar234Bombrun_RunInfo
+NetworkableInfo.setPredictionMode PMLinear
+

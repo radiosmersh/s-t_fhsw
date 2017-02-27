@@ -1,0 +1,25 @@
+
+##############
+### impact ###
+##############
+#include ../../Common/Sounds/impact.ssc
+
+#############
+###debrie ###
+#############
+#include ../../Common/Sounds/debrie.ssc
+
+#############
+### draft ###
+#############
+#include ../../Common/Sounds/draft.ssc
+
+##############
+### reverb ###
+####¤#########
+#include ../../Common/Sounds/rev.ssc
+
+##############
+### reverb ###
+####¤#########
+#include ../../Common/Sounds/impactdist.ssc

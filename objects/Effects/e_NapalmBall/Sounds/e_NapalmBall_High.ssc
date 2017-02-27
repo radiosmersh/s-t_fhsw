@@ -1,0 +1,55 @@
+newPatch
+load @ROOT/Sound/@RTD/Napalm_start1.wav
+minDistance 380
+randomStartPitch 0.05 / 0.0
+priority 10
+volume 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 380
+	param 1
+	param -1	
+endEffect
+
+** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 1
+	param 0
+endEffect
+
+newPatch
+load @ROOT/Sound/@RTD/Napalm_burn.wav
+loop
+minDistance 300
+randomStartPitch 0.05 / 0.0
+priority 8
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1	
+endEffect
+
+** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 1
+	param 0
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/cal303fire.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/cal303fire.ssc
+	
+#templateLevel LOW
+
+	#include Low/cal303fire.ssc

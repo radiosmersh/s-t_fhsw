@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Zis5Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Zis5Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/Zis5Engine.ssc

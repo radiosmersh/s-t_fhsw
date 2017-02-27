@@ -1,0 +1,229 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact1.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact2.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact3.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact4.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact5.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact6.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 7 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact7.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 8 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact8.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 9 ###
+###############
+load @ROOT/Sound/@RTD/woodimpact9.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+################
+### SOUND 10 ###
+################
+load @ROOT/Sound/@RTD/woodimpact10.wav
+priority -10
+minDistance 15
+randomStartPitch 0.05 / 0.05
+volume .9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1

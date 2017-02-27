@@ -1,0 +1,89 @@
+
+newPatch
+load @ROOT/Sound/@RTD/knf1.wav
+minDistance 0.25
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect 
+
+load @ROOT/Sound/@RTD/knf2.wav
+minDistance 0.25
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/knf3.wav
+minDistance 0.25
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

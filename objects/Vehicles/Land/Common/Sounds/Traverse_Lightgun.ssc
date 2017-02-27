@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Traverse_Lightgun.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Traverse_Lightgun.ssc
+	
+#templateLevel LOW
+
+	#include Low/Traverse_Lightgun.ssc

@@ -1,0 +1,45 @@
+
+
+rem *** e_WaterFrontBigB ***
+ObjectTemplate.create EffectBundle e_WaterFrontBigB
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/e_WaterFrontBigB.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_WaterFrontBigB
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Em_WaterFoam
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Em_WaterFoamR
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.minDistanceUnderwaterSurface 0
+ObjectTemplate.maxDistanceUnderwaterSurface 20
+
+
+rem *** Em_WaterFrontBigB ***
+ObjectTemplate.create Emitter Em_WaterFrontBigB
+ObjectTemplate.template Fx_WaterFrontBigBMesh
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_UNIFORM/30/20/0
+ObjectTemplate.IntensityAtSpeed 5
+ObjectTemplate.relativePositionInDof CRD_NONE/-2/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/1/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/4/0/1
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/20/-20/0
+
+rem *** Fx_WaterFrontBigBMesh ***
+ObjectTemplate.create Particle Fx_WaterFrontBigBMesh
+ObjectTemplate.geometry watermesh_m1
+ObjectTemplate.timeToLive CRD_NONE/1.4/0/0
+ObjectTemplate.size CRD_UNIFORM/2/4/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/1/0.9/0
+ObjectTemplate.sizeModifier 4/2/5
+ObjectTemplate.sizeOverTime 0/1.10009|100/2.40004

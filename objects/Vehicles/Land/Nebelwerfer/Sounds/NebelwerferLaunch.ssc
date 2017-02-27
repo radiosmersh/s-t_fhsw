@@ -1,0 +1,7 @@
+#templateLevel HIGH
+
+	#include High/NebelwerferLaunch.ssc
+	
+#templateLevel MEDIUM
+
+#templateLevel LOW

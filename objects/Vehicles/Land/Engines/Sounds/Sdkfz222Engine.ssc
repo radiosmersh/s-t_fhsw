@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Sdkfz222Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/FordGAEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/FordGAEngine.ssc

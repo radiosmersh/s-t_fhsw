@@ -1,0 +1,19 @@
+newPatch
+load @ROOT/Sound/@RTD/rattewarning.wav
+loop
+minDistance 30
+randomStartPitch 0.0 / 0.0
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 240
+	param 1
+	param -1	
+endEffect
+
+

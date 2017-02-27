@@ -1,0 +1,283 @@
+newPatch
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/TankEngines/Panhard_178_start.wav
+minDistance 1
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 50
+	param 1
+	param -1	
+endEffect
+
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/TankEngines/Panhard_178_Idle.wav
+loop
+minDistance 6
+relativePosition -.2/.4/.5
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1.6
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.85
+	param 0.15
+	param 2
+	param 1.9
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+################
+### Main sec ###
+################
+
+load @ROOT/Sound/@RTD/TankEngines/Panhard_178_Main.wav
+loop
+minDistance 6
+relativePosition -.2/.4/.5
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1.6
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.75
+	param 0.25
+	param 1
+	param 1.6
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 70
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+################
+### High RPM ###
+################
+
+load @ROOT/Sound/@RTD/TankEngines/Panhard_178_High.wav
+loop
+minDistance 8
+relativePosition .3/.4/.5
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1.6
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.65
+	param 0.35
+	param 1
+	param 2
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1
+	param 0
+	param 1.6
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 60
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+####################
+### Extra Engine ###
+####################
+
+load @ROOT/Sound/@RTD/TankEngines/Panhard_178_Main.wav
+loop
+minDistance 5
+relativePosition -.75/.4/.5
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1.6
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.3
+	param 0.4
+	param 2
+	param 1.7
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param -0.5
+	param 0.8
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+###################
+### Engine Stop ###
+###################
+
+load @ROOT/Sound/@RTD/tankstop.wav
+minDistance 1
+trigger Release
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 20
+	param 1
+	param -1	
+endEffect
+
+

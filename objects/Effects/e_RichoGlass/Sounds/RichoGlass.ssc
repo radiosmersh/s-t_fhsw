@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RichoGlass_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include RichoGlass_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include RichoGlass_MedLow.ssc

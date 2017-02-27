@@ -1,0 +1,159 @@
+
+
+rem *** e_richoGround ***
+ObjectTemplate.create EffectBundle e_richoGround
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/richoground.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_richoBasic
+ObjectTemplate.addTemplate Em_richoGround
+ObjectTemplate.addTemplate Em_richoGround1
+ObjectTemplate.addTemplate Em_richoGround2
+ObjectTemplate.addTemplate Em_richoS_smoke
+ObjectTemplate.addTemplate Em_RichoGroundMesh
+ObjectTemplate.addTemplate Em_richoGroundBase
+ObjectTemplate.addTemplate Em_RichoBase
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+rem -------------------------------------
+
+
+rem *** Em_richoGround ***
+ObjectTemplate.create Emitter Em_richoGround
+ObjectTemplate.template Fx_richoGround
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_UNIFORM/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/-2/2/1
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/3/-3/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_richoGround ***
+ObjectTemplate.create Particle Fx_richoGround
+ObjectTemplate.geometry Richo_meshBrown_m1
+ObjectTemplate.timeToLive CRD_UNIFORM/1/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0.6/-0.3/0
+
+
+rem *** Em_richoGround1 ***
+ObjectTemplate.create Emitter Em_richoGround1
+ObjectTemplate.template Fx_richoGround1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_UNIFORM/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/2/-5/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-2/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_richoGround1 ***
+ObjectTemplate.create Particle Fx_richoGround1
+ObjectTemplate.geometry Richo_meshBrown1_m1
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.6/-0.3/0
+
+
+rem *** Em_richoGround2 ***
+ObjectTemplate.create Emitter Em_richoGround2
+ObjectTemplate.template Fx_richoGround2
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_UNIFORM/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/2/-5/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-2/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_richoGround2 ***
+ObjectTemplate.create Particle Fx_richoGround2
+ObjectTemplate.geometry Richo_meshBrown2_m1
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_UNIFORM/1/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0.6/-0.3/0
+
+
+rem *** Em_richoS_smoke ***
+ObjectTemplate.create Emitter Em_richoS_smoke
+ObjectTemplate.template Fx_richoS_smoke
+ObjectTemplate.lodDistance 350
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.3/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/3/2/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0.02/1
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/0
+
+rem *** Fx_richoS_smoke ***
+ObjectTemplate.create SpriteParticle Fx_richoS_smoke
+ObjectTemplate.timeToLive CRD_UNIFORM/0.4/0.4/0
+ObjectTemplate.size CRD_UNIFORM/1/1.5/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/-0.15/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.sizeOverTime 0/0.140034|100/0.310022
+ObjectTemplate.texture e_muz1_I
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/20/50/1
+ObjectTemplate.colorRGBAOverTime 0/128/128/128/204|100/203/194/176/0
+
+
+rem *** Em_RichoGroundMesh ***
+ObjectTemplate.create Emitter Em_RichoGroundMesh
+ObjectTemplate.template Fx_richoGround_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 50
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/50/100/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/1/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-2/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_richoGround_m1 ***
+ObjectTemplate.create Particle Fx_richoGround_m1
+ObjectTemplate.geometry Richo_WhiteM_m1
+ObjectTemplate.timeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.size CRD_NONE/0.4/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.6/-0.3/0
+
+
+rem *** Em_richoGroundBase ***
+ObjectTemplate.create Emitter Em_richoGroundBase
+ObjectTemplate.template Fx_richoGroundBase
+ObjectTemplate.lodDistance 100
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/5/1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_richoGroundBase ***
+ObjectTemplate.create SpriteParticle Fx_richoGroundBase
+ObjectTemplate.timeToLive CRD_NONE/0.2/0.2/0
+ObjectTemplate.size CRD_NONE/0.6/0.1/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/50/0/0
+ObjectTemplate.sizeOverTime 0/0.600009|100/0.400037
+ObjectTemplate.dragOverTime 0/6.1e-005|100/1
+ObjectTemplate.texture E_richoMetaL_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/180/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|52/191/183/119/122|100/128/128/128/0
+

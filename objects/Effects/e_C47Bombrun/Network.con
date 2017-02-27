@@ -1,0 +1,10 @@
+NetworkableInfo.createNewInfo C47Bombrun_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo C47BombrunEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo C47BombrunRunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

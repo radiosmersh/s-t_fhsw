@@ -1,0 +1,38 @@
+
+
+rem *** e_waterImpactMedium ***
+ObjectTemplate.create EffectBundle e_waterImpactMedium
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/e_waterImpactMedium.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_waterImpactMedium
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Em_WaterSprite
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+rem ObjectTemplate.minDistanceUnderwaterSurface 0
+rem ObjectTemplate.maxDistanceUnderwaterSurface 0.1
+
+rem *** Em_waterImpactMedium ***
+ObjectTemplate.create Emitter Em_waterImpactMedium
+ObjectTemplate.template Fx_waterImpactMediumMesh
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/1/1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0.5/0/0
+ObjectTemplate.startRotation CRD_NONE/15/0/0
+ObjectTemplate.moveToWaterSurface 1
+
+rem *** Fx_waterImpactMediumMesh ***
+ObjectTemplate.create Particle Fx_waterImpactMediumMesh
+ObjectTemplate.geometry watermesh_ring_m1
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+ObjectTemplate.size CRD_UNIFORM/8/4/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 4/4/4
+ObjectTemplate.sizeOverTime 0/0.100024|100/1
+ObjectTemplate.alphaOverTime 0/1|31/0.490005|100/0
+

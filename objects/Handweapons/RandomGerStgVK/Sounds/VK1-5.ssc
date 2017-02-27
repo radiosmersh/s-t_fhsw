@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include VK1-5High.ssc
+	
+#templateLevel MEDIUM
+
+	#include VK1-5Medium.ssc
+	
+#templateLevel LOW
+
+	#include VK1-5Low.ssc

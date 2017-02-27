@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include airdam_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include airdam_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include airdam_MedLow.ssc

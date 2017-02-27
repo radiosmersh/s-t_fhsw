@@ -1,0 +1,166 @@
+newPatch
+load @ROOT/Sound/@RTD/WWSXCGYAW.wav
+loop
+minDistance 10
+volume .7
+randomStartPitch 0.01 / 0.01
+dopplerOff
+priority -7
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 1
+	param 0
+	param .6
+	param .08
+	param 2
+	param .16
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 80
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/VEAARTCLOOP.wav
+loop
+minDistance 10
+randomStartPitch 0.01 / 0.01 
+dopplerOff
+priority -7
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 1
+	param 0
+	param .45
+	param .04
+	param 2
+	param .4
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 80
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/VESTRTYAW.wav
+loop
+minDistance 10
+randomStartPitch 0.01 / 0.01
+dopplerOff
+priority -7
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 1
+	param 0
+	param .85
+	param .08
+	param 2
+	param .3
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 80
+	param 1
+	param -1	
+endEffect
+
+
+load @ROOT/Sound/@RTD/WSAAATURROT.wav
+loop
+minDistance 10
+randomStartPitch 0.01 / 0.01
+dopplerOff
+priority -7
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 1
+	param 0
+	param .75
+	param .08
+	param 2
+	param .3
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 80
+	param 1
+	param -1	
+endEffect

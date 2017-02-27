@@ -1,0 +1,112 @@
+
+rem *** e_ExFumeFact ***
+ObjectTemplate.create EffectBundle e_ExFumeFact
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_wreckfire
+rem ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.addTemplate Em_ExFumeFact
+rem ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.addTemplate Em_wrecksmokeblack
+rem ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** Em_wreckfire ***
+ObjectTemplate.create Emitter Em_wreckfire
+ObjectTemplate.template Fx_wreckfire
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.looping 1
+ObjectTemplate.delay CRD_UNIFORM/6/8/0
+ObjectTemplate.lodDistance 3000
+ObjectTemplate.timeToLive CRD_UNIFORM/1.5/3.2/0
+ObjectTemplate.intensity CRD_NONE/5/0/0
+ObjectTemplate.intensityOverTime 0/0.1|50/1.3|100/0.3
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0.3/-0.3/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0.3/-0.3/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.5/1/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0.5/3.1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-3/3/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+rem *** Fx_wreckfire ***
+ObjectTemplate.create SpriteParticle Fx_wreckfire
+ObjectTemplate.timeToLive CRD_UNIFORM/0.65/1.25/0
+ObjectTemplate.size CRD_NONE/1.5/3.4/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/1|61/1|86/1|100/1
+ObjectTemplate.texture e_Fire256
+ObjectTemplate.initRotation CRD_UNIFORM/0/10/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_NONE/10/0/0
+ObjectTemplate.colorRGBAOverTime 0/0/0/0/0|3/255/235/235/255|85/255/235/235/191|100/255/235/235/0
+ObjectTemplate.numAnimationFrames 16
+ObjectTemplate.initAnimationFrame CRD_NONE/1/0/0
+ObjectTemplate.animationSpeed CRD_NONE/100/100/0
+ObjectTemplate.animationSpeedOverTime 0/1|100/0.200049
+
+
+rem *** Em_ExFumeFact ***
+ObjectTemplate.create Emitter Em_ExFumeFact
+ObjectTemplate.template Fx_ExFumeFact
+ObjectTemplate.looping 1
+ObjectTemplate.delay CRD_UNIFORM/0.5/2/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/2/4/0
+ObjectTemplate.intensity CRD_UNIFORM/4/5/0
+ObjectTemplate.intensityOverTime 0/0.5|50/1|100/0.5
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/0.05/1
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.5/1/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/3/3.1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.5/2/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_ExFumeFact ***
+ObjectTemplate.create SpriteParticle Fx_ExFumeFact
+ObjectTemplate.timeToLive CRD_UNIFORM/1.3/2.4/0
+ObjectTemplate.size CRD_UNIFORM/1.7/2.2/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/-0.6/-0.8/0
+ObjectTemplate.sizeOverTime 0/0.540239|67/1.72002|100/2.15998
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.gravityModifierOverTime 0/0.460005|39/0.490005|100/1
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.initRotation CRD_UNIFORM/0/360/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/15/30/1
+ObjectTemplate.rotationSpeedOverTime 0/0.209998|100/1
+ObjectTemplate.colorRGBAOverTime 0/44/41/39/0|12/41/38/36/133|44/36/33/30/114|100/26/23/19/0
+
+
+
+rem *** Em_wrecksmokeblack ***
+ObjectTemplate.create Emitter Em_wrecksmokeblack
+ObjectTemplate.template Fx_wrecksmokeblack
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.delay CRD_NONE/0.5/0.9/0
+ObjectTemplate.looping 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_UNIFORM/4/8/0
+ObjectTemplate.intensity CRD_UNIFORM/2.5/4/0
+ObjectTemplate.intensityOverTime 0/0.5|50/1|100/0.5
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/0.05/1
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/0.05/1
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0.05/1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.5/1/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/3/3.1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/-0.4/-2.2/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_wrecksmokeblack  ***
+ObjectTemplate.create SpriteParticle Fx_wrecksmokeblack
+ObjectTemplate.timeToLive CRD_UNIFORM/0.9/1.8/0
+ObjectTemplate.size CRD_UNIFORM/0.5/1/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/-0.2/-.15/0
+ObjectTemplate.sizeOverTime 0/1.51985|100/2.5
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.initRotation CRD_EXPONENTIAL/0/180/1
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/50/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/0/0/0/4|32/192/192/192/177|45/145/138/138/137|79/24/0/0/96|100/0/0/0/0

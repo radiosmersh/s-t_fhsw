@@ -1,0 +1,12 @@
+
+
+rem *** e_Blood02 ***
+ObjectTemplate.create EffectBundle e_Blood02
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/richoblood.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_blood01
+ObjectTemplate.addTemplate Em_BloodSmoke
+ObjectTemplate.timeToLive CRD_NONE/0.5/0.5/0.5
+rem -------------------------------------
+

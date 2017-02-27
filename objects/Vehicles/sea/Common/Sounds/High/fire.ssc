@@ -1,0 +1,248 @@
+newPatch
+
+###################################################################################################
+### close ###
+#############
+load @ROOT/Sound/@RTD/defgunfireLR.wav
+minDistance 6
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.85
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 8
+	param 8
+	param 1
+	param -1
+endEffect
+
+################################################################################
+### Near Right###
+#################
+load @ROOT/Sound/@RTD/defgunfire.wav
+minDistance 200
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.85
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1	
+endEffect
+
+###################################################################################################
+### Shell sml Dist ###
+######################
+load @ROOT/Sound/@RTD/defgunfireLR.wav
+minDistance 200
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.85
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 8
+	param 8
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 400
+	param 1
+	param .8
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 400
+	param .75
+	param -1
+endEffect
+######################
+### Shell med dist ###
+######################
+load @ROOT/Sound/@RTD/defgunfireLR.wav
+minDistance 200
+randomStartPitch 0.1 / 0.1
+dopplerOff
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.85
+	param 0
+endEffect
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 400
+	param 0
+	param .8
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 800
+	param .8
+	param .6
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 800
+	param 800
+	param .5
+	param -1
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param .4
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+######################
+### Shell Far Dist ###
+######################
+load @ROOT/Sound/@RTD/Shipgunfire.wav
+minDistance 200
+randomStartPitch 0.1 / 0.1
+dopplerOff
+priority 6
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.85
+	param 0
+endEffect
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 800
+	param 800
+	param 0
+	param .8
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 800
+	param 1600
+	param .8
+	param -1
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/shiprel.wav
+minDistance 1
+dopplerOff
+priority 11
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 4
+	param 4
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect

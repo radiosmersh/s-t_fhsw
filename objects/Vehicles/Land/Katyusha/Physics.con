@@ -1,0 +1,111 @@
+
+
+rem *** Katyusha_Spring_FrontL ***
+ObjectTemplate.create Spring Katyusha_Spring_FrontL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Katyusha_Whe1L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** Katyusha_Spring_FrontR ***
+ObjectTemplate.create Spring Katyusha_Spring_FrontR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Katyusha_Whe1R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+beginrem
+
+rem *** KatyushaRocket_Wing ***
+ObjectTemplate.create Wing KatyushaRocket_Wing
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.1
+ObjectTemplate.setFlapLift 0
+
+endrem
+
+rem *** Katyusha_Engine ***
+ObjectTemplate.create Engine Katyusha_Engine
+ObjectTemplate.setNetworkableInfo KatEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/GMCEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Katyusha_Wheel_BackL
+ObjectTemplate.setPosition -1.1/-0.5/-4.399
+ObjectTemplate.addTemplate Katyusha_Wheel_BackR
+ObjectTemplate.setPosition 1.1/-0.5/-4.399
+ObjectTemplate.addTemplate Katyusha_Wheel_BackLDummy
+ObjectTemplate.setPosition -1.099/-0.5/-2.999
+ObjectTemplate.addTemplate Katyusha_Wheel_BackRDummy
+ObjectTemplate.setPosition 1.1/-0.5/-2.999
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/10
+ObjectTemplate.setAcceleration 0/0/10
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 3.5
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 4
+ObjectTemplate.setGearUp 0.85
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.05
+
+
+rem *** Katyusha_Wheel_BackL ***
+ObjectTemplate.create Spring Katyusha_Wheel_BackL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Katyusha_Whe2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+
+rem *** Katyusha_Wheel_BackR ***
+ObjectTemplate.create Spring Katyusha_Wheel_BackR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Katyusha_Whe2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 3
+
+rem *** Katyusha_Wheel_BackL ***
+ObjectTemplate.create Spring Katyusha_Wheel_BackLDummy
+ObjectTemplate.geometry Katyusha_Whe2L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** Katyusha_Wheel_BackR ***
+ObjectTemplate.create Spring Katyusha_Wheel_BackRDummy
+ObjectTemplate.geometry Katyusha_Whe2R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0

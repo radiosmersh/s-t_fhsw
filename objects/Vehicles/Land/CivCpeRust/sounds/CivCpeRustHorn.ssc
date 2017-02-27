@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivCpeRustHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivCpeRustHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivCpeRustHorn.ssc

@@ -1,0 +1,93 @@
+
+
+rem *** CivTrckEngine ***
+ObjectTemplate.create Engine CivTrckEngine
+ObjectTemplate.setNetworkableInfo CivTrckEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/CivTrckEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate CivTrckFrontWheelR
+ObjectTemplate.setPosition 0.6/-0.121/1.208
+ObjectTemplate.addTemplate CivTrckFrontWheelL
+ObjectTemplate.setPosition -0.6/-0.121/1.208
+ObjectTemplate.addTemplate CivTrckBackSpringR
+ObjectTemplate.setPosition 0.773/-0.55/-1.95333
+ObjectTemplate.addTemplate CivTrckBackSpringL
+ObjectTemplate.setPosition -0.738/-0.55/-1.95333
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 4
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+
+rem *** CivTrckFrontSpringR ***
+ObjectTemplate.create Spring CivTrckFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry CivTrck_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** CivTrckFrontSpringL ***
+ObjectTemplate.create Spring CivTrckFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry CivTrck_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** CivTrckBackSpringR ***
+ObjectTemplate.create Spring CivTrckBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry CivTrck_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+rem *** CivTrckBackSpringL ***
+ObjectTemplate.create Spring CivTrckBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry CivTrck_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5

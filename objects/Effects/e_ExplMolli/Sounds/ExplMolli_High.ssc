@@ -1,0 +1,50 @@
+newPatch
+load @ROOT/Sound/@RTD/Molotov_1.wav
+loop
+minDistance 15
+randomStartPitch 0.25 / 0.0
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 25
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/Molotov_2.wav
+loop
+minDistance 15
+randomStartPitch 0.25 / 0.0
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 25
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/Molotov_3.wav
+loop
+minDistance 15
+randomStartPitch 0.25 / 0.0
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 25
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1

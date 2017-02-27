@@ -1,0 +1,36 @@
+
+
+rem *** e_KTexhaustSmoke ***
+ObjectTemplate.create EffectBundle e_KTexhaustSmoke
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_KTexhaustSmoke
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** Em_KTexhaustSmoke ***
+ObjectTemplate.create Emitter Em_KTexhaustSmoke
+ObjectTemplate.template Fx_KTexhaustSmoke
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/0.4/0/0
+ObjectTemplate.intensity CRD_UNIFORM/6/8/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0.2/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/0
+
+
+rem *** Fx_KTexhaustSmoke ***
+ObjectTemplate.create SpriteParticle Fx_KTexhaustSmoke
+ObjectTemplate.timeToLive CRD_UNIFORM/1/2/0
+ObjectTemplate.size CRD_NONE/1.5/1.5/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.5/0/0
+ObjectTemplate.drag CRD_NONE/1.0/0/0
+ObjectTemplate.texture e_muzs3_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.sizeOverTime 0/0.2|40/0.3|60/0.4|100/0.8
+ObjectTemplate.colorRGBAOverTime 0/5/5/5/0|29/10/10/10/100|58/10/10/10/100|100/33/29/44/0

@@ -1,0 +1,23 @@
+newPatch
+############
+### Para ###
+############
+
+load @ROOT/Sound/@RTD/ParaOpen.wav
+stereo
+randomStartPitch 0.03 / 0.03
+minDistance 1
+dopplerOff
+priority 11
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 30
+	param 1
+	param -1	
+endEffect
+

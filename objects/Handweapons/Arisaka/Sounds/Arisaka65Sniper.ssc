@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Arisaka65SniperHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include Arisaka65SniperMedium.ssc
+	
+#templateLevel LOW
+
+	#include Arisaka65SniperLow.ssc

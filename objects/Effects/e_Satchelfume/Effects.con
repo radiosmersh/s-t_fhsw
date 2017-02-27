@@ -1,0 +1,41 @@
+rem
+rem *** e_SatchelFume ***
+rem
+ObjectTemplate.create EffectBundle e_SatchelFume
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/7/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_SatchelFume_Smoke
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+
+rem *** Em_SatchelFume_Smoke ***
+ObjectTemplate.create Emitter Em_SatchelFume_Smoke
+ObjectTemplate.template Fx_SatchelFume_Smoke
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/7/0/0
+ObjectTemplate.intensity CRD_NONE/40/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/1.5/3
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0.5/1
+
+
+rem *** Fx_SatchelFume_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_SatchelFume_Smoke
+ObjectTemplate.timeToLive CRD_NORMAL/1.5/1.53/0
+ObjectTemplate.size CRD_NONE/0.15/0/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.drag CRD_NONE/10/0/0
+ObjectTemplate.sizeOverTime 0/0.400006|16/0.5|100/0.65
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/10/20/1
+ObjectTemplate.colorRGBAOverTime 0/212/208/200/255|7/255/255/255/217|54/255/255/255/192|62/200/200/200/165|80/200/200/200/86|100/200/200/200/0/0/0/0

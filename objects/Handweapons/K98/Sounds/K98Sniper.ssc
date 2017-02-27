@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include K98Sniper_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include K98Sniper_Medium.ssc
+	
+#templateLevel LOW
+
+	#include K98Sniper_Low.ssc

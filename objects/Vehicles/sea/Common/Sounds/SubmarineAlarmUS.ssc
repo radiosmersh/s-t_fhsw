@@ -1,0 +1,20 @@
+newPatch
+
+load @ROOT/Sound/@RTD/CrashdiveUS.wav
+stereo
+minDistance 50
+dopplerOff
+volume 1.6
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+

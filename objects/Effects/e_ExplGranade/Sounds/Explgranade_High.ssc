@@ -1,0 +1,305 @@
+
+#include ../../Common/Sounds/debrie.ssc
+
+newPatch
+
+#########################################################################################################
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/Handgranade.wav
+minDistance 20
+randomStartPitch 0.08 / 0.05
+volume 10
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 100
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Handgranade_low.wav
+minDistance 20
+randomStartPitch 0.08 / 0.05
+volume 10
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 100
+	param 1
+	param -1
+endEffect
+
+################################################################################################
+### Distance 100 ###
+####################
+
+load @ROOT/Sound/@RTD/Handgranade_dist.wav
+volume 10
+dopplerOff
+minDistance 15
+randomStartPitch 0.05 / 0.05
+priority 8
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 100
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 100
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.12
+	param 0.12
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+####################
+### Distance 200 ###
+####################
+
+load @ROOT/Sound/@RTD/Handgranade_dist.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority -2
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 200
+	param 200
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 400
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.55
+	param 0.55
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+####################
+### Distance 400 ###
+####################
+
+load @ROOT/Sound/@RTD/Handgranade_dist.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority -4
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 400
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 500
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.75
+	param 0.75
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+
+#####################################################################################################
+### Reverb ###
+##############
+
+##################
+### Reverb 100 ###
+##################
+load @ROOT/Sound/@RTD/Handgranade_rev.wav
+volume 3
+dopplerOff
+volume 0.1
+minDistance 100
+randomStartPitch 0.08 / 0.02
+priority 8
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 400
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.18
+	param 0.18
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+##################
+### Reverb 400 ###
+##################
+load @ROOT/Sound/@RTD/Handgranade_rev.wav
+volume 3
+dopplerOff
+volume 0.1
+minDistance 80
+randomStartPitch 0.05 / 0.05
+priority -5
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 400
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 600
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include richoPHeavyMetal_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include richoPHeavyMetal_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include richoPHeavyMetal_MedLow.ssc

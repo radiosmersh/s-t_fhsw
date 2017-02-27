@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include e_Blood01Knife_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include e_Blood01Knife_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include e_Blood01Knife_MedLow.ssc

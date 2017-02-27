@@ -1,0 +1,23 @@
+##############
+### FABRIC ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/Mg_drop.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .75
+dopplerOff
+priority 6
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 5
+	param 1
+	param -1	
+endEffect
+trigger Volume

@@ -1,0 +1,156 @@
+
+newPatch
+#########################################################################################################
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/explwater1.wav
+minDistance 20
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/VESTEXPLW.wav
+minDistance 70
+randomStartPitch 0.25 / 0.0
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+################################################################################################
+### Distance 100 ###
+####################
+
+load @ROOT/Sound/@RTD/explwaterdst1.wav
+minDistance 40
+randomStartPitch 0.05 / 0.05
+priority 3
+dopplerOff
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 130
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 200
+	param 200
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.3
+	param 0.3
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+
+####################
+### Distance 200 ###
+####################
+
+load @ROOT/Sound/@RTD/explwaterdst1.wav
+minDistance 30
+randomStartPitch 0.05 / 0.05
+priority 2
+dopplerOff
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 200
+	param 200
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 220
+	param 400
+	param 1
+	param -1
+endEffect
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.55
+	param 0.55
+	param 0
+	param 1
+endEffect
+
+trigger Volume

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivCpeGreenHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivCpeGreenHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivCpeGreenHorn.ssc

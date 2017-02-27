@@ -1,0 +1,156 @@
+
+
+rem *** FordGPAEngine ***
+ObjectTemplate.create Engine FordGPAEngine
+ObjectTemplate.setNetworkableInfo FordGPAEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/WillyEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FordGPAFrontWheelR
+ObjectTemplate.setPosition 0.607351/-0.127224/0.764827
+ObjectTemplate.addTemplate FordGPAFrontWheelL
+ObjectTemplate.setPosition -0.614532/-0.127224/0.764827
+ObjectTemplate.addTemplate FordGPABackSpringR
+ObjectTemplate.setPosition 0.607351/-0.103201/-1.51117
+ObjectTemplate.addTemplate FordGPABackSpringL
+ObjectTemplate.setPosition -0.614532/-0.103201/-1.51117
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/50000
+ObjectTemplate.setAcceleration 0/0/50000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 6.7
+ObjectTemplate.setDifferential 4.03
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+
+rem *** FordGPAFrontSpringR ***
+ObjectTemplate.create Spring FordGPAFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry FordGPA_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** FordGPAFrontSpringL ***
+ObjectTemplate.create Spring FordGPAFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry FordGPA_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** FordGPABackSpringR ***
+ObjectTemplate.create Spring FordGPABackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry FordGPA_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** FordGPABackSpringL ***
+ObjectTemplate.create Spring FordGPABackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry FordGPA_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+
+rem *** FordGPAEngineWater ***
+ObjectTemplate.create Engine FordGPAEngineWater
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/4000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 2.8
+ObjectTemplate.setDifferential 1.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 60
+
+
+
+rem *** FordGPARudder_Back ***
+ObjectTemplate.create Wing FordGPARudder_Back
+ObjectTemplate.setMinRotation 0/-9/0
+ObjectTemplate.setMaxRotation 0/9/0
+ObjectTemplate.setMaxSpeed 0/18/0
+ObjectTemplate.setAcceleration 0/36/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** FordGPARudder_Front ***
+ObjectTemplate.create Wing FordGPARudder_Front
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/36/0
+ObjectTemplate.setAcceleration 0/-18/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+
+rem **** FordGPAFloater ****
+ObjectTemplate.create FloatingBundle FordGPAFloater
+ObjectTemplate.setHullHeight 0.3
+ObjectTemplate.setFloatMaxLift 6
+ObjectTemplate.setFloatMinLift 4
+ObjectTemplate.setSinkingSpeedMod 7
+
+rem **** FordGPAFloater2 ****
+ObjectTemplate.create FloatingBundle FordGPAFloater2
+ObjectTemplate.setHullHeight .1
+ObjectTemplate.setFloatMaxLift 6
+ObjectTemplate.setFloatMinLift 3
+ObjectTemplate.setSinkingSpeedMod 1
+
+

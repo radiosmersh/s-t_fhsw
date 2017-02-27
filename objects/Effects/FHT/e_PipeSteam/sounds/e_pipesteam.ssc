@@ -1,0 +1,21 @@
+newPatch
+load @ROOT/Sound/@RTD/steam.wav
+loop
+minDistance 5
+stop FinishSample
+randomStartPitch 0.7 / 0.0
+volume 0.5
+priority -7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 25
+	param 1
+	param -1	
+endEffect
+
+
+

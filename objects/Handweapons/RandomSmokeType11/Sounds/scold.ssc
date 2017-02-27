@@ -1,0 +1,1388 @@
+newPatch
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+volume 1.2
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Japanese/Scold_atataM.wav
+minDistance 5
+trigger Volume
+dopplerOff
+volume 1.5
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

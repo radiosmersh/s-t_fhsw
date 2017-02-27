@@ -1,0 +1,63 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/Russian/Unit.wav
+minDistance 5
+stereo
+trigger Volume
+dopplerOff
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0.1
+	param 0.1
+	param 0
+	param 1
+endEffect
+
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/Russian/Unit.wav
+minDistance 5
+stereo
+trigger Volume
+dopplerOff
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0.1
+	param 0.1
+	param 0
+	param 1
+endEffect
+
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect

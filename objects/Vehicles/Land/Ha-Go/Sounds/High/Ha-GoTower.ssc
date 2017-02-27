@@ -1,0 +1,123 @@
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/Turret_Handoperated2.wav
+minDistance 10
+loop
+dopplerOff
+priority -7
+*** Pitch Offset ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.33
+	param 0
+	param 0
+	param 0
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 40
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 70
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/WWSXCGYAW.wav
+minDistance 5
+loop
+dopplerOff
+priority -7
+volume 0.34
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+	param 0.43
+	param 0
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 60
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/Turret_Handoperated.wav
+minDistance 5
+loop
+dopplerOff
+priority -7
+volume 0.9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+	param 0.42
+	param 0
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+

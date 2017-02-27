@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivCpeRedEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivCpeRedEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivCpeRedEngine.ssc

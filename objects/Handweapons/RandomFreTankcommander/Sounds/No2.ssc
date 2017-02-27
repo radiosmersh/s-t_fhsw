@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include No2High.ssc
+	
+#templateLevel MEDIUM
+
+	#include No2Medium.ssc
+	
+#templateLevel LOW
+
+	#include No2Low.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include no4Sniper_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include no4Sniper_Medium.ssc
+	
+#templateLevel LOW
+
+	#include no4Sniper_Low.ssc

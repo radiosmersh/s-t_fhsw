@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include P08ArtillerieHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include P08ArtillerieMedium.ssc
+	
+#templateLevel LOW
+
+	#include P08ArtillerieLow.ssc

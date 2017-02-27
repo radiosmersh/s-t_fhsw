@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivTrckEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivTrckEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivTrckEngine.ssc

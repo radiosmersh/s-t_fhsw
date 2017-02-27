@@ -1,0 +1,144 @@
+newPatch
+########################################################################################################
+### Fire ###
+############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+#########################################################################################################
+### Reload ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/browningrel.wav
+minDistance 1
+dopplerOff
+priority 1
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.27
+	param 1.27
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+##########################################################################################################
+### Release ###
+###############
+newPatch
+
+load @ROOT/Sound/@RTD/MG131_release.wav
+minDistance 30
+dopplerOff
+volume 0.5
+priority -1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 180
+	param 1
+	param -1
+endEffect
+###########################################################################################################
+### Shell Bounce ###
+####################
+newPatch
+#include ../../../Common/Sounds/ShellBounce.ssc
+############################
+### Mashine gun distance ###
+############################
+newPatch
+#include ../../../Common/Sounds/MGdist.ssc
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/MG131_loop.wav
+loop
+stereo
+dopplerOff
+minDistance 1
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/MG131_loopmono.wav
+loop
+dopplerOff
+minDistance 16
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 60
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/MGdisthighsound/mgdist15.wav
+minDistance 21
+loop
+priority 7
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 60
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 180
+	param 1
+	param -1
+endEffect

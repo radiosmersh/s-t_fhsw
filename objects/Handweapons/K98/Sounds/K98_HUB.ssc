@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include K98_HUB_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include K98_HUB_Medium.ssc
+	
+#templateLevel LOW
+
+	#include K98_HUB_Low.ssc

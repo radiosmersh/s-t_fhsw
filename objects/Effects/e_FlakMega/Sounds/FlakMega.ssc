@@ -1,0 +1,164 @@
+newPatch
+
+load @ROOT/Sound/@RTD/flakx.wav
+minDistance 250
+randomStartPitch 0.1 / 0.0
+dopplerOff
+priority 3
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 800
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/flakx2.wav
+minDistance 250
+randomStartPitch 0.1 / 0.0
+dopplerOff
+priority 3
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 800
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/flakx3.wav
+minDistance 250
+randomStartPitch 0.1 / 0.0
+dopplerOff
+priority 3
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 800
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/flakx4.wav
+minDistance 250
+randomStartPitch 0.1 / 0.0
+dopplerOff
+priority 3
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 800
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/flakx5.wav
+minDistance 250
+randomStartPitch 0.1 / 0.0
+dopplerOff
+priority 3
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 800
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/flakx6.wav
+minDistance 250
+randomStartPitch 0.1 / 0.0
+dopplerOff
+priority 3
+
+*** Offset Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 800
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

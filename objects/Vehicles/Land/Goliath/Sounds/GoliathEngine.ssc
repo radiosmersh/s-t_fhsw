@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/GoliathEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/GoliathEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/GoliathEngine.ssc

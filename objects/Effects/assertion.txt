@@ -1,0 +1,6 @@
+changed effects:
+
+e_explsmall2
+e_explbazooka
+
+look into the look into the 'effects.con' for further details

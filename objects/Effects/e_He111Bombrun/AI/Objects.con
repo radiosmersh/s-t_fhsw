@@ -1,0 +1,70 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Mobile He111BombrunMobile
+aiTemplatePlugIn.vehicleNumber 0
+aiTemplatePlugIn.maxSpeed 15.0
+aiTemplatePlugIn.turnRadius 25.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.lodHeight 1.35
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit He111BombrunUnit
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.equipmentType 6
+
+aiTemplatePlugIn.create Physical He111BombrunPhysical
+aiTemplatePlugIn.setStrType LightArmour
+rem aiTemplatePlugIn.strType LightArmour
+
+aiTemplatePlugIn.create ControlInfo He111BombrunCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIYaw
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIYaw
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 1.0
+aiTemplatePlugIn.rollScale                  1.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.maxSpeedBumpinessFallOff   0.01
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg 0/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/0/0
+
+
+rem *** AITemplate ***
+aiTemplate.create He111BombrunAI
+aiTemplate.addType ITBiological
+aiTemplate.addType ITUnit
+aiTemplate.addType ITMobile
+aiTemplate.addType ITGround
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 7
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn He111BombrunUnit
+aiTemplate.addPlugIn He111BombrunMobile
+aiTemplate.addPlugIn He111BombrunCtrl
+aiTemplate.addPlugIn He111BombrunPhysical
+
+

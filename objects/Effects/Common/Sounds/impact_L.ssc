@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include impact_L_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include impact_L_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include impact_L_MedLow.ssc

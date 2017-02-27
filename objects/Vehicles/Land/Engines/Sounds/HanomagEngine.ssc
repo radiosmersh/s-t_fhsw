@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/HanomagEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HL42Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/HL42Engine.ssc

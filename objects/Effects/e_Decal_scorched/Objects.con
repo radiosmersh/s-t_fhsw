@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject decal_scorched_m1
+ObjectTemplate.geometry decal_scorched_m1
+ObjectTemplate.setHasCollisionPhysics 0

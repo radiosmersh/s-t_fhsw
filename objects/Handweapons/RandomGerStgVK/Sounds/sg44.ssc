@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include sg44High.ssc
+	
+#templateLevel MEDIUM
+
+	#include sg44Medium.ssc
+	
+#templateLevel LOW
+
+	#include sg44Low.ssc

@@ -1,0 +1,38 @@
+rem *** e_bigShootTrail***
+ObjectTemplate.create EffectBundle e_bigShootTrail
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate Em_bigShootTrail
+rem ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** Em_bigShootTrail***
+ObjectTemplate.create Emitter Em_bigShootTrail
+ObjectTemplate.template Fx_bigShootTrail
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 1000
+ObjectTemplate.IntensityAtSpeed 20
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/30/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+ObjectTemplate.create SpriteParticle Fx_bigShootTrail
+ObjectTemplate.timeToLive CRD_UNIFORM/0.5/1/0
+ObjectTemplate.size CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/3/0/0
+ObjectTemplate.sizeOverTime 0/0.400006|16/0.47|100/0.6
+ObjectTemplate.texture e_muzs2_I
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/70|10/255/255/255/40|25/255/255/255/60|60/255/255/255/40|100/255/255/255/0

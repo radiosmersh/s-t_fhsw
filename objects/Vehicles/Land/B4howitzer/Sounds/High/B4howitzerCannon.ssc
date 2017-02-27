@@ -1,0 +1,274 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/203mm.wav
+minDistance 250
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 250
+	param 1
+	param -1	
+endEffect
+
+###########
+### Far ###
+###########
+#include ../../../Common/Sounds/DistantArtFireHeavy1.ssc
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Open_202.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.23
+	param 1.23
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Crane_192.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.478
+	param 3.478
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Crane_129.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 5.63
+	param 5.63
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Crane_457.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 7.15
+	param 7.15
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Load_300.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 11.9
+	param 11.9
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Crane_396.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 15.2
+	param 15.2
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_HvyLoad_176.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 19.36
+	param 19.36
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect
+
+##############
+### reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Close_222.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 21.35
+	param 21.35
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 10
+	param 1
+	param -1
+endEffect

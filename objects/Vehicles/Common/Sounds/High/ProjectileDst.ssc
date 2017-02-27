@@ -1,0 +1,132 @@
+newPatch
+
+load @ROOT/Sound/@RTD/ProjectileDst1.wav
+loop
+minDistance 200
+priority 6
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/ProjectileDst2.wav
+loop
+minDistance 200
+priority 6
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/ProjectileDst3.wav
+loop
+minDistance 200
+priority 6
+dopplerOff
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/ProjectileDst4.wav
+loop
+minDistance 200
+priority 6
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/ProjectileDst5.wav
+loop
+minDistance 200
+priority 6
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/ProjectileDst6.wav
+loop
+minDistance 200
+priority 6
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/ProjectileDst7.wav
+loop
+minDistance 200
+priority 6
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/ProjectileDst8.wav
+loop
+minDistance 200
+priority 6
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 400
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

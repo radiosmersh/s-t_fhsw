@@ -1,0 +1,160 @@
+
+
+rem *** e_M10wreck ***
+ObjectTemplate.create EffectBundle e_M10wreck
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10WreckstaySpawner
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+rem -------------------------------------
+
+rem *** M10WreckstaySpawner*** 
+ObjectTemplate.create ObjectSpawner M10WreckstaySpawner
+ObjectTemplate.setObjectTemplate 1 M10Wreckstay
+ObjectTemplate.setObjectTemplate 2 M10Wreckstay
+ObjectTemplate.holdObject 0 
+ObjectTemplate.minSpawnDelay 0 
+ObjectTemplate.maxSpawnDelay 0 
+objecttemplate.timetolive 0
+objecttemplate.distance 10
+objecttemplate.damagewhenlost 100
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.team 1 
+
+rem *** M10Wreckstay***
+ObjectTemplate.create PlayerControlObject M10Wreckstay
+ObjectTemplate.setNetworkableInfo M10Wreckstay_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.explosionRadius 2
+ObjectTemplate.explosionDamage 1
+ObjectTemplate.explosionForceMod 1
+ObjectTemplate.material 85
+ObjectTemplate.drag 2
+ObjectTemplate.mass 25000
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 4
+ObjectTemplate.hasArmor 1
+ObjectTemplate.addArmorEffect 110 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 95 e_PanzFire 0/0.9/-1.4
+ObjectTemplate.addArmorEffect 90 e_PanzFire 0/0.8/-1.4
+ObjectTemplate.addArmorEffect 85 e_PanzFire 0/0.7/-1.4
+ObjectTemplate.addArmorEffect 80 e_PanzFire 0/0.6/-1.4
+ObjectTemplate.addArmorEffect 75 e_PanzFire 0/0.5/-1.4
+ObjectTemplate.addArmorEffect 70 e_PanzFire 0/0.4/-1.4
+ObjectTemplate.addArmorEffect 65 e_PanzFire 0/0.3/-1.4
+ObjectTemplate.addArmorEffect 60 e_PanzFire 0/0.2/-1.4
+ObjectTemplate.addArmorEffect 55 e_PanzFire 0/0.1/-1.4
+ObjectTemplate.addArmorEffect 40 e_KatyushaDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 30 e_PanzFire 0/1.5/0
+ObjectTemplate.addArmorEffect 30 e_KatyushaDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 25 e_PanzFire 0/1.6/0
+ObjectTemplate.addArmorEffect 25 e_KatyushaDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 20 e_PanzFire 0/1.7/0
+ObjectTemplate.addArmorEffect 20 e_KatyushaDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/0
+ObjectTemplate.addArmorEffect 15 e_KatyushaDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 10 e_PanzFire 0/1.9/0
+ObjectTemplate.addArmorEffect 10 e_KatyushaDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 5 e_PanzFire 0/2.0/0
+ObjectTemplate.addArmorEffect 5 e_KatyushaDamage 0/0.9/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.aiTemplate M10WreckstayAI
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate M10Wreckstay_body
+rem -------------------------------------
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon ""
+ObjectTemplate.setVehicleIconPos 45/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** M10Wreckstay_body***
+ObjectTemplate.create Bundle M10Wreckstay_body
+ObjectTemplate.setNetworkableInfo M10Wreckstay_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM10WreckstayCockpit
+ObjectTemplate.addTemplate M10Wreckstayengine
+ObjectTemplate.setPosition 0/-0.7/0.0
+rem -------------------------------------
+
+rem *** lodM10WreckstayCockpit ***
+ObjectTemplate.create LodObject lodM10WreckstayCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate M10WreckstayCockpitExternal
+ObjectTemplate.addTemplate M10WreckstayCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector M10WreckstayCockpitSelector
+
+rem *** M10WreckstayCockpitExternal ***
+ObjectTemplate.create SimpleObject M10WreckstayCockpitExternal
+ObjectTemplate.geometry Wreck_M10_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** M10WreckstayCockpitInternal ***
+ObjectTemplate.create SimpleObject M10WreckstayCockpitInternal
+ObjectTemplate.geometry 
+
+rem *** M10WreckstayCockpitSelector***
+LodSelectorTemplate.create DistCompareSelector M10WreckstayCockpitSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+rem *** M10Wreckstayengine ***
+ObjectTemplate.create Engine M10Wreckstayengine
+ObjectTemplate.setNetworkableInfo M10WreckstayEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10WreckstayWheel
+ObjectTemplate.setPosition 1/0.0/1.5
+ObjectTemplate.addTemplate M10WreckstayWheel
+ObjectTemplate.setPosition -1/0.0/1.5
+ObjectTemplate.addTemplate M10WreckstayWheel
+ObjectTemplate.setPosition 1/0/-1.5
+ObjectTemplate.addTemplate M10WreckstayWheel
+ObjectTemplate.setPosition -1/0/-1.5
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 10.5
+ObjectTemplate.setDifferential 7
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+rem *** M10WreckstayWheel ***
+ObjectTemplate.create Spring M10WreckstayWheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Wreckwheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5

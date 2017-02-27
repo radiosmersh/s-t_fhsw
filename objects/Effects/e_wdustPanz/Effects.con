@@ -1,0 +1,48 @@
+
+
+rem *** e_wdustPanz ***
+ObjectTemplate.create EffectBundle e_wdustPanz
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_wDust
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addWorkOnMaterial 2
+ObjectTemplate.addWorkOnMaterial 3
+ObjectTemplate.addWorkOnMaterial 4
+ObjectTemplate.addWorkOnMaterial 5
+ObjectTemplate.addWorkOnMaterial 6
+ObjectTemplate.addWorkOnMaterial 7
+ObjectTemplate.addWorkOnMaterial 8
+ObjectTemplate.addWorkOnMaterial 9
+ObjectTemplate.addWorkOnMaterial 11
+ObjectTemplate.addWorkOnMaterial 12
+ObjectTemplate.addWorkOnMaterial 14
+ObjectTemplate.addWorkOnMaterial 15
+
+
+rem *** Em_wDust ***
+ObjectTemplate.create Emitter Em_wDust
+ObjectTemplate.template Fx_wDust&Smoke
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.timeToLive CRD_NONE/60/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.IntensityAtSpeed 20
+ObjectTemplate.relativePositionInUp CRD_NONE/-0.3/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0.5/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.showInThirdPerson 1
+
+rem *** Fx_wDust&Smoke ***
+ObjectTemplate.create SpriteParticle Fx_wDust&Smoke
+ObjectTemplate.timeToLive CRD_UNIFORM/1.5/2/0
+ObjectTemplate.size CRD_UNIFORM/1.5/2.5/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/2/0/0
+ObjectTemplate.sizeOverTime 0/0.160039|44/0.400006|100/1.20005
+ObjectTemplate.texture e_dustwindw_I
+ObjectTemplate.initRotation CRD_NONE/1/180/1
+ObjectTemplate.colorRGBAOverTime 0/119/100/81/0|15/119/105/77/50|35/206/203/179/70|100/201/197/184/0

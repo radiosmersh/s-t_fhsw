@@ -1,0 +1,11 @@
+newPatch
+
+#############
+### Close ###
+#############
+#include ../../../Common/Sounds/RocketLaunchAir.ssc
+
+##################
+### After Fire ###
+##################
+#include ../../../Common/Sounds/PostRocketFire.ssc

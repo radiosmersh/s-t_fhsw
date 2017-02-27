@@ -1,0 +1,59 @@
+newPatch
+
+load @ROOT/Sound/@RTD/explheavy1.wav
+minDistance 35
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 380
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/explheavy2.wav
+minDistance 35
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 380
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/explheavy3.wav
+minDistance 35
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 380
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/explheavy4.wav
+minDistance 35
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 380
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SonarDest.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SonarDest.ssc
+	
+#templateLevel LOW
+
+	#include Low/SonarDest.ssc

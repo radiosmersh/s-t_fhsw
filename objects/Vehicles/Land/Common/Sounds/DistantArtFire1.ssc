@@ -1,0 +1,36 @@
+load @ROOT/Sound/@RTD/distantarty1.wav
+minDistance 180
+relativePosition 0/0/0
+randomStartPitch 0.1 / 0.1
+priority 5
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 180
+	param 180
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 500
+	param 1
+	param -1	
+endEffect

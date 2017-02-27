@@ -1,0 +1,59 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/horse_die1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/horse_die2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/horse_die3.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1	
+endEffect
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1

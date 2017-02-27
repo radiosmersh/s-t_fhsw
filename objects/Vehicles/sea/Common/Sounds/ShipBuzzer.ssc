@@ -1,0 +1,19 @@
+newPatch
+
+load @ROOT/Sound/@RTD/Ship_BattleStations2.wav
+stereo
+minDistance 200
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 200
+	param 1
+	param -1	
+endEffect
+
+

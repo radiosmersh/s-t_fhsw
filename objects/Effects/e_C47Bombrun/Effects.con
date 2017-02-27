@@ -1,0 +1,358 @@
+
+
+rem *** e_C47Bombrun ***
+ObjectTemplate.create EffectBundle e_C47Bombrun
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate C47BombrunSpawner
+ObjectTemplate.setPosition 0/2/0
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+rem -------------------------------------
+
+
+rem *** C47BombrunSpawner*** 
+ObjectTemplate.create ObjectSpawner C47BombrunSpawner
+ObjectTemplate.setObjectTemplate 1 C47Bombrun
+ObjectTemplate.setObjectTemplate 2 C47Bombrun
+ObjectTemplate.holdObject 0 
+ObjectTemplate.minSpawnDelay 200 
+ObjectTemplate.maxSpawnDelay 200 
+objecttemplate.timetolive 0
+objecttemplate.distance 10
+objecttemplate.damagewhenlost 100
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.team 1 
+
+rem *** C47Bombrun***
+ObjectTemplate.create PlayerControlObject C47Bombrun
+ObjectTemplate.setNetworkableInfo C47Bombrun_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.material 126
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1000
+ObjectTemplate.criticalDamage 251
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.aiTemplate C47BombrunAI
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate C47Bombrun_body
+ObjectTemplate.setRandomGeometries 5
+rem ObjectTemplate.addTemplate C47-bombrun_Enginefake
+
+rem -------------------------------------
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon ""
+ObjectTemplate.setVehicleIconPos 45/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** C47Bombrun_body1 ***
+ObjectTemplate.create Bundle C47Bombrun_body1
+ObjectTemplate.setNetworkableInfo C47Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodC47BombrunCockpit
+ObjectTemplate.addTemplate C47Path1Straight1
+ObjectTemplate.setPosition 0/80/0
+rem -------------------------------------
+
+rem *** C47Bombrun_body2 ***
+ObjectTemplate.create Bundle C47Bombrun_body2
+ObjectTemplate.setNetworkableInfo C47Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodC47BombrunCockpit
+ObjectTemplate.addTemplate C47Path1Straight1
+ObjectTemplate.setPosition 0/120/0
+ObjectTemplate.setRotation 78/0/0
+rem -------------------------------------
+
+rem *** C47Bombrun_body3 ***
+ObjectTemplate.create Bundle C47Bombrun_body3
+ObjectTemplate.setNetworkableInfo C47Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodC47BombrunCockpit
+ObjectTemplate.addTemplate C47Path1Straight1
+ObjectTemplate.setPosition 0/150/0
+ObjectTemplate.setRotation -78/0/0
+rem -------------------------------------
+
+rem *** C47Bombrun_body4 ***
+ObjectTemplate.create Bundle C47Bombrun_body4
+ObjectTemplate.setNetworkableInfo C47Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodC47BombrunCockpit
+ObjectTemplate.addTemplate C47Path1Straight1
+ObjectTemplate.setPosition 0/65/0
+ObjectTemplate.setRotation 92/0/0
+rem -------------------------------------
+
+rem *** C47Bombrun_body5 ***
+ObjectTemplate.create Bundle C47Bombrun_body5
+ObjectTemplate.setNetworkableInfo C47Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodC47BombrunCockpit
+ObjectTemplate.addTemplate C47Path1Straight1
+ObjectTemplate.setPosition 0/90/0
+ObjectTemplate.setRotation -135/0/0
+rem -------------------------------------
+
+
+rem *** lodC47BombrunCockpit ***
+ObjectTemplate.create LodObject lodC47BombrunCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate C47BombrunCockpitExternal
+ObjectTemplate.addTemplate C47BombrunCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector C47BombrunCockpitSelector
+
+rem *** C47BombrunCockpitExternal ***
+ObjectTemplate.create SimpleObject C47BombrunCockpitExternal
+ObjectTemplate.geometry Wreck_M10_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.CreateInvisible 0
+
+rem *** C47BombrunCockpitInternal ***
+ObjectTemplate.create SimpleObject C47BombrunCockpitInternal
+ObjectTemplate.geometry 
+
+rem *** C47BombrunCockpitSelector***
+LodSelectorTemplate.create DistCompareSelector C47BombrunCockpitSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+
+rem *** C47Path1Straight1 ***
+ObjectTemplate.create RotationalBundle C47Path1Straight1
+ObjectTemplate.setNetworkableInfo C47BombrunRunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate C47Path1Straight2
+ObjectTemplate.setPosition 0/2000/0
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/0.5/0
+ObjectTemplate.setAcceleration 0/0.5/0
+ObjectTemplate.setContinousRotationSpeed 0/0.5/0
+
+rem *** C47Path1Straight2 ***
+ObjectTemplate.create RotationalBundle C47Path1Straight2
+ObjectTemplate.setNetworkableInfo C47BombrunRunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate C47Path1Straight3
+ObjectTemplate.setPosition 0/-2000/0
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/-180/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/-1/0
+ObjectTemplate.setAcceleration 0/-1/0
+ObjectTemplate.setContinousRotationSpeed 0/-1/0
+
+rem *** C47Path1Straight3 ***
+ObjectTemplate.create RotationalBundle C47Path1Straight3
+ObjectTemplate.setNetworkableInfo C47BombrunRunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate C47StaticSpawner
+ObjectTemplate.setPosition 0/0/-2000
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/0.5/0
+ObjectTemplate.setAcceleration 0/0.5/0
+ObjectTemplate.setContinousRotationSpeed 0/0.5/0
+
+
+ObjectTemplate.create ObjectSpawner C47StaticSpawner
+ObjectTemplate.setObjectTemplate 1 C47-bombrun
+ObjectTemplate.setObjectTemplate 2 C47-bombrun
+ObjectTemplate.minSpawnDelay 15
+ObjectTemplate.maxSpawnDelay 15
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 10
+
+
+rem *** C47-bombrun ***
+ObjectTemplate.create PlayerControlObject C47-bombrun
+ObjectTemplate.NameTagOffset 0/-0.415/4.578
+ObjectTemplate.setNetworkableInfo C47BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.1695
+ObjectTemplate.mass 8000
+ObjectTemplate.inertiaModifier 0.4/0.5/0.6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 15
+ObjectTemplate.explosionDamage 10
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
+ObjectTemplate.material 24
+ObjectTemplate.criticalDamage 70
+ObjectTemplate.hpLostWhileCriticalDamage 3
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 180 em_b17Damage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 180 em_PlaneDamage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 180 em_b17Damage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 180 em_PlaneDamage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_b17Damage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_PlaneDamage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_b17Damage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_PlaneDamage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_b17Damage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_b17Damage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 70 e_StukaFire -2.844/-0.092/1.25
+ObjectTemplate.addArmorEffect 70 e_StukaFire 2.844/-0.092/1.25
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_C47 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate C47Ai
+ObjectTemplate.dontClearTeamOnExit 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodC47-bombrun
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.9/-0.5/-5.2 0/0/0
+ObjectTemplate.GUIIndex 69
+ObjectTemplate.setVehicleIcon "Vehicle/icon_C47.tga"
+ObjectTemplate.setVehicleIconPos 93/105
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_bullet127.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_bomC470.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTBomber
+ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Incoming_16x16.tga"
+
+rem *** lod C47-bombrun ***
+ObjectTemplate.create LodObject lodC47-bombrun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate C47-bombrunComplex
+ObjectTemplate.addTemplate C47Simple
+ObjectTemplate.addTemplate C47Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector C47LodSelector
+
+rem *** C47-bombrunComplex ***
+ObjectTemplate.create Bundle C47-bombrunComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodC47Cockpit
+
+ObjectTemplate.addTemplate C47AileronR
+ObjectTemplate.setPosition 12.874/0.440/-1.914
+ObjectTemplate.setRotation 0.8/0/5.4
+ObjectTemplate.addTemplate C47AileronL
+ObjectTemplate.setPosition -12.877/0.440/-1.914
+ObjectTemplate.setRotation -0.8/0/-5.25
+ObjectTemplate.addTemplate C47Elevator
+ObjectTemplate.setPosition -0.040/1.156/-14.464
+ObjectTemplate.addTemplate C47Rudder
+ObjectTemplate.setPosition -0.047/3.610/-13.853
+ObjectTemplate.setRotation 0/0/89.999
+
+ObjectTemplate.addTemplate C47Doorrotation
+ObjectTemplate.setPosition 1.433/1.233/-6.268
+ObjectTemplate.setRotation -150/0/0
+
+ObjectTemplate.addTemplate C47-bombrun_Engine
+ObjectTemplate.setPosition 3.715/-0.340/5.961
+ObjectTemplate.addTemplate C47-bombrun_Engine
+ObjectTemplate.setPosition -3.899/-0.340/5.961
+
+
+ObjectTemplate.addTemplate C47-bombrun_Enginefake
+
+ObjectTemplate.addTemplate C47-bombrunSoldierSpawn
+ObjectTemplate.setPosition 1.5/0/-6.4
+
+
+rem -------------------------------------
+
+rem *** C47-bombrunSoldierSpawn ***
+ObjectTemplate.create SpawnPoint C47-bombrunSoldierSpawn
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 1
+ObjectTemplate.teamOnVehicle 1
+
+ObjectTemplate.create RotationalBundle C47-bombrun_Engine
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate C47PropellerBlurred
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/500
+ObjectTemplate.setContinousRotationSpeed 0/0/500
+
+rem *** C47-bombrun_Enginefake ***
+ObjectTemplate.create Engine C47-bombrun_Enginefake
+ObjectTemplate.setNetworkableInfo C47EngineInfo
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/600
+ObjectTemplate.setAcceleration 5/0/250
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 9
+ObjectTemplate.setDifferential 4
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.7
+ObjectTemplate.setNoPropellerEffectAtSpeed 60

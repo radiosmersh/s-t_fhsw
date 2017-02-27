@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include artillery_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include artillery_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include artillery_MedLow.ssc

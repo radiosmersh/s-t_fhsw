@@ -1,0 +1,48 @@
+newPatch
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/GE_ArtRequestRadio.wav
+minDistance 2
+dopplerOff
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 2
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/GE_ArtConfirmedRadio.wav
+minDistance 2
+dopplerOff
+priority 10
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 10
+	param 10
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 2
+	param 1
+	param -1
+endEffect

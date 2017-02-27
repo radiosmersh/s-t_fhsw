@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/GMCEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/GMCEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/GMCEngine.ssc

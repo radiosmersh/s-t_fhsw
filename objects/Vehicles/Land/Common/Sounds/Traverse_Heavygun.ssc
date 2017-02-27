@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Traverse_Heavygun.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Traverse_Heavygun.ssc
+	
+#templateLevel LOW
+
+	#include Low/Traverse_Heavygun.ssc

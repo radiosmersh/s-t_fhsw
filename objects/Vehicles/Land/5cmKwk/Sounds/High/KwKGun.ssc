@@ -1,0 +1,100 @@
+newPatch
+
+#################################################
+load @ROOT/Sound/@RTD/Vehicle_Sturm_gunbase_1.wav
+loop
+volume .5
+minDistance 10
+dopplerOff
+priority -7
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.3
+	param 0
+endEffect
+
+*** Pitch Offset ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.45
+	param 0
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 40
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 70
+	param 1
+	param -1
+endEffect
+
+#################################################
+load @ROOT/Sound/@RTD/Vehicle_Sturm_gunbase_2.wav
+loop
+minDistance 5
+volume .34
+dopplerOff
+priority -7
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default 
+	envelope Ramp
+	param 1
+	param 0
+	param .5
+	param .08
+	param 2
+	param .16
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 60
+	param 1
+	param -1	
+endEffect

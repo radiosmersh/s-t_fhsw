@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include P08High.ssc
+	
+#templateLevel MEDIUM
+
+	#include P08Medium.ssc
+	
+#templateLevel LOW
+
+	#include P08Low.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Wz29SniperHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include Wz29SniperMedium.ssc
+	
+#templateLevel LOW
+
+	#include Wz29SniperLow.ssc

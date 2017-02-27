@@ -1,0 +1,38 @@
+
+
+rem *** e_shellplane ***
+ObjectTemplate.create EffectBundle e_shellplane
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_shellplane
+ObjectTemplate.setPosition 0/0.01/-0.264
+ObjectTemplate.setRotation -9.993/-4.994/0.034
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** Em_shellplane ***
+ObjectTemplate.create Emitter Em_shellplane
+ObjectTemplate.template Fx_shellplane
+ObjectTemplate.addEmitterSpeed 0.05
+ObjectTemplate.emitterSpeedScale 0.1
+ObjectTemplate.lodDistance 500
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0.01/1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.5/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0.4/1
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.0/0.0/0
+ObjectTemplate.rotationalSpeedInDof CRD_EXPONENTIAL/-20/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/4/0/1
+ObjectTemplate.startRotation CRD_NONE/150/0/0
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** Fx_shellplane ***
+ObjectTemplate.create Particle Fx_shellplane
+ObjectTemplate.geometry shellplaneHI_m1
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0
+ObjectTemplate.size CRD_NONE/0.5/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.5/0/0

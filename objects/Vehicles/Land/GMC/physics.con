@@ -1,0 +1,132 @@
+
+
+rem *** gmcEngine ***
+ObjectTemplate.create Engine gmcEngine
+ObjectTemplate.setNetworkableInfo gmcEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/GMCEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate gmcFrontWheelR
+ObjectTemplate.setPosition 0.968/-0.62/2.431
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate gmcFrontWheelL
+ObjectTemplate.setPosition -0.959/-0.62/2.431
+ObjectTemplate.addTemplate gmcBackSpringR
+ObjectTemplate.setPosition 1.031/-0.62/-1.855
+ObjectTemplate.addTemplate gmcBackSpringR2
+ObjectTemplate.setPosition 1.031/-0.62/-3.049
+ObjectTemplate.addTemplate gmcBackSpringL
+ObjectTemplate.setPosition -1.029/-0.62/-1.855
+ObjectTemplate.addTemplate gmcBackSpringL2
+ObjectTemplate.setPosition -1.029/-0.62/-3.049
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 5.6
+ObjectTemplate.setDifferential 4.0
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.1
+
+
+rem *** gmcFrontSpringR ***
+ObjectTemplate.create Spring gmcFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry gmc_frtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** gmcFrontSpringL ***
+ObjectTemplate.create Spring gmcFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry gmc_frtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** gmcBackSpringR ***
+ObjectTemplate.create Spring gmcBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry gmc_rrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+rem *** gmcBackSpringR2 ***
+ObjectTemplate.create Spring gmcBackSpringR2
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry gmc_rrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** gmcBackSpringL ***
+ObjectTemplate.create Spring gmcBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry gmc_lrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+rem *** gmcBackSpringL2 ***
+ObjectTemplate.create Spring gmcBackSpringL2
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry gmc_lrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4

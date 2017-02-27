@@ -1,0 +1,120 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/tnkfireempty.wav
+relativePosition 0/0/0
+stereo
+priority 10
+minDistance 15
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/37mm.wav
+minDistance 200
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 160
+	param 1
+	param -1	
+endEffect
+
+###########
+### Far ###
+###########
+#include ../../../Common/Sounds/DistantTankFireSmall.ssc
+
+##################
+### After Fire ###
+##################
+#include ../../../Common/Sounds/PostFireTank.ssc
+
+##############
+### Reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Lig_Eject_067.wav
+minDistance 1
+relativePosition 0.010/0/0.010
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 0.2
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+##############
+### Reload ###
+##############
+load @ROOT/Sound/@RTD/Tankrel_Lig_Load_Close_086.wav
+minDistance 1
+relativePosition 0.010/0/0.010
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.02
+	param 1.02
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect

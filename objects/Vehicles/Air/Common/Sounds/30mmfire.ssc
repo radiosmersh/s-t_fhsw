@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/30mmfire.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/30mmfire.ssc
+	
+#templateLevel LOW
+
+	#include Low/30mmfire.ssc

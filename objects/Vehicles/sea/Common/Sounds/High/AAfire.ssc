@@ -1,0 +1,31 @@
+################
+### Left far ###
+################
+newPatch
+load @ROOT/Sound/@RTD/WSAAAFIRE2.wav
+minDistance 3.8
+;relativePosition 1.8/.2/0
+randomStartPitch 0.02 / 0.02
+dopplerOff
+priority 10
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 200
+	param 1
+	param -1	
+endEffect
+

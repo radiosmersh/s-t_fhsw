@@ -1,0 +1,19 @@
+
+
+rem *** e_WaterFrontTank***
+ObjectTemplate.create EffectBundle e_WaterFrontTank
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/e_WaterFront.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_WaterFront
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Em_WaterFoam
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Em_WaterFrontR
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Em_WaterFoamR
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.minDistanceUnderwaterSurface 0
+ObjectTemplate.maxDistanceUnderwaterSurface 1

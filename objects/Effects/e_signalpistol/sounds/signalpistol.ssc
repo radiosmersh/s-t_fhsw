@@ -1,0 +1,31 @@
+newPatch
+
+load @ROOT/Sound/@RTD/e_signalpistol.wav
+minDistance 10
+randomStartPitch 0.08 / 0.05
+volume 10
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0.0
+	param 100
+	param 1
+	param -1
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.0
+	param 0.0
+	param 0
+	param 1
+endEffect
+
+trigger Volume

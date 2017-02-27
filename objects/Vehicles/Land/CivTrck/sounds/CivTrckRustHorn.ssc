@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivTrckHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivTrckHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivTrckHorn.ssc

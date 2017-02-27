@@ -1,0 +1,164 @@
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/browningrel.wav
+minDistance 1
+trigger Volume
+stereo
+dopplerOff
+priority 10
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.5
+	param 0.5
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/50cal_release.wav
+minDistance 30
+dopplerOff
+priority -1
+volume 0.5
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.1
+	param 0
+	param 0
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 120
+	param 160
+	param 1
+	param -1
+endEffect
+
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/browningcal30.wav
+minDistance 1
+stereo
+loop
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 3
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/browningcal30mono.wav
+minDistance 16
+loop
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 3
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 60
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/MGdisthighsound/m1919dist.wav
+minDistance 21
+loop
+priority 7
+randomStartPitch 0 / 0
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 60
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 180
+	param 1
+	param -1
+endEffect
+
+

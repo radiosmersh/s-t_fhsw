@@ -1,0 +1,50 @@
+rem
+rem *** e_FlamethrowerFire ***
+rem
+ObjectTemplate.create EffectBundle e_FlamethrowerFire
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
+ObjectTemplate.timeToLive CRD_NONE/6/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_FlamethrowerFire
+rem -------------------------------------
+
+rem *** Em_FlamethrowerFire ***
+ObjectTemplate.create Emitter Em_FlamethrowerFire
+ObjectTemplate.template Fx_FlamethrowerFire
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 0
+ObjectTemplate.lodDistance 500
+ObjectTemplate.timeToLive CRD_UNIFORM/2/0/0
+ObjectTemplate.intensity CRD_NONE/15/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0.3/-0.3/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0.3/-0.3/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+
+rem *** Fx_FlamethrowerFire ***
+ObjectTemplate.create SpriteParticle Fx_FlamethrowerFire
+ObjectTemplate.timeToLive CRD_UNIFORM/0.65/0.65/0
+ObjectTemplate.size CRD_NONE/2.0/2.0/0
+ObjectTemplate.XYSizeRatio CRD_NONE/.5/0/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.7/0/0
+ObjectTemplate.sizeOverTime 0/1|61/1|86/1|100/1
+
+rem ***Rad testing********
+rem ObjectTemplate.texture e_flamethrower
+ObjectTemplate.texture e_Fire256
+rem *********************
+
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/0/10/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_NONE/10/0/0
+ObjectTemplate.colorRGBAOverTime 0/0/0/0/0|3/255/255/255/255|85/255/255/255/191|100/255/255/255/0
+ObjectTemplate.numAnimationFrames 16
+ObjectTemplate.initAnimationFrame CRD_NONE/1/0/0
+ObjectTemplate.animationSpeed CRD_NONE/100/100/0
+ObjectTemplate.animationSpeedOverTime 0/1|100/0.200049

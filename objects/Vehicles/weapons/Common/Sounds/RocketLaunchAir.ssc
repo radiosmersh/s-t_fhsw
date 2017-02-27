@@ -1,0 +1,54 @@
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/rktfireair.wav
+minDistance 20
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 9
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.75
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 250
+	param 1
+	param -1
+endEffect
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/Rocket_launch.wav
+minDistance 60
+randomStartPitch 0.07 / 0.07
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 250
+	param 1
+	param -1
+endEffect

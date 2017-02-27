@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KubelEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KubelEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/KubelEngine.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include MosinNagantSniperHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include MosinNagantSniperMedium.ssc
+	
+#templateLevel LOW
+
+	#include MosinNagantSniperLow.ssc

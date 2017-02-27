@@ -1,0 +1,66 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/76mmShip.wav
+minDistance 250
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 250
+	param 1
+	param -1	
+endEffect
+
+######################
+### Shell Far Dist ###
+######################
+#include DistantShipFireAA.ssc
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/Tnkmedrel_sher.wav
+minDistance 3
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.6
+	param 1.6
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 3
+	param 1
+	param -1
+endEffect
+
+

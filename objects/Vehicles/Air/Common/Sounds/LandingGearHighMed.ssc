@@ -1,0 +1,357 @@
+################
+### Gear Out ###
+################
+newPatch
+
+##################
+### Gear Start ###
+##################
+load @ROOT/Sound/@RTD/lg3.wav
+minDistance 1
+randomStartPitch .03/.03
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+###############
+### Gear Out ##
+###############
+
+load @ROOT/Sound/@RTD/lghi.wav
+loop
+minDistance 3
+dopplerOff
+volume .2
+randomStartPitch .03/.03
+priority 3
+*** Gear start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param .8
+	param 0
+	param 1
+endEffect
+
+*** Gear start Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Time
+	envelope Ramp
+	param 0
+	param 1
+	param .23
+	param .24
+	param 3
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.9
+	param 1
+	param -1	
+endEffect
+
+#################
+### Gear Out 2 ##
+#################
+
+load @ROOT/Sound/@RTD/lcvphirpm.wav
+loop
+minDistance 3
+dopplerOff
+volume .9
+randomStartPitch .03/.03
+priority 3
+*** Gear start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Gear start Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Time
+	envelope Ramp
+	param 0
+	param 1
+	param .7
+	param .75
+	param 3
+	param 4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.9
+	param 1
+	param -1	
+endEffect
+
+#################
+### Gear Stop ###
+#################
+
+load @ROOT/Sound/@RTD/LG2.wav
+minDistance 2
+trigger Release
+randomStartPitch .03/.03
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+##############
+### Gear In ##
+##############
+newPatch
+
+##################
+### Gear Start ###
+##################
+load @ROOT/Sound/@RTD/lg5.wav
+minDistance 1
+randomStartPitch .03/.03
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+##############
+### Gear In ##
+##############
+
+load @ROOT/Sound/@RTD/lghi.wav
+loop
+minDistance 3
+dopplerOff
+volume .1
+randomStartPitch .03/.03
+priority 3
+*** Gear start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param .8
+	param 0
+	param 1
+endEffect
+
+*** Gear start Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Time
+	envelope Ramp
+	param 0
+	param 1
+	param .25
+	param .26
+	param 3
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.9
+	param 1
+	param -1	
+endEffect
+
+################
+### Gear In 2 ##
+################
+
+load @ROOT/Sound/@RTD/lcvphirpm.wav
+loop
+minDistance 3
+dopplerOff
+volume .9
+randomStartPitch .03/.03
+priority 3
+*** Gear start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Gear start Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Time
+	envelope Ramp
+	param 0
+	param 1
+	param .7
+	param .75
+	param 3
+	param 4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 10
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+*** Gear stop Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.9
+	param 1
+	param -1	
+endEffect
+
+#################
+### Gear Stop ###
+#################
+
+load @ROOT/Sound/@RTD/lg1.wav
+minDistance 2
+trigger Release
+randomStartPitch .03/.03
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/LandspotterCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/LandspotterCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/LandspotterCannon.ssc

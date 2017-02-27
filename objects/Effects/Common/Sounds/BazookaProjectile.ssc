@@ -1,0 +1,158 @@
+#templateLevel HIGH
+newPatch
+
+load @ROOT/Sound/@RTD/Rocket_loop.wav
+loop
+minDistance 16
+randomStartPitch 0.05 / 0.05
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.06
+	param 0.1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/missilesmk.wav
+loop
+minDistance 5
+randomStartPitch 0.05 / 0.05
+volume .5
+priority 5
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 0.2
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 50
+	param 1
+	param -1
+endEffect
+
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.65
+	param 0.05
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 90
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Rocket_launch.wav
+loop
+minDistance 20
+priority 8
+randomStartPitch 0.06 / 0.0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 80
+	param 1
+	param -1
+endEffect
+
+
+#templateLevel MEDIUM
+
+newPatch
+load @ROOT/Sound/@RTD/Rocket_loop.wav
+loop
+minDistance 16
+randomStartPitch 0.05 / 0.05
+priority 5
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.06
+	param 0.1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1
+endEffect
+
+
+#templateLevel LOW
+
+newPatch
+load @ROOT/Sound/@RTD/Rocket_loop.wav
+loop
+minDistance 16
+randomStartPitch 0.05 / 0.05
+priority 5
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.06
+	param 0.1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1
+endEffect

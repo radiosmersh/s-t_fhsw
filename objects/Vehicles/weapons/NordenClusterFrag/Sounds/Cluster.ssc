@@ -1,0 +1,92 @@
+newPatch
+
+load @ROOT/Sound/@RTD/bombair.wav
+loop
+minDistance 16
+randomStartPitch 0.05 / 0.05
+volume .7
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 0.5
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 100
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/bombwhine.wav
+loop
+minDistance 20
+randomStartPitch 0.05 / 0.05
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 0.5
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 80
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/haxxar.wav
+loop
+minDistance 2
+randomStartPitch 0.05/0.05
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 0.8
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.4
+	param 0.05
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 15
+	param 90
+	param 1
+	param -1
+endEffect

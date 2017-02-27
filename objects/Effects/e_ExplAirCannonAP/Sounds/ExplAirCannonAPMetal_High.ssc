@@ -1,0 +1,146 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/MGAPhit1.wav
+minDistance 7.5
+randomStartPitch 0.05 / 0.05
+volume 0.7
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 25
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/MGAPhit2.wav
+minDistance 7.5
+randomStartPitch 0.05 / 0.05
+volume 0.7
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 25
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/MGAPhit3.wav
+minDistance 7.5
+randomStartPitch 0.05 / 0.05
+volume 0.7
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 25
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/MGAPhit4.wav
+minDistance 7.5
+randomStartPitch 0.05 / 0.05
+volume 0.7
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 25
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/MGAPhit5.wav
+minDistance 7.5
+randomStartPitch 0.05 / 0.05
+volume 0.7
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 25
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/MGAPhit6.wav
+minDistance 7.5
+randomStartPitch 0.05 / 0.05
+volume 0.7
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 25
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 7 ###
+###############
+load @ROOT/Sound/@RTD/MGAPhit7.wav
+minDistance 7.5
+randomStartPitch 0.05 / 0.05
+volume 0.7
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 25
+	param 1
+	param -1	
+endEffect
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1
+

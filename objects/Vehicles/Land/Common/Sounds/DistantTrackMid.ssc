@@ -1,0 +1,47 @@
+load @ROOT/Sound/@RTD/tnkdst.wav
+loop
+minDistance 20
+relativePosition -1/0/0
+volume .8
+priority 5
+*** Speed Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Speed
+	envelope Linear
+	param 0.8
+	param 0.02
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 15
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 30
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 240
+	param 1
+	param -1
+endEffect

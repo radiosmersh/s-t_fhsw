@@ -1,0 +1,78 @@
+newPatch
+
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/FR_Grenade_Throw1.wav
+randomStartPitch 0.05 / 0.05
+volume 1
+minDistance 5
+dopplerOff
+priority 11
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/FR_Grenade_Throw2.wav
+randomStartPitch 0.05 / 0.05
+volume 1
+minDistance 5
+dopplerOff
+priority 11
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/FR_Grenade_Throw3.wav
+randomStartPitch 0.05 / 0.05
+volume 1
+minDistance 5
+dopplerOff
+priority 11
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/FR_Grenade_Throw4.wav
+randomStartPitch 0.05 / 0.05
+volume 1
+minDistance 5
+dopplerOff
+priority 11
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

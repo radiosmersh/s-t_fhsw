@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/LandsupplyTower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/LandsupplyTower.ssc
+	
+#templateLevel LOW
+
+	#include Low/LandsupplyTower.ssc

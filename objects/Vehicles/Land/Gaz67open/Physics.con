@@ -1,0 +1,86 @@
+
+
+rem *** Gaz67openEngine ***
+ObjectTemplate.create Engine Gaz67openEngine
+ObjectTemplate.setNetworkableInfo Gaz67OpenEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/Gaz67Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 7.2
+ObjectTemplate.setDifferential 4.1
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.addTemplate Gaz67OpenFrontWheelR
+ObjectTemplate.setPosition 0.6/0.00699999/1.0
+ObjectTemplate.addTemplate Gaz67OpenFrontWheelL
+ObjectTemplate.setPosition -0.6/0.00699999/1.0
+ObjectTemplate.addTemplate Gaz67openBackSpringR
+ObjectTemplate.setPosition 0.655/-0.423/-1.21
+ObjectTemplate.addTemplate Gaz67openBackSpringL
+ObjectTemplate.setPosition -0.65/-0.423/-1.21
+
+
+rem *** Gaz67openFrontSpringR ***
+ObjectTemplate.create Spring Gaz67openFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Gaz67open_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+
+
+rem *** Gaz67openFrontSpringL ***
+ObjectTemplate.create Spring Gaz67openFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Gaz67open_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+
+
+rem *** Gaz67openBackSpringR ***
+ObjectTemplate.create Spring Gaz67openBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Gaz67open_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+
+
+rem *** Gaz67openBackSpringL ***
+ObjectTemplate.create Spring Gaz67openBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Gaz67open_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+ObjectTemplate.addTemplate e_wdustwheelFL
+ObjectTemplate.addTemplate e_wdustWheelF

@@ -1,0 +1,320 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact1.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact2.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact3.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact4.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact5.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact6.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 7 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact7.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 8 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact8.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 9 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact9.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+################
+### SOUND 10 ###
+################
+load @ROOT/Sound/@RTD/fleshimpact10.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .9
+priority 7
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1
+
+###############
+### HARNESS ###
+###############
+newPatch
+
+load @ROOT/Sound/@RTD/SoMeRu1.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+priority -3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 70
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.20
+	param 0.20
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoMeRu2.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+priority -3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 70
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.20
+	param 0.20
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoMeRu3.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+priority -3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 70
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.20
+	param 0.20
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoMeRu4.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+priority -3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 70
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.20
+	param 0.20
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+randomPlay 1

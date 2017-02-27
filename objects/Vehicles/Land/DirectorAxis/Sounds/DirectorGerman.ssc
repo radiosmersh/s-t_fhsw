@@ -1,0 +1,74 @@
+newPatch
+load @ROOT/Sound/@RTD/GE_enemyspoted_Tank1.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/GE_enemyspoted_Tank2.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/GE_enemyspoted_Tank3.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/GE_enemyspoted_Tank4.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

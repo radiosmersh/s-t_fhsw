@@ -1,0 +1,92 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/tnkmed_int_fire.wav
+relativePosition 0/0/0
+stereo
+priority 10
+minDistance 15
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/50mmKWK39.wav
+minDistance 200
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 160
+	param 1
+	param -1	
+endEffect
+
+###########
+### Far ###
+###########
+load @ROOT/Sound/@RTD/Tankfire_dst_small.wav
+minDistance 140
+relativePosition 0/0/0
+priority 5
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.2
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 140
+	param 140
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 500
+	param 1
+	param -1	
+endEffect
+
+##############
+### Reload ###
+##############
+#include ../../../Common/Sounds/Gerintfire02.ssc

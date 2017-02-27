@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Type100S_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Type100S_Medium.ssc
+	
+#templateLevel LOW
+
+	#include Type100S_Low.ssc

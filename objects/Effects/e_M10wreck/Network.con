@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo M10Wreckstay_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo M10WreckstayEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

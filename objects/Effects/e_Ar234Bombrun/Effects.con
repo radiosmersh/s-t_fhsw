@@ -1,0 +1,427 @@
+
+rem *** e_Ar234Bombrun ***
+ObjectTemplate.create EffectBundle e_Ar234Bombrun
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234BombrunSpawner
+ObjectTemplate.setPosition 0/2/0
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+rem -------------------------------------
+
+
+rem *** Ar234BombrunSpawner*** 
+ObjectTemplate.create ObjectSpawner Ar234BombrunSpawner
+ObjectTemplate.setObjectTemplate 1 Ar234Bombrun
+ObjectTemplate.setObjectTemplate 2 Ar234Bombrun
+ObjectTemplate.holdObject 0 
+ObjectTemplate.minSpawnDelay 200 
+ObjectTemplate.maxSpawnDelay 200 
+objecttemplate.timetolive 0
+objecttemplate.distance 10
+objecttemplate.damagewhenlost 100
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.team 1 
+
+rem *** Ar234Bombrun***
+ObjectTemplate.create PlayerControlObject Ar234Bombrun
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.material 126
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1000
+ObjectTemplate.criticalDamage 251
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.aiTemplate Ar234BombrunAI
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234Bombrun_body
+ObjectTemplate.setRandomGeometries 5
+rem -------------------------------------
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon ""
+ObjectTemplate.setVehicleIconPos 45/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** Ar234Bombrun_body1 ***
+ObjectTemplate.create Bundle Ar234Bombrun_body1
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234Path1Straight1
+ObjectTemplate.setPosition 0/80/0
+rem -------------------------------------
+
+rem *** Ar234Bombrun_body2 ***
+ObjectTemplate.create Bundle Ar234Bombrun_body2
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234Path1Straight1
+ObjectTemplate.setPosition 0/120/0
+ObjectTemplate.setRotation 78/0/0
+rem -------------------------------------
+
+rem *** Ar234Bombrun_body3 ***
+ObjectTemplate.create Bundle Ar234Bombrun_body3
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234Path1Straight1
+ObjectTemplate.setPosition 0/150/0
+ObjectTemplate.setRotation -78/0/0
+rem -------------------------------------
+
+rem *** Ar234Bombrun_body4 ***
+ObjectTemplate.create Bundle Ar234Bombrun_body4
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234Path1Straight1
+ObjectTemplate.setPosition 0/65/0
+ObjectTemplate.setRotation 92/0/0
+rem -------------------------------------
+
+rem *** Ar234Bombrun_body5 ***
+ObjectTemplate.create Bundle Ar234Bombrun_body5
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234Path1Straight1
+ObjectTemplate.setPosition 0/90/0
+ObjectTemplate.setRotation -135/0/0
+rem -------------------------------------
+
+
+rem *** lodAr234BombrunCockpit ***
+ObjectTemplate.create LodObject lodAr234BombrunCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234BombrunCockpitExternal
+ObjectTemplate.addTemplate Ar234BombrunCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector Ar234BombrunCockpitSelector
+
+rem *** Ar234BombrunCockpitExternal ***
+ObjectTemplate.create SimpleObject Ar234BombrunCockpitExternal
+ObjectTemplate.geometry Wreck_M10_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.CreateInvisible 0
+
+rem *** Ar234BombrunCockpitInternal ***
+ObjectTemplate.create SimpleObject Ar234BombrunCockpitInternal
+ObjectTemplate.geometry 
+
+rem *** Ar234BombrunCockpitSelector***
+LodSelectorTemplate.create DistCompareSelector Ar234BombrunCockpitSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** Ar234Path1Straight1 ***
+ObjectTemplate.create RotationalBundle Ar234Path1Straight1
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_RunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate Ar234Path1Straight2
+ObjectTemplate.setPosition 0/2000/0
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/1/0
+ObjectTemplate.setAcceleration 0/1/0
+ObjectTemplate.setContinousRotationSpeed 0/1/0
+
+rem *** Ar234Path1Straight2 ***
+ObjectTemplate.create RotationalBundle Ar234Path1Straight2
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_RunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate Ar234Path1Straight3
+ObjectTemplate.setPosition 0/-2000/0
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/-180/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/-2/0
+ObjectTemplate.setAcceleration 0/-2/0
+ObjectTemplate.setContinousRotationSpeed 0/-2/0
+
+rem *** Ar234Path1Straight3 ***
+ObjectTemplate.create RotationalBundle Ar234Path1Straight3
+ObjectTemplate.setNetworkableInfo Ar234Bombrun_RunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate Ar234StaticSpawner
+ObjectTemplate.setPosition 0/0/-2000
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/1/0
+ObjectTemplate.setAcceleration 0/1/0
+ObjectTemplate.setContinousRotationSpeed 0/1/0
+
+
+ObjectTemplate.create ObjectSpawner Ar234StaticSpawner
+ObjectTemplate.setObjectTemplate 1 Ar234-bombrun
+ObjectTemplate.setObjectTemplate 2 Ar234-bombrun
+ObjectTemplate.minSpawnDelay 15
+ObjectTemplate.maxSpawnDelay 15
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 10
+
+
+
+
+rem *** Ar234-bombrun***
+ObjectTemplate.create PlayerControlObject Ar234-bombrun
+ObjectTemplate.setNetworkableInfo ar234_body_info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.095
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.5/0.5/0.6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 24
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 70 em_b17Damage -2.201/-0.476/1
+ObjectTemplate.addArmorEffect 70 em_PlaneDamage -2.201/-0.476/1
+ObjectTemplate.addArmorEffect 70 em_b17Damage 2.207/-0.476/1
+ObjectTemplate.addArmorEffect 70 em_PlaneDamage 2.207/-0.476/1
+ObjectTemplate.addArmorEffect 50 e_StukaFire -2.201/-0.476/1
+ObjectTemplate.addArmorEffect 50 e_StukaFire 2.207/-0.476/1
+ObjectTemplate.addArmorEffect 0 e_ExplGas -2.201/-0.476/1
+ObjectTemplate.addArmorEffect 0 e_ExplGas 2.207/-0.476/1
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_ar234 0/0/1
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/1
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate ar234
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAr234-bombrun
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-1 0/0/0
+ObjectTemplate.GUIIndex 32
+ObjectTemplate.setVehicleIcon "Vehicle/icon_ar234.tga"
+ObjectTemplate.setVehicleIconPos 113/115
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmger.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_bomb1000.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Incoming_16x16.tga"
+
+
+
+rem *** lodAr234-bombrun ***
+ObjectTemplate.create LodObject lodAr234-bombrun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234-bombrunComplex
+ObjectTemplate.addTemplate ar234Simple
+ObjectTemplate.addTemplate ar234Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ar234LodSelector
+
+
+rem *** Ar234-bombrunComplex ***
+ObjectTemplate.create Bundle Ar234-bombrunComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodar234Cockpit
+ObjectTemplate.addTemplate ar234aileronleft
+ObjectTemplate.setPosition -6.158/0.111/-1.828
+ObjectTemplate.setRotation 5.5/0/0
+ObjectTemplate.addTemplate ar234aileronright
+ObjectTemplate.setPosition 6.166/0.111/-1.828
+ObjectTemplate.setRotation -5.5/0/0
+ObjectTemplate.addTemplate ar234BodyWingVertical
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate ar234Elevatorleft
+ObjectTemplate.setPosition -1.319/0.647/-8.098
+ObjectTemplate.addTemplate ar234Elevatorright
+ObjectTemplate.setPosition 1.327/0.646/-8.098
+ObjectTemplate.addTemplate ar234Rudder
+ObjectTemplate.setPosition 0.003/1.201/-8.384
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Ar234-bombrun_Enginefake
+ObjectTemplate.setPosition -2.201/-0.476/1.115
+ObjectTemplate.addTemplate Ar234-bombrun_Enginefake
+ObjectTemplate.setPosition 2.207/-0.476/1.115
+ObjectTemplate.addTemplate Ar234-bombrun_Engine
+ObjectTemplate.addTemplate ar234_cockpit_m1
+ObjectTemplate.setPosition -0.001/-0.401/3.725
+ObjectTemplate.addTemplate Ar234BombSpawner
+ObjectTemplate.setPosition -2.201/-1.476/1.115
+ObjectTemplate.addTemplate Ar234BombSpawner2
+ObjectTemplate.setPosition 2.207/-1.476/1.115
+rem -------------------------------------
+
+
+
+ObjectTemplate.create RotationalBundle Ar234-bombrun_Engine
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate Ar234PropellerBlurred
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/500
+ObjectTemplate.setContinousRotationSpeed 0/0/500
+
+rem *** Ar234-bombrun_Enginefake ***
+ObjectTemplate.create Engine Ar234-bombrun_Enginefake
+ObjectTemplate.setNetworkableInfo Ar234EngineInfo
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/600
+ObjectTemplate.setAcceleration 5/0/250
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 9
+ObjectTemplate.setDifferential 4
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.7
+ObjectTemplate.setNoPropellerEffectAtSpeed 60
+
+
+rem *** Ar234BombSpawner ***
+ObjectTemplate.create ObjectSpawner Ar234BombSpawner
+ObjectTemplate.setObjectTemplate 1 Ar234-bombVehicle
+ObjectTemplate.setObjectTemplate 2 Ar234-bombVehicle
+ObjectTemplate.minSpawnDelay 14
+ObjectTemplate.maxSpawnDelay 14
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** Ar234BombSpawner2 ***
+ObjectTemplate.create ObjectSpawner Ar234BombSpawner2
+ObjectTemplate.setObjectTemplate 1 Ar234-bombVehicle
+ObjectTemplate.setObjectTemplate 2 Ar234-bombVehicle
+ObjectTemplate.minSpawnDelay 15
+ObjectTemplate.maxSpawnDelay 15
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** Ar234-bombVehicle ***
+ObjectTemplate.create PlayerControlObject Ar234-bombVehicle
+ObjectTemplate.setNetworkableInfo ATMineInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 40
+ObjectTemplate.explosionDamage 10
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.hpLostWhileDamageFromWater 100
+ObjectTemplate.material 126
+ObjectTemplate.explosionForceMod 100
+ObjectTemplate.addArmorEffect 0 e_ExplAni02big 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate ATMine
+ObjectTemplate.timetoliveafterdeath 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAr234-bombVehicle
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4/0.243/-2 0/0/0
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** lodAr234-bombVehicle ***
+ObjectTemplate.create LodObject lodAr234-bombVehicle
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ar234-bombVehicleComplex
+ObjectTemplate.addTemplate Ar234-bombVehicleSimple
+ObjectTemplate.setRotation 0/90/0
+ObjectTemplate.addTemplate Ar234-bombVehicleWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Ar234-bombrunLodSelector
+
+
+rem *** Ar234-bombVehicleComplex ***
+ObjectTemplate.create Bundle Ar234-bombVehicleComplex
+ObjectTemplate.geometry Shell1250mmhi_Spawn_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript ../../Vehicles/Air/Common/Sounds/Bomb.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Shell_Engine
+rem -------------------------------------
+
+rem *** Ar234-bombrunSimple ***
+ObjectTemplate.create SimpleObject Ar234-bombVehicleSimple
+ObjectTemplate.geometry 1kkgbomb_M1
+
+rem *** Ar234-bombVehicleWreck ***
+ObjectTemplate.create SimpleObject Ar234-bombVehicleWreck
+ObjectTemplate.geometry 1kkgbomb_M1
+ObjectTemplate.createinvisible 1
+
+
+rem *** Ar234-bombrunLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Ar234-bombrunLodSelector
+LodSelectorTemplate.addLodDistance 1
+LodSelectorTemplate.hasDestroyedLod 1

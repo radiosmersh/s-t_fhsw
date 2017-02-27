@@ -1,0 +1,50 @@
+#templateLevel HIGH
+
+newPatch
+
+############
+### Hull ###
+############
+load @ROOT/Sound/@RTD/Plane_Stress_6.wav
+loop
+minDistance 3
+relativePosition 2/0/0
+volume 1.1
+priority 7
+
+*** Hull Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Acceleration
+	envelope Ramp
+	param 10
+	param 30
+	param 0
+	param 1
+	param 2
+	param 1.7
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 20
+	param 40
+	param 0
+	param 1
+	param 2
+	param 2
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 7
+	param 7
+	param 1
+	param -1	
+endEffect

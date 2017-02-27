@@ -1,0 +1,1223 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 20
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 50
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horsen_matuken.wav
+minDistance 50
+dopplerOff
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 100
+	param 1
+	param -1	
+endEffect
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1

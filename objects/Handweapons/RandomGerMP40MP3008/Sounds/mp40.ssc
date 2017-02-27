@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include mp40High.ssc
+	
+#templateLevel MEDIUM
+
+	#include mp40Medium.ssc
+	
+#templateLevel LOW
+
+	#include mp40Low.ssc

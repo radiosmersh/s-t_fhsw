@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivCpeRustEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivCpeRustEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivCpeRustEngine.ssc

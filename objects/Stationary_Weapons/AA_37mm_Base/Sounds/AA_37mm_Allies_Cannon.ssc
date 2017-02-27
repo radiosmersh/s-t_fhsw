@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/AA_37mm_Allies_Cannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/AA_37mm_Allies_Cannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/AA_37mm_Allies_Cannon.ssc

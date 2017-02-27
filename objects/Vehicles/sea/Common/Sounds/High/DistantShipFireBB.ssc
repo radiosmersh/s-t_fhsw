@@ -1,0 +1,49 @@
+load @ROOT/Sound/@RTD/ShipgunfireBB.wav
+minDistance 200
+stereo
+randomStartPitch 0.1 / 0.1
+dopplerOff
+priority 6
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.85
+	param 0
+endEffect
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 500
+	param 500
+	param 0
+	param .8
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 500
+	param 2000
+	param .8
+	param -1
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 0
+	param 1
+endEffect
+
+trigger Volume

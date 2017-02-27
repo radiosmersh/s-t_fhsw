@@ -1,0 +1,68 @@
+newPatch
+
+####################
+### fire sound 1 ###
+####################
+
+load @ROOT/Sound/@RTD/bmbreal1.wav
+minDistance 20
+randomStartPitch 0.05 / 0.05
+priority 5
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.75
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 180
+	param 1
+	param -1
+endEffect
+
+####################
+### fire sound 2 ###
+####################
+
+load @ROOT/Sound/@RTD/bmbreal3.wav
+minDistance 20
+randomStartPitch 0.05 / 0.05
+priority 5
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.75
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 180
+	param 1
+	param -1
+endEffect

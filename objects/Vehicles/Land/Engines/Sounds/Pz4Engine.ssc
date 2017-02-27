@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Pz4Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HL120Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/HL120Engine.ssc

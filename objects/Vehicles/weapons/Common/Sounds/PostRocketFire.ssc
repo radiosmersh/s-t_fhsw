@@ -1,0 +1,168 @@
+##################
+### After Fire ###
+##################
+load @ROOT/Sound/@RTD/ShellwhineR1.wav
+loop
+minDistance 200
+randomStartPitch 0.05 / 0.05
+volume .7
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.8
+	param 1.3
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.8
+	param 0.9
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 250
+	param 1
+	param -1
+endEffect
+
+##################
+### After Fire ###
+##################
+load @ROOT/Sound/@RTD/ShellwhineR2.wav
+loop
+minDistance 5
+randomStartPitch 0.05 / 0.05
+volume .5
+priority 6
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.1
+	param 0.7
+endEffect
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.8
+	param 0.9
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 250
+	param 1
+	param -1
+endEffect
+
+##################
+### After Fire ###
+##################
+load @ROOT/Sound/@RTD/ShellwhineR3.wav
+loop
+minDistance 5
+randomStartPitch 0.05 / 0.05
+volume .5
+priority 6
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0.4
+endEffect
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.7
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.65
+	param 0.05
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 250
+	param 1
+	param -1
+endEffect
+
+##################
+### After Fire ###
+##################
+load @ROOT/Sound/@RTD/Rocket_loop.wav
+loop
+minDistance 20
+randomStartPitch 0.05/0.05
+volume .9
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0.05
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 80
+	param 1
+	param -1
+endEffect

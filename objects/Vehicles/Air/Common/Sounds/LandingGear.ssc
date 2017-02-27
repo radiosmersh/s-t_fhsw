@@ -1,0 +1,7 @@
+#templateLevel HIGH
+
+	#include LandingGearHighMed.ssc
+	
+#templateLevel MEDIUM
+
+	#include LandingGearHighMed.ssc

@@ -1,0 +1,80 @@
+ObjectTemplate.create HandFireArms Bangalore
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 4
+ObjectTemplate.projectileTemplate BangaloreProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectileVisible 0
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.GUIIndex 14
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_bangalore_64x32.tga"
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setHasMag 0
+ObjectTemplate.velocity 6
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.2
+ObjectTemplate.fireDelay 0.5
+ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 70
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType	2
+ObjectTemplate.loadSoundScript Sounds/Bangalore.ssc
+ObjectTemplate.createSkeleton animations/Landmine.ske
+ObjectTemplate.useSkeletonPartAsMain base
+ObjectTemplate.addTemplate BangaloreLod
+
+
+ObjectTemplate.create SimpleObject BangaloreSimple
+ObjectTemplate.geometry Shad_Bangalore
+
+ObjectTemplate.create AnimatedBundle BangaloreComplex
+ObjectTemplate.geometry Bangalore
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Landmine.ske
+
+ObjectTemplate.create LodObject BangaloreLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate BangaloreComplex
+ObjectTemplate.addTemplate BangaloreSimple
+
+
+ObjectTemplate.create Projectile BangaloreProjectile
+ObjectTemplate.networkableInfo ProjectileInfo
+ObjectTemplate.geometry BangaloreProjectile
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitPoints 9999
+ObjectTemplate.maxHitPoints 9999
+ObjectTemplate.explosionDamage 0
+rem *** Bangalores explodes after 10 seconds.
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.radius 15
+ObjectTemplate.ForceOnExplosion 50
+ObjectTemplate.DamageType 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.useMMOnEndEffect 1
+ObjectTemplate.material 70
+ObjectTemplate.material2 284
+ObjectTemplate.damageType 1
+ObjectTemplate.endEffectTemplate e_ExplGranade
+ObjectTemplate.noFFSound 1
+

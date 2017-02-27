@@ -1,0 +1,218 @@
+
+
+rem *** BeachBombardment***
+ObjectTemplate.create PlayerControlObject BeachBombardment
+ObjectTemplate.setNetworkableInfo BeachBombardment_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 10
+ObjectTemplate.maxhitpoints 10
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.material 126
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1000
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.aiTemplate BeachBombardmentAI
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate BeachBombardment_body
+ObjectTemplate.setRandomGeometries 5
+ObjectTemplate.setPosition 0/10/0
+rem -------------------------------------
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon ""
+ObjectTemplate.setVehicleIconPos 45/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** BeachBombardment_body1 ***
+ObjectTemplate.create Bundle BeachBombardment_body1
+ObjectTemplate.setNetworkableInfo BeachBombardment_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBeachBombardmentCockpit
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition -40/110/35
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 24/115/38
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition -40/115/-25
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 5/110/30
+rem -------------------------------------
+
+rem *** BeachBombardment_body2 ***
+ObjectTemplate.create Bundle BeachBombardment_body2
+ObjectTemplate.setNetworkableInfo BeachBombardment_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBeachBombardmentCockpit
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 40/110/-35
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition -24/115/-38
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 40/115/25
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition -5/110/-30
+rem -------------------------------------
+
+rem *** BeachBombardment_body3 ***
+ObjectTemplate.create Bundle BeachBombardment_body3
+ObjectTemplate.setNetworkableInfo BeachBombardment_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBeachBombardmentCockpit
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition -10/90/-10
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 20/125/20
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition -30/130/30
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 40/145/-40
+rem -------------------------------------
+
+rem *** BeachBombardment_body4 ***
+ObjectTemplate.create Bundle BeachBombardment_body4
+ObjectTemplate.setNetworkableInfo BeachBombardment_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBeachBombardmentCockpit
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 10/90/-10
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 20/95/-20
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 30/100/-30
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 40/105/-40
+rem -------------------------------------
+
+rem *** BeachBombardment_body5 ***
+ObjectTemplate.create Bundle BeachBombardment_body5
+ObjectTemplate.setNetworkableInfo BeachBombardment_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBeachBombardmentCockpit
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 10/90/0
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 20/100/0
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 30/110/0
+ObjectTemplate.addTemplate BeachBombardmentBombSpawner
+ObjectTemplate.setPosition 40/120/0
+rem -------------------------------------
+
+
+rem *** lodBeachBombardmentCockpit ***
+ObjectTemplate.create LodObject lodBeachBombardmentCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate BeachBombardmentCockpitExternal
+ObjectTemplate.addTemplate BeachBombardmentCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector BeachBombardmentCockpitSelector
+
+rem *** BeachBombardmentCockpitExternal ***
+ObjectTemplate.create SimpleObject BeachBombardmentCockpitExternal
+ObjectTemplate.geometry Wreck_M10_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.CreateInvisible 1
+
+rem *** BeachBombardmentCockpitInternal ***
+ObjectTemplate.create SimpleObject BeachBombardmentCockpitInternal
+ObjectTemplate.geometry 
+
+rem *** BeachBombardmentCockpitSelector***
+LodSelectorTemplate.create DistCompareSelector BeachBombardmentCockpitSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+
+rem *** BeachBombardmentBombSpawner ***
+ObjectTemplate.create ObjectSpawner BeachBombardmentBombSpawner
+ObjectTemplate.setObjectTemplate 1 BeachBombardmentBombVehicle
+ObjectTemplate.setObjectTemplate 2 BeachBombardmentBombVehicle
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 20
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** BeachBombardmentBombVehicle ***
+ObjectTemplate.create PlayerControlObject BeachBombardmentBombVehicle
+ObjectTemplate.setNetworkableInfo ATMineInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 25
+ObjectTemplate.explosionDamage 25
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.hpLostWhileDamageFromWater 100
+ObjectTemplate.material 126
+ObjectTemplate.explosionForceMod 100
+ObjectTemplate.addArmorEffect 0 e_ExplAni02big 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate ATMine
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBeachBombardmentBombVehicle
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4/0.243/-2 0/0/0
+ObjectTemplate.setMinimapIcon ""
+
+rem *** lodBeachBombardmentBombVehicle ***
+ObjectTemplate.create LodObject lodBeachBombardmentBombVehicle
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BeachBombardmentBombVehicleComplex
+ObjectTemplate.addTemplate BeachBombardmentBombVehicleSimple
+ObjectTemplate.setRotation 0/90/0
+rem -------------------------------------
+ObjectTemplate.lodSelector b25-bombrunLodSelector
+
+
+rem *** BeachBombardmentBombVehicleComplex ***
+ObjectTemplate.create Bundle BeachBombardmentBombVehicleComplex
+ObjectTemplate.geometry Shell1250mmhi_Spawn_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript ../../Vehicles/Air/Common/Sounds/Bomb.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Shell_Engine
+rem -------------------------------------
+
+rem *** B25-bombrunSimple ***
+ObjectTemplate.create SimpleObject BeachBombardmentBombVehicleSimple
+ObjectTemplate.geometry Big_Bomb_M1
+
+rem *** b25-bombrunLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 b25-bombrunLodSelector
+LodSelectorTemplate.addLodDistance 1

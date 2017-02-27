@@ -1,0 +1,18 @@
+newPatch
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/honk4.wav
+minDistance 30
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1	
+endEffect

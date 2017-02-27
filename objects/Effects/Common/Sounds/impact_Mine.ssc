@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include impact_Mine_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include impact_Mine_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include impact_Mine_MedLow.ssc

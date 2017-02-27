@@ -1,0 +1,129 @@
+newPatch
+########################################################################################################
+### Fire ###
+############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+priority 0
+
+#########################################################################################################
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+priority 0
+
+##########################################################################################################
+### Release ###
+###############
+newPatch
+
+load @ROOT/Sound/@RTD/flameloop_end.wav
+minDistance 2
+stereo
+dopplerOff
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 6
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/flameloop_end.wav
+minDistance 30
+dopplerOff
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 6
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 160
+	param 1
+	param -1
+endEffect
+
+###########################################################################################################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+priority 0
+
+############################
+### Mashine gun distance ###
+############################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+priority 0
+
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/flameloop_mid.wav
+minDistance 2
+stereo
+loop
+stop FinishSample
+dopplerOff
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 6
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/flameloop_mid.wav
+minDistance 30
+loop
+stop FinishSample
+dopplerOff
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 6
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 160
+	param 1
+	param -1
+endEffect

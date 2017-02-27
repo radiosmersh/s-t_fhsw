@@ -1,0 +1,62 @@
+newPatch
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+dopplerOff
+priority -10
+##############
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+dopplerOff
+priority -10
+###############
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+dopplerOff
+priority -10
+####################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+dopplerOff
+priority -10
+############################
+### Mashine gun distance ###
+############################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+dopplerOff
+priority -10
+ 
+newPatch
+
+load @ROOT/Sound/@RTD/Medkit.wav
+minDistance 1
+stereo
+loop
+stop FinishSample
+randomStartPitch 0.06 / 0.0
+volume .8
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include MG131AAZwillingHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include MG131AAZwillingMedium.ssc
+	
+#templateLevel LOW
+
+	#include MG131AAZwillingLow.ssc

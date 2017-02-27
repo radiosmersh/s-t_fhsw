@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include ColtHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include ColtMedium.ssc
+	
+#templateLevel LOW
+
+	#include ColtLow.ssc

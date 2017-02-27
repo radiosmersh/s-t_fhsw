@@ -1,0 +1,116 @@
+
+
+rem *** e_Blood01 ***
+ObjectTemplate.create EffectBundle e_Blood01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/richoblood.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_blood01
+ObjectTemplate.addTemplate Em_bloodhit
+ObjectTemplate.addTemplate Em_BloodSmoke
+ObjectTemplate.timeToLive CRD_NONE/0.5/0.5/0.5
+rem -------------------------------------
+
+rem *** Em_blood01 ***
+ObjectTemplate.create Emitter Em_blood01
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.template Fx_blood01
+ObjectTemplate.looping 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.addEmitterSpeed 5
+ObjectTemplate.emitterSpeedScale 10
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+rem ObjectTemplate.timeToLive CRD_NONE/2/1/0.4
+ObjectTemplate.intensity CRD_UNIFORM/20/40/0
+rem ObjectTemplate.intensity CRD_UNIFORM/14/19/16
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0.1/0.1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.75/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/1.5/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.5/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.showInThirdPerson 1
+
+rem *** Fx_blood01 ***
+ObjectTemplate.create SpriteParticle Fx_blood01
+rem ObjectTemplate.timeToLive CRD_NONE/13/12/11
+ObjectTemplate.timeToLive CRD_UNIFORM/0.5/0.5/0
+ObjectTemplate.size CRD_NONE/0.030/0.025/0.010
+ObjectTemplate.gravityModifier CRD_NONE/0.3/0/0.5
+ObjectTemplate.sizeOverTime 0/0.97|100/0.25
+ObjectTemplate.texture e_Blood_4pcs2
+ObjectTemplate.drag CRD_NONE/0.75/0.75/0.75
+ObjectTemplate.initRotation CRD_UNIFORM/50/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/30/50/1
+ObjectTemplate.colorRGBAOverTime 0/128/128/128/255|43/115/106/87/167|100/192/192/192/0
+ObjectTemplate.numAnimationFrames 4
+ObjectTemplate.initAnimationFrame CRD_NONE/1/2/3
+ObjectTemplate.animationSpeed CRD_NONE/20/0/0
+
+rem *** Em_bloodhit ***
+ObjectTemplate.create Emitter Em_bloodhit
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.template Fx_bloodhit
+ObjectTemplate.looping 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.addEmitterSpeed 5
+ObjectTemplate.emitterSpeedScale 10
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/2/1/0.4
+ObjectTemplate.intensity CRD_UNIFORM/14/19/16
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0.1/0.1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0.50/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0.75/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.25/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.showInThirdPerson 1
+
+rem *** Fx_bloodhit ***
+ObjectTemplate.create SpriteParticle Fx_bloodhit
+ObjectTemplate.timeToLive CRD_NONE/10/9/11
+ObjectTemplate.size CRD_NONE/0.020/0.010/0.005
+ObjectTemplate.gravityModifier CRD_NONE/0.3/0/0.5
+ObjectTemplate.sizeOverTime 0/0.97|100/0.35
+ObjectTemplate.texture e_Blood_4pcs2
+ObjectTemplate.drag CRD_NONE/0.35/0.35/0.35
+ObjectTemplate.initRotation CRD_UNIFORM/50/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/30/50/1
+ObjectTemplate.colorRGBAOverTime 0/128/128/128/255|43/115/106/87/167|100/192/192/192/0
+ObjectTemplate.numAnimationFrames 4
+ObjectTemplate.initAnimationFrame CRD_NONE/1/2/3
+ObjectTemplate.animationSpeed CRD_NONE/20/0/0
+
+rem *** Em_BloodSmoke ***
+ObjectTemplate.create Emitter Em_BloodSmoke
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.template Fx_BloodSmoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 400
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/10/20/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0.1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/1/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** Fx_BloodSmoke ***
+ObjectTemplate.create SpriteParticle Fx_BloodSmoke
+ObjectTemplate.timeToLive CRD_NONE/0.4/0.4/0
+ObjectTemplate.size CRD_NONE/0.25/0.25/0.25
+ObjectTemplate.gravityModifier CRD_NONE/0.1/0/0
+ObjectTemplate.sizeOverTime 0/0.97|100/1
+ObjectTemplate.texture e_Blood_4pcs1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/30/50/1
+ObjectTemplate.colorRGBAOverTime 0/128/128/128/255|43/115/106/87/167|100/192/192/192/0
+ObjectTemplate.numAnimationFrames 4
+ObjectTemplate.initAnimationFrame CRD_NONE/2/0/0
+ObjectTemplate.animationSpeed CRD_NONE/20/0/0
+

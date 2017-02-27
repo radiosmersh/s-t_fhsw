@@ -1,0 +1,202 @@
+#include ../../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+#include ../../../Common/Sounds/Dive.ssc
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/MultiEngine/DB605_Multi.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .1
+	param .2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param .6
+	param 0.65
+	param 0.35
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.7
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Pitch
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.9
+	param 1
+	param -1	
+endEffect
+
+##############
+### HI RPM ###
+##############
+
+load @ROOT/Sound/@RTD/MultiEngine/HiRPM_multi.wav
+loop
+minDistance 2
+volume 0.8
+priority 6
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Acceleration
+	envelope Ramp
+	param 0
+	param 40
+	param 0.85
+	param 0.05
+	param 1
+	param 2
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 40
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### Hi Prop ###
+###############
+
+load @ROOT/Sound/@RTD/MultiEngine/Hiprop_multi.wav
+loop
+minDistance 100
+volume 1.0
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param .3
+	param 1.2
+	param 0.45
+	param 0.50
+	
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.4
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 90
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+

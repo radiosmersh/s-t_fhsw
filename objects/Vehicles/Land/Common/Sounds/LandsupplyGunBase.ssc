@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/LandsupplyGunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/LandsupplyGunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/LandsupplyGunBase.ssc

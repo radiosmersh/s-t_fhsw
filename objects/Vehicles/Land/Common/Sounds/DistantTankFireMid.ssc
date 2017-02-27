@@ -1,0 +1,211 @@
+###############
+### Far 200 ###
+###############
+load @ROOT/Sound/@RTD/Tankfire_dst_mid.wav
+minDistance 160
+relativePosition 0/0/0
+randomStartPitch 0.1 / 0.1
+priority 8
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 175
+	param 175
+	param 0
+	param 1	
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.2
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 200
+	param 200
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .56
+	param .56
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+###############
+### Far 300 ###
+###############
+load @ROOT/Sound/@RTD/Tankfire_dst_mid.wav
+minDistance 160
+relativePosition 0/0/0
+randomStartPitch 0.1 / 0.1
+priority 7
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 200
+	param 200
+	param 0
+	param 1	
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.2
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 300
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .74
+	param .74
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+###############
+### Far 400 ###
+###############
+load @ROOT/Sound/@RTD/Tankfire_dst_mid.wav
+minDistance 160
+relativePosition 0/0/0
+randomStartPitch 0.1 / 0.1
+priority 6
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 300
+	param 300
+	param 0
+	param 1	
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.2
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 400
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.03
+	param 1.03
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+###############
+### Far 500 ###
+###############
+load @ROOT/Sound/@RTD/Tankfire_dst_mid.wav
+minDistance 160
+relativePosition 0/0/0
+randomStartPitch 0.1 / 0.1
+priority 5
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 400
+	param 0
+	param 1	
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.2
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 500
+	param 500
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.32
+	param 1.32
+	param 0
+	param 1
+endEffect
+
+trigger Volume

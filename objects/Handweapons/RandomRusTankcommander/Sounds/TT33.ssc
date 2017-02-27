@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include TT33High.ssc
+	
+#templateLevel MEDIUM
+
+	#include TT33Medium.ssc
+	
+#templateLevel LOW
+
+	#include TT33Low.ssc

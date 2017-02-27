@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/M3TankEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/W-670Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/W-670Engine.ssc

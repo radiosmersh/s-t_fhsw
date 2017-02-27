@@ -1,0 +1,127 @@
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/browningrel.wav
+minDistance 1
+trigger Release
+dopplerOff
+priority -2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.5
+	param 2.5
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/rifle-distance1.wav
+minDistance 30
+dopplerOff
+priority -1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 170
+	param 1
+	param -1
+endEffect
+
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##############
+### noName ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/Wz30_fireST.wav
+minDistance 1
+stereo
+loop
+stop FinishSample
+dopplerOff
+priority 10
+randomStartPitch 0 / 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/Wz30_fire.wav
+minDistance 6
+loop
+stop FinishSample
+dopplerOff
+priority 10
+randomStartPitch 0 / 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 130
+	param 150
+	param 1
+	param -1
+endEffect
+
+

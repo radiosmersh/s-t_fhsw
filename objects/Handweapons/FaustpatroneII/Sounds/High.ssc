@@ -1,0 +1,569 @@
+newPatch
+
+##############
+### Stereo ###
+##############
+
+load @ROOT/Sound/@RTD/panzerfaust_fire.wav
+stereo
+priority 10
+randomStartPitch 0.02 / 0.02
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
+	param 1
+	param -1
+endEffect
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/panzerfaust_fire.wav
+minDistance 6
+dopplerOff
+priority 8
+randomStartPitch 0.02 / 0.02
+relativePosition 0/0/1
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 1
+	param -1
+endEffect
+
+
+
+##############
+### Reload ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/rl8grg.wav
+randomStartPitch 0.025 / 0
+
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.65
+	param 0.65
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl6grg.wav
+randomStartPitch 0.025 / 0
+volume .4
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.1
+	param 1.1
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl6grg.wav
+randomStartPitch 0.025 / 0
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.2
+	param 2.2
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl9grg.wav
+randomStartPitch 0.025 / 0
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.3
+	param 2.3
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl4grg.wav
+dopplerOff
+priority 1
+randomStartPitch 0.025 / 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.2
+	param 3.2
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl3grg.wav
+dopplerOff
+priority 1
+randomStartPitch 0.025 / 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.6
+	param 3.6
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl7grg.wav
+dopplerOff
+priority 1
+randomStartPitch 0.025 / 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.0
+	param 3.0
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl10grg.wav
+dopplerOff
+priority 1
+randomStartPitch 0.025 / 0
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.4
+	param 3.4
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/rl11grg.wav
+dopplerOff
+priority 1
+randomStartPitch 0.025 / 0
+volume .2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.8
+	param 3.8
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+###############################
+
+load @ROOT/Sound/@RTD/SoFa4.wav
+dopplerOff
+priority 0
+minDistance 1
+randomStartPitch 0.03 / 0.0
+volume .2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa1.wav
+dopplerOff
+priority 0
+minDistance 1
+randomStartPitch 0.03 / 0.0
+volume .2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.65
+	param 0.65
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa2.wav
+dopplerOff
+priority 0
+minDistance 1
+randomStartPitch 0.03 / 0.0
+volume .2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.6
+	param 1.6
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa4.wav
+dopplerOff
+priority 0
+minDistance 1
+randomStartPitch 0.03 / 0.0
+volume .2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.3
+	param 2.3
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa3.wav
+dopplerOff
+priority 0
+minDistance 1
+randomStartPitch 0.03 / 0.0
+volume .2
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.3
+	param 3.3
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoFa3.wav
+dopplerOff
+priority 0
+minDistance 1
+randomStartPitch 0.05 / 0.0
+volume .4
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 4.3
+	param 4.3
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+############################
+load @ROOT/Sound/@RTD/SoMewa1.wav
+dopplerOff
+priority 0
+minDistance 1
+volume .4
+randomStartPitch 0.03 / 0.0
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.5
+	param 0.5
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoMewa2.wav
+dopplerOff
+priority 0
+minDistance 1
+volume .4
+randomStartPitch 0.03 / 0.0
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.9
+	param 1.9
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoMewa3.wav
+dopplerOff
+priority 0
+minDistance 1
+volume .4
+randomStartPitch 0.03 / 0.0
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.5
+	param 2.5
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/SoMewa4.wav
+dopplerOff
+priority 0
+minDistance 1
+volume .4
+randomStartPitch 0.03 / 0.0
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.2
+	param 3.2
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect

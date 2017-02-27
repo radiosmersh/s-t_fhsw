@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/M18hellEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/FordGAEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/FordGAEngine.ssc

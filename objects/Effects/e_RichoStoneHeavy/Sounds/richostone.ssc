@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RichoStone_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include RichoStone_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include RichoStone_MedLow.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/M1919A4.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/M1919A4.ssc
+	
+#templateLevel LOW
+
+	#include Low/M1919A4.ssc

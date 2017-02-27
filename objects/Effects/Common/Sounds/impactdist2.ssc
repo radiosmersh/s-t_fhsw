@@ -1,0 +1,17 @@
+#templateLevel HIGH
+
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+	
+#templateLevel MEDIUM
+
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+	
+#templateLevel LOW
+
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0

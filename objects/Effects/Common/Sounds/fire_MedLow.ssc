@@ -1,0 +1,84 @@
+newPatch
+load @ROOT/Sound/@RTD/vehicle_fire1.wav
+loop
+minDistance 15
+randomStartPitch 0.25 / 0.0
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 15
+	param 1
+	param -1	
+endEffect
+
+** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 1
+	param 0
+endEffect
+
+load @ROOT/Sound/@RTD/vehicle_fire2.wav
+loop
+minDistance 15
+randomStartPitch 0.25 / 0.0
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 15
+	param 1
+	param -1	
+endEffect
+
+** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 1
+	param 0
+endEffect
+
+load @ROOT/Sound/@RTD/vehicle_fire3.wav
+loop
+minDistance 15
+randomStartPitch 0.25 / 0.0
+priority 3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 4
+	param 1
+	param -1	
+endEffect
+
+** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 1
+	param 0
+endEffect
+
+randomPlay 1
+

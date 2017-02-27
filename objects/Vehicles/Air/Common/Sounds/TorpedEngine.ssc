@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include TorpedEngineHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include TorpedEngineMedium.ssc
+	
+#templateLevel LOW
+
+	#include TorpedEngineLow.ssc

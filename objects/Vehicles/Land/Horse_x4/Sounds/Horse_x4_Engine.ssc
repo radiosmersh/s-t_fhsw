@@ -1,0 +1,201 @@
+newPatch
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/horsen_neigh2.wav
+minDistance 1
+dopplerOff
+volume 5
+relativePosition 0/-1/0
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect
+
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/horse_galop.wav
+loop
+minDistance 8
+relativePosition -0.5/-1/1.5
+priority 9
+
+*** Speed Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 4
+	param 0.5
+	param 0.2
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0.1
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 100
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horse_galop.wav
+loop
+minDistance 8
+relativePosition 0.5/-1/1.5
+priority 9
+
+*** Speed Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 4
+	param 0.52
+	param 0.22
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0.1
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 100
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horse_galop.wav
+loop
+minDistance 8
+relativePosition -0.5/-1/-1.5
+priority 9
+
+*** Speed Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 4
+	param 0.49
+	param 0.23
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0.1
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 100
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/horse_galop.wav
+loop
+minDistance 8
+relativePosition 0.5/-1/-1.5
+priority 9
+
+*** Speed Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Speed
+	envelope Ramp
+	param 0
+	param 4
+	param 0.48
+	param 0.19
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0.1
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 100
+	param 1
+	param -1	
+endEffect
+
+###################
+### Engine Stop ###
+###################
+
+load @ROOT/Sound/@RTD/horsen_neigh1.wav
+minDistance 2
+trigger Release
+relativePosition 0/-1/0
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect

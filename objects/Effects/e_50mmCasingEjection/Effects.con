@@ -1,0 +1,47 @@
+rem *** e_50mmCasingEjection ***
+ObjectTemplate.create EffectBundle e_50mmCasingEjection
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_Ejected50mmCasing
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** Em_Ejected50mmCasing ***
+ObjectTemplate.create Emitter Em_Ejected50mmCasing
+ObjectTemplate.template bn_Ejected50mmCasing
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.HasCollisionPhysics 1
+ObjectTemplate.HasResponsePhysics 1
+ObjectTemplate.startProbability 100
+ObjectTemplate.lodDistance 700
+ObjectTemplate.delay CRD_NONE/0.3/0/0
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.intensity CRD_NONE/0.5/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-1/-2/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/3/4/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/2/-2/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/0/1/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/30/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/-5/5/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+
+ObjectTemplate.create Bundle bn_Ejected50mmCasing
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry 50mm_casing_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.HasArmor 1
+ObjectTemplate.Hitpoints 0
+ObjectTemplate.timeToLiveAfterDeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.timeToStartFadeAfterDeath 1
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10

@@ -1,0 +1,297 @@
+#templateLevel HIGH
+newPatch
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls1.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls2.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls3.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls4.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls5.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls6.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls7.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/44Khz/expldistmedsound/explmedcls8.wav
+minDistance 35
+randomStartPitch 0.11 / 0
+priority 9
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1.25
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 80
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 80
+	param 160
+	param 1
+	param -1
+endEffect
+
+randomPlay 1
+
+
+#templateLevel MEDIUM
+
+newPatch
+load @ROOT/Sound/44Khz/expldistmedsound/silence.wav
+volume 0
+
+#templateLevel LOW
+
+newPatch
+load @ROOT/Sound/44Khz/expldistmedsound/silence.wav
+volume 0

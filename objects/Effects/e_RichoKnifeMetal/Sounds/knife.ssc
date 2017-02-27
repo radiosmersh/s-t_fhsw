@@ -1,0 +1,72 @@
+newPatch
+load @ROOT/Sound/@RTD/colknife1.wav
+randomStartPitch 0.05 / 0.0
+minDistance 1
+volume .6
+dopplerOff
+
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 3
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/colknife4.wav
+randomStartPitch 0.05 / 0.0
+minDistance 1
+volume .6
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 3
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/colknife5.wav
+randomStartPitch 0.05 / 0.0
+minDistance 1
+volume .6
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 3
+	param 1
+	param -1	
+endEffect
+
+
+load @ROOT/Sound/@RTD/colknife7.wav
+randomStartPitch 0.05 / 0.0
+minDistance 1
+volume .6
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 3
+	param 1
+	param -1	
+endEffect
+
+randomPlay 1

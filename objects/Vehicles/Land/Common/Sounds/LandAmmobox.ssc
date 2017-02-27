@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/LandAmmobox.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/LandAmmobox.ssc
+	
+#templateLevel LOW
+
+	#include Low/LandAmmobox.ssc

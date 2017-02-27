@@ -1,0 +1,258 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/brit_int_fire.wav
+relativePosition 0/0/0
+stereo
+priority 10
+minDistance 15
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/v_mortar_fire_type98.wav
+minDistance 200
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 160
+	param 1
+	param -1	
+endEffect
+
+###########
+### Far ###
+###########
+load @ROOT/Sound/@RTD/distantarty.wav
+minDistance 200
+relativePosition 0/0/0
+priority 5
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 160
+	param 160
+	param 0
+	param 1	
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 400
+	param 500
+	param 1
+	param -1	
+endEffect
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/Tnk290SpigotRel_1.wav
+minDistance 1
+relativePosition -.23/0/1
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.5
+	param 2.5
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 10
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Tnk290SpigotRel_2.wav
+minDistance 1
+relativePosition -.23/0/1
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 6.963
+	param 6.963
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 10
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Tnk290SpigotRel_3.wav
+minDistance 1
+relativePosition -.23/0/1
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 6.831
+	param 6.831
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 10
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Tnk290SpigotRel_4.wav
+minDistance 1
+relativePosition -.23/0/1
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 12.118
+	param 12.118
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 10
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Tnk290SpigotRel_5.wav
+minDistance 1
+relativePosition -.23/0/1
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 14.859
+	param 14.859
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 10
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Tnk290SpigotRel_6.wav
+minDistance 1
+relativePosition -.23/0/1
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 18.471
+	param 18.471
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 10
+	param 1
+	param -1
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/DaimlerEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/FordGAEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/FordGAEngine.ssc

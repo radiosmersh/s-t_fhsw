@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/jumplight.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/jumplight.ssc
+	
+#templateLevel LOW
+
+	#include Low/jumplight.ssc

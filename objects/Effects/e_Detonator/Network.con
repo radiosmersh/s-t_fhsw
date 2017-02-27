@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo Detonator_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo DetonatorEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

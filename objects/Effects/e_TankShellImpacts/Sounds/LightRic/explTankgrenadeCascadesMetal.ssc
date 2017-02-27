@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include CascadesMetalHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include CascadesMetalMed.ssc
+	
+#templateLevel LOW
+
+	#include CascadesMetalLow.ssc

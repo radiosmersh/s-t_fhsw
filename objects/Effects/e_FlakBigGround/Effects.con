@@ -1,0 +1,135 @@
+rem *** e_FlakBigDirt ***
+ObjectTemplate.create EffectBundle e_FlakBigDirt
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/FlakBigDirt.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_flak_Big_Ground
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash_y
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate em_ExplGranade_Dirt
+rem -------------------------------------
+
+rem *** e_FlakBigStone ***
+ObjectTemplate.create EffectBundle e_FlakBigStone
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/FlakBigStone.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_flak_Big_Ground
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash_y
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate e_RichoCascadesStone
+rem -------------------------------------
+
+rem *** e_FlakBigMetal ***
+ObjectTemplate.create EffectBundle e_FlakBigMetal
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/FlakBigMetal.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_flak_Big_Ground
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash_y
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate e_RichoCascadesMetal
+rem -------------------------------------
+
+rem *** e_FlakBigWood ***
+ObjectTemplate.create EffectBundle e_FlakBigWood
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/FlakBigWood.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_flak_Big_Ground
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate Em_flak_Big_Ground_Flash_y
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.addTemplate e_RichoCascadesWood
+rem -------------------------------------
+
+
+
+rem *** Em_flak_Big_Ground_flash ***
+ObjectTemplate.create Emitter Em_flak_Big_Ground_Flash
+ObjectTemplate.template Fx_flak_Big_Ground_Flash
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.5/0/1
+ObjectTemplate.relativePositionInUp CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/1/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** Fx_flak_Big_Ground_Flash ***
+ObjectTemplate.create SpriteParticle Fx_flak_Big_Ground_Flash
+ObjectTemplate.timeToLive CRD_NONE/0.2/0.2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.2500122|3/3|100/5
+ObjectTemplate.texture e_MuzzAssult_o
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/0|62/192/192/192/76|100/0/0/0/0
+
+
+rem *** Em_flak_Big_Ground_flash_y ***
+ObjectTemplate.create Emitter Em_flak_Big_Ground_Flash_y
+ObjectTemplate.template Fx_flak_Big_Ground_Flash_y
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.5/0/1
+ObjectTemplate.relativePositionInUp CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/1/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_flak_Big_Ground_Flash_y ***
+ObjectTemplate.create SpriteParticle Fx_flak_Big_Ground_Flash_y
+ObjectTemplate.timeToLive CRD_NONE/0.19/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.2500122|3/3.5|100/5
+ObjectTemplate.texture e_fire4
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/200/0/255|62/255/180/0/255|100/255/100/10/0
+
+
+rem *** Em_flak_Big_Ground ***
+ObjectTemplate.create Emitter Em_flak_Big_Ground
+ObjectTemplate.template Fx_flak_Big_Ground
+ObjectTemplate.lodDistance 700
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/30/0/0
+ObjectTemplate.relativePositionInDof CRD_NORMAL/0/0.1/1
+ObjectTemplate.relativePositionInUp CRD_NORMAL/0/0.1/1
+ObjectTemplate.relativePositionInRight CRD_NORMAL/0/0.1/1
+ObjectTemplate.startRotation CRD_UNIFORM/1/90/0
+
+
+rem *** Fx_flak_Big_Ground ***
+ObjectTemplate.create SpriteParticle Fx_flak_Big_Ground
+ObjectTemplate.timeToLive CRD_UNIFORM/1.5/1.8/0
+ObjectTemplate.size CRD_UNIFORM/5/5.5/0
+ObjectTemplate.gravityModifier CRD_NONE/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/0|7/0|10/1|60/1|100/0.85
+ObjectTemplate.gravityModifierOverTime 0/0|100/1
+ObjectTemplate.texture e_flak2
+ObjectTemplate.initRotation CRD_NORMAL/0/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/18/25/1
+ObjectTemplate.rotationSpeedOverTime 0/0|100/1
+ObjectTemplate.colorRGBAOverTime 0/0/0/0/255|60/0/0/0/200|100/0/0/0/0
+

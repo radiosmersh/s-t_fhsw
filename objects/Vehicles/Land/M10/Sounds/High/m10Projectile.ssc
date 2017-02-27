@@ -1,0 +1,16 @@
+newPatch
+
+load @ROOT/Sound/@RTD/Shellwhine.wav
+loop
+minDistance 6
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 60
+	param 1
+	param -1
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Explgranade_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Explgranade_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include Explgranade_MedLow.ssc

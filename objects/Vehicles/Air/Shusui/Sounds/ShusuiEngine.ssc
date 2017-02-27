@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ShusuiEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ShusuiEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/ShusuiEngine.ssc

@@ -1,0 +1,8 @@
+
+GeometryTemplate.create StandardMesh Wreckwheel_M1
+GeometryTemplate.file Wreckwheel
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100

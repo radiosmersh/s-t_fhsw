@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RichoWater_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include RichoWater_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include RichoWater_MedLow.ssc

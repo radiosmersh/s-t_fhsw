@@ -1,0 +1,50 @@
+newPatch
+
+##############
+### Stereo ###
+##############
+load @ROOT/Sound/@RTD/panzerfaust_fire.wav
+
+priority 10
+randomStartPitch 0.02 / 0.02
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
+	param 1
+	param -1
+endEffect
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/panzerfaust_fire.wav
+minDistance 6
+priority 7
+randomStartPitch 0.02 / 0.02
+dopplerOff
+relativePosition 0/0/1
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 1
+	param -1
+endEffect
+
+
+
+##############
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0

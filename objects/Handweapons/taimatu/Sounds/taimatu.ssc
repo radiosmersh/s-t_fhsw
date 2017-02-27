@@ -1,0 +1,21 @@
+newPatch
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/torchkindle.wav
+randomStartPitch 0.05 / 0.05
+volume 0.85
+minDistance 5
+dopplerOff
+priority 11
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.9
+	param 0.9
+	param 0
+	param 1	
+endEffect

@@ -1,0 +1,198 @@
+newPatch
+
+#################
+### version 1 ###
+#################
+
+
+####################
+### fire sound 1 ###
+####################
+
+load @ROOT/Sound/@RTD/trpfire3.wav
+minDistance 20
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority 10
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.75
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 180
+	param 1
+	param -1
+endEffect
+
+####################
+### fire sound 2 ###
+####################
+
+load @ROOT/Sound/@RTD/trpfire4.wav
+minDistance 20
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority 9
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.75
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 180
+	param 1
+	param -1
+endEffect
+
+################################
+load @ROOT/Sound/@RTD/Torpedo_Cruise_loop.wav
+loop
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume.2
+priority 8
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 2.5
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.1
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Torpedo_Cruise_loop.wav
+loop
+minDistance 5
+randomStartPitch 0.05 / 0.05
+volume .6
+priority 6
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0.4
+endEffect
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.7
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.95
+	param 0.05
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 120
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Torpedo_Cruise_loop.wav
+loop
+minDistance 1
+randomStartPitch 0.05/0.05
+priority 2
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.95
+	param 0.05
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 7
+	param 1
+	param -1
+endEffect

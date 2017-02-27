@@ -1,0 +1,80 @@
+#include ../../Common/Sounds/SoundMap.ssc
+
+newPatch
+
+load @ROOT/Sound/@RTD/hullcreak3.wav
+randomStartPitch 0.3 / 0.0
+minDistance 20
+volume 1
+dopplerOff
+priority 2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Speed Volume ***
+beginEffect
+ 	controlDestination Volume
+  	controlSource Extern #map<Effect::Speed>
+  	envelope Ramp
+  	param .5
+  	param 3
+  	param 0
+  	param 1
+  	param 2
+	param 2
+endEffect
+
+randomPlay 1
+
+newPatch
+
+load @ROOT/Sound/@RTD/collhard1.wav
+randomStartPitch 0.3 / 0.0
+minDistance 20
+volume 1
+dopplerOff
+priority 2
+
+*** Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.5
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Speed Volume ***
+beginEffect
+ 	controlDestination Volume
+  	controlSource Extern #map<Effect::Speed>
+  	envelope Ramp
+  	param .5
+  	param 9
+  	param 0
+  	param 1
+  	param 2
+	param 2
+endEffect
+
+
+randomPlay 1

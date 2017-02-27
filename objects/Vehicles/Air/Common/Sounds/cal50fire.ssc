@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/cal50fire.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/cal50fire.ssc
+	
+#templateLevel LOW
+
+	#include Low/cal50fire.ssc

@@ -1,0 +1,98 @@
+
+
+rem *** e_MuzzMortar ***
+ObjectTemplate.create EffectBundle e_MuzzMortar
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_MuzzMortar_Flare
+ObjectTemplate.setPosition 0/0/2.5
+ObjectTemplate.addTemplate Em_MuzzMortar_Smoke
+ObjectTemplate.setPosition 0/0/-1.5
+ObjectTemplate.addTemplate Em_MuzzMortar_WSmoke
+ObjectTemplate.setPosition 0/0/-0.5
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** Em_MuzzMortar_Flare ***
+ObjectTemplate.create Emitter Em_MuzzMortar_Flare
+ObjectTemplate.template Fx_MuzzMortar_Flare
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/50/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/-4/-2/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/-10/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** Fx_MuzzMortar_Flare ***
+ObjectTemplate.create SpriteParticle Fx_MuzzMortar_Flare
+ObjectTemplate.timeToLive CRD_NONE/0.3/0.3/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/5/0/0
+ObjectTemplate.sizeOverTime 0/1|21/0.260048|100/0.120148
+ObjectTemplate.texture e_muz1_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|18/255/255/128/114|36/255/187/60/177|52/255/128/0/51|100/0/0/0/0
+
+
+
+
+rem *** Em_MuzzMortar_Smoke ***
+ObjectTemplate.create Emitter Em_MuzzMortar_Smoke
+ObjectTemplate.template Fx_MuzzMortar_Smoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.intensity CRD_NONE/3/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-0.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/4/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/1/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** Fx_MuzzMortar_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_MuzzMortar_Smoke
+ObjectTemplate.timeToLive CRD_UNIFORM/4/4/0
+ObjectTemplate.drag CRD_NONE/3/0/0
+ObjectTemplate.sizeOverTime 0/1|100/2
+ObjectTemplate.gravityModifierOverTime 0/0.199988|100/0.199988
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/10/1
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/51|31/183/183/183/160|55/128/128/128/112|100/255/255/255/22
+
+
+rem *** Em_MuzzMortar_WSmoke ***
+ObjectTemplate.create Emitter Em_MuzzMortar_WSmoke
+ObjectTemplate.template Fx_MuzzMortar_WSmoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.4/0/0
+ObjectTemplate.intensity CRD_NONE/5/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/-4/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+ObjectTemplate.addChild 1
+
+
+rem *** Fx_MuzzMortar_WSmoke ***
+ObjectTemplate.create SpriteParticle Fx_MuzzMortar_WSmoke
+ObjectTemplate.timeToLive CRD_NONE/0.5/0.5/0
+ObjectTemplate.gravityModifier CRD_NONE/0.5/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.sizeOverTime 0/0.800195|46/1.10013|100/3.60002
+ObjectTemplate.gravityModifierOverTime 0/1|100/1
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeedOverTime 0/3.47993|64/5.03995|100/6
+ObjectTemplate.colorRGBAOverTime 0/254/253/226/204|60/101/101/90/130|100/0/0/0/255

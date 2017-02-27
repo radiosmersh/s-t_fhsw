@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RubyHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include RubyMedium.ssc
+	
+#templateLevel LOW
+
+	#include RubyLow.ssc

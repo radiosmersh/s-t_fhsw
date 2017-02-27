@@ -1,0 +1,744 @@
+rem *** Large explosion for guns of 100-149mm in size and other similar sized explosives ***
+
+rem *** e_ExploLarge ***
+ObjectTemplate.create EffectBundle e_ExploLarge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ExploLarge_Core
+ObjectTemplate.addTemplate Em_ExploLarge_Shrapnel
+ObjectTemplate.addTemplate Em_ExploLarge_Flash
+ObjectTemplate.addTemplate Em_ExploLarge_Smoke
+ObjectTemplate.addTemplate Em_ExploLarge_ShockW
+rem -------------------------------------
+
+rem *** e_MetalExploLarge ***
+ObjectTemplate.create EffectBundle e_MetalExploLarge 
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ExploLarge
+ObjectTemplate.addTemplate Em_MetalExploLarge_Debris
+ObjectTemplate.addTemplate Em_MetalExploLarge_Sparks
+rem -------------------------------------
+
+rem *** e_IPSExploLarge ***
+ObjectTemplate.create EffectBundle e_IPSExploLarge 
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ExploLarge
+ObjectTemplate.addTemplate Em_MetalExploLarge_Debris
+ObjectTemplate.addTemplate Em_MetalExploLarge_Sparks
+ObjectTemplate.addTemplate Em_IPS_ShieldEffect_Large
+rem -------------------------------------
+
+rem *** e_WoodExploLarge ***
+ObjectTemplate.create EffectBundle e_WoodExploLarge 
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ExploLarge
+ObjectTemplate.addTemplate Em_WoodExploLarge_Debris1
+ObjectTemplate.addTemplate Em_WoodExploLarge_Debris2
+rem -------------------------------------
+
+rem *** e_DirtExploLarge ***
+ObjectTemplate.create EffectBundle e_DirtExploLarge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ExploLarge
+ObjectTemplate.addTemplate Em_DirtExploLarge_Debris
+ObjectTemplate.addTemplate Em_DirtExploLarge_Dust
+ObjectTemplate.addTemplate Em_DirtExploLarge_DustPlume
+rem -------------------------------------
+
+rem *** e_MudExploLarge ***
+ObjectTemplate.create EffectBundle e_MudExploLarge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_DirtExploLarge
+rem -------------------------------------
+
+rem *** e_StoneExploLarge ***
+ObjectTemplate.create EffectBundle e_StoneExploLarge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ExploLarge
+ObjectTemplate.addTemplate Em_StoneExploLarge_Debris
+ObjectTemplate.addTemplate Em_StoneExploLarge_Rocks 
+ObjectTemplate.addTemplate Em_StoneExploLarge_DustPlume
+ObjectTemplate.addTemplate Em_DirtExploLarge_Dust
+rem -------------------------------------
+
+rem *** e_SandExploLarge ***
+ObjectTemplate.create EffectBundle e_SandExploLarge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ExploLarge 
+ObjectTemplate.addTemplate Em_SandExploLarge_Debris
+ObjectTemplate.addTemplate Em_SandExploLarge_DebrisDust
+ObjectTemplate.addTemplate Em_SandExploLarge_Dust
+ObjectTemplate.addTemplate Em_SandExploLarge_DustPlume
+rem -------------------------------------
+
+rem *** e_SnowExploLarge ***
+ObjectTemplate.create EffectBundle e_SnowExploLarge
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/Explode.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ExploLarge 
+ObjectTemplate.addTemplate Em_SnowExploLarge_Snow
+ObjectTemplate.addTemplate Em_SnowExploLarge_Debris
+ObjectTemplate.addTemplate Em_DirtExploLarge_DustPlume
+rem -------------------------------------
+
+rem    **********************
+rem    **                  **
+rem    **  Base Explosion  **
+rem    **                  **
+rem    **********************
+
+
+rem *** Em_ExploLarge_Core ***
+ObjectTemplate.create Emitter Em_ExploLarge_Core
+ObjectTemplate.template Fx_ExploLarge_Core
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/200/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/3/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/3/-3/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/3/-3/0
+
+rem *** Fx_ExploLarge_Core ***
+ObjectTemplate.create SpriteParticle Fx_ExploLarge_Core
+ObjectTemplate.timeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.size CRD_NONE/4/0/0
+rem ObjectTemplate.sizeOverTime 0/0|100/0.5
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/10/0/0
+ObjectTemplate.texture e_fireball
+ObjectTemplate.initRotation CRD_UNIFORM/1/360/1
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/220/113/31/0|5/220/113/31/100|100/220/113/31/0
+
+rem *** Em_ExploLarge_Shrapnel ***
+ObjectTemplate.create Emitter Em_ExploLarge_Shrapnel 
+ObjectTemplate.template Fx_ExploLarge_Shrapnel 
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/4/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/4/-4/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/4/-4/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/5/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+
+rem *** Fx_ExploLarge_Shrapnel ***
+ObjectTemplate.create SpriteParticle Fx_ExploLarge_Shrapnel 
+ObjectTemplate.timeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.size CRD_NONE/4/0/0
+rem ObjectTemplate.sizeOverTime 0/0|100/0.5
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/10/0/0
+ObjectTemplate.texture e_dirtani03
+ObjectTemplate.initRotation CRD_UNIFORM/1/360/1
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/128/0|5/255/255/128/100|100/255/255/128/0
+
+rem *** Em_ExploLarge_Flash ***
+ObjectTemplate.create Emitter Em_ExploLarge_Flash
+ObjectTemplate.template Fx_ExploLarge_Flash
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0.5/0.25/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/2/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/2/-2/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/2/-2/0
+
+rem *** Fx_ExploLarge_Flash ***
+ObjectTemplate.create SpriteParticle Fx_ExploLarge_Flash
+ObjectTemplate.timeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.size CRD_NONE/4/0/0
+ObjectTemplate.sizeOverTime 0/0|100/1
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/10/0/0
+ObjectTemplate.texture e_fire4
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/360/1
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/230/150/100|100/255/230/150/0
+
+rem *** Em_ExploLarge_Smoke ***
+ObjectTemplate.create Emitter Em_ExploLarge_Smoke
+ObjectTemplate.template Fx_ExploLarge_Smoke
+ObjectTemplate.Delay CRD_NONE/0.2/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/200/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/2/-2/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/2/-2/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/36/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/-12/0
+
+rem *** Fx_ExploLarge_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_ExploLarge_Smoke
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/4/2/0
+ObjectTemplate.sizeOverTime 0/1|100/2
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_UNIFORM/6/4/0
+ObjectTemplate.texture e_smoke
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/128/128/128/100|50/128/128/128/100|100/128/128/128/0
+
+rem *** Em_ExploLarge_ShockW ***
+ObjectTemplate.create Emitter Em_ExploLarge_ShockW
+ObjectTemplate.template Fx_ExploLarge_ShockW
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/1/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_ExploLarge_ShockW ***
+ObjectTemplate.create Particle Fx_ExploLarge_ShockW
+ObjectTemplate.geometry shockwave_m1
+ObjectTemplate.timeToLive CRD_NONE/0.7/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeModifier 4/1.5/4
+ObjectTemplate.sizeOverTime 0/1|100/5
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+rem ObjectTemplate.gravityModifierOverTime 0/0.800195|73/5.91983|100/10
+ObjectTemplate.alphaOverTime 0/0.75|100/0
+
+
+rem    **********************
+rem    **                  **
+rem    **  Dirt Explosion  **
+rem    **                  **
+rem    **********************
+
+
+rem *** Em_DirtExploLarge_Debris ***
+ObjectTemplate.create Emitter Em_DirtExploLarge_Debris
+ObjectTemplate.template Fx_DirtExploLarge_Debris
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/500/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/3/-3/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/3/-3/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/48/12/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/-12/0
+
+rem *** Fx_DirtExploLarge_Debris ***
+ObjectTemplate.create SpriteParticle Fx_DirtExploLarge_Debris
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/1/2/0
+ObjectTemplate.sizeOverTime 0/1|100/4
+ObjectTemplate.gravityModifier CRD_NONE/3/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.texture e_dirtani03
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/120/100/85/100|50/120/100/85/100|100/120/100/85/0
+
+rem *** Em_DirtExploLarge_Dust ***
+ObjectTemplate.create Emitter Em_DirtExploLarge_Dust
+ObjectTemplate.template Fx_DirtExploLarge_Dust
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/2/-2/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/2/-2/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/9/-9/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/9/-9/0
+
+rem *** Fx_DirtExploLarge_Dust ***
+ObjectTemplate.create SpriteParticle Fx_DirtExploLarge_Dust
+ObjectTemplate.timeToLive CRD_UNIFORM/4/2/0
+ObjectTemplate.size CRD_UNIFORM/10/8/0
+ObjectTemplate.sizeOverTime 0/0|33/1|100/2
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.texture e_dust
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/-50/50/1
+ObjectTemplate.colorRGBAOverTime 0/150/135/95/100|67/150/135/95/100|100/150/135/95/0
+
+rem *** Em_DirtExploLarge_DustPlume ***
+ObjectTemplate.create Emitter Em_DirtExploLarge_DustPlume 
+ObjectTemplate.template Fx_DirtExploLarge_DustPlume
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/100/200/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_NONE/0/0/0
+
+rem *** Fx_DirtExploLarge_DustPlume ***
+ObjectTemplate.create SpriteParticle Fx_DirtExploLarge_DustPlume 
+ObjectTemplate.timeToLive CRD_UNIFORM/2/1/0
+ObjectTemplate.size CRD_UNIFORM/6/3/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/0/0/0
+ObjectTemplate.texture e_dust
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.XYSizeRatioOverTime 0/1|2/4|100/4
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/150/135/95/100|67/150/135/95/100|100/150/135/95/0
+
+
+rem    **********************
+rem    **                  **
+rem    **  Sand Explosion  **
+rem    **                  **
+rem    **********************
+
+
+rem *** Em_SandExploLarge_Debris ***
+ObjectTemplate.create Emitter Em_SandExploLarge_Debris
+ObjectTemplate.template Fx_SandExploLarge_Debris
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/500/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/48/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/-12/0
+
+rem *** Fx_SandExploLarge_Debris ***
+ObjectTemplate.create SpriteParticle Fx_SandExploLarge_Debris
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/1/2/0
+ObjectTemplate.sizeOverTime 0/1|100/4
+ObjectTemplate.gravityModifier CRD_NONE/3/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.texture e_sand
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/155/155/155/100|75/155/155/155/100|100/155/155/155/0
+
+rem *** Em_SandExploLarge_DebrisDust ***
+ObjectTemplate.create Emitter Em_SandExploLarge_DebrisDust
+ObjectTemplate.template Fx_SandExploLarge_DebrisDust
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/500/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/48/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/-12/0
+
+rem *** Fx_SandExploLarge_DebrisDust ***
+ObjectTemplate.create SpriteParticle Fx_SandExploLarge_DebrisDust
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/3/4/0
+ObjectTemplate.sizeOverTime 0/1|100/4
+ObjectTemplate.gravityModifier CRD_NONE/1/0/0
+ObjectTemplate.drag CRD_NONE/4/0/0
+ObjectTemplate.texture e_dust
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/160/135/95/50|50/160/135/95/50|100/160/135/95/0
+
+rem *** Em_SandExploLarge_Dust ***
+ObjectTemplate.create Emitter Em_SandExploLarge_Dust
+ObjectTemplate.template Fx_SandExploLarge_Dust
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/9/-9/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/9/-9/0
+
+rem *** Fx_SandExploLarge_Dust ***
+ObjectTemplate.create SpriteParticle Fx_SandExploLarge_Dust
+ObjectTemplate.timeToLive CRD_UNIFORM/6/4/0
+ObjectTemplate.size CRD_UNIFORM/12/8/0
+ObjectTemplate.sizeOverTime 0/0|33/1|100/2
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.texture e_dust
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/160/135/95/100|50/160/135/95/100|100/160/135/95/0
+
+rem *** Em_SandExploLarge_DustPlume ***
+ObjectTemplate.create Emitter Em_SandExploLarge_DustPlume 
+ObjectTemplate.template Fx_SandExploLarge_DustPlume
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/100/200/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_NONE/0/0/0
+
+rem *** Fx_SandExploLarge_DustPlume ***
+ObjectTemplate.create SpriteParticle Fx_SandExploLarge_DustPlume
+ObjectTemplate.timeToLive CRD_UNIFORM/2/1/0
+ObjectTemplate.size CRD_UNIFORM/5/1/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/0/0/0
+ObjectTemplate.texture e_dust
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.XYSizeRatioOverTime 0/1|2/4|100/4
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/160/135/95/100|75/160/135/95/100|100/160/135/95/0
+
+
+rem    **********************
+rem    **                  **
+rem    **  Snow Explosion  **
+rem    **                  **
+rem    **********************
+
+
+rem *** Em_SnowExploLarge_Snow ***
+ObjectTemplate.create Emitter Em_SnowExploLarge_Snow
+ObjectTemplate.template Fx_SnowExploLarge_Snow
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/500/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/48/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/-12/0
+
+rem *** Fx_SnowExploLarge_Snow ***
+ObjectTemplate.create SpriteParticle Fx_SnowExploLarge_Snow
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/2/1/0
+ObjectTemplate.sizeOverTime 0/1|100/4
+ObjectTemplate.gravityModifier CRD_NONE/2/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.texture e_snow
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/100|75/255/255/255/100|100/255/255/255/0
+
+rem *** Em_SnowExploLarge_Debris ***
+ObjectTemplate.create Emitter Em_SnowExploLarge_Debris 
+ObjectTemplate.template Fx_SnowExploLarge_Debris 
+ObjectTemplate.Delay CRD_NONE/0.15/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/250/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/-12/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/48/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/-12/0
+
+rem *** Fx_SnowExploLarge_Debris ***
+ObjectTemplate.create SpriteParticle Fx_SnowExploLarge_Debris 
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.size CRD_UNIFORM/2/1/0
+ObjectTemplate.sizeOverTime 0/1|100/4
+ObjectTemplate.gravityModifier CRD_NONE/3/0/0
+ObjectTemplate.drag CRD_NONE/1/0/0
+ObjectTemplate.texture e_dirtani03
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1/0/0
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/50/100/1
+ObjectTemplate.colorRGBAOverTime 0/120/100/85/100|50/120/100/85/100|100/120/100/85/0
+
+
+rem    **********************
+rem    **                  **
+rem    **  Stone Explosion **
+rem    **                  **
+rem    **********************
+
+
+rem *** Em_StoneExploLarge_Debris ***
+ObjectTemplate.create Emitter Em_StoneExploLarge_Debris
+ObjectTemplate.template Gibb_concret20_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.delay CRD_NONE/0/0/0
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/10/100/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/4/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/18/9/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/-4/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/10/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/1/50/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+
+rem *** Em_StoneExploLarge_Rocks ***
+ObjectTemplate.create Emitter Em_StoneExploLarge_Rocks
+ObjectTemplate.template Gibb_concret30_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.delay CRD_NONE/0/0/0
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/10/100/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/-1/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/4/-4/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/18/9/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/4/-4/0
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/10/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/1/50/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+
+rem *** Em_StoneExploLarge_DustPlume ***
+ObjectTemplate.create Emitter Em_StoneExploLarge_DustPlume
+ObjectTemplate.template Fx_StoneExploLarge_DustPlume
+ObjectTemplate.Delay CRD_NONE/0.1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/100/200/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0.5/-0.5/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0.5/-0.5/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0.5/-0.5/0
+
+rem *** Fx_StoneExploLarge_DustPlume ***
+ObjectTemplate.create SpriteParticle Fx_StoneExploLarge_DustPlume
+ObjectTemplate.timeToLive CRD_UNIFORM/2/1/0
+ObjectTemplate.size CRD_UNIFORM/7/4/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.drag CRD_NONE/0/0/0
+ObjectTemplate.texture e_dust
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.XYSizeRatio CRD_UNIFORM/0.5/1.5/0
+ObjectTemplate.XYSizeRatioOverTime 0/1|2/4|100/4
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.colorRGBAOverTime 0/160/144/128/100|67/160/144/128/100|100/160/144/128/0
+
+
+rem    **********************
+rem    **                  **
+rem    **  Metal Explosion **
+rem    **                  **
+rem    **********************
+
+
+rem *** Em_MetalExploLarge_Debris ***
+ObjectTemplate.create Emitter Em_MetalExploLarge_Debris
+ObjectTemplate.template Fx_MetalExploLarge_Debris
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 700
+ObjectTemplate.delay CRD_NONE/0/0/0
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/30/50/0
+ObjectTemplate.intensityOverTime 
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/0/0/0
+ObjectTemplate.relativePositionInRight CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/3/-3/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/2/-2/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/3/-3/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/1/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/1/20/0
+ObjectTemplate.startRotation CRD_UNIFORM/10/0/0
+
+rem *** Fx_MetalExploLarge_Debris ***
+ObjectTemplate.create Particle Fx_MetalExploLarge_Debris
+ObjectTemplate.geometry Gibb_concret20_m1
+ObjectTemplate.timeToLive CRD_UNIFORM/1/2/0
+ObjectTemplate.size CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.6/-0.3/0
+ObjectTemplate.sizeOverTime 0/0|100/1
+
+rem *** Em_MetalExploLarge_Sparks ***
+ObjectTemplate.create Emitter Em_MetalExploLarge_Sparks 
+ObjectTemplate.template Fx_MetalExploLarge_Sparks 
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 150
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/150/300/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/3/-3/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/3/-3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/3/-3/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/2/0/0
+
+rem *** Fx_MetalExploLarge_Sparks ***
+ObjectTemplate.create SpriteParticle Fx_MetalExploLarge_Sparks 
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.size CRD_UNIFORM/0.1/0.5/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/0.4/1/0
+ObjectTemplate.drag CRD_UNIFORM/1/0.5/0
+ObjectTemplate.sizeOverTime 0/1|100/1
+ObjectTemplate.dragOverTime 0/0.059999|100/1
+ObjectTemplate.texture E_richoMetal_I
+ObjectTemplate.useMipMaps 1
+ObjectTemplate.turnsInMovingDirection 1
+ObjectTemplate.srcBlendMode BMSourceAlpha
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_NONE/1/0/0
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|86/255/255/128/255|100/255/255/255/51
+
+
+rem    **********************
+rem    **                  **
+rem    **  Wood Explosion  **
+rem    **                  **
+rem    **********************
+
+
+rem *** Em_WoodExploLarge_Debris1 ***
+ObjectTemplate.create Emitter Em_WoodExploLarge_Debris1
+ObjectTemplate.template Gibb_wood72_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 500
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/30/50/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/7/3/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/5/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/1/10/0
+
+rem *** Em_WoodExploLarge_Debris2 ***
+ObjectTemplate.create Emitter Em_WoodExploLarge_Debris2
+ObjectTemplate.template Gibb_wood90_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.startProbability 1
+ObjectTemplate.lodDistance 500
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/30/50/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/15/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/15/10/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/1/10/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/20/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0

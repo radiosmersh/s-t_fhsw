@@ -1,0 +1,35 @@
+
+
+rem *** e_ShellWinchester ***
+ObjectTemplate.create EffectBundle e_ShellWinchester
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ..\common\Sounds/shells.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ShellWinchester
+ObjectTemplate.setPosition 0/0.01/-0.265
+ObjectTemplate.setRotation -9.994/-4.995/0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** Em_ShellWinchester ***
+ObjectTemplate.create Emitter Em_ShellWinchester
+ObjectTemplate.template Fx_ShellWinchester
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 35
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0/0.01/1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0.5/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0.4/0.9/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0.8/1.5/0
+ObjectTemplate.rotationalSpeedInDof CRD_EXPONENTIAL/-20/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/10/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/4/0/1
+ObjectTemplate.startRotation CRD_NONE/150/0/0
+
+rem *** Fx_ShellWinchester ***
+ObjectTemplate.create Particle Fx_ShellWinchester
+ObjectTemplate.geometry WinchesterShell
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0.5/0/0

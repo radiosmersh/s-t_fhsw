@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Gaz67Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Gaz67Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/Gaz67Engine.ssc

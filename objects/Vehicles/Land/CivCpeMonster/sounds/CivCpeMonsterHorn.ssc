@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivCpeMonsterHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivCpeMonsterHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivCpeMonsterHorn.ssc

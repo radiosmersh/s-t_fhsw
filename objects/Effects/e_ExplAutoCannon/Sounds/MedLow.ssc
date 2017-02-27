@@ -1,0 +1,20 @@
+newPatch
+############
+### Main ###
+############
+load @ROOT/Sound/@RTD/Handgranade.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+volume 0.8
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1	
+endEffect

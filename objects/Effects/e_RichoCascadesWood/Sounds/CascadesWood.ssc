@@ -1,0 +1,78 @@
+
+#################################################################################################
+### Debrie ###
+##############
+newPatch
+
+################
+### Debrie 1 ###
+################
+
+load @ROOT/Sound/@RTD/expldebrie.wav
+minDistance 15
+volume 1
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority -6
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.4
+	param 0.4
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1
+endEffect
+
+################
+### Debrie 2 ###
+################
+
+load @ROOT/Sound/@RTD/expldebrie2.wav
+minDistance 15
+volume 1
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority -6
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.5
+	param 0.5
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1
+endEffect
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1

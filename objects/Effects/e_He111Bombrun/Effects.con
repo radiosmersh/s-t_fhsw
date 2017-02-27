@@ -1,0 +1,462 @@
+
+
+rem *** e_He111Bombrun ***
+ObjectTemplate.create EffectBundle e_He111Bombrun
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate He111BombrunSpawner
+ObjectTemplate.setPosition 0/2/0
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+rem -------------------------------------
+
+
+rem *** He111BombrunSpawner*** 
+ObjectTemplate.create ObjectSpawner He111BombrunSpawner
+ObjectTemplate.setObjectTemplate 1 He111Bombrun
+ObjectTemplate.setObjectTemplate 2 He111Bombrun
+ObjectTemplate.holdObject 0 
+ObjectTemplate.minSpawnDelay 200 
+ObjectTemplate.maxSpawnDelay 200 
+objecttemplate.timetolive 0
+objecttemplate.distance 10
+objecttemplate.damagewhenlost 100
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.team 1 
+
+rem *** He111Bombrun***
+ObjectTemplate.create PlayerControlObject He111Bombrun
+ObjectTemplate.setNetworkableInfo He111Bombrun_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.material 126
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1000
+ObjectTemplate.criticalDamage 251
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.aiTemplate He111BombrunAI
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate He111Bombrun_body
+ObjectTemplate.setRandomGeometries 5
+rem ObjectTemplate.addTemplate He111-bombrun_Enginefake
+
+rem -------------------------------------
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon ""
+ObjectTemplate.setVehicleIconPos 45/76
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTStationaryMG
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** He111Bombrun_body1 ***
+ObjectTemplate.create Bundle He111Bombrun_body1
+ObjectTemplate.setNetworkableInfo He111Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodHe111BombrunCockpit
+ObjectTemplate.addTemplate He111Path1Straight1
+ObjectTemplate.setPosition 0/80/0
+rem -------------------------------------
+
+rem *** He111Bombrun_body2 ***
+ObjectTemplate.create Bundle He111Bombrun_body2
+ObjectTemplate.setNetworkableInfo He111Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodHe111BombrunCockpit
+ObjectTemplate.addTemplate He111Path1Straight1
+ObjectTemplate.setPosition 0/120/0
+ObjectTemplate.setRotation 78/0/0
+rem -------------------------------------
+
+rem *** He111Bombrun_body3 ***
+ObjectTemplate.create Bundle He111Bombrun_body3
+ObjectTemplate.setNetworkableInfo He111Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodHe111BombrunCockpit
+ObjectTemplate.addTemplate He111Path1Straight1
+ObjectTemplate.setPosition 0/150/0
+ObjectTemplate.setRotation -78/0/0
+rem -------------------------------------
+
+rem *** He111Bombrun_body4 ***
+ObjectTemplate.create Bundle He111Bombrun_body4
+ObjectTemplate.setNetworkableInfo He111Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodHe111BombrunCockpit
+ObjectTemplate.addTemplate He111Path1Straight1
+ObjectTemplate.setPosition 0/65/0
+ObjectTemplate.setRotation 92/0/0
+rem -------------------------------------
+
+rem *** He111Bombrun_body5 ***
+ObjectTemplate.create Bundle He111Bombrun_body5
+ObjectTemplate.setNetworkableInfo He111Bombrun_BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate lodHe111BombrunCockpit
+ObjectTemplate.addTemplate He111Path1Straight1
+ObjectTemplate.setPosition 0/90/0
+ObjectTemplate.setRotation -135/0/0
+rem -------------------------------------
+
+
+rem *** lodHe111BombrunCockpit ***
+ObjectTemplate.create LodObject lodHe111BombrunCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate He111BombrunCockpitExternal
+ObjectTemplate.addTemplate He111BombrunCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector He111BombrunCockpitSelector
+
+rem *** He111BombrunCockpitExternal ***
+ObjectTemplate.create SimpleObject He111BombrunCockpitExternal
+ObjectTemplate.geometry Wreck_M10_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.CreateInvisible 0
+
+rem *** He111BombrunCockpitInternal ***
+ObjectTemplate.create SimpleObject He111BombrunCockpitInternal
+ObjectTemplate.geometry 
+
+rem *** He111BombrunCockpitSelector***
+LodSelectorTemplate.create DistCompareSelector He111BombrunCockpitSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** He111Path1Straight1 ***
+ObjectTemplate.create RotationalBundle He111Path1Straight1
+ObjectTemplate.setNetworkableInfo He111BombrunRunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate He111Path1Straight2
+ObjectTemplate.setPosition 0/2000/0
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/0.5/0
+ObjectTemplate.setAcceleration 0/0.5/0
+ObjectTemplate.setContinousRotationSpeed 0/0.5/0
+
+rem *** He111Path1Straight2 ***
+ObjectTemplate.create RotationalBundle He111Path1Straight2
+ObjectTemplate.setNetworkableInfo He111BombrunRunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate He111Path1Straight3
+ObjectTemplate.setPosition 0/-2000/0
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/-180/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/-1/0
+ObjectTemplate.setAcceleration 0/-1/0
+ObjectTemplate.setContinousRotationSpeed 0/-1/0
+
+rem *** He111Path1Straight3 ***
+ObjectTemplate.create RotationalBundle He111Path1Straight3
+ObjectTemplate.setNetworkableInfo He111BombrunRunInfo
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate He111StaticSpawner
+ObjectTemplate.setPosition -20/0/-1980
+ObjectTemplate.addTemplate He111StaticSpawner
+ObjectTemplate.setPosition 20/10/-2020
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/0.5/0
+ObjectTemplate.setAcceleration 0/0.5/0
+ObjectTemplate.setContinousRotationSpeed 0/0.5/0
+
+
+ObjectTemplate.create ObjectSpawner He111StaticSpawner
+ObjectTemplate.setObjectTemplate 1 He111-bombrun
+ObjectTemplate.setObjectTemplate 2 He111-bombrun
+ObjectTemplate.minSpawnDelay 15
+ObjectTemplate.maxSpawnDelay 15
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 2
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 10
+
+
+rem *** He111-bombrun ***
+ObjectTemplate.create PlayerControlObject He111-bombrun
+ObjectTemplate.NameTagOffset 0/-0.415/4.578
+ObjectTemplate.setNetworkableInfo He111BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.1695
+ObjectTemplate.mass 8000
+ObjectTemplate.inertiaModifier 0.4/0.5/0.6
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 15
+ObjectTemplate.explosionDamage 10
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
+ObjectTemplate.material 24
+ObjectTemplate.criticalDamage 70
+ObjectTemplate.hpLostWhileCriticalDamage 3
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 180 em_He111Damage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 180 em_PlaneDamage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 180 em_He111Damage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 180 em_PlaneDamage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_He111Damage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_PlaneDamage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_He111Damage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 140 em_PlaneDamage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_He111Damage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage -2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_He111Damage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 2.844/-0.092/1.5
+ObjectTemplate.addArmorEffect 70 e_StukaFire -2.844/-0.092/1.25
+ObjectTemplate.addArmorEffect 70 e_StukaFire 2.844/-0.092/1.25
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_He111 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate He111Ai
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHe111-bombrun
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.9/-0.5/-5.2 0/0/0
+ObjectTemplate.GUIIndex 69
+ObjectTemplate.setVehicleIcon "Vehicle/icon_He111.tga"
+ObjectTemplate.setVehicleIconPos 93/105
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_bullet127.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_bomHe1110.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTBomber
+ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Incoming_16x16.tga"
+
+rem *** lod He111-bombrun ***
+ObjectTemplate.create LodObject lodHe111-bombrun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate He111-bombrunComplex
+ObjectTemplate.addTemplate He111Simple
+ObjectTemplate.addTemplate He111Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector He111LodSelector
+
+rem *** He111-bombrunComplex ***
+ObjectTemplate.create Bundle He111-bombrunComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHe111Cockpit
+ObjectTemplate.addTemplate he111_aileron_left_m1
+ObjectTemplate.setPosition -9.363/0.629/-1.739
+ObjectTemplate.setRotation 4.235/-0.639/-8.663
+ObjectTemplate.addTemplate he111_aileron_right_m1
+ObjectTemplate.setPosition 9.255/0.64/-1.68
+ObjectTemplate.setRotation -4.235/-0.639/8.663
+ObjectTemplate.addTemplate he111_elevator_left_m1
+ObjectTemplate.setPosition -2.215/0.228/-11.367
+ObjectTemplate.addTemplate he111_elevator_right_m1
+ObjectTemplate.setPosition 2.189/0.245/-11.374
+ObjectTemplate.addTemplate he111_rudder_m1
+ObjectTemplate.setPosition 0.014/2.097/-11.691
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate He111-bombrun_Engine
+ObjectTemplate.setPosition -3.012/0.075/4.713
+ObjectTemplate.addTemplate He111-bombrun_Engine
+ObjectTemplate.setPosition 3.003/0.075/4.713
+
+ObjectTemplate.addTemplate he111_fus2_m1
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate He111-bombrun_Enginefake
+
+ObjectTemplate.addTemplate He111BombSpawner
+ObjectTemplate.setPosition 0.2/-1.4/0
+ObjectTemplate.addTemplate He111BombSpawner2
+ObjectTemplate.setPosition 0.2/-1.4/0.2
+ObjectTemplate.addTemplate He111BombSpawner3
+ObjectTemplate.setPosition 0.2/-1.4/-0.2
+ObjectTemplate.addTemplate He111BombSpawner4
+ObjectTemplate.setPosition -0.2/-1.4/0
+
+
+
+rem -------------------------------------
+
+ObjectTemplate.create RotationalBundle He111-bombrun_Engine
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.setHasCollisionPhysics 0
+rem ---------------------------------------
+ObjectTemplate.addTemplate He111PropellerBlurred
+rem  ---------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/500
+ObjectTemplate.setContinousRotationSpeed 0/0/500
+
+rem *** He111-bombrun_Enginefake ***
+ObjectTemplate.create Engine He111-bombrun_Enginefake
+ObjectTemplate.setNetworkableInfo He111EngineInfo
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/600
+ObjectTemplate.setAcceleration 5/0/250
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 9
+ObjectTemplate.setDifferential 4
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.7
+ObjectTemplate.setNoPropellerEffectAtSpeed 60
+
+
+rem *** He111BombSpawner ***
+ObjectTemplate.create ObjectSpawner He111BombSpawner
+ObjectTemplate.setObjectTemplate 1 He111-bombVehicle
+ObjectTemplate.setObjectTemplate 2 He111-bombVehicle
+ObjectTemplate.minSpawnDelay 28.5
+ObjectTemplate.maxSpawnDelay 28.5
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** He111BombSpawner2 ***
+ObjectTemplate.create ObjectSpawner He111BombSpawner2
+ObjectTemplate.setObjectTemplate 1 He111-bombVehicle
+ObjectTemplate.setObjectTemplate 2 He111-bombVehicle
+ObjectTemplate.minSpawnDelay 29
+ObjectTemplate.maxSpawnDelay 29
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 0
+
+rem *** He111BombSpawner3 ***
+ObjectTemplate.create ObjectSpawner He111BombSpawner3
+ObjectTemplate.setObjectTemplate 1 He111-bombVehicle
+ObjectTemplate.setObjectTemplate 2 He111-bombVehicle
+ObjectTemplate.minSpawnDelay 29.5
+ObjectTemplate.maxSpawnDelay 29.5
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 0
+
+rem *** He111BombSpawner4 ***
+ObjectTemplate.create ObjectSpawner He111BombSpawner4
+ObjectTemplate.setObjectTemplate 1 He111-bombVehicle
+ObjectTemplate.setObjectTemplate 2 He111-bombVehicle
+ObjectTemplate.minSpawnDelay 30
+ObjectTemplate.maxSpawnDelay 30
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 2
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** He111-bombVehicle ***
+ObjectTemplate.create PlayerControlObject He111-bombVehicle
+ObjectTemplate.setNetworkableInfo ATMineInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 25
+ObjectTemplate.explosionDamage 25
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.hpLostWhileDamageFromWater 100
+ObjectTemplate.material 126
+ObjectTemplate.explosionForceMod 100
+ObjectTemplate.addArmorEffect 0 e_ExplAni02big 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate ATMine
+ObjectTemplate.timetoliveafterdeath 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHe111-bombVehicle
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4/0.243/-2 0/0/0
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
+
+rem *** lodHe111-bombVehicle ***
+ObjectTemplate.create LodObject lodHe111-bombVehicle
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate He111-bombVehicleComplex
+ObjectTemplate.addTemplate He111-bombVehicleSimple
+ObjectTemplate.setRotation 0/90/0
+rem -------------------------------------
+ObjectTemplate.lodSelector He111-bombrunLodSelector
+
+
+rem *** He111-bombVehicleComplex ***
+ObjectTemplate.create Bundle He111-bombVehicleComplex
+ObjectTemplate.geometry Shell1250mmhi_Spawn_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.loadSoundScript ../../Vehicles/Air/Common/Sounds/Bomb.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Shell_Engine
+rem -------------------------------------
+
+rem *** He111-bombrunSimple ***
+ObjectTemplate.create SimpleObject He111-bombVehicleSimple
+ObjectTemplate.geometry Big_Bomb_M1
+
+rem *** He111-bombrunLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 He111-bombrunLodSelector
+LodSelectorTemplate.addLodDistance 1

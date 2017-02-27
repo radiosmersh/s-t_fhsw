@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/RatteEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/RatteEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/RatteEngine.ssc

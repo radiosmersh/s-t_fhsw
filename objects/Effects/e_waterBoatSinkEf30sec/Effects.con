@@ -1,0 +1,10 @@
+rem *** e_waterBoatSinkEf30sec ***
+ObjectTemplate.create EffectBundle e_waterBoatSinkEf30sec
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/e_waterBoatSinkef.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_WaterBoatSinkFoam
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+rem -------------------------------------
+ObjectTemplate.minDistanceUnderwaterSurface 0
+ObjectTemplate.maxDistanceUnderwaterSurface 10

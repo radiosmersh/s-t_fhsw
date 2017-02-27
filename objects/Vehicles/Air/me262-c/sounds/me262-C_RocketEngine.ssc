@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include ../../Common/Sounds/Thrust.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/me262-C_RocketEngine.ssc 
+	
+#templateLevel LOW
+
+	#include Low/me262-C_RocketEngine.ssc 

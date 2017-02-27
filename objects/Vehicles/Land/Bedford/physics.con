@@ -1,0 +1,98 @@
+
+
+rem *** bedfordEngine ***
+ObjectTemplate.create Engine bedfordEngine
+ObjectTemplate.setNetworkableInfo bedfordEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/BedfordEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate bedfordFrontWheelR
+ObjectTemplate.setPosition 0.941/-0.521/1.861
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate bedfordFrontWheelL
+ObjectTemplate.setPosition -0.941/-0.521/1.861
+ObjectTemplate.addTemplate bedfordBackSpringR
+ObjectTemplate.setPosition 0.804/-0.521/-2.438
+ObjectTemplate.addTemplate bedfordBackSpringL
+ObjectTemplate.setPosition -0.804/-0.521/-2.438
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 5.6
+ObjectTemplate.setDifferential 4.0
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.1
+
+
+rem *** bedfordFrontSpringR ***
+ObjectTemplate.create Spring bedfordFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry bedford_frtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** bedfordFrontSpringL ***
+ObjectTemplate.create Spring bedfordFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry bedford_frtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** bedfordBackSpringR ***
+ObjectTemplate.create Spring bedfordBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry bedford_rrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** bedfordBackSpringL ***
+ObjectTemplate.create Spring bedfordBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry bedford_lrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4

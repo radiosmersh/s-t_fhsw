@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include 8magfed_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include 8magfed_Low.ssc
+
+#templateLevel LOW
+
+	#include 8magfed_Mid.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include G43_HUB_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include G43_HUB_Medium.ssc
+	
+#templateLevel LOW
+
+	#include G43_HUB_Low.ssc

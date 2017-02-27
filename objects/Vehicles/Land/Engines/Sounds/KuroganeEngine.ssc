@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KuroganeEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KuroganeEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/KuroganeEngine.ssc

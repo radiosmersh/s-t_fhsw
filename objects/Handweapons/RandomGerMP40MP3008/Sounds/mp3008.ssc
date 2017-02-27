@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include mp3008High.ssc
+	
+#templateLevel MEDIUM
+
+	#include mp3008Medium.ssc
+	
+#templateLevel LOW
+
+	#include mp3008Low.ssc

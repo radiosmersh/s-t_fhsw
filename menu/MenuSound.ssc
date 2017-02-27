@@ -1,0 +1,150 @@
+###########################
+### Victory 		###
+###########################
+newPatch
+load @ROOT/Sound/@RTD/VOMOCF.wav
+priority 11
+addGroup Volume Menu
+
+############################
+### toggleItem 		 ###
+############################
+newPatch
+load @ROOT/Sound/@RTD/menucancel.wav
+priority 11
+addGroup Volume Menu
+
+##################################
+### selectItem 		       ###
+##################################
+newPatch
+load @ROOT/Sound/@RTD/menuchange.wav
+priority 11
+addGroup Volume Menu
+
+load @ROOT/Sound/@RTD/SoFa1.wav
+randomStartPitch 0.03 / 0.0
+volume .6
+priority 11
+addGroup Volume Menu
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.20
+	param 0.20
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoFa3.wav
+randomStartPitch 0.03 / 0.0
+volume .3
+priority 11
+addGroup Volume Menu
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.50
+	param 0.50
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoMeRu6.wav
+randomStartPitch 0.03 / 0.0
+priority 11
+addGroup Volume Menu
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 0.1
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+##################################
+### MouseOver 		       ###
+##################################
+newPatch
+load @ROOT/Sound/@RTD/menuback.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### SelectKit			###
+###################################
+newPatch
+load @ROOT/Sound/@RTD/menuapply.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### Ok		  	   	###
+###################################
+newPatch
+load @ROOT/Sound/@RTD/menuback.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### Cancel			###
+###################################
+newPatch
+load @ROOT/Sound/@RTD/menucancel.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### Check			###
+###################################
+newPatch
+load @ROOT/Sound/@RTD/menuCheck.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### HighLight			###
+###################################
+newPatch
+load @ROOT/Sound/@RTD/menuchange.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### Invalid			###
+###################################
+newPatch
+load @ROOT/Sound/@RTD/menuHighLight.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### UnCheck			###
+###################################
+newPatch
+load @ROOT/Sound/@RTD/menuuncheck.wav
+priority 11
+addGroup Volume Menu
+
+###################################
+### StartGame			###
+###################################
+newPatch
+#load @ROOT/Sound/@RTD/menustartgame.wav
+load @ROOT/Sound/@RTD/menuback.wav
+stereo
+priority 11
+addGroup Volume Menu

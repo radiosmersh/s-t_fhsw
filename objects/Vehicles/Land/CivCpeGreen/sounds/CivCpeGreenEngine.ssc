@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/CivCpeGreenEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/CivCpeGreenEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/CivCpeGreenEngine.ssc

@@ -1,0 +1,33 @@
+
+
+rem *** e_Muzz8mm***
+ObjectTemplate.create EffectBundle e_Jumplight
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_Jumplight_flash
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+rem *** Em_Jumplight_flash ***
+ObjectTemplate.create Emitter Em_Jumplight_flash
+ObjectTemplate.template FX_Jumplight_flash
+ObjectTemplate.addEmitterSpeed 100
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/100/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0/0/0
+
+rem *** FX_Jumplight_flash***
+ObjectTemplate.create SpriteParticle FX_Jumplight_flash
+ObjectTemplate.timeToLive CRD_UNIFORM/0.01/0.01/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.1|50/0.1|100/0.1
+ObjectTemplate.Drag CRD_NONE/0/0/0
+ObjectTemplate.texture e_Jumplight_o
+ObjectTemplate.initRotation CRD_NONE/0/0/0
+ObjectTemplate.XYSizeRatio CRD_NORMAL/1/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_UNIFORM/0/0/0
+ObjectTemplate.rotationSpeedOverTime 0/0.0|100/0.0
+ObjectTemplate.colorRGBAOverTime 0/155/155/155/30|87/150/150/150/30|100/150/150/150/0

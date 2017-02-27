@@ -1,0 +1,250 @@
+#include ../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+#include ../../Common/Sounds/Glider_Dive.ssc
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/ohka_Glider_fly.wav
+minDistance 5
+relativePosition 0/0/0
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 7
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### Engine1 ###
+###############
+
+load @ROOT/Sound/@RTD/ohka_Glider_fly.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+relativePosition 0/0/0
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 0.5
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.2
+	param 0.6
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param .5
+	param 0
+endEffect
+
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 180
+	param 1
+	param -1	
+	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+/*
+###############
+### Engine2 ###
+###############
+
+load @ROOT/Sound/@RTD/ohka_Glider_fly.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 0.5
+endEffect
+
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.01
+	param 0.5
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+*/
+
+
+###############
+### Engine3 ###
+###############
+
+load @ROOT/Sound/@RTD/ohka_Glider_fly.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+relativePosition 0/0/-6.2
+
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 0.5
+endEffect
+
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.01
+	param 0.5
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param .8
+	param 0.95
+	param 0.05
+	param 1
+	param 2
+endEffect
+
+
+######################
+### Cockpit Rattle ###
+######################
+
+load @ROOT/Sound/@RTD/ohka_Glider_fly.wav
+loop
+minDistance 5
+volume 1.0
+priority 6
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 7
+	param 1
+	param -1	
+endEffect
+
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 3
+	param 0
+	param 1
+endEffect

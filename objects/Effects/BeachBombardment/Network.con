@@ -1,0 +1,8 @@
+NetworkableInfo.createNewInfo BeachBombardment_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo BeachBombardmentEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

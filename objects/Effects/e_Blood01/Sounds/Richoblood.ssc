@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Richoblood_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Richoblood_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include Richoblood_MedLow.ssc

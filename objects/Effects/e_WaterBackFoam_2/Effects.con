@@ -1,0 +1,46 @@
+
+
+rem *** e_WaterBackFoam_2 ***
+ObjectTemplate.create EffectBundle e_WaterBackFoam_2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_WaterBackSmallFoam_2
+ObjectTemplate.setPosition 0/-0.499/0
+rem -------------------------------------
+ObjectTemplate.minDistanceUnderwaterSurface 0
+ObjectTemplate.maxDistanceUnderwaterSurface 2
+
+
+rem *** Em_WaterBackSmallFoam_2 ***
+ObjectTemplate.create Emitter Em_WaterBackSmallFoam_2
+ObjectTemplate.template Fx_WaterBackSmallFoam_2
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/30/40/0
+ObjectTemplate.IntensityAtSpeed 10
+ObjectTemplate.relativePositionInDof CRD_NONE/6/0/0
+ObjectTemplate.relativePositionInUp CRD_NONE/1/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/3/6/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/1
+
+
+rem *** Fx_WaterBackSmallFoam_2 ***
+ObjectTemplate.create SpriteParticle Fx_WaterBackSmallFoam_2
+ObjectTemplate.timeToLive CRD_NONE/1/1/0
+ObjectTemplate.size CRD_UNIFORM/2/3/0
+ObjectTemplate.drag CRD_NONE/0.3/0/0
+ObjectTemplate.sizeOverTime 0/7.6e-005|100/1.00024
+ObjectTemplate.texture water_ono_I
+ObjectTemplate.initRotation CRD_NONE/1/360/1
+ObjectTemplate.XYSizeRatio CRD_NONE/1.45/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1.39995
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/255/255/255/0

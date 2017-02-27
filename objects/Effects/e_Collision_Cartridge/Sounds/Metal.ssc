@@ -1,0 +1,32 @@
+#include ../../Common/Sounds/SoundMap.ssc
+
+newPatch
+load @ROOT/Sound/@RTD/Cartridge1.wav
+randomStartPitch 0.05 / 0.0
+minDistance 5
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 30
+	param 1
+	param -1	
+endEffect
+
+*** Speed Volume ***
+beginEffect
+ 	controlDestination Volume
+  	controlSource Extern #map<Effect::Speed>
+  	envelope Ramp
+  	param .5
+  	param 2
+  	param 0
+  	param 1
+  	param 2
+	param 2
+endEffect
+

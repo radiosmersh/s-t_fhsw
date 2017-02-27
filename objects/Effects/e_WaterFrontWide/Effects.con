@@ -1,0 +1,87 @@
+
+
+rem *** e_WaterFrontWide ***
+ObjectTemplate.create EffectBundle e_WaterFrontWide
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/e_WaterFrontWide.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_WaterFrontWide
+ObjectTemplate.setPosition -.1/0/0
+ObjectTemplate.setRotation 189.999/0/-15
+ObjectTemplate.addTemplate Em_WaterFoam
+ObjectTemplate.setPosition -.1/0/0
+ObjectTemplate.setRotation 189.999/0/-15
+ObjectTemplate.addTemplate Em_WaterFrontWideR
+ObjectTemplate.setPosition .1/0/0
+ObjectTemplate.setRotation -189.999/0/15
+ObjectTemplate.addTemplate Em_WaterFoamR
+ObjectTemplate.setPosition .1/0/0
+ObjectTemplate.setRotation -189.999/0/15
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.minDistanceUnderwaterSurface 0
+ObjectTemplate.maxDistanceUnderwaterSurface 10
+
+
+rem *** Em_WaterFrontWide ***
+ObjectTemplate.create Emitter Em_WaterFrontWide
+ObjectTemplate.template Fx_WaterFrontWideMesh
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/5/20/0
+ObjectTemplate.IntensityAtSpeed 10
+ObjectTemplate.relativePositionInDof CRD_NONE/-1/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/1/0
+ObjectTemplate.relativePositionInRight CRD_NONE/1.3/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/2/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/1/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/-20/0/0
+
+rem *** Fx_WaterFrontWideMesh ***
+ObjectTemplate.create Particle Fx_WaterFrontWideMesh
+ObjectTemplate.geometry watermesh_m1
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+ObjectTemplate.size CRD_UNIFORM/1/2/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/1/0.9/0
+ObjectTemplate.sizeModifier 2/1/3
+ObjectTemplate.sizeOverTime 0/1.10007|100/3.20005
+
+rem *** Em_WaterFrontWideR ***
+ObjectTemplate.create Emitter Em_WaterFrontWideR
+ObjectTemplate.template Fx_WaterFrontWideMeshR
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/5/15/0
+ObjectTemplate.IntensityAtSpeed 10
+ObjectTemplate.relativePositionInDof CRD_NONE/-1/0/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/1/0
+ObjectTemplate.relativePositionInRight CRD_NONE/-1.3/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/2/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/4/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/-1/0/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/20/0/0
+
+
+rem *** Fx_WaterFrontWideMeshR ***
+ObjectTemplate.create Particle Fx_WaterFrontWideMeshR
+ObjectTemplate.geometry watermesh_m1
+ObjectTemplate.timeToLive CRD_NONE/0.8/0/0
+ObjectTemplate.size CRD_UNIFORM/1/2/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/1/0.9/0
+ObjectTemplate.sizeModifier 2/1/3
+ObjectTemplate.sizeOverTime 0/1.10007|100/3.20005

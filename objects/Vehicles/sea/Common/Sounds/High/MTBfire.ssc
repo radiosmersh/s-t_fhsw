@@ -1,0 +1,7 @@
+newPatch
+
+load @ROOT/Sound/@RTD/MTBfire.wav
+minDistance 20
+randomStartPitch 0.05 / 0.0
+dopplerOff
+priority 10

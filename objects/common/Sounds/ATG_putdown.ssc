@@ -1,0 +1,58 @@
+#templateLevel HIGH
+
+newPatch
+load @ROOT/Sound/@RTD/ATG_putdown.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+#templateLevel MEDIUM
+
+newPatch
+load @ROOT/Sound/@RTD/ATG_putdown.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+priority 3
+
+
+#templateLevel LOW
+
+newPatch
+load @ROOT/Sound/@RTD/ATG_putdown.wav
+minDistance 10
+randomStartPitch 0.05 / 0.05
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 20
+	param 1
+	param -1
+endEffect
+priority 3
+

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RichoWood_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include RichoWood_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include RichoWood_MedLow.ssc

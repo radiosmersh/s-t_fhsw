@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Richosandbag_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Richosandbag_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include Richosandbag_MedLow.ssc

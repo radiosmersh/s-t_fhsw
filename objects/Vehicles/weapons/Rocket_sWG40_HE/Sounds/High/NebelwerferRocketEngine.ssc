@@ -1,0 +1,43 @@
+newPatch
+
+#############
+### Close ###
+#############
+#include ../../../Common/Sounds/RocketLaunchLand.ssc
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/nebel1.wav
+minDistance 60
+randomStartPitch 0.07 / 0.07
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+###########
+### Far ###
+###########
+#include ../../../Common/Sounds/DistantRocketFire.ssc
+
+##################
+### After Fire ###
+##################
+#include ../../../Common/Sounds/PostRocketFire.ssc

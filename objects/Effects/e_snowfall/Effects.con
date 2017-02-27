@@ -1,0 +1,41 @@
+
+
+rem ******* e_snowfall *******
+rem / developed by CamelNele /
+rem /  Norwegian Resistance  /
+rem **************************
+ObjectTemplate.create EffectBundle e_snowfall
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_snowfall
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** Em_snowfall ***
+ObjectTemplate.create Emitter Em_snowfall
+ObjectTemplate.template Fx_snowfall
+ObjectTemplate.looping 1
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 150
+ObjectTemplate.timeToLive CRD_NONE/0.5/0/0
+ObjectTemplate.intensity CRD_NONE/20/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/-100/100/0
+ObjectTemplate.relativePositionInUp CRD_UNIFORM/0/2/0
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/100/-100/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/4/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/-2/1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** Fx_snowfall ***
+ObjectTemplate.create Particle Fx_snowfall
+ObjectTemplate.geometry schneeflocke1_m1
+ObjectTemplate.timeToLive CRD_UNIFORM/7/0.4/0
+ObjectTemplate.size CRD_UNIFORM/2/4/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/0.2/0.4/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.sizeOverTime 0/0.100024|100/1
+ObjectTemplate.gravityModifierOverTime 0/0.5|86/0.530015|100/1

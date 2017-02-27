@@ -1,0 +1,27 @@
+
+
+rem *** e_scrapmetal_Apache ***
+ObjectTemplate.create EffectBundle e_scrapmetal_Apache
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_1
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_2
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_3
+ObjectTemplate.addTemplate Em_ScrapMetal_2Apache
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+
+rem *** Em_ScrapMetal_2Apache ***
+ObjectTemplate.create Emitter Em_ScrapMetal_2Apache
+ObjectTemplate.template Wreck_Apache2_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/1/5/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+

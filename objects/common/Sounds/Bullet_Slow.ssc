@@ -1,0 +1,12 @@
+#templateLevel HIGH
+
+#include Bullet_Slow_High.ssc
+
+#templateLevel MEDIUM
+
+#include Bullet_Slow_MedLow.ssc
+
+#templateLevel LOW
+
+#include Bullet_Slow_MedLow.ssc
+

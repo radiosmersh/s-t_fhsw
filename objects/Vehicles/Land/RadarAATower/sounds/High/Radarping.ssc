@@ -1,0 +1,18 @@
+newPatch
+
+load @ROOT/Sound/@RTD/radarping.wav
+priority 10
+minDistance 3
+stereo
+volume 1.5
+
+*** Ping Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 2
+	param 3
+	param 1
+	param -1
+endEffect

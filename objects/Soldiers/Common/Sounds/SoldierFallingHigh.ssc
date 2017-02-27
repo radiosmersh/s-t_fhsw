@@ -1,0 +1,218 @@
+newPatch
+
+load @ROOT/Sound/@RTD/FreeFall.wav
+stereo
+loop
+minDistance 1
+randomStartPitch 0.05 / 0.05
+dopplerOff
+volume .5
+priority 10
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.1
+	param 1
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+
+load @ROOT/Sound/@RTD/fhs1.wav
+minDistance 1
+randomStartPitch 0.05 / 0.05
+dopplerOff
+priority 11
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.2
+	param 1.2
+	param 0
+	param 1	
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/fhs2.wav
+dopplerOff
+priority 11
+minDistance 1
+randomStartPitch 0.05 / 0.05
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.3
+	param 2.3
+	param 0
+	param 1	
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/soprupp.wav
+dopplerOff
+priority 11
+minDistance 1
+randomStartPitch 0.05 / 0.05
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 11.5
+	param 11.5
+	param 0
+	param 1	
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+##############
+### Scream ###
+##############
+
+newPatch
+load @ROOT/Sound/@RTD/@Language/fallparachute.wav
+dopplerOff
+priority 11
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .7
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.3
+	param 3.3
+	param 0
+	param 1	
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/@Language/fallparachute2.wav
+dopplerOff
+priority 11
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .7
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.3
+	param 3.3
+	param 0
+	param 1	
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/@Language/fallparachute3.wav
+dopplerOff
+priority 11
+minDistance 1
+randomStartPitch 0.05 / 0.05
+volume .7
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.3
+	param 3.3
+	param 0
+	param 1	
+endEffect
+
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 20
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

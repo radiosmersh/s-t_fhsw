@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include LebelSniperHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include LebelSniperMedium.ssc
+	
+#templateLevel LOW
+
+	#include LebelSniperLow.ssc

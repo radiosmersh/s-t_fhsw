@@ -1,0 +1,6 @@
+############################################
+### Removing random distant fire from FH ###
+############################################
+load @ROOT/Sound/@RTD/silence.wav
+priority -12
+volume 0

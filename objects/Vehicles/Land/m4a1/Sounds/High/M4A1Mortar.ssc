@@ -1,0 +1,37 @@
+newPatch
+
+load @ROOT/Sound/@RTD/v_mortar_fire1_mono.wav
+minDistance 6
+randomStartPitch 0.05 / 0.0
+dopplerOff
+priority 10
+
+
+load @ROOT/Sound/@RTD/mortar_rel.wav
+stereo
+randomStartPitch 0.05 / 0.0
+dopplerOff
+priority 10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 5
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 4.7
+	param 4.7
+	param 0
+	param 1
+endEffect
+trigger Volume

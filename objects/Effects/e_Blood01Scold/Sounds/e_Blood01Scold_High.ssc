@@ -1,0 +1,665 @@
+newPatch
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_01.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_02.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_03.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_04.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_05.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_06.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 7 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_07.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 8 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_08.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_01.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_02.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_03.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_04.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_05.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_06.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 7 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_07.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 8 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_08.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_01.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_02.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_03.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_04.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_05.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_06.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 7 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_07.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 8 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_08.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 1 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_01.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 2 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_02.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 3 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_03.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+
+###############
+### SOUND 4 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_04.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 5 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_05.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 6 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_06.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 7 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_07.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###############
+### SOUND 8 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_08.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+###############
+### SOUND 9 ###
+###############
+load @ROOT/Sound/@RTD/BloodScold_09.wav
+minDistance 3
+randomStartPitch 0.05 / 0.05
+priority 7
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 10
+	param 1
+	param -1	
+endEffect
+
+#################
+### RANDOMIZE ###
+#################
+randomPlay 1
+

@@ -1,0 +1,99 @@
+
+
+rem *** opelblitzEngine ***
+ObjectTemplate.create Engine opelblitzEngine
+ObjectTemplate.setNetworkableInfo opelblitzEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/BlitzEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate opelblitzFrontWheelR
+ObjectTemplate.setPosition 0.954/-0.591/2.312
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate opelblitzFrontWheelL
+ObjectTemplate.setPosition -0.947/-0.591/2.312
+ObjectTemplate.addTemplate opelblitzBackSpringR
+ObjectTemplate.setPosition 0.896/-0.599/-2.319
+ObjectTemplate.addTemplate opelblitzBackSpringL
+ObjectTemplate.setPosition -0.884/-0.599/-2.319
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 5.6
+ObjectTemplate.setDifferential 4.0
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+ObjectTemplate.setGearChangeTime 0.1
+
+
+
+rem *** opelblitzFrontSpringR ***
+ObjectTemplate.create Spring opelblitzFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry opelblitz_frtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** opelblitzFrontSpringL ***
+ObjectTemplate.create Spring opelblitzFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry opelblitz_frtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** opelblitzBackSpringR ***
+ObjectTemplate.create Spring opelblitzBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry opelblitz_rrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4
+
+
+rem *** opelblitzBackSpringL ***
+ObjectTemplate.create Spring opelblitzBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry opelblitz_lrtire_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 20
+ObjectTemplate.setDamping 4

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include RichoSand_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include RichoSand_MedLow.ssc
+	
+#templateLevel LOW
+
+	#include RichoSand_MedLow.ssc

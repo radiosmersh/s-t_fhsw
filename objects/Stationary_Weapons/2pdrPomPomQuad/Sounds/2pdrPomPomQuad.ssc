@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/2pdrPomPomQuad.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/2pdrPomPomQuad.ssc
+	
+#templateLevel LOW
+
+	#include Low/2pdrPomPomQuad.ssc

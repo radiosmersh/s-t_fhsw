@@ -1,0 +1,55 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/nebel_launch1.wav
+minDistance 60
+randomStartPitch 0.1 / 0.05
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/nebel_launch2.wav
+minDistance 60
+randomStartPitch 0.1 / 0.05
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+randomPlay 1
+

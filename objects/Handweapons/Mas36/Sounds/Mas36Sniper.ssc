@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Mas36Sniper_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mas36Sniper_Medium.ssc
+	
+#templateLevel LOW
+
+	#include Mas36Sniper_Low.ssc

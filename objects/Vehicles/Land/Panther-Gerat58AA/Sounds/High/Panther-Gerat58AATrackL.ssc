@@ -1,0 +1,37 @@
+newPatch
+load @ROOT/Sound/@RTD/VEALTTRACK.wav
+loop
+minDistance 10
+relativePosition -1/0/0
+ 
+priority 7
+*** Speed Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Speed
+	envelope Linear
+	param 0.7
+	param 0.02
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Speed
+	envelope Ramp
+	param 0.01
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 180
+	param 1
+	param -1
+endEffect

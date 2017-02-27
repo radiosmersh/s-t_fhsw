@@ -1,0 +1,15 @@
+load @ROOT/Sound/@RTD/Tnkheav_int_fire.wav
+relativePosition 0/0/0
+stereo
+priority 10
+minDistance 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect

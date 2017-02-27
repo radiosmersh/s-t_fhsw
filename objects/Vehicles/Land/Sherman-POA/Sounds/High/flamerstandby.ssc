@@ -1,0 +1,8 @@
+newPatch
+
+load @ROOT/Sound/@RTD/firestand.wav
+loop
+minDistance 10
+volume .8
+priority 4
+

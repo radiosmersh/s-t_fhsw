@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/RocketEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/RocketEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/RocketEngine.ssc

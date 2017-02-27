@@ -1,0 +1,133 @@
+rem *** e_ScrapMetal_PlaneBody ***
+ObjectTemplate.create EffectBundle e_ScrapMetal_PlaneBody
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ScrapMetal_PlaneBody_1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Em_ScrapMetal_PlaneBody_2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Em_ScrapMetal_PlaneBody_3
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Em_ScrapMetal_PlaneBody_4
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+
+
+rem *** Em_ScrapMetal_PlaneBody_1 ***
+ObjectTemplate.create Emitter Em_ScrapMetal_PlaneBody_1
+ObjectTemplate.template scrap_metal1Plane_m1
+ObjectTemplate.looping 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.intensity CRD_UNIFORM/0.3/0.6/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-0.5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0.5/-0.5/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+
+rem *** Em_ScrapMetal_PlaneBody_2 ***
+ObjectTemplate.create Emitter Em_ScrapMetal_PlaneBody_2
+ObjectTemplate.template scrap_metal2Plane_m1
+ObjectTemplate.looping 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.intensity CRD_UNIFORM/0.4/0.8/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-0.5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0.5/-0.5/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Em_ScrapMetal_PlaneBody_3 ***
+ObjectTemplate.create Emitter Em_ScrapMetal_PlaneBody_3
+ObjectTemplate.template scrap_metal3Plane_m1
+ObjectTemplate.looping 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.intensity CRD_UNIFORM/0.2/0.4/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0.5/-0.5/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Em_ScrapMetal_PlaneBody_4 ***
+ObjectTemplate.create Emitter Em_ScrapMetal_PlaneBody_4
+ObjectTemplate.template Gibb_Mroof30_nc_m1
+ObjectTemplate.looping 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 600
+ObjectTemplate.timeToLive CRD_NONE/5/0/0
+ObjectTemplate.intensity CRD_UNIFORM/2/2/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/2/-0.5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0.5/-0.5/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/1/-1/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+ObjectTemplate.create SimpleObject scrap_metal1Plane_m1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry scrap_metal1_m1
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.HasArmor 1
+ObjectTemplate.Hitpoints 0
+ObjectTemplate.timeToLiveAfterDeath  3
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.timeToStartFadeAfterDeath 1
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+rem ---------------------------------
+rem ---------------------------------
+
+ObjectTemplate.create SimpleObject scrap_metal2Plane_m1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry scrap_metal2_m1
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.HasArmor 1
+ObjectTemplate.Hitpoints 0
+ObjectTemplate.timeToLiveAfterDeath  3
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.timeToStartFadeAfterDeath 1
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+rem ---------------------------------
+rem ---------------------------------
+
+ObjectTemplate.create SimpleObject scrap_metal3Plane_m1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry scrap_metal3_m1
+ObjectTemplate.setHasCollisionPhysics 0
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.HasArmor 1
+ObjectTemplate.Hitpoints 0
+ObjectTemplate.timeToLiveAfterDeath  3
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.timeToStartFadeAfterDeath 1
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+rem ---------------------------------
+rem ---------------------------------

@@ -1,0 +1,106 @@
+##########################################
+### 'abused' for "small gas explosion" ###
+##########################################
+
+rem *** e_ExplSmall2 ***
+ObjectTemplate.create EffectBundle e_ExplSmall2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Sounds/explsmall2.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_expl_small2_Core
+ObjectTemplate.addTemplate Em_expl_small2_Flash
+ObjectTemplate.addTemplate Em_expl_small2_sparks
+ObjectTemplate.addTemplate Em_Explsmall2_Smoke
+ObjectTemplate.addTemplate Em_ExplBazooka
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+rem *** Em_expl_small2_Core ***
+ObjectTemplate.create Emitter Em_expl_small2_Core
+ObjectTemplate.template Fx_expl_small2_Core
+ObjectTemplate.lodDistance 1000
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_expl_small2_Core ***
+ObjectTemplate.create SpriteParticle Fx_expl_small2_Core
+ObjectTemplate.timeToLive CRD_UNIFORM/1/0.8/0
+ObjectTemplate.size CRD_NONE/1.5/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0|6/1|100/2
+ObjectTemplate.texture e_exp_Dirt9
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/255/128/120|80/255/255/255/54|100/255/255/255/0
+
+
+rem *** Em_expl_small2_Flash ***
+ObjectTemplate.create Emitter Em_expl_small2_Flash
+ObjectTemplate.template Fx_expl_dirt_flash
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/12/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-0.2/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+rem *** Fx_expl_dirt_flash ***
+ObjectTemplate.create SpriteParticle Fx_expl_dirt_flash
+ObjectTemplate.timeToLive CRD_UNIFORM/1/0.8/0
+ObjectTemplate.size CRD_UNIFORM/5/10/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0|6/1|100/1.5
+ObjectTemplate.texture e_fire4
+ObjectTemplate.initRotation CRD_NONE/1/0/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.colorRGBAOverTime 0/255/255/128/120|80/255/255/255/54|100/255/255/255/0
+
+rem *** Em_expl_small2_sparks ***
+ObjectTemplate.create Emitter Em_expl_small2_sparks
+ObjectTemplate.template Fx_expl_small2_sparks
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/-0.2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/2/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/2/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/2/1
+ObjectTemplate.startRotation CRD_UNIFORM/1/180/0
+rem *** Fx_expl_small2_sparks ***
+ObjectTemplate.create SpriteParticle Fx_expl_small2_sparks
+ObjectTemplate.timeToLive CRD_NONE/0.3/0.3/0
+ObjectTemplate.size CRD_UNIFORM/1/2/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+ObjectTemplate.sizeOverTime 0/0.840068|100/2.79991
+ObjectTemplate.texture e_DirtAni03
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/1/30/1
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/168|67/255/255/128/214|100/255/128/64/0
+
+
+rem *** Em_Explsmall2_Smoke ***
+ObjectTemplate.create Emitter Em_Explsmall2_Smoke
+ObjectTemplate.template Fx_Explsmall2_Smoke
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 800
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/11/20/0
+ObjectTemplate.rotationalSpeedInDof CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/100/0/0
+rem *** Fx_Explsmall2_Smoke ***
+ObjectTemplate.create SpriteParticle Fx_Explsmall2_Smoke
+ObjectTemplate.timeToLive CRD_UNIFORM/1/1/0
+ObjectTemplate.size CRD_NONE/1.3/0/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/-0.1/-0.2/0
+ObjectTemplate.sizeOverTime 0/0|10/2|100/3
+ObjectTemplate.gravityModifierOverTime 0/0.5|100/1
+ObjectTemplate.texture e_muzs1_I
+ObjectTemplate.useMipMaps 0
+ObjectTemplate.initRotation CRD_UNIFORM/1/180/0
+ObjectTemplate.XYSizeRatio CRD_NONE/1.1/0/0
+ObjectTemplate.destBlendMode BMInvSourceAlpha
+ObjectTemplate.rotationSpeed CRD_NONE/0/0/0
+ObjectTemplate.rotationSpeedOverTime 0/2.04004|26/3.36|64/3.84002|100/6
+ObjectTemplate.colorRGBAOverTime 0/255/255/255/0|13/255/255/255/97|31/255/255/255/233|55/255/255/255/202|100/0/0/0/0

@@ -1,0 +1,213 @@
+newPatch
+load @ROOT/Sound/@RTD/hullcreak1.wav
+randomStartPitch 0.5 / 0.
+minDistance 20
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2
+	param 2
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/hullcreak2.wav
+randomStartPitch 0.5 / 0.
+minDistance 20
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 6
+	param 6
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+newPatch
+load @ROOT/Sound/@RTD/hullcreak1.wav
+randomStartPitch 0.8 / 0.
+minDistance 20
+dopplerOff
+priority 4
+relativePosition 0 / 0 / 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 10
+	param 10
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/hullcreak2.wav
+randomStartPitch 0.8 / 0.
+minDistance 20
+dopplerOff
+priority 4
+relativePosition 0 / 0 / 30 
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 14
+	param 14
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+newPatch
+load @ROOT/Sound/@RTD/hullcreak1.wav
+randomStartPitch 0.8 / 0.
+minDistance 20
+dopplerOff
+priority 4
+relativePosition 0 / 0 / 20
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 17
+	param 17
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+load @ROOT/Sound/@RTD/hullcreak2.wav
+randomStartPitch 0.8 / 0.
+minDistance 20
+dopplerOff
+priority 4
+relativePosition 0 / 0 / 40 
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 22
+	param 22
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+
+load @ROOT/Sound/@RTD/Ship_diving.wav
+randomStartPitch 0.8 / 0.
+minDistance 5
+dopplerOff
+priority 4
+relativePosition 0 / 0 / 20 
+loop
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 60
+	param 1
+	param -1	
+endEffect
+
+load @ROOT/Sound/@RTD/Ship_diving.wav
+randomStartPitch 0.8 / 0.
+minDistance 5
+relativePosition 0 / 0 / 5 
+loop
+dopplerOff
+priority 4
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 60
+	param 1
+	param -1	
+endEffect

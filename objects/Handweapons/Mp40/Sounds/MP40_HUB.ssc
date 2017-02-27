@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include MP40_HUB_High.ssc
+	
+#templateLevel MEDIUM
+
+	#include MP40_HUB_Medium.ssc
+	
+#templateLevel LOW
+
+	#include MP40_HUB_Low.ssc
