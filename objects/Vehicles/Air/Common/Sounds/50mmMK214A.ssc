@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/50mmMK214A.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/50mmMK214A.ssc
+	
+#templateLevel LOW
+
+	#include Low/50mmMK214A.ssc

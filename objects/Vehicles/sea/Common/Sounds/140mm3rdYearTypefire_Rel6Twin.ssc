@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/140mm3rdYearTypefire_Rel6Twin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/140mm3rdYearTypefire_Rel6Twin.ssc
+	
+#templateLevel LOW
+
+	#include Low/140mm3rdYearTypefire_Rel6Twin.ssc

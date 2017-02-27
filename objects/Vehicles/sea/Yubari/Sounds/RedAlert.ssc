@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/RedAlert.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/RedAlert.ssc
+	
+#templateLevel LOW
+
+	#include Low/RedAlert.ssc

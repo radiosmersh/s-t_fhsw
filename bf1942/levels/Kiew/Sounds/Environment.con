@@ -1,0 +1,8 @@
+EnvironmentSound.load Environment.ssc
+run rivermid.con
+run riverside.con
+run riverside2.con
+run raininside.con
+run axen-radio.con
+run allied-radio.con
+run thunder.con

@@ -1,0 +1,78 @@
+
+ShaderManager.setTextureParam envmap bf1942\levels\Battle_of_Foy\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1 
+renderer.fogColorVec 0.7176/0.7490/0.7569
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.1
+renderer.ambientColor .15/.15/.18
+renderer.diffuseColor .3/.3/.3
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.25
+
+shadow.shadowColor 0.4
+
+textureManager.alternativePath Texture/Foy
+textureManager.alternativePath Texture/SPECIAL_US_UNIFORM_WINTER_ALT
+textureManager.alternativePath bf1942/levels/BATTLE_OF_FOY/texture
+textureManager.alternativePath Texture/Special_skys/bulge
+textureManager.alternativePath Texture/Levels/bulge
+textureManager.alternativePath Texture/ENVIROMENT_WINTER
+textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath Texture/GENERAL_US_WINTER
+
+Game.setViewDistance 350
+Game.spawnPlayers 1
+rem renderer.fogstart -130
+rem renderer.fogend 350
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_Officer_WinterMp40
+game.setKit 1 1 2German_GrenadierK98RGWinter
+game.setKit 1 2 3German_AT_WinterPanzerfaust30
+game.setKit 1 3 4German_Tankhunter_WinterK98Satchel
+rem game.setKit 1 4 5German_Assault_WinterK98
+game.setKit 1 4 5German_AssaultCapturedRifle
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1Us_ClosequartersGreasegunSmoke2R
+game.setKit 2 1 2Us_AssaultGarand
+game.setKit 2 2 3Us_ATBazookaBN
+game.setKit 2 3 4Us_TankhunterThompsonSocksBN
+game.setKit 2 4 5US_EngineerM1CarabineSmoke2R
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run objects/objects
+
+game.setActiveCombatArea 116 192 1664 1664
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water08
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap -1/-1
+water.scrollDirection1 1/-1
+water.scrollDirection2 0/1
+water.specularColor 0.6
+water.scrollLayer1 0.02
+water.scrollLayer2 0.03
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.45
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.5
+water.lightDirection -0.3/0.5/-0.65
+water.color 0
+water.deepcolor 0.7
+water.waterShallowAlpha 0.7
+water.waterAlphadepth .5
+water.waterColorDepth 10
+
+run Sounds/Environment
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 645.4/75.233/797.545
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 645.4/75.233/797.545

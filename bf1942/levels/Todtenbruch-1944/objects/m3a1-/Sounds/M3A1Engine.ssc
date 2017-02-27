@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/M3A1Engine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/M3A1Engine.ssc
+	
+#templateLevel LOW
+
+	#include Low/M3A1Engine.ssc

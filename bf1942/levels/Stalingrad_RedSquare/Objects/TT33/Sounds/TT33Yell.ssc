@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/WillyHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/WillyHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/WillyHorn.ssc

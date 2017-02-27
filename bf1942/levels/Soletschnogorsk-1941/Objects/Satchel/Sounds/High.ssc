@@ -1,0 +1,126 @@
+##############
+### FABRIC ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/SoFaRun1.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .5
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 5
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.10
+	param 0.10
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoFaRun2.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .5
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 5
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.10
+	param 0.10
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoFaRun3.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1
+volume .5
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 5
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.10
+	param 0.10
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+load @ROOT/Sound/@RTD/SoFaRun4.wav
+randomStartPitch 0.03 / 0.03
+minDistance 1¨
+volume .5
+dopplerOff
+priority 6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 5
+	param 1
+	param -1	
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.10
+	param 0.10
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+randomPlay 1

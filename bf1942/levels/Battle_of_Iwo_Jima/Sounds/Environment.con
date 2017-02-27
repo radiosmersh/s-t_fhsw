@@ -1,0 +1,7 @@
+EnvironmentSound.load Environment.ssc
+run Coastline.con
+run omaha01.con
+run War_ambience1.con
+run War_ambience2.con
+run radio1.con
+

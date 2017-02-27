@@ -1,0 +1,8 @@
+
+
+rem *** river ***
+ObjectTemplate.create SimpleObject river
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript river.ssc
+ObjectTemplate.triggerRadius 15
+

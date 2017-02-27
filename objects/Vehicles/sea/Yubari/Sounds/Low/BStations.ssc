@@ -1,0 +1,19 @@
+newPatch
+
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/Destroyer/BStations.wav
+minDistance 100
+dopplerOff
+priority 8
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 340
+	param 1
+	param -1
+endEffect

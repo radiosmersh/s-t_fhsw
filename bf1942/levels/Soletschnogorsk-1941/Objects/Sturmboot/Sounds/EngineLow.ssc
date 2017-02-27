@@ -1,0 +1,207 @@
+#include ../../../Common/Sounds/EngineMap.ssc
+
+newPatch
+
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/aivallo.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+priority 10
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param .6
+	param 0.70
+	param 0.30
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 0.7
+	param 1
+	param -1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+###########
+### med ###
+###########
+
+load @ROOT/Sound/@RTD/mstngnrunmed.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+priority 10
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.4
+	param .99
+	param 0.70
+	param 0.30
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0
+	param 0.6
+	param 0
+	param 1
+endEffect
+
+*** Engine Volume End ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.6
+	param .99
+	param 1
+	param -1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+##########
+### hi ###
+##########
+
+load @ROOT/Sound/@RTD/aivalhi.wav
+loop
+minDistance 20
+randomStartPitch .05/.05 
+priority 10
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .4
+	param 1.2
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param .6
+	param 1.05
+	param 0.70
+	param 0.30
+	
+endEffect
+
+*** Engine Volume Start ***
+beginEffect
+	controlDestination Volume
+	controlSource Extern #map<Engine::Rpm>
+	envelope Ramp
+	param 0.6
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 180
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect

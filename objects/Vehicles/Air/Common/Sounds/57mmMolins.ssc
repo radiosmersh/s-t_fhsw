@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/57mmMolins.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/57mmMolins.ssc
+	
+#templateLevel LOW
+
+	#include Low/57mmMolins.ssc

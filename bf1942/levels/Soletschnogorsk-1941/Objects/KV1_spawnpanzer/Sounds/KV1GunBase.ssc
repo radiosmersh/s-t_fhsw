@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KV1GunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KV1GunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/KV1GunBase.ssc

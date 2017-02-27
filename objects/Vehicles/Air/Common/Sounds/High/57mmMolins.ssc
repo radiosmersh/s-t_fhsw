@@ -1,0 +1,93 @@
+newPatch
+
+load @ROOT/Sound/@RTD/brit_int_fire.wav
+relativePosition 0/0/0
+stereo
+priority 10
+minDistance 15
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 8
+	param 12
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/60mm.wav
+minDistance 12
+dopplerOff
+priority 10
+relativePosition 0/0/1
+stereo
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 12
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/60mm.wav
+minDistance 30
+dopplerOff
+priority 8
+relativePosition 0/0/1
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 12
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 12
+	param 300
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/autorel.wav
+minDistance 1
+relativePosition -.23/0/1
+dopplerOff
+priority 9
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.0
+	param 0.0
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 8
+	param 12
+	param 1
+	param -1
+endEffect

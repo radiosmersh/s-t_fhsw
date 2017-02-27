@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KV1Turret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KV1Turret.ssc
+	
+#templateLevel LOW
+
+	#include Low/KV1Turret.ssc

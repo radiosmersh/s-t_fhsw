@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Lcvp_Ramp.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Lcvp_Ramp.ssc
+	
+#templateLevel LOW
+
+	#include Low/Lcvp_Ramp.ssc

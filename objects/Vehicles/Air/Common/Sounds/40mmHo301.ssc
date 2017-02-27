@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/40mmHo301.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/40mmHo301.ssc
+	
+#templateLevel LOW
+
+	#include Low/40mmHo301.ssc

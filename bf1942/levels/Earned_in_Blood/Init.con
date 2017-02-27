@@ -1,0 +1,58 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
+rem *********************************************
+ShaderManager.setTextureParam envmap bf1942\levels\Earned_in_Blood\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1 
+
+renderer.fogColorVec 0.5568/0.5843/0.5921
+rem renderer.fogColorVec 0.3203125/0.3203125/0.31640625
+rem renderer.fogColorVec 0.8549/0.8706/0.8745
+
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.1
+renderer.ambientColor .15/.15/.18
+renderer.diffuseColor .3/.3/.3
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.25
+TreeRenderer.billboardlightscale 0.1
+shadow.shadowColor 0.5
+
+textureManager.alternativePath Texture/ENVIROMENT_WINTER
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_WINTER
+textureManager.alternativePath Texture/General_Ger_Winter_1944
+textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath Texture/GENERAL_RUS_WINTER
+textureManager.alternativePath Texture/Levels/Valirisk
+textureManager.alternativePath Texture/Special_skys/valirisk
+
+Game.setViewDistance 150
+
+Game.spawnPlayers 1
+renderer.fogstart -250
+renderer.fogend 250
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_Officer_WinterMp40Smoke2RMarker
+game.setKit 1 1 2German_AssaultG43WNWinter
+game.setKit 1 2 3German_AT_WinterPanzerfaust100
+game.setKit 1 3 4German_Tankhunter_WinterMp40
+game.setKit 1 4 5German_TankCommander_WinterWalterP38SignalSmoke
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_CloseQuartersPPs43
+game.setKit 2 1 2Rus_AssaultSVT40
+game.setKit 2 2 3Rus_TankhunterNagantSocks
+game.setKit 2 3 4Rus_SupportDP1928
+game.setKit 2 4 5Rus_TankCommanderTT33Smoke
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run Sounds/Environment
+run objects/runner
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 546.52/78.26/575.91
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 490.88/82.57/61.05

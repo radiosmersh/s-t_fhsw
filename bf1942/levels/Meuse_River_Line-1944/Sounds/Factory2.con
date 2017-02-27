@@ -1,0 +1,5 @@
+rem *** Factory2 ***
+ObjectTemplate.create SimpleObject Factory2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Factory2.ssc
+ObjectTemplate.triggerRadius 50

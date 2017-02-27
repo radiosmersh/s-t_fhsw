@@ -1,0 +1,100 @@
+ShaderManager.setTextureParam envmap bf1942/levels/Operation_Coronet-1946/Textures/ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.globalAmbientColor 0.100000/0.100000/0.100000
+renderer.ambientColor 0.120000/0.120000/0.120000
+renderer.diffuseColor 0.500000/0.500000/0.500000
+renderer.specularColor 0.100000/0.100000/0.100000
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.812/0.832/0.921
+remrenderer.fogColorVec 0.866667/0.901961/0.913726
+renderer.animatedMeshAmbientColor 0.15
+
+
+run Init/SkyAndSun
+run Init/Terrain
+
+textureManager.alternativePath ../../bf1942/levels/Operation_Coronet-1946/Texture
+textureManager.alternativePath Texture/US_Marines_Camo-J
+textureManager.alternativePath Texture/SPECIAL_JAP_ARTILLERY_GREEN
+textureManager.alternativePath Texture/SPECIAL_JAP_TANK_37REGIMENT
+textureManager.alternativePath Texture/SPECIAL_JAP_MAINLAND
+textureManager.alternativePath Texture/GENERAL_JAP_ARMY
+textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1944_SPRING
+textureManager.alternativePath Texture/GENERAL_US_PACIFIC
+textureManager.alternativePath Texture
+
+
+shadow.shadowColor 0.550000
+
+Game.setViewDistance 550
+Game.spawnPlayers 1
+renderer.fogstart 500
+renderer.fogend 550
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedJapFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUsFlag
+
+game.setTeamSkin 1 JapaneseSoldier
+game.setKit 1 0 1Jap_AssaultArisakaMilitia
+game.setKit 1 1 2Jap_AssaultArisakaMilitia
+game.setKit 1 2 3Jap_AntiTankMolotovMilitia
+game.setKit 1 3 4Jap_TankhunterMilitia
+game.setKit 1 4 5Jap_OfficerMilitia
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1Us_ClosequartersThompsonSmoke2R
+game.setKit 2 1 2Us_AssaultGarand
+game.setKit 2 2 3Us_OfficerThompson
+game.setKit 2 3 4Us_TankhunterThompson
+game.setKit 2 4 5US_TankCommanderColt
+game.setLevelCheck 2242588848
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Objects/objects
+
+
+
+
+run Sounds/Environment
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water01
+water.texLayer2 texture/water02
+water.normalMap texture/normalMap01
+water.scrollDirectionNormalmap 1.000000/0.000000
+water.scrollDirection1 1.000000/-0.500000
+water.scrollDirection2 1.000000/0.500000
+water.specularColor 0.650000/0.550000/0.400000
+water.scrollLayer1 0.020000
+water.scrollLayer2 0.020000
+water.scrollNormalmap 0.020000
+water.specularStreakFactor 0.001000
+water.tileLayer1 0.500000
+water.tileLayer2 0.500000
+water.tileNormalmap 1.000000
+water.lightDirection -0.300000/0.500000/-0.650000
+water.color 0.501961/1.000000/1.000000
+water.deepColor 0.000000/0.274510/0.501961
+water.waterAlphaDepth 0.000000
+water.waterShallowAlpha 0.500000
+
+
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 1479/73/1322
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 893/105/477

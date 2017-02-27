@@ -1,0 +1,4 @@
+EnvironmentSound.load Environment.ssc
+run island1.con
+run island2.con
+run island3.con

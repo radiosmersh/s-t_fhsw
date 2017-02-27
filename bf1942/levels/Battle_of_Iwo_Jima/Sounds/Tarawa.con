@@ -1,0 +1,13 @@
+rem *** Tarawa ***
+ObjectTemplate.create AreaObject Tarawa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 165
+ObjectTemplate.loadSoundScript Tarawa.ssc
+
+ObjectTemplate.addLinePoint 0/0
+ObjectTemplate.addLinePoint 241.12/196.67
+ObjectTemplate.addLinePoint 272.56/204.97
+ObjectTemplate.addLinePoint 411.10/714.51
+ObjectTemplate.addLinePoint 728.00/618.00
+ObjectTemplate.addLinePoint 484.50/760.34
+ObjectTemplate.addLinePoint 565.70/679.96

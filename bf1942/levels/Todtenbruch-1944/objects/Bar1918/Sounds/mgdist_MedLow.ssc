@@ -1,0 +1,672 @@
+#####################
+### MG distance 1 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist1.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 2 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist2.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 3 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist3.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 4 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist4.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 5 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist5.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 100
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 6 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist6.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 7 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist7.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 8 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist8.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+#####################
+### MG distance 9 ###
+#####################
+load @ROOT/Sound/@RTD/mgdist9.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 10 ###
+######################
+load @ROOT/Sound/@RTD/mgdist10.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 11 ###
+######################
+load @ROOT/Sound/@RTD/mgdist11.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 12 ###
+######################
+load @ROOT/Sound/@RTD/mgdist12.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 13 ###
+######################
+load @ROOT/Sound/@RTD/mgdist13.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 14 ###
+######################
+load @ROOT/Sound/@RTD/mgdist14.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 15 ###
+######################
+load @ROOT/Sound/@RTD/mgdist15.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 16 ###
+######################
+load @ROOT/Sound/@RTD/mgdist16.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 17 ###
+######################
+load @ROOT/Sound/@RTD/mgdist17.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 18 ###
+######################
+load @ROOT/Sound/@RTD/mgdist18.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 19 ###
+######################
+load @ROOT/Sound/@RTD/mgdist19.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+######################
+### MG distance 20 ###
+######################
+load @ROOT/Sound/@RTD/mgdist20.wav
+priority -12
+minDistance 16
+randomStartPitch 0.09 / 0.0
+
+*** Start Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 100
+	param 150
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 260
+	param 300
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+randomPlay 1

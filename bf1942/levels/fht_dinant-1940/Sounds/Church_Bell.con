@@ -1,0 +1,6 @@
+
+rem *** Church_Bell ***
+ObjectTemplate.create SimpleObject Church_Bell
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 72
+ObjectTemplate.loadSoundScript Church_Bell.ssc

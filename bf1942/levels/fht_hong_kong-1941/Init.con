@@ -1,0 +1,104 @@
+rem **********************************************
+rem Created by El Thilo. Edited by Forgotten Honor
+rem **********************************************
+ShaderManager.setTextureParam envmap bf1942\levels\fht_hong_kong-1941\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.globalAmbientColor 0.15/0.15/0.15
+renderer.ambientColor 0.068/0.04/0.07
+renderer.diffuseColor 0.5/0.48/0.4
+renderer.specularColor 0.45/0.483/0.4
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.553/0.539/0.484
+renderer.animatedMeshAmbientColor 0.3
+
+textureManager.alternativePath bf1942\levels\fht_hong_kong-1941\Texture
+textureManager.alternativePath Texture\FHT
+textureManager.alternativePath Texture\GENERAL_JAP_ARMY
+textureManager.alternativePath Texture\GENERAL_BRIT
+
+shadow.shadowColor 0.550000
+
+Game.setViewDistance 250
+Game.spawnPlayers 1
+renderer.fogstart 50
+renderer.fogend 150
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedJapFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 JapaneseSoldier
+game.setKit 1 0 1Jap_Officer100SMGSmoke2RD
+game.setKit 1 1 2Jap_AssaultArisaka38
+game.setKit 1 2 3Jap_AntiTankMolotov382
+game.setKit 1 3 4Jap_MedicArisaka
+game.setKit 1 4 5Jap_EngineerNoExp
+
+game.setTeamSkin 2 BritishSoldier
+game.setKit 2 0 1GB_OfficerStenMk2Smoke2R
+game.setKit 2 1 2GB_AssaultNo4
+game.setKit 2 2 3GB_ATMolotov2
+game.setKit 2 3 4GB_MedicNo4
+game.setKit 2 4 5GB_EngineerNo4NoExp
+
+beginrem
+game.setTeamSkin 1 JapaneseSoldier
+game.setKit 1 0 1Jap_ScoutMp18
+game.setKit 1 1 2Jap_AssaultArisakaBG
+game.setKit 1 2 3Jap_EngineerTurtle
+game.setKit 1 3 4Jap_MedicPistol
+game.setKit 1 4 5Jap_WrenchCarbine
+
+game.setTeamSkin 2 BritishSoldier
+game.setKit 2 0 1GB_ScoutStenMk2
+game.setKit 2 1 2GB_AssaultNo1BG
+game.setKit 2 2 3GB_EngineerSatchel
+game.setKit 2 3 4GB_MedicRevolver
+game.setKit 2 4 5GB_WrenchNo1R
+endrem
+
+game.setActiveCombatArea 0 0 1024 1024
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water05
+water.texLayer2 texture/water06
+water.normalMap texture/normalMap01
+water.scrollDirectionNormalmap 1.000000/0.000000
+water.scrollDirection1 1.000000/-0.500000
+water.scrollDirection2 1.000000/0.500000
+water.specularColor 0.650000/0.550000/0.400000
+water.scrollLayer1 0.020000
+water.scrollLayer2 0.020000
+water.scrollNormalmap 0.020000
+water.specularStreakFactor 0.001000
+water.tileLayer1 0.500000
+water.tileLayer2 0.500000
+water.tileNormalmap 1.000000
+water.lightDirection 0.635000/0.674000/0.377000
+water.color 1.000000/1.000000/1.000000
+water.deepColor 1.000000/1.000000/1.000000
+water.waterAlphaDepth 0.1
+water.waterShallowAlpha 0.9
+
+run Sounds/Environment
+run objects/objects
+
+game.setBeforeSpawnCameraPosition 1 876/82/734
+game.setBeforeSpawnCameraPosition 2 473/95/426

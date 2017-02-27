@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/6,1inchL60fire_Rel10Triple.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/6,1inchL60fire_Rel10Triple.ssc
+	
+#templateLevel LOW
+
+	#include Low/6,1inchL60fire_Rel10Triple.ssc

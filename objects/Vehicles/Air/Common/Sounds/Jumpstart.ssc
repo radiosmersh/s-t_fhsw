@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Jumpstart.sscHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include Low/Jumpstart.sscMedium.ssc
+
+#templateLevel LOW
+
+	#include Mid/Jumpstart.sscLow.ssc

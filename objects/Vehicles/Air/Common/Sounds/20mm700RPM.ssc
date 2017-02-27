@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/20mm700RPMHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/20mm700RPMMedium.ssc
+	
+#templateLevel LOW
+
+	#include Low/20mm700RPMLow.ssc

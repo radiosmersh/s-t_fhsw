@@ -1,0 +1,18 @@
+newPatch
+
+load @ROOT/bf1942/levels/Stalingrad_RedSquare/Sounds/whistle.wav
+minDistance 30
+dopplerOff
+priority 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 50
+	param 1
+	param -1	
+endEffect
+
+

@@ -1,0 +1,8 @@
+
+
+rem *** War_ambience2 ***
+ObjectTemplate.create SimpleObject War_ambience2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript War_ambience2.ssc
+ObjectTemplate.triggerRadius 100
+

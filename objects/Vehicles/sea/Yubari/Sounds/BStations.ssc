@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/BStations.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/BStations.ssc
+	
+#templateLevel LOW
+
+	#include Low/BStations.ssc

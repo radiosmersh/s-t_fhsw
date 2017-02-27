@@ -1,0 +1,31 @@
+rem *** pswamp ***
+ObjectTemplate.create AreaObject pswamp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 25
+ObjectTemplate.loadSoundScript pswamp.ssc
+
+ObjectTemplate.addLinePoint 1201.34/1311.36
+ObjectTemplate.addLinePoint 1238.07/1320.12
+ObjectTemplate.addLinePoint 1220.29/1317.10
+ObjectTemplate.addLinePoint 1247.46/1337.38
+ObjectTemplate.addLinePoint 1258.68/1325.95
+ObjectTemplate.addLinePoint 1274.67/1338.35
+ObjectTemplate.addLinePoint 1292.91/1335.04
+ObjectTemplate.addLinePoint 1307.95/1334.81
+ObjectTemplate.addLinePoint 1310.13/1349.53
+ObjectTemplate.addLinePoint 1311.37/1365.83
+ObjectTemplate.addLinePoint 1294.85/1370.35
+ObjectTemplate.addLinePoint 1279.02/1376.70
+ObjectTemplate.addLinePoint 1263.78/1381.14
+ObjectTemplate.addLinePoint 1249.89/1391.48
+ObjectTemplate.addLinePoint 1248.30/1408.93
+ObjectTemplate.addLinePoint 1243.03/1429.22
+ObjectTemplate.addLinePoint 1235.35/1449.53
+ObjectTemplate.addLinePoint 1226.27/1469.48
+ObjectTemplate.addLinePoint 1224.96/1492.49
+ObjectTemplate.addLinePoint 1231.47/1381.94
+ObjectTemplate.addLinePoint 1246.34/1370.09
+ObjectTemplate.addLinePoint 1250.13/1353.25
+ObjectTemplate.addLinePoint 1292.39/1352.29
+ObjectTemplate.addLinePoint 1277.08/1363.65
+ObjectTemplate.addLinePoint 1260.69/1367.29

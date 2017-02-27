@@ -1,0 +1,77 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003 Digital Illusions CE
+rem Map Created and designed by GI_JOEJK for Forgotten Hope Mod
+rem ©2004 GI_JOEJK  email: gboy_3d@yahoo.com
+rem ©2004 Forgotten Hope mod  http://www.FHmod.com
+rem *********************************************
+
+ShaderManager.setTextureParam envmap bf1942\levels\Kasserine_Pass-1943\Textures\ENVMAP_G_.rcm
+textureManager.alternativePath bf1942/levels/Kasserine_Pass-1943/Textures
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.4196/0.4275/0.4353
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.12
+renderer.ambientColor .12/.12/.12
+renderer.diffuseColor .3/.28/.25
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.2
+
+textureManager.alternativePath Texture/Levels/kasserine
+textureManager.alternativePath bf1942/levels/Kasserine_Pass-1943/Textures
+textureManager.alternativePath Texture\ENVIROMENT_DESERT
+textureManager.alternativePath Texture\GENERAL_US_DESERT
+textureManager.alternativePath Texture\SPECIAL_GER_AFRICA_1943_SUMMER
+textureManager.alternativePath Texture\SPECIAL_GER_AFRICA_1942_SUMMER
+textureManager.alternativePath Texture\GENERAL_GER_AFRICA
+textureManager.alternativePath Texture\GENERAL_GER
+textureManager.alternativePath Texture/Special_skys/Kasserine
+
+shadow.shadowColor 0.5
+
+Game.setViewDistance 600
+Game.spawnPlayers 1
+renderer.fogstart 125
+renderer.fogend 600
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUsFlag
+
+game.setTeamSkin 1 GermanDesertSoldier
+game.setKit 1 0 1German_CloseQuarters_DesertMp40
+game.setKit 1 1 2German_Assault_DesertK98
+game.setKit 1 2 3German_ATKampfPistoleGr40K98
+game.setKit 1 3 4German_OfficerMp40Smoke2RMarkerD
+game.setKit 1 4 5German_EngineerK98
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1Us_OfficerThompsonSmoke2RD
+game.setKit 2 1 2Us_AssaultGarandRGL
+game.setKit 2 2 3Us_ATSpringfieldGrenade
+game.setKit 2 3 4US_SupportBar
+game.setKit 2 4 5US_EngineerM1Carabine
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run Sounds/Environment
+run objects/go
+
+game.assaultTeam 2
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 1402.177/27.158/618.825
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 742.05/27.688/1172.984

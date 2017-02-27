@@ -1,0 +1,11 @@
+EnvironmentSound.load Environment.ssc
+
+run Beach01.con
+run River.con
+run Bird1.con
+run Radio1.con
+run Radio2.con
+run Dog.con
+run Church_Bell.con
+run lake.con
+run Factory.con

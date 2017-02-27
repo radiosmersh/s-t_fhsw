@@ -1,0 +1,18 @@
+
+
+rem *** kaigan_oto ***
+ObjectTemplate.create AreaObject kaigan_oto
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript kaigan_oto.ssc
+ObjectTemplate.triggerRadius 50
+
+ObjectTemplate.addLinePoint 80/0
+ObjectTemplate.addLinePoint 40/0
+ObjectTemplate.addLinePoint -40/0
+ObjectTemplate.addLinePoint -80/0
+ObjectTemplate.addLinePoint -120/0
+ObjectTemplate.addLinePoint -160/0
+ObjectTemplate.addLinePoint -200/0
+ObjectTemplate.addLinePoint -220/0
+ObjectTemplate.addLinePoint -240/0
+ObjectTemplate.addLinePoint -300/0

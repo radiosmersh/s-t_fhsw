@@ -1,0 +1,37 @@
+#templateLevel HIGH
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/bf1942/levels/Stalingrad_RedSquare/Sound/@RTD/Solnetschnogorskamb.wav
+stereo
+loop
+minDistance 10
+volume 0.8
+priority -10
+
+#templateLevel MEDIUM
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/bf1942/levels/Stalingrad_RedSquare/Sound/@RTD/Solnetschnogorskamb.wav
+stereo
+loop
+minDistance 10
+volume 0.8
+priority -10
+
+#templateLevel LOW
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/windcalm.wav
+loop
+minDistance 10
+volume 0.8
+priority -10

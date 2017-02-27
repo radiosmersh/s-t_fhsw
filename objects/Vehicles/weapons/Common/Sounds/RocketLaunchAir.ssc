@@ -1,3 +1,5 @@
+newPatch
+
 #############
 ### Close ###
 #############
@@ -26,6 +28,8 @@ beginEffect
 	param -1
 endEffect
 
+newPatch
+
 #############
 ### Close ###
 #############
@@ -52,3 +56,59 @@ beginEffect
 	param 1
 	param -1
 endEffect
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/Rocket_launch2.wav
+minDistance 60
+randomStartPitch 0.07 / 0.07
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 250
+	param 1
+	param -1
+endEffect
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/Rocket_launch3.wav
+minDistance 60
+randomStartPitch 0.07 / 0.07
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.7
+	param 0.4
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 250
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

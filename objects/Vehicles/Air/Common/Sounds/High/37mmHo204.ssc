@@ -1,0 +1,41 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/Air40mm/37mmHo204_ST.wav
+minDistance 200
+relativePosition 0.8/0/-0.5
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1	
+endEffect
+
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 300
+	param 1
+	param -1
+endEffect

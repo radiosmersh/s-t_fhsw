@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/5inchL51fire_Rel5Open.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/5inchL51fire_Rel5Open.ssc
+	
+#templateLevel LOW
+
+	#include Low/5inchL51fire_Rel5Open.ssc

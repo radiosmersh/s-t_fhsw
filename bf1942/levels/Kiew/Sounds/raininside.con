@@ -1,0 +1,8 @@
+
+
+rem *** raininside***
+ObjectTemplate.create SimpleObject raininside
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript raininside.ssc
+ObjectTemplate.triggerRadius 100
+

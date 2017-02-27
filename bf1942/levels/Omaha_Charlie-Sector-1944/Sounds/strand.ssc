@@ -1,0 +1,41 @@
+#templateLevel HIGH
+
+newPatch
+
+load @ROOT/Sound/@RTD/ambience/Harbor_waves.wav
+loop
+minDistance 80
+volume 1.0
+randomStartPitch 0.04 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 70
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+load @ROOT/Sound/@RTD/ambience/Harbor_waves.wav
+loop
+minDistance 80
+volume .65
+randomStartPitch 0.04 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 70
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SmallTower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SmallTower.ssc
+	
+#templateLevel LOW
+
+	#include Low/SmallTower.ssc

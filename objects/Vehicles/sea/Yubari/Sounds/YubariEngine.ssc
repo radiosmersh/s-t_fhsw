@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/YubariEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/YubariEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/YubariEngine.ssc

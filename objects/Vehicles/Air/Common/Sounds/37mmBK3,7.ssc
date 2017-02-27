@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/37mmBK3,7.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/37mmBK3,7.ssc
+	
+#templateLevel LOW
+
+	#include Low/37mmBK3,7.ssc

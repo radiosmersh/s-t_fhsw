@@ -1,0 +1,98 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
+rem *********************************************
+ShaderManager.setTextureParam envmap bf1942\levels\Moscow_Outskirts-1941\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.12
+renderer.ambientColor .12/.12/.12
+renderer.diffuseColor .3/.28/.25
+renderer.specularColor .3/.3/.3
+renderer.vertexFogEnable 1 
+renderer.fogColorVec 0.4196/0.4275/0.4353
+renderer.animatedMeshAmbientColor 0.2
+
+textureManager.alternativePath bf1942/Levels/Moscow_Outskirts-1941/texture
+textureManager.alternativePath Texture/GENERAL_RUS_WINTER
+textureManager.alternativePath Texture/GENERAL_GER_WINTER
+textureManager.alternativePath Texture/ENVIROMENT_WINTER
+textureManager.alternativePath Texture/Special_skys/pavlov
+textureManager.alternativePath Texture/Levels/KharkovWinter
+
+
+shadow.shadowColor 0.550000
+
+Game.spawnPlayers 1
+
+Game.setViewDistance 250
+renderer.fogstart -200
+renderer.fogend 250
+
+rem Game.setViewDistance 300
+rem renderer.fogstart -250
+rem renderer.fogend 300
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUsFlag
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_Officer_WinterMp40Smoke2RMarker
+game.setKit 1 1 2German_Assault_WinterK98
+game.setKit 1 2 3German_AT_WinterGeballteLadung
+game.setKit 1 3 4German_TankCommanderLugerSmoke3R
+rem game.setKit 1 4 5German_Assault_WinterK98
+game.setKit 1 4 5German_Assault_WinterK98_EihGr39
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_OfficerPPShSmoke3R
+game.setKit 2 1 2Rus_AssaultNagant
+game.setKit 2 2 3Rus_AssaultNagantMolotovNoRG
+game.setKit 2 3 4Rus_TankhunterNagantRDGGeballte
+game.setKit 2 4 5Rus_TankCommanderTT33Smoke2R
+
+game.setLevelCheck 2242588848
+game.setActiveCombatArea 0 0 1024 1024
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water03green
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap 1.000000/0.000000
+water.scrollDirection1 1.000000/-0.500000
+water.scrollDirection2 1.000000/0.500000
+water.specularColor 0.750000/0.730000/0.780000
+water.scrollLayer1 0.030000
+water.scrollLayer2 0.030000
+water.scrollNormalmap 0.010000
+water.specularStreakFactor 0.001000
+water.tileLayer1 0.500000
+water.tileLayer2 0.500000
+water.tileNormalmap 0.250000
+water.lightDirection -0.087/0.319/-0.944
+water.color 0.6/0.6/0.63
+water.deepColor 0.5/0.5/0.5
+water.waterAlphaDepth 0.5
+water.waterShallowAlpha 0.6
+
+run Sounds/Environment
+run Objects/Objects
+
+game.setBeforeSpawnCameraPosition 1 78.567688/37.833248/61.107239
+game.setBeforeSpawnCameraPosition 2 638.668091/40.725773/425.260132

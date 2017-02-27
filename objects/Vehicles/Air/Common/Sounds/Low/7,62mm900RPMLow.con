@@ -1,0 +1,183 @@
+beginrem
+newPatch
+########################################################################################################
+### Fire ###
+############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+#########################################################################################################
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##########################################################################################################
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+############################
+### Mashine gun distance ###
+############################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/Air7,62mm/7,7mm900R1.wav
+minDistance 2
+stereo
+loop
+stop FinishSample
+dopplerOff
+priority 10
+randomStartPitch 0.06 / 0.0
+volume .85
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 4
+	param 1
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Air7,62mm/7,7mm900Rdist1.wav
+minDistance 30
+loop
+stop FinishSample
+dopplerOff
+priority 8
+randomStartPitch 0.05 / 0.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 130
+	param 150
+	param 1
+	param -1
+endEffect
+endrem
+
+ObjectTemplate.create Kit A6M3_zeke
+ObjectTemplate.setType Assault
+ObjectTemplate.setKitTeam 1
+ObjectTemplate.geometry Kit_Japanese_To-Go
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.networkableInfo KitInfo
+
+ObjectTemplate.addTemplate Jap_Helmets
+ObjectTemplate.setRandomGeometries 4
+ObjectTemplate.addTemplate Jap_hip_pack
+ObjectTemplate.addTemplate Chutedisabler
+
+ObjectTemplate.setHealthBarIcon "Ingame/Healthbar_empty_support_64x64.tga"
+ObjectTemplate.setHealthBarFullIcon "Ingame/Healthbar_full_support_64x64.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_axisKnife.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_nambu.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_To-Go.tga"
+ObjectTemplate.addWeaponIcon "Weapon/Icon_noicon"
+
+ObjectTemplate.setKitIcon 5 "kits/Icon_support_axis_selected.tga"
+ObjectTemplate.setKitName 5 "FORTIFICATION"
+ObjectTemplate.setKitActiveName 5 "ACTIVE FORTIFICATION"	
+
+ObjectTemplate.addTemplate KnifeAxis
+ObjectTemplate.addTemplate Nambu
+ObjectTemplate.addTemplate To-Go_Railgun
+
+ObjectTemplate.aiTemplate  AT
+
+
+rem *** M4A1(75mm) ***
+ObjectTemplate.create PlayerControlObject M4A3(75mm)
+ObjectTemplate.setNetworkableInfo Sampan01BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 0.999
+ObjectTemplate.mass 5000
+rem ObjectTemplate.InertiaModifier 0.05/0.05/0.05
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 35
+ObjectTemplate.maxhitpoints 35
+ObjectTemplate.material 29
+ObjectTemplate.criticalDamage 10
+ObjectTemplate.hpLostWhileCriticalDamage 0.5
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 25
+ObjectTemplate.hpLostWhileUpSideDown 10
+rem ObjectTemplate.addArmorEffect 80 em_DaihatsuDamage 0/0/0
+ObjectTemplate.aiTemplate Sampan01
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSampan01
+ObjectTemplate.addTemplate Sampan01Floater
+ObjectTemplate.setPosition 1.7/0.05/-4.499
+ObjectTemplate.addTemplate Sampan01Floater
+ObjectTemplate.setPosition -1.699/0.05/-4.499
+ObjectTemplate.addTemplate Sampan01Floater
+ObjectTemplate.setPosition 1.7/0.05/4.5
+ObjectTemplate.addTemplate Sampan01Floater
+ObjectTemplate.setPosition -1.699/0.05/4.5
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.setSoldierExitLocation 0/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 42
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Sampan01.tga"
+ObjectTemplate.setVehicleIconPos 8/49
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType  TTPTRaft
+ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.exitTimer -0.5
+ObjectTemplate.exitSpeedMod 0

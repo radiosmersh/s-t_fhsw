@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/410mmfire_Rel30Twin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/410mmfire_Rel30Twin.ssc
+	
+#templateLevel LOW
+
+	#include Low/410mmfire_Rel30Twin.ssc

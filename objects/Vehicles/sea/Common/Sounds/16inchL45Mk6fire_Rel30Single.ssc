@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/16inchL45Mk6fire_Rel30Single.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/16inchL45Mk6fire_Rel30Single.ssc
+	
+#templateLevel LOW
+
+	#include Low/16inchL45Mk6fire_Rel30Single.ssc

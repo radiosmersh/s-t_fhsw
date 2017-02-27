@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/secGuns.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/secGuns.ssc
+	
+#templateLevel LOW
+
+	#include Low/secGuns.ssc

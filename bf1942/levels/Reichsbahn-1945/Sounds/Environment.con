@@ -1,0 +1,10 @@
+EnvironmentSound.load Environment.ssc
+run fire.con
+run river.con
+run small_dog.con
+run mill_water2.con
+run mill_water3.con
+run crow.con
+run frog1.con
+run frog2.con
+run wind_steeple.con

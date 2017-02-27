@@ -1,0 +1,71 @@
+#templateLevel HIGH
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/japanesemusic2.wav
+loop
+minDistance 8
+dopplerOff
+volume 1
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 80
+	param 1
+	param -1	
+endEffect
+
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/japanesemusic2.wav
+loop
+minDistance 8
+dopplerOff
+volume .9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 80
+	param 1
+	param -1	
+endEffect
+
+#templateLevel LOW
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/japanesemusic2.wav
+loop
+minDistance 8
+dopplerOff
+volume .9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 30
+	param 80
+	param 1
+	param -1	
+endEffect

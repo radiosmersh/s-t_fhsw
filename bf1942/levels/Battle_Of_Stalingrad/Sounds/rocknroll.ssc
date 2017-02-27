@@ -1,0 +1,76 @@
+################################################################
+#templateLevel HIGH
+
+newPatch
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/russian_propaganda.wav
+loop
+minDistance 8
+dopplerOff
+volume 5
+priority 8
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 550
+	param 1
+	param -1	
+endEffect
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/russian_propaganda.wav
+loop
+minDistance 8
+dopplerOff
+volume 5
+priority 8
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 550
+	param 1
+	param -1	
+endEffect
+
+#templateLevel LOW
+
+newPatch
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/russian_propaganda.wav
+loop
+minDistance 8
+dopplerOff
+volume 5
+priority 8
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 550
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,64 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/t34_int_fire.wav
+relativePosition 0/0/0
+stereo
+priority 10
+minDistance 15
+
+*** Pitch Offset ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.9
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###########
+### far ###
+###########
+load @ROOT/Sound/@RTD/75mm.wav
+minDistance 200
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 160
+	param 1
+	param -1	
+endEffect
+
+##############
+### Reload ###
+##############
+#include ../../../Common/Sounds/Rusintfire.ssc

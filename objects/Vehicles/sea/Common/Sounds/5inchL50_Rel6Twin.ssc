@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/5inchL50_Rel6Twin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/5inchL50_Rel6Twin.ssc
+	
+#templateLevel LOW
+
+	#include Low/5inchL50_Rel6Twin.ssc

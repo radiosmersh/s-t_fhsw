@@ -1,0 +1,277 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament Yubari_CruiserArms
+
+aiTemplatePlugIn.create Unit Yubari_CruiserUnit
+aiTemplatePlugIn.equipmentType 2
+aiTemplatePlugIn.setStrategicStrength 0 8
+aiTemplatePlugIn.setStrategicStrength 1 6
+
+aiTemplatePlugIn.create Mobile Yubari_CruiserMobile
+aiTemplatePlugIn.vehicleNumber 2
+aiTemplatePlugIn.maxSpeed 20.0
+aiTemplatePlugIn.turnRadius 50.0
+aiTemplatePlugIn.avoidCollisionLookAhead 15.0
+
+aiTemplatePlugIn.create Physical Yubari_CruiserPhysical
+aiTemplatePlugIn.setStrType NavalArmour
+
+aiTemplatePlugIn.create ControlInfo Yubari_CruiserControlInfo
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -120/-30/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 120/7/0
+
+rem *** AITemplate ***
+aiTemplate.create Yubari_CruiserAI
+aiTemplate.addType ITMobile
+aiTemplate.addType ITNaval
+aiTemplate.addType ITUnit
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 50
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 50
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn Yubari_CruiserUnit
+aiTemplate.addPlugIn Yubari_CruiserPhysical
+aiTemplate.addPlugIn Yubari_CruiserControlInfo
+aiTemplate.addPlugIn Yubari_CruiserMobile
+aiTemplate.addPlugIn Yubari_CruiserArms
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament Yubari_CruiserRearGunArms
+
+aiTemplatePlugIn.create Unit Yubari_CruiserRearGunUnit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 7
+aiTemplatePlugIn.setStrategicStrength 1 5
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+aiTemplatePlugIn.create ControlInfo Yubari_CruiserRearGunCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -120/-30/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 120/7/0
+
+rem *** AITemplate ***
+aiTemplate.create Yubari_CruiserRearGunAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.addType ITNoRender
+aiTemplate.degeneration 50
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 40
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn Yubari_CruiserRearGunArms
+aiTemplate.addPlugIn Yubari_CruiserRearGunUnit
+aiTemplate.addPlugIn Yubari_CruiserRearGunCtrl
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament Yubari_CruiserLauncher1Arms
+
+aiTemplatePlugIn.create Unit Yubari_CruiserLauncher1Unit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 9
+aiTemplatePlugIn.setStrategicStrength 1 9
+aiTemplatePlugIn.setSelectKey PIMenuSelect3
+
+aiTemplatePlugIn.create ControlInfo Yubari_CruiserLauncher1Ctrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -120/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 120/0/0
+
+rem *** AITemplate ***
+aiTemplate.create Yubari_CruiserLauncher1AI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 50
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 40
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn Yubari_CruiserLauncher1Arms
+aiTemplate.addPlugIn Yubari_CruiserLauncher1Unit
+aiTemplate.addPlugIn Yubari_CruiserLauncher1Ctrl
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament Yubari_CruiserLauncher2Arms
+
+aiTemplatePlugIn.create Unit Yubari_CruiserLauncher2Unit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 9
+aiTemplatePlugIn.setStrategicStrength 1 9
+aiTemplatePlugIn.setSelectKey PIMenuSelect4
+
+aiTemplatePlugIn.create ControlInfo Yubari_CruiserLauncher2Ctrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -110/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 110/0/0
+
+rem *** AITemplate ***
+aiTemplate.create Yubari_CruiserLauncher2AI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 50
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 40
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn Yubari_CruiserLauncher2Arms
+aiTemplate.addPlugIn Yubari_CruiserLauncher2Unit
+aiTemplate.addPlugIn Yubari_CruiserLauncher2Ctrl
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament Yubari_CruiserFlakArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit Yubari_CruiserFlakUnit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 9
+aiTemplatePlugIn.setStrategicStrength 1 9
+aiTemplatePlugIn.setHasExposedSoldier 1
+aiTemplatePlugIn.setSelectKey PIMenuSelect5
+
+aiTemplatePlugIn.create ControlInfo Yubari_CruiserFlakCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             2.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               2.0
+aiTemplatePlugIn.lookVerticalLookAhead      2.0
+aiTemplatePlugIn.lookHorizontalLookAhead    2.0
+aiTemplatePlugIn.throttleScale              1.0
+
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -360/-80/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 360/2/0
+
+rem *** AITemplate ***
+aiTemplate.create Yubari_CruiserFlak
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITFixed
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 40
+aiTemplate.secondary 1
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn Yubari_CruiserFlakArms
+aiTemplate.addPlugIn Yubari_CruiserFlakUnit
+aiTemplate.addPlugIn Yubari_CruiserFlakCtrl

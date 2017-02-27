@@ -1,0 +1,68 @@
+newPatch
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/waltLR.wav
+stereo
+randomStartPitch 0.02 / 0.02
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+######################
+### Near/Far Right ###
+######################
+load @ROOT/Sound/@RTD/waltmono.wav
+minDistance 6
+priority 8
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 130
+	param 150
+	param 1
+	param -1
+endEffect
+
+
+##############
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###############
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+####################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include MGHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include MGMedLow.ssc
+	
+#templateLevel LOW
+
+	#include MGMedLow.ssc

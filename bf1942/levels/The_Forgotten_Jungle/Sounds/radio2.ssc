@@ -1,0 +1,69 @@
+#templateLevel HIGH
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/bf1942/levels/The_Forgotten_Jungle/Sound/@RTD/husou.wav
+loop
+minDistance 3
+dopplerOff
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 320
+	param 1
+	param -1	
+endEffect
+
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/japanesemusic1.wav
+minDistance 8
+dopplerOff
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 320
+	param 1
+	param -1	
+endEffect
+
+#templateLevel LOW
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/japanesemusic1.wav
+minDistance 8
+dopplerOff
+volume .6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 320
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,94 @@
+
+ShaderManager.setTextureParam envmap bf1942\levels\Arnhem-1944\Textures\ENVMAP_G_.rcm
+rem renderer.globalLodPercent 1
+rem renderer.globalAmbientColor .1/.1/.12
+rem renderer.ambientColor .12/.12/.12
+rem renderer.diffuseColor .3/.28/.25
+rem renderer.specularColor .3/.3/.3
+rem renderer.vertexFogEnable 1
+rem renderer.fogColorVec 0.50/0.48/0.52
+rem renderer.animatedMeshAmbientColor 0.2
+
+renderer.globalAmbientColor 0.098039/0.098039/0.117647
+renderer.ambientColor 0.117647/0.117647/0.117647
+renderer.diffuseColor 0.270588/0.270588/0.270588
+renderer.specularColor 0.298039/0.298039/0.298039
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.486275/0.482353/0.513726
+renderer.animatedMeshAmbientColor 0.2
+
+textureManager.alternativePath Texture/levels/arnhem
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath bf1942/levels/arnhem-1944/customtexts
+textureManager.alternativePath Texture/SPECIAL_BRIT_PARATROOPER
+
+
+shadow.shadowColor 0.5
+
+Game.setViewDistance 115
+Game.spawnPlayers 1
+renderer.fogstart 0
+renderer.fogend 120
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_CloseQuartersMp40
+game.setKit 1 1 2German_AssaultG43RG
+game.setKit 1 2 3German_ATPanzerfaust100
+game.setKit 1 3 4German_OfficerMp40Smoke2RD
+game.setKit 1 4 5German_AssaultMp749e
+
+game.setTeamSkin 2 BritishSoldier
+game.setKit 2 0 1GB_CloseQuartersStenMk5
+game.setKit 2 1 2GB_AssaultNo4
+game.setKit 2 2 3GB_ATPiat
+game.setKit 2 3 4GB_SupportBren
+game.setKit 2 4 GB_SpecOpsStenMk5
+
+game.setActiveCombatArea 520 280 768 768
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+
+game.assaultTeam 2
+
+run Init/SkyAndSun
+run Init/Terrain
+run objects/objects
+run Sounds/Environment
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water08
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap 1/1
+water.scrollDirection1 1/0
+water.scrollDirection2 0/1
+water.specularColor 0.75/0.7/0.65
+water.scrollLayer1 0.03
+water.scrollLayer2 0.03
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.5
+water.lightDirection -0.3/0.5/-0.65
+water.color 0.6/0.6/0.63
+water.deepColor 0.6/0.6/0.63
+water.waterAlphaDepth 0
+water.waterShallowAlpha 1
+
+game.setBeforeSpawnCameraPosition 1 729/29.5/599
+game.setBeforeSpawnCameraPosition 2 729/29.5/599

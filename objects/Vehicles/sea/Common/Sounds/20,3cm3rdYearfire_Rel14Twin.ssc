@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/20,3cm3rdYearfire_Rel14Twin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/20,3cm3rdYearfire_Rel14Twin.ssc
+	
+#templateLevel LOW
+
+	#include Low/20,3cm3rdYearfire_Rel14Twin.ssc

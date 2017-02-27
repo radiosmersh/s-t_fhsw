@@ -1,0 +1,9 @@
+EnvironmentSound.load Environment.ssc
+run River
+run Church_bell
+run Bird1
+run Bird2
+run War_ambience1
+run War_ambience2
+run dog
+run radio

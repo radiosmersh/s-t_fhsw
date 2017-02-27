@@ -1,0 +1,214 @@
+rem *** Yubari_Cruiser_GunBarrel ***
+ObjectTemplate.create FireArms Yubari_Cruiser_GunBarrel
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../Common/Sounds/140mm3rdYearTypefire_Rel6Twin.ssc
+ObjectTemplate.geometry Yubari_Cruiser_Canonbar_m1
+ObjectTemplate.aiTemplate Yubari_CruiserGunAI
+rem --------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0.3/-0.02/4.35
+ObjectTemplate.setRotation 180.0/0.0/0.0
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition -0.3/-0.02/4.35
+ObjectTemplate.setRotation 180.0/0.0/0.0
+rem --------------------------------------
+ObjectTemplate.projectileTemplate Ship14,0cmL50Projectile
+ObjectTemplate.projectilePosition 0/0/5
+ObjectTemplate.addFireArmsPosition 0.3/-0.02/4.35 0/0/0
+ObjectTemplate.addFireArmsPosition -0.3/-0.02/4.35 0/0/0
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 406
+ObjectTemplate.reloadtime 8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 8
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 2
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
+
+rem *** Yubari_Cruiser_GunBarrelSingle ***
+ObjectTemplate.create FireArms Yubari_Cruiser_GunBarrelSingle
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../Common/Sounds/140mm3rdYearTypefire_Rel6Twin.ssc
+ObjectTemplate.geometry Yubari_Cruiser_Canonbar2_m1
+ObjectTemplate.aiTemplate Yubari_CruiserGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0.0/-0.02/4.35
+ObjectTemplate.setRotation 180.0/0.0/0.0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ship14,0cmL50Projectile
+ObjectTemplate.projectilePosition 0/0/5
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 406
+ObjectTemplate.reloadtime 8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 8
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** Yubari_Cruiser_120-45_gun_Dummy  ***
+ObjectTemplate.create FireArms Yubari_Cruiser_120-45_gun_Dummy
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../Common/Sounds/120mm10thYearTypefire_Rel6Twin.ssc
+ObjectTemplate.geometry 120-45_10th_gun
+ObjectTemplate.aiTemplate Yubari_CruiserGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0.0/-0.02/4.35
+ObjectTemplate.setRotation 180.0/0.0/0.0
+ObjectTemplate.addTemplate e_CartridgeEjection_127x679R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.018/-0.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.projectilePosition 0/1/2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 406
+ObjectTemplate.reloadtime 7
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 2
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+rem *** Yubari_Cruiser_GunBarrelSingle ***
+ObjectTemplate.create FireArms Yubari_Cruiser_120-45_gun
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../Common/Sounds/120mm10thYearTypefire_Rel6Twin.ssc
+ObjectTemplate.aiTemplate Yubari_CruiserGunAI
+ObjectTemplate.projectileTemplate Ship120mmL45_Projectile
+ObjectTemplate.projectilePosition 0/26/2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 406
+ObjectTemplate.reloadtime 7
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 2
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+rem *** Yubari_Cruiser_120-45_gunAA ***
+ObjectTemplate.create FireArms Yubari_Cruiser_120-45_gunAA
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ObjectTemplate.aiTemplate Yubari_CruiserGunAI
+ObjectTemplate.projectileTemplate Ship120mmL45AAProjectile
+ObjectTemplate.projectilePosition 0/26/2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 300
+ObjectTemplate.reloadtime 7
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 2
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** Yubari_Cruiser_GunBarrelSingle ***
+ObjectTemplate.create FireArms Yubari_Cruiser_GunBarrelSingle_ammoauto
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.geometry Yubari_Cruiser_scanon_m1
+ObjectTemplate.aiTemplate Yubari_CruiserGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate e_CartridgeEjection_127x679R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.018/-0.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.projectilePosition 0/1/2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 406
+ObjectTemplate.reloadtime 8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 8
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 2
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+
+
+
+rem *** Yubari_CruiserTorpedoRail ***
+ObjectTemplate.create FireArms Yubari_CruiserTorpedoRail
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate 61cmType90Torpedo
+ObjectTemplate.projectilePosition 0/0/7
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 25
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.addFireArmsPosition 0.65/1.45/2.4 0/0/0
+ObjectTemplate.addFireArmsPosition -0.65/1.45/2.4 0/0/0
+ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
+
+rem *** Yubari_CruiserFakeTorpedoRail ***
+ObjectTemplate.create FireArms Yubari_CruiserFakeTorpedoRail
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate Yubari_CruiserTorpedosAI
+ObjectTemplate.projectileTemplate 61cmType90TorpedoHullDamage
+ObjectTemplate.projectilePosition 0/0/7
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 25
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.addFireArmsPosition 0.65/1.45/2.4 0/0/0
+ObjectTemplate.addFireArmsPosition -0.65/1.45/2.4 0/0/0
+
+rem *** Yubari_CruiserTorpedoRail ***
+ObjectTemplate.create FireArms Yubari_CruiserTorpedoRail_ALT
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate 61cmType90Torpedo
+ObjectTemplate.projectilePosition 0/0/7
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 25
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.addFireArmsPosition 0.65/1.45/2.4 0/0/0
+ObjectTemplate.addFireArmsPosition -0.65/1.45/2.4 0/0/0
+ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** Yubari_CruiserFakeTorpedoRail ***
+ObjectTemplate.create FireArms Yubari_CruiserFakeTorpedoRail_ALT
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate Yubari_CruiserTorpedosAI
+ObjectTemplate.projectileTemplate 61cmType90TorpedoHullDamage
+ObjectTemplate.projectilePosition 0/0/7
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 25
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.addFireArmsPosition 0.65/1.45/2.4 0/0/0
+ObjectTemplate.addFireArmsPosition -0.65/1.45/2.4 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire

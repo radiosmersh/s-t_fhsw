@@ -1,0 +1,15 @@
+rem *** Harbor_waves ***
+ObjectTemplate.create AreaObject Harbor_waves
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Harbor_waves.ssc
+ObjectTemplate.triggerRadius 750
+ObjectTemplate.addLinePoint 0/0
+ObjectTemplate.addLinePoint -707/13
+ObjectTemplate.addLinePoint -873/-18
+ObjectTemplate.addLinePoint -939/11
+ObjectTemplate.addLinePoint -1253/11
+ObjectTemplate.addLinePoint -1254/-151
+ObjectTemplate.addLinePoint -1274/-150
+ObjectTemplate.addLinePoint -1281/16
+ObjectTemplate.addLinePoint -2033/11
+

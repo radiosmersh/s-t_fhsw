@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/15cmSKC25fire_Rel10Twin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/15cmSKC25fire_Rel10Twin.ssc
+	
+#templateLevel LOW
+
+	#include Low/15cmSKC25fire_Rel10Twin.ssc

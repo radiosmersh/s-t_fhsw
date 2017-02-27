@@ -4280,7 +4280,7 @@ rem *** 5inchL50T1Open_GunBarrel_AA_Land_L ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_AA_Land_L
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 5inchL50T1_AI_AA
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3Open.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3Open.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_L_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
@@ -4311,7 +4311,7 @@ rem *** 5inchL50T1Open_GunBarrel_AA_Land_L2_Alt ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_AA_Land_L2_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 5inchL50T1_AI_AA
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3Open.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3Open.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_L_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
@@ -4342,7 +4342,7 @@ rem *** 5inchL50T1Open_GunBarrel_AA_Land_R ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_AA_Land_R
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 5inchL50T1_AI_AA
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3Open.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3Open.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_R_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
@@ -4374,7 +4374,7 @@ rem *** 5inchL50T1Open_GunBarrel_AA_Land_R_Prm ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_AA_Land_R_Prm
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 5inchL50T1_AI_AA
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3Open.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3Open.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_R_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
@@ -4406,7 +4406,7 @@ rem *** 5inchL50T1Open_GunBarrel_AA_Land_R2_Alt ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_AA_Land_R2_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 5inchL50T1_AI_AA
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3Open.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3Open.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_R_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
@@ -4439,7 +4439,7 @@ rem *** 5inchL50T1Open_GunBarrel_AA_Land ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_AA_Land
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 5inchL50T1_AI_AA
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3Open.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3Open.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
@@ -4479,7 +4479,7 @@ rem *** 5inchL50T1Open_GunBarrel_AA_LandAlt ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_AA_LandAlt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 5inchL50T1_AI_AA
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3Open.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3Open.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
@@ -4517,7 +4517,7 @@ ObjectTemplate.setInputFire c_PIAltFire
 rem *** 5inchL50T1Open_GunBarrel_Dummy ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3OpenTwin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3OpenTwin.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -4555,7 +4555,7 @@ ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
 rem *** 5inchL50T1Open_GunBarrel_Dummy_NoShake ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_Dummy_NoShake
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3OpenTwin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3OpenTwin.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -4592,7 +4592,7 @@ ObjectTemplate.recoilSize 40
 rem *** 5inchL50T1Open_GunBarrel_Dummy_NoShake2 ***
 ObjectTemplate.create FireArms 5inchL50T1Open_GunBarrel_Dummy_NoShake2
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel3,3OpenTwin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50fire_Rel3,3OpenTwin.ssc
 ObjectTemplate.geometry 5inchL50T1Open_Barrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -4917,7 +4917,7 @@ rem *** 6,1inchL60T3Single_GunBarrel ***
 ObjectTemplate.create FireArms 6,1inchL60T3Single_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.geometry 6,1inchL60T3Single_gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 0/0/10.5 0/0/0
@@ -5360,7 +5360,7 @@ rem *** 6,1inchL60T3Triple_GunBarrel ***
 ObjectTemplate.create FireArms 6,1inchL60T3Triple_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.geometry 6,1inchL60T3Triple_gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -5443,7 +5443,7 @@ rem *** 6,1inchL60T3Triple_GunBarrel_L ***
 ObjectTemplate.create FireArms 6,1inchL60T3Triple_GunBarrelDummy_L
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.geometry 6,1inchL60T3Triple_gunbarrel_LR_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition -1.6/0/10.5
@@ -5506,7 +5506,7 @@ ObjectTemplate.setMinDev 0.75
 rem *** 6,1inchL60T3Triple_GunBarrel_R ***
 ObjectTemplate.create FireArms 6,1inchL60T3Triple_GunBarrelDummy_R
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -5573,7 +5573,7 @@ rem *** 6,1inchL60T3Triple_GunBarrel_C_Alt ***
 ObjectTemplate.create FireArms 6,1inchL60T3Triple_GunBarrelDummy_C_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.geometry 6,1inchL60T3Triple_gunbarrel_C_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 0/0/10.5
@@ -13299,7 +13299,7 @@ rem ============================================================================
 rem *** FubukiGun_Dummy ***
 ObjectTemplate.create FireArms FubukiGun_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Fubuki_cannon_pipe_M1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -15143,7 +15143,7 @@ rem ============================================================================
 rem *** HamakazeGun_Dummy ***
 ObjectTemplate.create FireArms HamakazeGun_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Hamakaze_Gunbarrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -27558,7 +27558,7 @@ rem *** Kii_155_GunBarrel ***
 ObjectTemplate.create FireArms Kii_155_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Kii_155mm_gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -27594,7 +27594,7 @@ rem *** Kii_155_GunBarrelAlt ***
 ObjectTemplate.create FireArms Kii_155_GunBarrelAltDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Kii_155mm_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -27637,7 +27637,7 @@ ObjectTemplate.setInputFire c_PIAltFire
 rem *** Kii_510_GunBarrelDummy ***
 ObjectTemplate.create FireArms Kii_510_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/356mmfire_Rel30Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/410mmfire_Rel30Twin.ssc
 ObjectTemplate.geometry Kii_510_gunbarrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzBBGun
@@ -31519,7 +31519,7 @@ rem *** Mogami203CannonBarrel_Dummy ***
 ObjectTemplate.create FireArms Mogami203CannonBarrel_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate MogamiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/203mmfire_Rel14Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/20,3cm3rdYearfire_Rel14Twin.ssc
 ObjectTemplate.geometry Mogami_20,3cm3rdYear_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzMBGun
@@ -31627,7 +31627,7 @@ rem *** Mogami203CannonBarrel_Dummy_Alt ***
 ObjectTemplate.create FireArms Mogami203CannonBarrel_Dummy_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate MogamiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/203mmfire_Rel14Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/20,3cm3rdYearfire_Rel14Twin.ssc
 ObjectTemplate.geometry Mogami_20,3cm3rdYear_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzMBGun
@@ -36888,7 +36888,7 @@ rem *** Oyodo_155_GunBarrelW ***
 ObjectTemplate.create FireArms Oyodo_155_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Oyodo1943_155mm_3YT_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -36961,7 +36961,7 @@ rem *** Oyodo_155_GunBarrelDummy_Alt ***
 ObjectTemplate.create FireArms Oyodo_155_GunBarrelDummy_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Oyodo1943_155mm_3YT_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -41304,7 +41304,7 @@ rem ============================================================================
 rem *** SirayukiGun_FS1 ***
 ObjectTemplate.create FireArms SirayukiGun_FS1
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Sirayuki_barrel_L_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -41326,7 +41326,7 @@ ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
 rem *** SirayukiGun_FS2 ***
 ObjectTemplate.create FireArms SirayukiGun_FS2
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Sirayuki_barrel_R_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -41349,7 +41349,7 @@ ObjectTemplate.FireDelay 0.2
 rem *** SirayukiGun_FS3 ***
 ObjectTemplate.create FireArms SirayukiGun_FS3
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Sirayuki_barrel_L_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -41371,7 +41371,7 @@ ObjectTemplate.FireDelay 0.08
 rem *** SirayukiGun_FS4 ***
 ObjectTemplate.create FireArms SirayukiGun_FS4
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Sirayuki_barrel_R_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -44684,7 +44684,7 @@ rem ============================================================================
 rem *** Tsurumi_Gun_GunBarrel ***
 ObjectTemplate.create FireArms Tsurumi_Gun_Barrel
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel7,5.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/140mm3rdYearType_Rel7,5.ssc
 ObjectTemplate.aiTemplate Tsurumi_GunGunAI
 ObjectTemplate.geometry Tsurumi_deckgun_gunbarrel_m1
 rem -------------------------------------
@@ -48031,7 +48031,7 @@ rem *** Yahagi152CannonBarrel_Dummy ***
 ObjectTemplate.create FireArms Yahagi152CannonBarrel_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate YahagiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 ObjectTemplate.geometry Yahagi_152mm_type41_gun_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzMBGun
@@ -48134,7 +48134,7 @@ rem *** Yahagi152CannonBarrel_Dummy_Alt ***
 ObjectTemplate.create FireArms Yahagi152CannonBarrel_Dummy_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate YahagiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 ObjectTemplate.geometry Yahagi_152mm_type41_gun_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzMBGun
@@ -50129,7 +50129,7 @@ rem *** Yamato_460_GunBarrelDummy ***
 ObjectTemplate.create FireArms Yamato_460_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate Yamato460GunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/356mmfire_Rel34Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/460mmfire_Rel34Triple.ssc
 ObjectTemplate.geometry Yamato_460_gunbarrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzBBGun
@@ -50166,7 +50166,7 @@ rem *** Yamato_460_GunBarrelDummy20sec ***
 ObjectTemplate.create FireArms Yamato_460_GunBarrelDummy20sec
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate Yamato460GunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/356mmfire_Rel20Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/460mmfire_Rel34Triple.ssc
 ObjectTemplate.geometry Yamato_460_gunbarrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzBBGun
@@ -50315,7 +50315,7 @@ rem *** Yamato_155_GunBarrel ***
 ObjectTemplate.create FireArms Yamato_155_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Yamato_155_gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -50390,7 +50390,7 @@ rem *** Yamato_155_GunBarrelAlt ***
 ObjectTemplate.create FireArms Yamato_155_GunBarrelAltDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Yamato_155_gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5

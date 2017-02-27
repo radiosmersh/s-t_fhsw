@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium.ssc
+	
+#templateLevel LOW
+
+	#include Low.ssc

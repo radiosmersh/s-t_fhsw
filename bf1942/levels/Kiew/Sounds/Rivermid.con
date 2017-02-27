@@ -1,0 +1,20 @@
+
+
+rem *** rivermid ***
+ObjectTemplate.create AreaObject rivermid
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript rivermid.ssc
+ObjectTemplate.triggerRadius 150
+ObjectTemplate.addLinePoint 0/0
+ObjectTemplate.addLinePoint 372.928/62.8693
+ObjectTemplate.addLinePoint 593.933/61.3716
+ObjectTemplate.addLinePoint 1202.24/115.743
+ObjectTemplate.addLinePoint 1629.25/72.1572
+ObjectTemplate.addLinePoint 1984.48/-18.3812
+ObjectTemplate.addLinePoint 2399.55/33.8284
+ObjectTemplate.addLinePoint 1985.09/-18.2543
+ObjectTemplate.addLinePoint 1631.01/71.9704
+ObjectTemplate.addLinePoint 1202.33/115.762
+ObjectTemplate.addLinePoint 594.426/61.4078
+ObjectTemplate.addLinePoint 373.32/62.8531
+ObjectTemplate.addLinePoint 0.199722/0.00976563

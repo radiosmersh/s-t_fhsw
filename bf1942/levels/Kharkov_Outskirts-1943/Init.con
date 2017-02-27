@@ -1,0 +1,56 @@
+
+ShaderManager.setTextureParam envmap bf1942\levels\Kharkov_outskirts-1943\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.4196/0.4275/0.4353
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.12
+renderer.ambientColor .12/.12/.12
+renderer.diffuseColor .3/.28/.25
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.2
+
+shadow.shadowColor 0.4
+
+textureManager.alternativePath Texture/Levels/Kharkov
+textureManager.alternativePath Texture/Special_skys/Kasserine
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_WEHRMACHT
+textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1943_SPRING
+textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1943_SPRING
+
+Game.setViewDistance 375
+Game.spawnPlayers 1
+rem renderer.fogstart -130
+rem renderer.fogend 375
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_OfficerMp40Smoke2R
+game.setKit 1 1 2German_AssaultK98
+game.setKit 1 2 3German_ATRandomPzf2
+game.setKit 1 3 4German_TankhunterK98Satchel
+game.setKit 1 4 5German_TankCommanderWalterP38Smoke
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_OfficerPPSh
+game.setKit 2 1 2Rus_AssaultNagant
+game.setKit 2 2 3Rus_TankhunterNagantRPG43
+game.setKit 2 3 4Rus_TankhunterNagantSatchel
+game.setKit 2 4 5Rus_TankCommanderTT33Smoke
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+run Sounds/Environment
+rem run objects/go
+
+beginrem
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 248.75/78.45/1104.1
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 1664.22/68.68/1025.7
+endrem
+
+game.setBeforeSpawnCameraPosition 1 580.30/58.89/598.72
+game.setBeforeSpawnCameraPosition 2 1663.59/60.22/788.55

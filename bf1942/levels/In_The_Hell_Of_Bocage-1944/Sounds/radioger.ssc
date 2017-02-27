@@ -1,0 +1,40 @@
+#templateLevel HIGH
+
+newPatch
+
+load bf1942\levels\In_the_Hell_of_Bocage-1944\Sound\@RTD\radioger2.wav
+loop
+minDistance 5
+volume 0.9
+priority -6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 150
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+load bf1942\levels\In_the_Hell_of_Bocage-1944\Sound\@RTD\radioger2.wav
+loop
+minDistance 5
+volume 0.9
+priority -6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect
+

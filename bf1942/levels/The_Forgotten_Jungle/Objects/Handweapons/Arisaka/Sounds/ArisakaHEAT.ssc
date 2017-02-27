@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include ArisakaHEATHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include ArisakaHEATMedium.ssc
+	
+#templateLevel LOW
+
+	#include ArisakaHEATLow.ssc

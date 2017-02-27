@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/203mmSKC34fire_Rel14Twin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/203mmSKC34fire_Rel14Twin.ssc
+	
+#templateLevel LOW
+
+	#include Low/203mmSKC34fire_Rel14Twin.ssc

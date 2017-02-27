@@ -3,7 +3,7 @@ newPatch
 #############
 ### Close ###
 #############
-load @ROOT/Sound/@RTD/127mmShip.wav
+load @ROOT/Sound/@RTD/5inchL51.wav
 minDistance 350
 relativePosition 0/0/0
 stereo
@@ -31,7 +31,7 @@ endEffect
 #############
 ### Close ###
 #############
-load @ROOT/Sound/@RTD/127mmShip.wav
+load @ROOT/Sound/@RTD/5inchL51.wav
 minDistance 350
 relativePosition 0/0/0
 stereo

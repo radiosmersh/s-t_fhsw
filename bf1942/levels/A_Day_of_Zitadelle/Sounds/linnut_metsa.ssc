@@ -1,0 +1,43 @@
+#templateLevel HIGH
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/linnut_metsa.wav
+loop
+minDistance 900
+volume 1.0
+randomStartPitch 0.25 / 0.0
+priority 6
+
+
+#templateLevel MEDIUM
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/linnut_metsa.wav
+loop
+minDistance 900
+volume 1.0
+randomStartPitch 0.25 / 0.0
+priority 6
+
+
+#templateLevel LOW
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/Ambience/linnut_metsa.wav
+loop
+minDistance 900
+volume 1.0
+randomStartPitch 0.25 / 0.0
+priority 6

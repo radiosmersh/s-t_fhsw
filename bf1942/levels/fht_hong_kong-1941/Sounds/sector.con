@@ -1,0 +1,4 @@
+rem *** sector ***
+ObjectTemplate.create SimpleObject sector
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript sector.ssc

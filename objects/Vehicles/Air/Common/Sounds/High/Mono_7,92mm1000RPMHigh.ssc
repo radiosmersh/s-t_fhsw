@@ -1,0 +1,85 @@
+### 7,92 mm MG17
+
+newPatch
+########################################################################################################
+### Fire ###
+############
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+#########################################################################################################
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##########################################################################################################
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Shell Bounce ###
+####################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+############################
+### Mashine gun distance ###
+############################
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/Air7,62mm/7,92mm_MG17_Loop_MO.wav
+loop
+stereo
+dopplerOff
+minDistance 2
+priority 10
+*** Distance Volume ***
+beginEffect
+  controlDestination Volume
+  controlSource Distance
+  envelope Ramp
+  param 10
+  param 10
+  param 1
+  param -1
+endEffect
+
+load @ROOT/Sound/@RTD/Air7,62mm/7,92mm_MG17_Loop_MO.wav
+loop
+dopplerOff
+minDistance 30
+priority 10
+*** Distance Volume ***
+beginEffect
+  controlDestination Volume
+  controlSource Distance
+  envelope Ramp
+  param 10
+  param 10
+  param 0
+  param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+  controlDestination Volume
+  controlSource Distance
+  envelope Ramp
+  param 250
+  param 250
+  param 1
+  param -1
+endEffect

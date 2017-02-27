@@ -1,0 +1,47 @@
+newPatch
+
+load @ROOT/Sound/@RTD/torpedo_launch_1.wav
+minDistance 30
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/torpedo_launch_3.wav
+minDistance 30
+dopplerOff
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/torpedo_launch_water.wav
+minDistance 30
+dopplerOff
+priority 10
+volume 0.5
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1
+endEffect

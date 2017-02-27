@@ -1,0 +1,35 @@
+rem *** ChurchillVEngine ***
+ObjectTemplate.create Engine ChurchillVEngine
+ObjectTemplate.setNetworkableInfo ChurchillVEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Land/Engines/Sounds/ChurchillEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ChurchillTrackL
+ObjectTemplate.setPosition -0.001/0/0
+ObjectTemplate.addTemplate ChurchillTrackR
+ObjectTemplate.setPosition 0.001/0/0
+
+ObjectTemplate.addTemplate e_TankExhaust20
+ObjectTemplate.setPosition -0.085/0.258/-2.06
+ObjectTemplate.setRotation 0/20/0
+ObjectTemplate.addTemplate e_TankExhaust20
+ObjectTemplate.setPosition 0.085/0.258/-2.06
+ObjectTemplate.setRotation 0/20/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+rem *** 8.83 HP/t
+ObjectTemplate.setTorque 1.67
+rem *** 24.94 km/h
+ObjectTemplate.setDifferential 1.87
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05

@@ -1,0 +1,112 @@
+
+rem *** OyodoCV1944_Oyodo_155_GunBarrelW ***
+ObjectTemplate.create FireArms OyodoCV1944_155_GunBarrelDummy
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.geometry OyodoCV1944_155mm_3YT_Gunbarrel_m1
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 1.6/0/10.5
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0/0/10.5
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition -1.6/0/10.5
+ObjectTemplate.setRotation -180/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectilePosition 0/1/0
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 9999
+ObjectTemplate.velocity 460
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 10
+rem ObjectTemplate.fireingForce 0
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 10
+ObjectTemplate.addFireArmsPosition 1.6/0/7.5 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/7.5 0/0/0
+ObjectTemplate.addFireArmsPosition -1.6/0/7.5 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setFireCameraShakeAnimationState ShipBigCanon
+
+
+
+rem *** OyodoCV1944_Oyodo_155_GunBarrelDummy_Alt ***
+ObjectTemplate.create FireArms OyodoCV1944_155_GunBarrelDummy_Alt
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.geometry OyodoCV1944_155mm_3YT_Gunbarrel_m1
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/150mmfire_Rel10Triple.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 1.6/0/10.5
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0/0/10.5
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition -1.6/0/10.5
+ObjectTemplate.setRotation -180/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectilePosition 0/1/0
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 9999
+ObjectTemplate.velocity 460
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 10
+rem ObjectTemplate.fireingForce 0
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 10
+ObjectTemplate.addFireArmsPosition 1.6/0/7.5 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/7.5 0/0/0
+ObjectTemplate.addFireArmsPosition -1.6/0/7.5 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+rem *** OyodoCV1944_10cmL65Type98_GunBarrel_Dummy ***
+ObjectTemplate.create FireArms OyodoCV1944_10cmL65Type98_GunBarrel_Dummy
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/100mmfire_Rel3Twin.ssc
+ObjectTemplate.geometry 10cm_type98_GunBarrel_ASSC_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition -0.33/0/5.1
+ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0.33/0/5.1
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate e_CartridgeEjection_127x679R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition -0.33/0/-0.64
+ObjectTemplate.addTemplate e_CartridgeEjection_127x679R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0.33/0/-0.64
+rem -------------------------------------
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.projectilePosition 0/1/2
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 500
+ObjectTemplate.roundOfFire 0.333
+rem ObjectTemplate.fireingForce 2
+ObjectTemplate.recoilSpeed 5
+ObjectTemplate.recoilSize 10
+ObjectTemplate.setMinDev 1.6
+ObjectTemplate.addFireArmsPosition 0.33/0/5.1 0/0/0
+ObjectTemplate.addFireArmsPosition -0.33/0/5.1 0/0/0
+rem ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
+

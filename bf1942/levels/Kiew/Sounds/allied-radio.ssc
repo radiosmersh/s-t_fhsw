@@ -1,0 +1,82 @@
+################################################################
+#templateLevel HIGH
+
+newPatch
+
+###################
+### Grabbis Sound ###
+###################
+load @ROOT/Sound/@RTD/Ambience/russian_propaganda.wav
+mono
+loop
+minDistance 15
+dopplerOff
+volume 8
+rem randomStartPitch 0.1 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 90
+	param 1
+	param -1	
+endEffect
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+###################
+### Grabbis Sound ###
+###################
+load @ROOT/Sound/@RTD/Ambience/russian_propaganda.wav
+mono
+loop
+minDistance 15
+dopplerOff
+volume 8
+rem randomStartPitch 0.1 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 90
+	param 1
+	param -1	
+endEffect
+
+
+################################################################
+
+#templateLevel LOW
+
+newPatch
+
+###################
+### Grabbis Sound###
+###################
+load @ROOT/Sound/@RTD/Ambience/russian_propaganda.wav
+mono
+loop
+minDistance 15
+dopplerOff
+volume 8
+rem randomStartPitch 0.1 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 90
+	param 1
+	param -1	
+endEffect

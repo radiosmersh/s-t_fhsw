@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/40mmVickersS.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/40mmVickersS.ssc
+	
+#templateLevel LOW
+
+	#include Low/40mmVickersS.ssc

@@ -1,0 +1,35 @@
+#templateLevel HIGH
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/Foyambience.wav
+loop
+minDistance 10
+volume 1.0
+priority -10
+
+#templateLevel MEDIUM
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/Foyambience.wav
+loop
+minDistance 10
+volume 1.0
+priority -10
+
+#templateLevel LOW
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/Foyambience.wav
+loop
+minDistance 10
+volume 1.0
+priority -10

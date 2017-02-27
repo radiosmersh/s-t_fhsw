@@ -1,0 +1,100 @@
+rem
+rem **** Initialize level specific rendering settings. 
+rem
+ShaderManager.setTextureParam envmap bf1942\levels\Pegasus\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1
+renderer.globalAmbientColor .05/.05/.05
+renderer.ambientColor .15/.13/.12
+renderer.diffuseColor .3/.28/.25
+renderer.specularColor .15/.15/.15
+renderer.animatedMeshDiffuseFactor 1
+renderer.animatedMeshAmbientColor 0.2
+renderer.fogColorVec 0.309803/0.329411/0.364705
+
+TreeRenderer.billboardlightscale 0.1
+
+textureManager.alternativePath Texture/LEVELS/Pegasus
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1945_SPRING
+textureManager.alternativePath Texture/SPECIAL_BRIT_PARATROOPER
+textureManager.alternativePath Texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath bf1942/Levels/Pegasus/Texture
+textureManager.alternativePath Texture/Special_skys/pegasus
+
+shadow.shadowColor 0.5
+
+Game.setViewDistance 260
+Game.spawnPlayers 1
+renderer.fogLinearStart 150
+renderer.fogLinearEnd 260
+
+rem 
+rem *** Define flags ***
+rem
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_CloseQuartersMp40noG
+game.setKit 1 1 2German_AssaultG43_noG
+game.setKit 1 2 3German_ATPanzerfaust100
+game.setKit 1 3 4German_TankCommanderNoRepair
+game.setKit 1 4 5German_EngineerK98NoRepair
+rem game.setKit 1 3 4German_TankCommanderWalterP38
+rem game.setKit 1 4 5German_EngineerK98
+
+game.setTeamSkin 2 BritishSoldier
+rem game.setKit 2 0 1GB_CloseQuartersStenMk5G
+rem game.setKit 2 1 2GB_AssaultNo4G
+rem game.setKit 2 2 3GB_ATNo68
+game.setKit 2 0 1GB_CloseQuartersStenMk5Mills
+game.setKit 2 1 2GB_AssaultNo4GHawkins
+game.setKit 2 2 3GB_ATNo68Gammon
+game.setKit 2 3 4GB_SupportBrenG
+game.setKit 2 4 5GB_EngineerNo4G
+
+rem
+rem *** Shader Default Color ***
+rem
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run objects/objects
+run Sounds/Environment
+
+water.specularEnable 0
+water.texLayer1 texture/water03
+water.texLayer2 texture/water04
+water.normalMap texture/normalMap01
+water.scrollDirectionNormalmap -1/-1
+water.scrollDirection1 -1/-0.5
+water.scrollDirection2 -1/-0.5
+water.specularColor 0.85/0.83/0.88
+water.scrollLayer1 0.03
+water.scrollLayer2 0.04
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 1
+water.tileNormalmap 1
+water.lightDirection -0.3/0.5/-0.65
+water.waterShallowAlpha 0.6
+water.waterAlphaDepth 3.0
+water.color 0.08/0.41/0.53
+water.deepcolor 0.5/0.45/0.3
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 471.09/77.28/523.43
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 509.77/75.63/479.30

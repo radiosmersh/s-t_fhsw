@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/140mm3rdYearType_Rel7,5.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/140mm3rdYearType_Rel7,5.ssc
+	
+#templateLevel LOW
+
+	#include Low/140mm3rdYearType_Rel7,5.ssc

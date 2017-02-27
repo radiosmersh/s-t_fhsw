@@ -1,0 +1,7 @@
+
+
+rem *** ambience1 ***
+ObjectTemplate.create SimpleObject ambience1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ambience1.ssc
+ObjectTemplate.triggerRadius 90

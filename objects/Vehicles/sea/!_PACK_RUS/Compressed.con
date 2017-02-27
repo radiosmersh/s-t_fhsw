@@ -1,0 +1,1520 @@
+rem ============================================================================
+rem folder = Gnevny
+rem sauce = Geometries.con
+rem ============================================================================
+
+
+GeometryTemplate.create StandardMesh Gnevny_hull_M1
+GeometryTemplate.file Gnevny_hull_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Gnevny_hull_L1
+GeometryTemplate.file Gnevny_hull_L1
+
+GeometryTemplate.create StandardMesh Gnevny_canon_m1
+GeometryTemplate.file Gnevny_Cannon_13cm_TurretBig
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Gnevny_canonbar_m1
+GeometryTemplate.file Gnevny_Cannon_13cm_RohrBase
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Gnevny_canonpipe_m1
+GeometryTemplate.file Gnevny_Cannon_13cm_Rohr
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Gnevny_radar_m1
+GeometryTemplate.file Gnevny_Radar
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+GeometryTemplate.setLodDistance 2 150
+GeometryTemplate.setLodDistance 3 300
+
+GeometryTemplate.create StandardMesh Gnevny_prop_m1
+GeometryTemplate.file Fletch_prop_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 800
+
+GeometryTemplate.create StandardMesh Ship_ladder_FH_1
+GeometryTemplate.file Ship_Ladder_FH_1m
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh Gnevny_canonpipe_m2
+GeometryTemplate.file Gnevny_Cannon_7cm_Rohr
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Gnevny_canon_m2
+GeometryTemplate.file Gnevny_Cannon_7cm_TurretBig
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Gnevny_canonbar_m2
+GeometryTemplate.file Gnevny_Cannon_7cm_RohrBase
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Gnevny_Torp_M1
+GeometryTemplate.file Torpedo_Turret_3Fach_Russia01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 200
+GeometryTemplate.setLodDistance 4 300
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Gnevny
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo GnevnyBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo GnevnyCannonInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo GnevnyTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo GnevnyRudderInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo GnevnyEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Gnevny
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = RUS
+
+rem *** Sovjet destroyer: Gnevny Class ***
+rem *** Gnevny ***
+ObjectTemplate.create PlayerControlObject Gnevny
+ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 2.5
+ObjectTemplate.mass 2500000
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 2330
+ObjectTemplate.maxhitpoints 2330
+ObjectTemplate.material 139
+ObjectTemplate.criticalDamage 233
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 2427 em_ExFumePOW 0/13.31/11.63
+ObjectTemplate.addArmorEffect 971 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 971 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 971 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 485 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 485 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 485 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 485 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 485 e_waterBoatSink 0/0/0
+ObjectTemplate.addArmorEffect 233 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 233 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 233 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 233 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 233 e_waterBoatSinkEf 0/-2/-5
+ObjectTemplate.addArmorEffect 233 e_waterBoatSinkEf 0/-2/25
+ObjectTemplate.addArmorEffect 233 e_waterBoatSinkEf 0/-2/-35
+ObjectTemplate.aiTemplate GnevnyAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodGnevny
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -1.999/7.5/50
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 2/7.5/50
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -4.999/7.5/17
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 5/7.5/17
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -4.999/7.5/-16.999
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 5/7.5/-16.999
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -1.999/7.5/-49.999
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 2/7.5/-49.999
+
+ObjectTemplate.addTemplate GnevnySoldierSpawn1
+ObjectTemplate.setPosition 0/5/35.75
+ObjectTemplate.addTemplate GnevnySoldierSpawn2
+ObjectTemplate.setPosition 2.5/4/-35.699
+ObjectTemplate.addTemplate GnevnySoldierSpawn3
+ObjectTemplate.setPosition -2.5/4/-35.699
+
+ObjectTemplate.addTemplate GnevnyLcvpSpawner
+ObjectTemplate.setPosition 7.555/0.3/7.009
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate GnevnyLcvpSpawner
+ObjectTemplate.setPosition -7.555/0.3/7.009
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation -1.8/8.0/29.70 0/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Gnevny.tga"
+ObjectTemplate.setVehicleIconPos 85/77
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_130mmPattern1936.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+
+rem *** lodGnevny ***
+ObjectTemplate.create LodObject lodGnevny
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate GnevnyComplex
+ObjectTemplate.addTemplate GnevnySimple
+rem -------------------------------------
+ObjectTemplate.lodSelector GnevnyLodSelector
+
+
+rem *** GnevnyComplex ***
+ObjectTemplate.create Bundle GnevnyComplex
+rem ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
+ObjectTemplate.geometry Gnevny_hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate DestroyerSonar
+ObjectTemplate.addTemplate Gnevny_Radar
+ObjectTemplate.setPosition 0/17.795/21.385
+ObjectTemplate.addTemplate Gnevny_propeller
+ObjectTemplate.setPosition 2.2/-2.65/-50.000
+ObjectTemplate.setRotation 0/-5/0
+ObjectTemplate.addTemplate Gnevny_propeller
+ObjectTemplate.setPosition -2.2/-2.65/-50.000
+ObjectTemplate.setRotation 0/-5/0
+
+ObjectTemplate.addTemplate Gnevny_HullWing
+ObjectTemplate.setPosition 0/-5/55
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Gnevny_rudder
+ObjectTemplate.setPosition 0/-5/-55
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Gnevny_Engine
+ObjectTemplate.setPosition 0/-4/-40
+
+ObjectTemplate.addTemplate Gnevny_cannon
+ObjectTemplate.setPosition 0/5.33/39.09
+ObjectTemplate.addTemplate Gnevny_cannon_Front
+ObjectTemplate.setPosition 0/7.368/32.99
+
+ObjectTemplate.addTemplate Gnevny_Back_Canons_PCO
+ObjectTemplate.addTemplate Gnevny_Flak_Big_PCO
+ObjectTemplate.addTemplate Gnevny_AABattery1
+ObjectTemplate.setPosition -4/5.33/21.3
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Gnevny_AABattery2
+ObjectTemplate.setPosition 4/5.33/21.3
+ObjectTemplate.setRotation 180/0/0 
+ObjectTemplate.addTemplate GnevnyTorpedoPCO
+ObjectTemplate.setPosition 0/4.1/-8.02
+
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/5.33/39.09
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/7.368/32.99
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition -5.2/1.2/13.9
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition 5.2/1.2/13.9
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition -1.15/4.063/-56.208
+ObjectTemplate.setRotation -179.999/0/-89.999
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition 1.15/4.063/-56.208
+ObjectTemplate.setRotation -179.999/0/90
+
+ObjectTemplate.addTemplate e_waterfrontBig
+ObjectTemplate.setPosition 0/-2/55
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/55
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/-58
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/-0.499/-49.999
+
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 0/8.82/21.82
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 0/4.51/-17.30
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 2.12/6.55/23.31
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition -2.12/6.55/23.31
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 2.58/4.51/19.18
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition -2.58/4.51/19.18
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate AnimatedSoFlag
+ObjectTemplate.setPosition 0/9.95/55.84
+ObjectTemplate.setRotation 75.756/0/0
+ObjectTemplate.addTemplate AnimatedSoFlag
+ObjectTemplate.setPosition 0/7.75/-56.78
+ObjectTemplate.setRotation 75.756/-0.5/-9.0
+
+rem ObjectTemplate.addTemplate ShipAlarm2
+rem -------------------------------------
+
+
+rem *** GnevnySoldierSpawn1 ***
+ObjectTemplate.create SpawnPoint GnevnySoldierSpawn1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 68
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** GnevnySoldierSpawn2 ***
+ObjectTemplate.create SpawnPoint GnevnySoldierSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 68
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** GnevnySoldierSpawn3 ***
+ObjectTemplate.create SpawnPoint GnevnySoldierSpawn3
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 68
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** GnevnyLcvpSpawner ***
+ObjectTemplate.create ObjectSpawner GnevnyLcvpSpawner
+ObjectTemplate.setObjectTemplate 1 Lcvp
+ObjectTemplate.setObjectTemplate 2 Lcvp
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 20
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 3
+ObjectTemplate.damageWhenLost 10
+
+rem **********************************
+rem *** Back Cannon                ***
+rem **********************************
+rem *** Gnevny_Back_Canons_PCO ***
+ObjectTemplate.create PlayerControlObject Gnevny_Back_Canons_PCO
+ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
+ObjectTemplate.aiTemplate GnevnyRearGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/5.33/-31.98
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/3.3/-38.07
+ObjectTemplate.addTemplate Gnevny_cannon_Back
+ObjectTemplate.setPosition 0/5.33/-31.98
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Gnevny_cannon
+ObjectTemplate.setPosition 0/3.3/-38.07
+ObjectTemplate.setRotation -179.999/0/0
+
+ObjectTemplate.addTemplate ShipAlarm2
+rem -------------------------------------
+ObjectTemplate.setPcoId 1
+ObjectTemplate.setSoldierExitLocation 0/4/-34.7 120/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Gnevny.tga"
+ObjectTemplate.setVehicleIconPos 23/48
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_130mmPattern1936.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 120
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+
+rem *** Gnevny_cannon_back ***
+ObjectTemplate.create RotationalBundle Gnevny_cannon_back
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+ObjectTemplate.geometry Gnevny_canon_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_cannon_barrel_Back
+ObjectTemplate.setPosition 0/1.5/-0.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation -150/0/0
+ObjectTemplate.setMaxRotation 150/0/0
+ObjectTemplate.setMaxSpeed 45/0/0
+ObjectTemplate.setAcceleration 90/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Gnevny_cannon_barrel_Back ***
+ObjectTemplate.create RotationalBundle Gnevny_cannon_barrel_Back
+ObjectTemplate.setNetworkableInfo GnevnyCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
+ObjectTemplate.geometry Gnevny_canonbar_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_GunBarrel
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Gnevny_Camera_Bundle
+ObjectTemplate.setPosition -0.499/0.5/1.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/90/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Gnevny_Camera_Bundle ***
+ObjectTemplate.create Bundle Gnevny_Camera_Bundle
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Camera
+ObjectTemplate.addTemplate lodShipCockpit
+ObjectTemplate.setPosition 0.538/-0.02/0.098
+rem -------------------------------------
+
+rem **********************************
+rem *** 2nd Cannon front and back  ***
+rem **********************************
+rem *** Gnevny_cannon ***
+ObjectTemplate.create RotationalBundle Gnevny_cannon
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+ObjectTemplate.geometry Gnevny_canon_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_cannon_barrel
+ObjectTemplate.setPosition 0/1.5/-0.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation -150/0/0
+ObjectTemplate.setMaxRotation 150/0/0
+ObjectTemplate.setMaxSpeed 45/0/0
+ObjectTemplate.setAcceleration 90/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Gnevny_cannon_barrel ***
+ObjectTemplate.create RotationalBundle Gnevny_cannon_barrel
+ObjectTemplate.setNetworkableInfo GnevnyCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
+ObjectTemplate.geometry Gnevny_canonbar_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_GunBarrel
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/90/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem **********************************
+rem *** Front Cannon               ***
+rem **********************************
+rem *** Gnevny_cannon_Front ***
+ObjectTemplate.create RotationalBundle Gnevny_cannon_Front
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+ObjectTemplate.geometry Gnevny_canon_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_cannon_barrel_Front
+ObjectTemplate.setPosition 0/1.5/-0.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation -150/0/0
+ObjectTemplate.setMaxRotation 150/0/0
+ObjectTemplate.setMaxSpeed 45/0/0
+ObjectTemplate.setAcceleration 90/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Gnevny_cannon_barrel_Front ***
+ObjectTemplate.create RotationalBundle Gnevny_cannon_barrel_Front
+ObjectTemplate.setNetworkableInfo GnevnyCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
+ObjectTemplate.geometry Gnevny_canonbar_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_GunBarrel
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Gnevny_Camera_Bundle
+ObjectTemplate.setPosition -0.499/0.5/1.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/90/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ***********************************************
+rem *** Medium Cannon 7,6cm Flak
+rem ***********************************************
+rem *** Gnevny_Flak_Big_PCO ***
+ObjectTemplate.create PlayerControlObject Gnevny_Flak_Big_PCO 
+ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
+ObjectTemplate.aiTemplate GnevnyAAAI
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 2.84/5.42/-14.82
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition -2.84/5.42/-14.82
+ObjectTemplate.addTemplate Gnevny_Flak_Big_Camera
+ObjectTemplate.setPosition 2.84/5.42/-14.82
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Gnevny_Flak
+ObjectTemplate.setPosition -2.84/5.42/-14.82
+ObjectTemplate.setRotation -179.999/0/0
+
+ObjectTemplate.addTemplate ShipBuzzer
+rem -------------------------------------
+ObjectTemplate.setPcoId 2
+ObjectTemplate.setSoldierExitLocation 4/4/-14.82 0/0/0
+ObjectTemplate.GUIIndex 41
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Gnevny.tga"
+ObjectTemplate.setVehicleIconPos 35/57
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76,2mmPattern1935AA.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 120
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+
+rem *** Gnevny_Flak_Big_Camera ***
+ObjectTemplate.create RotationalBundle Gnevny_Flak_Big_Camera
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+ObjectTemplate.geometry Gnevny_canon_m2
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Flak_Big_Camera_Barrel
+ObjectTemplate.setPosition 0/1.3/-0.3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 40.0/0/0
+ObjectTemplate.setAcceleration 150/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Gnevny_Flak_Big_Camera_Barrel ***
+ObjectTemplate.create RotationalBundle Gnevny_Flak_Big_Camera_Barrel
+ObjectTemplate.setNetworkableInfo GnevnyCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
+ObjectTemplate.geometry Gnevny_canonbar_m2
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_FlakBarrel
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Gnevny_Camera_BundleAA
+ObjectTemplate.setPosition -0.499/0.25/0.5
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-85/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/40.0/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Gnevny_Camera_BundleAA ***
+ObjectTemplate.create Bundle Gnevny_Camera_BundleAA
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Camera
+ObjectTemplate.addTemplate lodShipCockpitAA
+ObjectTemplate.setPosition 0.538/-0.02/0.098
+rem -------------------------------------
+
+rem *** Gnevny_Flak ***
+ObjectTemplate.create RotationalBundle Gnevny_Flak
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+ObjectTemplate.geometry Gnevny_canon_m2
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Flak_barrel
+ObjectTemplate.setPosition 0/1.3/-0.3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 40.0/0/0
+ObjectTemplate.setAcceleration 150/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Gnevny_Flak_barrel ***
+ObjectTemplate.create RotationalBundle Gnevny_Flak_barrel
+ObjectTemplate.setNetworkableInfo GnevnyCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
+ObjectTemplate.geometry Gnevny_canonbar_m2
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_FlakBarrel
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-85/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/40.0/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ***********************************************
+rem *** Left AA Gun
+rem ***********************************************
+rem *** Gnevny_AABattery1 ***
+ObjectTemplate.create PlayerControlObject Gnevny_AABattery1
+ObjectTemplate.aiTemplate GnevnyAA2
+ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate 37mmM1939_base
+
+ObjectTemplate.addTemplate ShipBell
+rem -------------------------------------
+ObjectTemplate.setPcoId 3
+ObjectTemplate.setSoldierExitLocation -1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 36
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Gnevny.tga"
+ObjectTemplate.setVehicleIconPos 74/69
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_37mm70-K_HEI+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+
+rem ***********************************************
+rem *** Right AA Gun
+rem ***********************************************
+rem *** Gnevny_AABattery2 ***
+ObjectTemplate.create PlayerControlObject Gnevny_AABattery2
+ObjectTemplate.aiTemplate GnevnyAA3
+ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate 37mmM1939_base
+
+ObjectTemplate.addTemplate ShipBell
+rem -------------------------------------
+ObjectTemplate.setPcoId 4
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 37
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Gnevny.tga"
+ObjectTemplate.setVehicleIconPos 60/77
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_37mm70-K_HEI+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+rem ***********************************************
+rem *** Torpedo Weapons
+rem ***********************************************
+rem *** GnevnyTorpedoAPCO ***
+ObjectTemplate.create PlayerControlObject GnevnyTorpedoPCO
+ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
+ObjectTemplate.aiTemplate GnevnyTorpedoLauncherAI
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GnevnyTorpedoHolder
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GnevnyTorpedoHolderAlt
+ObjectTemplate.setPosition 0/0/-15.18
+
+ObjectTemplate.addTemplate GnevnyTorpedoHolder_HullDamage
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GnevnyTorpedoHolderAlt_HullDamage
+ObjectTemplate.setPosition 0/0/-15.18
+rem -------------------------------------
+ObjectTemplate.setPcoId 5
+ObjectTemplate.setSoldierExitLocation -4/0.5/6 0/0/0
+ObjectTemplate.GUIIndex 90
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Gnevny.tga"
+ObjectTemplate.setVehicleIconPos 41/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_TP53,3cmPattern1939.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_TP53,3cmPattern1939.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+rem *** GnevnyTorpedoHolder ***
+ObjectTemplate.create RotationalBundle GnevnyTorpedoHolder
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+ObjectTemplate.geometry Gnevny_Torp_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate GnevnyTorpedorampe
+ObjectTemplate.addTemplate Gnevny_Camera3
+ObjectTemplate.setPosition 0/1.5/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -135/0/0
+ObjectTemplate.setMaxRotation 135/0/0
+rem ObjectTemplate.setMinRotation -225/0/0
+rem ObjectTemplate.setMaxRotation 45/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** GnevnyTorpedoHolderAlt ***
+ObjectTemplate.create RotationalBundle GnevnyTorpedoHolderAlt
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+ObjectTemplate.geometry Gnevny_Torp_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate GnevnyTorpedorampeAlt
+rem -------------------------------------
+ObjectTemplate.setMinRotation -135/0/0
+ObjectTemplate.setMaxRotation 135/0/0
+rem ObjectTemplate.setMinRotation -225/0/0
+rem ObjectTemplate.setMaxRotation 45/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** GnevnyTorpedoHolder_HullDamage ***
+ObjectTemplate.create RotationalBundle GnevnyTorpedoHolder_HullDamage
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate GnevnyTorpedorampe_HullDamage
+rem -------------------------------------
+ObjectTemplate.setMinRotation -135/0/0
+ObjectTemplate.setMaxRotation 135/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** GnevnyTorpedoHolderAlt_HullDamage ***
+ObjectTemplate.create RotationalBundle GnevnyTorpedoHolderAlt_HullDamage
+ObjectTemplate.setNetworkableInfo GnevnyTurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate GnevnyTorpedorampeAlt_HullDamage
+rem -------------------------------------
+ObjectTemplate.setMinRotation -135/0/0
+ObjectTemplate.setMaxRotation 135/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem **********************************
+rem *** Shared Objects             ***
+rem **********************************
+rem *** Gnevny_Camera ***
+ObjectTemplate.create Camera Gnevny_Camera
+ObjectTemplate.CVMExternTrace 1
+
+rem *** Gnevny_Camera2 ***
+ObjectTemplate.create Camera Gnevny_Camera2
+
+rem *** Gnevny_Camera3 ***
+ObjectTemplate.create Camera Gnevny_Camera3
+
+rem *** Gnevny_Entry ***
+ObjectTemplate.create EntryPoint Gnevny_Entry
+ObjectTemplate.setEntryRadius 4
+
+rem *** Gnevny_Radar ***
+ObjectTemplate.create RotationalBundle Gnevny_Radar
+ObjectTemplate.geometry Gnevny_radar_m1
+ObjectTemplate.setMaxSpeed 10/10/10
+ObjectTemplate.setContinousRotationSpeed 30/0/0
+
+rem *** Gnevny_propeller ***
+ObjectTemplate.create RotationalBundle Gnevny_propeller
+ObjectTemplate.geometry Gnevny_prop_m1
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 90/90/90
+
+rem *** AnimatedSoFlag ***
+ObjectTemplate.create AnimatedBundle AnimatedSoFlag
+ObjectTemplate.geometry flagso_m1
+
+rem *** Gnevny_ShipLadder01 ***
+ObjectTemplate.create SimpleObject Gnevny_ShipLadder01
+ObjectTemplate.geometry Ship_ladder_FH_1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+
+rem *** GnevnySimple ***
+ObjectTemplate.create SimpleObject GnevnySimple
+ObjectTemplate.geometry Gnevny_hull_L1
+
+rem *** GnevnyLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 GnevnyLodSelector
+LodSelectorTemplate.addLodDistance 500
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Gnevny
+rem sauce = Physics.con
+rem ============================================================================
+
+
+rem *** Gnevny_HullWing ***
+ObjectTemplate.create Wing Gnevny_HullWing
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Gnevny_rudder ***
+ObjectTemplate.create Wing Gnevny_rudder
+ObjectTemplate.setNetworkableInfo GnevnyRudderInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Gnevny_Engine ***
+ObjectTemplate.create Engine Gnevny_Engine
+ObjectTemplate.setNetworkableInfo GnevnyEngineInfo
+ObjectTemplate.loadSoundScript ../Gnevny/Sounds/GnevnyEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** Gnevny_Floater ***
+ObjectTemplate.create FloatingBundle Gnevny_Floater
+ObjectTemplate.setHullHeight 20
+ObjectTemplate.setFloatMaxLift 2
+ObjectTemplate.setFloatMinLift 2
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Gnevny
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** Gnevny_GunBarrel ***
+ObjectTemplate.create FireArms Gnevny_GunBarrel
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.aiTemplate GnevnyGunAI
+ObjectTemplate.geometry Gnevny_canonpipe_m1
+ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0/0/5
+ObjectTemplate.setRotation -179.999/0/0
+
+ObjectTemplate.addTemplate e_CartridgeEjection_130x822R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0/-1.42
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ship13,0cmL50Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 100
+ObjectTemplate.velocity 435
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 8
+ObjectTemplate.addFireArmsPosition 0/0/5 0/0/0
+rem ObjectTemplate.fireingForce 0
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 10
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1.6
+ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
+
+rem *********************************************************
+
+rem *** Gnevny_FlakBarrel ***
+ObjectTemplate.create FireArms Gnevny_FlakBarrel
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.aiTemplate GnevnyAAGunAI
+ObjectTemplate.geometry Gnevny_canonpipe_m2
+ObjectTemplate.loadSoundScript ../Common/Sounds/76mmfire_Rel2,4.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
+ObjectTemplate.setPosition 0/0/3
+ObjectTemplate.setRotation -179.999/0/0
+
+ObjectTemplate.addTemplate e_CartridgeEjection_76,2x558R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0/-1.05
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ship7,62cmL50AAProjectile
+ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.aiTemplate Tsurumi_3inchAAAI
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 410
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+rem ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 0.42
+ObjectTemplate.setMinDev 2.6
+ObjectTemplate.autoReload 1
+ObjectTemplate.velocity 636
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 6
+ObjectTemplate.addFireArmsPosition 0/0/5 0/0/0
+ObjectTemplate.AmmoType	4
+ObjectTemplate.setFireCameraShakeAnimationState FireTank100CanonShake
+
+rem *********************************************************
+rem *** GnevnyTorpedorampe ***
+ObjectTemplate.create FireArms GnevnyTorpedorampe
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate Sub7CTorpedoAI
+ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
+ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
+ObjectTemplate.projectileTemplate 53,3cmPattern1939Torpedo
+ObjectTemplate.projectilePosition 0/0/18.1
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 20
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 60
+ObjectTemplate.addFireArmsPosition -0.69/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0.69/0.3/5 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 0.512
+
+rem *** GnevnyTorpedorampeAlt ***
+ObjectTemplate.create FireArms GnevnyTorpedorampeAlt
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate Sub7CTorpedoAI
+ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
+ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
+ObjectTemplate.projectileTemplate 53,3cmPattern1939Torpedo
+ObjectTemplate.projectilePosition 0/0/18.1
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 20
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 60
+ObjectTemplate.addFireArmsPosition -0.69/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0.69/0.3/5 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 0.512
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+rem *********************************************************
+rem *** GnevnyTorpedorampe_HullDamage ***
+ObjectTemplate.create FireArms GnevnyTorpedorampe_HullDamage
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate Sub7CTorpedoAI
+ObjectTemplate.projectileTemplate 53,3cmPattern1939TorpedoHullDamage
+ObjectTemplate.projectilePosition 0/0/18.1
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 20
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 60
+ObjectTemplate.addFireArmsPosition -0.69/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0.69/0.3/5 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 0.512
+
+rem *** GnevnyTorpedorampeAlt_HullDamage ***
+ObjectTemplate.create FireArms GnevnyTorpedorampeAlt_HullDamage
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate Sub7CTorpedoAI
+ObjectTemplate.projectileTemplate 53,3cmPattern1939TorpedoHullDamage
+ObjectTemplate.projectilePosition 0/0/18.1
+ObjectTemplate.magSize 3
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 20
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 60
+ObjectTemplate.addFireArmsPosition -0.69/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0.3/5 0/0/0
+ObjectTemplate.addFireArmsPosition 0.69/0.3/5 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 0.512
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Rezvy
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo RezvyBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Rezvy
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = RUS
+
+rem *** Sovjet destroyer: Gnevny Class ***
+rem *** Rezvy ***
+ObjectTemplate.create PlayerControlObject Rezvy
+ObjectTemplate.setNetworkableInfo RezvyBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 2.5
+ObjectTemplate.mass 2500000
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 2330
+ObjectTemplate.maxhitpoints 2330
+ObjectTemplate.material 139
+ObjectTemplate.criticalDamage 233
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 2427 em_ExFumePOW 0/13.31/11.63
+ObjectTemplate.addArmorEffect 971 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 971 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 971 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 485 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 485 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 485 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 485 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 485 e_waterBoatSink 0/0/0
+ObjectTemplate.addArmorEffect 233 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 233 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 233 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 233 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 233 e_waterBoatSinkEf 0/-2/-5
+ObjectTemplate.addArmorEffect 233 e_waterBoatSinkEf 0/-2/25
+ObjectTemplate.addArmorEffect 233 e_waterBoatSinkEf 0/-2/-35
+ObjectTemplate.aiTemplate GnevnyAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodRezvy
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -1.999/7.5/50
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 2/7.5/50
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -4.999/7.5/17
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 5/7.5/17
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -4.999/7.5/-16.999
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 5/7.5/-16.999
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition -1.999/7.5/-49.999
+ObjectTemplate.addTemplate Gnevny_Floater
+ObjectTemplate.setPosition 2/7.5/-49.999
+
+ObjectTemplate.addTemplate RezvySoldierSpawn1
+ObjectTemplate.setPosition 0/5/35.75
+ObjectTemplate.addTemplate RezvySoldierSpawn2
+ObjectTemplate.setPosition 2.5/4/-35.699
+ObjectTemplate.addTemplate RezvySoldierSpawn3
+ObjectTemplate.setPosition -2.5/4/-35.699
+
+ObjectTemplate.addTemplate RezvyLcvpSpawner
+ObjectTemplate.setPosition 7.555/0.3/7.009
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate RezvyLcvpSpawner
+ObjectTemplate.setPosition -7.555/0.3/7.009
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation -1.8/8.0/29.70 0/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Rezvy.tga"
+ObjectTemplate.setVehicleIconPos 85/77
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_130mmPattern1936.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+rem ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
+rem ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 150
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+
+rem *** lodRezvy ***
+ObjectTemplate.create LodObject lodRezvy
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate RezvyComplex
+ObjectTemplate.addTemplate GnevnySimple
+rem -------------------------------------
+ObjectTemplate.lodSelector GnevnyLodSelector
+
+
+rem *** RezvyComplex ***
+ObjectTemplate.create Bundle RezvyComplex
+rem ObjectTemplate.setNetworkableInfo RezvyBodyInfo
+ObjectTemplate.geometry Gnevny_hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate DestroyerSonar
+ObjectTemplate.addTemplate Gnevny_Radar
+ObjectTemplate.setPosition 0/17.795/21.385
+ObjectTemplate.addTemplate Gnevny_propeller
+ObjectTemplate.setPosition 2.2/-2.65/-50.000
+ObjectTemplate.setRotation 0/-5/0
+ObjectTemplate.addTemplate Gnevny_propeller
+ObjectTemplate.setPosition -2.2/-2.65/-50.000
+ObjectTemplate.setRotation 0/-5/0
+
+ObjectTemplate.addTemplate Gnevny_HullWing
+ObjectTemplate.setPosition 0/-5/55
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Gnevny_rudder
+ObjectTemplate.setPosition 0/-5/-55
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Gnevny_Engine
+ObjectTemplate.setPosition 0/-4/-40
+
+ObjectTemplate.addTemplate Gnevny_cannon
+ObjectTemplate.setPosition 0/5.33/39.09
+ObjectTemplate.addTemplate Gnevny_cannon_Front
+ObjectTemplate.setPosition 0/7.368/32.99
+
+ObjectTemplate.addTemplate Rezvy_Back_Canons_PCO
+ObjectTemplate.addTemplate Rezvy_Flak_Big_PCO
+ObjectTemplate.addTemplate Rezvy_AABattery1
+ObjectTemplate.setPosition -4/5.33/21.3
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Rezvy_AABattery2
+ObjectTemplate.setPosition 4/5.33/21.3
+ObjectTemplate.setRotation 180/0/0 
+ObjectTemplate.addTemplate RezvyTorpedoPCO
+ObjectTemplate.setPosition 0/4.1/-8.02
+
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/5.33/39.09
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/7.368/32.99
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition -5.2/1.2/13.9
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition 5.2/1.2/13.9
+ObjectTemplate.setRotation -90/0/0
+beginrem
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition -1.15/4.063/-56.208
+ObjectTemplate.setRotation -179.999/0/-89.999
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition 1.15/4.063/-56.208
+ObjectTemplate.setRotation -179.999/0/90
+endrem
+
+ObjectTemplate.addTemplate e_waterfrontBig
+ObjectTemplate.setPosition 0/-2/55
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/55
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/-58
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/-0.499/-49.999
+
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 0/8.82/21.82
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 0/4.51/-17.30
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 2.12/6.55/23.31
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition -2.12/6.55/23.31
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition 2.58/4.51/19.18
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
+ObjectTemplate.setPosition -2.58/4.51/19.18
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate AnimatedSoFlag
+ObjectTemplate.setPosition 0/9.95/55.84
+ObjectTemplate.setRotation 75.756/0/0
+ObjectTemplate.addTemplate AnimatedSoFlag
+ObjectTemplate.setPosition 0/7.75/-56.78
+ObjectTemplate.setRotation 75.756/-0.5/-9.0
+rem -------------------------------------
+
+
+rem *** RezvySoldierSpawn1 ***
+ObjectTemplate.create SpawnPoint RezvySoldierSpawn1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** RezvySoldierSpawn2 ***
+ObjectTemplate.create SpawnPoint RezvySoldierSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** RezvySoldierSpawn3 ***
+ObjectTemplate.create SpawnPoint RezvySoldierSpawn3
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** RezvyLcvpSpawner ***
+ObjectTemplate.create ObjectSpawner RezvyLcvpSpawner
+ObjectTemplate.setObjectTemplate 1 Lcvp
+ObjectTemplate.setObjectTemplate 2 Lcvp
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 20
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 3
+ObjectTemplate.damageWhenLost 10
+
+rem **********************************
+rem *** Back Cannon                ***
+rem **********************************
+rem *** Rezvy_Back_Canons_PCO ***
+ObjectTemplate.create PlayerControlObject Rezvy_Back_Canons_PCO
+ObjectTemplate.setNetworkableInfo RezvyBodyInfo
+ObjectTemplate.aiTemplate GnevnyRearGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/5.33/-31.98
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/3.3/-38.07
+ObjectTemplate.addTemplate Gnevny_cannon_Back
+ObjectTemplate.setPosition 0/5.33/-31.98
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Gnevny_cannon
+ObjectTemplate.setPosition 0/3.3/-38.07
+ObjectTemplate.setRotation -179.999/0/0
+
+ObjectTemplate.addTemplate ShipAlarm2
+rem -------------------------------------
+ObjectTemplate.setPcoId 1
+ObjectTemplate.setSoldierExitLocation 0/4/-34.7 120/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Rezvy.tga"
+ObjectTemplate.setVehicleIconPos 23/48
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_130mmPattern1936.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 150
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+
+rem ***********************************************
+rem *** Medium Cannon 7,6cm Flak
+rem ***********************************************
+rem *** Rezvy_Flak_Big_PCO ***
+ObjectTemplate.create PlayerControlObject Rezvy_Flak_Big_PCO 
+ObjectTemplate.setNetworkableInfo RezvyBodyInfo
+ObjectTemplate.aiTemplate GnevnyAAAI
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 2.84/5.42/-14.82
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition -2.84/5.42/-14.82
+ObjectTemplate.addTemplate Gnevny_Flak_Big_Camera
+ObjectTemplate.setPosition 2.84/5.42/-14.82
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate Gnevny_Flak
+ObjectTemplate.setPosition -2.84/5.42/-14.82
+ObjectTemplate.setRotation -179.999/0/0
+
+ObjectTemplate.addTemplate ShipBuzzer
+rem -------------------------------------
+ObjectTemplate.setPcoId 2
+ObjectTemplate.setSoldierExitLocation 4/4/-14.82 0/0/0
+ObjectTemplate.GUIIndex 41
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Rezvy.tga"
+ObjectTemplate.setVehicleIconPos 35/57
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76,2mmPattern1935AA.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 120
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+
+rem ***********************************************
+rem *** Left AA Gun
+rem ***********************************************
+rem *** Rezvy_AABattery1 ***
+ObjectTemplate.create PlayerControlObject Rezvy_AABattery1
+ObjectTemplate.aiTemplate GnevnyAA2
+ObjectTemplate.setNetworkableInfo RezvyBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate 37mmM1939_base
+
+ObjectTemplate.addTemplate ShipBell
+rem -------------------------------------
+ObjectTemplate.setPcoId 3
+ObjectTemplate.setSoldierExitLocation -1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 36
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Rezvy.tga"
+ObjectTemplate.setVehicleIconPos 74/69
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_37mm70-K_HEI+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+
+rem ***********************************************
+rem *** Right AA Gun
+rem ***********************************************
+rem *** Rezvy_AABattery2 ***
+ObjectTemplate.create PlayerControlObject Rezvy_AABattery2
+ObjectTemplate.aiTemplate GnevnyAA3
+ObjectTemplate.setNetworkableInfo RezvyBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate 37mmM1939_base
+
+ObjectTemplate.addTemplate ShipBell
+rem -------------------------------------
+ObjectTemplate.setPcoId 4
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 37
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Rezvy.tga"
+ObjectTemplate.setVehicleIconPos 60/77
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_37mm70-K_HEI+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+rem ***********************************************
+rem *** Torpedo Weapons
+rem ***********************************************
+rem *** RezvyTorpedoAPCO ***
+ObjectTemplate.create PlayerControlObject RezvyTorpedoPCO
+ObjectTemplate.setNetworkableInfo RezvyBodyInfo
+ObjectTemplate.aiTemplate GnevnyTorpedoLauncherAI
+rem -------------------------------------
+ObjectTemplate.addTemplate Gnevny_Entry
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GnevnyTorpedoHolder
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GnevnyTorpedoHolderAlt
+ObjectTemplate.setPosition 0/0/-15.18
+
+ObjectTemplate.addTemplate GnevnyTorpedoHolder_HullDamage
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate GnevnyTorpedoHolderAlt_HullDamage
+ObjectTemplate.setPosition 0/0/-15.18
+rem -------------------------------------
+ObjectTemplate.setPcoId 5
+ObjectTemplate.setSoldierExitLocation -4/0.5/6 0/0/0
+ObjectTemplate.GUIIndex 90
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Rezvy.tga"
+ObjectTemplate.setVehicleIconPos 41/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_TP53,3cmPattern1939.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_TP53,3cmPattern1939.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+rem ===== EOF =====

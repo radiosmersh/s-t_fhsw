@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/75mmBK75.ssc
+	
+#templateLevel MEDIUM
+
+	#include Medium/75mmBK75.ssc
+	
+#templateLevel LOW
+
+	#include Low/75mmBK75.ssc

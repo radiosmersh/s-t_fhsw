@@ -1,0 +1,8 @@
+
+
+rem *** cricket2 ***
+ObjectTemplate.create SimpleObject cricket2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript cricket2.ssc
+ObjectTemplate.triggerRadius 30
+

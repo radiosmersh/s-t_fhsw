@@ -1,0 +1,97 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
+rem *********************************************
+ShaderManager.setTextureParam envmap bf1942\levels\Battle_of_Off_Malay\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.vertexFogEnable 1
+renderer.globalAmbientColor 0.14/0.12/0.11
+renderer.ambientColor 0.19/0.17/0.2
+renderer.diffuseColor 0.5/0.48/0.4
+renderer.specularColor 0.3/0.3/0.3
+renderer.animatedMeshAmbientColor 0.3
+renderer.setFogColorVec 0.812/0.832/0.921
+rem renderer.fogColorVec 0.976600/0.968800/0.984400
+
+textureManager.alternativePath Texture/SPECIAL_TurboWrench
+textureManager.alternativePath Texture/GENERAL_BRIT_NAVY
+textureManager.alternativePath Texture/SPECIAL_UK_NAVY_CAMO
+textureManager.alternativePath Texture/GENERAL_JAP_ARMY
+textureManager.alternativePath Texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath Texture/CAMO
+
+shadow.shadowColor 0.550000
+
+Game.setViewDistance 1000
+rem Game.setViewDistance 500
+Game.spawnPlayers 1
+
+renderer.fogstart 1500
+renderer.fogend 2000
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedJapFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 JapaneseSoldier
+game.setKit 1 0 1Jap_IJNPilotNparaD
+game.setKit 1 1 2Jap_IJNPilotNparaD
+game.setKit 1 2 3Jap_IJNPilotNparaD
+game.setKit 1 3 4Jap_IJNSeaman
+game.setKit 1 4 5Jap_IJNSeaman
+
+
+game.setTeamSkin 2 TurboWrenchBritishSoldier
+game.setKit 2 0 1GB_PilotNo2CL
+game.setKit 2 1 2GB_PilotNo2CL
+game.setKit 2 2 3GB_PilotNo2CL
+game.setKit 2 3 4GB_PilotNo2CL
+game.setKit 2 4 5GB_EngineerNo4
+game.setLevelCheck 2242588848
+game.setActiveCombatArea 0 0 8192 8192
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run Sound/Environment
+run Objects/Objects
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water08
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap -0.7/-0.7
+water.scrollDirection1 1/0
+water.scrollDirection2 0/1
+water.specularColor 0.75/0.73/0.78
+water.scrollLayer1 0.03
+water.scrollLayer2 0.03
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.25
+water.lightDirection -0.3/0.5/-0.65
+
+water.shallowColor 0.5843/0.8863/0.8471
+water.deepColor 0.1216/0.2353/0.3922
+water.waterAlphaDepth 2
+water.waterColordepth 5.5
+water.waterShallowAlpha 0.700000
+
+
+
+game.setBeforeSpawnCameraPosition 1 295.545410/114.094139/1004.954651
+game.setBeforeSpawnCameraPosition 2 295.545410/114.094139/1004.954651

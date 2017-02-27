@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/BL15inchMkIfire_Rel30Quad.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/BL15inchMkIfire_Rel30Quad.ssc
+	
+#templateLevel LOW
+
+	#include Low/BL15inchMkIfire_Rel30Quad.ssc

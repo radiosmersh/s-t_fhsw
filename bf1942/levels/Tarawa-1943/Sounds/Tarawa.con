@@ -1,0 +1,159 @@
+rem *** Tarawa ***
+ObjectTemplate.create AreaObject Tarawa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 125
+ObjectTemplate.loadSoundScript Tarawa_amb1.ssc
+
+ObjectTemplate.addLinePoint 933.36/617.16
+
+
+
+
+
+ObjectTemplate.addLinePoint 907.00/628.00
+
+
+
+
+
+ObjectTemplate.addLinePoint 858.00/671.00
+
+
+
+
+
+ObjectTemplate.addLinePoint 894.00/742.00
+
+
+
+
+
+ObjectTemplate.addLinePoint 941.00/802.00
+
+
+
+
+
+ObjectTemplate.addLinePoint 977.00/742.00
+
+
+
+
+
+ObjectTemplate.addLinePoint 1104.00/714.00
+
+
+
+
+
+ObjectTemplate.addLinePoint 1054.00/634.00
+
+
+
+
+
+ObjectTemplate.addLinePoint 1149.35/633.43
+
+
+
+
+
+ObjectTemplate.addLinePoint 1180.24/773.50
+
+
+
+
+
+ObjectTemplate.addLinePoint 1250.86/827.49
+
+
+
+
+
+ObjectTemplate.addLinePoint 1352.46/829.77
+
+
+
+
+
+ObjectTemplate.addLinePoint 1434.62/770.43
+
+
+
+
+
+ObjectTemplate.addLinePoint 1459.84/925.62
+
+
+
+
+
+ObjectTemplate.addLinePoint 1626.61/908.10
+
+
+
+
+
+ObjectTemplate.addLinePoint 1541.83/934.42
+
+
+
+
+
+ObjectTemplate.addLinePoint 1504.49/800.76
+
+
+
+
+
+ObjectTemplate.addLinePoint 1582.30/816.51
+
+
+
+
+
+ObjectTemplate.addLinePoint 1309.74/631.76
+
+
+
+
+
+ObjectTemplate.addLinePoint 1663.07/715.24
+
+
+
+
+
+ObjectTemplate.addLinePoint 1765.48/723.95
+
+
+
+
+
+ObjectTemplate.addLinePoint 1810.01/883.84
+
+
+
+
+
+ObjectTemplate.addLinePoint 1725.59/888.23
+
+
+
+
+
+ObjectTemplate.addLinePoint 1546.19/704.39
+
+
+
+
+
+ObjectTemplate.addLinePoint 1283.06/751.54
+
+
+
+
+
+ObjectTemplate.addLinePoint 1001.57/801.53
+
+

@@ -1,0 +1,10 @@
+EnvironmentSound.load Environment.ssc
+run river.con
+run Bird1.con
+run Bird2.con
+run linnut_metsa.con
+run bird_thrush_1_reverb.con
+run karasu.con
+run radio1.con
+run jpradio1.con
+run tokyorose.con

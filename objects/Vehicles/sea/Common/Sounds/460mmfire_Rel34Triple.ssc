@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/460mmfire_Rel34Triple.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/460mmfire_Rel34Triple.ssc
+	
+#templateLevel LOW
+
+	#include Low/460mmfire_Rel34Triple.ssc

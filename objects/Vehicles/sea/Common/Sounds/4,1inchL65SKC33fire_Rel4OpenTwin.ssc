@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/4,1inchL65SKC33fire_Rel4OpenTwin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/4,1inchL65SKC33fire_Rel4OpenTwin.ssc
+	
+#templateLevel LOW
+
+	#include Low/4,1inchL65SKC33fire_Rel4OpenTwin.ssc

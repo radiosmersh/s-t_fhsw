@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/8inchL55fire_Rel14Twin.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/8inchL55fire_Rel14Twin.ssc
+	
+#templateLevel LOW
+
+	#include Low/8inchL55fire_Rel14Twin.ssc

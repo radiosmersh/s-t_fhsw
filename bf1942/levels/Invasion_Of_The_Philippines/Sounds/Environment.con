@@ -1,0 +1,7 @@
+EnvironmentSound.load Environment.ssc
+
+run beach1.con
+run beach2.con
+run beach3.con
+rem run beach4.con
+run beach5.con
