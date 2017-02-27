@@ -1,0 +1,225 @@
+newPatch
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/silence.wav
+stereo
+volume 0
+
+##############
+### Reload ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/rl2mp18.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.55
+	param 0.55
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl2bar.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.4
+	param 1.4
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl1mp18.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.5
+	param 1.5
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl4bar.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.3
+	param 2.3
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl5mp18.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.45
+	param 2.45
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+###############
+### Release ###
+###############
+newPatch
+
+load @ROOT/Sound/@RTD/rifle-distance1.wav
+minDistance 30
+randomStartPitch 0.05 / 0.0
+priority 7
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 130
+	param 150
+	param 1
+	param -1
+endEffect
+
+####################
+### Shell Bounce ###
+####################
+newPatch
+#include ShellBounce.ssc
+
+############################
+### Mashine gun distance ###
+############################
+newPatch
+#include MGdist.ssc
+
+###########################################################################################################
+### Fire Loop ###
+#################
+newPatch
+
+load @ROOT/Sound/@RTD/sg44lrlp.wav
+minDistance 6
+stereo
+priority 10
+randomStartPitch 0.05 / 0.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/sg44mlp.wav
+minDistance 6
+priority 8
+randomStartPitch 0.05 / 0.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param -1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 130
+	param 150
+	param 1
+	param -1
+endEffect
+

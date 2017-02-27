@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+#include mgdist_High.ssc
+
+#templateLevel MEDIUM
+
+#include mgdist_MedLow.ssc
+
+#templateLevel LOW
+
+#include mgdist_MedLow.ssc

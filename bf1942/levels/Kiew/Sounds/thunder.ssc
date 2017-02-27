@@ -1,0 +1,77 @@
+################################################################
+#templateLevel HIGH
+
+newPatch
+
+###################
+### Grabbis Donner ###
+###################
+load @ROOT/Sound/@RTD/Ambience/thunder2.wav
+loop
+stereo
+minDistance 15
+dopplerOff
+volume .9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 550
+	param 1
+	param -1	
+endEffect
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+###################
+### Grabbis Donner ###
+###################
+load @ROOT/Sound/@RTD/Ambience/thunder2.wav
+loop
+stereo
+minDistance 15
+dopplerOff
+volume .9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 550
+	param 1
+	param -1	
+endEffect
+
+
+################################################################
+
+#templateLevel LOW
+
+newPatch
+
+###################
+### Grabbis Donner ###
+###################
+load @ROOT/Sound/@RTD/Ambience/thunder2.wav
+loop
+stereo
+minDistance 15
+dopplerOff
+volume .9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 550
+	param 1
+	param -1	
+endEffect

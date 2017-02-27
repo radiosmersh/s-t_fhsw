@@ -1,0 +1,25 @@
+#templateLevel HIGH
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/windcalm.wav
+loop
+minDistance 10
+randomStartPitch 0.25 / 0.0
+volume .6
+priority -10
+
+#templateLevel MEDIUM
+
+newPatch
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/windcalm.wav
+loop
+minDistance 10
+randomStartPitch 0.25 / 0.0
+volume .6
+priority -10

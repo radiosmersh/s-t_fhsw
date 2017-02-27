@@ -1,0 +1,77 @@
+#templateLevel HIGH
+
+newPatch
+
+####################
+### Harbor waves ###
+####################
+
+load @ROOT/Sound/@RTD/Water_Waves2.wav
+loop
+minDistance 50
+volume .8
+dopplerOff
+randomStartPitch 0.08 / 0.06
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 215
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+####################
+### Harbor waves ###
+####################
+
+load @ROOT/Sound/@RTD/Water_Waves2.wav
+loop
+minDistance 50
+volume .8
+dopplerOff
+randomStartPitch 0.08 / 0.06
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 215
+	param 1
+	param -1	
+endEffect
+
+#templateLevel LOW
+
+newPatch
+
+####################
+### Harbor waves ###
+####################
+
+load @ROOT/Sound/@RTD/Water_Waves2.wav
+loop
+minDistance 50
+volume .8
+dopplerOff
+randomStartPitch 0.08 / 0.06
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 215
+	param 1
+	param -1	
+endEffect

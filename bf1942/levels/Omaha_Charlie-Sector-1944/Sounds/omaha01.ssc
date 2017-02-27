@@ -1,0 +1,62 @@
+#templateLevel HIGH
+
+newPatch
+
+load @ROOT/sound/@RTD/ambience/omaha01.wav
+loop
+minDistance 1500
+volume 1.4
+randomStartPitch 0.04 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 380
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+load @ROOT/sound/@RTD/ambience/omaha01.wav
+loop
+minDistance 1500
+volume 1.4
+randomStartPitch 0.04 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 380
+	param 1
+	param -1	
+endEffect
+
+#templateLevel LOW
+
+newPatch
+
+load @ROOT/sound/@RTD/ambience/omaha01.wav
+loop
+minDistance 1500
+volume 1
+randomStartPitch 0.04 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 380
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,7 @@
+ObjectTemplate.create AreaObject omaha01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript omaha01.ssc
+ObjectTemplate.triggerRadius 1500
+ObjectTemplate.addLinePoint 0/0
+ObjectTemplate.addLinePoint 241.12/196.67
+ObjectTemplate.addLinePoint 272.56/204.97

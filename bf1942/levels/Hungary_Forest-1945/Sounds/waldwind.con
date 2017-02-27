@@ -1,0 +1,8 @@
+
+
+rem *** waldwind ***
+ObjectTemplate.create SimpleObject waldwind
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript waldwind.ssc
+ObjectTemplate.triggerRadius 100
+

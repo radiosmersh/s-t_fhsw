@@ -1,0 +1,8 @@
+
+
+rem *** radioger ***
+ObjectTemplate.create SimpleObject radioger
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript radioger.ssc
+ObjectTemplate.triggerRadius 5
+

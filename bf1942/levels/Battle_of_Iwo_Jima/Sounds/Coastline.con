@@ -1,0 +1,10 @@
+
+
+rem *** Coastline ***
+ObjectTemplate.create AreaObject Coastline
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Coastline.ssc
+ObjectTemplate.triggerRadius 50
+ObjectTemplate.addLinePoint 0/0
+ObjectTemplate.addLinePoint 241.12/196.67
+ObjectTemplate.addLinePoint 272.56/204.97

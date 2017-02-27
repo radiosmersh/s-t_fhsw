@@ -1,0 +1,8 @@
+
+
+rem *** Gefecht01 ***
+ObjectTemplate.create SimpleObject Gefecht01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Gefecht01.ssc
+ObjectTemplate.triggerRadius 15
+

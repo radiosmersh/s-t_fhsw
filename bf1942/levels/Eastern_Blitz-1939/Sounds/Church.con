@@ -1,0 +1,8 @@
+
+
+rem *** Churchsound ***
+ObjectTemplate.create SimpleObject Churchsound
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Church.ssc
+ObjectTemplate.triggerRadius 150
+

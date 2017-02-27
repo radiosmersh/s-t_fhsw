@@ -1,0 +1,7 @@
+rem *** radio2 ***
+ObjectTemplate.create SimpleObject radio2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 15
+ObjectTemplate.loadSoundScript radio2.ssc
+ObjectTemplate.addLinePoint 0/0
+ObjectTemplate.addLinePoint 100/-100

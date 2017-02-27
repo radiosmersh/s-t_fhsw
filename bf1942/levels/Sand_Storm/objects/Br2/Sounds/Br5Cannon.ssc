@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Br5Cannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Br5Cannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/Br5Cannon.ssc

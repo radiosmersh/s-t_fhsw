@@ -1,0 +1,284 @@
+rem *** Agano152GunBarrel_Dummy_Prm ***
+ObjectTemplate.create FireArms Agano152GunBarrel_Dummy_Prm
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
+ObjectTemplate.geometry Agano_152mm_type41_gun_Cannon_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition -0.85/0/9
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0.85/0/9
+ObjectTemplate.setRotation -180/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectilePosition 0/1/1
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 425
+ObjectTemplate.reloadtime 10
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+rem ObjectTemplate.fireingForce 4
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1
+ObjectTemplate.setFireCameraShakeAnimationState ShipBigCanon
+
+rem *** Agano152CannonBarrel_IncenShrapnel_Prm ***
+ObjectTemplate.create FireArms Agano152CannonBarrel_IncenShrapnel_Prm
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Type3_IncenShrapnel
+ObjectTemplate.projectilePosition 0/41/1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 675
+ObjectTemplate.reloadtime 10
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 3
+ObjectTemplate.setBlastAmmoCount 1
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+rem *** Agano152CannonBarrel_APHE_Prm ***
+ObjectTemplate.create FireArms Agano152CannonBarrel_APHE_Prm
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ship15,2cmL50Projectile
+ObjectTemplate.projectilePosition 0/41/1
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 425
+ObjectTemplate.reloadtime 10
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1
+
+
+rem *** Agano152GunBarrel_Dummy_Alt ***
+ObjectTemplate.create FireArms Agano152GunBarrel_Dummy_Alt
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
+ObjectTemplate.geometry Agano_152mm_type41_gun_Cannon_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition -0.85/0/9
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate e_MuzzSBGun
+ObjectTemplate.setPosition 0.85/0/9
+ObjectTemplate.setRotation -180/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectilePosition 0/1/1
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 425
+ObjectTemplate.reloadtime 10
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.recoilSpeed 6
+ObjectTemplate.recoilSize 11
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** Agano152CannonBarrel_IncenShrapnel_Alt ***
+ObjectTemplate.create FireArms Agano152CannonBarrel_IncenShrapnel_Alt
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Type3_IncenShrapnel
+ObjectTemplate.projectilePosition 0/41/1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 675
+ObjectTemplate.reloadtime 10
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 3
+ObjectTemplate.setBlastAmmoCount 1
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** Agano152CannonBarrel_APHE_Alt  ***
+ObjectTemplate.create FireArms Agano152CannonBarrel_APHE_Alt
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ship15,2cmL50Projectile
+ObjectTemplate.projectilePosition 0/41/1
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag -1
+ObjectTemplate.velocity 425
+ObjectTemplate.reloadtime 10
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.addFireArmsPosition -0.85/0/9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.85/0/9 0/0/0
+ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+rem *** AganoTorpedorampe ***
+ObjectTemplate.create FireArms AganoTorpedorampe
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/TPfire.ssc
+ObjectTemplate.projectileTemplate 61cmType93Torpedo
+ObjectTemplate.projectilePosition 0/0/7.1
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 35
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 20
+ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
+ObjectTemplate.AmmoType	14
+ObjectTemplate.setMinDev 0.512
+
+rem *** AganoTorpedorampe_HullDamage ***
+ObjectTemplate.create FireArms AganoTorpedorampe_HullDamage
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
+ObjectTemplate.projectileTemplate 61cmType93TorpedoHullDamage
+ObjectTemplate.projectilePosition 0/0/11
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 35
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 20
+ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
+ObjectTemplate.AmmoType	14
+ObjectTemplate.setMinDev 0.512
+
+rem *** AganoTorpedorampeAlt ***
+ObjectTemplate.create FireArms AganoTorpedorampeAlt
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/TPfire.ssc
+ObjectTemplate.projectileTemplate 61cmType93Torpedo
+ObjectTemplate.projectilePosition 0/0/7.1
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 35
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 20
+ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType	14
+ObjectTemplate.setMinDev 0.512
+
+rem *** AganoTorpedorampeAlt_HullDamage ***
+ObjectTemplate.create FireArms AganoTorpedorampeAlt_HullDamage
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
+ObjectTemplate.projectileTemplate 61cmType93TorpedoHullDamage
+ObjectTemplate.projectilePosition 0/0/11
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 35
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 20
+ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
+ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType	14
+ObjectTemplate.setMinDev 0.512
+

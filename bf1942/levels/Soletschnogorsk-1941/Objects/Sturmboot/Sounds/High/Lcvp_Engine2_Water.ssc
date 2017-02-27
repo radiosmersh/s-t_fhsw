@@ -1,0 +1,132 @@
+newPatch
+####################
+### Engine Start ###
+####################
+load @ROOT/Sound/@RTD/mstngnstrt.wav
+minDistance 5
+dopplerOff
+priority -2
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 100
+	param 1
+	param -1	
+endEffect
+
+############
+### Main ###
+############
+
+load @ROOT/Sound/@RTD/mstngnrun.wav
+loop
+minDistance 15
+relativePosition 0/0/0
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 0.8
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.45
+	param 0.55
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 220
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect
+
+#####################################
+load @ROOT/Sound/@RTD/mstngnrunhi.wav
+loop
+minDistance 20
+relativePosition 0/0/0
+priority 9
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 0.8
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0.55
+	param 1.2
+	param 0.25
+	param 0.75
+	param 2
+	param 0.35
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.55
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 60
+	param 150
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.2
+	param 1
+	param -1	
+endEffect

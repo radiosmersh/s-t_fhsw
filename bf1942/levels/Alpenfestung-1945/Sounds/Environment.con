@@ -1,0 +1,5 @@
+EnvironmentSound.load Environment.ssc
+run Church.con
+run Bird1.con
+run Bird2.con
+run ambience1.con

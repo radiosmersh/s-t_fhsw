@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KV1TrackL.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KV1TrackL.ssc
+	
+#templateLevel LOW
+
+	#include Low/KV1TrackL.ssc

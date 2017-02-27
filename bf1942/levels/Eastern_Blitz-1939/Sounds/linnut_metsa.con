@@ -1,0 +1,28 @@
+rem *** rocknroll ***
+ObjectTemplate.create SimpleObject linnut_metsa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 150
+ObjectTemplate.loadSoundScript linnut_metsa.ssc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

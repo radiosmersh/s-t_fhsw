@@ -1,0 +1,41 @@
+#templateLevel HIGH
+
+newPatch
+
+load @ROOT/Sound/@RTD/river.wav
+loop
+minDistance 50
+volume .4
+randomStartPitch 0.2 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 70
+	param 150
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+load @ROOT/Sound/@RTD/river.wav
+loop
+minDistance 50
+volume .4
+randomStartPitch 0.2 / 0.0
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 5
+	param 15
+	param 1
+	param -1	
+endEffect

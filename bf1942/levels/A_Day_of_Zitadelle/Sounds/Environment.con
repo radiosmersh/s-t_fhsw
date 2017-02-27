@@ -1,0 +1,3 @@
+EnvironmentSound.load linnut_metsa.ssc
+EnvironmentSound.load Environment.ssc
+run radio1.con

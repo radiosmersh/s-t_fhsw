@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include Arisaka65High.ssc
+	
+#templateLevel MEDIUM
+
+	#include Arisaka65Medium.ssc
+	
+#templateLevel LOW
+
+	#include Arisaka65Low.ssc

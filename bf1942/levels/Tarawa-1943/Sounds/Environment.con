@@ -1,0 +1,6 @@
+EnvironmentSound.load Environment.ssc
+
+run Coastline.con
+run Tarawa.con
+run GreanBeach.con
+run RedBeach.con

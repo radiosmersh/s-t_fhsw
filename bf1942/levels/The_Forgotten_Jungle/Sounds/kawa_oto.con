@@ -1,0 +1,7 @@
+rem *** kaigan_oto ***
+ObjectTemplate.create SimpleObject kawa_oto
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript kawa_oto.ssc
+ObjectTemplate.triggerRadius 30
+
+

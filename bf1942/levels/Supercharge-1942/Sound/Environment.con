@@ -1,0 +1,6 @@
+EnvironmentSound.load Environment.ssc
+run cricket1
+run cricket2
+run War_ambience1
+run War_ambience2
+run seagulls

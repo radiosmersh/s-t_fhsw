@@ -1,0 +1,6 @@
+EnvironmentSound.load Environment.ssc
+run RhineRiver.con
+run dog.con
+run bird.con
+run windy.con
+run OtherRhine.con

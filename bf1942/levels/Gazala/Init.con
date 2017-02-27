@@ -1,0 +1,70 @@
+
+ShaderManager.setTextureParam envmap bf1942\levels\Gazala\Textures\ENVMAP_G_.rcm
+renderer.globalAmbientColor .15/.15/.15
+renderer.globalLodPercent 1
+renderer.vertexFogEnable 1
+renderer.FogColorVec 0.76/0.64/0.48
+renderer.fogLinearStart 600 
+renderer.fogLinearEnd 850
+renderer.ambientColor .18/.15/.13
+renderer.diffuseColor .4/.35/.25
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.3
+
+textureManager.alternativePath Texture/Levels/Gazara
+textureManager.alternativePath Texture/ENVIROMENT_DESERT
+textureManager.alternativePath Texture/SPECIAL_GER_AFRICA_1942_SUMMER
+textureManager.alternativePath Texture/GENERAL_GER_AFRICA
+textureManager.alternativePath Texture/GENERAL_BRIT_AFRICA
+
+shadow.shadowColor 0.4
+
+Game.setViewDistance 1050
+Game.spawnPlayers 1
+
+rem 
+rem *** Define flags ***
+rem
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 GermanDesertSoldier
+game.setKit 1 0 1German_Officer_DesertMp40Smoke2RMarker
+game.setKit 1 1 2German_Assault_DesertK98
+game.setKit 1 2 3German_AT_DesertPzB35(p)
+game.setKit 1 3 4German_Support_DesertMg34
+game.setKit 1 4 5German_Engineer_DesertK98
+
+game.setTeamSkin 2 BritishSoldier
+game.setKit 2 0 1GB_OfficerThompsonSmoke2R
+game.setKit 2 1 2GB_AssaultNo4
+game.setKit 2 2 3GB_ATBoysMk2
+game.setKit 2 3 4GB_SupportBren
+game.setKit 2 4 5GB_EngineerNo4
+
+rem
+rem *** Shader Default Color ***
+rem
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+rem run objects/go
+
+run Sounds/Environment
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 1439.9753/74.8605/513.702
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 1439.9753/74.8605/513.702

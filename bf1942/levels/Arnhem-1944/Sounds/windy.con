@@ -1,0 +1,13 @@
+rem
+rem *** CoastlineIsle1 ***
+rem
+ObjectTemplate.create AreaObject windysound
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript windy.ssc
+ObjectTemplate.triggerRadius 150
+ObjectTemplate.addLinePoint 727.789/463.346
+ObjectTemplate.addLinePoint 727.789/499.919
+ObjectTemplate.addLinePoint 727.789/539.629
+ObjectTemplate.addLinePoint 727.789/580.54
+ObjectTemplate.addLinePoint 727.789/610.54
+ObjectTemplate.addLinePoint 727.789/640.54

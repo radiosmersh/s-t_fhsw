@@ -1,0 +1,4 @@
+EnvironmentSound.load Environment.ssc
+run lake.con
+run War_ambience1.con
+run War_ambience2.con

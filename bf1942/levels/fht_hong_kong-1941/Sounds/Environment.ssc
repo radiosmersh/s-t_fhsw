@@ -1,0 +1,47 @@
+################################################################
+
+#templateLevel HIGH
+
+newPatch
+
+############
+### Near ###
+############
+stream @ROOT/Sound/@RTD/Ambience/BattleAmbience8_Town.wav
+stereo
+loop
+minDistance 10
+priority -10
+volume 1.4
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+############
+### Near ###
+############
+stream @ROOT/Sound/@RTD/Ambience/BattleAmbience8_Town.wav
+loop
+minDistance 10
+priority -10
+volume 1
+
+
+
+################################################################
+
+#templateLevel LOW
+
+newPatch
+
+############
+### Near ###
+############
+stream @ROOT/Sound/@RTD/Ambience/BattleAmbience8_Town.wav
+loop
+minDistance 10
+priority -10
+volume 1

@@ -1,0 +1,15 @@
+EnvironmentSound.load Environment.ssc
+run Beach01.con
+run linnut_metsa.con
+run Bird1.con
+run Bird2.con
+run Church.con
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/KV1Tower.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/KV1Tower.ssc
+	
+#templateLevel LOW
+
+	#include Low/KV1Tower.ssc

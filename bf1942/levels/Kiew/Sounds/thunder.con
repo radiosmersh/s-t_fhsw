@@ -1,0 +1,6 @@
+
+rem *** Gewitter by Grabbi ***
+ObjectTemplate.create SimpleObject thunder
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 350
+ObjectTemplate.loadSoundScript thunder.ssc

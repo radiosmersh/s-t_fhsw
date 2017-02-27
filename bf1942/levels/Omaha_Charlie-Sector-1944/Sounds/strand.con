@@ -1,0 +1,21 @@
+ObjectTemplate.create AreaObject strand
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript strand.ssc
+ObjectTemplate.triggerRadius 85
+ObjectTemplate.addLinePoint 792.619/969.404
+ObjectTemplate.addLinePoint 827.629/977.214
+ObjectTemplate.addLinePoint 848.9/978.78
+ObjectTemplate.addLinePoint 866.444/966.993
+ObjectTemplate.addLinePoint 889.042/963.175
+ObjectTemplate.addLinePoint 899.386/976.531
+ObjectTemplate.addLinePoint 916.175/958.106
+ObjectTemplate.addLinePoint 933.387/966.977
+ObjectTemplate.addLinePoint 975.684/973.39
+ObjectTemplate.addLinePoint 1024.89/970.175
+ObjectTemplate.addLinePoint 1056.33/957.564
+ObjectTemplate.addLinePoint 1075.96/960.12
+ObjectTemplate.addLinePoint 1096.09/952.592
+ObjectTemplate.addLinePoint 1123.93/954.919
+ObjectTemplate.addLinePoint 1148.77/962.641
+ObjectTemplate.addLinePoint 1177.33/950.856
+ObjectTemplate.addLinePoint 1211.89/956.095

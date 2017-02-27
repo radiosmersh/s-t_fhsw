@@ -1,0 +1,9 @@
+
+
+rem *** airattack ***
+ObjectTemplate.create SimpleObject airattack
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript airattack.ssc
+ObjectTemplate.triggerRadius 50
+
+

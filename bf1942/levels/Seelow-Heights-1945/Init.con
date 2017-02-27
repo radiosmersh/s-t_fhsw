@@ -1,0 +1,105 @@
+ShaderManager.setTextureParam envmap bf1942\levels\Seelow-Heights-1945\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.1
+renderer.ambientColor .15/.15/.18
+renderer.diffuseColor .3/.3/.3
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.25
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.5569/0.5843/0.4706
+
+textureManager.alternativePath Texture\LEVELS\seelow
+textureManager.alternativePath bf1942/Levels/Seelow-Heights-1945/texture
+textureManager.alternativePath bf1942/levels/Seelow-Heights-1945/customtextures
+textureManager.alternativePath bf1942/levels/Stashuv_Area/Texture
+textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1945_SPRING
+textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1945_SPRING
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1944_FALL
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath Texture/GENERAL_GER
+textureManager.alternativePath Texture/ENVIROMENT_BUILDINGS_ALTERNATIVE
+textureManager.alternativePath Texture/ENVIROMENT_BUILDINGS_CAMOFLAGE
+textureManager.alternativePath Texture\Special_skys\Seelow
+
+shadow.shadowColor 0.550000
+
+rem *** Game.setViewDistance ***
+rem *** FH:   350        ***
+rem *** FHSW: 850(max)   ***
+rem *** FHSW: 700(0.552) ***
+
+Game.setViewDistance 500
+Game.spawnPlayers 1
+renderer.fogstart -150
+renderer.fogend 500
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedRuFlag
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_OfficerMp40MarkerD
+game.setKit 1 1 2German_AssaultG43
+game.setKit 1 2 3German_ATPanzerfaust100
+rem game.setKit 1 3 4German_AT_Haft-Hohlladung
+game.setKit 1 3 4German_AT_Haft-Hohlladung_EihGr39
+game.setKit 1 4 5German_TankCommanderWalterP38Signal
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_OfficerPPShSmoke2R
+game.setKit 2 1 2Rus_AssaultSVT40
+game.setKit 2 2 3Rus_ATCapturedFaustpatroneII
+game.setKit 2 3 4Rus_SupportDP1928
+game.setKit 2 4 5Rus_TankCommanderTT33Smoke2R
+
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+run Sounds/Environment
+run objects/objects
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water05
+water.texLayer2 texture/water06
+water.normalMap texture/normalMap01
+water.scrollDirectionNormalmap 1.000000/0.000000
+water.scrollDirection1 1.000000/-0.500000
+water.scrollDirection2 1.000000/0.500000
+water.specularColor 0.650000/0.550000/0.400000
+water.scrollLayer1 0.020000
+water.scrollLayer2 0.020000
+water.scrollNormalmap 0.020000
+water.specularStreakFactor 0.001000
+water.tileLayer1 0.500000
+water.tileLayer2 0.500000
+water.tileNormalmap 1.000000
+water.lightDirection -0.300000/0.500000/-0.650000
+water.color 1.000000/1.000000/1.000000
+water.deepColor 1.000000/1.000000/1.000000
+water.waterAlphaDepth 0.000000
+water.waterShallowAlpha 0.500000
+
+beginrem
+game.setBeforeSpawnCameraPosition 1 746/140/794
+game.setBeforeSpawnCameraPosition 2 679/140/956
+endrem
+
+game.setBeforeSpawnCameraPosition 1 832.77/140/567.16
+game.setBeforeSpawnCameraPosition 2 1454.9/85.11/828.61

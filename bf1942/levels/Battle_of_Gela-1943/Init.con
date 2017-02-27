@@ -1,0 +1,98 @@
+
+ShaderManager.setTextureParam envmap bf1942\levels\Battle_of_Gela-1943\Textures\ENVMAP_G_.rcm
+
+renderer.globalLodPercent 1
+renderer.globalAmbientColor 0.050000/0.050000/0.070000
+renderer.ambientColor 0.120000/0.120000/0.120000
+renderer.diffuseColor 0.400000/0.380000/0.350000
+renderer.specularColor 0.300000/0.300000/0.300000
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.750000/0.800000/0.860000
+renderer.animatedMeshAmbientColor 0.15
+
+textureManager.alternativePath bf1942/levels/Battle_of_Gela-1943/texture
+textureManager.alternativePath texture/levels/D-Day
+textureManager.alternativePath texture/GENERAL_US
+textureManager.alternativePath texture/SPECIAL_ITALY_CAMO
+textureManager.alternativePath texture/GENERAL_ITALY_1942
+textureManager.alternativePath texture/GENERAL_ITALY_EUROPE
+textureManager.alternativePath texture/GENERAL_GER_AFRICA
+textureManager.alternativePath Texture/ENVIROMENT_BUILDINGS_ALTERNATIVE
+textureManager.alternativePath Texture/CAMO
+
+shadow.shadowColor .38/.38/.4
+
+Game.setViewDistance 560
+Game.spawnPlayers 1
+
+renderer.fogstart 0
+renderer.fogend 555
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUSFlag
+
+game.setTeamSkin 1 ItalianSoldier
+game.setKit 1 0 1Italian_Officer_DesertB38Smoke2R
+game.setKit 1 1 2Italian_Assault_DesertC91Red
+rem game.setKit 1 2 3Italian_AT_DesertS18-100NoHE
+game.setKit 1 2 3Italian_AT_DesertS18-1000NoHE
+game.setKit 1 3 4Italian_AT_DesertGeballteLadung
+game.setKit 1 4 5Italian_Engineer_DesertC38
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1Us_OfficerThompsonSmoke2R
+game.setKit 2 1 2Us_AssaultGarandCS
+game.setKit 2 2 3Us_ATBazookaCS
+game.setKit 2 3 4US_SupportBarCS
+game.setKit 2 4 5US_EngineerM1Carabine
+
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run objects/objects
+
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water08
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap -1/-1
+water.scrollDirection1 1/-1
+water.scrollDirection2 0/1
+water.specularColor 0.75/0.73/0.78
+water.scrollLayer1 0.03
+water.scrollLayer2 0.03
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.25
+water.lightDirection -0.3/0.5/-0.65
+water.shallowColor 0.5843/0.8863/0.8471
+water.deepColor 0.1216/0.2353/0.3922
+water.waterAlphaDepth 2
+water.waterColordepth 5.5
+water.waterShallowAlpha 0.700000
+
+run Sounds/Environment
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 959.32/80/911.34
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 959.32/80/911.34

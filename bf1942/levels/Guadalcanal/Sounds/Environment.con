@@ -1,0 +1,7 @@
+EnvironmentSound.load Environment.ssc
+run Coastline.con
+run Coastlineisle1.con
+run Coastlineisle2.con
+run Coastlineisle3.con
+run Coastlineisle4.con
+run Coastlineisle5.con

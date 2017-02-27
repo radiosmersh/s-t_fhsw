@@ -1,0 +1,6 @@
+EnvironmentSound.load Environment.ssc
+run radio1.con
+run radio2.con
+run jung_oto.con
+run kaigan_oto.con
+run kawa_oto.con

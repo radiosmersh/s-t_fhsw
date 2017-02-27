@@ -1,0 +1,29 @@
+rem *** Beach0101 ***
+ObjectTemplate.create SimpleObject Beach01
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.loadSoundScript Beach01.ssc
+ObjectTemplate.triggerRadius 65
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

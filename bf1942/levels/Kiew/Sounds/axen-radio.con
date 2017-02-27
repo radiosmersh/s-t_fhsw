@@ -1,0 +1,6 @@
+
+rem *** Grabbis Sound ***
+ObjectTemplate.create SimpleObject axen-radio
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 350
+ObjectTemplate.loadSoundScript axen-radio.ssc

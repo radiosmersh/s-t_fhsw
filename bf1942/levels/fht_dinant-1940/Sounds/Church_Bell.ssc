@@ -1,0 +1,52 @@
+################################################################
+#templateLevel HIGH
+
+newPatch
+
+###################
+### Church_Bell ###
+###################
+load @ROOT/Sound/@RTD/Ambience/Church_Bell.wav
+loop
+addRandomDelay 5 10
+minDistance 20 
+dopplerOff
+volume 1.0
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 100
+	param 1
+	param -1	
+endEffect
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+###################
+### Church_Bell ###
+###################
+load @ROOT/Sound/@RTD/Ambience/Church_Bell.wav
+loop
+addRandomDelay 5 10
+minDistance 20
+dopplerOff
+volume .8
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 100
+	param 1
+	param -1	
+endEffect

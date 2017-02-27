@@ -1,0 +1,76 @@
+newPatch
+
+load @ROOT/Sound/@RTD/VEFTRTYAW2.wav
+loop
+minDistance 10
+priority -1
+*** Pitch Offset ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 0.35
+	param 0
+endEffect
+
+*** Speed Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0.1
+	param 40
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 70
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/WWSXCGYAW.wav
+loop
+minDistance 5
+volume .34
+priority 1
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default 
+	envelope Ramp
+	param 1
+	param 0
+	param .4
+	param .08
+	param 2
+	param .16
+endEffect
+
+*** Engine Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 35
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 60
+	param 1
+	param -1	
+endEffect

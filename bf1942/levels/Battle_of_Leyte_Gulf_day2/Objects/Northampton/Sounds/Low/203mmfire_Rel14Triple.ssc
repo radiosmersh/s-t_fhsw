@@ -1,0 +1,29 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/203mmShip.wav
+minDistance 450
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 450
+	param 1
+	param -1	
+endEffect

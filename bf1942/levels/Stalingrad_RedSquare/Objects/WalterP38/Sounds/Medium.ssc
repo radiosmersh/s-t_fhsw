@@ -1,0 +1,279 @@
+newPatch
+#################
+### Near left ###
+#################
+load @ROOT/Sound/@RTD/waltLR.wav
+stereo
+randomStartPitch 0.02 / 0.02
+priority 10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+######################
+### Near/Far Right ###
+######################
+load @ROOT/Sound/@RTD/waltmono.wav
+minDistance 8
+priority 8
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 130
+	param 150
+	param 1
+	param -1
+endEffect
+
+
+##############
+### Reload ###
+##############
+newPatch
+
+
+load @ROOT/Sound/@RTD/rl1walt.wav
+minDistance 1
+volume .5
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.77
+	param 0.77
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl2walt.wav
+minDistance 1
+volume .5
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.5
+	param 1.5
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl6colt.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.8
+	param 1.8
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl3walt.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.1
+	param 2.1
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl4walt.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.9
+	param 2.9
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl5walt.wav
+minDistance 1
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.2
+	param 3.2
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl6colt.wav
+minDistance 1
+volume .6
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.25
+	param 3.25
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+###############
+### Release ###
+###############
+newPatch
+
+load @ROOT/Sound/@RTD/pistrev.wav
+minDistance 30
+randomStartPitch 0.02 / 0.02
+priority 9
+dopplerOff
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 130
+	param 150
+	param 1
+	param -1
+endEffect
+
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param .05
+	param .05
+	param 0
+	param 1
+endEffect
+
+trigger Volume
+
+####################
+### Shell Bounce ###
+####################
+newPatch
+#include ../../../Common/Sounds/ShellBounce.ssc

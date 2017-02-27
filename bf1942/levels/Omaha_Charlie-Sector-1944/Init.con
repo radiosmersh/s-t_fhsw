@@ -1,0 +1,83 @@
+ShaderManager.setTextureParam envmap bf1942\levels\Nuenen-1944\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.globalAmbientColor 0.094118/0.094118/0.094118
+renderer.ambientColor 0.109804/0.109804/0.109804
+renderer.diffuseColor 0.254902/0.211765/0.192157
+renderer.specularColor 0.294118/0.294118/0.294118
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.470588/0.470588/0.470588
+renderer.fogLinearStart -75
+renderer.fogLinearEnd 500
+renderer.animatedMeshAmbientColor 0.15
+
+textureManager.alternativePath Texture/levels/CharlieSector
+textureManager.alternativePath Texture/ENVIROMENT_BUILDINGS_ALTERNATIVE
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_WEHRMACHT
+textureManager.alternativePath Texture/Levels/D-Day
+textureManager.alternativePath bf1942/Levels/Omaha_Charlie-Sector-1944/Texture
+textureManager.alternativePath texture/Special_skys/charlie
+ShaderManager.setTextureParam envmap bf1942\levels\Nuenen-1944\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+renderer.globalAmbientColor 0.094118/0.094118/0.094118
+renderer.ambientColor 0.109804/0.109804/0.109804
+renderer.diffuseColor 0.254902/0.211765/0.192157
+renderer.specularColor 0.294118/0.294118/0.294118
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.470588/0.470588/0.470588
+renderer.animatedMeshAmbientColor 0.15
+
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath Texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath Texture/SPECIAL_BRIT_EUROPE_1944_FALL
+
+shadow.shadowColor 0.400000
+
+Game.setViewDistance 400
+Game.spawnPlayers 1
+renderer.fogstart -20
+renderer.fogend 400
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 GermanSoldier
+rem game.setKit 1 0 1German_CloseQuartersMp40Smoke2R
+game.setKit 1 0 1German_CloseQuartersMp40Smoke2R_EihGr39
+game.setKit 1 1 2German_AssaultG43
+game.setKit 1 2 3German_GrenadierK98RG
+game.setKit 1 3 4German_OfficerMp40
+game.setKit 1 4 5German_TankCommanderWalterP38Smoke
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1Us_ClosequartersGreasegunSmoke2R
+game.setKit 2 1 2Us_AssaultM1M2CarbineWN
+game.setKit 2 2 3Us_AssaultGarandWN
+game.setKit 2 3 4US_SupportBar
+game.setKit 2 4 5GB_TankCommanderNo2Smoke
+game.setLevelCheck 2242588848
+game.setActiveCombatArea 0 0 1024 1024
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run objects/objects
+
+game.assaultTeam 2
+
+run Sounds/Environment
+run objects/go
+
+game.setBeforeSpawnCameraPosition 1 544.500000/79.270000/380.780000
+game.setBeforeSpawnCameraPosition 2 544.500000/79.270000/380.780000

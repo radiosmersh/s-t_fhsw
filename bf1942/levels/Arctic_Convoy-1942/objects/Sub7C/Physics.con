@@ -1,0 +1,15 @@
+
+rem *** Sub7c_SurfaceEngine ***
+ObjectTemplate.create Engine Sub7c_SurfaceEngine
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.loadSoundScript ../../../../../Objects/Vehicles/sea/Sub7C/sub7cEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/3000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNoPropellerEffectAtSpeed 13

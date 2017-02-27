@@ -1,0 +1,76 @@
+
+ShaderManager.setTextureParam envmap bf1942\levels\Eastern_Blitz-1939\Textures\ENVMAP_G_.rcm
+renderer.globalAmbientColor .15/.15/.15
+renderer.ambientColor .04/.02/.03
+renderer.diffuseColor .4/.35/.2
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.2
+renderer.vertexFogEnable 1 
+renderer.fogColorVec .34118/.329411/.31372
+
+textureManager.alternativePath Texture/Levels/Poland
+textureManager.alternativePath Texture/Levels/easternblitz
+textureManager.alternativePath texture\GENERAL_POL
+textureManager.alternativePath Texture\Special_skys\easternblitz
+
+shadow.shadowColor 0.5
+
+Game.setViewDistance 260
+Game.spawnPlayers 1
+renderer.fogstart 145
+renderer.fogend 260
+
+game.setTeamSkin 1 GermanSoldier
+rem game.setKit 1 0 1German_CloseQuartersMp40Smoke2R
+game.setKit 1 0 Cavalry_1German_CloseQuartersMp40Smoke2R
+rem game.setKit 1 1 2German_AssaultK98
+game.setKit 1 1 Cavalry_2German_AssaultK98
+rem game.setKit 1 2 3German_ATPzB35(p)
+game.setKit 1 2 Cavalry_3German_ATPzB35(p)
+game.setKit 1 3 4German_SupportMg34
+game.setKit 1 4 5German_TankCommander_P08ArtillerieSmoke2R
+
+game.setTeamSkin 2 PolishSoldier
+rem game.setKit 2 0 1Pol_CloseQuartersMorsSmoke2R
+game.setKit 2 0 Cavalry_1Pol_CloseQuartersMorsSmoke2R
+game.setKit 2 1 2Pol_AssaultWZ38m
+rem game.setKit 2 2 3Pol_ATM35
+game.setKit 2 2 Cavalry_3Pol_ATM35
+game.setKit 2 3 4Pol_SupportBren
+game.setKit 2 4 5Pol_EngineerK98
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run Sounds/Environment
+
+water.specularEnable 1
+water.texLayer1 texture/water01green
+water.texLayer2 texture/water02green
+water.normalMap texture/normalMap02green
+water.scrollDirectionNormalmap -0.7/-0.7
+water.scrollDirection1 -1/-0.5
+water.scrollDirection2 -1/0.5
+water.specularColor 0.35/0.32/0.23
+water.scrollLayer1 0.02
+water.scrollLayer2 0.03
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.5
+water.lightDirection 0.416044/0.885468/-0.207012
+water.color 0.8/0.7/0.4
+water.waterColorDepth 40
+water.envmapcolor 0.70/0.80/0.70
+water.deepColor 0.35/0.425/0.4
+water.waterAlphaDepth 0.2
+water.waterShallowAlpha 0.8
+
+run Objects/go
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 1735/40/842
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 410/54/885

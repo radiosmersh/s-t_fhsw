@@ -1,0 +1,76 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
+rem *********************************************
+ShaderManager.setTextureParam envmap bf1942\levels\A_Day_of_Zitadelle\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1 
+renderer.fogColorVec 0.717647/0.733333/0.701961
+renderer.globalLodPercent 1
+renderer.globalAmbientColor 0.14/0.12/0.13
+renderer.ambientColor 0.1/0.1/0.1
+renderer.diffuseColor 0.4/0.38/0.36
+renderer.specularColor 0.3/0.3/0.3
+renderer.animatedMeshDiffuseFactor 0.8
+renderer.animatedMeshAmbientColor 0.25
+renderer.fogLinearStart 450
+renderer.fogLinearEnd 625
+
+textureManager.alternativePath Texture/Russia
+textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1943_SPRING
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1943_SPRING
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath bf1942/levels/A_Day_of_Zitadelle/customtexts
+textureManager.alternativePath ..\..\bf1942\levels\A_Day_of_Zitadelle\Textures
+textureManager.alternativePath ..\..\bf1942\levels\A_Day_of_Zitadelle\Texture
+
+shadow.shadowColor 0.550000
+
+Game.setViewDistance 475
+Game.spawnPlayers 1
+renderer.fogstart 450
+renderer.fogend 625
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedSoFlag
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_OfficerMp40Kam
+game.setKit 1 1 2German_AssaultK98
+game.setKit 1 2 3German_AT_Haft-Hohlladung
+game.setKit 1 3 4German_ATGeballteLadung
+game.setKit 1 4 5German_TankCommanderWalterP38Smoke
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_OfficerPPSh
+game.setKit 2 1 2Rus_AssaultNagant
+game.setKit 2 2 3Rus_TankhunterPPsh
+game.setKit 2 3 4Rus_TankhunterNagantRDGGeballte
+game.setKit 2 4 5Rus_TankCommanderTT33Smoke
+
+game.setLevelCheck 2242588848
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+game.assaultTeam 2
+
+run Sounds/Environment
+
+game.setBeforeSpawnCameraPosition 1 1021.01/16.14/1754.25
+game.setBeforeSpawnCameraPosition 2 677.19/16.00/602.4
+rem run objects/objects
+run objects/objects

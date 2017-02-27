@@ -1,0 +1,96 @@
+
+ShaderManager.setTextureParam envmap bf1942\levels\GuadalCanal\Textures\ENVMAP_G_.rcm
+renderer.globalAmbientColor .15/.12/.14
+renderer.ambientColor .15/.15/.15
+renderer.diffuseColor .4/.4/.3
+renderer.specularColor .3/.3/.3
+renderer.vertexFogEnable 1 
+renderer.fogColorVec 0.86/0.9/0.98
+renderer.animatedMeshAmbientColor 0.3
+
+textureManager.alternativePath Texture/SPECIAL_US_SBD_Navy
+textureManager.alternativePath Texture/US_Marines_Camo-J
+textureManager.alternativePath Texture/levels/guadalcanal
+textureManager.alternativePath Texture/GENERAL_US_PACIFIC
+textureManager.alternativePath Texture/GENERAL_US
+textureManager.alternativePath Texture/SPECIAL_JAP_ARTILLERY_GREEN
+textureManager.alternativePath Texture/SPECIAL_JAP_TANK_JUNGLE
+textureManager.alternativePath Texture/GENERAL_JAP_ARMY
+
+renderer.globalLodPercent 1
+
+shadow.shadowColor 0.4
+
+rem Game.setViewDistance 1500
+rem *** 0.55 ***
+Game.setViewDistance 1200
+Game.spawnPlayers 1
+
+rem 
+rem *** Define flags ***
+rem
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 JapaneseSoldier
+
+game.setKit 1 0 1Jap_Officer100SMGSmoke2RD
+game.setKit 1 1 2Jap_AssaultArisaka38
+game.setKit 1 2 3Jap_AntiTankHEAT38
+game.setKit 1 3 4Jap_SupportType99
+game.setKit 1 4 5Jap_EngineerArisakaExpack
+
+game.setTeamSkin 2 USSoldier
+game.setKit 2 0 1USMC_OfficerThompsonSmoke2RD
+game.setKit 2 1 2USMC_AssaultWinchester
+game.setKit 2 2 3USMC_AssaultSpringfield
+game.setKit 2 3 4USMC_SupportBAR
+game.setKit 2 4 5USMC_EngineerSpringfield
+
+rem
+rem *** Shader Default Color ***
+rem
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water08
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap 1/1
+water.scrollDirection1 1/0
+water.scrollDirection2 0/1
+water.specularColor 0.9/0.87/0.77
+water.scrollLayer1 0.02
+water.scrollLayer2 0.02
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.25
+water.lightDirection -0.3/0.5/-0.65
+water.color 0.65/0.7/0.75
+water.waterAlphaDepth 1.5
+water.deepColor 0.5/0.5/0.6
+water.waterShallowAlpha 0.2
+
+run Sounds/Environment
+run Objects/go
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 2324.768/128.18/1292.458
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 2324.768/128.18/1292.458

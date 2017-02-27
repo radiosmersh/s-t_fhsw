@@ -1,0 +1,72 @@
+#templateLevel HIGH
+
+newPatch
+
+######################
+### sector ###
+######################
+load @ROOT/Sound/@RTD/Ambience/ambience1.wav
+loop
+minDistance 100
+volume 1
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 400
+	param 1
+	param -1	
+endEffect
+
+################################################################
+
+#templateLevel MEDIUM
+
+
+newPatch
+
+######################
+### sector ###
+######################
+load @ROOT/Sound/@RTD/Ambience/ambience1.wav
+loop
+minDistance 100
+volume 1
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 400
+	param 1
+	param -1	
+endEffect
+
+#templateLevel LOW
+
+
+newPatch
+
+######################
+### sector ###
+######################
+load @ROOT/Sound/@RTD/Ambience/ambience1.wav
+loop
+minDistance 100
+volume 1
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 25
+	param 400
+	param 1
+	param -1	
+endEffect

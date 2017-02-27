@@ -1,0 +1,5 @@
+EnvironmentSound.load Environment.ssc
+
+run pswamp.con
+run junglesounds.con
+run wavesound.con

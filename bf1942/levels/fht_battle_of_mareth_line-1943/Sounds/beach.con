@@ -1,0 +1,5 @@
+rem *** beach ***
+ObjectTemplate.create SimpleObject beach
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript beach.ssc
+

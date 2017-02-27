@@ -1,0 +1,164 @@
+newPatch
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge1.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge2.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge3.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge4.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge5.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge6.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge7.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge8.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+load bf1942/levels/Stalingrad_RedSquare/sound/@RTD/Charge9.wav
+minDistance 5
+randomStartPitch 0.05 / 0.05
+trigger Volume
+dopplerOff
+priority 2
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 150
+	param 1
+	param -1
+endEffect
+
+randomPlay 1

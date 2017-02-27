@@ -1,0 +1,7 @@
+rem *** rocknroll ***
+ObjectTemplate.create SimpleObject waves
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 20
+ObjectTemplate.loadSoundScript waves.ssc
+ObjectTemplate.addLinePoint 0/0
+ObjectTemplate.addLinePoint 1/-1

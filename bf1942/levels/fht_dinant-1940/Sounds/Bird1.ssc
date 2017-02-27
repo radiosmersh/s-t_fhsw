@@ -1,0 +1,44 @@
+#templateLevel HIGH
+
+newPatch
+
+load @ROOT/Sound/@RTD/Ambience/Bird_Hawkn.wav
+loop
+addRandomDelay 5 10
+minDistance 20
+volume 1.0
+randomStartPitch 0.3 / 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 100
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+load @ROOT/Sound/@RTD/Ambience/Bird_Hawkn.wav
+loop
+addRandomDelay 5 10
+minDistance 20
+volume 0.48
+randomStartPitch 0.3 / 0.2
+priority -9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 10
+	param 100
+	param 1
+	param -1	
+endEffect
+
