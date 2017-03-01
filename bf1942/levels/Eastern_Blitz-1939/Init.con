@@ -8,6 +8,7 @@ renderer.animatedMeshAmbientColor 0.2
 renderer.vertexFogEnable 1 
 renderer.fogColorVec .34118/.329411/.31372
 
+textureManager.alternativePath texture\SPECIAL_POL_GREEN
 textureManager.alternativePath Texture/Levels/Poland
 textureManager.alternativePath Texture/Levels/easternblitz
 textureManager.alternativePath texture\GENERAL_POL
