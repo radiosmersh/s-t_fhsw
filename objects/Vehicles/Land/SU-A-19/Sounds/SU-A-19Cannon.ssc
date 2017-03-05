@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SU-A-19Cannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SU-A-19Cannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/SU-A-19Cannon.ssc

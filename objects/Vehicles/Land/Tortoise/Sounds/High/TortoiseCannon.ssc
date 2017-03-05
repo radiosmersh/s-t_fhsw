@@ -1,0 +1,174 @@
+newPatch
+
+#############
+### Close ###
+#############
+load @ROOT/Sound/@RTD/Tnkheav_int_fire.wav
+relativePosition 0/0/0
+stereo
+priority 10
+minDistance 15
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 10
+	param 1
+	param -1	
+endEffect
+
+
+###########
+### far ###
+###########
+load @ROOT/Sound/@RTD/94mm.wav
+minDistance 200
+relativePosition 0/0/0
+stereo
+priority 10
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Linear
+	param 1
+	param 0
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 185
+	param 1
+	param -1	
+endEffect
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Eject_218.wav
+minDistance 1
+relativePosition 0.010/0/0.010
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.8
+	param 0.8
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Load_128.wav
+minDistance 1
+relativePosition 0.010/0/0.010
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.325
+	param 2.325
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/Tankrel_Med_Load_092.wav
+minDistance 1
+relativePosition 0.010/0/0.010
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.68
+	param 3.68
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+##################
+### after fire ###
+##################
+load @ROOT/Sound/@RTD/Tankrel_Hvy_Close_075.wav
+minDistance 1
+relativePosition 0.010/0/0.010
+dopplerOff
+priority -2
+*** Time Delay ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 4.67
+	param 4.67
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
