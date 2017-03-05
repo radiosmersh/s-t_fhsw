@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/IS4protoCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/IS4protoCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/IS4protoCannon.ssc
