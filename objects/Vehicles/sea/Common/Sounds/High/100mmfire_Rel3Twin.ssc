@@ -3,7 +3,7 @@ newPatch
 #############
 ### Close ###
 #############
-load @ROOT/Sound/@RTD/100mmship.wav
+load @ROOT/Sound/@RTD/100mmL65Type98.wav
 minDistance 300
 relativePosition 0/0/0
 stereo
@@ -31,7 +31,7 @@ endEffect
 #############
 ### Close ###
 #############
-load @ROOT/Sound/@RTD/100mmship.wav
+load @ROOT/Sound/@RTD/100mmL65Type98.wav
 minDistance 300
 relativePosition 0/0/0
 stereo
