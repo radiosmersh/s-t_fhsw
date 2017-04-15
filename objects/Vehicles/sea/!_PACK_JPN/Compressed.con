@@ -1976,7 +1976,8 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -3257,7 +3258,8 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -4925,7 +4927,8 @@ ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1500
@@ -5380,7 +5383,8 @@ ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 1500
@@ -5451,7 +5455,8 @@ ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 1500
@@ -5514,7 +5519,8 @@ ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1500
@@ -5581,7 +5587,8 @@ ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1500
@@ -6177,7 +6184,8 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -19287,7 +19295,6 @@ GeometryTemplate.setLodDistance 2 50
 GeometryTemplate.setLodDistance 3 100
 GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 500
-
 GeometryTemplate.create StandardMesh 12cm_AA_Rocket_base_m1
 GeometryTemplate.file 12cm_AA_Rocket_base
 GeometryTemplate.setLodDistance 0 0
@@ -19308,8 +19315,6 @@ GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh 12cm_AA_RocketCockpit_m1
 GeometryTemplate.file 12cm_AA_RocketCockpit
-
-
 
 renderer.endGlobalCluster
 rem ===== EOF =====
@@ -20549,7 +20554,8 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -20571,17 +20577,17 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Ise_CatapultL_E16A2
 ObjectTemplate.setRotation 5.2/0/0
 
-ObjectTemplate.addTemplate E16A2CatapultCDummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -0.5/3.05/-15
-ObjectTemplate.addTemplate E16A2CatapultCDummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -0.5/3.05/-25
-ObjectTemplate.addTemplate E16A2CatapultCDummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -0.5/3.05/-35
-ObjectTemplate.addTemplate E16A2CatapultCDummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -0.5/3.05/-45
-ObjectTemplate.addTemplate E16A2CatapultCDummyVehicleSpawnVehicle51_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -0.5/3.05/-55
-ObjectTemplate.addTemplate E16A2CatapultCDummyVehicleSpawnVehicle61_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -0.5/3.05/-65
 rem -------------------------------------
 
@@ -20623,19 +20629,19 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Ise_CatapultR_D4Y2
 ObjectTemplate.setRotation -5.2/0.0/0
 
-ObjectTemplate.addTemplate D4Y2CatapultADummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate D4Y2CatapultDummyNoCOL
 ObjectTemplate.setPosition 0.5/1.4/-15
 ObjectTemplate.setRotation 0/-10/0
-ObjectTemplate.addTemplate D4Y2CatapultADummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate D4Y2CatapultDummyNoCOL
 ObjectTemplate.setPosition 0.5/1.4/-25
 ObjectTemplate.setRotation 0/-10/0
-ObjectTemplate.addTemplate D4Y2CatapultADummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate D4Y2CatapultDummyNoCOL
 ObjectTemplate.setPosition 0.5/1.4/-35
 ObjectTemplate.setRotation 0/-10/0
-ObjectTemplate.addTemplate D4Y2CatapultADummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate D4Y2CatapultDummyNoCOL
 ObjectTemplate.setPosition 0.5/1.4/-45
 ObjectTemplate.setRotation 0/-10/0
-ObjectTemplate.addTemplate D4Y2CatapultADummyVehicleSpawnVehicle51_Spawner
+ObjectTemplate.addTemplate D4Y2CatapultDummyNoCOL
 ObjectTemplate.setPosition 0.5/1.4/-55
 ObjectTemplate.setRotation 0/-10/0
 rem ObjectTemplate.addTemplate D4Y2CatapultADummyVehicleSpawnVehicle61_Spawner
@@ -20958,9 +20964,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate ise_AA_RocketRails_1
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_1
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/10/0
@@ -21009,9 +21013,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate ise_AA_RocketRails_2
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_2
 ObjectTemplate.addTemplate lod12cmAARocketCockpit
 ObjectTemplate.setPosition 0/-0.23/0
 ObjectTemplate.addTemplate 25mmTripleAA_Camera
@@ -21064,9 +21066,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate ise_AA_RocketRails_3
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_3
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/10/0
@@ -21196,7 +21196,8 @@ ObjectTemplate.geometry Ise_35,6cm41stYear_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.visibleBarrelTemplate e_MuzzSW_356_750_Main
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.magSize 2
@@ -21310,7 +21311,8 @@ ObjectTemplate.geometry Ise_35,6cm41stYear_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.visibleBarrelTemplate e_MuzzSW_356_750_Main
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.magSize 2
@@ -21416,180 +21418,6 @@ ObjectTemplate.AmmoType	3
 ObjectTemplate.setMinDev 1.5
 ObjectTemplate.setInputFire c_PIAltFire
 
-NetworkableInfo.createNewInfo 12cmAARocketFireArm1Info
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo 12cmAARocketFireArm2Info
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo 12cmAARocketFireArm3Info
-NetworkableInfo.setPredictionMode PMLinear
-
-rem ***************************
-rem *** ise_AA_Rocket**********
-rem ***************************
-rem *** IseRocketRails_3 ***
-ObjectTemplate.create FireArms ise_AA_RocketRails_3
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/20
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
-rem *** IseRocketRails_1 ***
-ObjectTemplate.create FireArms ise_AA_RocketRails_1
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/20
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
-
-rem *** IseRocketRails_2 ***
-ObjectTemplate.create FireArms ise_AA_RocketRails_2
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/20
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
 
 rem ===== EOF =====
 rem ============================================================================
@@ -22661,9 +22489,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate Junyo_AA_RocketRails_1
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_1
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/10/0
@@ -22712,9 +22538,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate Junyo_AA_RocketRails_2
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_2
 ObjectTemplate.addTemplate lod12cmAARocketCockpit
 ObjectTemplate.setPosition 0/-0.23/0
 ObjectTemplate.addTemplate 25mmTripleAA_Camera
@@ -22767,9 +22591,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate Junyo_AA_RocketRails_3
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_3
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/10/0
@@ -23441,170 +23263,6 @@ rem ============================================================================
 rem folder = Junyo
 rem sauce = Weapons.con
 rem ============================================================================
-rem *** Junyo_AA_RocketRails_3 ***
-ObjectTemplate.create FireArms Junyo_AA_RocketRails_3
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/10
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
-rem *** IseRocketRails_1 ***
-ObjectTemplate.create FireArms Junyo_AA_RocketRails_1
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/10
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
-
-rem *** IseRocketRails_2 ***
-ObjectTemplate.create FireArms Junyo_AA_RocketRails_2
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/10
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
-
 rem *** junyoCameraX ***
 ObjectTemplate.create RotationalBundle junyoCameraX
 ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
@@ -27572,7 +27230,8 @@ ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition -1.6/0/10.5
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 150
@@ -27614,7 +27273,8 @@ ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 150
@@ -27647,7 +27307,8 @@ ObjectTemplate.addTemplate e_MuzzBBGun
 ObjectTemplate.setPosition 2/0/17.1
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/5/0
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 100
@@ -30708,7 +30369,8 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -31530,7 +31192,8 @@ ObjectTemplate.addTemplate e_MuzzMBGun
 ObjectTemplate.setPosition 0.85/0/9
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag -1
@@ -31638,7 +31301,8 @@ ObjectTemplate.addTemplate e_MuzzMBGun
 ObjectTemplate.setPosition 0.85/0/9
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag -1
@@ -32393,13 +32057,13 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Mogami_CV_CatapultL_F1M2
 ObjectTemplate.setRotation 2.35/0/0
 
-ObjectTemplate.addTemplate F1M2CatapultADummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition 3.4519/1.5/-22
-ObjectTemplate.addTemplate F1M2CatapultADummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition 3.4519/1.5/-32
-ObjectTemplate.addTemplate F1M2CatapultADummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition 3.4519/1.5/-42
-ObjectTemplate.addTemplate F1M2CatapultADummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition 3.4519/1.5/-52
 rem -------------------------------------
 
@@ -32441,15 +32105,15 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Mogami_CV_CatapultR_F1M2
 ObjectTemplate.setRotation -2.35/0/0
 
-ObjectTemplate.addTemplate F1M2CatapultBDummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition -3.5012/1.5/-16
-ObjectTemplate.addTemplate F1M2CatapultBDummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition -3.5012/1.5/-26
-ObjectTemplate.addTemplate F1M2CatapultBDummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition -3.5012/1.5/-36
-ObjectTemplate.addTemplate F1M2CatapultBDummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition -3.5012/1.5/-46
-ObjectTemplate.addTemplate F1M2CatapultBDummyVehicleSpawnVehicle51_Spawner
+ObjectTemplate.addTemplate F1M2CatapultDummyComplex_NoCOL
 ObjectTemplate.setPosition -3.5012/1.5/-56
 rem -------------------------------------
 
@@ -32494,13 +32158,13 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Mogami_CV_CatapultL_E16A1
 ObjectTemplate.setRotation 2.35/0/0
 
-ObjectTemplate.addTemplate E16A1CatapultADummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-22
-ObjectTemplate.addTemplate E16A1CatapultADummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-32
-ObjectTemplate.addTemplate E16A1CatapultADummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-42
-ObjectTemplate.addTemplate E16A1CatapultADummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-52
 rem -------------------------------------
 
@@ -32542,15 +32206,15 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Mogami_CV_CatapultR_E16A1
 ObjectTemplate.setRotation -2.35/0/0
 
-ObjectTemplate.addTemplate E16A1CatapultBDummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-16
-ObjectTemplate.addTemplate E16A1CatapultBDummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-26
-ObjectTemplate.addTemplate E16A1CatapultBDummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-36
-ObjectTemplate.addTemplate E16A1CatapultBDummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-46
-ObjectTemplate.addTemplate E16A1CatapultBDummyVehicleSpawnVehicle51_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-56
 rem -------------------------------------
 
@@ -32595,13 +32259,13 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Mogami_CV_CatapultL_E16A2
 ObjectTemplate.setRotation 2.35/0/0
 
-ObjectTemplate.addTemplate E16A2CatapultADummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-22
-ObjectTemplate.addTemplate E16A2CatapultADummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-32
-ObjectTemplate.addTemplate E16A2CatapultADummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-42
-ObjectTemplate.addTemplate E16A2CatapultADummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition 3.4519/1.62/-52
 rem -------------------------------------
 
@@ -32643,15 +32307,15 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Mogami_CV_CatapultR_E16A2
 ObjectTemplate.setRotation -2.35/0/0
 
-ObjectTemplate.addTemplate E16A2CatapultBDummyVehicleSpawnVehicle11_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-16
-ObjectTemplate.addTemplate E16A2CatapultBDummyVehicleSpawnVehicle21_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-26
-ObjectTemplate.addTemplate E16A2CatapultBDummyVehicleSpawnVehicle31_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-36
-ObjectTemplate.addTemplate E16A2CatapultBDummyVehicleSpawnVehicle41_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-46
-ObjectTemplate.addTemplate E16A2CatapultBDummyVehicleSpawnVehicle51_Spawner
+ObjectTemplate.addTemplate E16A1_CatapultDummyComplex_NOCOL
 ObjectTemplate.setPosition -3.5012/1.62/-56
 rem -------------------------------------
 
@@ -36461,7 +36125,8 @@ ObjectTemplate.addTemplate OyodoCamera
 ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem ----------------------------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -36902,7 +36567,8 @@ ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition -1.6/0/10.5
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 9999
@@ -36975,7 +36641,8 @@ ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition -1.6/0/10.5
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 9999
@@ -47798,7 +47465,8 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -48042,7 +47710,8 @@ ObjectTemplate.addTemplate e_MuzzMBGun
 ObjectTemplate.setPosition 0.85/0/9
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag -1
@@ -48145,7 +47814,8 @@ ObjectTemplate.addTemplate e_MuzzMBGun
 ObjectTemplate.setPosition 0.85/0/9
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag -1
@@ -49901,7 +49571,8 @@ ObjectTemplate.addTemplate YamatoCamera
 ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem ----------------------------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -50144,7 +49815,8 @@ ObjectTemplate.addTemplate e_MuzzBBGun
 ObjectTemplate.setPosition 2.8/0/14.5
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/5/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 100
@@ -50181,7 +49853,8 @@ ObjectTemplate.addTemplate e_MuzzBBGun
 ObjectTemplate.setPosition 2.8/0/14.5
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 100
@@ -50329,7 +50002,8 @@ ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition -1.6/0/10.5
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 150
@@ -50410,7 +50084,8 @@ ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/0
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 150
@@ -51752,7 +51427,8 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem ----------------------------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -52076,7 +51752,7 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
 ObjectTemplate.sonarPos 1
 ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
-
+ObjectTemplate.setPcoId 99
 
 rem *** lodYamato1945 ***
 ObjectTemplate.create LodObject lodYamato1945
@@ -52097,8 +51773,6 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
 ObjectTemplate.addTemplate YamatoSoldierSpawn1
 ObjectTemplate.setPosition -5/11.9/38
 ObjectTemplate.addTemplate YamatoSoldierSpawn2
@@ -52147,61 +51821,9 @@ ObjectTemplate.addTemplate YamatoDaihatsuSpawner
 ObjectTemplate.setPosition 17.2877/8.8/-91.9991
 ObjectTemplate.setRotation 8/0/0
 
-ObjectTemplate.addTemplate Yamato_460Dummy_Turret
-ObjectTemplate.setPosition 0/11/52.5
-ObjectTemplate.addTemplate Yamato_155Dummy_turret_tripodAlt
-ObjectTemplate.setPosition 0/18.5/14.5
-ObjectTemplate.addTemplate Yamato_460Dummy_Turret_wAA
-ObjectTemplate.setPosition 0/15/30
+ObjectTemplate.addTemplate Yamato1945_Front_460_PCO0
 
-ObjectTemplate.addTemplate Yamato_460_Turret
-ObjectTemplate.setPosition 0/11/52.5
-ObjectTemplate.addTemplate Yamato_155_turret_tripodAlt
-ObjectTemplate.setPosition 0/18.5/14.5
-ObjectTemplate.addTemplate Yamato_460_Turret
-ObjectTemplate.setPosition 0/15/30
-
-ObjectTemplate.addTemplate Yamato_15mRangeFinder
-ObjectTemplate.setPosition 0/39/-4
-
-ObjectTemplate.addTemplate YamatoEngine
-ObjectTemplate.setPosition 0/-4/-40
-
-ObjectTemplate.addTemplate YamatoHullWing
-ObjectTemplate.setPosition 0/-9/90
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate YamatoRudder
-ObjectTemplate.setPosition 0/-9/-90
-ObjectTemplate.setRotation 0/0/-90
-
-ObjectTemplate.addTemplate YamatoEntrySml
-ObjectTemplate.setPosition 0/13/9
-ObjectTemplate.addTemplate YamatoEntry
-ObjectTemplate.setPosition -7.5/13/3.5
-ObjectTemplate.addTemplate YamatoEntry
-ObjectTemplate.setPosition 7.5/13/3.5
-ObjectTemplate.addTemplate YamatoEntrySml
-ObjectTemplate.setPosition 0/21.5/-7
-
-ObjectTemplate.addTemplate Yamato1945_Back_460_PCO1
-ObjectTemplate.setPosition 0/18/-48.5
-ObjectTemplate.setRotation -179.999/0/0
-
-ObjectTemplate.addTemplate Yamato1945_LeftFront_127_PCO2
-ObjectTemplate.setPosition -6.4918/20.6/-4.9
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate Yamato1945_RightFront_127_PCO3
-ObjectTemplate.setPosition 6.4918/20.6/-4.9
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Yamato1945_LeftBack_127_PCO4
-ObjectTemplate.setPosition -3.7/23.5/-30.3
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate Yamato1945_RightBack_127_PCO5
-ObjectTemplate.setPosition 3.7/23.5/-30.3
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Yamato1945_PlaneLauncher_PCO6
+ObjectTemplate.addTemplate Yamato1945_PlaneLauncher_Bundle
 
 ObjectTemplate.addTemplate ClimbingNet_6mx11m
 ObjectTemplate.setPosition -20/6/-11.7
@@ -52245,7 +51867,6 @@ ObjectTemplate.setPosition 0/-1/-125
 ObjectTemplate.setRotation 270/0/0
 ObjectTemplate.addTemplate e_waterBackBig
 ObjectTemplate.setPosition 0/-1/-119.999
-
 
 ObjectTemplate.addTemplate Yamato_AAFCS2
 ObjectTemplate.setPosition -5.3536/26.5/-3.2
@@ -52625,6 +52246,88 @@ ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.damageWhenLost 0
 
 
+
+
+rem *** Yamato1945_Front_460_PCO0 ***
+ObjectTemplate.create PlayerControlObject Yamato1945_Front_460_PCO0
+ObjectTemplate.setNetworkableInfo YamatoBodyInfo
+ObjectTemplate.aiTemplate YamatoRearAI
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BattleshipRadar
+
+ObjectTemplate.addTemplate Yamato_460Dummy_Turret
+ObjectTemplate.setPosition 0/11/52.5
+ObjectTemplate.addTemplate Yamato_155Dummy_turret_tripodAlt
+ObjectTemplate.setPosition 0/18.5/14.5
+ObjectTemplate.addTemplate Yamato_460Dummy_Turret_wAA
+ObjectTemplate.setPosition 0/15/30
+
+ObjectTemplate.addTemplate Yamato_460_Turret
+ObjectTemplate.setPosition 0/11/52.5
+ObjectTemplate.addTemplate Yamato_155_turret_tripodAlt
+ObjectTemplate.setPosition 0/18.5/14.5
+ObjectTemplate.addTemplate Yamato_460_Turret
+ObjectTemplate.setPosition 0/15/30
+
+ObjectTemplate.addTemplate Yamato_15mRangeFinder
+ObjectTemplate.setPosition 0/39/-4
+
+ObjectTemplate.addTemplate YamatoEngine
+ObjectTemplate.setPosition 0/-4/-40
+
+ObjectTemplate.addTemplate YamatoHullWing
+ObjectTemplate.setPosition 0/-9/90
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate YamatoRudder
+ObjectTemplate.setPosition 0/-9/-90
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate YamatoEntrySml
+ObjectTemplate.setPosition 0/13/9
+ObjectTemplate.addTemplate YamatoEntry
+ObjectTemplate.setPosition -7.5/13/3.5
+ObjectTemplate.addTemplate YamatoEntry
+ObjectTemplate.setPosition 7.5/13/3.5
+ObjectTemplate.addTemplate YamatoEntrySml
+ObjectTemplate.setPosition 0/21.5/-7
+
+ObjectTemplate.addTemplate Yamato1945_Back_460_PCO1
+ObjectTemplate.setPosition 0/18/-48.5
+ObjectTemplate.setRotation -179.999/0/0
+
+ObjectTemplate.addTemplate Yamato1945_LeftFront_127_PCO2
+ObjectTemplate.setPosition -6.4918/20.6/-4.9
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Yamato1945_RightFront_127_PCO3
+ObjectTemplate.setPosition 6.4918/20.6/-4.9
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate Yamato1945_LeftBack_127_PCO4
+ObjectTemplate.setPosition -3.7/23.5/-30.3
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Yamato1945_RightBack_127_PCO5
+ObjectTemplate.setPosition 3.7/23.5/-30.3
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -7.5/13/3.5 -70/0/0
+ObjectTemplate.GUIIndex 56
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Yamato1945.tga"
+ObjectTemplate.setVehicleIconPos 55/50
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_460mmType94.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_155mm3rdYearType.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTBattleship
+ObjectTemplate.setToolTipType TTBattleship
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+ObjectTemplate.sonarPos 1
+
+
 rem *** Yamato1945_Back_460_PCO1 ***
 ObjectTemplate.create PlayerControlObject Yamato1945_Back_460_PCO1
 ObjectTemplate.setNetworkableInfo YamatoBodyInfo
@@ -52646,6 +52349,9 @@ ObjectTemplate.addTemplate Yamato_155_turret_tripodAlt
 
 ObjectTemplate.addTemplate Yamato_10mRangeFinder
 ObjectTemplate.setPosition 0/7/-9
+
+
+
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -6/-5/-7 -45/0/0
 ObjectTemplate.GUIIndex 56
@@ -52826,31 +52532,9 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
 
 
-rem *** Yamato1945_PlaneLauncher_PCO6 ***
-ObjectTemplate.create PlayerControlObject Yamato1945_PlaneLauncher_PCO6
-ObjectTemplate.setNetworkableInfo YamatoBodyInfo
-ObjectTemplate.aiTemplate YamatoRearAI
+rem *** Yamato1945_PlaneLauncher_Bundle ***
+ObjectTemplate.create Bundle Yamato1945_PlaneLauncher_Bundle
 rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_Catapult_Camera
-ObjectTemplate.setPosition  0/25/-80
-ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate YamatoPlaneLauncherStatic
-ObjectTemplate.setPosition -9.62/13.784/-115.88
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate YamatoPlaneLauncherStatic
-ObjectTemplate.setPosition 8.62/13.784/-115.88
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate ShipBell
-ObjectTemplate.setPosition 0/0/75
-ObjectTemplate.addTemplate ShipBell
-ObjectTemplate.setPosition 0/0/-75
-
-ObjectTemplate.addTemplate ShipBuzzerPrm
-ObjectTemplate.setPosition 0/0/75
-ObjectTemplate.addTemplate ShipBuzzerPrm
-ObjectTemplate.setPosition 0/0/-75
-
 ObjectTemplate.addTemplate Yamato1945_MoveObject_Spawner
 ObjectTemplate.setPosition 0/10/0
 
@@ -52867,18 +52551,6 @@ ObjectTemplate.setPosition 0/10/-100
 ObjectTemplate.addTemplate Yamato1945Add25mmSingles6_Spawner
 ObjectTemplate.setPosition 0/10/20
 rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 0/15/-90 180/0/0
-ObjectTemplate.GUIIndex 56
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Yamato1945.tga"
-ObjectTemplate.setVehicleIconPos 12/30
-ObjectTemplate.setNumberOfWeaponIcons 0
-ObjectTemplate.setPrimaryAmmoBar ABNone
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCAir
-ObjectTemplate.setVehicleType VTBattleship
-ObjectTemplate.setToolTipType TTBattleship
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
-ObjectTemplate.setMinimapIconSize 64
 
 rem *** YamatoComplex ***
 ObjectTemplate.create Bundle YamatoPlaneLauncherStatic
@@ -53006,6 +52678,7 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
+ObjectTemplate.setPcoId 99
 
 rem *** Yamato1945Add25mm_DummyCam ***
 ObjectTemplate.create Camera Yamato1945Add25mm_DummyCam
@@ -53022,7 +52695,7 @@ ObjectTemplate.addTemplate 25mm3AAH_Prm2_C
 ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360
 ObjectTemplate.setPosition 1.4/11.9/-3
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0/0.4/-1.6 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmTripleAA.tga"
@@ -53050,7 +52723,7 @@ ObjectTemplate.addTemplate 25mm3AAH_Prm2_C
 ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360
 ObjectTemplate.setPosition -1.4/11.9/-3
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0/0.4/-1.6 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmTripleAA.tga"
@@ -53096,7 +52769,7 @@ ObjectTemplate.addTemplate Yamato_25AA_FCS_X
 ObjectTemplate.setPosition 9.5/4/0
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation -0.8/-1/-1.5 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53128,7 +52801,7 @@ ObjectTemplate.addTemplate Yamato_25AA_FCS_X
 ObjectTemplate.setPosition -9.5/4/0
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0.8/-1/-1.5 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53162,7 +52835,7 @@ ObjectTemplate.addTemplate Yamato_25AA_FCS_X
 ObjectTemplate.setPosition 9.8/7.5/-8.5
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0/1/-2 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53196,7 +52869,7 @@ ObjectTemplate.addTemplate Yamato_25AA_FCS_X
 ObjectTemplate.setPosition -9.8/7.5/-8.5
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0/1/-2 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53283,6 +52956,7 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
+ObjectTemplate.setPcoId 99
 
 rem *** Yamato1945Add25mm4Left_PCO1 ***
 ObjectTemplate.create PlayerControlObject Yamato1945Add25mm4Left_PCO1
@@ -53299,7 +52973,7 @@ ObjectTemplate.addTemplate 25mm3AAL_180_Prm_ES
 ObjectTemplate.setPosition 7.45/-5.5/9.95
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 1.5/-2.5/0 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53328,7 +53002,7 @@ ObjectTemplate.addTemplate 25mm3AAL_180_Prm_ES
 ObjectTemplate.setPosition -7.45/-5.5/9.95
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation -1.5/-2.5/0 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53355,7 +53029,7 @@ ObjectTemplate.addTemplate 25mm3AAH_Prm2_C
 ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360
 ObjectTemplate.setPosition 10.8/2.45/0.3
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0/1/-1.5 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmTripleAA.tga"
@@ -53384,7 +53058,7 @@ ObjectTemplate.addTemplate 25mm3AAH_Prm2_C
 ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360
 ObjectTemplate.setPosition -10.8/2.45/0.3
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0/1/-1.5 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmTripleAA.tga"
@@ -53413,7 +53087,7 @@ ObjectTemplate.setPosition 1.4/0/12.6
 ObjectTemplate.addTemplate 25mm3AAL_Alt_ES
 ObjectTemplate.setPosition 5.9/0/13.8
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 2/1/0 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53441,7 +53115,7 @@ ObjectTemplate.setPosition -5.9/0/13.8
 ObjectTemplate.addTemplate 25mm3AAL_Alt_ES
 ObjectTemplate.setPosition -1.4/0/12.6
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
@@ -53549,6 +53223,7 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
+ObjectTemplate.setPcoId 99
 
 rem ******************************************************************************************
 
@@ -53625,6 +53300,7 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
+ObjectTemplate.setPcoId 99
 
 rem ******************************************************************************************
 
@@ -53694,6 +53370,7 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
+ObjectTemplate.setPcoId 99
 
 rem ******************************************************************************************
 
@@ -53764,6 +53441,7 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
+ObjectTemplate.setPcoId 99
 
 rem ******************************************************************************************
 
@@ -53822,6 +53500,8 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.submarineData 0 0 0 0 0 20.5 200
+ObjectTemplate.setPcoId 99
 
 rem *** Yamato1945Add25mmTow_PCO1 ***
 ObjectTemplate.create PlayerControlObject Yamato1945Add25mmTow_PCO1
@@ -53834,7 +53514,7 @@ ObjectTemplate.setPosition -2/-6.5/0
 ObjectTemplate.addTemplate YamatoEntry
 ObjectTemplate.setPosition 2/-6.5/0
 rem -------------------------------------
-ObjectTemplate.addPcoPosId 6
+rem ObjectTemplate.addPcoPosId 6
 ObjectTemplate.setSoldierExitLocation 0/0.8/-1.5 0/0/0
 ObjectTemplate.GUIIndex 40
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmTripleAA.tga"
@@ -55173,9 +54853,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate Zuiho_AA_RocketRails_1
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_1Alt
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/7/0
@@ -55220,9 +54898,7 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate Zuiho_AA_RocketRails_2
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_2Alt
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/7/0
@@ -55267,15 +54943,14 @@ ObjectTemplate.setNetworkableInfo 12cm_AA_Y_RocketInfo
 ObjectTemplate.loadSoundScript ../../Land/25mmTripleAA/Sounds/25mmTripleAAgunbase.ssc
 ObjectTemplate.geometry 12cm_AA_Rocket_Launcher_m1
 rem -------------------------------------
-rem ObjectTemplate.addTemplate 12cm_AA_RocketCockpitExternal
-rem ObjectTemplate.setPosition 0/-0.23/0.242
-ObjectTemplate.addTemplate Zuiho_AA_RocketRails_3
+ObjectTemplate.addTemplate 12cmAA30Rocket_RocketRails_3Alt
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/7/0
 ObjectTemplate.setMaxSpeed 0/40/0
 ObjectTemplate.setAcceleration 0/150.0/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Zuiho
@@ -55354,172 +55029,6 @@ rem ============================================================================
 rem folder = Zuiho
 rem sauce = Weapons.con
 rem ============================================================================
-rem ***************************
-rem *** Zuiho_AA_Rocket**********
-rem ***************************
-rem *** ZuihoRocketRails_3 ***
-ObjectTemplate.create FireArms Zuiho_AA_RocketRails_3
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/20
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
-rem *** ZuihoRocketRails_1 ***
-ObjectTemplate.create FireArms Zuiho_AA_RocketRails_1
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/20
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
-
-rem *** ZuihoRocketRails_2 ***
-ObjectTemplate.create FireArms Zuiho_AA_RocketRails_2
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate HoodUPRockets
-ObjectTemplate.projectileTemplate Rocket_Type4_IncenShrapnel_Projectile
-ObjectTemplate.projectilePosition 0/0/20
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.autoReload 1
-ObjectTemplate.magSize 30
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 50
-ObjectTemplate.roundOfFire 15
-ObjectTemplate.reloadtime 30
-ObjectTemplate.setMinDev 5
-ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.fireingForce 0
-rem 30tubes upperleft to lowerright
-ObjectTemplate.addFireArmsPosition -0.30/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/0/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.15/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.15/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.30/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.30/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.45/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.45/0 0/0/0
-
-ObjectTemplate.addFireArmsPosition -0.30/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.6/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.18/-0.6/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.30/-0.6/0 0/0/0
-
-ObjectTemplate.AmmoType	9
-
 rem *** Greenlight_FireArm ***
 ObjectTemplate.create FireArms Greenlight_FireArm
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
@@ -55543,7 +55052,7 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.magSize -1
 ObjectTemplate.numOfMag -1
 ObjectTemplate.velocity 0
-ObjectTemplate.roundOfFire 15
+ObjectTemplate.roundOfFire 5
 ObjectTemplate.reloadtime 1
 ObjectTemplate.setMinDev 0
 ObjectTemplate.setInputFire c_PIFire
@@ -55568,7 +55077,7 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.magSize -1
 ObjectTemplate.numOfMag -1
 ObjectTemplate.velocity 0
-ObjectTemplate.roundOfFire 15
+ObjectTemplate.roundOfFire 5
 ObjectTemplate.reloadtime 1
 ObjectTemplate.setMinDev 0
 ObjectTemplate.setInputFire c_PIAltFire
