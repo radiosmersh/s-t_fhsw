@@ -4757,7 +4757,7 @@ ObjectTemplate.setRotation 0/29/0
 ObjectTemplate.addTemplate ML-20BulletCatcherBundle
 ObjectTemplate.setPosition 0/-24.9605/0
 ObjectTemplate.setRotation 0/58/179.999
-ObjectTemplate.addTemplate A-19Cannon_TracGunBarrel
+ObjectTemplate.addTemplate A-19Cannon_TracGunBarrelAP
 ObjectTemplate.setPosition 0/0.0395/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
@@ -4851,11 +4851,27 @@ ObjectTemplate.reloadtime 0.20
 ObjectTemplate.roundOfFire 0.123
 ObjectTemplate.AmmoType	4
 
+rem *** A-19Cannon_TracGunBarrelAP ***
+ObjectTemplate.create FireArms A-19Cannon_TracGunBarrelAP
+ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Arty12,2cmL43Projectile_Tracer
+ObjectTemplate.projectilePosition 0/0/4
+ObjectTemplate.setMinDev 0
+ObjectTemplate.magSize 999
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 390
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.setInputFire c_PIAltFire
+
 rem *** A-19Cannon_TracGunBarrel ***
 ObjectTemplate.create FireArms A-19Cannon_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty12,2cmL43Projectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+rem ObjectTemplate.projectileTemplate Arty12,2cmL43Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/4
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -8902,7 +8918,7 @@ ObjectTemplate.loadSoundScript ../B4howitzer/Sounds/B4howitzerGunBase.ssc
 ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate B4batteryGunBarrel_PenetrateExploder
+rem ObjectTemplate.addTemplate B4batteryGunBarrel_PenetrateExploder
 ObjectTemplate.addTemplate B4batteryGunBarrel
 ObjectTemplate.addTemplate B4howitzerTracGunBarrel
 
@@ -8925,7 +8941,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate B4batteryGunBarrel2
-ObjectTemplate.addTemplate B4batteryGunBarrel2_PenetrateExploder
+rem ObjectTemplate.addTemplate B4batteryGunBarrel2_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -8941,7 +8957,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate B4batteryGunBarrel3
-ObjectTemplate.addTemplate B4batteryGunBarrel3_PenetrateExploder
+rem ObjectTemplate.addTemplate B4batteryGunBarrel3_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -8957,7 +8973,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate B4batteryGunBarrel4
-ObjectTemplate.addTemplate B4batteryGunBarrel4_PenetrateExploder
+rem ObjectTemplate.addTemplate B4batteryGunBarrel4_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -8973,7 +8989,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate B4batteryGunBarrel5
-ObjectTemplate.addTemplate B4batteryGunBarrel5_PenetrateExploder
+rem ObjectTemplate.addTemplate B4batteryGunBarrel5_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -9697,7 +9713,7 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../B4howitzer/Sounds/B4howitzerGunBase.ssc
 rem ----------------------------------
-ObjectTemplate.addTemplate B4howitzerGunBarrel_PenetrateExploder
+rem ObjectTemplate.addTemplate B4howitzerGunBarrel_PenetrateExploder
 ObjectTemplate.addTemplate B4howitzerGunBarrel
 ObjectTemplate.addTemplate B4howitzerTracGunBarrel
 
@@ -11208,7 +11224,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate B4stationaryGunBarrel
-ObjectTemplate.addTemplate B4stationaryGunBarrel_PenetrateExploder
+rem ObjectTemplate.addTemplate B4stationaryGunBarrel_PenetrateExploder
 ObjectTemplate.addTemplate B4howitzerTracGunBarrel
 
 ObjectTemplate.addTemplate lodB4howitzerGunnerCockpit
@@ -12191,7 +12207,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Br5GunBarrel
-ObjectTemplate.addTemplate Br5GunBarrel_PenetrateExploder
+rem ObjectTemplate.addTemplate Br5GunBarrel_PenetrateExploder
 ObjectTemplate.addTemplate Br5TracGunBarrel
 
 ObjectTemplate.addTemplate lodB4howitzerGunnerCockpit
@@ -13434,7 +13450,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Br5batteryGunBarrel
-ObjectTemplate.addTemplate Br5batteryGunBarrel_PenetrateExploder
+rem ObjectTemplate.addTemplate Br5batteryGunBarrel_PenetrateExploder
 ObjectTemplate.addTemplate Br5TracGunBarrel
 
 ObjectTemplate.addTemplate lodB4howitzerGunnerCockpit
@@ -13456,7 +13472,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Br5batteryGunBarrel2
-ObjectTemplate.addTemplate Br5batteryGunBarrel2_PenetrateExploder
+rem ObjectTemplate.addTemplate Br5batteryGunBarrel2_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -13472,7 +13488,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Br5batteryGunBarrel3
-ObjectTemplate.addTemplate Br5batteryGunBarrel3_PenetrateExploder
+rem ObjectTemplate.addTemplate Br5batteryGunBarrel3_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -13488,7 +13504,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Br5batteryGunBarrel4
-ObjectTemplate.addTemplate Br5batteryGunBarrel4_PenetrateExploder
+rem ObjectTemplate.addTemplate Br5batteryGunBarrel4_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -13504,7 +13520,7 @@ ObjectTemplate.geometry B4_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Br5batteryGunBarrel5
-ObjectTemplate.addTemplate Br5batteryGunBarrel5_PenetrateExploder
+rem ObjectTemplate.addTemplate Br5batteryGunBarrel5_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -20613,7 +20629,7 @@ rem *** IS3_Turret ***
 ObjectTemplate.create RotationalBundle IS3_Turret
 ObjectTemplate.setNetworkableInfo IS3TurretInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../IS_Common/Sounds/IS2tower.ssc
+ObjectTemplate.loadSoundScript ../IS_Common/Sounds/IS_Tower.ssc
 ObjectTemplate.geometry IS3_turret_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -20648,7 +20664,7 @@ rem *** IS3_Gun_base ***
 ObjectTemplate.create RotationalBundle IS3_Gun_base
 ObjectTemplate.setNetworkableInfo IS3GunInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../IS_Common/Sounds/IS2GunBase.ssc
+ObjectTemplate.loadSoundScript ../IS_Common/Sounds/IS_GunBase.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate lodIS3Cockpit
 ObjectTemplate.setPosition 0/0/0
@@ -21354,7 +21370,7 @@ ObjectTemplate.speedMod 0.75
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 162
 ObjectTemplate.maxhitpoints 162
-ObjectTemplate.material 59
+ObjectTemplate.material 53
 ObjectTemplate.criticalDamage 16
 ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 6
@@ -21871,7 +21887,7 @@ ObjectTemplate.speedMod 0.75
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 162
 ObjectTemplate.maxhitpoints 162
-ObjectTemplate.material 59
+ObjectTemplate.material 53
 ObjectTemplate.criticalDamage 16
 ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 6
@@ -22652,7 +22668,7 @@ ObjectTemplate.speedMod 0.75
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 162
 ObjectTemplate.maxhitpoints 162
-ObjectTemplate.material 59
+ObjectTemplate.material 53
 ObjectTemplate.criticalDamage 16
 ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 6
@@ -23065,7 +23081,7 @@ ObjectTemplate.speedMod 0.75
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 162
 ObjectTemplate.maxhitpoints 162
-ObjectTemplate.material 59
+ObjectTemplate.material 53
 ObjectTemplate.criticalDamage 16
 ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 6
@@ -26003,7 +26019,8 @@ ObjectTemplate.addTemplate e_MuzzSW_150_500_Liner45
 ObjectTemplate.setPosition 0.08/0/3.1
 ObjectTemplate.setRotation 90/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Penetrator
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.setMinDev 0.63
 ObjectTemplate.magSize 21
@@ -26060,7 +26077,7 @@ rem *** ISU152TracGunBarrel ***
 ObjectTemplate.create FireArms ISU152TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -26505,7 +26522,8 @@ ObjectTemplate.addTemplate e_MuzzSW_150_1000_Sub
 ObjectTemplate.setPosition 0.1546/0/5.73
 ObjectTemplate.setRotation 90/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,2cmL47,2Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,2cmL47,2Projectile_Penetrator
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.setMinDev 0.37
 ObjectTemplate.magSize 1
@@ -26564,7 +26582,7 @@ rem *** ISU152BMTracGunBarrel ***
 ObjectTemplate.create FireArms ISU152BMTracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,2cmL47,2Projectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -42294,7 +42312,7 @@ ObjectTemplate.setRotation 0/29/0
 ObjectTemplate.addTemplate ML-20BulletCatcherBundle
 ObjectTemplate.setPosition 0/-24.9605/0
 ObjectTemplate.setRotation 0/58/179.999
-ObjectTemplate.addTemplate ML-20Cannon_TracGunBarrel
+ObjectTemplate.addTemplate ML-20Cannon_TracGunBarrelAP
 ObjectTemplate.setPosition 0/0.0395/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
@@ -42406,7 +42424,8 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.1827/-0.3
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Penetrator
 ObjectTemplate.projectilePosition 0/0/4
 ObjectTemplate.setMinDev 0.63
 ObjectTemplate.magSize 100
@@ -42451,6 +42470,22 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 0.20
 ObjectTemplate.roundOfFire 0.075
 ObjectTemplate.AmmoType	4
+
+rem *** ML-20Cannon_TracGunBarrelAP
+ObjectTemplate.create FireArms ML-20Cannon_TracGunBarrelAP
+ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+rem ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Tracer
+ObjectTemplate.projectilePosition 0/0/4
+ObjectTemplate.setMinDev 0
+ObjectTemplate.magSize 999
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 327.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.setInputFire c_PIAltFire
 
 rem *** ML-20Cannon_TracGunBarrel
 ObjectTemplate.create FireArms ML-20Cannon_TracGunBarrel
@@ -45146,7 +45181,7 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../B4howitzer/Sounds/B4howitzerGunBase.ssc
 rem ----------------------------------
 ObjectTemplate.addTemplate S-51GunBarrel
-ObjectTemplate.addTemplate S-51GunBarrel_PenetrateExploder
+rem ObjectTemplate.addTemplate S-51GunBarrel_PenetrateExploder
 ObjectTemplate.addTemplate S-51TracGunBarrel
 
 ObjectTemplate.addTemplate lodB4howitzerGunnerCockpit
@@ -47534,7 +47569,7 @@ rem *** SU122TracGunBarrel ***
 ObjectTemplate.create FireArms SU122TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty12,2cmL22Projectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -50644,7 +50679,8 @@ ObjectTemplate.addTemplate e_MuzzSW_150_500_Liner45
 ObjectTemplate.setPosition 0.115/0/3.2
 ObjectTemplate.setRotation 90/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Penetrator
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.setMinDev 0.63
 ObjectTemplate.magSize 1
@@ -50703,7 +50739,7 @@ rem *** SU152TracGunBarrel ***
 ObjectTemplate.create FireArms SU152TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -59929,7 +59965,7 @@ ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
 ObjectTemplate.setVehicleIcon "Vehicle/icon_T-34-57_1942.tga"
 ObjectTemplate.setVehicleIconPos 70/61
 ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_57mmZIS-2.tga"
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_57mmZIS-4RndAPCR.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
@@ -62665,7 +62701,7 @@ ObjectTemplate.setPosition -0.35/0.83/-0.55
 
 ObjectTemplate.addTemplate T-44_PistolPort_PCO2
 ObjectTemplate.setPosition 0/-0.147/-0.0253
-ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.setRotation -179.999/0/0
 
 ObjectTemplate.addTemplate T-44Tower_Visible
 ObjectTemplate.setRandomGeometries 6
@@ -73714,9 +73750,21 @@ renderer.beginGlobalCluster T35
 
 GeometryTemplate.create StandardMesh T35_gunbase76_m1
 GeometryTemplate.file T35_gunbase76_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_barrel76_m1
 GeometryTemplate.file T35_barrel76_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_tow76_m1
 GeometryTemplate.file T35_tow76_m1
@@ -73729,9 +73777,21 @@ GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_gunbase45_m1
 GeometryTemplate.file T35_gunbase45_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_barrel45_m1
 GeometryTemplate.file T35_barrel45_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_tow45_m1
 GeometryTemplate.file T35_tow45_m1
@@ -73743,7 +73803,31 @@ GeometryTemplate.setLodDistance 4 80
 GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_barrelMG_m1
-GeometryTemplate.file T35_barrelMG_m1
+GeometryTemplate.file T35_tow76_MG_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35_tow76_MG_back_m1
+GeometryTemplate.file T35_tow76_MG_back_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35_tow76_MG_m1
+GeometryTemplate.file T35_tow76_MG_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_towMG_m1
 GeometryTemplate.file T35_towMG_m1
@@ -73754,20 +73838,27 @@ GeometryTemplate.setLodDistance 3 40
 GeometryTemplate.setLodDistance 4 80
 GeometryTemplate.setLodDistance 5 100
 
-
 GeometryTemplate.create StandardMesh T35_hull_m1
 GeometryTemplate.file T35_hull_m1
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh 1p_T35_reticule
-GeometryTemplate.file 1p_T85Tank_Aim
+GeometryTemplate.create StandardMesh 1p_T35_Driver_m1
+GeometryTemplate.file 1p_00_DEFtankcockpit_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
 
-GeometryTemplate.create StandardMesh 1p_T35_45_reticule
-GeometryTemplate.file 1p_45mm_PT-1_reticule_m1
+GeometryTemplate.create StandardMesh 1P_T35_Gunner76_m1
+GeometryTemplate.file 1p_00_76mm_L-10_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+GeometryTemplate.create StandardMesh 1P_T35_Gunner45_m1
+GeometryTemplate.file 1p_00_45mm_PT-1_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
 
 GeometryTemplate.create StandardMesh 1p_T35_MG_view
 GeometryTemplate.file 1p_DT1928_aim_m1
@@ -73788,72 +73879,74 @@ GeometryTemplate.create StandardMesh T35_FL_Whel
 GeometryTemplate.file T35_whel1_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_ML_Whel
-GeometryTemplate.file KV2_L_whel2_m1
+GeometryTemplate.file T35_whel2_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_RL_Whel
-GeometryTemplate.file KV2_L_whel3_m1
+GeometryTemplate.file T35_whel_Spr_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_topWheelL
-GeometryTemplate.file t26_topWheel_l
+GeometryTemplate.file T35_whel_Top_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
-
-GeometryTemplate.create StandardMesh T35_whelSml_L_m1
-GeometryTemplate.file T35_whelSml_L_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
-
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_FR_Whel
 GeometryTemplate.file T35_whel1_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_MR_Whel
-GeometryTemplate.file KV2_R_whel2_m1
+GeometryTemplate.file T35_whel2_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_RR_Whel
-GeometryTemplate.file KV2_R_whel3_m1
+GeometryTemplate.file T35_whel_Spr_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh T35_topWheelR
-GeometryTemplate.file t26_topWheel_r
+GeometryTemplate.file T35_whel_Top_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh T35_whelSml_R_m1
-GeometryTemplate.file T35_whelSml_R_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 150
 
 renderer.endGlobalCluster
 
@@ -73861,13 +73954,40 @@ GeometryTemplate.create StandardMesh T35_Hull_L1
 GeometryTemplate.file T35_hull_l1
 
 GeometryTemplate.create StandardMesh Wreck_T35_M1
-GeometryTemplate.file T35_wreck_m1
+GeometryTemplate.file T-35_wreck_main_m1
 GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 200
-GeometryTemplate.setLodDistance 2 250
-GeometryTemplate.setLodDistance 3 300
-GeometryTemplate.setLodDistance 4 350
-GeometryTemplate.setLodDistance 5 500
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Wreck_T35_L_m1
+GeometryTemplate.file T-35_wreck_L_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Wreck_T35_R_m1
+GeometryTemplate.file T-35_wreck_R_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Wreck_T35_track_m1
+GeometryTemplate.file T-35_wreck_track_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
 
 rem ===== EOF =====
 rem ============================================================================
@@ -73947,8 +74067,8 @@ ObjectTemplate.setSoldierExitLocation -2.0/0.5/1.0 0/0/0
 rem ObjectTemplate.setPcoId 10
 ObjectTemplate.GUIIndex 75
 ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 80/73
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35.tga"
+ObjectTemplate.setVehicleIconPos 80/37
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76,2mmKT-28.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
@@ -73990,26 +74110,28 @@ ObjectTemplate.setPosition 0/0/-2.0
 ObjectTemplate.addTemplate T35Engine
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate T35_Turret
-ObjectTemplate.setPosition 0/1.6/1.136
+ObjectTemplate.setPosition 0/1.9486/1.3228
+
 ObjectTemplate.addTemplate T35_45tow_PCO3
-ObjectTemplate.setPosition 0.39/0.91/2.68
+ObjectTemplate.setPosition 0.3604/1.3/2.965
 ObjectTemplate.addTemplate T35_MGtow_PCO4
-ObjectTemplate.setPosition -0.79/0.93/2.39
+ObjectTemplate.setPosition -0.7662/1.3/2.6357
+
 ObjectTemplate.addTemplate T35_45tow_PCO5
-ObjectTemplate.setPosition -0.56/0.91/-0.37
+ObjectTemplate.setPosition -0.4531/1.3/-0.2434
 ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.addTemplate T35_MGtow_PCO6
-ObjectTemplate.setPosition 0.63/0.93/-0.08
+ObjectTemplate.setPosition 0.7359/1.3/0.0562
 ObjectTemplate.setRotation -179.999/0/0
 rem -------------------------------------
 
 rem *** T35Entry ***
 ObjectTemplate.create EntryPoint T35Entry
-ObjectTemplate.setEntryRadius 3.5
+ObjectTemplate.setEntryRadius 5.5
 
 rem *** T35Entrysmall ***
 ObjectTemplate.create EntryPoint T35Entrysmall
-ObjectTemplate.setEntryRadius 2
+ObjectTemplate.setEntryRadius 3.5
 
 
 rem *** T35_Turret ***
@@ -74023,11 +74145,15 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate T35_Cannon_Base
-ObjectTemplate.setPosition -0.175/0.42/1.0
+ObjectTemplate.setPosition 0/0.4552/0.9784
 ObjectTemplate.addTemplate T35_CoaxMG
-ObjectTemplate.setPosition 0.364/0.405/0.524
+ObjectTemplate.setPosition 0.6178/0.3317/0.6872
 ObjectTemplate.addTemplate T35_Director_Stabilizer
-ObjectTemplate.setPosition 0.44/1.1/0.37
+ObjectTemplate.setPosition 0.4752/1.1/0.3982
+
+ObjectTemplate.addTemplate T35_76towBackMG_PCO
+ObjectTemplate.setPosition 0/0.449/-1.3181
+ObjectTemplate.setRotation -179.999/0/0
 rem -------------------------------------
 ObjectTemplate.setMaxSpeed 12/0/0
 ObjectTemplate.setAcceleration 65/0/0
@@ -74053,9 +74179,9 @@ ObjectTemplate.loadSoundScript ../T35/Sounds/T35GunBase76.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate lodT35Cockpit
 ObjectTemplate.addTemplate T35GunBarrel
-ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setPosition 0/0.0616/0.0191
 ObjectTemplate.addTemplate T35_Reticule_Camera
-ObjectTemplate.setPosition -0.3/0/0.212
+ObjectTemplate.setPosition -0.4702/0.4879/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/7.5/0
@@ -74068,16 +74194,14 @@ ObjectTemplate.create Camera T35Camera
 
 rem *** T35_Reticule_Camera ***
 ObjectTemplate.create Camera T35_Reticule_Camera
-ObjectTemplate.OutsideHudOffset 0.0005/0.59725/0.7
-
+ObjectTemplate.OutsideHudOffset 0.1007/-0.4445/0.1739
 
 rem *** lodT35Cockpit ***
 ObjectTemplate.create LodObject lodT35Cockpit
 rem -------------------------------------
 ObjectTemplate.addTemplate T35CockpitExternal
-ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate T35CockpitInternal
-ObjectTemplate.setPosition -0.3/-0.05/0.442
+ObjectTemplate.setPosition -0.4702/0.4879/0
 rem -------------------------------------
 ObjectTemplate.lodSelector T35cockpitSelector
 
@@ -74086,8 +74210,12 @@ ObjectTemplate.create SimpleObject T35CockpitExternal
 ObjectTemplate.geometry T35_gunbase76_m1
 
 rem *** T35CockpitInternal ***
-ObjectTemplate.create SimpleObject T35CockpitInternal
-ObjectTemplate.geometry 1p_T35_reticule
+ObjectTemplate.create Bundle T35CockpitInternal
+ObjectTemplate.geometry 1p_T35_Driver_m1
+ObjectTemplate.addTemplate T35CockpitInternal2
+ObjectTemplate.setPosition 0.1007/-0.4445/0.1739
+ObjectTemplate.create SimpleObject T35CockpitInternal2
+ObjectTemplate.geometry 1P_T35_Gunner76_m1
 
 rem *** T35cockpitSelector ***
 LodSelectorTemplate.create DistCompareSelector T35cockpitSelector
@@ -74097,11 +74225,10 @@ LodSelectorTemplate.addLodComparison 0.5
 rem *** T35_CoaxMG ***
 ObjectTemplate.create RotationalBundle T35_CoaxMG
 ObjectTemplate.setNetworkableInfo T35TowYInfo
-ObjectTemplate.setAttachToListener 1
-ObjectTemplate.geometry T35_barrelMG_m1
+ObjectTemplate.geometry T35_tow76_MG_m1
 rem ------------------------------------- 
 ObjectTemplate.addTemplate Coaxial_DT1928
-ObjectTemplate.setPosition 0/-0.083/-0.5
+ObjectTemplate.setPosition 0/-0.1158/-0.5135
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/7.5/0
@@ -74122,8 +74249,8 @@ rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
 rem ObjectTemplate.setPcoId 11
 ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 78/78
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35.tga"
+ObjectTemplate.setVehicleIconPos 71/27
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "icon_flag_rus.tga"
 ObjectTemplate.setPrimaryAmmoBar ABIconOnly
@@ -74134,7 +74261,6 @@ ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 rem *** T35_PeriscopeX ***
@@ -74166,6 +74292,67 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 rem *** T35_PeriscopeCamera ***
 ObjectTemplate.create Camera T35_PeriscopeCamera
 
+
+rem *** T35_MGtow_PCO ***
+ObjectTemplate.create PlayerControlObject T35_76towBackMG_PCO
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_76towBackMG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35.tga"
+ObjectTemplate.setVehicleIconPos 100/29
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** T35_76towBackMG ***
+ObjectTemplate.create RotationalBundle T35_76towBackMG
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35GunBaseMG.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate DT1928_bowMG
+ObjectTemplate.setPosition 0/-0.0158/-0.4426
+ObjectTemplate.addTemplate T35Camera
+ObjectTemplate.setPosition 0/0.0989/0.2135
+ObjectTemplate.addTemplate lodT35_backgunnerCockpit
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/-25/0
+ObjectTemplate.setMaxRotation 25/25/0
+ObjectTemplate.setMaxSpeed 30/30/0
+ObjectTemplate.setAcceleration 500/500/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** lodT35_backgunnerCockpit ***
+ObjectTemplate.create LodObject lodT35_backgunnerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_backgunner_viewExternal
+ObjectTemplate.addTemplate T35_gunner_viewInternal
+ObjectTemplate.setPosition 0/0.0989/0.2135
+rem -------------------------------------
+ObjectTemplate.lodSelector T35gunnercockpitSelector
+
+rem *** T35_backgunner_viewExternal ***
+ObjectTemplate.create SimpleObject T35_backgunner_viewExternal
+ObjectTemplate.geometry T35_tow76_MG_back_m1
+
+
+
 rem *** T35_45tow_PCO3 ***
 ObjectTemplate.create PlayerControlObject T35_45tow_PCO3
 ObjectTemplate.NameTagOffset 0/-1.0/0
@@ -74180,8 +74367,8 @@ rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
 rem ObjectTemplate.setPcoId 12
 ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 98/95
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35.tga"
+ObjectTemplate.setVehicleIconPos 57/53
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
@@ -74192,7 +74379,6 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 
@@ -74211,8 +74397,8 @@ rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
 rem ObjectTemplate.setPcoId 13
 ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 99/85
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35.tga"
+ObjectTemplate.setVehicleIconPos 77/64
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
@@ -74221,7 +74407,6 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 
@@ -74240,8 +74425,8 @@ rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
 rem ObjectTemplate.setPcoId 14
 ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 58/78
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35.tga"
+ObjectTemplate.setVehicleIconPos 91/29
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
@@ -74252,7 +74437,6 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 
@@ -74271,8 +74455,8 @@ rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
 rem ObjectTemplate.setPcoId 15
 ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 57/85
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35.tga"
+ObjectTemplate.setVehicleIconPos 106/40
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
@@ -74281,7 +74465,6 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 
@@ -74295,7 +74478,7 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower45.ssc
 rem ----------------------------------
 ObjectTemplate.addTemplate T35_Cannon_Base45
-ObjectTemplate.setPosition 0.062/0.345/0.675
+ObjectTemplate.setPosition 0/0.3329/0.5804
 rem ----------------------------------
 ObjectTemplate.setMinRotation -55/0/0
 ObjectTemplate.setMaxRotation 130/0/0
@@ -74313,12 +74496,12 @@ rem ----------------------------------
 ObjectTemplate.addTemplate T35_45GunBarrel
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate Coaxial_DT1928_Stabilized
-ObjectTemplate.setPosition 0.09/-0.095/-0.575
+ObjectTemplate.setPosition 0.228/-.0465/-0.401
 
 ObjectTemplate.addTemplate lodT35_45Cockpit
-ObjectTemplate.setPosition -0.0005/-0.2173/-0.7
+ObjectTemplate.setPosition -0.2122/0.186/0.2345
 ObjectTemplate.addTemplate T35_45Camera
-ObjectTemplate.setPosition -0.4/0.4/0.3
+ObjectTemplate.setPosition -0.2122/0.186/0.2345
 rem ----------------------------------
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/8/0
@@ -74333,13 +74516,12 @@ ObjectTemplate.create LodObject lodT35_45Cockpit
 rem -------------------------------------
 ObjectTemplate.addTemplate T35_45_CockpitExternal
 ObjectTemplate.addTemplate T35_45_CockpitInternal
-ObjectTemplate.setPosition -0.4/-0.05/0.53
 rem -------------------------------------
 ObjectTemplate.lodSelector T35_45_cockpitSelector
 
 rem *** T35_45_CockpitInternal ***
 ObjectTemplate.create SimpleObject T35_45_CockpitInternal
-ObjectTemplate.geometry 1p_T35_45_reticule
+ObjectTemplate.geometry 1P_T35_Gunner45_m1
 
 rem *** T35_45_CockpitExternal ***
 ObjectTemplate.create SimpleObject T35_45_CockpitExternal
@@ -74360,7 +74542,7 @@ ObjectTemplate.geometry T35_towMG_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate T35_Gun_BaseMG
-ObjectTemplate.setPosition 0.083/0.212/0.507
+ObjectTemplate.setPosition 0.1192/0.2928/0.5213
 rem -------------------------------------
 ObjectTemplate.setMinRotation -135/0/0
 ObjectTemplate.setMaxRotation 15/0/0
@@ -74375,11 +74557,10 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../T35/Sounds/T35GunBaseMG.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate DT1928_bowMG
-ObjectTemplate.setPosition 0/0.015/-0.5
+ObjectTemplate.setPosition 0/-0.0155/-0.5663
 ObjectTemplate.addTemplate T35Camera
-ObjectTemplate.setPosition 0/0.125/-0.075
+ObjectTemplate.setPosition 0/0.1/0.1
 ObjectTemplate.addTemplate lodT35_gunnerCockpit
-ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/10/0
@@ -74392,7 +74573,7 @@ ObjectTemplate.create LodObject lodT35_gunnerCockpit
 rem -------------------------------------
 ObjectTemplate.addTemplate T35_gunner_viewExternal
 ObjectTemplate.addTemplate T35_gunner_viewInternal
-ObjectTemplate.setPosition 0/0.125/-0.075
+ObjectTemplate.setPosition 0/0.1/0.1
 rem -------------------------------------
 ObjectTemplate.lodSelector T35gunnercockpitSelector
 
@@ -74414,9 +74595,25 @@ rem *** T35Simple ***
 ObjectTemplate.create SimpleObject T35Simple
 ObjectTemplate.geometry T35_Hull_L1
 
+
 rem *** T35Wreck ***
-ObjectTemplate.create SimpleObject T35Wreck
+ObjectTemplate.create Bundle T35Wreck
+ObjectTemplate.addTemplate T35WreckBundle
+ObjectTemplate.setPosition 0/-0.3/0
+
+ObjectTemplate.create Bundle T35WreckBundle
 ObjectTemplate.geometry Wreck_T35_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate Wreck_T35_L_m1
+ObjectTemplate.addTemplate Wreck_T35_R_m1
+ObjectTemplate.addTemplate Wreck_T35_track_m1
+
+ObjectTemplate.create SimpleObject Wreck_T35_L_m1
+ObjectTemplate.geometry Wreck_T35_L_m1
+ObjectTemplate.create SimpleObject Wreck_T35_R_m1
+ObjectTemplate.geometry Wreck_T35_R_m1
+ObjectTemplate.create SimpleObject Wreck_T35_track_m1
+ObjectTemplate.geometry Wreck_T35_track_m1
 
 rem *** T35LodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 T35LodSelector
@@ -74434,72 +74631,64 @@ ObjectTemplate.createSkeleton animations/T35_trackL.ske
 ObjectTemplate.setAnimatedTextureSpeed 0.005/0
 rem -------------------------------------
 ObjectTemplate.addTemplate T35_RL_Whel
-ObjectTemplate.setPosition -0.9/0.2/-4
+ObjectTemplate.setPosition -1.3/0.4908/-4.2203
 
-ObjectTemplate.addTemplate T35_SmlWheelL
-ObjectTemplate.setPosition -1.2/-0.2/3.85
+ObjectTemplate.addTemplate T35_L_WhelDummy
+ObjectTemplate.setPosition -1.3/-0.2/3.557
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_L_WhelDummy
-ObjectTemplate.setPosition -1/-0.5/3
+ObjectTemplate.setPosition -1.3/-0.3144/2.5688
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_L_Whel2
-ObjectTemplate.setPosition -1/-0.5/2.2
+ObjectTemplate.setPosition -1.3/-0.3144/1.7049
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_L_WhelDummy
-ObjectTemplate.setPosition -1/-0.5/1.2
-ObjectTemplate.useAsBone 0/0/0
-ObjectTemplate.setBoneOriginOffset 0/0/0
-
-ObjectTemplate.addTemplate T35_L_WhelDummy
-ObjectTemplate.setPosition -1/-0.5/0.4
+ObjectTemplate.setPosition -1.3/-0.3144/0.7167
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_L_Whel2
-ObjectTemplate.setPosition -1/-0.5/-0.55
+ObjectTemplate.setPosition -1.3/-0.3144/-0.1839
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_L_WhelDummySmoke
-ObjectTemplate.setPosition -1/-0.5/-1.35
+ObjectTemplate.setPosition -1.3/-0.3144/-1.1721
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_L_Whel
-ObjectTemplate.setPosition -1/-0.5/-2.35
+ObjectTemplate.setPosition -1.3/-0.3144/-2.0213
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_L_WhelDummy
-ObjectTemplate.setPosition -1/-0.5/-3.15
+ObjectTemplate.setPosition -1.3/-0.3144/-3.0095
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_FL_Whel
-ObjectTemplate.setPosition -0.9/0.4/4.3321
+ObjectTemplate.setPosition -1.3/0.6059/4.5693
 
 ObjectTemplate.addTemplate T35_Top_WheelL
-ObjectTemplate.setPosition -1.2/0.58/2.9
+ObjectTemplate.setPosition -1.3/0.911/3.2665
 ObjectTemplate.addTemplate T35_Top_WheelL
-ObjectTemplate.setPosition -1.2/0.58/2.0
+ObjectTemplate.setPosition -1.3/0.911/2.3134
 ObjectTemplate.addTemplate T35_Top_WheelL
-ObjectTemplate.setPosition -1.2/0.58/0.65
+ObjectTemplate.setPosition -1.3/0.8949/0.9331
 ObjectTemplate.addTemplate T35_Top_WheelL
-ObjectTemplate.setPosition -1.2/0.56/-0.6
+ObjectTemplate.setPosition -1.3/0.8848/-0.4082
 ObjectTemplate.addTemplate T35_Top_WheelL
-ObjectTemplate.setPosition -1.2/0.55/-2.1
+ObjectTemplate.setPosition -1.3/0.8702/-1.8464
 ObjectTemplate.addTemplate T35_Top_WheelL
-ObjectTemplate.setPosition -1.2/0.54/-3.4
+ObjectTemplate.setPosition -1.3/0.8587/-3.3664
 rem -------------------------------------
-
-
-
 
 
 
@@ -74511,69 +74700,64 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.createSkeleton animations/T35_trackR.ske
 ObjectTemplate.setAnimatedTextureSpeed 0.005/0
 rem -------------------------------------
-ObjectTemplate.addTemplate T35_FR_Whel
-ObjectTemplate.setPosition 0.9/0.4/4.3321
+ObjectTemplate.addTemplate T35_RL_Whel
+ObjectTemplate.setPosition 1.3/0.4908/-4.2203
 
-ObjectTemplate.addTemplate T35_SmlWheelR
-ObjectTemplate.setPosition 1.2/-0.2/3.85
+ObjectTemplate.addTemplate T35_R_WhelDummy
+ObjectTemplate.setPosition 1.3/-0.2/3.557
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_R_WhelDummy
-ObjectTemplate.setPosition 1/-0.5/3
+ObjectTemplate.setPosition 1.3/-0.3144/2.5688
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_R_Whel2
-ObjectTemplate.setPosition 1/-0.5/2.2
+ObjectTemplate.setPosition 1.3/-0.3144/1.7049
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_R_WhelDummy
-ObjectTemplate.setPosition 1/-0.5/1.2
-ObjectTemplate.useAsBone 0/0/0
-ObjectTemplate.setBoneOriginOffset 0/0/0
-
-ObjectTemplate.addTemplate T35_R_WhelDummy
-ObjectTemplate.setPosition 1/-0.5/0.4
+ObjectTemplate.setPosition 1.3/-0.3144/0.7167
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_R_Whel2
-ObjectTemplate.setPosition 1/-0.5/-0.55
+ObjectTemplate.setPosition 1.3/-0.3144/-0.1839
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_R_WhelDummySmoke
-ObjectTemplate.setPosition 1/-0.5/-1.35
+ObjectTemplate.setPosition 1.3/-0.3144/-1.1721
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_R_Whel
-ObjectTemplate.setPosition 1/-0.5/-2.35
+ObjectTemplate.setPosition 1.3/-0.3144/-2.0213
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
 ObjectTemplate.addTemplate T35_R_WhelDummy
-ObjectTemplate.setPosition 1/-0.5/-3.15
+ObjectTemplate.setPosition 1.3/-0.3144/-3.0095
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
-ObjectTemplate.addTemplate T35_RR_Whel
-ObjectTemplate.setPosition 0.9/0.2/-4
+ObjectTemplate.addTemplate T35_FL_Whel
+ObjectTemplate.setPosition 1.3/0.6059/4.5693
 
 ObjectTemplate.addTemplate T35_Top_WheelR
-ObjectTemplate.setPosition 1.2/0.58/2.9
+ObjectTemplate.setPosition 1.3/0.911/3.2665
 ObjectTemplate.addTemplate T35_Top_WheelR
-ObjectTemplate.setPosition 1.2/0.58/2.0
+ObjectTemplate.setPosition 1.3/0.911/2.3134
 ObjectTemplate.addTemplate T35_Top_WheelR
-ObjectTemplate.setPosition 1.2/0.58/0.65
+ObjectTemplate.setPosition 1.3/0.8949/0.9331
 ObjectTemplate.addTemplate T35_Top_WheelR
-ObjectTemplate.setPosition 1.2/0.56/-0.6
+ObjectTemplate.setPosition 1.3/0.8848/-0.4082
 ObjectTemplate.addTemplate T35_Top_WheelR
-ObjectTemplate.setPosition 1.2/0.55/-2.1
+ObjectTemplate.setPosition 1.3/0.8702/-1.8464
 ObjectTemplate.addTemplate T35_Top_WheelR
-ObjectTemplate.setPosition 1.2/0.54/-3.4
+ObjectTemplate.setPosition 1.3/0.8587/-3.3664
 rem -------------------------------------
 
 rem ===== EOF =====
@@ -74632,16 +74816,6 @@ ObjectTemplate.setDamping 0
 rem *** T35_FL_Whel ***
 ObjectTemplate.create Spring T35_FL_Whel
 ObjectTemplate.geometry T35_FL_Whel
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
-ObjectTemplate.setStrength 0
-ObjectTemplate.setDamping 0
-
-rem *** T35_SmlWheelL ***
-ObjectTemplate.create Spring T35_SmlWheelL
-ObjectTemplate.geometry T35_whelSml_L_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -74721,16 +74895,6 @@ ObjectTemplate.setDamping 0
 rem *** T35_FR_Whel ***
 ObjectTemplate.create Spring T35_FR_Whel
 ObjectTemplate.geometry T35_FR_Whel
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
-ObjectTemplate.setStrength 0
-ObjectTemplate.setDamping 0
-
-rem *** T35_SmlWheelR ***
-ObjectTemplate.create Spring T35_SmlWheelR
-ObjectTemplate.geometry T35_whelSml_R_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -74840,7 +75004,7 @@ ObjectTemplate.AddRootSpeed 0
 ObjectTemplate.setMinDev 0.68
 ObjectTemplate.projectileTemplate 45mmL45_Projectile
 ObjectTemplate.setTracerTemplate 45mmL45APCR_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/0.1/1
 rem ObjectTemplate.setMinDev 0.75
 ObjectTemplate.magSize 110
 ObjectTemplate.numOfMag 1
@@ -74871,7 +75035,20 @@ ObjectTemplate.velocity 0
 
 rem ===== EOF =====
 rem ============================================================================
-rem folder = T35Raseiniai
+rem folder = T35-95
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh T35_barrel95_m1
+GeometryTemplate.file T35_barrel95_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35-95
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = RUS
@@ -74882,8 +75059,8 @@ run bf1942/game/is_coop.con
 console.useRelativePaths 1
 
 
-rem *** T35Raseiniai ***
-ObjectTemplate.create PlayerControlObject T35Raseiniai
+rem *** T35-95 ***
+ObjectTemplate.create PlayerControlObject T35-95
 ObjectTemplate.setNetworkableInfo T35BodyInfo
 ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 4
@@ -74920,14 +75097,427 @@ ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 0
 ObjectTemplate.aiTemplate T35
 rem -------------------------------------
-ObjectTemplate.addTemplate lodT35Raseiniai
+ObjectTemplate.addTemplate lodT35-95
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2.0/0.5/1.0 0/0/0
 rem ObjectTemplate.setPcoId 10
 ObjectTemplate.GUIIndex 75
 ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 80/73
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35-95.tga"
+ObjectTemplate.setVehicleIconPos 80/37
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_95mmF-39.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodT35-95 ***
+ObjectTemplate.create LodObject lodT35-95
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35-95Complex
+ObjectTemplate.addTemplate T35Simple
+ObjectTemplate.addTemplate T35Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector T35LodSelector
+
+
+rem *** T35-95Complex ***
+ObjectTemplate.create Bundle T35-95Complex
+ObjectTemplate.geometry T35_hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/2.0
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/-2.0
+ObjectTemplate.addTemplate T35Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35-95_Turret
+ObjectTemplate.setPosition 0/1.9486/1.3228
+
+ObjectTemplate.addTemplate T35-95_45tow_PCO3
+ObjectTemplate.setPosition 0.3604/1.3/2.965
+ObjectTemplate.addTemplate T35-95_MGtow_PCO4
+ObjectTemplate.setPosition -0.7662/1.3/2.6357
+
+ObjectTemplate.addTemplate T35-95_45tow_PCO5
+ObjectTemplate.setPosition -0.4531/1.3/-0.2434
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate T35-95_MGtow_PCO6
+ObjectTemplate.setPosition 0.7359/1.3/0.0562
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+
+rem *** T35-95_Turret ***
+ObjectTemplate.create RotationalBundle T35-95_Turret
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower76.ssc
+ObjectTemplate.geometry T35_tow76_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35-95_Cannon_Base
+ObjectTemplate.setPosition 0/0.4552/0.9784
+ObjectTemplate.addTemplate T35_CoaxMG
+ObjectTemplate.setPosition 0.6178/0.3317/0.6872
+ObjectTemplate.addTemplate T35-95_Director_Stabilizer
+ObjectTemplate.setPosition 0.4752/1.1/0.3982
+
+ObjectTemplate.addTemplate T35-95_76towBackMG_PCO
+ObjectTemplate.setPosition 0/0.449/-1.3181
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration 65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** T35-95_Director_Stabilizer ***
+ObjectTemplate.create RotationalBundle T35-95_Director_Stabilizer
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate T35-95_Director_PCO2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration -65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** T35-95_Cannon_Base ***
+ObjectTemplate.create RotationalBundle T35-95_Cannon_Base
+ObjectTemplate.setNetworkableInfo T35TowYInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35GunBase76.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodT35Cockpit
+ObjectTemplate.addTemplate T35-95_Main_Gun
+ObjectTemplate.setPosition 0/0.0616/0.0191
+ObjectTemplate.addTemplate T35_Reticule_Camera
+ObjectTemplate.setPosition -0.4702/0.4879/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/7.5/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/65/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+
+rem *** T35-95_Director_PCO2 ***
+ObjectTemplate.create PlayerControlObject T35-95_Director_PCO2
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.addTemplate T35_PeriscopeX
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 11
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35-95.tga"
+ObjectTemplate.setVehicleIconPos 71/27
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "icon_flag_rus.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35-95_MGtow_PCO ***
+ObjectTemplate.create PlayerControlObject T35-95_76towBackMG_PCO
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_76towBackMG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35-95.tga"
+ObjectTemplate.setVehicleIconPos 100/29
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35-95_45tow_PCO3 ***
+ObjectTemplate.create PlayerControlObject T35-95_45tow_PCO3
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_45Tow_P3
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 12
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35-95.tga"
+ObjectTemplate.setVehicleIconPos 57/53
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35-95_MGtow_PCO4 ***
+ObjectTemplate.create PlayerControlObject T35-95_MGtow_PCO4
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P4
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 13
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35-95.tga"
+ObjectTemplate.setVehicleIconPos 77/64
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35-95_45tow_PCO5 ***
+ObjectTemplate.create PlayerControlObject T35-95_45tow_PCO5
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P5
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 14
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35-95.tga"
+ObjectTemplate.setVehicleIconPos 91/29
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35-95_MGtow_PCO6 ***
+ObjectTemplate.create PlayerControlObject T35-95_MGtow_PCO6
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35-95.tga"
+ObjectTemplate.setVehicleIconPos 106/40
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35-95
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** T35-95_Main_Gun ***
+ObjectTemplate.create FireArms T35-95_Main_Gun
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../T35-95/Sounds/T35-95_Cannon.ssc
+ObjectTemplate.geometry T35_barrel95_m1
+ObjectTemplate.aiTemplate T-28MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_100_500_Main
+ObjectTemplate.setPosition 0/0/3
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.52
+ObjectTemplate.projectileTemplate 95mmL41_Projectile
+ObjectTemplate.projectilePosition 0/0/1.6
+rem ObjectTemplate.setMinDev 0.75
+ObjectTemplate.magSize 48
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 325
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.3
+ObjectTemplate.roundOfFire 0.204
+ObjectTemplate.fireingForce 0
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 15
+ObjectTemplate.setFireCameraShakeAnimationState FireTank100CanonShake
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35E
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster T35E
+
+GeometryTemplate.create StandardMesh T35E_tow76_m1
+GeometryTemplate.file T35E_tow76_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35E_tow45_m1
+GeometryTemplate.file T35E_tow45_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35E_towMG_m1
+GeometryTemplate.file T35E_towMG_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35E_hull_m1
+GeometryTemplate.file T35E_hull_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35E
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = RUS
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+
+rem *** T35E ***
+ObjectTemplate.create PlayerControlObject T35E
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 60000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 530
+ObjectTemplate.maxhitpoints 530
+ObjectTemplate.material 48
+ObjectTemplate.criticalDamage 50
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 200 e_PanzDamage 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 51 e_PanzFire 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate T35
+rem -------------------------------------
+ObjectTemplate.addTemplate lodT35E
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.0/0.5/1.0 0/0/0
+rem ObjectTemplate.setPcoId 10
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E.tga"
+ObjectTemplate.setVehicleIconPos 80/37
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76,2mmKT-28.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
@@ -74942,21 +75532,789 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 
-rem *** lodT35Raseiniai ***
-ObjectTemplate.create LodObject lodT35Raseiniai
+rem *** lodT35E ***
+ObjectTemplate.create LodObject lodT35E
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate T35RaseiniaiComplex
+ObjectTemplate.addTemplate T35EComplex
 ObjectTemplate.addTemplate T35Simple
 ObjectTemplate.addTemplate T35Wreck
 rem -------------------------------------
 ObjectTemplate.lodSelector T35LodSelector
 
 
-rem *** T35RaseiniaiComplex ***
-ObjectTemplate.create Bundle T35RaseiniaiComplex
+rem *** T35EComplex ***
+ObjectTemplate.create Bundle T35EComplex
+ObjectTemplate.geometry T35E_hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/2.0
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/-2.0
+ObjectTemplate.addTemplate T35EEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret
+ObjectTemplate.setPosition 0/1.9486/1.3228
+
+ObjectTemplate.addTemplate T35E_45tow_PCO3
+ObjectTemplate.setPosition 0.3604/1.3/2.965
+ObjectTemplate.addTemplate T35E_MGtow_PCO4
+ObjectTemplate.setPosition -0.7662/1.3/2.6357
+
+ObjectTemplate.addTemplate T35E_45tow_PCO5
+ObjectTemplate.setPosition -0.4531/1.3/-0.2434
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate T35E_MGtow_PCO6
+ObjectTemplate.setPosition 0.7359/1.3/0.0562
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+
+rem *** T35E_Turret ***
+ObjectTemplate.create RotationalBundle T35E_Turret
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower76.ssc
+ObjectTemplate.geometry T35E_tow76_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_Cannon_Base
+ObjectTemplate.setPosition 0/0.4552/0.9784
+ObjectTemplate.addTemplate T35_CoaxMG
+ObjectTemplate.setPosition 0.6178/0.3317/0.6872
+ObjectTemplate.addTemplate T35E_Director_Stabilizer
+ObjectTemplate.setPosition 0.4752/1.1/0.3982
+
+ObjectTemplate.addTemplate T35E_76towBackMG_PCO
+ObjectTemplate.setPosition 0/0.449/-1.3181
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration 65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** T35E_Director_Stabilizer ***
+ObjectTemplate.create RotationalBundle T35E_Director_Stabilizer
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate T35E_Director_PCO2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration -65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+
+
+rem *** T35E_Director_PCO2 ***
+ObjectTemplate.create PlayerControlObject T35E_Director_PCO2
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.addTemplate T35_PeriscopeX
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 11
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E.tga"
+ObjectTemplate.setVehicleIconPos 71/27
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "icon_flag_rus.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E_MGtow_PCO ***
+ObjectTemplate.create PlayerControlObject T35E_76towBackMG_PCO
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_76towBackMG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E.tga"
+ObjectTemplate.setVehicleIconPos 100/29
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E_45tow_PCO3 ***
+ObjectTemplate.create PlayerControlObject T35E_45tow_PCO3
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_45Tow_P3
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 12
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E.tga"
+ObjectTemplate.setVehicleIconPos 57/53
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E_MGtow_PCO4 ***
+ObjectTemplate.create PlayerControlObject T35E_MGtow_PCO4
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P4
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 13
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E.tga"
+ObjectTemplate.setVehicleIconPos 77/64
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E_45tow_PCO5 ***
+ObjectTemplate.create PlayerControlObject T35E_45tow_PCO5
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P5
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 14
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E.tga"
+ObjectTemplate.setVehicleIconPos 91/29
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E_MGtow_PCO6 ***
+ObjectTemplate.create PlayerControlObject T35E_MGtow_PCO6
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E.tga"
+ObjectTemplate.setVehicleIconPos 106/40
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** T35E_Turret_45 ***
+ObjectTemplate.create RotationalBundle T35E_Turret_45
+ObjectTemplate.networkableInfo T35TowXInfo
+ObjectTemplate.geometry T35E_tow45_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower45.ssc
+rem ----------------------------------
+ObjectTemplate.addTemplate T35_Cannon_Base45
+ObjectTemplate.setPosition 0/0.3329/0.5804
+rem ----------------------------------
+ObjectTemplate.setMinRotation -55/0/0
+ObjectTemplate.setMaxRotation 130/0/0
+ObjectTemplate.setMaxSpeed 32/0/0
+ObjectTemplate.setAcceleration 106/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** T35E_Turret_MG ***
+ObjectTemplate.create RotationalBundle T35E_Turret_MG
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35TowerMG.ssc
+ObjectTemplate.geometry T35E_towMG_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_Gun_BaseMG
+ObjectTemplate.setPosition 0.1192/0.2928/0.5213
+rem -------------------------------------
+ObjectTemplate.setMinRotation -135/0/0
+ObjectTemplate.setMaxRotation 15/0/0
+ObjectTemplate.setMaxSpeed 32/0/0
+ObjectTemplate.setAcceleration 106/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35E
+rem sauce = Physics.con
+rem ============================================================================
+
+rem *** T35EEngine ***
+ObjectTemplate.create Engine T35EEngine
+ObjectTemplate.setNetworkableInfo T35EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/BedfordEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_L_Track
+ObjectTemplate.setPosition -0.001/0/0
+ObjectTemplate.addTemplate T35_R_Track
+ObjectTemplate.setPosition 0.001/0/0
+
+ObjectTemplate.addTemplate e_TankExhaust20Liner
+ObjectTemplate.setPosition -0.2/1.07/-2.69
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate e_TankExhaust20HalfLiner
+ObjectTemplate.setPosition 0.4/1.07/-2.69
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+rem *** 11.33 HP/t
+ObjectTemplate.setTorque 2.22
+rem *** 30 km/h
+ObjectTemplate.setDifferential 2.25
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35E-95
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = RUS
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+
+rem *** T35E-95 ***
+ObjectTemplate.create PlayerControlObject T35E-95
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 60000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 530
+ObjectTemplate.maxhitpoints 530
+ObjectTemplate.material 48
+ObjectTemplate.criticalDamage 50
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 200 e_PanzDamage 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 51 e_PanzFire 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate T35
+rem -------------------------------------
+ObjectTemplate.addTemplate lodT35E-95
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.0/0.5/1.0 0/0/0
+rem ObjectTemplate.setPcoId 10
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E-95.tga"
+ObjectTemplate.setVehicleIconPos 80/37
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_95mmF-39.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodT35E-95 ***
+ObjectTemplate.create LodObject lodT35E-95
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35E-95Complex
+ObjectTemplate.addTemplate T35Simple
+ObjectTemplate.addTemplate T35Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector T35LodSelector
+
+
+rem *** T35E-95Complex ***
+ObjectTemplate.create Bundle T35E-95Complex
+ObjectTemplate.geometry T35E_hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/2.0
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/-2.0
+ObjectTemplate.addTemplate T35EEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E-95_Turret
+ObjectTemplate.setPosition 0/1.9486/1.3228
+
+ObjectTemplate.addTemplate T35E-95_45tow_PCO3
+ObjectTemplate.setPosition 0.3604/1.3/2.965
+ObjectTemplate.addTemplate T35E-95_MGtow_PCO4
+ObjectTemplate.setPosition -0.7662/1.3/2.6357
+
+ObjectTemplate.addTemplate T35E-95_45tow_PCO5
+ObjectTemplate.setPosition -0.4531/1.3/-0.2434
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate T35E-95_MGtow_PCO6
+ObjectTemplate.setPosition 0.7359/1.3/0.0562
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+
+rem *** T35E-95_Turret ***
+ObjectTemplate.create RotationalBundle T35E-95_Turret
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower76.ssc
+ObjectTemplate.geometry T35E_tow76_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35-95_Cannon_Base
+ObjectTemplate.setPosition 0/0.4552/0.9784
+ObjectTemplate.addTemplate T35_CoaxMG
+ObjectTemplate.setPosition 0.6178/0.3317/0.6872
+ObjectTemplate.addTemplate T35E-95_Director_Stabilizer
+ObjectTemplate.setPosition 0.4752/1.1/0.3982
+
+ObjectTemplate.addTemplate T35E-95_76towBackMG_PCO
+ObjectTemplate.setPosition 0/0.449/-1.3181
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration 65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** T35E-95_Director_Stabilizer ***
+ObjectTemplate.create RotationalBundle T35E-95_Director_Stabilizer
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate T35E-95_Director_PCO2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration -65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+
+
+rem *** T35E-95_Director_PCO2 ***
+ObjectTemplate.create PlayerControlObject T35E-95_Director_PCO2
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.addTemplate T35_PeriscopeX
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 11
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E-95.tga"
+ObjectTemplate.setVehicleIconPos 71/27
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "icon_flag_rus.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E-95_MGtow_PCO ***
+ObjectTemplate.create PlayerControlObject T35E-95_76towBackMG_PCO
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_76towBackMG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E-95.tga"
+ObjectTemplate.setVehicleIconPos 100/29
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E-95_45tow_PCO3 ***
+ObjectTemplate.create PlayerControlObject T35E-95_45tow_PCO3
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_45Tow_P3
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 12
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E-95.tga"
+ObjectTemplate.setVehicleIconPos 57/53
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E-95_MGtow_PCO4 ***
+ObjectTemplate.create PlayerControlObject T35E-95_MGtow_PCO4
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P4
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 13
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E-95.tga"
+ObjectTemplate.setVehicleIconPos 77/64
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E-95_45tow_PCO5 ***
+ObjectTemplate.create PlayerControlObject T35E-95_45tow_PCO5
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P5
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 14
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E-95.tga"
+ObjectTemplate.setVehicleIconPos 91/29
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35E-95_MGtow_PCO6 ***
+ObjectTemplate.create PlayerControlObject T35E-95_MGtow_PCO6
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35E_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35E-95.tga"
+ObjectTemplate.setVehicleIconPos 106/40
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35_1939
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster T35_1939
+
+GeometryTemplate.create StandardMesh T35_1939_tow76_m1
+GeometryTemplate.file T35_39_tow76_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35_39_tow76_MG_m1
+GeometryTemplate.file T35_39_tow76_MG_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35_1939_tow45_m1
+GeometryTemplate.file T35_39_tow45_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35_1939_towMG_m1
+GeometryTemplate.file T35_39_towMG_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T35_1939_barrelMG_m1
+GeometryTemplate.file T35_39_barrelMG_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T35_1939
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = RUS
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+
+rem *** T35_1939 ***
+ObjectTemplate.create PlayerControlObject T35_1939
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 47000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 518
+ObjectTemplate.maxhitpoints 518
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 200 e_PanzDamage 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 51 e_PanzFire 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate T35
+rem -------------------------------------
+ObjectTemplate.addTemplate lodT35_1939
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.0/0.5/1.0 0/0/0
+rem ObjectTemplate.setPcoId 10
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39.tga"
+ObjectTemplate.setVehicleIconPos 80/37
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76,2mmKT-28.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodT35_1939 ***
+ObjectTemplate.create LodObject lodT35_1939
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_1939Complex
+ObjectTemplate.addTemplate T35Simple
+ObjectTemplate.addTemplate T35Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector T35LodSelector
+
+
+rem *** T35_1939Complex ***
+ObjectTemplate.create Bundle T35_1939Complex
 ObjectTemplate.geometry T35_hull_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
@@ -74968,53 +76326,54 @@ ObjectTemplate.addTemplate T35Entry
 ObjectTemplate.setPosition 0/0/-2.0
 ObjectTemplate.addTemplate T35Engine
 ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate T35Raseiniai_Turret
-ObjectTemplate.setPosition 0/1.6/1.136
-ObjectTemplate.addTemplate T35Raseiniai_45tow_PCO3
-ObjectTemplate.setPosition 0.39/0.91/2.68
-ObjectTemplate.addTemplate T35Raseiniai_MGtow_PCO4
-ObjectTemplate.setPosition -0.79/0.93/2.39
-ObjectTemplate.addTemplate T35Raseiniai_45tow_PCO5
-ObjectTemplate.setPosition -0.56/0.91/-0.37
+ObjectTemplate.addTemplate T35_1939_Turret
+ObjectTemplate.setPosition 0/1.9486/1.3228
+
+ObjectTemplate.addTemplate T35_1939_45tow_PCO3
+ObjectTemplate.setPosition 0.574/1.3/2.9644
+ObjectTemplate.addTemplate T35_1939_MGtow_PCO4
+ObjectTemplate.setPosition -0.7675/1.3/2.632
+
+ObjectTemplate.addTemplate T35_1939_45tow_PCO5
+ObjectTemplate.setPosition -0.4533/1.3/-0.2438
 ObjectTemplate.setRotation -179.999/0/0
-ObjectTemplate.addTemplate T35Raseiniai_MGtow_PCO6
-ObjectTemplate.setPosition 0.63/0.93/-0.08
+ObjectTemplate.addTemplate T35_1939_MGtow_PCO6
+ObjectTemplate.setPosition 0.7299/1.3/0.068
 ObjectTemplate.setRotation -179.999/0/0
 rem -------------------------------------
 
-
-rem *** T35Raseiniai_Turret ***
-ObjectTemplate.create RotationalBundle T35Raseiniai_Turret
+rem *** T35_1939_Turret ***
+ObjectTemplate.create RotationalBundle T35_1939_Turret
 ObjectTemplate.setNetworkableInfo T35TowXInfo
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower76.ssc
-ObjectTemplate.geometry T35_tow76_m1
+ObjectTemplate.geometry T35_1939_tow76_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate T35Raseiniai_Cannon_Base
-ObjectTemplate.setPosition -0.175/0.42/1.0
-ObjectTemplate.addTemplate T35_CoaxMG
-ObjectTemplate.setPosition 0.364/0.405/0.524
-ObjectTemplate.addTemplate T35_Director_Stabilizer
-ObjectTemplate.setPosition 0.44/1.1/0.37
+ObjectTemplate.addTemplate T35_Cannon_Base
+ObjectTemplate.setPosition 0/0.4415/0.9539
+ObjectTemplate.addTemplate T35_1939_CoaxMG
+ObjectTemplate.setPosition 0.5784/0.3708/0.7502
+ObjectTemplate.addTemplate T35_1939_Director_Stabilizer
+ObjectTemplate.setPosition 0.4752/1.1/0.3724
+
+ObjectTemplate.addTemplate T35_1939_76towBackMG_PCO
+ObjectTemplate.setPosition 0/0.449/-1.2501
+ObjectTemplate.setRotation -179.999/0/0
 rem -------------------------------------
 ObjectTemplate.setMaxSpeed 12/0/0
 ObjectTemplate.setAcceleration 65/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
-rem *** T35Raseiniai_Cannon_Base ***
-ObjectTemplate.create RotationalBundle T35Raseiniai_Cannon_Base
+rem *** T35_1939_CoaxMG ***
+ObjectTemplate.create RotationalBundle T35_1939_CoaxMG
 ObjectTemplate.setNetworkableInfo T35TowYInfo
-ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../T35/Sounds/T35GunBase76.ssc
-rem -------------------------------------
-ObjectTemplate.addTemplate lodT35Cockpit
-ObjectTemplate.addTemplate T35RaseiniaiGunBarrel
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate T35_Reticule_Camera
-ObjectTemplate.setPosition -0.3/0/0.212
+ObjectTemplate.geometry T35_39_tow76_MG_m1
+rem ------------------------------------- 
+ObjectTemplate.addTemplate Coaxial_DT1928
+ObjectTemplate.setPosition 0/-0.1158/-0.5135
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/7.5/0
@@ -75022,115 +76381,62 @@ ObjectTemplate.setMaxSpeed 0/12/0
 ObjectTemplate.setAcceleration 0/65/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
+rem *** T35_1939_Director_Stabilizer ***
+ObjectTemplate.create RotationalBundle T35_1939_Director_Stabilizer
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_1939_Director_PCO2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration -65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 
-rem *** T35Raseiniai_45tow_PCO3 ***
-ObjectTemplate.create PlayerControlObject T35Raseiniai_45tow_PCO3
+
+
+rem *** T35_1939_Director_PCO2 ***
+ObjectTemplate.create PlayerControlObject T35_1939_Director_PCO2
 ObjectTemplate.NameTagOffset 0/-1.0/0
 ObjectTemplate.setNetworkableInfo T35BodyInfo
-ObjectTemplate.aiTemplate T35_45Tow_P3
+ObjectTemplate.aiTemplate T35_MGTow_P6
 rem -------------------------------------
 ObjectTemplate.addTemplate T35Entrysmall
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate T35Raseiniai_Turret_45
-ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_PeriscopeX
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
-rem ObjectTemplate.setPcoId 12
+rem ObjectTemplate.setPcoId 11
 ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 98/95
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39.tga"
+ObjectTemplate.setVehicleIconPos 71/27
 ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setPrimaryAmmoIcon "icon_flag_rus.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
 ObjectTemplate.setHasTurretIcon 1
-ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
-ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
+ObjectTemplate.setToolTipType  TTLightTank"
 ObjectTemplate.hasRestrictedExit 1
 
 
-
-rem *** T35Raseiniai_MGtow_PCO4 ***
-ObjectTemplate.create PlayerControlObject T35Raseiniai_MGtow_PCO4
-ObjectTemplate.NameTagOffset 0/-1.0/0
-ObjectTemplate.setNetworkableInfo T35BodyInfo
-ObjectTemplate.aiTemplate T35_MGTow_P4
-rem -------------------------------------
-ObjectTemplate.addTemplate T35Entrysmall
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate T35Raseiniai_Turret_MG
-ObjectTemplate.setPosition 0/0/0
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
-rem ObjectTemplate.setPcoId 13
-ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 99/85
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setHasTurretIcon 1
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTLightTank
-ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
-ObjectTemplate.hasRestrictedExit 1
-
-
-
-rem *** T35Raseiniai_45tow_PCO5 ***
-ObjectTemplate.create PlayerControlObject T35Raseiniai_45tow_PCO5
-ObjectTemplate.NameTagOffset 0/-1.0/0
-ObjectTemplate.setNetworkableInfo T35BodyInfo
-ObjectTemplate.aiTemplate T35_MGTow_P5
-rem -------------------------------------
-ObjectTemplate.addTemplate T35Entrysmall
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate T35Raseiniai_Turret_45
-ObjectTemplate.setPosition 0/0/0
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
-rem ObjectTemplate.setPcoId 14
-ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 58/78
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setHasTurretIcon 1
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTLightTank
-ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
-ObjectTemplate.hasRestrictedExit 1
-
-
-
-rem *** T35Raseiniai_MGtow_PCO6 ***
-ObjectTemplate.create PlayerControlObject T35Raseiniai_MGtow_PCO6
+rem *** T35_1939_MGtow_PCO ***
+ObjectTemplate.create PlayerControlObject T35_1939_76towBackMG_PCO
 ObjectTemplate.NameTagOffset 0/-1.0/0
 ObjectTemplate.setNetworkableInfo T35BodyInfo
 ObjectTemplate.aiTemplate T35_MGTow_P6
 rem -------------------------------------
 ObjectTemplate.addTemplate T35Entrysmall
 ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate T35Raseiniai_Turret_MG
+ObjectTemplate.addTemplate T35_76towBackMG
 ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+ObjectTemplate.setSoldierExitLocation 0/1/-1.0 0/0/0
 rem ObjectTemplate.setPcoId 15
 ObjectTemplate.GUIIndex 47
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_T35.tga"
-ObjectTemplate.setVehicleIconPos 57/85
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39.tga"
+ObjectTemplate.setVehicleIconPos 100/29
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
@@ -75139,21 +76445,130 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 
+rem *** T35_1939_45tow_PCO3 ***
+ObjectTemplate.create PlayerControlObject T35_1939_45tow_PCO3
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_45Tow_P3
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 12
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39.tga"
+ObjectTemplate.setVehicleIconPos 57/53
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
 
-rem *** T35Raseiniai_Turret_45 ***
-ObjectTemplate.create RotationalBundle T35Raseiniai_Turret_45
+
+rem *** T35_1939_MGtow_PCO4 ***
+ObjectTemplate.create PlayerControlObject T35_1939_MGtow_PCO4
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P4
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 13
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39.tga"
+ObjectTemplate.setVehicleIconPos 77/64
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35_1939_45tow_PCO5 ***
+ObjectTemplate.create PlayerControlObject T35_1939_45tow_PCO5
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P5
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 14
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39.tga"
+ObjectTemplate.setVehicleIconPos 91/29
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35_1939_MGtow_PCO6 ***
+ObjectTemplate.create PlayerControlObject T35_1939_MGtow_PCO6
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39.tga"
+ObjectTemplate.setVehicleIconPos 106/40
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** T35_1939_Turret_45 ***
+ObjectTemplate.create RotationalBundle T35_1939_Turret_45
 ObjectTemplate.networkableInfo T35TowXInfo
-ObjectTemplate.geometry T35_tow45_m1
+ObjectTemplate.geometry T35_1939_tow45_m1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower45.ssc
 rem ----------------------------------
-ObjectTemplate.addTemplate T35Raseiniai_Cannon_Base45
-ObjectTemplate.setPosition 0.062/0.345/0.675
+ObjectTemplate.addTemplate T35_Cannon_Base45
+ObjectTemplate.setPosition -0.034/0.3752/0.565
 rem ----------------------------------
 ObjectTemplate.setMinRotation -55/0/0
 ObjectTemplate.setMaxRotation 130/0/0
@@ -75161,40 +76576,16 @@ ObjectTemplate.setMaxSpeed 32/0/0
 ObjectTemplate.setAcceleration 106/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
-rem *** T35Raseiniai_Cannon_Base45 ***
-ObjectTemplate.create RotationalBundle T35Raseiniai_Cannon_Base45
-ObjectTemplate.networkableInfo T35TowYInfo
-ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../T35/Sounds/T35GunBase45.ssc
-ObjectTemplate.geometry T35_gunbase45_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate T35Raseiniai_45GunBarrel
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate Coaxial_DT1928
-ObjectTemplate.setPosition 0.09/-0.095/-0.575
-
-ObjectTemplate.addTemplate lodT35_45Cockpit
-ObjectTemplate.setPosition -0.0005/-0.2173/-0.7
-ObjectTemplate.addTemplate T35_45Camera
-ObjectTemplate.setPosition -0.4/0.4/0.3
-rem ----------------------------------
-ObjectTemplate.setMinRotation 0/-25/0
-ObjectTemplate.setMaxRotation 0/8/0
-ObjectTemplate.setMaxSpeed 0/32/0
-ObjectTemplate.setAcceleration 0/106/0
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-
-rem *** T35Raseiniai_Turret_MG ***
-ObjectTemplate.create RotationalBundle T35Raseiniai_Turret_MG
-ObjectTemplate.setNetworkableInfo 
+rem *** T35_1939_Turret_MG ***
+ObjectTemplate.create RotationalBundle T35_1939_Turret_MG
+ObjectTemplate.setNetworkableInfo T35TowXInfo
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../T35/Sounds/T35TowerMG.ssc
-ObjectTemplate.geometry T35_towMG_m1
+ObjectTemplate.geometry T35_1939_towMG_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate T35Raseiniai_Gun_BaseMG
-ObjectTemplate.setPosition 0.083/0.212/0.507
+ObjectTemplate.addTemplate T35_1939_Gun_BaseMG
+ObjectTemplate.setPosition 0/0.2472/0.4947
 rem -------------------------------------
 ObjectTemplate.setMinRotation -135/0/0
 ObjectTemplate.setMaxRotation 15/0/0
@@ -75202,19 +76593,17 @@ ObjectTemplate.setMaxSpeed 32/0/0
 ObjectTemplate.setAcceleration 106/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
-rem *** T35Raseiniai_Gun_BaseMG ***
-ObjectTemplate.create RotationalBundle T35Raseiniai_Gun_BaseMG
+rem *** T35_1939_Gun_BaseMG ***
+ObjectTemplate.create RotationalBundle T35_1939_Gun_BaseMG
 ObjectTemplate.setNetworkableInfo T35TowYInfo
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../T35/Sounds/T35GunBaseMG.ssc
-ObjectTemplate.geometry T35Raseiniai_barrelMG_m1
 rem -------------------------------------
-ObjectTemplate.addTemplate DT1928_bowMG_Raseiniai
-ObjectTemplate.setPosition 0/0.015/-0.5
+ObjectTemplate.addTemplate DT1928_bowMG
+ObjectTemplate.setPosition 0/-0.0155/-0.5663
 ObjectTemplate.addTemplate T35Camera
-ObjectTemplate.setPosition 0/0.125/-0.075
-ObjectTemplate.addTemplate lodT35_gunnerCockpit
-ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setPosition 0/0.1/0.1
+ObjectTemplate.addTemplate lodT35_1939_gunnerCockpit
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/10/0
@@ -75222,64 +76611,334 @@ ObjectTemplate.setMaxSpeed 0/32/0
 ObjectTemplate.setAcceleration 0/106/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
+rem *** lodT35_1939_gunnerCockpit ***
+ObjectTemplate.create LodObject lodT35_1939_gunnerCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_1939_gunner_viewExternal
+ObjectTemplate.addTemplate T35_gunner_viewInternal
+ObjectTemplate.setPosition 0/0.1/0.1
+rem -------------------------------------
+ObjectTemplate.lodSelector T35gunnercockpitSelector
+
+rem *** T35_1939_gunner_viewExternal ***
+ObjectTemplate.create SimpleObject T35_1939_gunner_viewExternal
+ObjectTemplate.geometry T35_1939_barrelMG_m1
 
 rem ===== EOF =====
 rem ============================================================================
-rem folder = T35Raseiniai
-rem sauce = Weapons.con
+rem folder = T35_1939-95
+rem sauce = Objects.con
 rem ============================================================================
+rem ===== COMPRESS = RUS
 
-rem *** T35RaseiniaiGunBarrel ***
-ObjectTemplate.create FireArms T35RaseiniaiGunBarrel
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.loadSoundScript ../T35/Sounds/T35Cannon76.ssc
-ObjectTemplate.geometry T35_barrel76_m1
-ObjectTemplate.aiTemplate T35MainGun
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSW_75_500_Main
-ObjectTemplate.setPosition 0/0/0.6423
-rem -------------------------------------
-ObjectTemplate.setMinDev 1
-ObjectTemplate.projectileTemplate 76,2mmL16,5_Projectile
-ObjectTemplate.projectilePosition 0/0/1
-rem ObjectTemplate.setMinDev 1.25
-ObjectTemplate.magSize 32
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 150
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.3
-ObjectTemplate.roundOfFire 0.339
-rem ObjectTemplate.fireingForce 5
-ObjectTemplate.recoilSpeed 10
-ObjectTemplate.recoilSize 3
-ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
 
-rem *** T35Raseiniai_45 GunBarrel ***
-ObjectTemplate.create FireArms T35Raseiniai_45GunBarrel
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.loadSoundScript ../T35/Sounds/T35Cannon45.ssc
-ObjectTemplate.geometry T35_barrel45_m1
-ObjectTemplate.aiTemplate T35MainGun
+
+rem *** T35_1939-95 ***
+ObjectTemplate.create PlayerControlObject T35_1939-95
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 47000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 518
+ObjectTemplate.maxhitpoints 518
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 200 e_PanzDamage 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 51 e_PanzFire 0/0.8/-3.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate T35
 rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSW_37_750_Main
-ObjectTemplate.setPosition -0.0267/0/1.3317
+ObjectTemplate.addTemplate lodT35_1939-95
 rem -------------------------------------
-ObjectTemplate.AddRootSpeed 0
-ObjectTemplate.setMinDev 0.68
-ObjectTemplate.projectileTemplate 45mmL45_Projectile
-ObjectTemplate.setTracerTemplate 45mmL45APCR_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/1
-rem ObjectTemplate.setMinDev 0.75
-ObjectTemplate.magSize 32
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 380
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.3
-ObjectTemplate.roundOfFire 0.429
-rem ObjectTemplate.fireingForce 2
-ObjectTemplate.recoilSpeed 10
-ObjectTemplate.recoilSize 5
-ObjectTemplate.setFireCameraShakeAnimationState FireTank37CanonShake
+ObjectTemplate.setSoldierExitLocation -2.0/0.5/1.0 0/0/0
+rem ObjectTemplate.setPcoId 10
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39-95.tga"
+ObjectTemplate.setVehicleIconPos 80/37
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_95mmF-39.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_t35_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodT35_1939-95 ***
+ObjectTemplate.create LodObject lodT35_1939-95
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_1939-95Complex
+ObjectTemplate.addTemplate T35Simple
+ObjectTemplate.addTemplate T35Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector T35LodSelector
+
+
+rem *** T35_1939-95Complex ***
+ObjectTemplate.create Bundle T35_1939-95Complex
+ObjectTemplate.geometry T35_hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/2.0
+ObjectTemplate.addTemplate T35Entry
+ObjectTemplate.setPosition 0/0/-2.0
+ObjectTemplate.addTemplate T35Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939-95_Turret
+ObjectTemplate.setPosition 0/1.9486/1.3228
+
+ObjectTemplate.addTemplate T35_1939-95_45tow_PCO3
+ObjectTemplate.setPosition 0.574/1.3/2.9644
+ObjectTemplate.addTemplate T35_1939-95_MGtow_PCO4
+ObjectTemplate.setPosition -0.7675/1.3/2.632
+
+ObjectTemplate.addTemplate T35_1939-95_45tow_PCO5
+ObjectTemplate.setPosition -0.4533/1.3/-0.2438
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate T35_1939-95_MGtow_PCO6
+ObjectTemplate.setPosition 0.7299/1.3/0.068
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+
+rem *** T35_1939-95_Turret ***
+ObjectTemplate.create RotationalBundle T35_1939-95_Turret
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../T35/Sounds/T35Tower76.ssc
+ObjectTemplate.geometry T35_1939_tow76_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate T35-95_Cannon_Base
+ObjectTemplate.setPosition 0/0.4415/0.9539
+ObjectTemplate.addTemplate T35_1939_CoaxMG
+ObjectTemplate.setPosition 0.5784/0.3708/0.7502
+ObjectTemplate.addTemplate T35_1939-95_Director_Stabilizer
+ObjectTemplate.setPosition 0.4752/1.1/0.3724
+
+ObjectTemplate.addTemplate T35_1939-95_76towBackMG_PCO
+ObjectTemplate.setPosition 0/0.449/-1.2501
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration 65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** T35_1939-95_Director_Stabilizer ***
+ObjectTemplate.create RotationalBundle T35_1939-95_Director_Stabilizer
+ObjectTemplate.setNetworkableInfo T35TowXInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate T35_1939-95_Director_PCO2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration -65/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** T35_1939-95_Director_PCO2 ***
+ObjectTemplate.create PlayerControlObject T35_1939-95_Director_PCO2
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.addTemplate T35_PeriscopeX
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 11
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39-95.tga"
+ObjectTemplate.setVehicleIconPos 71/27
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "icon_flag_rus.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35_1939-95_MGtow_PCO ***
+ObjectTemplate.create PlayerControlObject T35_1939-95_76towBackMG_PCO
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_76towBackMG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39-95.tga"
+ObjectTemplate.setVehicleIconPos 100/29
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35_1939-95_45tow_PCO3 ***
+ObjectTemplate.create PlayerControlObject T35_1939-95_45tow_PCO3
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_45Tow_P3
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 12
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39-95.tga"
+ObjectTemplate.setVehicleIconPos 57/53
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35_1939-95_MGtow_PCO4 ***
+ObjectTemplate.create PlayerControlObject T35_1939-95_MGtow_PCO4
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P4
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 13
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39-95.tga"
+ObjectTemplate.setVehicleIconPos 77/64
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35_1939-95_45tow_PCO5 ***
+ObjectTemplate.create PlayerControlObject T35_1939-95_45tow_PCO5
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P5
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_45
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 14
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39-95.tga"
+ObjectTemplate.setVehicleIconPos 91/29
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_45mmM1932RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** T35_1939-95_MGtow_PCO6 ***
+ObjectTemplate.create PlayerControlObject T35_1939-95_MGtow_PCO6
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo T35BodyInfo
+ObjectTemplate.aiTemplate T35_MGTow_P6
+rem -------------------------------------
+ObjectTemplate.addTemplate T35Entrysmall
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate T35_1939_Turret_MG
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 15
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_T-35_39-95.tga"
+ObjectTemplate.setVehicleIconPos 106/40
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,62mmDT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
 
 rem ===== EOF =====
 rem ============================================================================

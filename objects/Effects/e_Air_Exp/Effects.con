@@ -38,7 +38,7 @@ ObjectTemplate.timeToLive CRD_NONE/1/1/0
 ObjectTemplate.size CRD_UNIFORM/3/3.5/0
 ObjectTemplate.gravityModifier CRD_NONE/-0.2/-0.1/0
 ObjectTemplate.sizeOverTime 0/0.539995|7/1.56001|100/1.95996
-ObjectTemplate.texture e_ExplAni06
+ObjectTemplate.texture Air_Exp1
 ObjectTemplate.initRotation CRD_UNIFORM/1/180/1
 ObjectTemplate.destBlendMode BMOne
 ObjectTemplate.rotationSpeed CRD_UNIFORM/20/40/1
