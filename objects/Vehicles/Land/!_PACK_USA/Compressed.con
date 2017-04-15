@@ -26779,10 +26779,10 @@ ObjectTemplate.setPosition 0/-0.7/-1.159
 
 ObjectTemplate.addTemplate M4A1_GunnerTraverseEngine
 ObjectTemplate.setPosition 0/-0.7/4.358
-ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.setRotation 90/0/0
 ObjectTemplate.addTemplate M4A1_GunnerTraverseEngine
 ObjectTemplate.setPosition 0/-0.7/-0.358
-ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.setRotation -90/0/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 2/0/0 0/0/0
 ObjectTemplate.GUIIndex 47
@@ -29484,6 +29484,145 @@ LodSelectorTemplate.create DistCompareSelector2 M4A1ShermanLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
 LodSelectorTemplate.addLodDistance 135
 
+
+
+rem *** M4A1Sherman_APCR ***
+ObjectTemplate.create PlayerControlObject M4A1Sherman_APCR
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1Sherman_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_shermanM4A1.tga"
+ObjectTemplate.setVehicleIconPos 70/62
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodM4A1Sherman_APCR ***
+ObjectTemplate.create LodObject lodM4A1Sherman_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanComplex_APCR
+ObjectTemplate.addTemplate M4A1ShermanSimple
+ObjectTemplate.addTemplate M4A1ShermanWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector M4A1ShermanLodSelector
+
+rem *** M4A1ShermanComplex_APCR ***
+ObjectTemplate.create Bundle M4A1ShermanComplex_APCR
+ObjectTemplate.geometry M4A1Sherman_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanEntry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate M4A1ShermanEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate M4A1ShermanEngine
+ObjectTemplate.addTemplate M4A1ShermanTower_APCR
+ObjectTemplate.setPosition 0.029/1.420/-0.2
+ObjectTemplate.addTemplate M4A1Sherman_bowMG_PC02
+ObjectTemplate.setPosition 0.524/0.491/2.046
+ObjectTemplate.addTemplate M4A1Sherman_Mudguards
+ObjectTemplate.setRandomGeometries 2
+
+ObjectTemplate.addTemplate M4A1Sherman_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.12/1.685/-1.983
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate M4A1Sherman_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.12/1.685/-1.983
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** M4A1ShermanTower_APCR ***
+ObjectTemplate.create RotationalBundle M4A1ShermanTower_APCR
+ObjectTemplate.setNetworkableInfo M4A1ShermanTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M4A1Sherman/Sounds/M4A1ShermanTower.ssc
+ObjectTemplate.geometry M4A1Sherman_Tow_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanGunBase_APCR
+ObjectTemplate.setPosition 0.006/-0.1/0.894
+
+ObjectTemplate.addTemplate M4A1ShermanBrowning_Stabilizer
+ObjectTemplate.setPosition 0.48/0.33/-0.29
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 19/0/0
+ObjectTemplate.setAcceleration 82/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** M4A1ShermanGunBase_APCR ***
+ObjectTemplate.create RotationalBundle M4A1ShermanGunBase_APCR
+ObjectTemplate.setNetworkableInfo M4A1ShermanGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M4A1Sherman/Sounds/M4A1ShermanGunBase.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanCockpit
+ObjectTemplate.addTemplate M4A1ShermanGunBarrel_APCR
+ObjectTemplate.setPosition -0.013/-0.052/0.06
+ObjectTemplate.addTemplate M4A1ShermanCamera
+ObjectTemplate.setPosition 0.35/0/0.06
+ObjectTemplate.addTemplate Coaxial_browning_Stabilized
+ObjectTemplate.setPosition -0.35/-0.1/-0.85
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/19/0
+ObjectTemplate.setAcceleration 0/82/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = M4A1Sherman
@@ -29693,6 +29832,33 @@ ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 3
 ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
 
+rem *** M4A1ShermanGunBarrel_APCR ***
+ObjectTemplate.create FireArms M4A1ShermanGunBarrel_APCR
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../M4A1Sherman/Sounds/M4A1ShermanCannon.ssc
+ObjectTemplate.geometry M4A1Sherman_Canon_M1
+ObjectTemplate.aiTemplate M4A1ShermanMainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_75_500_Main
+ObjectTemplate.setPosition 0/0/1.891
+rem -------------------------------------
+ObjectTemplate.AddRootSpeed 0
+ObjectTemplate.setMinDev 0.6
+ObjectTemplate.projectileTemplate 75mmL37,5_Projectile
+ObjectTemplate.setTracerTemplate 75mmL37,5APCR_Projectile CRD_UNIFORM/1/6/0
+ObjectTemplate.projectilePosition 0/0/1
+rem ObjectTemplate.setMinDev 0.75
+ObjectTemplate.magSize 97
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 310
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.3
+ObjectTemplate.roundOfFire 0.282
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = M4A1ShermanBag
@@ -29866,7 +30032,10 @@ run bf1942/game/is_coop.con
 console.useRelativePaths 1
 
 
-rem *** M4A1Sherman Sandbags***
+rem *** M4A1ShermanBag
+rem *** M4A1ShermanBag_APCR
+
+rem *** M4A1ShermanBag ***
 ObjectTemplate.create PlayerControlObject M4A1ShermanBag
 ObjectTemplate.NameTagOffset 0/-0.3/0
 ObjectTemplate.setNetworkableInfo M4A1ShermanBagBodyInfo
@@ -30226,6 +30395,146 @@ LodSelectorTemplate.create DistCompareSelector2 M4A1ShermanBagLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
 LodSelectorTemplate.addLodDistance 135
 
+
+
+rem *** M4A1ShermanBag_APCR ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanBag_APCR
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBagBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1ShermanBag
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanBag_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_shermanM4A1Bag.tga"
+ObjectTemplate.setVehicleIconPos 70/62
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodM4A1ShermanBag_APCR ***
+ObjectTemplate.create LodObject lodM4A1ShermanBag_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanBagComplex_APCR
+ObjectTemplate.addTemplate M4A1ShermanBagSimple
+ObjectTemplate.addTemplate M4A1ShermanBagWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector M4A1ShermanBagLodSelector
+
+rem *** M4A1ShermanBagComplex_APCR ***
+ObjectTemplate.create Bundle M4A1ShermanBagComplex_APCR
+ObjectTemplate.geometry M4A1ShermanBag_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanBagEntry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate M4A1ShermanBagEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate M4A1ShermanBagEngine
+ObjectTemplate.addTemplate M4A1ShermanBagTower_APCR
+ObjectTemplate.setPosition 0.029/1.420/-0.2
+ObjectTemplate.addTemplate M4A1ShermanBag_bowMG_PC02
+ObjectTemplate.setPosition 0.524/0.491/2.046
+ObjectTemplate.addTemplate M4A1ShermanBag_Mudguards
+ObjectTemplate.setRandomGeometries 2
+
+ObjectTemplate.addTemplate M4A1ShermanBag_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.12/1.685/-1.983
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate M4A1ShermanBag_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.12/1.685/-1.983
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** M4A1ShermanBagTower_APCR ***
+ObjectTemplate.create RotationalBundle M4A1ShermanBagTower_APCR
+ObjectTemplate.setNetworkableInfo M4A1ShermanBagTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M4A1ShermanBag/Sounds/M4A1ShermanTower.ssc
+ObjectTemplate.geometry M4A1ShermanBag_Tow_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanBagGunBase_APCR
+ObjectTemplate.setPosition 0.006/-0.1/0.894
+
+ObjectTemplate.addTemplate M4A1ShermanBagBrowning_Stabilizer
+ObjectTemplate.setPosition 0.528/0.3528/-0.565
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 19/0/0
+ObjectTemplate.setAcceleration 82/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** M4A1ShermanBagGunBase_APCR ***
+ObjectTemplate.create RotationalBundle M4A1ShermanBagGunBase_APCR
+ObjectTemplate.setNetworkableInfo M4A1ShermanBagGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M4A1ShermanBag/Sounds/M4A1ShermanGunBase.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanBagCockpit
+ObjectTemplate.addTemplate M4A1ShermanGunBarrel_APCR
+ObjectTemplate.setPosition -0.013/-0.052/0.06
+ObjectTemplate.addTemplate M4A1ShermanBagCamera
+ObjectTemplate.setPosition 0.35/0/0.06
+ObjectTemplate.addTemplate Coaxial_browning_Stabilized
+ObjectTemplate.setPosition -0.35/-0.1/-0.85
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/19/0
+ObjectTemplate.setAcceleration 0/82/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = M4A1ShermanBag
@@ -30279,6 +30588,9 @@ Var v_is_coop
 console.useRelativePaths 0
 run bf1942/game/is_coop.con
 console.useRelativePaths 1
+
+rem *** M4A1ShermanBagTow
+rem *** M4A1ShermanBagTow_APCR
 
 rem *** M4A1ShermanBagTow ***
 ObjectTemplate.create PlayerControlObject M4A1ShermanBagTow
@@ -30500,6 +30812,125 @@ ObjectTemplate.setVehicleType  VTHeavyTank
 ObjectTemplate.setToolTipType  TTHeavyTank
 
 
+
+rem *** M4A1ShermanBagTow_APCR ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanBagTow_APCR
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBagBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1ShermanBag
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanBagTow_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_shermanM4A1BagTow.tga"
+ObjectTemplate.setVehicleIconPos 70/62
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodM4A1ShermanBagTow_APCR ***
+ObjectTemplate.create LodObject lodM4A1ShermanBagTow_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanBagTowComplex_APCR
+ObjectTemplate.addTemplate M4A1ShermanBagSimple
+ObjectTemplate.addTemplate M4A1ShermanBagWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector M4A1ShermanBagLodSelector
+
+rem *** M4A1ShermanBagTowComplex_APCR ***
+ObjectTemplate.create Bundle M4A1ShermanBagTowComplex_APCR
+ObjectTemplate.geometry M4A1ShermanBag_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanBagEntry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate M4A1ShermanBagEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate M4A1ShermanBagEngine
+ObjectTemplate.addTemplate M4A1ShermanBagTowTower_APCR
+ObjectTemplate.setPosition 0.029/1.420/-0.2
+ObjectTemplate.addTemplate M4A1ShermanBagTow_bowMG_PC02
+ObjectTemplate.setPosition 0.524/0.491/2.046
+ObjectTemplate.addTemplate M4A1ShermanBag_Mudguards
+ObjectTemplate.setRandomGeometries 2
+
+ObjectTemplate.addTemplate M4A1ShermanBagTow_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.12/1.685/-1.983
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate M4A1ShermanBagTow_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.12/1.685/-1.983
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** M4A1ShermanBagTowTower_APCR ***
+ObjectTemplate.create RotationalBundle M4A1ShermanBagTowTower_APCR
+ObjectTemplate.setNetworkableInfo M4A1ShermanBagTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M4A1ShermanBag/Sounds/M4A1ShermanTower.ssc
+ObjectTemplate.geometry M4A1ShermanBagTow_Tow_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanBagGunBase_APCR
+ObjectTemplate.setPosition 0.006/-0.1/0.894
+
+ObjectTemplate.addTemplate M4A1ShermanBagTowBrowning_Stabilizer
+ObjectTemplate.setPosition 0.48/0.33/-0.29
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 19/0/0
+ObjectTemplate.setAcceleration 82/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = M4A1ShermanDDay
@@ -30513,6 +30944,8 @@ console.useRelativePaths 0
 run bf1942/game/is_coop.con
 console.useRelativePaths 1
 
+rem *** M4A1ShermanDDay
+rem *** M4A1ShermanDDay_APCR
 
 rem *** M4A1ShermanDDay ***
 ObjectTemplate.create PlayerControlObject M4A1ShermanDDay
@@ -30761,6 +31194,152 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTHeavyTank
 ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+
+rem *** M4A1ShermanDDay_APCR ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodM4A1ShermanDDay_APCR ***
+ObjectTemplate.create LodObject lodM4A1ShermanDDay_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanDDayComplex_APCR
+ObjectTemplate.addTemplate M4A1ShermanSimple
+ObjectTemplate.addTemplate M4A1ShermanWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector M4A1ShermanLodSelector
+
+rem *** M4A1ShermanDDayComplex_APCR ***
+ObjectTemplate.create Bundle M4A1ShermanDDayComplex_APCR
+ObjectTemplate.geometry M4A1ShermanDDay_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanDDay_Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate M4A1ShermanDDay_Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate M4A1ShermanDDayEngine
+ObjectTemplate.addTemplate M4A1ShermanDDayTower_APCR
+ObjectTemplate.setPosition 0.029/1.420/-0.2
+ObjectTemplate.addTemplate M4A1ShermanDDay_bowMG_PC02
+ObjectTemplate.setPosition 0.524/0.491/2.046
+
+ObjectTemplate.addTemplate M4A1ShermanDDayWaterEngine
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDayRudder_Stern
+ObjectTemplate.setPosition 0/-1/2.5
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate M4A1ShermanDDayRudder_Aft
+ObjectTemplate.setPosition 0/-1/-2.5
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate M4A1ShermanDDay_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.12/1.685/-1.983
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate M4A1ShermanDDay_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.12/1.685/-1.983
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** M4A1ShermanTower_APCR ***
+ObjectTemplate.create RotationalBundle M4A1ShermanDDayTower_APCR
+ObjectTemplate.setNetworkableInfo M4A1ShermanTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M4A1Sherman/Sounds/M4A1ShermanTower.ssc
+ObjectTemplate.geometry M4A1Sherman_Tow_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A1ShermanGunBase_APCR
+ObjectTemplate.setPosition 0.006/-0.1/0.894
+
+ObjectTemplate.addTemplate M4A1ShermanDDayBrowning_Stabilizer
+ObjectTemplate.setPosition 0.48/0.33/-0.29
+rem -------------------------------------
+ObjectTemplate.setMinRotation -135/0/0
+ObjectTemplate.setMaxRotation 135/0/0
+ObjectTemplate.setMaxSpeed 19/0/0
+ObjectTemplate.setAcceleration 82/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 rem ===== EOF =====
 rem ============================================================================
@@ -31892,6 +32471,923 @@ ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 1
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = M4A1ShermanDDay_APCR_SP
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = USA
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+rem *** M4A1ShermanDDay_APCR_SP66
+rem *** M4A1ShermanDDay_APCR_SP67
+rem *** M4A1ShermanDDay_APCR_SP68
+rem *** M4A1ShermanDDay_APCR_SP69
+rem *** M4A1ShermanDDay_APCR_SP72
+
+rem *** M4A1ShermanDDay_APCR_SP73
+rem *** M4A1ShermanDDay_APCR_SP74
+rem *** M4A1ShermanDDay_APCR_SP79
+rem *** M4A1ShermanDDay_APCR_SP80
+rem *** M4A1ShermanDDay_APCR_SP81
+
+rem *** M4A1ShermanDDay_APCR_SP84
+
+rem *** M4A1ShermanDDay_APCR_SP66 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP66
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn66
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP67 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP67
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn67
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP68 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP68
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn68
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP69 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP69
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn69
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP72 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP72
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn72
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP73 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP73
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn73
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP74 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP74
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn74
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP79 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP79
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn79
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP80 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP80
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn80
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP81 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP81
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn81
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** M4A1ShermanDDay_APCR_SP84 ***
+ObjectTemplate.create PlayerControlObject M4A1ShermanDDay_APCR_SP84
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo M4A1ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate M4A1Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM4A1ShermanDDay_APCR
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/3
+
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition -1/0.3/-3
+ObjectTemplate.addTemplate M4A1ShermanDDayFloater
+ObjectTemplate.setPosition 1/0.3/-3
+
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition 1/-1/-3
+ObjectTemplate.addTemplate e_WaterBackFoam_2
+ObjectTemplate.setPosition -1/-1/-3
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/-1/2.5
+
+ObjectTemplate.addTemplate M4A1ShermanDDaySoldierSpawn84
+ObjectTemplate.setPosition 0/1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.8 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m4a1dday.tga"
+ObjectTemplate.setVehicleIconPos 63/64
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
 
 rem ===== EOF =====
 rem ============================================================================
@@ -46472,6 +47968,8 @@ console.useRelativePaths 0
 run bf1942/game/is_coop.con
 console.useRelativePaths 1
 
+rem *** Sherman
+rem *** Sherman_APCR
 
 rem *** Sherman ***
 ObjectTemplate.create PlayerControlObject Sherman
@@ -47058,6 +48556,150 @@ LodSelectorTemplate.create DistCompareSelector2 ShermanLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
 LodSelectorTemplate.addLodDistance 135
 
+
+
+rem *** Sherman_APCR ***
+ObjectTemplate.create PlayerControlObject Sherman_APCR
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSherman_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_sherman.tga"
+ObjectTemplate.setVehicleIconPos 52/77
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodSherman_APCR ***
+ObjectTemplate.create LodObject lodSherman_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ShermanComplex_APCR
+ObjectTemplate.addTemplate ShermanSimple
+ObjectTemplate.addTemplate ShermanWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ShermanLodSelector
+
+rem *** ShermanComplex_APCR ***
+ObjectTemplate.create Bundle ShermanComplex_APCR
+ObjectTemplate.geometry Sherman_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate shermanEntry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate shermanEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate ShermanEngine
+ObjectTemplate.addTemplate ShermanTower_APCR
+ObjectTemplate.setPosition 0/-0.8/0
+ObjectTemplate.addTemplate Sherman_Hull_Hatch
+ObjectTemplate.setPosition -0.819/0.95/1.22
+ObjectTemplate.addTemplate Sherman_bowMG_PC02
+ObjectTemplate.setPosition 0.299/0.480/2.195
+
+ObjectTemplate.addTemplate e_TankExhaust20Liner
+ObjectTemplate.setPosition -0.4/0.26/-2.84
+ObjectTemplate.setRotation 0/-135/0
+ObjectTemplate.addTemplate e_TankExhaust20Liner
+ObjectTemplate.setPosition 0.4/0.26/-2.84
+ObjectTemplate.setRotation 0/-135/0
+
+ObjectTemplate.addTemplate Sherman_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.92/1.42/-1.98
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Sherman_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.92/1.42/-1.98
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** ShermanTower_APCR ***
+ObjectTemplate.create RotationalBundle ShermanTower_APCR
+ObjectTemplate.setNetworkableInfo ShermanTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Sherman/Sounds/ShermanTower.ssc
+ObjectTemplate.geometry Sherman_Tow_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ShermanGunBase_APCR
+ObjectTemplate.setPosition 0/1.95/0.77
+ObjectTemplate.addTemplate Sherman_MGstabilizer
+ObjectTemplate.setPosition 0.472/2.482/-0.228
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 19/0/0
+ObjectTemplate.setAcceleration 82/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** ShermanGunBase_APCR ***
+ObjectTemplate.create RotationalBundle ShermanGunBase_APCR
+ObjectTemplate.setNetworkableInfo ShermanGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Sherman/Sounds/ShermanGunBase.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodShermanCockpit
+ObjectTemplate.addTemplate ShermanGunBarrel_APCR
+ObjectTemplate.addTemplate ShermanCamera
+ObjectTemplate.setPosition -0.304/0/0.06
+ObjectTemplate.addTemplate Coaxial_browning_Stabilized
+ObjectTemplate.setPosition 0.31/0/-0.85
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/19/0
+ObjectTemplate.setAcceleration 0/82/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Sherman
@@ -47195,6 +48837,34 @@ ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 3
 ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+
+rem *** ShermanGunBarrel_APCR ***
+ObjectTemplate.create FireArms ShermanGunBarrel_APCR
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../Sherman/Sounds/ShermanCannon.ssc
+ObjectTemplate.geometry Sherman_Canon1_M1
+ObjectTemplate.aiTemplate ShermanMainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_75_500_Main
+ObjectTemplate.setPosition 0/0/1.6653
+rem -------------------------------------
+ObjectTemplate.AddRootSpeed 0
+ObjectTemplate.setMinDev 0.6
+ObjectTemplate.projectileTemplate 75mmL37,5_Projectile
+ObjectTemplate.setTracerTemplate 75mmL37,5APCR_Projectile CRD_UNIFORM/1/6/0
+ObjectTemplate.projectilePosition 0/0/1
+rem ObjectTemplate.setMinDev 0.75
+ObjectTemplate.magSize 97
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 310
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.3
+ObjectTemplate.roundOfFire 0.282
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+
 
 rem ===== EOF =====
 rem ============================================================================
@@ -49535,6 +51205,9 @@ console.useRelativePaths 0
 run bf1942/game/is_coop.con
 console.useRelativePaths 1
 
+rem *** Sherman_USMC
+rem *** Sherman_USMC_APCR
+
 rem *** Sherman_USMC ***
 ObjectTemplate.create PlayerControlObject Sherman_USMC
 ObjectTemplate.NameTagOffset 0/-0.3/0
@@ -49658,6 +51331,138 @@ rem -------------------------------------
 ObjectTemplate.addTemplate m4a3sherman_towside
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ShermanGunBase
+ObjectTemplate.setPosition 0/1.95/0.77
+ObjectTemplate.addTemplate Sherman_MGstabilizer
+ObjectTemplate.setPosition 0.472/2.482/-0.228
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 18/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+
+rem *** Sherman_USMC_APCR ***
+ObjectTemplate.create PlayerControlObject Sherman_USMC_APCR
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo ShermanBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 34000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 119
+ObjectTemplate.maxhitpoints 119
+ObjectTemplate.material 38
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate Sherman
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSherman_USMC_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_sherman.tga"
+ObjectTemplate.setVehicleIconPos 52/77
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmM3StblzdRndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,62mmM1919A4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodSherman_USMC_APCR ***
+ObjectTemplate.create LodObject lodSherman_USMC_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Sherman_USMC_Complex_APCR
+ObjectTemplate.addTemplate ShermanSimple
+ObjectTemplate.addTemplate ShermanWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector ShermanLodSelector
+
+rem *** Sherman_USMC_Complex_APCR ***
+ObjectTemplate.create Bundle Sherman_USMC_Complex_APCR
+ObjectTemplate.geometry Sherman_USMC_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M4A3_woodside
+ObjectTemplate.setRandomGeometries 16
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate M4A3Shermankit
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate shermanEntry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate shermanEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate ShermanEngine
+ObjectTemplate.addTemplate Sherman_USMC_Tower_APCR
+ObjectTemplate.setPosition 0/-0.8/0
+ObjectTemplate.addTemplate Sherman_Hull_Hatch
+ObjectTemplate.setPosition -0.819/0.95/1.22
+ObjectTemplate.addTemplate Sherman_bowMG_PC02
+ObjectTemplate.setPosition 0.299/0.480/2.195
+
+ObjectTemplate.addTemplate e_TankExhaust20Liner
+ObjectTemplate.setPosition -0.4/0.26/-2.84
+ObjectTemplate.setRotation 0/-135/0
+ObjectTemplate.addTemplate e_TankExhaust20Liner
+ObjectTemplate.setPosition 0.4/0.26/-2.84
+ObjectTemplate.setRotation 0/-135/0
+
+ObjectTemplate.addTemplate Sherman_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.92/1.42/-1.98
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Sherman_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.92/1.42/-1.98
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** Sherman_USMC_Tower_APCR ***
+ObjectTemplate.create RotationalBundle Sherman_USMC_Tower_APCR
+ObjectTemplate.setNetworkableInfo ShermanTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Sherman/Sounds/ShermanTower.ssc
+ObjectTemplate.geometry Sherman_Tow_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate m4a3sherman_towside
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ShermanGunBase_APCR
 ObjectTemplate.setPosition 0/1.95/0.77
 ObjectTemplate.addTemplate Sherman_MGstabilizer
 ObjectTemplate.setPosition 0.472/2.482/-0.228
@@ -59443,7 +61248,9 @@ if v_is_coop == True
 else
 	ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
-ObjectTemplate.explosionForceMod 13
+rem 0.61mod
+ObjectTemplate.explosionForceMod 0
+rem ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileUpSideDown 10
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 70 e_PanzDamage 0/1.16/-2.5
@@ -59507,7 +61314,9 @@ if v_is_coop == True
 else
 	ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
-ObjectTemplate.explosionForceMod 13
+rem 0.61mod
+ObjectTemplate.explosionForceMod 0
+rem ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileUpSideDown 10
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 70 e_PanzDamage 0/1.16/-2.5
@@ -60254,7 +62063,9 @@ if v_is_coop == True
 else
 	ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
-ObjectTemplate.explosionForceMod 13
+rem 0.61mod
+ObjectTemplate.explosionForceMod 0
+rem ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileUpSideDown 10
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 70 e_PanzDamage 0/1.16/-2.5
@@ -60318,7 +62129,9 @@ if v_is_coop == True
 else
 	ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
-ObjectTemplate.explosionForceMod 13
+rem 0.61mod
+ObjectTemplate.explosionForceMod 0
+rem ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileUpSideDown 10
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 70 e_PanzDamage 0/1.16/-2.5
@@ -60739,7 +62552,8 @@ rem *** T95GMC_Gunbarrel_TracGunBarrel ***
 ObjectTemplate.create FireArms T95GMC_Gunbarrel_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty10,5cmL65AProjectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+rem ObjectTemplate.projectileTemplate Arty10,5cmL65AProjectile_Tracer
 ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -61881,6 +63695,402 @@ ObjectTemplate.reloadtime 1
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.AmmoType	6
 ObjectTemplate.velocity 0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Willy345
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = USA
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+
+rem *** Willy345 ***
+ObjectTemplate.create PlayerControlObject Willy345
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo WillyFHBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 5
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 2500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 29
+ObjectTemplate.criticalDamage 5
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 30 e_willyDamage 0/1.7/0
+ObjectTemplate.addArmorEffect 5 e_willyFire 0/0.5/0.8
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.timetoliveafterdeath 15
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.aiTemplate WillyFH
+rem -------------------------------------
+ObjectTemplate.addTemplate lodWilly345
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
+ObjectTemplate.GUIIndex 26
+ObjectTemplate.submarineData 1 0.03 10.0 1.1 1.2 0.5 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Willy.tga"
+ObjectTemplate.setVehicleIconPos 40/79
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodWilly345 ***
+ObjectTemplate.create LodObject lodWilly345
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Willy345Complex
+ObjectTemplate.addTemplate WillyFHSimple
+ObjectTemplate.addTemplate WillyFHWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector WillyFHLodSelector
+
+
+rem *** Willy345Complex ***
+ObjectTemplate.create Bundle Willy345Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodWillyFHCockpit
+rem ObjectTemplate.setPosition 0/0.6/-0.999
+ObjectTemplate.addTemplate WillyFHCamera
+ObjectTemplate.setPosition -0.38/0.95/-1.25
+ObjectTemplate.addTemplate WillyFHSeat
+ObjectTemplate.setPosition -0.399/0.6/-0.75
+ObjectTemplate.addTemplate WillyFHEntry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate WillyFHEntry
+ObjectTemplate.setPosition 0/0/-1
+
+ObjectTemplate.addTemplate Willy345GunnerPCO
+ObjectTemplate.setPosition 0/1.5/-1.4
+
+ObjectTemplate.addTemplate Willy345PassengerPCO1
+ObjectTemplate.setPosition 0/0.35/-0.25
+
+ObjectTemplate.addTemplate WillyFHEngine
+ObjectTemplate.setPosition 0/0.35/-0.25
+ObjectTemplate.addTemplate WillyFHSteeringDummy
+ObjectTemplate.setPosition -0.399/0.35/0.15
+ObjectTemplate.setRotation 0/34/0
+ObjectTemplate.addTemplate WillyHorn
+rem -------------------------------------
+
+rem *** Willy345PassengerPCO1 ***
+ObjectTemplate.create PlayerControlObject Willy345PassengerPCO1
+ObjectTemplate.setNetworkableInfo WillyFHBodyInfo
+ObjectTemplate.aiTemplate WillyFHPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate WillyFHEntry
+ObjectTemplate.setPosition 0/-0.35/1.25
+ObjectTemplate.addTemplate WillyFHEntry
+ObjectTemplate.setPosition 0/-0.35/-0.75
+ObjectTemplate.addTemplate WillyFHCamera
+ObjectTemplate.setPosition 0.3/0.6/-0.999
+ObjectTemplate.addTemplate WillyFHPassengerSeat
+ObjectTemplate.setPosition 0.3/0.25/-0.499
+
+ObjectTemplate.addTemplate Willy345_KitGunBarrel
+ObjectTemplate.setPosition 0.6/0/-0.5
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0/-0.8 0/0/0
+rem ObjectTemplate.hasRestrictedExit 1
+rem ObjectTemplate.altSoldierExitPosition 5.5/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 21/84
+rem ObjectTemplate.setVehicleIconPos 20/72
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Weapon/Icon_RCL345_HEAT.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+
+rem *** Willy345GunnerPCO ***
+ObjectTemplate.create PlayerControlObject Willy345GunnerPCO
+ObjectTemplate.networkableInfo SASWillyBodyInfo
+ObjectTemplate.aiTemplate SASWillyMG
+ObjectTemplate.hasRestrictedExit 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Willy345GunnerX
+ObjectTemplate.setPosition 0/-0.17/0
+ObjectTemplate.addTemplate SASWillyMGEntry
+ObjectTemplate.setPosition 0/0/-1
+rem -------------------------------------
+Objecttemplate.GUIIndex 123
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 20/72
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "ammo/icon_345RCL_HESH.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setHasTurretIcon 1
+rem ---------------- Scope ---------------------------
+ObjectTemplate.vehicleFov 0.3733
+rem ObjectTemplate.vehicleFov 0.395
+rem --------------------------------------------------
+
+rem *** Willy345GunnerX ***
+ObjectTemplate.create RotationalBundle Willy345GunnerX
+ObjectTemplate.networkableInfo SASWillyBodyInfo
+ObjectTemplate.geometry tripod_stick_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate Willy345Gunner_Hide
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Willy345GunnerSeat
+ObjectTemplate.setPosition -0.2/0/-0.1
+rem ObjectTemplate.setPosition -0.2/0/-0.3
+rem ObjectTemplate.setPosition -0.3/-0.3/-0.3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Willy345GunnerSeat ***
+ObjectTemplate.create SeatObject Willy345GunnerSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.SeatAnimationLowerBody Lb_VehicleHideCrouchToSquatGunner
+rem ObjectTemplate.SeatAnimationLowerBody Lb_VehicleHideStandToSquatGunner
+
+rem *** Willy345Gunner_Hide ***
+ObjectTemplate.create RotationalBundle Willy345Gunner_Hide
+ObjectTemplate.setNetworkableInfo WillyFHTurretInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate Willy345GunnerY
+ObjectTemplate.setPosition 0/0.13/0
+ObjectTemplate.setRotation 180/-35/0
+rem ----------------------------------
+ObjectTemplate.setMaxRotation 0/45/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/20/0
+ObjectTemplate.setAcceleration 0/-100/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Willy345GunnerY ***
+ObjectTemplate.create RotationalBundle Willy345GunnerY
+ObjectTemplate.networkableInfo WillyFHTurretInfo
+ObjectTemplate.geometry StuartM3A1Browning30_Holder
+rem -------------------------------------
+ObjectTemplate.addTemplate Willy345GunnerGunBundle
+ObjectTemplate.setPosition 0/-0.06/0.4
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/55/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Willy345GunnerGunBundle ***
+ObjectTemplate.create Bundle Willy345GunnerGunBundle
+rem -------------------------------------
+ObjectTemplate.addTemplate lodWilly345_GunVisible
+
+ObjectTemplate.addTemplate Willy345_FireArms
+ObjectTemplate.setRotation 0/1.138/0
+ObjectTemplate.addTemplate Willy345GunnerCamera
+ObjectTemplate.setPosition -0.0799/0.2286/-0.4884
+ObjectTemplate.setRotation 0/1.138/0
+
+ObjectTemplate.addTemplate Willy345Gunner_attachRightHand
+ObjectTemplate.setPosition 0.0363/0.003/-0.0523
+ObjectTemplate.addTemplate Willy345Gunner_attachLeftHand
+ObjectTemplate.setPosition -0.0422/-0.0045/0.1624
+rem -------------------------------------
+
+
+rem *** Willy345Gunner_attachRightHand ***
+ObjectTemplate.create AnimatedBundle Willy345Gunner_attachRightHand
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0/0/0 85.888/2.019/-174.996
+
+rem *** Willy345Gunner_attachLeftHand ***
+ObjectTemplate.create AnimatedBundle Willy345Gunner_attachLeftHand
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0/0/0 -10.56/-86.728/10.29
+
+
+rem *** Willy345GunnerCamera ***
+ObjectTemplate.create Camera Willy345GunnerCamera
+
+
+rem *** lodWilly345_GunVisible ***
+ObjectTemplate.create LodObject lodWilly345_GunVisible
+ObjectTemplate.addTemplate Willy345_GunVisible_Internal
+ObjectTemplate.addTemplate Willy345_GunVisible_External
+ObjectTemplate.lodselector Willy345_GunVisibleSelector
+
+rem *** Willy345_GunVisibleSelector ***
+LodSelectorTemplate.create DistanceSelector Willy345_GunVisibleSelector
+LodSelectorTemplate.addLodDistance 2
+ 
+ObjectTemplate.create SimpleObject Willy345_GunVisible_External
+ObjectTemplate.geometry Shad_345RCL
+
+ObjectTemplate.create Bundle Willy345_GunVisible_Internal
+ObjectTemplate.geometry RCL345_main_m1
+ObjectTemplate.addTemplate RCL345_arma
+ObjectTemplate.setPosition -0.08/0.14/-0.775
+ObjectTemplate.addTemplate RCL345_armb
+ObjectTemplate.setPosition -0.058/0.14/-0.874
+ObjectTemplate.addTemplate RCL345_armc
+ObjectTemplate.setPosition 0.015/0.14/-0.881
+ObjectTemplate.addTemplate RCL345_breech
+ObjectTemplate.setPosition -0.095/0.14/-0.78
+ObjectTemplate.addTemplate RCL345_handle
+ObjectTemplate.setPosition 0/0.14/-0.835
+ObjectTemplate.setRotation 0/0/30
+ObjectTemplate.addTemplate RCL345_lock
+ObjectTemplate.setPosition 0.0606/0.175/-0.848
+ObjectTemplate.setRotation 0/0/30
+ObjectTemplate.addTemplate RCL345_addsight_m1
+
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Willy345
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** Willy345_FireArms ***
+ObjectTemplate.create FireArms Willy345_FireArms
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../../../Handweapons/345RCL/Sounds/345RCL.ssc
+ObjectTemplate.aiTemplate 6PdrATgunMainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzRCL_5000g_Back
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition -0.0561/0.032/-0.8996
+ObjectTemplate.setRotation 10/-10/0
+ObjectTemplate.addTemplate e_MuzzRCL_5000g_Back
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.0561/0.032/-0.8996
+ObjectTemplate.setRotation -10/-10/0
+ObjectTemplate.addTemplate e_MuzzRCL_5000g_Back
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition -0.0561/0.248/-0.8996
+ObjectTemplate.setRotation 10/10/0
+ObjectTemplate.addTemplate e_MuzzRCL_5000g_Back
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0.0561/0.248/-0.8996
+ObjectTemplate.setRotation -10/10/0
+
+ObjectTemplate.addTemplate e_MuzzRCL_CommonBack
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.032/-0.8996
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.25
+ObjectTemplate.projectileTemplate RCL345_HESH_Projectile
+ObjectTemplate.projectilePosition -0.0799/0.2286/1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 12
+ObjectTemplate.velocity 182.88
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 8.2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.setFireCameraShakeAnimationState FireTank37CanonShake
+
+
+rem *** Willy345_KitGunBarrel ***
+ObjectTemplate.create FireArms Willy345_KitGunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.aiTemplate 6PdrATgunMainGun
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Willy345KitProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 3
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+
+ObjectTemplate.create Projectile Willy345KitProjectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate Willy345KitDeploySpawner
+ObjectTemplate.setPosition 0/-0.225/0 
+ObjectTemplate.setRotation 180/0/0 
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3.0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 814
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+ObjectTemplate.noFFSound 1
+
+rem *** Willy345KitDeploySpawner *** 
+ObjectTemplate.create ObjectSpawner Willy345KitDeploySpawner
+ObjectTemplate.setObjectTemplate 1 3GB_AT345RCL
+ObjectTemplate.setObjectTemplate 2 3GB_AT345RCL
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.team 1 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 0
 
 rem ===== EOF =====
 rem ============================================================================
@@ -63427,11 +65637,12 @@ ObjectTemplate.addTemplate WillyFHEntry
 ObjectTemplate.setPosition 0/0/1
 ObjectTemplate.addTemplate WillyFHEntry
 ObjectTemplate.setPosition 0/0/-1
-ObjectTemplate.addTemplate WillyRRPassengerPCO1
-ObjectTemplate.setPosition 0/0.35/-0.25
 
 ObjectTemplate.addTemplate WillyRRGunnerPCO
 ObjectTemplate.setPosition 0/1.5/-1.4
+
+ObjectTemplate.addTemplate WillyRRPassengerPCO1
+ObjectTemplate.setPosition 0/0.35/-0.25
 
 ObjectTemplate.addTemplate WillyFHEngine
 ObjectTemplate.setPosition 0/0.35/-0.25

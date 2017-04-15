@@ -7470,7 +7470,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry wz1917_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder1
+rem ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder1
 ObjectTemplate.addTemplate wz1917BatteryCannon1
 ObjectTemplate.addTemplate wz1917Cannon_TracGunBarrel
 rem -------------------------------------
@@ -7487,7 +7487,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry wz1917_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder2
+rem ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder2
 ObjectTemplate.addTemplate wz1917BatteryCannon2
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -7503,7 +7503,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry wz1917_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder3
+rem ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder3
 ObjectTemplate.addTemplate wz1917BatteryCannon3
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -7519,7 +7519,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry wz1917_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder4
+rem ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder4
 ObjectTemplate.addTemplate wz1917BatteryCannon4
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -7535,7 +7535,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry wz1917_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder5
+rem ObjectTemplate.addTemplate wz1917BatteryCannon_PenetrateExploder5
 ObjectTemplate.addTemplate wz1917BatteryCannon5
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -8502,7 +8502,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_150_500_Main
 ObjectTemplate.setPosition -0.0402/0.1255/1.8377
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile_Penetrator
 ObjectTemplate.projectilePosition -0.04/0.1246/2
 ObjectTemplate.setMinDev 0.96
 ObjectTemplate.magSize 50

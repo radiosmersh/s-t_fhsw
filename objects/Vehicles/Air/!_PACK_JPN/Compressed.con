@@ -972,6 +972,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M2bCockpit
 ObjectTemplate.addTemplate A6M2bCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -1759,6 +1760,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M3Cockpit
 ObjectTemplate.addTemplate A6M3Camera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -2690,6 +2692,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M3Cockpit
 ObjectTemplate.addTemplate A6M3Camera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -3364,6 +3367,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M3aCockpit
 ObjectTemplate.addTemplate A6M3aCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -4297,6 +4301,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M3aCockpit
 ObjectTemplate.addTemplate A6M3aCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -4907,6 +4912,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M5bCockpit
 ObjectTemplate.addTemplate A6M5bCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -5744,6 +5750,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M5cCockpit
 ObjectTemplate.addTemplate A6M5cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -6181,6 +6188,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M5cCockpit
 ObjectTemplate.addTemplate A6M5cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -6309,6 +6317,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M5cCockpit
 ObjectTemplate.addTemplate A6M5cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -6436,6 +6445,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M5cCockpit
 ObjectTemplate.addTemplate A6M5cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -6557,6 +6567,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M5cCockpit
 ObjectTemplate.addTemplate A6M5cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -9747,6 +9758,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M8cCockpit
 ObjectTemplate.addTemplate A6M8cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -10185,6 +10197,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M8cCockpit
 ObjectTemplate.addTemplate A6M8cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -10309,6 +10322,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M8cCockpit
 ObjectTemplate.addTemplate A6M8cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -10433,6 +10447,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodA6M8cCockpit
 ObjectTemplate.addTemplate A6M8cCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -13260,6 +13275,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodAichiValCockpit
 ObjectTemplate.addTemplate AichiValCamera
 ObjectTemplate.setPosition 0.011/0.963/-0.5
@@ -14242,6 +14258,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodAichiValCockpit
 ObjectTemplate.addTemplate AichiValCamera
 ObjectTemplate.setPosition 0.011/0.963/-0.5
@@ -14307,6 +14324,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodAichiValCockpit
 ObjectTemplate.addTemplate AichiValCamera
 ObjectTemplate.setPosition 0.011/0.963/-0.5
@@ -15547,6 +15565,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodAichiValCockpit
 ObjectTemplate.addTemplate AichiValCamera
 ObjectTemplate.setPosition 0.011/0.963/-0.5
@@ -15748,6 +15767,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodAichival-TCockpit
 ObjectTemplate.addTemplate Aichival-TCamera
 ObjectTemplate.setPosition 0.011/0.963/-0.5
@@ -16617,11 +16637,13 @@ ObjectTemplate.lodSelector B6NLodSelector
 
 rem *** B6NComplex ***
 ObjectTemplate.create Bundle B6NComplex
-ObjectTemplate.setNetworkableInfo B6N_body_info
+rem ObjectTemplate.setNetworkableInfo B6N_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodB6NCockpit
 ObjectTemplate.addTemplate B6NCamera
 ObjectTemplate.setPosition 0/0.77/0.22
@@ -17295,7 +17317,7 @@ ObjectTemplate.setPosition 0/0/-1.8
 ObjectTemplate.setRotation 180/0/0
 
 ObjectTemplate.addTemplate AirSelfRepairer_LightBomber_Engine
-ObjectTemplate.setPosition 0/-0.2/1.8
+ObjectTemplate.setPosition 0/0/-1.8
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -3.2/0/1.5 0/0/0
 ObjectTemplate.setPcoId 1
@@ -17536,11 +17558,13 @@ ObjectTemplate.lodSelector B6NLodSelector
 
 rem *** B6N_BComplex ***
 ObjectTemplate.create Bundle B6N_BComplex
-ObjectTemplate.setNetworkableInfo B6N_body_info
+rem ObjectTemplate.setNetworkableInfo B6N_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodB6NCockpit
 
 ObjectTemplate.addTemplate B6N_B_CameraRotator
@@ -18313,11 +18337,13 @@ ObjectTemplate.lodSelector B6NLodSelector
 
 rem *** B6N_WingFoldComplex ***
 ObjectTemplate.create Bundle B6N_WingFoldComplex
-ObjectTemplate.setNetworkableInfo B6N_body_info
+rem ObjectTemplate.setNetworkableInfo B6N_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodB6NCockpit
 ObjectTemplate.addTemplate B6NCamera
 ObjectTemplate.setPosition 0/0.77/0.22
@@ -18495,11 +18521,13 @@ ObjectTemplate.lodSelector B6NLodSelector
 
 rem *** B6N_WingFoldComplex ***
 ObjectTemplate.create Bundle B6N_B_WingFoldComplex
-ObjectTemplate.setNetworkableInfo B6N_body_info
+rem ObjectTemplate.setNetworkableInfo B6N_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodB6NCockpit
 
 ObjectTemplate.addTemplate B6N_B_CameraRotator
@@ -19527,11 +19555,13 @@ ObjectTemplate.lodSelector B7A2LodSelector
 
 rem *** B7A2Complex ***
 ObjectTemplate.create Bundle B7A2Complex
-ObjectTemplate.setNetworkableInfo B7A2_body_info
+rem ObjectTemplate.setNetworkableInfo B7A2_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodB7A2Cockpit
 ObjectTemplate.addTemplate B7A2Camera
 ObjectTemplate.setPosition 0/1.375/-0.175
@@ -19965,11 +19995,13 @@ ObjectTemplate.lodSelector B7A2LodSelector
 
 rem *** B7A2_BComplex ***
 ObjectTemplate.create Bundle B7A2_BComplex
-ObjectTemplate.setNetworkableInfo B7A2_body_info
+rem ObjectTemplate.setNetworkableInfo B7A2_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodB7A2Cockpit
 ObjectTemplate.addTemplate B7A2Camera
 ObjectTemplate.setPosition 0/1.375/-0.175
@@ -20730,11 +20762,13 @@ ObjectTemplate.lodSelector B7A2LodSelector
 
 rem *** B7A2_Bx2Complex ***
 ObjectTemplate.create Bundle B7A2_Bx2Complex
-ObjectTemplate.setNetworkableInfo B7A2_body_info
+rem ObjectTemplate.setNetworkableInfo B7A2_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodB7A2Cockpit
 ObjectTemplate.addTemplate B7A2Camera
 ObjectTemplate.setPosition 0/1.375/-0.175
@@ -21449,8 +21483,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.0675
-rem ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.0675
+ObjectTemplate.drag 0.07
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -21527,11 +21561,13 @@ LodSelectorTemplate.addLodDistance 200
 
 rem *** D4Y2Complex ***
 ObjectTemplate.create Bundle D4Y2Complex
-ObjectTemplate.setNetworkableInfo D4Y2_body_info
+rem ObjectTemplate.setNetworkableInfo D4Y2_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodD4Y2Cockpit
 ObjectTemplate.addTemplate D4Y2Camera
 ObjectTemplate.setPosition 0/0.943/0.6
@@ -21851,6 +21887,9 @@ ObjectTemplate.setAcceleration 0/0/500
 ObjectTemplate.setAutomaticReset 1 
 ObjectTemplate.setInputToRoll c_PIAltFire
 
+ObjectTemplate.create SimpleObject D4Y1_bomb_hatch_R_Dummy
+ObjectTemplate.geometry D4Y1_bomb_hatch_R
+
 rem *** D4Y2RearGunControl ***
 ObjectTemplate.create PlayerControlObject D4Y2RearGunControl
 ObjectTemplate.setNetworkableInfo D4Y2_body_info
@@ -21982,8 +22021,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.0675
-rem ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.0675
+ObjectTemplate.drag 0.07
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -22048,10 +22087,12 @@ ObjectTemplate.lodSelector D4Y2LodSelector
 rem *** D4Y2Complex250 ***
 ObjectTemplate.create Bundle D4Y2Complex250
 ObjectTemplate.setNetworkableInfo D4Y2_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodD4Y2Cockpit
 ObjectTemplate.addTemplate D4Y2Camera
 ObjectTemplate.setPosition 0/0.943/0.6
@@ -22113,8 +22154,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.0675
-rem ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.0675
+ObjectTemplate.drag 0.07
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -22178,7 +22219,8 @@ ObjectTemplate.lodSelector D4Y2LodSelector
 
 rem *** D4Y2CatapultComplex ***
 ObjectTemplate.create Bundle D4Y2CatapultComplex
-ObjectTemplate.setNetworkableInfo D4Y2_body_info
+rem ObjectTemplate.setNetworkableInfo D4Y2_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -22227,7 +22269,7 @@ ObjectTemplate.addTemplate D4Y2BombHatch_Bundle
 ObjectTemplate.setPosition 0/0.3/1.3
 
 ObjectTemplate.addTemplate D4Y2Guns
-ObjectTemplate.addTemplate D4Y2BombRack250
+ObjectTemplate.addTemplate D4Y2BombRack250cat
 
 ObjectTemplate.addTemplate D4Y2RearGunControl
 ObjectTemplate.setPosition 0/0/-1.169
@@ -22645,12 +22687,48 @@ ObjectTemplate.roundOfFire 4
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.addFireArmsPosition 0/-0.5/1.0 0/0/0
+ObjectTemplate.AmmoType	7
+
+rem *** D4Y2DummyBombRack250 ***
+ObjectTemplate.create FireArms D4Y2DummyBombRack250
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate AvengerBombs
+ObjectTemplate.visibleDummyProjectileTemplate D4Y2BombDummy
+ObjectTemplate.projectileTemplate KnifeProjectile
+ObjectTemplate.projectilePosition 0/-0.8/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.autoReload 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.addFireArmsPosition 0/-0.5/1.0 0/0/0
+ObjectTemplate.AmmoType	7
+
+
+rem *** D4Y2BombRack250cat ***
+ObjectTemplate.create FireArms D4Y2BombRack250cat
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate AvengerBombs
+ObjectTemplate.projectileTemplate 250kgBomb
+ObjectTemplate.projectilePosition 0/-0.8/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.01
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition 0/-0.5/1.0 0/0/0
 rem ObjectTemplate.AmmoType	7
 rem Catapult AmmoType!!!
 ObjectTemplate.AmmoType	14
 
-rem *** D4Y2DummyBombRack250 ***
-ObjectTemplate.create FireArms D4Y2DummyBombRack250
+rem *** D4Y2DummyBombRack250cat ***
+ObjectTemplate.create FireArms D4Y2DummyBombRack250cat
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
 ObjectTemplate.aiTemplate AvengerBombs
 ObjectTemplate.visibleDummyProjectileTemplate D4Y2BombDummy
@@ -22729,8 +22807,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.0675
-rem ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.0675
+ObjectTemplate.drag 0.07
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -23323,8 +23401,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.0675
-rem ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.0675
+ObjectTemplate.drag 0.07
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -23917,8 +23995,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.0675
-rem ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.0675
+ObjectTemplate.drag 0.07
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -24511,8 +24589,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.0675
-rem ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.0675
+ObjectTemplate.drag 0.07
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -25160,7 +25238,6 @@ ObjectTemplate.setToolTipType  TTArtillery
 
 rem ********************************************************************************
 rem Common
-
 rem *** lodD4Y2CatapultDummy ***
 ObjectTemplate.create LodObject lodD4Y2CatapultDummy
 ObjectTemplate.hasMobilePhysics 1
@@ -25183,13 +25260,13 @@ rem -------------------------------------
 ObjectTemplate.addTemplate D4Y2BodyDummyRear
 ObjectTemplate.addTemplate D4Y2PropellerStatic
 ObjectTemplate.setPosition 0/0.295/1.3
-ObjectTemplate.addTemplate D4Y2AilronLeft_Visible
-ObjectTemplate.addTemplate D4Y2AilronRight_Visible
-ObjectTemplate.addTemplate D4Y2Elevator_Visible
-ObjectTemplate.addTemplate D4Y2Rudder
+ObjectTemplate.addTemplate D4Y2CatapultDummy_AilronLeft_Dummy
+ObjectTemplate.addTemplate D4Y2CatapultDummy_AilronRight_Dummy
+ObjectTemplate.addTemplate D4Y2CatapultDummy_Elevator_Dummy
+ObjectTemplate.addTemplate D4Y2CatapultDummy_Rudder_Dummy
 ObjectTemplate.setPosition 0/1.0419/-4.8158
 ObjectTemplate.setRotation 0/0/90
-ObjectTemplate.addTemplate D4Y2BombHatch_Bundle
+ObjectTemplate.addTemplate D4Y2CatapultDummy_BombHatch_Bundle
 ObjectTemplate.setPosition 0/0.3/1.3
 ObjectTemplate.addTemplate D4Y2CatapultDummyEngine
 ObjectTemplate.setPosition 0/0.3/1.3
@@ -25198,9 +25275,58 @@ ObjectTemplate.setPosition 0/-0.8/0
 ObjectTemplate.setRotation 0/10/0
 rem -------------------------------------
 
+rem *** D4Y2CatapultDummyNoCOL ***
+ObjectTemplate.create Bundle D4Y2CatapultDummyNoCOL
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.geometry D4Y1_Body_Front
+rem -------------------------------------
+ObjectTemplate.addTemplate D4Y2BodyDummyRear
+ObjectTemplate.addTemplate D4Y2PropellerStatic
+ObjectTemplate.setPosition 0/0.295/1.3
+ObjectTemplate.addTemplate D4Y2CatapultDummy_AilronLeft_Dummy
+ObjectTemplate.addTemplate D4Y2CatapultDummy_AilronRight_Dummy
+ObjectTemplate.addTemplate D4Y2CatapultDummy_Elevator_Dummy
+ObjectTemplate.addTemplate D4Y2CatapultDummy_Rudder_Dummy
+ObjectTemplate.setPosition 0/1.0419/-4.8158
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate D4Y2CatapultDummy_BombHatch_Bundle
+ObjectTemplate.setPosition 0/0.3/1.3
+ObjectTemplate.addTemplate D4Y2CatapultDummyEngineStaticBundle
+ObjectTemplate.setPosition 0/0.3/1.3
+ObjectTemplate.addTemplate D4Y2CatapultDummyHolder
+ObjectTemplate.setPosition 0/-0.8/0
+ObjectTemplate.setRotation 0/10/0
+rem -------------------------------------
+
+rem *** D4Y2CatapultDummy_AilronLeft_Dummy ***
+ObjectTemplate.create SimpleObject D4Y2CatapultDummy_AilronLeft_Dummy
+ObjectTemplate.geometry D4Y1_Aileron_L
+
+rem *** D4Y2CatapultDummy_AilronRight_Dummy ***
+ObjectTemplate.create SimpleObject D4Y2CatapultDummy_AilronRight_Dummy
+ObjectTemplate.geometry D4Y1_Aileron_R
+
+rem *** D4Y2CatapultDummy_Elevator_Dummy  ***
+ObjectTemplate.create SimpleObject D4Y2CatapultDummy_Elevator_Dummy
+ObjectTemplate.geometry D4Y1_elevator
+
+rem *** D4Y2CatapultDummy_BombHatch_Bundle ***
+ObjectTemplate.create Bundle D4Y2CatapultDummy_BombHatch_Bundle
+rem -------------------------------------
+ObjectTemplate.addTemplate D4Y1_bomb_hatch_L_Dummy
+ObjectTemplate.setPosition -0.2721/-0.885/0.015
+ObjectTemplate.addTemplate D4Y1_bomb_hatch_R_Dummy
+ObjectTemplate.setPosition 0.2721/-0.885/0.015
+rem -------------------------------------
+
+rem *** D4Y2CatapultDummy_Rudder_Dummy ***
+ObjectTemplate.create SimpleObject D4Y2CatapultDummy_Rudder_Dummy
+ObjectTemplate.geometry D4Y1_rudder
+
+
 ObjectTemplate.create SimpleObject D4Y2BodyDummyRear
 ObjectTemplate.geometry D4Y1_Body_Rear
-ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasCollisionPhysics 0
 
 rem *** D4Y2CatapultDummyHolder ***
 ObjectTemplate.create SimpleObject D4Y2CatapultDummyHolder
@@ -25248,6 +25374,24 @@ ObjectTemplate.setDifferential 10.5
 ObjectTemplate.setNumberOfGears 1
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.4
+
+rem *** D4Y2CatapultDummyEngineStaticBundle ***
+ObjectTemplate.create Bundle D4Y2CatapultDummyEngineStaticBundle
+rem -------------------------------------
+ObjectTemplate.addTemplate D4Y2LandingGearLeftDummy
+ObjectTemplate.setPosition -2.225/-0.328/-0.848
+ObjectTemplate.setRotation 3/0/87.3
+ObjectTemplate.addTemplate D4Y2LandingGearRightDummy
+ObjectTemplate.setPosition 2.225/-0.328/-0.848
+ObjectTemplate.setRotation -3/0/-87.3
+
+ObjectTemplate.addTemplate D4Y2HatchLeftDummy
+ObjectTemplate.setPosition -0.68/-0.619/-0.76
+ObjectTemplate.setRotation 13/0/-1.5
+ObjectTemplate.addTemplate D4Y2HatchRightDummy
+ObjectTemplate.setPosition 0.68/-0.619/-0.76
+ObjectTemplate.setRotation -13/0/1.5
+rem -------------------------------------
 
 GeometryTemplate.create StandardMesh D4Y2Catapult_planeholder_m1
 GeometryTemplate.file YamatoCatapult_base
@@ -29056,26 +29200,21 @@ rem -------------------------------------
 ObjectTemplate.addTemplate E16A1_Engine_Visible
 ObjectTemplate.addTemplate E16A1_Canopy2
 
-ObjectTemplate.addTemplate E16A1_Flap_L
-ObjectTemplate.setPosition -3/0/-1
-ObjectTemplate.addTemplate E16A1_Flap_R
-ObjectTemplate.setPosition 3/0/-1
-
-ObjectTemplate.addTemplate E16A1_Aileron_L
+ObjectTemplate.addTemplate E16A1CatapultDummy_Aileron_L
 ObjectTemplate.setPosition -3.1602/-0.3158/-0.131
 ObjectTemplate.setRotation 9.31/0/-3.1
-ObjectTemplate.addTemplate E16A1_Aileron_R
+ObjectTemplate.addTemplate E16A1CatapultDummy_Aileron_R
 ObjectTemplate.setPosition 3.1602/-0.3158/-0.131
 ObjectTemplate.setRotation -9.31/0/3.1
 
-ObjectTemplate.addTemplate E16A1_Elevator_L
+ObjectTemplate.addTemplate E16A1CatapultDummy_Elevator_L
 ObjectTemplate.setPosition -0.1691/0.4859/-5.0736
 ObjectTemplate.setRotation -6.65/0/0
-ObjectTemplate.addTemplate E16A1_Elevator_R
+ObjectTemplate.addTemplate E16A1CatapultDummy_Elevator_R
 ObjectTemplate.setPosition 0.1691/0.4859/-5.0736
 ObjectTemplate.setRotation 6.65/0/0
 
-ObjectTemplate.addTemplate E16A1_Rudder
+ObjectTemplate.addTemplate E16A1CatapultDummy_Rudder
 ObjectTemplate.setPosition 0/0/-5.6814
 ObjectTemplate.setRotation 0/0/-89.999
 
@@ -29095,6 +29234,63 @@ ObjectTemplate.setPosition 0/0.5335/-2.5444
 ObjectTemplate.addTemplate E16A1CatapultDummyHolder
 ObjectTemplate.setPosition 0/-2.5/0
 rem -------------------------------------
+
+
+rem *** E16A1_CatapultDummyComplex_NOCOL ***
+ObjectTemplate.create Bundle E16A1_CatapultDummyComplex_NOCOL
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.geometry E16A1_dummy_Fus_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate E16A1_Engine_Visible
+ObjectTemplate.addTemplate E16A1_Canopy2
+
+ObjectTemplate.addTemplate E16A1CatapultDummy_Aileron_L
+ObjectTemplate.setPosition -3.1602/-0.3158/-0.131
+ObjectTemplate.setRotation 9.31/0/-3.1
+ObjectTemplate.addTemplate E16A1CatapultDummy_Aileron_R
+ObjectTemplate.setPosition 3.1602/-0.3158/-0.131
+ObjectTemplate.setRotation -9.31/0/3.1
+
+ObjectTemplate.addTemplate E16A1CatapultDummy_Elevator_L
+ObjectTemplate.setPosition -0.1691/0.4859/-5.0736
+ObjectTemplate.setRotation -6.65/0/0
+ObjectTemplate.addTemplate E16A1CatapultDummy_Elevator_R
+ObjectTemplate.setPosition 0.1691/0.4859/-5.0736
+ObjectTemplate.setRotation 6.65/0/0
+
+ObjectTemplate.addTemplate E16A1CatapultDummy_Rudder
+ObjectTemplate.setPosition 0/0/-5.6814
+ObjectTemplate.setRotation 0/0/-89.999
+
+ObjectTemplate.addTemplate E16A1CatapultDummyEngine
+
+ObjectTemplate.addTemplate E16A1CatapultDummyDiveBrakeBundle 
+ObjectTemplate.setPosition 0/0/3.0369
+ObjectTemplate.addTemplate E16A1_PropellerStatic
+ObjectTemplate.setPosition 0/0/3.0369
+
+ObjectTemplate.addTemplate E16A1CatapultDummy_Canopy1
+ObjectTemplate.addTemplate E16A1CatapultDummy_Canopy3
+ObjectTemplate.addTemplate E16A1CatapultDummy_Canopy4
+ObjectTemplate.addTemplate E16A1CatapultDummy_Canopy5
+ObjectTemplate.setPosition 0/0.5335/-2.5444
+
+ObjectTemplate.addTemplate E16A1CatapultDummyHolder
+ObjectTemplate.setPosition 0/-2.5/0
+rem -------------------------------------
+
+
+
+ObjectTemplate.create SimpleObject E16A1CatapultDummy_Aileron_L
+ObjectTemplate.geometry E16A1_Aileron_L_m1
+ObjectTemplate.create SimpleObject E16A1CatapultDummy_Aileron_R
+ObjectTemplate.geometry E16A1_Aileron_R_m1
+ObjectTemplate.create SimpleObject E16A1CatapultDummy_Elevator_L
+ObjectTemplate.geometry E16A1_Elevator_L_m1
+ObjectTemplate.create SimpleObject E16A1CatapultDummy_Elevator_R
+ObjectTemplate.geometry E16A1_Elevator_R_m1
+ObjectTemplate.create SimpleObject E16A1CatapultDummy_Rudder
+ObjectTemplate.geometry E16A1_Rudder_m1
 
 rem *** E16A1CatapultDummyDiveBrakeBundle  ***
 ObjectTemplate.create Bundle E16A1CatapultDummyDiveBrakeBundle 
@@ -35589,32 +35785,32 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.geometry F1M2_dummy_fus_m1
 rem -------------------------------------
-ObjectTemplate.addTemplate F1M2FlapR
+ObjectTemplate.addTemplate F1M2CatapultDummy_FlapR
 ObjectTemplate.setPosition 2.4/-0.45/-1.8
 ObjectTemplate.setRotation -5/0/3.8
-ObjectTemplate.addTemplate F1M2FlapL
+ObjectTemplate.addTemplate F1M2CatapultDummy_FlapL
 ObjectTemplate.setPosition -2.4/-0.45/-1.8
 ObjectTemplate.setRotation 5/0/-3.8
 
-ObjectTemplate.addTemplate F1M2AileronR
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronR
 ObjectTemplate.setPosition 4.4/-0.32/-1.45
 ObjectTemplate.setRotation -9.8/0/4.5
 
-ObjectTemplate.addTemplate F1M2AileronRU
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronRU
 ObjectTemplate.setPosition 4/1.5/-0.92
 ObjectTemplate.setRotation -8.5/0/5
 
-ObjectTemplate.addTemplate F1M2AileronL
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronL
 ObjectTemplate.setPosition -4.4/-0.32/-1.45
 ObjectTemplate.setRotation 9.8/0/-4.5
 
-ObjectTemplate.addTemplate F1M2AileronLU
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronLU
 ObjectTemplate.setPosition -4/1.5/-0.92
 ObjectTemplate.setRotation 8.5/0/-5
 
-ObjectTemplate.addTemplate F1M2Elevator
+ObjectTemplate.addTemplate F1M2CatapultDummy_Elevator
 ObjectTemplate.setPosition 0/0.14/-6.0
-ObjectTemplate.addTemplate F1M2Rudder
+ObjectTemplate.addTemplate F1M2CatapultDummy_Rudder
 ObjectTemplate.setPosition 0/1/-5.94
 ObjectTemplate.setRotation 0/0/-89.999
 
@@ -35627,6 +35823,77 @@ ObjectTemplate.addTemplate F1M2Floaters
 ObjectTemplate.addTemplate F1M2CatapultDummyHolder
 ObjectTemplate.setPosition 0/-2.5/-1
 rem -------------------------------------
+
+
+rem *** F1M2CatapultDummyComplex_NoCOL ***
+ObjectTemplate.create Bundle F1M2CatapultDummyComplex_NoCOL
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.geometry F1M2_dummy_fus_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate F1M2CatapultDummy_FlapR
+ObjectTemplate.setPosition 2.4/-0.45/-1.8
+ObjectTemplate.setRotation -5/0/3.8
+ObjectTemplate.addTemplate F1M2CatapultDummy_FlapL
+ObjectTemplate.setPosition -2.4/-0.45/-1.8
+ObjectTemplate.setRotation 5/0/-3.8
+
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronR
+ObjectTemplate.setPosition 4.4/-0.32/-1.45
+ObjectTemplate.setRotation -9.8/0/4.5
+
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronRU
+ObjectTemplate.setPosition 4/1.5/-0.92
+ObjectTemplate.setRotation -8.5/0/5
+
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronL
+ObjectTemplate.setPosition -4.4/-0.32/-1.45
+ObjectTemplate.setRotation 9.8/0/-4.5
+
+ObjectTemplate.addTemplate F1M2CatapultDummy_AileronLU
+ObjectTemplate.setPosition -4/1.5/-0.92
+ObjectTemplate.setRotation 8.5/0/-5
+
+ObjectTemplate.addTemplate F1M2CatapultDummy_Elevator
+ObjectTemplate.setPosition 0/0.14/-6.0
+ObjectTemplate.addTemplate F1M2CatapultDummy_Rudder
+ObjectTemplate.setPosition 0/1/-5.94
+ObjectTemplate.setRotation 0/0/-89.999
+
+ObjectTemplate.addTemplate F1M2CatapultDummyEngine
+ObjectTemplate.addTemplate F1M2PropellerStatic
+ObjectTemplate.setPosition 0/0.0278/1.8811
+
+ObjectTemplate.addTemplate F1M2Floaters
+
+ObjectTemplate.addTemplate F1M2CatapultDummyHolder
+ObjectTemplate.setPosition 0/-2.5/-1
+rem -------------------------------------
+
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_FlapR
+ObjectTemplate.geometry F1M2_right_flap_M1
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_FlapL
+ObjectTemplate.geometry F1M2_left_flap_M1
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_AileronR
+ObjectTemplate.geometry F1M2_right_Low_aileron_M1
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_AileronRU
+ObjectTemplate.geometry F1M2_right_Up_aileron_M1
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_AileronL
+ObjectTemplate.geometry F1M2_left_Low_aileron_M1
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_AileronLU
+ObjectTemplate.geometry F1M2_left_Up_aileron_M1
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_Elevator
+ObjectTemplate.geometry F1M2_elevator_M1
+
+ObjectTemplate.create SimpleObject F1M2CatapultDummy_Rudder
+ObjectTemplate.geometry F1M2_rudder_M1
+
 
 rem *** F1M2CatapultDummyHolder ***
 ObjectTemplate.create SimpleObject F1M2CatapultDummyHolder
@@ -43751,11 +44018,13 @@ ObjectTemplate.lodSelector KateLodSelector
 
 rem *** KateComplex ***
 ObjectTemplate.create Bundle KateComplex
-ObjectTemplate.setNetworkableInfo Kate_body_info
+rem ObjectTemplate.setNetworkableInfo Kate_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodKateCockpit
 ObjectTemplate.addTemplate KateCamera
 ObjectTemplate.setPosition 0/0.825/0.275
@@ -44198,11 +44467,13 @@ ObjectTemplate.lodSelector KateLodSelector
 
 rem *** Kate_bComplex ***
 ObjectTemplate.create Bundle Kate_bComplex
-ObjectTemplate.setNetworkableInfo Kate_body_info
+rem ObjectTemplate.setNetworkableInfo Kate_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodKateCockpit
 
 ObjectTemplate.addTemplate Attitude_indicator_JPN_Bundle
@@ -44399,11 +44670,13 @@ ObjectTemplate.lodSelector KateLodSelector
 
 rem *** Kate_60Complex ***
 ObjectTemplate.create Bundle Kate_60Complex
-ObjectTemplate.setNetworkableInfo Kate_body_info
+rem ObjectTemplate.setNetworkableInfo Kate_body_info
+rem Complex
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodKateCockpit
 
 ObjectTemplate.addTemplate Kate_bCamera
@@ -68261,6 +68534,21 @@ rem -------------------------------------
 ObjectTemplate.addTemplate BakaDummyProp_m1
 ObjectTemplate.addTemplate PlaneAltimeter
 ObjectTemplate.setPosition 0/0.7/3.2
+ObjectTemplate.setMinRotation -0.3/0/1
+rem ObjectTemplate.setMinRotation -0.3/0/-10
+ObjectTemplate.setMaxRotation 0.3/0/50
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 30/0/50000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 0.01
+ObjectTemplate.setDifferential 0.001
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 1000
+
+beginrem
 rem -------------------------------------
 ObjectTemplate.setMinRotation -0.3/0/80
 ObjectTemplate.setMaxRotation 0.3/0/80
@@ -68278,6 +68566,7 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 85
 ObjectTemplate.HeatIncrement 0.001
 ObjectTemplate.InverseHeatBar 1
 ObjectTemplate.setHeatBarType B
+endrem
 
 rem *** BakaDummyProp_m1 ***
 ObjectTemplate.create SimpleObject BakaDummyProp_m1
@@ -75396,6 +75685,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodZeroCockpit
 ObjectTemplate.addTemplate ZeroCamera
 ObjectTemplate.setPosition 0/0.791/-0.618
@@ -75703,6 +75993,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
 ObjectTemplate.addTemplate lodZeroCockpit
 ObjectTemplate.addTemplate ZeroCamera
 ObjectTemplate.setPosition 0/0.791/-0.618

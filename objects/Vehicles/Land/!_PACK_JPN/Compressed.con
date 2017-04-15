@@ -1,7 +1,984 @@
-rem *** S&T Changes ***
-rem towed guns put down/lift up sounds & remove 2nd SupplyDepot.ssc
-rem Type 88 Carriage.ssc relinked to HeavyAACarriage.ssc
+rem ============================================================================
+rem folder = 20mmType2
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster 20mmType2
+GeometryTemplate.create StandardMesh 20mmType2_cannon_m1
+GeometryTemplate.file 20mmType2_cannon_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
 
+GeometryTemplate.create StandardMesh 20mmType2_pedal_m1
+GeometryTemplate.file 20mmType2_pedal_m1
+geometryTemplate.cullFactor 0.15
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_base_M1
+GeometryTemplate.file 20mmType2_base_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_targeter_rod_m1
+GeometryTemplate.file 20mmType2_targeter_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_targeter_m1
+GeometryTemplate.file 20mmType2_targeter_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_lavett_m1
+GeometryTemplate.file 20mmType2_lavett_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_gun_m1
+GeometryTemplate.file 20mmType98_Gun_m1
+geometryTemplate.cullFactor 0.15
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_gun_barrel_m1
+GeometryTemplate.file 20mmType98_Barrel_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_handle01_m1
+GeometryTemplate.file 20mmType2_handle01_m1
+geometryTemplate.cullFactor 0.3
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 20mmType2_handle02_m1
+GeometryTemplate.file 20mmType2_handle02_m1
+geometryTemplate.cullFactor 0.3
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 1P_20mmType2_Gun_m1
+GeometryTemplate.file 1P_Flak38_Gun_mod_m1
+
+renderer.endGlobalCluster
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = 20mmType2
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo 20mmType2_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = 20mmType2
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = JPN
+
+rem *** 20mmType2 ***
+ObjectTemplate.create PlayerControlObject 20mmType2
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 4
+ObjectTemplate.explosionDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 33
+ObjectTemplate.addArmorEffect 35 e_AA-GunDamage 0/0.3/0
+ObjectTemplate.addArmorEffect 0 e_ScrapAAFlak38 0/1.2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.aiTemplate 20mmType2
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/ICON_20mmType2.tga"
+rem ObjectTemplate.setVehicleIconPos 
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmType2.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aa_16x16.tga"
+
+
+rem *** 20mmType2_Entry ***
+ObjectTemplate.create EntryPoint 20mmType2_Entry
+ObjectTemplate.setEntryRadius 3.2
+
+
+rem *** 20mmType2_body ***
+ObjectTemplate.create RotationalBundle 20mmType2_body
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun
+ObjectTemplate.setPosition 0/0.899/0.373
+ObjectTemplate.addTemplate lod20mmType2Shield
+ObjectTemplate.setPosition 0/0.899/0.373
+
+ObjectTemplate.addTemplate 20mmType2_Seat
+ObjectTemplate.setPosition 0.57/0.6/-0.429
+ObjectTemplate.addTemplate 20mmType2_handle1
+ObjectTemplate.setPosition 0/0.08/-0.449
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate 20mmType2_handle2
+ObjectTemplate.setPosition 0/0.815/-0.215
+ObjectTemplate.addTemplate 20mmType2_pedal
+ObjectTemplate.setPosition 0/0.393/0.423
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** lod20mmType2Shield ***
+ObjectTemplate.create LodObject lod20mmType2Shield
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2ShieldExternal
+ObjectTemplate.setPosition 0/-0.899/-0.373
+ObjectTemplate.addTemplate 20mmType2ShieldInternal
+ObjectTemplate.setPosition -0.035/0.29/0.6
+rem -------------------------------------
+ObjectTemplate.lodSelector 20mmType2ShieldSelector
+
+rem *** 20mmType2ShieldExternal ***
+ObjectTemplate.create Bundle 20mmType2ShieldExternal
+ObjectTemplate.geometry 20mmType2_lavett_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_targeter
+ObjectTemplate.setPosition 0/1.186/-0.576
+rem -------------------------------------
+
+rem *** 20mmType2ShieldInternal ***
+ObjectTemplate.create SimpleObject 20mmType2ShieldInternal
+ObjectTemplate.geometry 
+
+rem *** 20mmType2ShieldSelector ***
+LodSelectorTemplate.create DistCompareSelector 20mmType2ShieldSelector
+LodSelectorTemplate.addLodDistance 2
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** 20mmType2_gun ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 20mmType2_gun_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lod20mmType2Cockpit
+ObjectTemplate.setPosition 0.55/0.422/0.14
+ObjectTemplate.addTemplate 20mmType2_gun_barrel
+ObjectTemplate.addTemplate 20mmType2_Camera
+ObjectTemplate.setPosition 0.55/0.422/0.14
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** lod20mmType2Cockpit ***
+ObjectTemplate.create LodObject lod20mmType2Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2CockpitInternal
+ObjectTemplate.setPosition -0.585/-0.132/0.46
+ObjectTemplate.addTemplate 20mmType2CockpitExternal
+ObjectTemplate.setPosition -0.55/-0.422/-0.14
+rem -------------------------------------
+ObjectTemplate.lodSelector 20mmType2CockpitSelector
+
+rem *** 20mmType2CockpitExternal ***
+ObjectTemplate.create SimpleObject 20mmType2CockpitExternal
+ObjectTemplate.geometry 
+
+rem *** 20mmType2CockpitInternal ***
+ObjectTemplate.create SimpleObject 20mmType2CockpitInternal
+ObjectTemplate.geometry 1P_20mmType2_Gun_m1
+
+rem *** 20mmType2CockpitSelector ***
+LodSelectorTemplate.create DistanceSelector 20mmType2CockpitSelector
+LodSelectorTemplate.addLodDistance 0.00001
+LodSelectorTemplate.addLodComparison 0.001
+
+rem *** 20mmType2_gun_barrel ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun_barrel
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Gun_fire
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+
+
+rem *** 20mmType2_Camera ***
+ObjectTemplate.create Camera 20mmType2_Camera
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** 20mmType2_Seat ***
+ObjectTemplate.create SeatObject 20mmType2_Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** 20mmType2_handle1 ***
+ObjectTemplate.create RotationalBundle 20mmType2_handle1
+ObjectTemplate.geometry 20mmType2_handle02_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_handle1_grip
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/800/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookX
+
+
+rem *** 20mmType2_handle1_grip ***
+ObjectTemplate.create AnimatedBundle 20mmType2_handle1_grip
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0.2/0.0/0.0 0/0/0
+
+
+rem *** 20mmType2_handle2 ***
+ObjectTemplate.create RotationalBundle 20mmType2_handle2
+ObjectTemplate.geometry 20mmType2_handle02_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_handle2_grip
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/800/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** 20mmType2_handle2_grip ***
+ObjectTemplate.create AnimatedBundle 20mmType2_handle2_grip
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.5/0.0/0.1 0/90/90
+
+
+rem *** 20mmType2_pedal ***
+ObjectTemplate.create SimpleObject 20mmType2_pedal
+ObjectTemplate.geometry 20mmType2_pedal_m1
+
+
+rem *** 20mmType2_targeter ***
+ObjectTemplate.create RotationalBundle 20mmType2_targeter
+ObjectTemplate.geometry 20mmType2_targeter_m1
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 90/90/90
+
+rem *** 20mmType2_base ***
+ObjectTemplate.create SimpleObject 20mmType2_base
+ObjectTemplate.geometry 20mmType2_base_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 10
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = 20mmType2
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** 20mmType2_gun_fire ***
+ObjectTemplate.create FireArms 20mmType2_gun_fire
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../20mmType2/Sounds/20mmType2GunBarrel.ssc
+ObjectTemplate.aiTemplate 20mmType2MainGun
+ObjectTemplate.geometry 20mmType2_gun_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setPosition 0/0.05/2.2
+
+ObjectTemplate.addTemplate e_CartridgeEjection_25x163R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/-0.096/-0.41
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x142AA_Projectile
+ObjectTemplate.projectilePosition 0/0.05/2
+ObjectTemplate.setTracerTemplate APTracer_20x142AA_Projectile CRD_NONE/3/0/0
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 699
+ObjectTemplate.reloadtime 2.8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsLightShake
+rem ===== EOF =====
+rem ============================================================================
+rem folder = 20mmType2Multi
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = JPN
+
+rem *** 20mmType2Multi
+rem *** 20mmType2Multi_wide
+
+rem *** 20mmType2Multi ***
+ObjectTemplate.create PlayerControlObject 20mmType2Multi
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 4
+ObjectTemplate.explosionDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 33
+ObjectTemplate.addArmorEffect 35 e_AA-GunDamage 0/0.3/0
+ObjectTemplate.addArmorEffect 0 e_ScrapAAFlak38 0/1.2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.aiTemplate 20mmType2
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_base0
+
+ObjectTemplate.addTemplate 20mmType2_base2
+ObjectTemplate.setPosition -1.75/0/3.0311
+ObjectTemplate.addTemplate 20mmType2_base2Alt
+ObjectTemplate.setPosition 1.75/0/3.0311
+
+ObjectTemplate.addTemplate 20mmType2_base22
+ObjectTemplate.setPosition -3.5/0/0
+ObjectTemplate.addTemplate 20mmType2_base23
+ObjectTemplate.setPosition -1.75/0/-3.0311
+
+ObjectTemplate.addTemplate 20mmType2_base2Alt2
+ObjectTemplate.setPosition 3.5/0/0
+ObjectTemplate.addTemplate 20mmType2_base2Alt3
+ObjectTemplate.setPosition 1.75/0/-3.0311
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/ICON_20mmType2Multi.tga"
+rem ObjectTemplate.setVehicleIconPos 
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmType2.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_20mmType2.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aa_16x16.tga"
+
+
+
+ObjectTemplate.create Bundle 20mmType2_base0
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body0
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+
+ObjectTemplate.create Bundle 20mmType2_base2
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body2
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+
+ObjectTemplate.create Bundle 20mmType2_base2Alt
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body2Alt
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+
+ObjectTemplate.create Bundle 20mmType2_base22
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body22
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+
+ObjectTemplate.create Bundle 20mmType2_base2Alt2
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body2Alt2
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+
+ObjectTemplate.create Bundle 20mmType2_base23
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body23
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+
+ObjectTemplate.create Bundle 20mmType2_base2Alt3
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_Entry
+ObjectTemplate.addTemplate 20mmType2_body2Alt3
+ObjectTemplate.addTemplate 20mmType2_base
+rem -------------------------------------
+
+
+
+rem *** 20mmType2_body0 ***
+ObjectTemplate.create RotationalBundle 20mmType2_body0
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun0
+ObjectTemplate.setPosition 0/0.899/0.373
+ObjectTemplate.addTemplate lod20mmType2Shield
+ObjectTemplate.setPosition 0/0.899/0.373
+
+ObjectTemplate.addTemplate 20mmType2_Seat
+ObjectTemplate.setPosition 0.57/0.6/-0.429
+ObjectTemplate.addTemplate 20mmType2_handle1
+ObjectTemplate.setPosition 0/0.08/-0.449
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate 20mmType2_handle2
+ObjectTemplate.setPosition 0/0.815/-0.215
+ObjectTemplate.addTemplate 20mmType2_pedal
+ObjectTemplate.setPosition 0/0.393/0.423
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** 20mmType2_body2 ***
+ObjectTemplate.create RotationalBundle 20mmType2_body2
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2ShieldExternal
+ObjectTemplate.addTemplate 20mmType2_gun2
+ObjectTemplate.setPosition 0/0.899/0.373
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** 20mmType2_body2Alt ***
+ObjectTemplate.create RotationalBundle 20mmType2_body2Alt
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2ShieldExternal
+ObjectTemplate.addTemplate 20mmType2_gun2Alt
+ObjectTemplate.setPosition 0/0.899/0.373
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** 20mmType2_body22 ***
+ObjectTemplate.create RotationalBundle 20mmType2_body22
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2ShieldExternal
+ObjectTemplate.addTemplate 20mmType2_gun22
+ObjectTemplate.setPosition 0/0.899/0.373
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** 20mmType2_body2Alt2 ***
+ObjectTemplate.create RotationalBundle 20mmType2_body2Alt2
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2ShieldExternal
+ObjectTemplate.addTemplate 20mmType2_gun2Alt2
+ObjectTemplate.setPosition 0/0.899/0.373
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** 20mmType2_body23 ***
+ObjectTemplate.create RotationalBundle 20mmType2_body23
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2ShieldExternal
+ObjectTemplate.addTemplate 20mmType2_gun23
+ObjectTemplate.setPosition 0/0.899/0.373
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** 20mmType2_body2Alt3 ***
+ObjectTemplate.create RotationalBundle 20mmType2_body2Alt3
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38Carriage.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2ShieldExternal
+ObjectTemplate.addTemplate 20mmType2_gun2Alt3
+ObjectTemplate.setPosition 0/0.899/0.373
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 75/0/0
+ObjectTemplate.setAcceleration 250/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+
+rem *** 20mmType2_gun0 ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun0
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lod20mmType2Cockpit
+ObjectTemplate.setPosition 0.55/0.422/0.14
+ObjectTemplate.addTemplate 20mmType2_Camera
+ObjectTemplate.setPosition 0.55/0.422/0.14
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** 20mmType2_gun2 ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun2
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 20mmType2_gun_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun_fire2
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** 20mmType2_gun2Alt ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun2Alt
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 20mmType2_gun_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun_fire2Alt
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+
+rem *** 20mmType2_gun22 ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun22
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 20mmType2_gun_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun_fire22
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** 20mmType2_gun2Alt2 ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun2Alt2
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 20mmType2_gun_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun_fire2Alt2
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** 20mmType2_gun23 ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun23
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 20mmType2_gun_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun_fire23
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** 20mmType2_gun2Alt3 ***
+ObjectTemplate.create RotationalBundle 20mmType2_gun2Alt3
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Flak_38/Sounds/flak38gunbase.ssc
+ObjectTemplate.geometry 20mmType2_gun_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_gun_fire2Alt3
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/75/0
+ObjectTemplate.setAcceleration 0/250/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** 20mmType2_handle12 ***
+ObjectTemplate.create RotationalBundle 20mmType2_handle12
+ObjectTemplate.geometry 20mmType2_handle02_m1
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/800/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookX
+
+rem *** 20mmType2_handle22 ***
+ObjectTemplate.create RotationalBundle 20mmType2_handle22
+ObjectTemplate.geometry 20mmType2_handle02_m1
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/800/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+
+rem *** 20mmType2Multi_wide ***
+ObjectTemplate.create PlayerControlObject 20mmType2Multi_wide
+ObjectTemplate.setNetworkableInfo 20mmType2_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 4
+ObjectTemplate.explosionDamage 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 33
+ObjectTemplate.addArmorEffect 35 e_AA-GunDamage 0/0.3/0
+ObjectTemplate.addArmorEffect 0 e_ScrapAAFlak38 0/1.2/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.aiTemplate 20mmType2
+ObjectTemplate.timetoliveafterdeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmType2_base0
+
+ObjectTemplate.addTemplate 20mmType2_base2
+ObjectTemplate.setPosition -2.625/0/4.54665
+ObjectTemplate.addTemplate 20mmType2_base2Alt
+ObjectTemplate.setPosition 2.625/0/4.54665
+
+ObjectTemplate.addTemplate 20mmType2_base22
+ObjectTemplate.setPosition -5.25/0/0
+ObjectTemplate.addTemplate 20mmType2_base23
+ObjectTemplate.setPosition -2.625/0/-4.54665
+
+ObjectTemplate.addTemplate 20mmType2_base2Alt2
+ObjectTemplate.setPosition 5.25/0/0
+ObjectTemplate.addTemplate 20mmType2_base2Alt3
+ObjectTemplate.setPosition 2.625/0/-4.54665
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/ICON_20mmType2Multi.tga"
+rem ObjectTemplate.setVehicleIconPos 
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmType2.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_20mmType2.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aa_16x16.tga"
+rem ===== EOF =====
+rem ============================================================================
+rem folder = 20mmType2Multi
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** 20mmType2_gun_fire2 ***
+ObjectTemplate.create FireArms 20mmType2_gun_fire2
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../20mmType2/Sounds/20mmType2GunBarrel.ssc
+ObjectTemplate.aiTemplate 20mmType2MainGun
+ObjectTemplate.geometry 20mmType2_gun_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setPosition 0/0.05/2.2
+
+ObjectTemplate.addTemplate e_CartridgeEjection_25x163R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/-0.096/-0.41
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x142AA_Projectile
+ObjectTemplate.projectilePosition 0/1/10
+ObjectTemplate.setTracerTemplate APTracer_20x142AA_Projectile CRD_NONE/3/0/0
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 699
+ObjectTemplate.reloadtime 2.8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+
+rem *** 20mmType2_gun_fire2Alt ***
+ObjectTemplate.create FireArms 20mmType2_gun_fire2Alt
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../20mmType2/Sounds/20mmType2GunBarrel.ssc
+ObjectTemplate.aiTemplate 20mmType2MainGun
+ObjectTemplate.geometry 20mmType2_gun_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setPosition 0/0.05/2.2
+
+ObjectTemplate.addTemplate e_CartridgeEjection_25x163R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/-0.096/-0.41
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x142AA_Projectile
+ObjectTemplate.projectilePosition 0/1/10
+ObjectTemplate.setTracerTemplate APTracer_20x142AA_Projectile CRD_NONE/3/0/0
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 699
+ObjectTemplate.reloadtime 2.8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+
+rem *** 20mmType2_gun_fire22 ***
+ObjectTemplate.create FireArms 20mmType2_gun_fire22
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../20mmType2/Sounds/20mmType2GunBarrel.ssc
+ObjectTemplate.aiTemplate 20mmType2MainGun
+ObjectTemplate.geometry 20mmType2_gun_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setPosition 0/0.05/2.2
+
+ObjectTemplate.addTemplate e_CartridgeEjection_25x163R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/-0.096/-0.41
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x142AA_Projectile
+ObjectTemplate.projectilePosition 0/1/10
+ObjectTemplate.setTracerTemplate APTracer_20x142AA_Projectile CRD_UNIFORM/1/3/0
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 699
+ObjectTemplate.reloadtime 2.8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 7.5
+rem ObjectTemplate.roundOfFire 5
+ObjectTemplate.FireDelay 0.05
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+
+rem *** 20mmType2_gun_fire2Alt2 ***
+ObjectTemplate.create FireArms 20mmType2_gun_fire2Alt2
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../20mmType2/Sounds/20mmType2GunBarrel.ssc
+ObjectTemplate.aiTemplate 20mmType2MainGun
+ObjectTemplate.geometry 20mmType2_gun_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setPosition 0/0.05/2.2
+
+ObjectTemplate.addTemplate e_CartridgeEjection_25x163R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/-0.096/-0.41
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x142AA_Projectile
+ObjectTemplate.projectilePosition 0/1/10
+ObjectTemplate.setTracerTemplate APTracer_20x142AA_Projectile CRD_UNIFORM/1/3/0
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 699
+ObjectTemplate.reloadtime 2.8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 7.5
+rem ObjectTemplate.roundOfFire 5
+ObjectTemplate.FireDelay 0.05
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+rem *** 20mmType2_gun_fire23 ***
+ObjectTemplate.create FireArms 20mmType2_gun_fire23
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../20mmType2/Sounds/20mmType2GunBarrel.ssc
+ObjectTemplate.aiTemplate 20mmType2MainGun
+ObjectTemplate.geometry 20mmType2_gun_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setPosition 0/0.05/2.2
+
+ObjectTemplate.addTemplate e_CartridgeEjection_25x163R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/-0.096/-0.41
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x142AA_Projectile
+ObjectTemplate.projectilePosition 0/1/10
+ObjectTemplate.setTracerTemplate APTracer_20x142AA_Projectile CRD_UNIFORM/1/2/0
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 699
+ObjectTemplate.reloadtime 2.8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+rem ObjectTemplate.roundOfFire 5
+ObjectTemplate.FireDelay 0.1
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+
+rem *** 20mmType2_gun_fire2Alt3 ***
+ObjectTemplate.create FireArms 20mmType2_gun_fire2Alt3
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../20mmType2/Sounds/20mmType2GunBarrel.ssc
+ObjectTemplate.aiTemplate 20mmType2MainGun
+ObjectTemplate.geometry 20mmType2_gun_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setPosition 0/0.05/2.2
+
+ObjectTemplate.addTemplate e_CartridgeEjection_25x163R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/-0.096/-0.41
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x142AA_Projectile
+ObjectTemplate.projectilePosition 0/1/10
+ObjectTemplate.setTracerTemplate APTracer_20x142AA_Projectile CRD_UNIFORM/1/2/0
+ObjectTemplate.setMinDev 0.5
+ObjectTemplate.magSize 15
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 699
+ObjectTemplate.reloadtime 2.8
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 10
+rem ObjectTemplate.roundOfFire 5
+ObjectTemplate.FireDelay 0.1
+ObjectTemplate.recoilSpeed 18
+ObjectTemplate.recoilSize 5
+ObjectTemplate.setInputFire c_PIAltFire
+
+rem ===== EOF =====
 rem ============================================================================
 rem folder = 20mmType98
 rem sauce = Geometries.con
@@ -18046,7 +19023,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_150_500_Main
 ObjectTemplate.setPosition 0/0.1708/3.0228
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,0cmL23,5Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,0cmL23,5Projectile_Penetrator
 ObjectTemplate.projectilePosition 0/0.173/4
 ObjectTemplate.setMinDev 0.73
 ObjectTemplate.magSize 16
@@ -18104,7 +19082,7 @@ rem *** Ho-Chi_Cannon_TracGunBarrel ***
 ObjectTemplate.create FireArms Ho-Chi_Cannon_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,0cmL23,5Projectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0.173/4
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -19480,6 +20458,317 @@ ObjectTemplate.velocity 222
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 0.3
 ObjectTemplate.roundOfFire 0.283
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Ho-I_57mm
+rem sauce = Geometries.con
+rem ============================================================================
+
+GeometryTemplate.create StandardMesh Ho-I_57mm_Barrel_m1
+GeometryTemplate.file Ho-I_57mm_Barrel_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh 1p_Ho-I_57mm_reticule
+GeometryTemplate.file 1p_tank_aim_jap
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Ho-I_57mm
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = JPN
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+
+rem *** Ho-I_57mm ***
+ObjectTemplate.create PlayerControlObject Ho-I_57mm
+ObjectTemplate.setNetworkableInfo Ho-I_BodyInfo
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.mass 15000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 108
+ObjectTemplate.maxhitpoints 108
+ObjectTemplate.material 38
+ObjectTemplate.criticalDamage 10
+ObjectTemplate.explosionForceMod 10
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/0.5/-1.4
+ObjectTemplate.addArmorEffect 10 e_PanzFire 0/0.5/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 30
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate Ho-I
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHo-I_57mm
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.GUIIndex 99
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 1.8 1.0 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_HoI_TD.tga"
+ObjectTemplate.setVehicleIconPos 71/58
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_57mm_Experimental_Ko.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 25
+ObjectTemplate.DirBarYScaleAbove 22
+ObjectTemplate.DirBarYScaleBelow 9
+ObjectTemplate.DirBarYScaleMin -90
+ObjectTemplate.DirBarYScaleMax -50
+
+rem *** lodHo-I_57mm ***
+ObjectTemplate.create LodObject lodHo-I_57mm
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ho-IComplex_57mm
+ObjectTemplate.addTemplate Ho-ISimple
+ObjectTemplate.addTemplate Ho-IWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Ho-ILodSelector
+
+
+rem *** Ho-IComplex_57mm ***
+ObjectTemplate.create Bundle Ho-IComplex_57mm
+ObjectTemplate.geometry Ho-I_Hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ho-I_Hull_addcol
+ObjectTemplate.addTemplate Ho-I_Tower_57mm
+ObjectTemplate.setPosition -0.0961/0.5896/0.3287
+
+ObjectTemplate.addTemplate Ho-I_bow_PCO3_57mm
+ObjectTemplate.setPosition -0.93/-0.05/-1.15
+
+ObjectTemplate.addTemplate Ho-I_Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate Ho-I_Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate Ho-I_Engine
+
+ObjectTemplate.addTemplate Ho-I_Tankdesant_PCO1_57mm
+ObjectTemplate.setPosition -0.7/1.29/-1.6
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Ho-I_Tankdesant_PCO2_57mm
+ObjectTemplate.setPosition 0.7/1.29/-1.6
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** Ho-I_Tankdesant_PCO1_57mm ***
+ObjectTemplate.create PlayerControlObject Ho-I_Tankdesant_PCO1_57mm
+ObjectTemplate.setNetworkableInfo Ho-I_BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_HoI_TD.tga"
+ObjectTemplate.setVehicleIconPos 115/67
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+rem *** Ho-I_Tankdesant_PCO2_57mm ***
+ObjectTemplate.create PlayerControlObject Ho-I_Tankdesant_PCO2_57mm
+ObjectTemplate.setNetworkableInfo Ho-I_BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_HoI_TD.tga"
+ObjectTemplate.setVehicleIconPos 101/55
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+rem *** Ho-I_Tower_57mm ***
+ObjectTemplate.create RotationalBundle Ho-I_Tower_57mm
+ObjectTemplate.setNetworkableInfo Ho-I_TurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Ho-I/Sounds/Ho-ITower.ssc
+ObjectTemplate.geometry Ho-I_Tower_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ho-I_GunBase_57mm
+ObjectTemplate.setPosition 0/0.3199/0.7554
+
+ObjectTemplate.addTemplate Ho-I_Director_PCO_57mm
+ObjectTemplate.setPosition -0.281/0.954/-0.097
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 41/0/0
+ObjectTemplate.setAcceleration 143/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** Ho-I_Director_PCO_57mm ***
+ObjectTemplate.create PlayerControlObject Ho-I_Director_PCO_57mm
+ObjectTemplate.setNetworkableInfo Ho-I_BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Common_DirectorPCO_Entry
+ObjectTemplate.addTemplate Common_DirectorPCO_Camera
+ObjectTemplate.addTemplate Land_Spotter
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/0 0/0/0
+ObjectTemplate.setPcoId 1
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_HoI_TD.dds"
+ObjectTemplate.setVehicleIconPos 81/53
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** Ho-I_GunBase_57mm ***
+ObjectTemplate.create RotationalBundle Ho-I_GunBase_57mm
+ObjectTemplate.setNetworkableInfo Ho-I_GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Ho-I/Sounds/Ho-IGunBase.ssc
+ObjectTemplate.geometry Ho-I_Cannon_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate Ho-I_57mm_GunBarrel
+
+ObjectTemplate.addTemplate lodHo-I_CamBase_57mm
+ObjectTemplate.addTemplate Ho-I_Camera_57mm
+ObjectTemplate.setPosition -0.434/0.055/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/41/0
+ObjectTemplate.setAcceleration 0/143/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Ho-I_Camera_57mm ***
+ObjectTemplate.create Camera Ho-I_Camera_57mm
+ObjectTemplate.OutsideHudOffset 0.0005/0.61725/0.7
+ObjectTemplate.CVMExternTrace 1
+
+rem *** lodHo-I_CamBase_57mm ***
+ObjectTemplate.create LodObject lodHo-I_CamBase_57mm
+rem -------------------------------------
+ObjectTemplate.addTemplate Ho-I_CamBaseExternal
+ObjectTemplate.addTemplate Ho-I_CamBaseInternal_57mm
+ObjectTemplate.setPosition -0.434/0.005/0.23
+rem -------------------------------------
+ObjectTemplate.lodSelector Ho-I_CamBaseSelector
+
+rem *** Ho-I_CamBaseInternal_57mm ***
+ObjectTemplate.create Bundle Ho-I_CamBaseInternal_57mm
+ObjectTemplate.geometry 1p_Ho-I_57mm_reticule
+
+rem *** Ho-I_bow_PCO3_57mm ***
+ObjectTemplate.create PlayerControlObject Ho-I_bow_PCO3_57mm
+ObjectTemplate.NameTagOffset 0/-1.0/0
+ObjectTemplate.setNetworkableInfo Ho-I_BodyInfo
+ObjectTemplate.aiTemplate Ho-I_TopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate Ho-I_Entry
+ObjectTemplate.setPosition 1.5/1/3.4
+ObjectTemplate.addTemplate Chi-ha_bowmg
+rem ObjectTemplate.setPosition 0.5744/0.4321/2.4123
+ObjectTemplate.setPosition 0.5744/0.4321/2.6123
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2.5/0/-1.0 0/0/0
+rem ObjectTemplate.setPcoId 2
+ObjectTemplate.GUIIndex 47
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_HoI_TD.dds"
+ObjectTemplate.setVehicleIconPos 58/88
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,7mmType97tankMG.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+rem ---------------- Scope 2.0x---------------------------
+ObjectTemplate.vehicleFov 0.5
+rem --------------------------------------------------
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Ho-I_57mm
+rem sauce = Weapons.con
+rem ============================================================================
+
+rem *** Ho-I_57mm_GunBarrel ***
+ObjectTemplate.create FireArms Ho-I_57mm_GunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../Ho-I_57mm/Sounds/Ho-I_57mm_Cannon.ssc
+ObjectTemplate.geometry Ho-I_57mm_Barrel_m1
+ObjectTemplate.aiTemplate Ho-I_MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_50_750_Main
+ObjectTemplate.setPosition 0/-0.0304/2.2446
+rem -------------------------------------
+ObjectTemplate.projectileTemplate 57mmL48,5_Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.setMinDev 0.56
+ObjectTemplate.magSize 80
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 400
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.3
+ObjectTemplate.roundOfFire 0.385
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+ObjectTemplate.setFireCameraShakeAnimationState FireTank50CanonShake
 
 rem ===== EOF =====
 rem ============================================================================
@@ -39420,7 +40709,7 @@ ObjectTemplate.loadSoundScript ../Type96_15cm/Sounds/Type96_15cmgunbase.ssc
 ObjectTemplate.geometry type96_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Type96_15cmCannon_PenetrateExploder
+rem ObjectTemplate.addTemplate Type96_15cmCannon_PenetrateExploder
 ObjectTemplate.addTemplate Type96_15cmCannon
 ObjectTemplate.addTemplate Type96_15cmCannon_TracGunBarrel
 rem -------------------------------------
@@ -39610,7 +40899,7 @@ ObjectTemplate.setRotation 0/30/0
 ObjectTemplate.addTemplate Type96_15cmBulletCatcherBundle
 ObjectTemplate.setPosition 0/-25/0
 ObjectTemplate.setRotation 0/60/179.999
-ObjectTemplate.addTemplate Type96_15cmCannon_TracGunBarrel
+ObjectTemplate.addTemplate Type96_15cmGunHEAT_TracGunBarrel
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-65/0
 ObjectTemplate.setMaxRotation 0/5/0
@@ -39723,7 +41012,8 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.1827/-0.7
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,0cmL23,5Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,0cmL23,5Projectile_Penetrator
 ObjectTemplate.projectilePosition 0/0.173/4
 ObjectTemplate.setMinDev 0.73
 ObjectTemplate.magSize 100
@@ -39769,6 +41059,21 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 0.20
 ObjectTemplate.roundOfFire 0.096
 ObjectTemplate.AmmoType	4
+
+rem *** Type96_15cmGunHEAT_TracGunBarrel ***
+ObjectTemplate.create FireArms Type96_15cmGunHEAT_TracGunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectilePosition 0/0.173/4
+ObjectTemplate.setMinDev 0
+ObjectTemplate.magSize 999
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 270
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.setInputFire c_PIAltFire
 
 rem ===== EOF =====
 rem ============================================================================
@@ -40816,7 +42121,7 @@ ObjectTemplate.loadSoundScript ../Type96_15cm/Sounds/Type96_15cmgunbase.ssc
 ObjectTemplate.geometry type96_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder1
+rem ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder1
 ObjectTemplate.addTemplate Type96_15cmBatteryCannon1
 ObjectTemplate.addTemplate Type96_15cmCannon_TracGunBarrel
 rem -------------------------------------
@@ -40834,7 +42139,7 @@ ObjectTemplate.loadSoundScript ../Type96_15cm/Sounds/Type96_15cmgunbase.ssc
 ObjectTemplate.geometry type96_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder2
+rem ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder2
 ObjectTemplate.addTemplate Type96_15cmBatteryCannon2
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-65/0
@@ -40851,7 +42156,7 @@ ObjectTemplate.loadSoundScript ../Type96_15cm/Sounds/Type96_15cmgunbase.ssc
 ObjectTemplate.geometry type96_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder3
+rem ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder3
 ObjectTemplate.addTemplate Type96_15cmBatteryCannon3
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-65/0
@@ -40868,7 +42173,7 @@ ObjectTemplate.loadSoundScript ../Type96_15cm/Sounds/Type96_15cmgunbase.ssc
 ObjectTemplate.geometry type96_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder4
+rem ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder4
 ObjectTemplate.addTemplate Type96_15cmBatteryCannon4
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-65/0
@@ -40885,7 +42190,7 @@ ObjectTemplate.loadSoundScript ../Type96_15cm/Sounds/Type96_15cmgunbase.ssc
 ObjectTemplate.geometry type96_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder5
+rem ObjectTemplate.addTemplate Type96_15cmBatteryCannon_PenetrateExploder5
 ObjectTemplate.addTemplate Type96_15cmBatteryCannon5
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-65/0

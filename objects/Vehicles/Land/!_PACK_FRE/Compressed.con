@@ -522,7 +522,3986 @@ ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 5
 ObjectTemplate.setFireCameraShakeAnimationState FireTank37CanonShake
 
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX13
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster AMX13
 
+GeometryTemplate.create StandardMesh AMX13_Gunbarrel_m1
+GeometryTemplate.file AMX13_Gunbarrel_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Gunbase_m1
+GeometryTemplate.file AMX13_Gunbase_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Turret_m1
+GeometryTemplate.file AMX13_Turret_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Hull_m1
+GeometryTemplate.file AMX13_Hull_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Hull_Add_m1
+GeometryTemplate.file AMX13_Hull_Add_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_fan_m1
+GeometryTemplate.file IS-4_fan_L_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Sus_m1
+GeometryTemplate.file AMX13_Sus_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh 1p_AMX13_Driver_m1
+GeometryTemplate.file 1p_00_DEFtankcockpit_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+GeometryTemplate.create StandardMesh 1P_AMX13_Gunner_m1
+GeometryTemplate.file 1p_00_75mm_SA50_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+
+GeometryTemplate.create AnimatedMesh AMX13_Track_L_m1
+GeometryTemplate.file AMX13_Track_L_m1
+GeometryTemplate.setSkin animations/AMX13_Track_L.skn
+
+GeometryTemplate.create AnimatedMesh AMX13_Track_R_m1
+GeometryTemplate.file AMX13_Track_R_m1
+GeometryTemplate.setSkin animations/AMX13_Track_R.skn
+
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_Spr_m1
+GeometryTemplate.file AMX13_Whel_L_Spr_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_1_m1
+GeometryTemplate.file AMX13_Whel_L1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_2_m1
+GeometryTemplate.file AMX13_Whel_L2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_3_m1
+GeometryTemplate.file AMX13_Whel_L3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_4_m1
+GeometryTemplate.file AMX13_Whel_L4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_5_m1
+GeometryTemplate.file AMX13_Whel_L5_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_Idr_m1
+GeometryTemplate.file AMX13_Whel_L_Idr_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_T1_m1
+GeometryTemplate.file AMX13_Whel_L_Top1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_T2_m1
+GeometryTemplate.file AMX13_Whel_L_Top2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_T3_m1
+GeometryTemplate.file AMX13_Whel_L_Top3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_L_T4_m1
+GeometryTemplate.file AMX13_Whel_L_Top4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_Spr_m1
+GeometryTemplate.file AMX13_Whel_R_Spr_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_1_m1
+GeometryTemplate.file AMX13_Whel_R1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_2_m1
+GeometryTemplate.file AMX13_Whel_R2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_3_m1
+GeometryTemplate.file AMX13_Whel_R3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_4_m1
+GeometryTemplate.file AMX13_Whel_R4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_5_m1
+GeometryTemplate.file AMX13_Whel_R5_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_Idr_m1
+GeometryTemplate.file AMX13_Whel_R_Idr_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_T1_m1
+GeometryTemplate.file AMX13_Whel_R_Top1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_T2_m1
+GeometryTemplate.file AMX13_Whel_R_Top2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_T3_m1
+GeometryTemplate.file AMX13_Whel_R_Top3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Whel_R_T4_m1
+GeometryTemplate.file AMX13_Whel_R_Top4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh AMX13_LOD_m1
+GeometryTemplate.file AMX13_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Wreck1_m1
+GeometryTemplate.file AMX13_Wreck1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Wreck2_m1
+GeometryTemplate.file AMX13_Wreck2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Wreck3_m1
+GeometryTemplate.file AMX13_Wreck3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Wreck4_m1
+GeometryTemplate.file AMX13_Wreck4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX13_Wreck5_m1
+GeometryTemplate.file AMX13_Wreck5_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX13
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo AMX13TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX13GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX13TurretMGInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX13EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX13BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX13
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = FRE
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+rem *** AMX13
+rem *** AMX13_APCR
+
+rem *** AMX13 ***
+ObjectTemplate.create PlayerControlObject AMX13
+ObjectTemplate.setNetworkableInfo AMX13BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 15500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 33
+ObjectTemplate.criticalDamage 8
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 30 e_PanzDamage 1.3/0.78/-1
+ObjectTemplate.addArmorEffect 8 e_PanzFire 1.3/0.78/-1
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate AMX13
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX13
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.3/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX13.dds"
+ObjectTemplate.setVehicleIconPos 83/38
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mm_SA50.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,5mmM1931.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_heavytank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodAMX13 ***
+ObjectTemplate.create LodObject lodAMX13
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13Complex
+ObjectTemplate.addTemplate AMX13Simple
+ObjectTemplate.addTemplate AMX13Wreck
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.lodSelector AMX13LodSelector
+
+
+rem *** AMX13Complex ***
+ObjectTemplate.create Bundle AMX13Complex
+ObjectTemplate.geometry AMX13_Hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate AMX13Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate AMX13Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate AMX13_Turret
+ObjectTemplate.setPosition 0/0.8685/-0.2443
+
+ObjectTemplate.addTemplate AMX13_fan
+ObjectTemplate.setPosition 0.291/0.95/0.9887
+
+ObjectTemplate.addTemplate AMX13_Hull_Add
+ObjectTemplate.addTemplate AMX13_Sus
+
+ObjectTemplate.addTemplate e_TankExhaust20
+ObjectTemplate.setPosition 1.3/0.78/-1
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.05/1.65/-1.6
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.05/1.65/-1.6
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+ObjectTemplate.create RotationalBundle AMX13_fan
+ObjectTemplate.geometry AMX13_fan_m1
+rem ---------------------------------------
+ObjectTemplate.setMaxSpeed 110/0/0
+ObjectTemplate.setAcceleration -100/0/0
+ObjectTemplate.setContinousRotationSpeed -1800/0/0
+
+ObjectTemplate.create SimpleObject AMX13_Hull_Add
+ObjectTemplate.geometry AMX13_Hull_Add_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject AMX13_Sus
+ObjectTemplate.geometry AMX13_Sus_m1
+
+rem *** AMX13_Tankdesant_PCO1 ***
+ObjectTemplate.create PlayerControlObject AMX13_Tankdesant_PCO1
+ObjectTemplate.setNetworkableInfo AMX13BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX13.tga"
+ObjectTemplate.setVehicleIconPos 124/53
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+rem *** AMX13_Tankdesant_PCO2 ***
+ObjectTemplate.create PlayerControlObject AMX13_Tankdesant_PCO2
+ObjectTemplate.setNetworkableInfo AMX13BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX13.tga"
+ObjectTemplate.setVehicleIconPos 98/41
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+rem *** AMX13Entry ***
+ObjectTemplate.create EntryPoint AMX13Entry
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** AMX13_Turret ***
+ObjectTemplate.create RotationalBundle AMX13_Turret
+ObjectTemplate.setNetworkableInfo AMX13TurretInfo
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13Turrret.ssc
+ObjectTemplate.geometry AMX13_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13_Cannon_Base
+ObjectTemplate.setPosition 0/0.4/-0.1
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 46/0/0
+ObjectTemplate.setAcceleration 144/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** AMX13_Cannon_Base ***
+ObjectTemplate.create RotationalBundle AMX13_Cannon_Base
+ObjectTemplate.setNetworkableInfo AMX13GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13GunBase.ssc
+ObjectTemplate.geometry AMX13_Gunbase_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX13Cockpit
+ObjectTemplate.addTemplate AMX13GunBarrel
+ObjectTemplate.setPosition 0/0.1062/1.18
+ObjectTemplate.addTemplate Coaxial_Chatellerault
+ObjectTemplate.setPosition 0.1811/-0.1104/-0.0674
+ObjectTemplate.addTemplate AMX13_Reticule_Camera
+ObjectTemplate.setPosition -0.4461/0.5248/0.3761
+
+ObjectTemplate.addTemplate AMX13_Commander_PCO2
+ObjectTemplate.setPosition -0.4436/0.8315/-0.1841
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/6/0
+ObjectTemplate.setMaxSpeed 0/46/0
+ObjectTemplate.setAcceleration 0/144/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** AMX13Camera ***
+ObjectTemplate.create Camera AMX13Camera
+
+rem *** AMX13_Reticule_Camera ***
+ObjectTemplate.create Camera AMX13_Reticule_Camera
+ObjectTemplate.OutsideHudOffset 0.8039/-0.1103/0.1202
+
+rem *** lodAMX13Cockpit ***
+ObjectTemplate.create LodObject lodAMX13Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13CockpitExternal
+ObjectTemplate.addTemplate AMX13CockpitInternal
+ObjectTemplate.setPosition -0.4461/0.5248/0.3761
+rem -------------------------------------
+ObjectTemplate.lodSelector AMX13cockpitSelector
+
+
+rem *** AMX13CockpitExternal ***
+ObjectTemplate.create SimpleObject AMX13CockpitExternal
+ObjectTemplate.geometry 
+
+rem *** AMX13CockpitInternal ***
+ObjectTemplate.create Bundle AMX13CockpitInternal
+ObjectTemplate.geometry 1p_AMX13_Driver_m1
+ObjectTemplate.addTemplate AMX13CockpitInternal2
+ObjectTemplate.setPosition 0.8039/-0.1103/0.1202
+
+ObjectTemplate.create SimpleObject AMX13CockpitInternal2
+ObjectTemplate.geometry 1P_AMX13_Gunner_m1
+
+rem *** AMX13cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector AMX13cockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** AMX13_Commander_PCO2 ***
+ObjectTemplate.create PlayerControlObject AMX13_Commander_PCO2
+ObjectTemplate.NameTagOffset 0/-0.2/-1
+ObjectTemplate.setNetworkableInfo AMX13BodyInfo
+ObjectTemplate.aiTemplate AMX13NWAI
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13_Commander_SmokeLauncher
+ObjectTemplate.setRotation 0/-55/0
+ObjectTemplate.addTemplate AMX13_Commander_CamX
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX13.dds"
+ObjectTemplate.setVehicleIconPos 104/32
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Smoke_launcher.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setPcoId 1
+
+rem *** AMX13_Commander_CamX ***
+ObjectTemplate.create RotationalBundle AMX13_Commander_CamX
+ObjectTemplate.setNetworkableInfo AMX13TurretMGInfo
+rem ------------------------------------- 
+ObjectTemplate.addTemplate AMX13_Commander_CamY
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** AMX13_Commander_CamY  ***
+ObjectTemplate.create RotationalBundle AMX13_Commander_CamY
+ObjectTemplate.setNetworkableInfo AMX13TurretMGInfo
+rem ------------------------------------- 
+ObjectTemplate.addTemplate AMX13Camera
+ObjectTemplate.addTemplate Land_Spotter_Alt
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** AMX13Simple ***
+ObjectTemplate.create SimpleObject AMX13Simple
+ObjectTemplate.geometry AMX13_LOD_m1
+
+rem *** AMX13Wreck ***
+ObjectTemplate.create Bundle AMX13Wreck
+ObjectTemplate.geometry AMX13_Wreck1_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AMX13_Wreck2
+ObjectTemplate.addTemplate AMX13_Wreck3
+ObjectTemplate.addTemplate AMX13_Wreck4
+ObjectTemplate.addTemplate AMX13_Wreck5
+
+ObjectTemplate.create SimpleObject AMX13_Wreck2
+ObjectTemplate.geometry AMX13_Wreck2_m1
+ObjectTemplate.create SimpleObject AMX13_Wreck3
+ObjectTemplate.geometry AMX13_Wreck3_m1
+ObjectTemplate.create SimpleObject AMX13_Wreck4
+ObjectTemplate.geometry AMX13_Wreck4_m1
+ObjectTemplate.create SimpleObject AMX13_Wreck5
+ObjectTemplate.geometry AMX13_Wreck5_m1
+
+rem *** AMX13LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 AMX13LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+
+rem *** AMX13_L_Track ***
+ObjectTemplate.create AnimatedBundle AMX13_L_Track
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13TrackL.ssc
+ObjectTemplate.geometry AMX13_Track_L_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/AMX13_Track_L.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13_Whel_L_spr
+ObjectTemplate.setPosition -1.1/0.3749/2.3346
+
+ObjectTemplate.addTemplate AMX13_Whel_L_1
+ObjectTemplate.setPosition -1.1/-0.1035/1.7419
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_L_2
+ObjectTemplate.setPosition -1.1/-0.1035/1.0351
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_L_3
+ObjectTemplate.setPosition -1.1/-0.1035/0.3248
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_L_4
+ObjectTemplate.setPosition -1.1/-0.1035/-0.382
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_L_5
+ObjectTemplate.setPosition -1.1/-0.1035/-1.0959
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_L_Idr
+ObjectTemplate.setPosition -1.1/0.1919/-1.8324
+
+ObjectTemplate.addTemplate AMX13_Whel_L_T1
+ObjectTemplate.setPosition -1.1/0.532/1.4425
+
+ObjectTemplate.addTemplate AMX13_Whel_L_T2
+ObjectTemplate.setPosition -1.1/0.4915/0.536
+
+ObjectTemplate.addTemplate AMX13_Whel_L_T3
+ObjectTemplate.setPosition -1.1/0.4462/-0.7198
+
+ObjectTemplate.addTemplate AMX13_Whel_L_T4
+ObjectTemplate.setPosition -1.1/0.411/-1.4338
+rem -------------------------------------
+
+rem *** AMX13_R_Track ***
+ObjectTemplate.create AnimatedBundle AMX13_R_Track
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13TrackR.ssc
+ObjectTemplate.geometry AMX13_Track_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/AMX13_Track_R.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13_Whel_R_spr
+ObjectTemplate.setPosition 1.1/0.3749/2.3346
+
+ObjectTemplate.addTemplate AMX13_Whel_R_1
+ObjectTemplate.setPosition 1.1/-0.1035/1.7419
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_R_2
+ObjectTemplate.setPosition 1.1/-0.1035/1.0351
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_R_3
+ObjectTemplate.setPosition 1.1/-0.1035/0.3248
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_R_4
+ObjectTemplate.setPosition 1.1/-0.1035/-0.382
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_R_5
+ObjectTemplate.setPosition 1.1/-0.1035/-1.0959
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX13_Whel_R_Idr
+ObjectTemplate.setPosition 1.1/0.1919/-1.8324
+
+ObjectTemplate.addTemplate AMX13_Whel_R_T1
+ObjectTemplate.setPosition 1.1/0.532/1.4425
+
+ObjectTemplate.addTemplate AMX13_Whel_R_T2
+ObjectTemplate.setPosition 1.1/0.4915/0.536
+
+ObjectTemplate.addTemplate AMX13_Whel_R_T3
+ObjectTemplate.setPosition 1.1/0.4462/-0.7198
+
+ObjectTemplate.addTemplate AMX13_Whel_R_T4
+ObjectTemplate.setPosition 1.1/0.411/-1.4338
+rem -------------------------------------
+
+
+
+rem *** AMX13_APCR ***
+ObjectTemplate.create PlayerControlObject AMX13_APCR
+ObjectTemplate.setNetworkableInfo AMX13BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 15500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 33
+ObjectTemplate.criticalDamage 8
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 30 e_PanzDamage 1.3/0.78/-1
+ObjectTemplate.addArmorEffect 8 e_PanzFire 1.3/0.78/-1
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate AMX13
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX13_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.3/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX13.dds"
+ObjectTemplate.setVehicleIconPos 83/38
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mm_SA50_RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,5mmM1931.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_heavytank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodAMX13_APCR ***
+ObjectTemplate.create LodObject lodAMX13_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13Complex_APCR
+ObjectTemplate.addTemplate AMX13Simple
+ObjectTemplate.addTemplate AMX13Wreck
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.lodSelector AMX13LodSelector
+
+
+rem *** AMX13Complex_APCR ***
+ObjectTemplate.create Bundle AMX13Complex_APCR
+ObjectTemplate.geometry AMX13_Hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate AMX13Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate AMX13Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate AMX13_Turret_APCR
+ObjectTemplate.setPosition 0/0.8685/-0.2443
+
+ObjectTemplate.addTemplate AMX13_fan
+ObjectTemplate.setPosition 0.291/0.95/0.9887
+
+ObjectTemplate.addTemplate AMX13_Hull_Add
+ObjectTemplate.addTemplate AMX13_Sus
+
+ObjectTemplate.addTemplate e_TankExhaust20
+ObjectTemplate.setPosition 1.3/0.78/-1
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.05/1.65/-1.6
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.05/1.65/-1.6
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** AMX13_Turret_APCR ***
+ObjectTemplate.create RotationalBundle AMX13_Turret_APCR
+ObjectTemplate.setNetworkableInfo AMX13TurretInfo
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13Turrret.ssc
+ObjectTemplate.geometry AMX13_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13_Cannon_Base_APCR
+ObjectTemplate.setPosition 0/0.4/-0.1
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 14/0/0
+ObjectTemplate.setAcceleration 84/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** AMX13_Cannon_Base ***
+ObjectTemplate.create RotationalBundle AMX13_Cannon_Base_APCR
+ObjectTemplate.setNetworkableInfo AMX13GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13GunBase.ssc
+ObjectTemplate.geometry AMX13_Gunbase_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX13Cockpit
+ObjectTemplate.addTemplate AMX13GunBarrel_APCR
+ObjectTemplate.setPosition 0/0.1062/1.18
+ObjectTemplate.addTemplate Coaxial_Chatellerault
+ObjectTemplate.setPosition 0.1811/-0.1104/-0.0674
+ObjectTemplate.addTemplate AMX13_Reticule_Camera
+ObjectTemplate.setPosition -0.4461/0.5248/0.3761
+
+ObjectTemplate.addTemplate AMX13_Commander_PCO2
+ObjectTemplate.setPosition -0.4436/0.8315/-0.1841
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/6/0
+ObjectTemplate.setMaxSpeed 0/46/0
+ObjectTemplate.setAcceleration 0/144/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX13
+rem sauce = Physics.con
+rem ============================================================================
+
+rem *** AMX13Engine ***
+ObjectTemplate.create Engine AMX13Engine
+ObjectTemplate.setNetworkableInfo AMX13EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/White160AXEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX13_L_Track
+ObjectTemplate.setPosition -0.001/0/0
+ObjectTemplate.addTemplate AMX13_R_Track
+ObjectTemplate.setPosition 0.001/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+rem *** 18.24 HP/t
+ObjectTemplate.setTorque 3.84
+rem *** 60 km/h
+ObjectTemplate.setDifferential 4.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+
+ObjectTemplate.create Spring AMX13_Whel_L_spr
+ObjectTemplate.geometry AMX13_Whel_L_spr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_L_1
+ObjectTemplate.geometry AMX13_Whel_L_1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX13_Whel_L_2
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX13_Whel_L_2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX13_Whel_L_3
+ObjectTemplate.geometry AMX13_Whel_L_3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX13_Whel_L_4
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX13_Whel_L_4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX13_Whel_L_5
+ObjectTemplate.geometry AMX13_Whel_L_5_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX13_Whel_L_Idr
+ObjectTemplate.geometry AMX13_Whel_L_Idr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_L_T1
+ObjectTemplate.geometry AMX13_Whel_L_T1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_L_T2
+ObjectTemplate.geometry AMX13_Whel_L_T2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_L_T3
+ObjectTemplate.geometry AMX13_Whel_L_T3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_L_T4
+ObjectTemplate.geometry AMX13_Whel_L_T4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+ObjectTemplate.create Spring AMX13_Whel_R_spr
+ObjectTemplate.geometry AMX13_Whel_R_spr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_R_1
+ObjectTemplate.geometry AMX13_Whel_R_1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX13_Whel_R_2
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX13_Whel_R_2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX13_Whel_R_3
+ObjectTemplate.geometry AMX13_Whel_R_3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX13_Whel_R_4
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX13_Whel_R_4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX13_Whel_R_5
+ObjectTemplate.geometry AMX13_Whel_R_5_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX13_Whel_R_Idr
+ObjectTemplate.geometry AMX13_Whel_R_Idr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_R_T1
+ObjectTemplate.geometry AMX13_Whel_R_T1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_R_T2
+ObjectTemplate.geometry AMX13_Whel_R_T2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_R_T3
+ObjectTemplate.geometry AMX13_Whel_R_T3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX13_Whel_R_T4
+ObjectTemplate.geometry AMX13_Whel_R_T4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX13
+rem sauce = Weapons.con
+rem ============================================================================
+
+rem *** AMX13GunBarrel ***
+ObjectTemplate.create FireArms AMX13GunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13Cannon.ssc
+ObjectTemplate.geometry AMX13_Gunbarrel_m1
+ObjectTemplate.aiTemplate AMX13MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_50_1000_Main
+ObjectTemplate.setPosition 0/0/3.3
+
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition -0.074/0/3.1
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition 0.074/0/3.1
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate e_CartridgeEjection_76,2x585R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/-2.64
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.4
+ObjectTemplate.projectileTemplate 75mmL61_Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 12
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 500
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 32.88
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 25
+ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+
+
+rem *** AMX13GunBarrel_APCR ***
+ObjectTemplate.create FireArms AMX13GunBarrel_APCR
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13Cannon.ssc
+ObjectTemplate.geometry AMX13_Gunbarrel_m1
+ObjectTemplate.aiTemplate AMX13MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_50_1000_Main
+ObjectTemplate.setPosition 0/0/3.3
+
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition -0.074/0/3.1
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition 0.074/0/3.1
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate e_CartridgeEjection_76,2x585R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/-2.64
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.4
+ObjectTemplate.projectileTemplate 75mmL61_Projectile
+ObjectTemplate.setTracerTemplate 75mmL61APCR_Projectile CRD_UNIFORM/1/6/0
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 12
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 500
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 32.88
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 25
+ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+
+
+rem *** AMX13_Commander_SmokeLauncher ***
+ObjectTemplate.create FireArms AMX13_Commander_SmokeLauncher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../../../Stationary_Weapons/SmokeLauncher/Sounds/SmokeLauncher.ssc
+ObjectTemplate.aiTemplate SmokeLauncher_AI
+ObjectTemplate.setAsynchronyFire 1
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzz20mm
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.54
+ObjectTemplate.projectileTemplate SmokeLauncher_Projectile
+ObjectTemplate.projectilePosition 0/1/1
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 40
+ObjectTemplate.velocity 15
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 15
+rem ObjectTemplate.setInputFire c_PIAltFire
+rem ObjectTemplate.setMinDev 0.75
+ObjectTemplate.addFireArmsPosition -0.4864/-0.6828/-0.4375 -15/0/0
+ObjectTemplate.addFireArmsPosition -0.4864/-0.8925/-0.5104 -5/15/0
+ObjectTemplate.addFireArmsPosition 1.3736/-0.8925/-0.5104 5/15/0
+ObjectTemplate.addFireArmsPosition 1.3736/-0.6828/-0.4375 15/0/0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX50
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster AMX50
+
+GeometryTemplate.create StandardMesh AMX50_Gunbarrel_m1
+GeometryTemplate.file AMX50B_Gunbarrel_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Gunbase_m1
+GeometryTemplate.file AMX50B_Gunbase_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Turret_m1
+GeometryTemplate.file AMX50B_Turret_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Hull_m1
+GeometryTemplate.file AMX50B_Hull_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh AMX50_MG_Ring_m1
+GeometryTemplate.file AMX50B_MG_Ring_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_MG_Mount_m1
+GeometryTemplate.file AMX50B_MG_Mount_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh 1p_AMX50_Driver_m1
+GeometryTemplate.file 1p_00_DEFtankcockpit_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+GeometryTemplate.create StandardMesh 1P_AMX50_Gunner_m1
+GeometryTemplate.file 1p_00_120mm_AC_20mm_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+
+GeometryTemplate.create AnimatedMesh AMX50_Track_L_m1
+GeometryTemplate.file AMX50B_Track_L_m1
+GeometryTemplate.setSkin animations/AMX50B_Track_L.skn
+
+GeometryTemplate.create AnimatedMesh AMX50_Track_R_m1
+GeometryTemplate.file AMX50B_Track_R_m1
+GeometryTemplate.setSkin animations/AMX50B_Track_R.skn
+
+
+
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_F_m1
+GeometryTemplate.file AMX50B_Whel_L_F_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_1_m1
+GeometryTemplate.file AMX50B_Whel_L_1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_2_m1
+GeometryTemplate.file AMX50B_Whel_L_2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_3_m1
+GeometryTemplate.file AMX50B_Whel_L_3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_4_m1
+GeometryTemplate.file AMX50B_Whel_L_4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_5_m1
+GeometryTemplate.file AMX50B_Whel_L_5_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_6_m1
+GeometryTemplate.file AMX50B_Whel_L_6_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_7_m1
+GeometryTemplate.file AMX50B_Whel_L_7_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_8_m1
+GeometryTemplate.file AMX50B_Whel_L_8_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_9_m1
+GeometryTemplate.file AMX50B_Whel_L_9_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_spr_m1
+GeometryTemplate.file AMX50B_Whel_L_spr_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_T1_m1
+GeometryTemplate.file AMX50B_Whel_L_T1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_T2_m1
+GeometryTemplate.file AMX50B_Whel_L_T2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_T3_m1
+GeometryTemplate.file AMX50B_Whel_L_T3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_L_T4_m1
+GeometryTemplate.file AMX50B_Whel_L_T4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_F_m1
+GeometryTemplate.file AMX50B_Whel_R_F_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_1_m1
+GeometryTemplate.file AMX50B_Whel_R_1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_2_m1
+GeometryTemplate.file AMX50B_Whel_R_2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_3_m1
+GeometryTemplate.file AMX50B_Whel_R_3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_4_m1
+GeometryTemplate.file AMX50B_Whel_R_4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_5_m1
+GeometryTemplate.file AMX50B_Whel_R_5_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_6_m1
+GeometryTemplate.file AMX50B_Whel_R_6_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_7_m1
+GeometryTemplate.file AMX50B_Whel_R_7_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_8_m1
+GeometryTemplate.file AMX50B_Whel_R_8_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_9_m1
+GeometryTemplate.file AMX50B_Whel_R_9_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_spr_m1
+GeometryTemplate.file AMX50B_Whel_R_spr_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_T1_m1
+GeometryTemplate.file AMX50B_Whel_R_T1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_T2_m1
+GeometryTemplate.file AMX50B_Whel_R_T2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_T3_m1
+GeometryTemplate.file AMX50B_Whel_R_T3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Whel_R_T4_m1
+GeometryTemplate.file AMX50B_Whel_R_T4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh AMX50_LOD_m1
+GeometryTemplate.file AMX50B_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Wreck1_m1
+GeometryTemplate.file AMX50B_Wreck1_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Wreck2_m1
+GeometryTemplate.file AMX50B_Wreck2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Wreck3_m1
+GeometryTemplate.file AMX50B_Wreck3_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Wreck4_m1
+GeometryTemplate.file AMX50B_Wreck4_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AMX50_Wreck5_m1
+GeometryTemplate.file AMX50B_Wreck5_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX50
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo AMX50TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX50GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX50TurretMGInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX50EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AMX50BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX50
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = FRE
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+rem *** AMX50
+rem *** AMX50_APCR
+
+rem *** AMX50 ***
+ObjectTemplate.create PlayerControlObject AMX50
+ObjectTemplate.setNetworkableInfo AMX50BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 57800
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 127
+ObjectTemplate.maxhitpoints 127
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate AMX50
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX50
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.3/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX50B.dds"
+ObjectTemplate.setVehicleIconPos 99/37
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_120mmSA50.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_20mmMG151-20.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_heavytank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodAMX50 ***
+ObjectTemplate.create LodObject lodAMX50
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50Complex
+ObjectTemplate.addTemplate AMX50Simple
+ObjectTemplate.addTemplate AMX50Wreck
+ObjectTemplate.setPosition 0/-0.35/0
+rem -------------------------------------
+ObjectTemplate.lodSelector AMX50LodSelector
+
+
+rem *** AMX50Complex ***
+ObjectTemplate.create Bundle AMX50Complex
+ObjectTemplate.geometry AMX50_Hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate AMX50Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate AMX50Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate AMX50_Turret
+ObjectTemplate.setPosition 0/1.1171/0.399
+
+ObjectTemplate.addTemplate e_TankExhaust20LinerU
+ObjectTemplate.setPosition -0.9/0.97/-3.66
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate e_TankExhaust20LinerU
+ObjectTemplate.setPosition 0.9/0.97/-3.66
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.25/1.9/-3.4
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.25/1.9/-3.4
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+
+rem *** AMX50_Tankdesant_PCO1 ***
+ObjectTemplate.create PlayerControlObject AMX50_Tankdesant_PCO1
+ObjectTemplate.setNetworkableInfo AMX50BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX50B.tga"
+ObjectTemplate.setVehicleIconPos 124/41
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+rem *** AMX50_Tankdesant_PCO2 ***
+ObjectTemplate.create PlayerControlObject AMX50_Tankdesant_PCO2
+ObjectTemplate.setNetworkableInfo AMX50BodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX50B.tga"
+ObjectTemplate.setVehicleIconPos 109/36
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+rem *** AMX50Entry ***
+ObjectTemplate.create EntryPoint AMX50Entry
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** AMX50_Turret ***
+ObjectTemplate.create RotationalBundle AMX50_Turret
+ObjectTemplate.setNetworkableInfo AMX50TurretInfo
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50Turrret.ssc
+ObjectTemplate.geometry AMX50_Gunbase_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50_Cannon_Base
+ObjectTemplate.setPosition 0/0.7289/-0.1392
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 22/0/0
+ObjectTemplate.setAcceleration 99/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** AMX50_Cannon_Base ***
+ObjectTemplate.create RotationalBundle AMX50_Cannon_Base
+ObjectTemplate.setNetworkableInfo AMX50GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50GunBase.ssc
+ObjectTemplate.geometry AMX50_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX50Cockpit
+ObjectTemplate.addTemplate AMX50GunBarrel
+ObjectTemplate.setPosition 0/-0.0726/2.1477
+ObjectTemplate.addTemplate Coaxial_MG151
+ObjectTemplate.setPosition 0.4127/-0.0127/-0.1557
+ObjectTemplate.addTemplate AMX50_Reticule_Camera
+ObjectTemplate.setPosition -0.5731/0.5605/0.7892
+
+ObjectTemplate.addTemplate AMX50_MG_PCO1
+ObjectTemplate.setPosition 0.5749/0.5491/-0.55
+ObjectTemplate.addTemplate AMX50_Commander_PCO2
+ObjectTemplate.setPosition -0.58/0.85/-0.69
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/22/0
+ObjectTemplate.setAcceleration 0/99/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** AMX50Camera ***
+ObjectTemplate.create Camera AMX50Camera
+
+rem *** AMX50_Reticule_Camera ***
+ObjectTemplate.create Camera AMX50_Reticule_Camera
+ObjectTemplate.OutsideHudOffset -0.1038/-0.4914/0.3575
+
+
+rem *** lodAMX50Cockpit ***
+ObjectTemplate.create LodObject lodAMX50Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50CockpitExternal
+ObjectTemplate.addTemplate AMX50CockpitInternal
+ObjectTemplate.setPosition -0.5731/0.5605/0.7892
+rem -------------------------------------
+ObjectTemplate.lodSelector AMX50cockpitSelector
+
+
+rem *** AMX50CockpitExternal ***
+ObjectTemplate.create SimpleObject AMX50CockpitExternal
+ObjectTemplate.geometry 
+
+rem *** AMX50CockpitInternal ***
+ObjectTemplate.create Bundle AMX50CockpitInternal
+ObjectTemplate.geometry 1p_AMX50_Driver_m1
+ObjectTemplate.addTemplate AMX50CockpitInternal2
+ObjectTemplate.setPosition -0.1038/-0.4914/0.3575
+
+ObjectTemplate.create SimpleObject AMX50CockpitInternal2
+ObjectTemplate.geometry 1P_AMX50_Gunner_m1
+
+rem *** AMX50cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector AMX50cockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** AMX50_MG_PCO1 ***
+ObjectTemplate.create PlayerControlObject AMX50_MG_PCO1
+ObjectTemplate.NameTagOffset 0/0.7/0
+ObjectTemplate.aiTemplate AMX50TopMG
+ObjectTemplate.setNetworkableInfo AMX50BodyInfo
+ObjectTemplate.setAttachToListener 1
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate AMX50Entry
+ObjectTemplate.addTemplate AMX50MGHolder
+ObjectTemplate.setRotation 180/0/0
+rem ---------------------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/-1/0 180/0/0
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX50B.dds"
+ObjectTemplate.setVehicleIconPos 85/26
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmM2tankMG.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setPcoId 1
+
+rem *** AMX50MGHolder
+ObjectTemplate.create RotationalBundle AMX50MGHolder
+ObjectTemplate.setNetworkableInfo AMX50TurretInfo
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50MG.ssc
+rem -------------------------------
+ObjectTemplate.addTemplate AMX50_MG_Ring
+ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.addTemplate AMX50MGConsoleHide
+ObjectTemplate.setPosition 0/0.3108/-0.6903
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate AMX50MGSeatHide1
+ObjectTemplate.setPosition 0/-0.35/0
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 500/0/00
+ObjectTemplate.AutomaticYawStabilization 1
+ObjectTemplate.setInputToYaw 4
+
+rem *** AMX50_MG_Mount ***
+ObjectTemplate.create SimpleObject AMX50_MG_Ring
+ObjectTemplate.geometry AMX50_MG_Ring_m1
+
+rem *** AMX50MGSeatHide1 ***
+ObjectTemplate.create RotationalBundle AMX50MGSeatHide1
+ObjectTemplate.setNetworkableInfo AMX50TurretMGInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate AMX50MGSeatHide2
+ObjectTemplate.setPosition 0/0/0.15
+ObjectTemplate.setRotation 180/0/0
+rem ----------------------------------
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/-200/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** AMX50MGSeatHide2 ***
+ObjectTemplate.create RotationalBundle AMX50MGSeatHide2
+ObjectTemplate.setNetworkableInfo AMX50TurretMGInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate AMX50MGSeatHide3
+ObjectTemplate.setPosition 0/0/0.15
+ObjectTemplate.setRotation 180/0/0
+rem ----------------------------------
+ObjectTemplate.setMaxRotation 0/180/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/-400/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** AMX50MGSeatHide3 ***
+ObjectTemplate.create RotationalBundle AMX50MGSeatHide3
+ObjectTemplate.setNetworkableInfo AMX50TurretMGInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate AMX50MGSeat
+rem ----------------------------------
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/40/0
+ObjectTemplate.setAcceleration 0/-200/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** AMX50MGSeat
+ObjectTemplate.create SeatObject AMX50MGSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.LeftAngleMultiplier 0.5
+ObjectTemplate.RightAngleMultiplier 0.5
+ObjectTemplate.HeadMaxAngleMultiplier 0.5
+ObjectTemplate.UpAngleMultiplier 0.1
+ObjectTemplate.DownAngleMultiplier 0.1
+
+rem *** AMX50MGConsoleHide ***
+ObjectTemplate.create RotationalBundle AMX50MGConsoleHide
+ObjectTemplate.setNetworkableInfo AMX50TurretMGInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate AMX50MGConsole
+rem ----------------------------------
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/20/0
+ObjectTemplate.setAcceleration 0/-100/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** AMX50MGConsole
+ObjectTemplate.create RotationalBundle AMX50MGConsole
+ObjectTemplate.setNetworkableInfo AMX50GunInfo
+rem -------------------------------
+ObjectTemplate.addTemplate AMX50_MG_Mount
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate AMX50_MG_Bundle
+ObjectTemplate.setPosition 0/-0.0309/-0.2999
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/-500/0
+ObjectTemplate.AutomaticPitchStabilization 1
+ObjectTemplate.setInputToPitch 5
+
+rem *** AMX50_MG_Mount ***
+ObjectTemplate.create SimpleObject AMX50_MG_Mount
+ObjectTemplate.geometry AMX50_MG_Mount_m1
+
+rem *** AMX50MGConsole
+ObjectTemplate.create RotationalBundle AMX50_MG_Bundle
+rem -------------------------------
+ObjectTemplate.addTemplate BrowningCal50
+ObjectTemplate.addTemplate AMX50Camera
+ObjectTemplate.setPosition 0/0.3/-0.849
+
+ObjectTemplate.addTemplate Land_Spotter_Alt
+ObjectTemplate.setPosition 0/0.3/0.5
+rem -------------------------------
+
+
+
+rem *** AMX50_Commander_PCO2 ***
+ObjectTemplate.create PlayerControlObject AMX50_Commander_PCO2
+ObjectTemplate.NameTagOffset 0/-0.2/-1
+ObjectTemplate.setNetworkableInfo AMX50BodyInfo
+ObjectTemplate.aiTemplate AMX50NWAI
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50_Commander_SmokeLauncher
+ObjectTemplate.setRotation 0/-55/0
+ObjectTemplate.addTemplate AMX50_Commander_CamX
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX50B.dds"
+ObjectTemplate.setVehicleIconPos 102/26
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Smoke_launcher.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setPcoId 2
+
+rem *** AMX50_Commander_CamX ***
+ObjectTemplate.create RotationalBundle AMX50_Commander_CamX
+ObjectTemplate.setNetworkableInfo AMX50TurretMGInfo
+rem ------------------------------------- 
+ObjectTemplate.addTemplate AMX50_Commander_CamY
+ObjectTemplate.setPosition 0/0.5/-0.075
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** AMX50_Commander_CamY  ***
+ObjectTemplate.create RotationalBundle AMX50_Commander_CamY
+ObjectTemplate.setNetworkableInfo AMX50TurretMGInfo
+rem ------------------------------------- 
+ObjectTemplate.addTemplate AMX50Camera
+ObjectTemplate.addTemplate Land_Spotter_Alt
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+
+
+rem *** AMX50Simple ***
+ObjectTemplate.create SimpleObject AMX50Simple
+ObjectTemplate.geometry AMX50_LOD_m1
+
+rem *** AMX50Wreck ***
+ObjectTemplate.create Bundle AMX50Wreck
+ObjectTemplate.geometry AMX50_Wreck1_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.addTemplate AMX50_Wreck2
+ObjectTemplate.addTemplate AMX50_Wreck3
+ObjectTemplate.addTemplate AMX50_Wreck4
+ObjectTemplate.addTemplate AMX50_Wreck5
+
+ObjectTemplate.create SimpleObject AMX50_Wreck2
+ObjectTemplate.geometry AMX50_Wreck2_m1
+ObjectTemplate.create SimpleObject AMX50_Wreck3
+ObjectTemplate.geometry AMX50_Wreck3_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.create SimpleObject AMX50_Wreck4
+ObjectTemplate.geometry AMX50_Wreck4_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.create SimpleObject AMX50_Wreck5
+ObjectTemplate.geometry AMX50_Wreck5_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** AMX50LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 AMX50LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+
+rem *** AMX50_L_Track ***
+ObjectTemplate.create AnimatedBundle AMX50_L_Track
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50TrackL.ssc
+ObjectTemplate.geometry AMX50_Track_L_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/AMX50B_Track_L.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50_Whel_L_F
+ObjectTemplate.setPosition -1.33/0.3702/3.1175
+
+ObjectTemplate.addTemplate AMX50_Whel_L_1
+ObjectTemplate.setPosition -1.33/-0.1377/2.188
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_2
+ObjectTemplate.setPosition -1.33/-0.1377/1.6934
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_3
+ObjectTemplate.setPosition -1.33/-0.1377/1.1183
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_4
+ObjectTemplate.setPosition -1.33/-0.1377/0.6237
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_5
+ObjectTemplate.setPosition -1.33/-0.1377/0.0966
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_6
+ObjectTemplate.setPosition -1.33/-0.1377/-0.398
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_7
+ObjectTemplate.setPosition -1.33/-0.1377/-0.9553
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_8
+ObjectTemplate.setPosition -1.33/-0.1377/-1.4499
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_9
+ObjectTemplate.setPosition -1.33/-0.1377/-1.9785
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_L_spr
+ObjectTemplate.setPosition -1.33/0.1599/-2.8398
+
+ObjectTemplate.addTemplate AMX50_Whel_L_T1
+ObjectTemplate.setPosition -1.33/0.5697/2.2455
+
+ObjectTemplate.addTemplate AMX50_Whel_L_T2
+ObjectTemplate.setPosition -1.33/0.5294/1.1624
+
+ObjectTemplate.addTemplate AMX50_Whel_L_T3
+ObjectTemplate.setPosition -1.33/0.4894/0.1469
+
+ObjectTemplate.addTemplate AMX50_Whel_L_T4
+ObjectTemplate.setPosition -1.33/0.449/-0.9362
+rem -------------------------------------
+
+
+rem *** AMX50_R_Track ***
+ObjectTemplate.create AnimatedBundle AMX50_R_Track
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50TrackR.ssc
+ObjectTemplate.geometry AMX50_Track_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/AMX50B_Track_R.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50_Whel_R_F
+ObjectTemplate.setPosition 1.33/0.3702/3.1175
+
+ObjectTemplate.addTemplate AMX50_Whel_R_1
+ObjectTemplate.setPosition 1.33/-0.1377/2.188
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_2
+ObjectTemplate.setPosition 1.33/-0.1377/1.6934
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_3
+ObjectTemplate.setPosition 1.33/-0.1377/1.1183
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_4
+ObjectTemplate.setPosition 1.33/-0.1377/0.6237
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_5
+ObjectTemplate.setPosition 1.33/-0.1377/0.0966
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_6
+ObjectTemplate.setPosition 1.33/-0.1377/-0.398
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_7
+ObjectTemplate.setPosition 1.33/-0.1377/-0.9553
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_8
+ObjectTemplate.setPosition 1.33/-0.1377/-1.4499
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_9
+ObjectTemplate.setPosition 1.33/-0.1377/-1.9785
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate AMX50_Whel_R_spr
+ObjectTemplate.setPosition 1.33/0.1599/-2.8398
+
+ObjectTemplate.addTemplate AMX50_Whel_R_T1
+ObjectTemplate.setPosition 1.33/0.5697/2.2455
+
+ObjectTemplate.addTemplate AMX50_Whel_R_T2
+ObjectTemplate.setPosition 1.33/0.5294/1.1624
+
+ObjectTemplate.addTemplate AMX50_Whel_R_T3
+ObjectTemplate.setPosition 1.33/0.4894/0.1469
+
+ObjectTemplate.addTemplate AMX50_Whel_R_T4
+ObjectTemplate.setPosition 1.33/0.449/-0.9362
+rem -------------------------------------
+
+
+
+rem *** AMX50_APCR ***
+ObjectTemplate.create PlayerControlObject AMX50_APCR
+ObjectTemplate.setNetworkableInfo AMX50BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 57800
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 127
+ObjectTemplate.maxhitpoints 127
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 15
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate AMX50
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX50_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.3/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_AMX50B.dds"
+ObjectTemplate.setVehicleIconPos 99/37
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_120mmSA50RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_20mmMG151-20.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_heavytank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodAMX50_APCR ***
+ObjectTemplate.create LodObject lodAMX50_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50Complex_APCR
+ObjectTemplate.addTemplate AMX50Simple
+ObjectTemplate.addTemplate AMX50Wreck
+ObjectTemplate.setPosition 0/-0.35/0
+rem -------------------------------------
+ObjectTemplate.lodSelector AMX50LodSelector
+
+
+rem *** AMX50Complex_APCR ***
+ObjectTemplate.create Bundle AMX50Complex_APCR
+ObjectTemplate.geometry AMX50_Hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate AMX50Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate AMX50Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate AMX50_Turret_APCR
+ObjectTemplate.setPosition 0/1.1171/0.399
+
+ObjectTemplate.addTemplate e_TankExhaust20LinerU
+ObjectTemplate.setPosition -0.9/0.97/-3.66
+ObjectTemplate.setRotation 0/-90/0
+ObjectTemplate.addTemplate e_TankExhaust20LinerU
+ObjectTemplate.setPosition 0.9/0.97/-3.66
+ObjectTemplate.setRotation 0/-90/0
+
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.25/1.9/-3.4
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.25/1.9/-3.4
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+
+rem *** AMX50_Turret_APCR ***
+ObjectTemplate.create RotationalBundle AMX50_Turret_APCR
+ObjectTemplate.setNetworkableInfo AMX50TurretInfo
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50Turrret.ssc
+ObjectTemplate.geometry AMX50_Gunbase_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50_Cannon_Base_APCR
+ObjectTemplate.setPosition 0/0.7289/-0.1392
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 14/0/0
+ObjectTemplate.setAcceleration 84/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** AMX50_Cannon_Base_APCR ***
+ObjectTemplate.create RotationalBundle AMX50_Cannon_Base_APCR
+ObjectTemplate.setNetworkableInfo AMX50GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50GunBase.ssc
+ObjectTemplate.geometry AMX50_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAMX50Cockpit
+ObjectTemplate.addTemplate AMX50GunBarrel_APCR
+ObjectTemplate.setPosition 0/-0.0726/2.1477
+ObjectTemplate.addTemplate Coaxial_MG151
+ObjectTemplate.setPosition 0.4127/-0.0127/-0.1557
+ObjectTemplate.addTemplate AMX50_Reticule_Camera
+ObjectTemplate.setPosition -0.5731/0.5605/0.7892
+
+ObjectTemplate.addTemplate AMX50_MG_PCO1
+ObjectTemplate.setPosition 0.5749/0.5491/-0.55
+ObjectTemplate.addTemplate AMX50_Commander_PCO2
+ObjectTemplate.setPosition -0.58/0.85/-0.69
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/22/0
+ObjectTemplate.setAcceleration 0/99/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX50
+rem sauce = Physics.con
+rem ============================================================================
+
+rem *** AMX50Engine ***
+ObjectTemplate.create Engine AMX50Engine
+ObjectTemplate.setNetworkableInfo AMX50EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/HL230Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate AMX50_L_Track
+ObjectTemplate.setPosition -0.001/0/0
+ObjectTemplate.addTemplate AMX50_R_Track
+ObjectTemplate.setPosition 0.001/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+rem *** 20.76 HP/t
+ObjectTemplate.setTorque 4.45
+rem *** 65 km/h
+ObjectTemplate.setDifferential 4.88
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+
+ObjectTemplate.create Spring AMX50_Whel_L_F
+ObjectTemplate.geometry AMX50_Whel_L_F_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_L_1
+ObjectTemplate.geometry AMX50_Whel_L_1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_L_2
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX50_Whel_L_2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX50_Whel_L_3
+ObjectTemplate.geometry AMX50_Whel_L_3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_L_4
+ObjectTemplate.geometry AMX50_Whel_L_4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_L_5
+ObjectTemplate.geometry AMX50_Whel_L_5_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_L_6
+ObjectTemplate.geometry AMX50_Whel_L_6_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_L_7
+ObjectTemplate.geometry AMX50_Whel_L_7_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_L_8
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX50_Whel_L_8_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX50_Whel_L_9
+ObjectTemplate.geometry AMX50_Whel_L_9_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_L_spr
+ObjectTemplate.geometry AMX50_Whel_L_spr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_L_T1
+ObjectTemplate.geometry AMX50_Whel_L_T1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_L_T2
+ObjectTemplate.geometry AMX50_Whel_L_T2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_L_T3
+ObjectTemplate.geometry AMX50_Whel_L_T3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_L_T4
+ObjectTemplate.geometry AMX50_Whel_L_T4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+ObjectTemplate.create Spring AMX50_Whel_R_F
+ObjectTemplate.geometry AMX50_Whel_R_F_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_R_1
+ObjectTemplate.geometry AMX50_Whel_R_1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_R_2
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX50_Whel_R_2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX50_Whel_R_3
+ObjectTemplate.geometry AMX50_Whel_R_3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_R_4
+ObjectTemplate.geometry AMX50_Whel_R_4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_R_5
+ObjectTemplate.geometry AMX50_Whel_R_5_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_R_6
+ObjectTemplate.geometry AMX50_Whel_R_6_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_R_7
+ObjectTemplate.geometry AMX50_Whel_R_7_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_R_8
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry AMX50_Whel_R_8_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring AMX50_Whel_R_9
+ObjectTemplate.geometry AMX50_Whel_R_9_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 9
+ObjectTemplate.setDamping 1.5
+
+ObjectTemplate.create Spring AMX50_Whel_R_spr
+ObjectTemplate.geometry AMX50_Whel_R_spr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_R_T1
+ObjectTemplate.geometry AMX50_Whel_R_T1_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_R_T2
+ObjectTemplate.geometry AMX50_Whel_R_T2_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_R_T3
+ObjectTemplate.geometry AMX50_Whel_R_T3_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring AMX50_Whel_R_T4
+ObjectTemplate.geometry AMX50_Whel_R_T4_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AMX50
+rem sauce = Weapons.con
+rem ============================================================================
+
+rem *** AMX50GunBarrel ***
+ObjectTemplate.create FireArms AMX50GunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50Cannon.ssc
+ObjectTemplate.geometry AMX50_Gunbarrel_m1
+ObjectTemplate.aiTemplate AMX50MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_100_1000_Main
+ObjectTemplate.setPosition 0/0/5.58
+
+ObjectTemplate.addTemplate e_MuzzSW_130_1000_Sub
+ObjectTemplate.setPosition -0.2132/0/5.43
+ObjectTemplate.setRotation -135/0/0
+ObjectTemplate.addTemplate e_MuzzSW_130_1000_Sub
+ObjectTemplate.setPosition 0.2132/0/5.43
+ObjectTemplate.setRotation 135/0/0
+
+ObjectTemplate.addTemplate e_CartridgeEjection_127x839R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.15/-4.58
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.44
+ObjectTemplate.projectileTemplate 120mmL60_stereo_Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 6
+ObjectTemplate.numOfMag 8
+ObjectTemplate.velocity 472.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 31
+ObjectTemplate.roundOfFire 0.366
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 25
+ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
+
+rem *** AMX50GunBarrel_APCR ***
+ObjectTemplate.create FireArms AMX50GunBarrel_APCR
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../AMX50/Sounds/AMX50Cannon.ssc
+ObjectTemplate.geometry AMX50_Gunbarrel_m1
+ObjectTemplate.aiTemplate AMX50MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_100_1000_Main
+ObjectTemplate.setPosition 0/0/5.58
+
+ObjectTemplate.addTemplate e_MuzzSW_130_1000_Sub
+ObjectTemplate.setPosition -0.2132/0/5.43
+ObjectTemplate.setRotation -135/0/0
+ObjectTemplate.addTemplate e_MuzzSW_130_1000_Sub
+ObjectTemplate.setPosition 0.2132/0/5.43
+ObjectTemplate.setRotation 135/0/0
+
+ObjectTemplate.addTemplate e_CartridgeEjection_127x839R
+ObjectTemplate.setInputId 0
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.15/-4.58
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.44
+ObjectTemplate.projectileTemplate 120mmL60_stereo_Projectile
+ObjectTemplate.setTracerTemplate 120mmL60_APCR_stereo_Projectile CRD_UNIFORM/1/6/0
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 6
+ObjectTemplate.numOfMag 8
+ObjectTemplate.velocity 472.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 31
+ObjectTemplate.roundOfFire 0.366
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 25
+ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
+
+rem *** AMX50_Commander_SmokeLauncher ***
+ObjectTemplate.create FireArms AMX50_Commander_SmokeLauncher
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../../../Stationary_Weapons/SmokeLauncher/Sounds/SmokeLauncher.ssc
+ObjectTemplate.aiTemplate SmokeLauncher_AI
+ObjectTemplate.setAsynchronyFire 1
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzz20mm
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.54
+ObjectTemplate.projectileTemplate SmokeLauncher_Projectile
+ObjectTemplate.projectilePosition 0/1/1
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 40
+ObjectTemplate.velocity 15
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 15
+rem ObjectTemplate.setInputFire c_PIAltFire
+rem ObjectTemplate.setMinDev 0.75
+ObjectTemplate.addFireArmsPosition -0.92/-0.9635/-0.5217 -15/0/0
+ObjectTemplate.addFireArmsPosition -0.92/-1.2658/-0.5176 -5/5/0
+ObjectTemplate.addFireArmsPosition 2.08/-1.2658/-0.5176 5/5/0
+ObjectTemplate.addFireArmsPosition 2.08/-0.9635/-0.5217 15/0/0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = ARL-44
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster ARL-44
+
+GeometryTemplate.create StandardMesh ARL-44_Gunbarrel_m1
+GeometryTemplate.file ARL-44_barrel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Gunbase_m1
+GeometryTemplate.file ARL-44_barrel_base
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Turret_m1
+GeometryTemplate.file ARL-44_tow
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Hull_m1
+GeometryTemplate.file ARL-44_hull
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+
+GeometryTemplate.create StandardMesh 1p_ARL-44_Driver_m1
+GeometryTemplate.file 1p_00_DEFtankcockpit_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+GeometryTemplate.create StandardMesh 1P_ARL-44_Gunner_m1
+GeometryTemplate.file 1p_00_90mm_SA45_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+
+GeometryTemplate.create AnimatedMesh ARL-44_Track_L_m1
+GeometryTemplate.file ARL-44_Track_L
+GeometryTemplate.setSkin animations/ARL-44_Track_L.skn
+
+GeometryTemplate.create AnimatedMesh ARL-44_Track_R_m1
+GeometryTemplate.file ARL-44_Track_R
+GeometryTemplate.setSkin animations/ARL-44_Track_R.skn
+
+
+GeometryTemplate.create StandardMesh ARL-44_Whel_L_F_m1
+GeometryTemplate.file ARL-44_id_L
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Whel_L_m1
+GeometryTemplate.file ARL-44_whl_L
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Whel_L_spr_m1
+GeometryTemplate.file ARL-44_spr_L
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh ARL-44_Whel_R_F_m1
+GeometryTemplate.file ARL-44_id_R
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Whel_R_m1
+GeometryTemplate.file ARL-44_whl_L
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Whel_R_spr_m1
+GeometryTemplate.file ARL-44_spr_R
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh ARL-44_LOD_m1
+GeometryTemplate.file ARL-44_LOD
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ARL-44_Wreck_m1
+GeometryTemplate.file ARL-44_wreck
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = ARL-44
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo ARL-44TurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ARL-44GunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ARL-44TurretMGInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ARL-44EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ARL-44odyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = ARL-44
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = FRE
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+rem *** ARL-44
+rem *** ARL-44_APCR
+
+
+rem *** ARL-44 ***
+ObjectTemplate.create PlayerControlObject ARL-44
+ObjectTemplate.setNetworkableInfo ARL-44odyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 57800
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 127
+ObjectTemplate.maxhitpoints 127
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate ARL-44
+rem -------------------------------------
+ObjectTemplate.addTemplate lodARL-44
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.3/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_ARL-44.dds"
+ObjectTemplate.setVehicleIconPos 79/36
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_90mm_SA45.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,5mmM1931.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_heavytank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodARL-44 ***
+ObjectTemplate.create LodObject lodARL-44
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44Complex
+ObjectTemplate.addTemplate ARL-44Simple
+ObjectTemplate.addTemplate ARL-44Wreck
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.lodSelector ARL-44LodSelector
+
+
+rem *** ARL-44Complex ***
+ObjectTemplate.create Bundle ARL-44Complex
+ObjectTemplate.geometry ARL-44_Hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate ARL-44Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate ARL-44Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ARL-44_Turret
+ObjectTemplate.setPosition 0/1.4597/0
+
+ObjectTemplate.addTemplate e_TankExhaust10HalfLinerU
+ObjectTemplate.setPosition -1.36/1/-3.45
+ObjectTemplate.setRotation 0/-110/0
+
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.4/2/-3.2
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.4/2/-3.2
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+
+rem *** ARL-44_Tankdesant_PCO1 ***
+ObjectTemplate.create PlayerControlObject ARL-44_Tankdesant_PCO1
+ObjectTemplate.setNetworkableInfo ARL-44odyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_ARL-44.tga"
+ObjectTemplate.setVehicleIconPos 123/44
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+rem *** ARL-44_Tankdesant_PCO2 ***
+ObjectTemplate.create PlayerControlObject ARL-44_Tankdesant_PCO2
+ObjectTemplate.setNetworkableInfo ARL-44odyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_ARL-44.tga"
+ObjectTemplate.setVehicleIconPos 103/37
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+rem *** ARL-44Entry ***
+ObjectTemplate.create EntryPoint ARL-44Entry
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** ARL-44_Turret ***
+ObjectTemplate.create RotationalBundle ARL-44_Turret
+ObjectTemplate.setNetworkableInfo ARL-44TurretInfo
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44Turrret.ssc
+ObjectTemplate.geometry ARL-44_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44_Cannon_Base
+ObjectTemplate.setPosition 0/0.4286/1.263
+
+ObjectTemplate.addTemplate ARL-44_Commander_PCO2
+ObjectTemplate.setPosition 0.3284/1.3369/-0.6692
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 18/0/0
+ObjectTemplate.setAcceleration 89/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** ARL-44_Cannon_Base ***
+ObjectTemplate.create RotationalBundle ARL-44_Cannon_Base
+ObjectTemplate.setNetworkableInfo ARL-44GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44GunBase.ssc
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodARL-44Cockpit
+ObjectTemplate.addTemplate ARL-44GunBarrel
+ObjectTemplate.setPosition 0/0.0057/0.1672
+ObjectTemplate.addTemplate Coaxial_Chatellerault
+ObjectTemplate.setPosition -0.2399/0.076/-0.8261
+ObjectTemplate.addTemplate ARL-44_Reticule_Camera
+ObjectTemplate.setPosition 0.3421/0.5936/-0.1874
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/18/0
+ObjectTemplate.setAcceleration 0/59/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** ARL-44Camera ***
+ObjectTemplate.create Camera ARL-44Camera
+
+rem *** ARL-44_Reticule_Camera ***
+ObjectTemplate.create Camera ARL-44_Reticule_Camera
+ObjectTemplate.OutsideHudOffset 0.1407/-0.3918/0.2355
+
+
+rem *** lodARL-44Cockpit ***
+ObjectTemplate.create LodObject lodARL-44Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44CockpitExternal
+ObjectTemplate.addTemplate ARL-44CockpitInternal
+ObjectTemplate.setPosition 0.3421/0.5936/-0.1874
+rem -------------------------------------
+ObjectTemplate.lodSelector ARL-44cockpitSelector
+
+
+rem *** ARL-44CockpitExternal ***
+ObjectTemplate.create SimpleObject ARL-44CockpitExternal
+ObjectTemplate.geometry ARL-44_Gunbase_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** ARL-44CockpitInternal ***
+ObjectTemplate.create Bundle ARL-44CockpitInternal
+ObjectTemplate.geometry 1p_ARL-44_Driver_m1
+ObjectTemplate.addTemplate ARL-44CockpitInternal2
+ObjectTemplate.setPosition 0.1407/-0.3918/0.2355
+
+ObjectTemplate.create SimpleObject ARL-44CockpitInternal2
+ObjectTemplate.geometry 1P_ARL-44_Gunner_m1
+
+rem *** ARL-44cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector ARL-44cockpitSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** ARL-44_Commander_PCO2 ***
+ObjectTemplate.create PlayerControlObject ARL-44_Commander_PCO2
+ObjectTemplate.NameTagOffset 0/-0.2/-1
+ObjectTemplate.setNetworkableInfo ARL-44odyInfo
+ObjectTemplate.aiTemplate ARL-44NWAI
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44_Commander_CamX
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setPcoId 1
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_ARL-44.dds"
+ObjectTemplate.setVehicleIconPos 86/23
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** ARL-44_Commander_CamX ***
+ObjectTemplate.create RotationalBundle ARL-44_Commander_CamX
+ObjectTemplate.setNetworkableInfo ARL-44TurretMGInfo
+rem ------------------------------------- 
+ObjectTemplate.addTemplate ARL-44_Commander_CamY
+ObjectTemplate.setPosition 0/0.5/-0.075
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 500/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** ARL-44_Commander_CamY  ***
+ObjectTemplate.create RotationalBundle ARL-44_Commander_CamY
+ObjectTemplate.setNetworkableInfo ARL-44TurretMGInfo
+rem ------------------------------------- 
+ObjectTemplate.addTemplate ARL-44Camera
+ObjectTemplate.addTemplate Land_Spotter
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+
+
+rem *** ARL-44Simple ***
+ObjectTemplate.create SimpleObject ARL-44Simple
+ObjectTemplate.geometry ARL-44_LOD_m1
+
+rem *** ARL-44Wreck ***
+ObjectTemplate.create SimpleObject ARL-44Wreck
+ObjectTemplate.geometry ARL-44_Wreck_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** ARL-44LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 ARL-44LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+
+rem *** ARL-44_L_Track ***
+ObjectTemplate.create AnimatedBundle ARL-44_L_Track
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44TrackL.ssc
+ObjectTemplate.geometry ARL-44_Track_L_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/ARL-44_Track_L.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44_Whel_L_F
+ObjectTemplate.setPosition -1.4462/0.7286/2.9585
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/0.1644/2.5977
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/0.0313/2.3152
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.0717/2.0113
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L
+ObjectTemplate.setPosition -1.4462/-0.2543/1.7095
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/1.4138
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/1.1082
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/0.8129
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/0.5161
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/0.2203
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/-0.082
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/-0.3799
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/-0.6894
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/-0.9826
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.2543/-1.288
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Smoke
+ObjectTemplate.setPosition -1.4462/-0.2543/-1.5838
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L
+ObjectTemplate.setPosition -1.4462/-0.2543/-1.8871
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/-0.111/-2.1836
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_spr
+ObjectTemplate.setPosition -1.4462/0.4641/-2.6813
+
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/1.0035/1.48
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/1.0026/-0.155
+ObjectTemplate.addTemplate ARL-44_Whel_L_Dummy
+ObjectTemplate.setPosition -1.4462/0.8548/-1.977
+rem -------------------------------------
+
+
+rem *** ARL-44_R_Track ***
+ObjectTemplate.create AnimatedBundle ARL-44_R_Track
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44TrackR.ssc
+ObjectTemplate.geometry ARL-44_Track_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/ARL-44_Track_R.ske
+ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44_Whel_R_F
+ObjectTemplate.setPosition 1.4462/0.7286/2.9585
+
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/0.1644/2.5977
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/0.0313/2.3152
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.0717/2.0113
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R
+ObjectTemplate.setPosition 1.4462/-0.2543/1.7095
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/1.4138
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/1.1082
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/0.8129
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/0.5161
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/0.2203
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/-0.082
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/-0.3799
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/-0.6894
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/-0.9826
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.2543/-1.288
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Smoke
+ObjectTemplate.setPosition 1.4462/-0.2543/-1.5838
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R
+ObjectTemplate.setPosition 1.4462/-0.2543/-1.8871
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/-0.111/-2.1836
+ObjectTemplate.useAsBone 0/0/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_spr
+ObjectTemplate.setPosition 1.4462/0.4641/-2.6813
+
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/1.0035/1.48
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/1.0026/-0.155
+ObjectTemplate.addTemplate ARL-44_Whel_R_Dummy
+ObjectTemplate.setPosition 1.4462/0.8548/-1.977
+rem -------------------------------------
+
+
+rem *** ARL-44_APCR ***
+ObjectTemplate.create PlayerControlObject ARL-44_APCR
+ObjectTemplate.setNetworkableInfo ARL-44odyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 3
+ObjectTemplate.drag 2
+ObjectTemplate.mass 57800
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 127
+ObjectTemplate.maxhitpoints 127
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/0.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.timetoliveafterdeath 45
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate ARL-44
+rem -------------------------------------
+ObjectTemplate.addTemplate lodARL-44_APCR
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.3/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 75
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.4 1.4 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_ARL-44.dds"
+ObjectTemplate.setVehicleIconPos 79/36
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_90mm_SA45_RndAPCR.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,5mmM1931.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_heavytank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodARL-44_APCR ***
+ObjectTemplate.create LodObject lodARL-44_APCR
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44Complex_APCR
+ObjectTemplate.addTemplate ARL-44Simple
+ObjectTemplate.addTemplate ARL-44Wreck
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.lodSelector ARL-44LodSelector
+
+
+rem *** ARL-44Complex_APCR ***
+ObjectTemplate.create Bundle ARL-44Complex_APCR
+ObjectTemplate.geometry ARL-44_Hull_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44Entry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate ARL-44Entry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate ARL-44Engine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ARL-44_Turret_APCR
+ObjectTemplate.setPosition 0/1.4597/0
+
+ObjectTemplate.addTemplate e_TankExhaust10HalfLinerU
+ObjectTemplate.setPosition -1.36/1/-3.45
+ObjectTemplate.setRotation 0/-110/0
+
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.4/2/-3.2
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.4/2/-3.2
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+
+rem *** ARL-44_Turret_APCR ***
+ObjectTemplate.create RotationalBundle ARL-44_Turret_APCR
+ObjectTemplate.setNetworkableInfo ARL-44TurretInfo
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44Turrret.ssc
+ObjectTemplate.geometry ARL-44_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44_Cannon_Base_APCR
+ObjectTemplate.setPosition 0/0.4286/1.263
+
+ObjectTemplate.addTemplate ARL-44_Commander_PCO2
+ObjectTemplate.setPosition 0.3284/1.3369/-0.6692
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 18/0/0
+ObjectTemplate.setAcceleration 89/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** ARL-44_Cannon_Base_APCR ***
+ObjectTemplate.create RotationalBundle ARL-44_Cannon_Base_APCR
+ObjectTemplate.setNetworkableInfo ARL-44GunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44GunBase.ssc
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodARL-44Cockpit
+ObjectTemplate.addTemplate ARL-44GunBarrel_APCR
+ObjectTemplate.setPosition 0/0.0057/0.1672
+ObjectTemplate.addTemplate Coaxial_Chatellerault
+ObjectTemplate.setPosition -0.2399/0.076/-0.8261
+ObjectTemplate.addTemplate ARL-44_Reticule_Camera
+ObjectTemplate.setPosition 0.3421/0.5936/-0.1874
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/18/0
+ObjectTemplate.setAcceleration 0/89/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = ARL-44
+rem sauce = Physics.con
+rem ============================================================================
+
+rem *** ARL-44Engine ***
+ObjectTemplate.create Engine ARL-44Engine
+ObjectTemplate.setNetworkableInfo ARL-44EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Engines/Sounds/HL230Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ARL-44_L_Track
+ObjectTemplate.setPosition -0.001/0/0
+ObjectTemplate.addTemplate ARL-44_R_Track
+ObjectTemplate.setPosition 0.001/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+rem *** 11.98 HP/t
+ObjectTemplate.setTorque 2.36
+rem *** 35.7 km/h
+ObjectTemplate.setDifferential 2.68
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+
+
+ObjectTemplate.create Spring ARL-44_Whel_L_F
+ObjectTemplate.geometry ARL-44_Whel_L_F_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring ARL-44_Whel_L
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry ARL-44_Whel_L_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring ARL-44_Whel_L_Dummy
+ObjectTemplate.geometry ARL-44_Whel_L_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring ARL-44_Whel_L_Smoke
+ObjectTemplate.geometry ARL-44_Whel_L_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring ARL-44_Whel_L_spr
+ObjectTemplate.geometry ARL-44_Whel_L_spr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+
+ObjectTemplate.create Spring ARL-44_Whel_R_F
+ObjectTemplate.geometry ARL-44_Whel_R_F_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring ARL-44_Whel_R
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry ARL-44_Whel_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 18
+ObjectTemplate.setDamping 4
+
+ObjectTemplate.create Spring ARL-44_Whel_R_Dummy
+ObjectTemplate.geometry ARL-44_Whel_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring ARL-44_Whel_R_Smoke
+ObjectTemplate.geometry ARL-44_Whel_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+ObjectTemplate.create Spring ARL-44_Whel_R_spr
+ObjectTemplate.geometry ARL-44_Whel_R_spr_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = ARL-44
+rem sauce = Weapons.con
+rem ============================================================================
+
+rem *** ARL-44GunBarrel ***
+ObjectTemplate.create FireArms ARL-44GunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44Cannon.ssc
+ObjectTemplate.geometry ARL-44_Gunbarrel_m1
+ObjectTemplate.aiTemplate ARL-44MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Main
+ObjectTemplate.setPosition 0/0/5.315
+
+ObjectTemplate.addTemplate e_MuzzSW_88_1000_Sub
+ObjectTemplate.setPosition -0.19/0/5.18
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate e_MuzzSW_88_1000_Sub
+ObjectTemplate.setPosition 0.19/0/5.18
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.44
+ObjectTemplate.projectileTemplate 90mmL65_Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 500
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 0.625
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 25
+ObjectTemplate.heatAddWhenFire 0.612
+ObjectTemplate.coolDownPerSec 0.206
+ObjectTemplate.timeDelayOnOverHeat 0
+ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
+
+rem *** ARL-44GunBarrel_APCR ***
+ObjectTemplate.create FireArms ARL-44GunBarrel_APCR
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../ARL-44/Sounds/ARL-44Cannon.ssc
+ObjectTemplate.geometry ARL-44_Gunbarrel_m1
+ObjectTemplate.aiTemplate ARL-44MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Main
+ObjectTemplate.setPosition 0/0/5.315
+
+ObjectTemplate.addTemplate e_MuzzSW_88_1000_Sub
+ObjectTemplate.setPosition -0.19/0/5.18
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate e_MuzzSW_88_1000_Sub
+ObjectTemplate.setPosition 0.19/0/5.18
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.44
+ObjectTemplate.projectileTemplate 90mmL65_Projectile
+ObjectTemplate.setTracerTemplate 90mmL65APCR_Projectile CRD_UNIFORM/1/6/0
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 500
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 0.625
+ObjectTemplate.fireingForce 20
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 25
+ObjectTemplate.heatAddWhenFire 0.612
+ObjectTemplate.coolDownPerSec 0.206
+ObjectTemplate.timeDelayOnOverHeat 0
+ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
 
 rem ===== EOF =====
 rem ============================================================================
@@ -6396,7 +10375,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry Frz155_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Frz155BatteryCannon_PenetrateExploder3
+rem ObjectTemplate.addTemplate Frz155BatteryCannon_PenetrateExploder3
 ObjectTemplate.addTemplate Frz155BatteryCannon3
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -6412,7 +10391,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry Frz155_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Frz155BatteryCannon_PenetrateExploder4
+rem ObjectTemplate.addTemplate Frz155BatteryCannon_PenetrateExploder4
 ObjectTemplate.addTemplate Frz155BatteryCannon4
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -6428,7 +10407,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry Frz155_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Frz155BatteryCannon_PenetrateExploder5
+rem ObjectTemplate.addTemplate Frz155BatteryCannon_PenetrateExploder5
 ObjectTemplate.addTemplate Frz155BatteryCannon5
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -7387,7 +11366,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_150_500_Main
 ObjectTemplate.setPosition -0.0385/0.1246/1.8377
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile_Penetrator
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile_Penetrator
 ObjectTemplate.projectilePosition -0.04/0.1246/2
 ObjectTemplate.setMinDev 0.96
 ObjectTemplate.magSize 50
@@ -8579,7 +12559,7 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry Frz155_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Frz155Cannon_PenetrateExploder
+rem ObjectTemplate.addTemplate Frz155Cannon_PenetrateExploder
 ObjectTemplate.addTemplate Frz155Cannon
 ObjectTemplate.addTemplate Frz155Cannon_TracGunBarrel
 rem -------------------------------------

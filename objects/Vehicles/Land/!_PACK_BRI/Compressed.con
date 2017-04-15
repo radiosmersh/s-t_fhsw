@@ -4742,6 +4742,11 @@ rem ===== COMPRESS = BRI
 rem *** 9inchDefgun
 rem *** 9inchDefgun_AmmoLimited
 
+rem *** 9inchDefgun_AmmoLimited_SP66
+rem *** 9inchDefgun_AmmoLimited_SP67
+rem *** 9inchDefgun_AmmoLimited_SP68
+rem *** 9inchDefgun_AmmoLimited_SP69
+
 rem *** 9inchDefgun ***
 ObjectTemplate.create PlayerControlObject 9inchDefgun
 ObjectTemplate.NameTagOffset 0/50/0
@@ -5078,6 +5083,384 @@ ObjectTemplate.setMaxSpeed 0/2/0
 ObjectTemplate.setAcceleration 0/10/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
+
+
+
+
+rem *** 9inchDefgun_AmmoLimited_SP66 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AmmoLimited_SP66
+ObjectTemplate.NameTagOffset 0/50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry 9inchDefgun_thing_m1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 137
+ObjectTemplate.addArmorEffect 30 e_DefGunDamage 0/52/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/52/0
+ObjectTemplate.addArmorEffect 0 e_Scrap9inchDefgun 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplAni01 0/50/0
+ObjectTemplate.aiTemplate 9inchDefgunAI
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lod9inchDefgun_AmmoLimited
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO1
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO2
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO3
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO4
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO5
+ObjectTemplate.addTemplate 9inchDefgun_SoldierSpawn66
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 67
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.dds"
+ObjectTemplate.setVehicleIconPos 97/44
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_229mmMarkIAP.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Coastalgun.tga"
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 75
+ObjectTemplate.DirBarYScaleAbove 20
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -60
+
+rem *** 9inchDefgun_SoldierSpawn66 ***
+ObjectTemplate.create SpawnPoint 9inchDefgun_SoldierSpawn66
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+
+
+rem *** 9inchDefgun_AmmoLimited_SP67 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AmmoLimited_SP67
+ObjectTemplate.NameTagOffset 0/50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry 9inchDefgun_thing_m1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 137
+ObjectTemplate.addArmorEffect 30 e_DefGunDamage 0/52/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/52/0
+ObjectTemplate.addArmorEffect 0 e_Scrap9inchDefgun 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplAni01 0/50/0
+ObjectTemplate.aiTemplate 9inchDefgunAI
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lod9inchDefgun_AmmoLimited
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO1
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO2
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO3
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO4
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO5
+ObjectTemplate.addTemplate 9inchDefgun_SoldierSpawn67
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 67
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.dds"
+ObjectTemplate.setVehicleIconPos 97/44
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_229mmMarkIAP.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Coastalgun.tga"
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 75
+ObjectTemplate.DirBarYScaleAbove 20
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -60
+
+rem *** 9inchDefgun_SoldierSpawn67 ***
+ObjectTemplate.create SpawnPoint 9inchDefgun_SoldierSpawn67
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+
+
+rem *** 9inchDefgun_AmmoLimited_SP68 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AmmoLimited_SP68
+ObjectTemplate.NameTagOffset 0/50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry 9inchDefgun_thing_m1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 137
+ObjectTemplate.addArmorEffect 30 e_DefGunDamage 0/52/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/52/0
+ObjectTemplate.addArmorEffect 0 e_Scrap9inchDefgun 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplAni01 0/50/0
+ObjectTemplate.aiTemplate 9inchDefgunAI
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lod9inchDefgun_AmmoLimited
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO1
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO2
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO3
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO4
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO5
+ObjectTemplate.addTemplate 9inchDefgun_SoldierSpawn68
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 67
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.dds"
+ObjectTemplate.setVehicleIconPos 97/44
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_229mmMarkIAP.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Coastalgun.tga"
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 75
+ObjectTemplate.DirBarYScaleAbove 20
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -60
+
+rem *** 9inchDefgun_SoldierSpawn68 ***
+ObjectTemplate.create SpawnPoint 9inchDefgun_SoldierSpawn68
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 68
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+
+rem *** 9inchDefgun_AmmoLimited_SP69 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AmmoLimited_SP69
+ObjectTemplate.NameTagOffset 0/50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry 9inchDefgun_thing_m1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 137
+ObjectTemplate.addArmorEffect 30 e_DefGunDamage 0/52/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/52/0
+ObjectTemplate.addArmorEffect 0 e_Scrap9inchDefgun 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/50/0
+ObjectTemplate.addArmorEffect 0 e_ExplAni01 0/50/0
+ObjectTemplate.aiTemplate 9inchDefgunAI
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lod9inchDefgun_AmmoLimited
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO1
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO2
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO3
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO4
+ObjectTemplate.addTemplate 9inchDefgun_AddPCO5
+ObjectTemplate.addTemplate 9inchDefgun_SoldierSpawn69
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 67
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.dds"
+ObjectTemplate.setVehicleIconPos 97/44
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_229mmMarkIAP.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType VTDefGun
+ObjectTemplate.setToolTipType  TTDefGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Coastalgun.tga"
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 75
+ObjectTemplate.DirBarYScaleAbove 20
+ObjectTemplate.DirBarYScaleBelow 5
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -60
+
+rem *** 9inchDefgun_SoldierSpawn69 ***
+ObjectTemplate.create SpawnPoint 9inchDefgun_SoldierSpawn69
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 69
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+
+rem *** 9inchDefgun_Add_Camera ***
+ObjectTemplate.create Camera 9inchDefgun_Add_Camera
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** 9inchDefgun_AddPCO1 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AddPCO1
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate 9inchDefgun_Entry
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate 9inchDefgun_Add_Camera
+ObjectTemplate.setPosition 0/55/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.tga"
+ObjectTemplate.setVehicleIconPos 97/49
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+rem ObjectTemplate.hasRestrictedExit 1
+
+rem *** 9inchDefgun_AddPCO2 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AddPCO2
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate 9inchDefgun_Entry
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate 9inchDefgun_Add_Camera
+ObjectTemplate.setPosition 0/55/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.tga"
+ObjectTemplate.setVehicleIconPos 97/54
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+rem ObjectTemplate.hasRestrictedExit 1
+
+rem *** 9inchDefgun_AddPCO3 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AddPCO3
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate 9inchDefgun_Entry
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate 9inchDefgun_Add_Camera
+ObjectTemplate.setPosition 0/55/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.tga"
+ObjectTemplate.setVehicleIconPos 97/59
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+rem ObjectTemplate.hasRestrictedExit 1
+
+rem *** 9inchDefgun_AddPCO4 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AddPCO4
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate 9inchDefgun_Entry
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate 9inchDefgun_Add_Camera
+ObjectTemplate.setPosition 0/55/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.tga"
+ObjectTemplate.setVehicleIconPos 97/64
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+rem ObjectTemplate.hasRestrictedExit 1
+
+rem *** 9inchDefgun_AddPCO5 ***
+ObjectTemplate.create PlayerControlObject 9inchDefgun_AddPCO5
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo 9inchDefgun_BodyInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate 9inchDefgun_Entry
+ObjectTemplate.setPosition 0/1/0
+ObjectTemplate.addTemplate 9inchDefgun_Add_Camera
+ObjectTemplate.setPosition 0/55/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/52.5/-8.5 -180/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_9inchDefgun.tga"
+ObjectTemplate.setVehicleIconPos 97/69
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+rem ObjectTemplate.hasRestrictedExit 1
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 9inchDefgun
@@ -5096,7 +5479,7 @@ ObjectTemplate.addTemplate e_MuzzSW_200_1000_Main
 ObjectTemplate.setPosition 0/0/20
 rem -------------------------------------
 ObjectTemplate.projectileTemplate 22,9cmL98APProjectile
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/1/20
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 500
 ObjectTemplate.velocity 762
@@ -5132,7 +5515,7 @@ ObjectTemplate.create FireArms 9inchDefgun_Barrel_PenetrateExploder
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
 rem -------------------------------------
 ObjectTemplate.projectileTemplate 22,9cmL98PenetrateExploderProjectile
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/1/20
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 500
 ObjectTemplate.velocity 762
@@ -5162,7 +5545,7 @@ ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 ObjectTemplate.aiTemplate 9inchDefgunGunAI
 rem -------------------------------------
 ObjectTemplate.projectileTemplate 22,9cmL98TracerProjectile
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/1/20
 ObjectTemplate.magSize 999
 ObjectTemplate.numOfMag -1
 ObjectTemplate.velocity 762
@@ -5201,7 +5584,7 @@ ObjectTemplate.addTemplate e_MuzzSW_200_1000_Main
 ObjectTemplate.setPosition 0/0/20
 rem -------------------------------------
 ObjectTemplate.projectileTemplate 22,9cmL98APProjectile
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/1/20
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 2
 ObjectTemplate.velocity 762
@@ -5219,7 +5602,7 @@ ObjectTemplate.create FireArms 9inchDefgun_Barrel_AmmoLimited_PenetrateExploder
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
 rem -------------------------------------
 ObjectTemplate.projectileTemplate 22,9cmL98PenetrateExploderProjectile
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/1/20
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 2
 ObjectTemplate.velocity 762
@@ -11402,7 +11785,7 @@ ObjectTemplate.setPosition -1.2283/-0.1027/1.5169
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
-ObjectTemplate.addTemplate Centurion_Wheel_M_L_Dummy
+ObjectTemplate.addTemplate Centurion_Wheel_M_L
 ObjectTemplate.setPosition -1.2283/-0.1027/0.3512
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
@@ -11448,7 +11831,7 @@ ObjectTemplate.setPosition 1.2283/-0.1027/1.5169
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
 
-ObjectTemplate.addTemplate Centurion_Wheel_M_R_Dummy
+ObjectTemplate.addTemplate Centurion_Wheel_M_R
 ObjectTemplate.setPosition 1.2283/-0.1027/0.3512
 ObjectTemplate.useAsBone 0/0/0
 ObjectTemplate.setBoneOriginOffset 0/0/0
@@ -19801,7 +20184,7 @@ ObjectTemplate.material 774
 ObjectTemplate.material2 607
 ObjectTemplate.radius 25
 ObjectTemplate.hasCollisionEffect 1
-ObjectTemplate.addTemplate PenetrateExplosion20cmSpawner
+ObjectTemplate.addTemplate PenetrateExplosion20cmNoSoundSpawner
 ObjectTemplate.setPosition 0/0/1
 
 rem ===== EOF =====
@@ -42254,7 +42637,8 @@ rem *** Tortoise_Gunbarrel_TracGunBarrel ***
 ObjectTemplate.create FireArms Tortoise_Gunbarrel_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty9,4cmL65Projectile_Tracer
+ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+rem ObjectTemplate.projectileTemplate Arty9,4cmL65Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -46031,7 +46415,7 @@ rem -------------------------------------
 
 
 rem *** PTRDDPCarrier ***
-ObjectTemplate.create PlayerControlObject PTRDDPCarrier 
+ObjectTemplate.create PlayerControlObject PTRDDPCarrier
 ObjectTemplate.NameTagOffset 0/-0.3/0
 ObjectTemplate.setNetworkableInfo carrierBodyInfo
 ObjectTemplate.saveInSeparateFile 1
@@ -46120,7 +46504,7 @@ rem -------------------------------------
 
 
 rem *** PTRSDPCarrier ***
-ObjectTemplate.create PlayerControlObject PTRSDPCarrier 
+ObjectTemplate.create PlayerControlObject PTRSDPCarrier
 ObjectTemplate.NameTagOffset 0/-0.3/0
 ObjectTemplate.setNetworkableInfo carrierBodyInfo
 ObjectTemplate.saveInSeparateFile 1
@@ -52271,13 +52655,13 @@ ObjectTemplate.GUIIndex 25
 ObjectTemplate.setVehicleIcon "Vehicle/icon_WASP.tga"
 ObjectTemplate.setVehicleIconPos 71/87
 ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_flame.tga"
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_Flam_def.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lightflam.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 rem *** lodWASP ***
@@ -53334,5 +53718,212 @@ ObjectTemplate.team 1
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
 ObjectTemplate.noFFSound 1
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = WillySAS345
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = BRI
+
+rem *** WillySAS345 ***
+ObjectTemplate.create PlayerControlObject WillySAS345
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo SASWillyBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.explosionRadius 5
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.drag 1.0
+ObjectTemplate.mass 2500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 60
+ObjectTemplate.maxhitpoints 60
+ObjectTemplate.material 29
+ObjectTemplate.criticalDamage 6
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 30 e_WillyDamage 0/1.7/0
+ObjectTemplate.addArmorEffect 6 e_WillyFire 0/0.5/0.8
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate SASWilly
+ObjectTemplate.timetoliveafterdeath 15
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSASWilly345
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
+ObjectTemplate.GUIIndex 26
+ObjectTemplate.submarineData 1 0.03 10.0 1.1 1.2 0.5 5
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willyMG.tga"
+ObjectTemplate.setVehicleIconPos 40/79
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,7mmBren.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodSASWilly345 ***
+ObjectTemplate.create LodObject lodSASWilly345
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate SASWilly345Complex
+ObjectTemplate.addTemplate SASWillySimple
+ObjectTemplate.addTemplate SASWillyWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector SASWillyLodSelector
+
+
+rem *** SASWilly345Complex ***
+ObjectTemplate.create Bundle SASWilly345Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSASWillyCockpit
+rem ObjectTemplate.setPosition 0/0.6/-0.999
+
+ObjectTemplate.addTemplate SASWillyCamera
+ObjectTemplate.setPosition -0.38/0.95/-1.25
+ObjectTemplate.setRotation 0/-20/0
+ObjectTemplate.addTemplate SAS_BrenRotationX
+ObjectTemplate.setPosition -0.72/0.48/0.23
+ObjectTemplate.setRotation 0/-20/0
+
+ObjectTemplate.addTemplate SASWillySeat
+ObjectTemplate.setPosition -0.399/0.6/-0.75
+ObjectTemplate.addTemplate SASWillyEntry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate SASWillyEntry
+ObjectTemplate.setPosition 0/0/-1
+ObjectTemplate.addTemplate SASWilly345PCO
+ObjectTemplate.setPosition 0/1.5/-1.3
+ObjectTemplate.addTemplate SASWillyLewisPCO
+ObjectTemplate.setPosition 0/0.35/-0.25
+ObjectTemplate.addTemplate SASWillyEngine
+ObjectTemplate.setPosition 0/0.35/-0.25
+ObjectTemplate.addTemplate SASWillySteeringDummy
+ObjectTemplate.setPosition -0.399/0.35/0.15
+ObjectTemplate.setRotation 0/34/0
+ObjectTemplate.addTemplate jerry_cans
+ObjectTemplate.setPosition 0.025/0.025/0
+ObjectTemplate.addTemplate sashull2
+ObjectTemplate.addTemplate hull_grill
+ObjectTemplate.addTemplate WillysasHorn
+
+ObjectTemplate.addTemplate WillySAS_Depot
+ObjectTemplate.setPosition 0/0.7/-0.8
+ObjectTemplate.addTemplate WillySAS_IconObj_Spawner
+rem -------------------------------------
+
+rem *** SASWilly345PCO ***
+ObjectTemplate.create PlayerControlObject SASWilly345PCO
+ObjectTemplate.networkableInfo SASWillyBodyInfo
+ObjectTemplate.aiTemplate SASWillyMG
+ObjectTemplate.hasRestrictedExit 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Willy345GunnerX
+ObjectTemplate.setPosition 0/-0.17/0
+ObjectTemplate.addTemplate SASWillyMGEntry
+ObjectTemplate.setPosition 0/0/-1
+
+ObjectTemplate.addTemplate SASWilly345_KitGunBarrel
+ObjectTemplate.setPosition 0/-0.5/-2
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+Objecttemplate.GUIIndex 123
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 20/72
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "ammo/icon_345RCL_HESH.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Weapon/Icon_RCL345_HEAT.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setHasTurretIcon 1
+rem ---------------- Scope ---------------------------
+ObjectTemplate.vehicleFov 0.3733
+rem ObjectTemplate.vehicleFov 0.395
+rem --------------------------------------------------
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = WillySAS345
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** SASWilly345_KitGunBarrel ***
+ObjectTemplate.create FireArms SASWilly345_KitGunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.aiTemplate 6PdrATgunMainGun
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.projectileTemplate SASWilly345KitProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 3
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+
+ObjectTemplate.create Projectile SASWilly345KitProjectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+ObjectTemplate.addTemplate SASWilly345KitDeploySpawner
+ObjectTemplate.setPosition 0/-0.225/0 
+ObjectTemplate.setRotation 180/0/0 
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3.0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 814
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+ObjectTemplate.noFFSound 1
+
+rem *** SASWilly345KitDeploySpawner *** 
+ObjectTemplate.create ObjectSpawner SASWilly345KitDeploySpawner
+ObjectTemplate.setObjectTemplate 1 GB_SpecOps345RCLGammonReconP
+ObjectTemplate.setObjectTemplate 2 GB_SpecOps345RCLGammonReconP
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.team 1 
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 0
 
 rem ===== EOF =====
