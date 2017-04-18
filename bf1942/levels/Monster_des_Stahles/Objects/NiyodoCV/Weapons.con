@@ -41,7 +41,7 @@ rem *** OyodoCV1944_Oyodo_155_GunBarrelDummy_Alt ***
 ObjectTemplate.create FireArms OyodoCV1944_155_GunBarrelDummy_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry OyodoCV1944_155mm_3YT_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../../../../../objects/Vehicles/Sea/Common/Sounds/6,1inchL60fire_Rel10Triple
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5

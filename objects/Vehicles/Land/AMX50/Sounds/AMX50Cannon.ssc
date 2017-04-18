@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/AMX50Cannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/AMX50Cannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/AMX50Cannon.ssc
