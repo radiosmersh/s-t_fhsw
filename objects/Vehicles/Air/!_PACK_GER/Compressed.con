@@ -13472,7 +13472,7 @@ ObjectTemplate.useMMOnEndEffect 0
 ObjectTemplate.damageType 1
 ObjectTemplate.endEffectTemplate e_smokeWhite 
 ObjectTemplate.noFFSound 1
-ObjectTemplate.loadSoundScript ../common/Sounds/BombSmall.ssc
+ObjectTemplate.loadSoundScript ../Flettner/Sounds/Smoke.ssc
 
 
 
