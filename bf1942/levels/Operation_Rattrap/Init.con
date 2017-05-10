@@ -9,6 +9,7 @@ renderer.diffuseColor .50/.47/0.4
 renderer.specularColor .3/.3/.3
 renderer.animatedMeshAmbientColor 0.3
 
+textureManager.alternativePath Texture/SPECIAL_GER_UNIFORM_LATE_WAR_TANK_COM
 textureManager.alternativePath Texture/Levels/RatTrap
 textureManager.alternativePath bf1942/levels/Operation_Rattrap/Textures/
 textureManager.alternativePath Texture/Levels/elalamein
