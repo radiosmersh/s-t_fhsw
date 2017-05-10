@@ -16,22 +16,9 @@ volume 0
 ### Release ###
 ###############
 newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
 
-load @ROOT/Sound/@RTD/flak38_rev.wav
-minDistance 30
-dopplerOff
-priority -1
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 150
-	param 300
-	param 1
-	param -1
-endEffect
-################################
 ###########################################################################################################
 ### Shell Bounce ###
 ####################
@@ -51,39 +38,50 @@ volume 0
 #################
 newPatch
 
-load @ROOT/Sound/@RTD/flak38.wav
+load @ROOT/Sound/@RTD/37mmFlakST.wav
 minDistance 2
-stereo
-loop
-stop FinishSample
 dopplerOff
 priority 10
+relativePosition 0/0/1
+stereo
+volume 1.0
 
 *** Distance Volume ***
 beginEffect
 	controlDestination Volume
 	controlSource Distance
 	envelope Ramp
-	param 3
-	param 3
+	param 0
+	param 2
+	param 1
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 2
 	param 1
 	param -1
 endEffect
 
-load @ROOT/Sound/@RTD/flak38mono.wav
-minDistance 40
-loop
-stop FinishSample
+load @ROOT/Sound/@RTD/37mmFlakMO.wav
+minDistance 30
 dopplerOff
-priority 9
+priority 8
+relativePosition 0/0/1
+volume 1.0
 
 *** Distance Volume ***
 beginEffect
 	controlDestination Volume
 	controlSource Distance
 	envelope Ramp
-	param 3
-	param 3
+	param 2
+	param 2
 	param 0
 	param 1
 endEffect
@@ -93,8 +91,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Distance
 	envelope Ramp
-	param 120
-	param 180
+	param 2
+	param 200
 	param 1
 	param -1
 endEffect
