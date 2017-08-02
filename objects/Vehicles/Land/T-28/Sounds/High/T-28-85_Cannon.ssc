@@ -22,7 +22,7 @@ endEffect
 #############
 ### Close ###
 #############
-load @ROOT/Sound/@RTD/90mm.wav
+load @ROOT/Sound/@RTD/85mm.wav
 minDistance 200
 relativePosition 0/0/0
 stereo
