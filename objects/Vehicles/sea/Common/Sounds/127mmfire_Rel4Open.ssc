@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/127mmfire_Rel4Open.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/127mmfire_Rel4Open.ssc
+	
+#templateLevel LOW
+
+	#include Low/127mmfire_Rel4Open.ssc

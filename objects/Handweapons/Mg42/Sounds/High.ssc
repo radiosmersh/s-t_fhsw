@@ -190,7 +190,7 @@ beginEffect
 	param -1
 endEffect
 
-load @ROOT/Sound/@RTD/mg42mono_startmono.wav
+load @ROOT/Sound/@RTD/mg42_startmono.wav
 dopplerOff
 minDistance 16
 priority 10
