@@ -1,0 +1,78 @@
+#templateLevel HIGH
+
+newPatch
+
+##################
+### Crickets 1 ###
+##################
+load @ROOT/Sound/@RTD/Ambience/X2Crickets_01.wav
+loop
+volume .4
+minDistance 4
+randomStartPitch 0.25 / 0.0
+priority -10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 25
+	param 1
+	param -1	
+endEffect
+
+#################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+##################
+### Crickets 1 ###
+##################
+load @ROOT/Sound/@RTD/Ambience/X2Crickets_01.wav
+loop
+volume .4
+minDistance 4
+randomStartPitch 0.25 / 0.0
+priority -10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 15
+	param 1
+	param -1	
+endEffect
+
+#################################################################
+
+#templateLevel LOW
+
+newPatch
+
+##################
+### Crickets 1 ###
+##################
+load @ROOT/Sound/@RTD/Ambience/X2Crickets_01.wav
+loop
+volume .4
+minDistance 4
+randomStartPitch 0.25 / 0.0
+priority -10
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 15
+	param 1
+	param -1	
+endEffect

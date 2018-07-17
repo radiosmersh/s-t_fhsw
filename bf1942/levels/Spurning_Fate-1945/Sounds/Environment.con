@@ -1,0 +1,4 @@
+EnvironmentSound.load Environment.ssc
+run knallen1.con
+run knallen2.con
+run knallen3.con

@@ -1,0 +1,39 @@
+#templateLevel HIGH
+
+newPatch
+
+load @ROOT/Sound/@RTD/Ambience/lake-loop.wav
+loop
+minDistance 10
+volume 1
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 80
+	param 1
+	param -1	
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+load @ROOT/Sound/@RTD/Ambience/lake-loop.wav
+loop
+minDistance 10
+volume 1
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 80
+	param 1
+	param -1	
+endEffect

@@ -1,0 +1,74 @@
+#templateLevel HIGH
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/silence.wav
+rem load @ROOT/bf1942/levels/Operation_Kikusui_day2/Sound/@RTD/kamikaze.wav
+loop
+minDistance 320
+dopplerOff
+volume 1.6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 320
+	param 1
+	param -1	
+endEffect
+
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/silence.wav
+rem load @ROOT/bf1942/levels/Operation_Kikusui_day2/Sound/@RTD/kamikaze.wav
+loop
+minDistance 320
+dopplerOff
+volume 1.6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 320
+	param 1
+	param -1	
+endEffect
+
+#templateLevel LOW
+
+newPatch
+
+######################
+### Bridge Ambient ###
+######################
+load @ROOT/Sound/@RTD/silence.wav
+rem load @ROOT/bf1942/levels/Operation_Kikusui_day2/Sound/@RTD/kamikaze.wav
+loop
+minDistance 320
+dopplerOff
+volume 1.6
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 50
+	param 320
+	param 1
+	param -1	
+endEffect

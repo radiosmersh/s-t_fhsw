@@ -1,0 +1,12 @@
+rem *** Crickets_1 ***
+ObjectTemplate.create SimpleObject Crickets_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 20
+ObjectTemplate.loadSoundScript Crickets_1.ssc
+
+rem *** Crickets enviroment 1 ***
+ObjectTemplate.create SimpleObject Crickets_env_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript Crickets_env.ssc
+ObjectTemplate.triggerRadius 80
+

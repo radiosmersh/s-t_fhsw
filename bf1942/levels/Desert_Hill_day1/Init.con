@@ -1,0 +1,80 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
+rem *********************************************
+ShaderManager.setTextureParam envmap bf1942\levels\Desert_Hill_day1\Textures\ENVMAP_G_.rcm
+renderer.globalLodPercent 1
+beginrem
+renderer.globalAmbientColor 0.098039/0.098039/0.098039
+renderer.ambientColor 0.117647/0.109804/0.117647
+renderer.diffuseColor 0.349020/0.298039/0.200000
+renderer.specularColor 0.298039/0.298039/0.298039
+endrem
+renderer.globalAmbientColor .1/.1/.1
+renderer.ambientColor .15/.15/.18
+renderer.diffuseColor .3/.3/.3
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.25
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.740000/0.680000/0.550000
+renderer.animatedMeshAmbientColor 0.15
+
+textureManager.alternativePath Texture\levels\DesertRose
+textureManager.alternativePath Texture\ENVIROMENT_DESERT
+textureManager.alternativePath Texture\GENERAL_BRIT_AFRICA
+textureManager.alternativePath Texture\SPECIAL_GER_AFRICA_1942_SUMMER
+textureManager.alternativePath Texture\GENERAL_GER_AFRICA
+textureManager.alternativePath Texture\GENERAL_GER
+
+shadow.shadowColor 0.500000
+
+rem Game.setViewDistance 700
+Game.setViewDistance 600
+Game.spawnPlayers 1
+renderer.fogstart 80
+renderer.fogend 550
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedGeFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedUkFlag
+
+game.setTeamSkin 1 GermanDesertSoldier
+game.setKit 1 0 1German_Officer_DesertMp40Smoke2R
+game.setKit 1 1 2German_Assault_DesertK98
+game.setKit 1 2 3German_AT_DesertGeballteLadung
+rem game.setKit 1 3 4German_TankCommander_DesertWalterP38Smoke
+game.setKit 1 3 4German_TankCommander_DesertWalterP38_EihGr39
+game.setKit 1 4 5German_Engineer_DesertK98HH
+
+game.setTeamSkin 2 BritishSoldier
+game.setKit 2 0 1GB_OfficerStenMk2Smoke2R
+game.setKit 2 1 2GB_AssaultNo4
+game.setKit 2 2 3GB_ATNo68
+game.setKit 2 3 4GB_TankCommanderNo2Smoke
+game.setKit 2 4 5GB_EngineerNo4Sticky
+game.setLevelCheck 2242588848
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Objects/objects
+
+run Init/SkyAndSun
+run Init/Terrain
+
+game.assaultTeam 1
+
+
+run Sounds/Environment
+
+game.setBeforeSpawnCameraPosition 1 192.1/85.2/715.8
+game.setBeforeSpawnCameraPosition 2 1828.6/79.4/1565.3

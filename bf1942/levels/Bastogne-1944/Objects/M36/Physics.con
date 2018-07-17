@@ -1,0 +1,28 @@
+
+
+rem *** M36Engine ***
+ObjectTemplate.create Engine M36Engine
+ObjectTemplate.setNetworkableInfo M36EngineInfo
+ObjectTemplate.setAttachToListener 1
+rem ObjectTemplate.loadSoundScript ../../../../../Objects/Vehicles/Land/Engines/Sounds/M10Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M36_TrackL
+ObjectTemplate.setPosition -0.009/-0.799/0
+ObjectTemplate.addTemplate M36_TrackR
+ObjectTemplate.setPosition 0.01/-0.799/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 0
+ObjectTemplate.setDifferential 3.36
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05

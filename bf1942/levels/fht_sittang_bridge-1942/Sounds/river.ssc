@@ -1,0 +1,20 @@
+#templateLevel HIGH
+
+newPatch
+
+load @ROOT/Sound/@RTD/Ambience/pswamp_amb.wav
+loop
+minDistance 20
+volume 1.0
+randomStartPitch 0.2 / 0.0
+priority -3
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 40
+	param 80
+	param 1
+	param -1	
+endEffect

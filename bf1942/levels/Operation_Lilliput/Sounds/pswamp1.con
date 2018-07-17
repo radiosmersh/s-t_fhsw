@@ -1,0 +1,9 @@
+
+
+rem *** pswamp1 ***
+ObjectTemplate.create SimpleObject pswamp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript pswamp1.ssc
+ObjectTemplate.triggerRadius 30
+
+

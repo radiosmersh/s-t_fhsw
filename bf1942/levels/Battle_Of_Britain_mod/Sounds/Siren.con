@@ -1,0 +1,7 @@
+
+
+rem *** Siren ***
+ObjectTemplate.create SimpleObject Siren
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 200
+ObjectTemplate.loadSoundScript Siren.ssc

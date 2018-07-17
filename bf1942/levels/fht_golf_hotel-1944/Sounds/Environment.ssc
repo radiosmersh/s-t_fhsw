@@ -1,0 +1,47 @@
+################################################################
+
+#templateLevel HIGH
+
+newPatch
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/BattleAmbience3_inf.wav
+loop
+minDistance 10
+randomStartPitch 0.25 / 0.0
+volume 1
+priority -10
+
+################################################################
+
+#templateLevel MEDIUM
+
+newPatch
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/BattleAmbience3_inf.wav
+loop
+minDistance 10
+randomStartPitch 0.25 / 0.0
+volume 1
+priority -10
+
+################################################################
+
+#templateLevel LOW
+
+newPatch
+
+############
+### Near ###
+############
+load @ROOT/Sound/@RTD/Ambience/BattleAmbience3_inf.wav
+loop
+minDistance 10
+randomStartPitch 0.25 / 0.0
+volume 1
+priority -10

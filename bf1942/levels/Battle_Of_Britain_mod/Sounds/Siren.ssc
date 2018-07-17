@@ -1,0 +1,37 @@
+#templateLevel HIGH
+
+newPatch
+load @ROOT/Sound/@RTD/air-raid-siren-pitched-reverb.wav
+minDistance 50
+loop
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+ 	envelope Ramp
+ 	param 1
+ 	param 100
+ 	param 1
+	param -1
+endEffect
+
+#templateLevel MEDIUM
+
+newPatch
+
+load @ROOT/Sound/@RTD/air-raid-siren-pitched-reverb.wav
+loop
+minDistance 5
+volume .4
+priority -10
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+ 	envelope Ramp
+ 	param 30
+ 	param 80
+ 	param 1
+	param -1	
+endEffect

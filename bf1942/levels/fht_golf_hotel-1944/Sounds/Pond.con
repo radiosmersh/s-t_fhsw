@@ -1,0 +1,8 @@
+rem *** Pond ***
+ObjectTemplate.create SimpleObject pond
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.triggerRadius 50
+ObjectTemplate.loadSoundScript pond.ssc
+
+
+
