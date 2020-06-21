@@ -10974,7 +10974,6 @@ ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate ExpPackComplex
 ObjectTemplate.addTemplate ExpPackSimple
 
-
 ObjectTemplate.create Projectile ExpPackProjectile
 ObjectTemplate.networkableInfo ProjectileInfo
 ObjectTemplate.geometry ExpPack
@@ -11000,16 +10999,8 @@ ObjectTemplate.useMMOnEndEffect 1
 ObjectTemplate.material 70
 ObjectTemplate.material2 208
 ObjectTemplate.damageType 1
-ObjectTemplate.endEffectTemplate e_ExplGranade
-beginrem
-ObjectTemplate.fadeOnDist 1
-ObjectTemplate.minDist 2
-ObjectTemplate.maxDist 20
-ObjectTemplate.minDistAlpha 50
-ObjectTemplate.maxDistAlpha 100
-endrem
+ObjectTemplate.endEffectTemplate e_ExploLarge
 ObjectTemplate.noFFSound 1
-
 
 rem ===== EOF =====
 rem ============================================================================
@@ -25930,7 +25921,8 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4
+ObjectTemplate.reloadtime 2
+rem ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.AmmoType	2
 ObjectTemplate.autoReload 0
@@ -25954,7 +25946,8 @@ ObjectTemplate.minDeviation 0
 ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
-ObjectTemplate.fireDelay 1
+ObjectTemplate.fireDelay 0.8
+rem ObjectTemplate.fireDelay 1
 ObjectTemplate.aiTemplate MolliAI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -26027,7 +26020,8 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4
+ObjectTemplate.reloadtime 2
+rem ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.AmmoType	2
 ObjectTemplate.autoReload 0
@@ -26051,7 +26045,8 @@ ObjectTemplate.minDeviation 0
 ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
-ObjectTemplate.fireDelay 1
+ObjectTemplate.fireDelay 0.8
+rem ObjectTemplate.fireDelay 1
 ObjectTemplate.aiTemplate MolliAI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -26085,7 +26080,8 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4
+ObjectTemplate.reloadtime 2
+rem ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.AmmoType	2
 ObjectTemplate.autoReload 0
@@ -26109,7 +26105,8 @@ ObjectTemplate.minDeviation 0
 ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
-ObjectTemplate.fireDelay 1
+ObjectTemplate.fireDelay 0.8
+rem ObjectTemplate.fireDelay 1
 ObjectTemplate.aiTemplate MolliAI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -26142,7 +26139,8 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4
+ObjectTemplate.reloadtime 2
+rem ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.AmmoType	2
 ObjectTemplate.autoReload 0
@@ -26166,7 +26164,8 @@ ObjectTemplate.minDeviation 0
 ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
-ObjectTemplate.fireDelay 1
+ObjectTemplate.fireDelay 0.8
+rem ObjectTemplate.fireDelay 1
 ObjectTemplate.aiTemplate MolliAI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -26200,7 +26199,8 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4
+ObjectTemplate.reloadtime 2
+rem ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.AmmoType	2
 ObjectTemplate.autoReload 0
@@ -26224,7 +26224,8 @@ ObjectTemplate.minDeviation 0
 ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
-ObjectTemplate.fireDelay 1
+ObjectTemplate.fireDelay 0.8
+rem ObjectTemplate.fireDelay 1
 ObjectTemplate.aiTemplate MolliAI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -32448,6 +32449,7 @@ ObjectTemplate.create HandFireArms RandomGBPistol456
 include ../No2/No2.inc
 ObjectTemplate.itemIndex 2
 ObjectTemplate.numOfMag 4
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = RandomGBTankcommander
@@ -32521,6 +32523,7 @@ ObjectTemplate.create HandFireArms RandomGBTankcommander456
 include ../StenMK5/StenMK5.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 2
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = RandomGerFP12
@@ -43880,6 +43883,42 @@ ObjectTemplate.GUIIndex 83
 ObjectTemplate.velocity 10
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../scold/Sounds/scoldYell.ssc
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = scoldID7
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem **********************************************************
+rem ********** scoldID7
+rem **********************************************************
+ObjectTemplate.create HandFireArms scoldID7
+ObjectTemplate.itemIndex 7
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate Melee_Scold_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.fireOnce c_True
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.GUIIndex 83
+ObjectTemplate.setHudAmmoType ATNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../KnifeAxis/Sounds/knife.ssc
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
+ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
+
+ObjectTemplate.velocity 80
+
+ObjectTemplate.createSkeleton animations/KnifeAxis.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate scoldLod
 
 rem ===== EOF =====
 rem ============================================================================

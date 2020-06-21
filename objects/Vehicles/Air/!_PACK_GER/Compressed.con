@@ -14353,6 +14353,7 @@ GeometryTemplate.setLodDistance 2 250
 GeometryTemplate.setLodDistance 3 300
 GeometryTemplate.setLodDistance 4 400
 GeometryTemplate.setLodDistance 5 500
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = fw190D
@@ -14817,6 +14818,7 @@ ObjectTemplate.addTemplate e_wdustPlaneL
 rem -------------------------------------
 ObjectTemplate.setStrength 24
 ObjectTemplate.setDamping 12
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = fw190D

@@ -26,11 +26,11 @@ renderer.fogstart 100
 renderer.fogend 500
 
 game.setTeamSkin 1 GermanSoldier
-game.setKit 1 0 1German_PilotWalterP38Signal
-game.setKit 1 1 2German_PilotWalterP38Signal
-game.setKit 1 2 3German_PilotWalterP38Signal
-game.setKit 1 3 4German_PilotWalterP38Signal
-game.setKit 1 4 5German_PilotWalterP38Signal
+game.setKit 1 0 1German_PilotWalterP38SignalD
+game.setKit 1 1 2German_PilotWalterP38SignalD
+game.setKit 1 2 3German_PilotWalterP38SignalD
+game.setKit 1 3 4German_PilotWalterP38SignalD
+game.setKit 1 4 5German_PilotWalterP38SignalD
 
 game.setTeamSkin 2 BritishSoldier
 game.setKit 2 0 1GB_PilotNo2

@@ -5718,6 +5718,7 @@ GeometryTemplate.setLodDistance 2 50
 GeometryTemplate.setLodDistance 3 100
 GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 300
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 8cmL60T98
@@ -5734,6 +5735,7 @@ NetworkableInfo.setPredictionMode PMLinear
 
 NetworkableInfo.createNewInfo 8cmL60T98_EngineInfo
 NetworkableInfo.setPredictionMode PMLinear
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 8cmL60T98
@@ -6306,6 +6308,7 @@ ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 8cmL60T98
@@ -11237,6 +11240,7 @@ ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
 ObjectTemplate.startRotation CRD_UNIFORM/0/0/0
 ObjectTemplate.movetowatersurface 0
 ObjectTemplate.IsSpawnEffect 1
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Elco80
@@ -11254,6 +11258,12 @@ GeometryTemplate.setLodDistance 5 200
 
 GeometryTemplate.create StandardMesh PT_Elco_l1
 GeometryTemplate.file PT_Elco_l1
+GeometryTemplate.setLodDistance 0 300
+GeometryTemplate.setLodDistance 1 400
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 600
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh 1p_Elco80_hull_m1
 GeometryTemplate.file 1P_Pt_Elco_M1
@@ -11393,6 +11403,7 @@ ObjectTemplate.NameTagOffset -1/4/0
 ObjectTemplate.setNetworkableInfo Elco80BodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.6
 ObjectTemplate.dragOffset 0/0/-1
 ObjectTemplate.mass 40000
@@ -19317,6 +19328,7 @@ GeometryTemplate.create StandardMesh 12cm_AA_RocketCockpit_m1
 GeometryTemplate.file 12cm_AA_RocketCockpit
 
 renderer.endGlobalCluster
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Ise
@@ -19356,6 +19368,7 @@ NetworkableInfo.createNewInfo IseEngineInfo
 NetworkableInfo.setPredictionMode PMLinear
 
 rem *** end of file ***
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Ise
@@ -21611,6 +21624,7 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo 12cm_AA_Y_RocketInfo
 NetworkableInfo.setPredictionMode PMLinear
 rem *** end of file ***
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Junyo
@@ -24674,6 +24688,7 @@ NetworkableInfo.createNewInfo KiiEngineInfo
 NetworkableInfo.setPredictionMode PMLinear
 
 rem *** end of file ***
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Kii
@@ -24690,7 +24705,8 @@ ObjectTemplate.setNetworkableInfo KiiBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.drag 3.6
+ObjectTemplate.drag 6.2
+rem 13.90m/s=27.01kn
 ObjectTemplate.mass 35000000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -24885,11 +24901,10 @@ ObjectTemplate.setPosition 0/18/-48.5
 ObjectTemplate.setRotation -179.999/0/0
 
 ObjectTemplate.addTemplate Kii_Left_100_PCO2
-ObjectTemplate.setPosition -3.7/23.5/-30.3
+ObjectTemplate.setPosition -3.8/25/-23.6
 ObjectTemplate.setRotation -90/0/0
-
 ObjectTemplate.addTemplate Kii_Right_100_PCO3
-ObjectTemplate.setPosition 3.7/23.5/-30.3
+ObjectTemplate.setPosition 3.8/25/-23.6
 ObjectTemplate.setRotation 90/0/0
 
 ObjectTemplate.addTemplate Kii_Left_155_PCO4
@@ -24924,11 +24939,9 @@ ObjectTemplate.setRotation -90/0/0
 ObjectTemplate.addTemplate AnimatedJapFlag
 ObjectTemplate.setPosition 0/19.5/129.91
 ObjectTemplate.setRotation 105/0/0
-
 ObjectTemplate.addTemplate AnimatedJapFlag
 ObjectTemplate.setPosition 0/47.75/-37.78
 ObjectTemplate.setRotation 105.693/4.665/-16.885
-
 ObjectTemplate.addTemplate AnimatedJapFlag
 ObjectTemplate.setPosition 0/15.079/-134.174
 ObjectTemplate.setRotation 105.376/3.419/-12.549
@@ -25103,115 +25116,22 @@ ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 3
 ObjectTemplate.damageWhenLost 10
 
-rem *** KiiAdd25mm1Left_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm1Left_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm1Left
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm1Left
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 9999
-ObjectTemplate.maxSpawnDelay 9999
-ObjectTemplate.TimeToLive 9999
+rem *** KiiPeteSpawner ***
+ObjectTemplate.create ObjectSpawner KiiPeteSpawner
+ObjectTemplate.setObjectTemplate 1 F1M2
+ObjectTemplate.setObjectTemplate 2 F1M2
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 40
+ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 200
 ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.teamOnVehicle 1
-ObjectTemplate.MaxNrOfObjectSpawned 1
-ObjectTemplate.damageWhenLost 0
-
-rem *** KiiAdd25mm1Right_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm1Right_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm1Right
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm1Right
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 9999
-ObjectTemplate.maxSpawnDelay 9999
-ObjectTemplate.TimeToLive 9999
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.team 1
-ObjectTemplate.teamOnVehicle 1
-ObjectTemplate.MaxNrOfObjectSpawned 1
-ObjectTemplate.damageWhenLost 0
 
-rem *** KiiAdd25mm2Left_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm2Left_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm2Left
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm2Left
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 9999
-ObjectTemplate.maxSpawnDelay 9999
-ObjectTemplate.TimeToLive 9999
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.teamOnVehicle 1
-ObjectTemplate.MaxNrOfObjectSpawned 1
-ObjectTemplate.damageWhenLost 0
-
-rem *** KiiAdd25mm3Right_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm2Right_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm2Right
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm2Right
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 9999
-ObjectTemplate.maxSpawnDelay 9999
-ObjectTemplate.TimeToLive 9999
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.teamOnVehicle 1
-ObjectTemplate.MaxNrOfObjectSpawned 1
-ObjectTemplate.damageWhenLost 0
-
-rem *** KiiAdd25mm3Right_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm3Left_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm3Left
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm3Left
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 9999
-ObjectTemplate.maxSpawnDelay 9999
-ObjectTemplate.TimeToLive 9999
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.teamOnVehicle 1
-ObjectTemplate.MaxNrOfObjectSpawned 1
-ObjectTemplate.damageWhenLost 0
-
-rem *** KiiAdd25mm3Right_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm3Right_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm3Right
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm3Right
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 9999
-ObjectTemplate.maxSpawnDelay 9999
-ObjectTemplate.TimeToLive 9999
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.teamOnVehicle 1
-ObjectTemplate.MaxNrOfObjectSpawned 1
-ObjectTemplate.damageWhenLost 0
-
-rem *** KiiAdd25mm4Left_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm4Left_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm4Left
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm4Left
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 9999
-ObjectTemplate.maxSpawnDelay 9999
-ObjectTemplate.TimeToLive 9999
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.teamOnVehicle 1
-ObjectTemplate.MaxNrOfObjectSpawned 1
-ObjectTemplate.damageWhenLost 0
-
-rem *** KiiAdd25mm4Right_Spawner ***
-ObjectTemplate.create ObjectSpawner KiiAdd25mm4Right_Spawner
-ObjectTemplate.setObjectTemplate 1 KiiAdd25mm4Right
-ObjectTemplate.setObjectTemplate 2 KiiAdd25mm4Right
+rem *** KiiAdd25mm1LR2LR_Spawner ***
+ObjectTemplate.create ObjectSpawner KiiAdd25mm1LR2LR_Spawner
+ObjectTemplate.setObjectTemplate 1 KiiAdd25mm1LR2LR
+ObjectTemplate.setObjectTemplate 2 KiiAdd25mm1LR2LR
 ObjectTemplate.holdObject 1
 ObjectTemplate.minSpawnDelay 9999
 ObjectTemplate.maxSpawnDelay 9999
@@ -25285,7 +25205,7 @@ rem *** Kii_510_Turret ***
 ObjectTemplate.create RotationalBundle Kii_510_Turret
 ObjectTemplate.setNetworkableInfo KiiTurretInfo
 rem -------------------------------------
-ObjectTemplate.addTemplate Kii_510_GunBase
+ObjectTemplate.addTemplate Kii_510_GunBaseAPHE
 ObjectTemplate.setPosition 0/1.25/3.5
 rem -------------------------------------
 ObjectTemplate.setMinRotation -140/0/0
@@ -25293,6 +25213,19 @@ ObjectTemplate.setMaxRotation 140/0/0
 ObjectTemplate.setMaxSpeed 10/0/0
 ObjectTemplate.setAcceleration 10/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Kii_510_GunBaseAPHE ***
+ObjectTemplate.create RotationalBundle Kii_510_GunBaseAPHE
+ObjectTemplate.setNetworkableInfo KiiCannonInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Kii_510_GunBarrelAPHE
+ObjectTemplate.setPosition 0/-25/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/3/0
+ObjectTemplate.setMaxSpeed 0/20/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** Kii_510_GunBaseIncenShrapnel ***
 ObjectTemplate.create RotationalBundle Kii_510_GunBase
@@ -25407,45 +25340,77 @@ ObjectTemplate.setNetworkableInfo KiiBodyInfo
 ObjectTemplate.sonarPos 1
 rem -------------------------------------
 ObjectTemplate.addTemplate BattleshipRadar
-ObjectTemplate.addTemplate Yamato_127AA_FCS_X_wCam
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam_AmmoSelect
+
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 23.6/1.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 14.1/-2.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 11.4/-2.5/0.7
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 1.57/-10/9.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -15.85/-6.5/1.75
+
 ObjectTemplate.addTemplate Yamato_127AA_FCS_X
-ObjectTemplate.setPosition 25.4/-2.9/2.7918
+ObjectTemplate.setPosition 18.7/-4.4/2.7
+ObjectTemplate.addTemplate Yamato_127AA_FCS_X
+ObjectTemplate.setPosition -6.7/-1.5/-0.1
 
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X
-ObjectTemplate.setPosition 22.8/-8.35/7.3
+ObjectTemplate.setPosition 16.1/-9.85/7.2
+
 ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 23.8/-11/15.8
+ObjectTemplate.setPosition 53.9/-13.1/9.75
+
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X
-ObjectTemplate.setPosition 22.8/-8.35/7.3
-
+ObjectTemplate.setPosition 16.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X2
-ObjectTemplate.setPosition 12.8/-8.35/7.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 12.8/-11/15.8
+ObjectTemplate.setPosition 11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X2
-ObjectTemplate.setPosition 12.8/-8.35/7.3
-
+ObjectTemplate.setPosition 11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X3
-ObjectTemplate.setPosition 2.8/-8.35/8.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 1.8/-11/15.8
+ObjectTemplate.setPosition 6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X3
-ObjectTemplate.setPosition 2.8/-8.35/8.3
-
+ObjectTemplate.setPosition 6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X4
-ObjectTemplate.setPosition 18.1/-6.65/3.25
+ObjectTemplate.setPosition 0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X4
-ObjectTemplate.setPosition 18.1/-6.65/3.25
-
+ObjectTemplate.setPosition 0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X5
-ObjectTemplate.setPosition 7.1/-5.35/3.25
+ObjectTemplate.setPosition -3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X5
-ObjectTemplate.setPosition 7.1/-5.35/3.25
-
+ObjectTemplate.setPosition -3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X6
-ObjectTemplate.setPosition -1.65/-6.65/3.25
+ObjectTemplate.setPosition -8.35/-8.15/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X6
-ObjectTemplate.setPosition -1.65/-6.65/3.25
+ObjectTemplate.setPosition -8.35/-8.15/3.15
+
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 37.4/-12.65/5.75
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 25.2/-6.95/1.2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 21.6/-7.45/3.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 20.3/4.52/2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 17.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 6.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -4.9/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -8.4/-11.9/11.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -10.8/-2.45/-0.3
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -11.4/-10.9/8.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -14.4/-9.9/5.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -17.9/-2.45/-0.3
 
 rem ObjectTemplate.addTemplate ShipAlarm1
 rem -------------------------------------
@@ -25478,47 +25443,78 @@ ObjectTemplate.setNetworkableInfo KiiBodyInfo
 ObjectTemplate.sonarPos 1
 rem -------------------------------------
 ObjectTemplate.addTemplate BattleshipRadar
-ObjectTemplate.addTemplate Yamato_127AA_FCS_X_wCam
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam_AmmoSelect
+
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -23.6/1.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -14.1/-2.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -11.4/-2.5/0.7
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -1.57/-10/9.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 15.85/-6.5/1.75
+
 ObjectTemplate.addTemplate Yamato_127AA_FCS_X
-ObjectTemplate.setPosition -25.4/-2.9/2.7918
+ObjectTemplate.setPosition -18.7/-4.4/2.7
+ObjectTemplate.addTemplate Yamato_127AA_FCS_X
+ObjectTemplate.setPosition 6.7/-1.5/-0.1
 
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X
-ObjectTemplate.setPosition -22.8/-8.35/7.3
+ObjectTemplate.setPosition -16.1/-9.85/7.2
+
 ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -23.8/-11/15.8
+ObjectTemplate.setPosition -53.9/-13.1/9.75
+
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X
-ObjectTemplate.setPosition -22.8/-8.35/7.3
-
+ObjectTemplate.setPosition -16.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X2
-ObjectTemplate.setPosition -12.8/-8.35/7.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -12.8/-11/15.8
+ObjectTemplate.setPosition -11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X2
-ObjectTemplate.setPosition -12.8/-8.35/7.3
-
+ObjectTemplate.setPosition -11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X3
-ObjectTemplate.setPosition -2.8/-8.35/8.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -1.8/-11/15.8
+ObjectTemplate.setPosition -6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X3
-ObjectTemplate.setPosition -2.8/-8.35/8.3
-
+ObjectTemplate.setPosition -6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X4
-ObjectTemplate.setPosition -18.1/-6.65/3.25
+ObjectTemplate.setPosition -0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X4
-ObjectTemplate.setPosition -18.1/-6.65/3.25
-
+ObjectTemplate.setPosition -0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X5
-ObjectTemplate.setPosition -7.1/-5.35/3.25
+ObjectTemplate.setPosition 3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X5
-ObjectTemplate.setPosition -7.1/-5.35/3.25
-
+ObjectTemplate.setPosition 3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X6
-ObjectTemplate.setPosition 1.65/-6.65/3.25
+ObjectTemplate.setPosition 8.35/-8.15/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X6
-ObjectTemplate.setPosition 1.65/-6.65/3.25
+ObjectTemplate.setPosition 8.35/-8.15/3.15
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -37.4/-12.65/5.75
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -25.2/-6.95/1.2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -21.6/-7.45/3.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -20.3/4.52/2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -17.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -6.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 4.9/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 8.4/-11.9/11.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 10.8/-2.45/-0.3
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 11.4/-10.9/8.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 14.4/-9.9/5.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 17.9/-2.45/-0.3
 
-remObjectTemplate.addTemplate ShipAlarm1
+rem ObjectTemplate.addTemplate ShipAlarm1
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0.7/-2/-1.7 179/0/0
 ObjectTemplate.GUIIndex 57
@@ -25795,33 +25791,8 @@ ObjectTemplate.setPosition 0/0/-75
 ObjectTemplate.addTemplate Kii_MoveObject_Spawner
 ObjectTemplate.setPosition 0/10/0
 
-ObjectTemplate.addTemplate KiiAdd25mm1Left_Spawner
-ObjectTemplate.setPosition -3.95/12.52/106.27
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm1Right_Spawner
-ObjectTemplate.setPosition 3.95/12.52/106.27
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate KiiAdd25mm2Left_Spawner
-ObjectTemplate.setPosition -5/26.5/0.15
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm2Right_Spawner
-ObjectTemplate.setPosition 5/26.5/0.15
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate KiiAdd25mm3Left_Spawner
-ObjectTemplate.setPosition -5.55/18.5/-39.45
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm3Right_Spawner
-ObjectTemplate.setPosition 5.55/18.5/-39.45
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate KiiAdd25mm4Left_Spawner
-ObjectTemplate.setPosition -2.7/12.3/-103.9
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm4Right_Spawner
-ObjectTemplate.setPosition 2.7/12.3/-103.9
-ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate KiiAdd25mm1LR2LR_Spawner
+ObjectTemplate.setPosition 0/15/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/15/-90 180/0/0
 ObjectTemplate.GUIIndex 56
@@ -25900,18 +25871,6 @@ ObjectTemplate.setAcceleration 100000/100000/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 ObjectTemplate.toggleMouseLook 1
-
-rem *** KiiPeteSpawner ***
-ObjectTemplate.create ObjectSpawner KiiPeteSpawner
-ObjectTemplate.setObjectTemplate 1 F1M2
-ObjectTemplate.setObjectTemplate 2 F1M2
-ObjectTemplate.minSpawnDelay 20
-ObjectTemplate.maxSpawnDelay 40
-ObjectTemplate.TimeToLive 120
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.holdObject 1
-ObjectTemplate.team 1
 
 rem ===============================================
 rem             Dummy Gun
@@ -26402,7 +26361,8 @@ ObjectTemplate.setNetworkableInfo KiiBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.drag 3.6
+ObjectTemplate.drag 6.2
+rem 13.90m/s=27.01kn
 ObjectTemplate.mass 35000000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -26815,6 +26775,33 @@ ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 3
 ObjectTemplate.damageWhenLost 10
 
+rem *** OwariPeteSpawner ***
+ObjectTemplate.create ObjectSpawner OwariPeteSpawner
+ObjectTemplate.setObjectTemplate 1 F1M2
+ObjectTemplate.setObjectTemplate 2 F1M2
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 40
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 1
+
+rem *** OwariAdd25mm1LR2LR_Spawner ***
+ObjectTemplate.create ObjectSpawner OwariAdd25mm1LR2LR_Spawner
+ObjectTemplate.setObjectTemplate 1 OwariAdd25mm1LR2LR
+ObjectTemplate.setObjectTemplate 2 OwariAdd25mm1LR2LR
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 9999
+ObjectTemplate.maxSpawnDelay 9999
+ObjectTemplate.TimeToLive 9999
+ObjectTemplate.Distance 200
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
 rem *** Owari_Back_510_PCO1 ***
 ObjectTemplate.create PlayerControlObject Owari_Back_510_PCO1
 ObjectTemplate.setNetworkableInfo KiiBodyInfo
@@ -26869,45 +26856,77 @@ ObjectTemplate.setNetworkableInfo KiiBodyInfo
 ObjectTemplate.sonarPos 1
 rem -------------------------------------
 ObjectTemplate.addTemplate BattleshipRadar
-ObjectTemplate.addTemplate Yamato_127AA_FCS_X_wCam
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam_AmmoSelect
+
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 23.6/1.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 14.1/-2.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 11.4/-2.5/0.7
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 1.57/-10/9.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -15.85/-6.5/1.75
+
 ObjectTemplate.addTemplate Yamato_127AA_FCS_X
-ObjectTemplate.setPosition 25.4/-2.9/2.7918
+ObjectTemplate.setPosition 18.7/-4.4/2.7
+ObjectTemplate.addTemplate Yamato_127AA_FCS_X
+ObjectTemplate.setPosition -6.7/-1.5/-0.1
 
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X
-ObjectTemplate.setPosition 22.8/-8.35/7.3
+ObjectTemplate.setPosition 16.1/-9.85/7.2
+
 ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 23.8/-11/15.8
+ObjectTemplate.setPosition 53.9/-13.1/9.75
+
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X
-ObjectTemplate.setPosition 22.8/-8.35/7.3
-
+ObjectTemplate.setPosition 16.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X2
-ObjectTemplate.setPosition 12.8/-8.35/7.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 12.8/-11/15.8
+ObjectTemplate.setPosition 11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X2
-ObjectTemplate.setPosition 12.8/-8.35/7.3
-
+ObjectTemplate.setPosition 11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X3
-ObjectTemplate.setPosition 2.8/-8.35/8.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 1.8/-11/15.8
+ObjectTemplate.setPosition 6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X3
-ObjectTemplate.setPosition 2.8/-8.35/8.3
-
+ObjectTemplate.setPosition 6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X4
-ObjectTemplate.setPosition 18.1/-6.65/3.25
+ObjectTemplate.setPosition 0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X4
-ObjectTemplate.setPosition 18.1/-6.65/3.25
-
+ObjectTemplate.setPosition 0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X5
-ObjectTemplate.setPosition 7.1/-5.35/3.25
+ObjectTemplate.setPosition -3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X5
-ObjectTemplate.setPosition 7.1/-5.35/3.25
-
+ObjectTemplate.setPosition -3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X6
-ObjectTemplate.setPosition -1.65/-6.65/3.25
+ObjectTemplate.setPosition -8.35/-8.15/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X6
-ObjectTemplate.setPosition -1.65/-6.65/3.25
+ObjectTemplate.setPosition -8.35/-8.15/3.15
+
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 37.4/-12.65/5.75
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 25.2/-6.95/1.2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 21.6/-7.45/3.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 20.3/4.52/2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 17.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 6.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -4.9/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -8.4/-11.9/11.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -10.8/-2.45/-0.3
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -11.4/-10.9/8.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -14.4/-9.9/5.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -17.9/-2.45/-0.3
 
 rem ObjectTemplate.addTemplate ShipAlarm1
 rem -------------------------------------
@@ -26940,47 +26959,78 @@ ObjectTemplate.setNetworkableInfo KiiBodyInfo
 ObjectTemplate.sonarPos 1
 rem -------------------------------------
 ObjectTemplate.addTemplate BattleshipRadar
-ObjectTemplate.addTemplate Yamato_127AA_FCS_X_wCam
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam_AmmoSelect
+
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -23.6/1.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -14.1/-2.5/1.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -11.4/-2.5/0.7
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition -1.57/-10/9.2
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X
+ObjectTemplate.setPosition 15.85/-6.5/1.75
+
 ObjectTemplate.addTemplate Yamato_127AA_FCS_X
-ObjectTemplate.setPosition -25.4/-2.9/2.7918
+ObjectTemplate.setPosition -18.7/-4.4/2.7
+ObjectTemplate.addTemplate Yamato_127AA_FCS_X
+ObjectTemplate.setPosition 6.7/-1.5/-0.1
 
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X
-ObjectTemplate.setPosition -22.8/-8.35/7.3
+ObjectTemplate.setPosition -16.1/-9.85/7.2
+
 ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -23.8/-11/15.8
+ObjectTemplate.setPosition -53.9/-13.1/9.75
+
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X
-ObjectTemplate.setPosition -22.8/-8.35/7.3
-
+ObjectTemplate.setPosition -16.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X2
-ObjectTemplate.setPosition -12.8/-8.35/7.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -12.8/-11/15.8
+ObjectTemplate.setPosition -11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X2
-ObjectTemplate.setPosition -12.8/-8.35/7.3
-
+ObjectTemplate.setPosition -11.4/-8.15/3.1
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X3
-ObjectTemplate.setPosition -2.8/-8.35/8.3
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -1.8/-11/15.8
+ObjectTemplate.setPosition -6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X3
-ObjectTemplate.setPosition -2.8/-8.35/8.3
-
+ObjectTemplate.setPosition -6.1/-9.85/7.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X4
-ObjectTemplate.setPosition -18.1/-6.65/3.25
+ObjectTemplate.setPosition -0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X4
-ObjectTemplate.setPosition -18.1/-6.65/3.25
-
+ObjectTemplate.setPosition -0.4/-6.85/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X5
-ObjectTemplate.setPosition -7.1/-5.35/3.25
+ObjectTemplate.setPosition 3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X5
-ObjectTemplate.setPosition -7.1/-5.35/3.25
-
+ObjectTemplate.setPosition 3.9/-9.85/8.2
 ObjectTemplate.addTemplate Kii_10cm_Turret_Dummy_X6
-ObjectTemplate.setPosition 1.65/-6.65/3.25
+ObjectTemplate.setPosition 8.35/-8.15/3.15
 ObjectTemplate.addTemplate Kii_10cm_Turret_Invis_X6
-ObjectTemplate.setPosition 1.65/-6.65/3.25
+ObjectTemplate.setPosition 8.35/-8.15/3.15
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -37.4/-12.65/5.75
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -25.2/-6.95/1.2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -21.6/-7.45/3.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -20.3/4.52/2
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -17.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition -6.1/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 4.9/-12.8/15.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 8.4/-11.9/11.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 10.8/-2.45/-0.3
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 11.4/-10.9/8.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 14.4/-9.9/5.7
+ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
+ObjectTemplate.setPosition 17.9/-2.45/-0.3
 
-remObjectTemplate.addTemplate ShipAlarm1
+rem ObjectTemplate.addTemplate ShipAlarm1
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0.7/-2/-1.7 179/0/0
 ObjectTemplate.GUIIndex 57
@@ -27107,33 +27157,8 @@ ObjectTemplate.setPosition 0/0/-75
 ObjectTemplate.addTemplate Kii_MoveObject_Spawner
 ObjectTemplate.setPosition 0/10/0
 
-ObjectTemplate.addTemplate KiiAdd25mm1Left_Spawner
-ObjectTemplate.setPosition -3.95/12.52/106.27
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm1Right_Spawner
-ObjectTemplate.setPosition 3.95/12.52/106.27
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate KiiAdd25mm2Left_Spawner
-ObjectTemplate.setPosition -5/26.5/0.15
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm2Right_Spawner
-ObjectTemplate.setPosition 5/26.5/0.15
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate KiiAdd25mm3Left_Spawner
-ObjectTemplate.setPosition -5.55/18.5/-39.45
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm3Right_Spawner
-ObjectTemplate.setPosition 5.55/18.5/-39.45
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate KiiAdd25mm4Left_Spawner
-ObjectTemplate.setPosition -2.7/12.3/-103.9
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate KiiAdd25mm4Right_Spawner
-ObjectTemplate.setPosition 2.7/12.3/-103.9
-ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate OwariAdd25mm1LR2LR_Spawner
+ObjectTemplate.setPosition 0/15/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/15/-90 180/0/0
 ObjectTemplate.GUIIndex 56
@@ -27196,17 +27221,6 @@ ObjectTemplate.setAcceleration 400/0/400
 ObjectTemplate.setInputToYaw c_PIYaw
 ObjectTemplate.setInputToRoll c_PIThrottle
 
-rem *** OwariPeteSpawner ***
-ObjectTemplate.create ObjectSpawner OwariPeteSpawner
-ObjectTemplate.setObjectTemplate 1 F1M2
-ObjectTemplate.setObjectTemplate 2 F1M2
-ObjectTemplate.minSpawnDelay 20
-ObjectTemplate.maxSpawnDelay 40
-ObjectTemplate.TimeToLive 120
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.holdObject 1
-ObjectTemplate.team 1
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Kii
@@ -27782,7 +27796,7 @@ ObjectTemplate.FireDelay 0.05
 
 rem ===== EOF =====
 rem ============================================================================
-rem folder = Kii25mmAdd
+rem folder = KiiAdd
 rem sauce = Geometries.con
 rem ============================================================================
 
@@ -27797,23 +27811,26 @@ GeometryTemplate.setLodDistance 5 5
 
 rem ===== EOF =====
 rem ============================================================================
-rem folder = Kii25mmAdd
+rem folder = KiiAdd
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo KiiAdd25mm_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = KiiAdd
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = JPN
 
-rem *** KiiAdd25mm1Left
-rem *** KiiAdd25mm1Right
-rem *** KiiAdd25mm2Left
-rem *** KiiAdd25mm2Right
-rem *** KiiAdd25mm3Left
-rem *** KiiAdd25mm3Right
-rem *** KiiAdd25mm4Left
-rem *** KiiAdd25mm4Right
+rem *** KiiAdd25mm1LR2LR
+rem *** OwariAdd25mm1LR2LR
+rem *** Kii_MoveObject
 
-rem *** KiiAdd25mm1Left ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm1Left
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
+rem *** KiiAdd25mm1LR2LR ***
+ObjectTemplate.create PlayerControlObject KiiAdd25mm1LR2LR
+ObjectTemplate.setNetworkableInfo KiiAdd25mm_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
 ObjectTemplate.hasMobilePhysics 1
@@ -27827,8 +27844,8 @@ ObjectTemplate.hasResponsePhysics 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.05
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 5000
-ObjectTemplate.maxhitpoints 5000
+ObjectTemplate.hitpoints 15000
+ObjectTemplate.maxhitpoints 15000
 ObjectTemplate.material 139
 ObjectTemplate.criticalDamage 0
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -27844,13 +27861,29 @@ ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate 25mmTripleAA
 ObjectTemplate.geometry KiiAdd25mm_dummy_m1
 rem ----------------------------------
+rem SetPosition 0/15/0
+rem Kii_PlaneLauncher_PCO6
+rem SetPosition 0/0/0
 ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
 ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
 
 ObjectTemplate.addTemplate KiiAdd25mm1Left_PCO1
+ObjectTemplate.setPosition -3.955/-2.47/106.27
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate KiiAdd25mm1Right_PCO2
+ObjectTemplate.setPosition 3.955/-2.47/106.27
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate KiiAdd25mm2Left_PCO3
+ObjectTemplate.setPosition -2.7/-2.7/-103.9
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate KiiAdd25mm2Right_PCO4
+ObjectTemplate.setPosition 2.7/-2.7/-103.9
+ObjectTemplate.setRotation 90/0/0
+
 rem ----------------------------------
+ObjectTemplate.setPcoId 99
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
+ObjectTemplate.GUIIndex 10
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
 rem ObjectTemplate.setVehicleIconPos 68/49
 ObjectTemplate.setNumberOfWeaponIcons 2
@@ -27866,7 +27899,7 @@ ObjectTemplate.setMinimapIcon ""
 
 rem *** KiiAdd25mm1Left_PCO1 ***
 ObjectTemplate.create PlayerControlObject KiiAdd25mm1Left_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
+ObjectTemplate.setNetworkableInfo KiiAdd25mm_BodyInfo
 ObjectTemplate.aiTemplate 25mmTripleAA
 rem -------------------------------------
 ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
@@ -27881,10 +27914,8 @@ ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
 ObjectTemplate.setPosition -27.56/-1.87/3.6
 rem -------------------------------------
 ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
 ObjectTemplate.setSoldierExitLocation 0/0.4/-1.6 0/0/0
-ObjectTemplate.GUIIndex 40
+ObjectTemplate.GUIIndex 11
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
 rem ObjectTemplate.setVehicleIconPos 68/49
 ObjectTemplate.setNumberOfWeaponIcons 2
@@ -27898,9 +27929,108 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
-rem *** KiiAdd25mm1Right ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm1Right
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
+
+rem *** KiiAdd25mm1Right_PCO2 ***
+ObjectTemplate.create PlayerControlObject KiiAdd25mm1Right_PCO2
+ObjectTemplate.setNetworkableInfo KiiAdd25mm_BodyInfo
+ObjectTemplate.aiTemplate 25mmTripleAA
+rem -------------------------------------
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
+
+ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
+ObjectTemplate.setPosition -18.74/0.73/-1.67
+ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
+ObjectTemplate.setPosition 12.42/-1.26/4.01
+ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
+ObjectTemplate.setPosition 6.91/-1.13/3.12
+ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
+ObjectTemplate.setPosition 27.56/-1.87/3.6
+rem -------------------------------------
+ObjectTemplate.setPcoId 2
+ObjectTemplate.setSoldierExitLocation 0/0.4/-1.6 0/0/0
+ObjectTemplate.GUIIndex 12
+ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tgaa"
+rem ObjectTemplate.setVehicleIconPos 68/49
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** KiiAdd25mm2Left_PCO3 ***
+ObjectTemplate.create PlayerControlObject KiiAdd25mm2Left_PCO3
+ObjectTemplate.setNetworkableInfo KiiAdd25mm_BodyInfo
+ObjectTemplate.aiTemplate 25mmTripleAA
+rem -------------------------------------
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
+
+ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
+ObjectTemplate.setPosition 26.7/0.05/16.85
+ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
+ObjectTemplate.setPosition 13/0.2/4.8
+ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
+ObjectTemplate.setPosition 1.39/0/12.25
+ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
+ObjectTemplate.setPosition -25/-0.8/1.5
+rem -------------------------------------
+ObjectTemplate.setPcoId 3
+ObjectTemplate.setSoldierExitLocation 2/1/0 0/0/0
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
+rem ObjectTemplate.setVehicleIconPos 68/49
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** KiiAdd25mm2Right_PCO4 ***
+ObjectTemplate.create PlayerControlObject KiiAdd25mm2Right_PCO4
+ObjectTemplate.setNetworkableInfo KiiAdd25mm_BodyInfo
+ObjectTemplate.aiTemplate 25mmTripleAA
+rem -------------------------------------
+ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
+
+ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
+ObjectTemplate.setPosition -26.7/0.05/16.85
+ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
+ObjectTemplate.setPosition -13/0.2/4.8
+ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
+ObjectTemplate.setPosition -1.39/0/12.25
+ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
+ObjectTemplate.setPosition 25/-0.8/1.5
+rem -------------------------------------
+ObjectTemplate.setPcoId 4
+ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
+ObjectTemplate.GUIIndex 14
+ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
+rem ObjectTemplate.setVehicleIconPos 68/49
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+
+rem *** OwariAdd25mm1LR2LR ***
+ObjectTemplate.create PlayerControlObject OwariAdd25mm1LR2LR
+ObjectTemplate.setNetworkableInfo KiiAdd25mm_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
 ObjectTemplate.hasMobilePhysics 1
@@ -27914,8 +28044,8 @@ ObjectTemplate.hasResponsePhysics 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.05
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 5000
-ObjectTemplate.maxhitpoints 5000
+ObjectTemplate.hitpoints 15000
+ObjectTemplate.maxhitpoints 15000
 ObjectTemplate.material 139
 ObjectTemplate.criticalDamage 0
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -27931,13 +28061,29 @@ ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate 25mmTripleAA
 ObjectTemplate.geometry KiiAdd25mm_dummy_m1
 rem ----------------------------------
+rem SetPosition 0/15/0
+rem Kii_PlaneLauncher_PCO6
+rem SetPosition 0/0/0
 ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
 ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
 
-ObjectTemplate.addTemplate KiiAdd25mm1Right_PCO1
+ObjectTemplate.addTemplate KiiAdd25mm1Left_PCO1
+ObjectTemplate.setPosition -3.955/-2.47/106.27
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate KiiAdd25mm1Right_PCO2
+ObjectTemplate.setPosition 3.955/-2.47/106.27
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate KiiAdd25mm2Left_PCO3
+ObjectTemplate.setPosition -2.7/-2.7/-103.9
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate KiiAdd25mm2Right_PCO4
+ObjectTemplate.setPosition 2.7/-2.7/-103.9
+ObjectTemplate.setRotation 90/0/0
+
 rem ----------------------------------
+ObjectTemplate.setPcoId 99
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
+ObjectTemplate.GUIIndex 10
 ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
 rem ObjectTemplate.setVehicleIconPos 68/49
 ObjectTemplate.setNumberOfWeaponIcons 2
@@ -27951,39 +28097,7 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
-rem *** KiiAdd25mm1Right_PCO1 ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm1Right_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.aiTemplate 25mmTripleAA
-rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
 
-ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
-ObjectTemplate.setPosition -18.74/0.73/-1.67
-ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
-ObjectTemplate.setPosition 12.42/-1.26/4.01
-ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
-ObjectTemplate.setPosition 6.91/-1.13/3.12
-ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
-ObjectTemplate.setPosition 27.56/-1.87/3.6
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.setSoldierExitLocation 0/0.4/-1.6 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tgaa"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
 
 rem *** Kii_25AA_FCS_X_360 ***
 ObjectTemplate.create RotationalBundle Kii_25AA_FCS_X_360
@@ -27998,553 +28112,6 @@ ObjectTemplate.setMaxSpeed 40/0/0
 ObjectTemplate.setAcceleration 150.0/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
-rem *** KiiAdd25mm2Left ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm2Left
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasDynamicShadow 0
-ObjectTemplate.explosionRadius 0.1
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.drag 2
-ObjectTemplate.mass 15000
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 0
-ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 0.05
-ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 550
-ObjectTemplate.maxhitpoints 550
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 0
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.explosionForceMod 0
-ObjectTemplate.hpLostWhileUpSideDown 7
-ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 60 e_AA-GunDamage 0/0.3/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate 25mmTripleAA
-ObjectTemplate.geometry KiiAdd25mm_dummy_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
-
-ObjectTemplate.addTemplate KiiAdd25mm2Left_PCO1
-rem ----------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm2Left_PCO1 ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm2Left_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.aiTemplate 25mmTripleAA
-rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam
-
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition 30.14/-14.9/8.55
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 1.45/-8.5/0
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition 13.65/-14.5/4.55
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -3.47/3/0.8
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition -2.15/-9/2.5
-
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X
-ObjectTemplate.setPosition -9.7/-4/0
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X
-ObjectTemplate.setPosition -12.35/-4/-0.5
-remObjectTemplate.addTemplate ShipBuzzer
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.setSoldierExitLocation 3.87/-8.5/-1 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm2Right ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm2Right
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasDynamicShadow 0
-ObjectTemplate.explosionRadius 0.1
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.drag 2
-ObjectTemplate.mass 15000
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 0
-ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 0.05
-ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 550
-ObjectTemplate.maxhitpoints 550
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 0
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.explosionForceMod 0
-ObjectTemplate.hpLostWhileUpSideDown 7
-ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 60 e_AA-GunDamage 0/0.3/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate 25mmTripleAA
-ObjectTemplate.geometry KiiAdd25mm_dummy_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
-
-ObjectTemplate.addTemplate KiiAdd25mm2Right_PCO1
-rem ----------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm2Right_PCO1 ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm2Right_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.aiTemplate 25mmTripleAA
-rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam
-
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition -30.14/-14.9/8.55
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -1.45/-8.5/0
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition -13.65/-14.5/4.55
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 3.47/3/0.8
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition 2.15/-9/2.5
-
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X
-ObjectTemplate.setPosition 9.7/-4/0
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X
-ObjectTemplate.setPosition 12.35/-4/-0.5
-remObjectTemplate.addTemplate ShipBuzzer
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.setSoldierExitLocation -3.87/-8.5/-1 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm3Left ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm3Left
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasDynamicShadow 0
-ObjectTemplate.explosionRadius 0.1
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.drag 2
-ObjectTemplate.mass 15000
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 0
-ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 0.05
-ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 550
-ObjectTemplate.maxhitpoints 550
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 0
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.explosionForceMod 0
-ObjectTemplate.hpLostWhileUpSideDown 7
-ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 60 e_AA-GunDamage 0/0.3/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate 25mmTripleAA
-ObjectTemplate.geometry KiiAdd25mm_dummy_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
-
-ObjectTemplate.addTemplate KiiAdd25mm3Left_PCO1
-rem ----------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm3Left_PCO1 ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm3Left_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.aiTemplate 25mmTripleAA
-rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam
-
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition 7.45/-5.5/9.95
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 5.05/4/-2.05
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition 4.45/-4.5/6.95
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -2.05/4/-2.05
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition 1.45/-3.5/3.95
-
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X
-ObjectTemplate.setPosition 15.85/6.5/-1.75
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.setSoldierExitLocation 3.5/-5.5/11 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm3Right ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm3Right
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasDynamicShadow 0
-ObjectTemplate.explosionRadius 0.1
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.drag 2
-ObjectTemplate.mass 15000
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 0
-ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 0.05
-ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 550
-ObjectTemplate.maxhitpoints 550
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 0
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.explosionForceMod 0
-ObjectTemplate.hpLostWhileUpSideDown 7
-ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 60 e_AA-GunDamage 0/0.3/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate 25mmTripleAA
-ObjectTemplate.geometry KiiAdd25mm_dummy_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
-
-ObjectTemplate.addTemplate KiiAdd25mm3Right_PCO1
-rem ----------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm3Right_PCO1 ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm3Right_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.aiTemplate 25mmTripleAA
-rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X_wCam
-
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition -7.45/-5.5/9.95
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition -5.05/4/-2.05
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition -4.45/-4.5/6.95
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Alt_ES
-ObjectTemplate.setPosition 2.05/4/-2.05
-ObjectTemplate.addTemplate 25mm3Type4AAL_180_Prm_ES
-ObjectTemplate.setPosition -1.45/-3.5/3.95
-
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X
-ObjectTemplate.setPosition -15.85/6.5/-1.75
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.setSoldierExitLocation -3.5/-5.5/11 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm4Left ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm4Left
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasDynamicShadow 0
-ObjectTemplate.explosionRadius 0.1
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.drag 2
-ObjectTemplate.mass 15000
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 0
-ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 0.05
-ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 550
-ObjectTemplate.maxhitpoints 550
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 0
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.explosionForceMod 0
-ObjectTemplate.hpLostWhileUpSideDown 7
-ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 60 e_AA-GunDamage 0/0.3/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate 25mmTripleAA
-ObjectTemplate.geometry Yamato1945Add25mm_dummy_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
-
-ObjectTemplate.addTemplate KiiAdd25mm4Left_PCO1
-rem ----------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm4Left_PCO1 ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm4Left_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.aiTemplate 25mmTripleAA
-rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
-
-ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
-ObjectTemplate.setPosition 26.7/0.05/16.85
-ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
-ObjectTemplate.setPosition 13/0.2/4.8
-ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
-ObjectTemplate.setPosition 1.39/0/12.25
-ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
-ObjectTemplate.setPosition -25/-0.8/1.5
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.setSoldierExitLocation 2/1/0 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm4Right ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm4Right
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasDynamicShadow 0
-ObjectTemplate.explosionRadius 0.1
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.drag 2
-ObjectTemplate.mass 15000
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 0
-ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 0.05
-ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 550
-ObjectTemplate.maxhitpoints 550
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 0
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.explosionForceMod 0
-ObjectTemplate.hpLostWhileUpSideDown 7
-ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 60 e_AA-GunDamage 0/0.3/0
-ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate 25mmTripleAA
-ObjectTemplate.geometry Yamato1945Add25mm_dummy_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyCam
-ObjectTemplate.addTemplate Yamato1945Add25mm_DummyEngine
-
-ObjectTemplate.addTemplate KiiAdd25mm4Right_PCO1
-rem ----------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
-ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
-
-rem *** KiiAdd25mm4Right_PCO1 ***
-ObjectTemplate.create PlayerControlObject KiiAdd25mm4Right_PCO1
-ObjectTemplate.setNetworkableInfo Yamato1945Add25mm_BodyInfo
-ObjectTemplate.aiTemplate 25mmTripleAA
-rem -------------------------------------
-ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
-
-ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
-ObjectTemplate.setPosition -26.7/0.05/16.85
-ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
-ObjectTemplate.setPosition -13/0.2/4.8
-ObjectTemplate.addTemplate 25mm3Type4AAL_Prm_ES
-ObjectTemplate.setPosition -1.39/0/12.25
-ObjectTemplate.addTemplate 25mm3Type4AAL_Alt_ES
-ObjectTemplate.setPosition 25/-0.8/1.5
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_25mmTriple_shield.tga"
-rem ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType4.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTAAGun
-ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
 
 rem *** Kii_MoveObject ***
 ObjectTemplate.create PlayerControlObject Kii_MoveObject
@@ -28593,7 +28160,7 @@ ObjectTemplate.setPosition 12.3/3/-14
 ObjectTemplate.setRotation 90/0/0
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/30/0.8 0/0/0
-ObjectTemplate.GUIIndex 79
+ObjectTemplate.GUIIndex 80
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_Empty.tga"
 ObjectTemplate.setPrimaryAmmoBar ABNone
 ObjectTemplate.setCrossHairType CHTNone
@@ -33899,6 +33466,7 @@ NetworkableInfo.createNewInfo MusashiBodyInfo
 NetworkableInfo.setPredictionMode PMLinear
 
 rem *** end of file ***
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Musashi1944_Leyte
@@ -33913,9 +33481,8 @@ ObjectTemplate.setNetworkableInfo MusashiBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
-rem 13.89
-rem 13.857
-ObjectTemplate.drag 2.4
+ObjectTemplate.drag 6.2
+rem 13.90m/s=27.01kn
 ObjectTemplate.mass 35000000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -35025,6 +34592,7 @@ GeometryTemplate.setLodDistance 4 500
 GeometryTemplate.setLodDistance 5 1000
 
 renderer.endGlobalCluster
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Oyodo1943
@@ -44440,6 +44008,7 @@ ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
 ObjectTemplate.startRotation CRD_UNIFORM/0/0/0
 ObjectTemplate.movetowatersurface 0
 ObjectTemplate.IsSpawnEffect 1
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Type38
@@ -44457,6 +44026,12 @@ GeometryTemplate.setLodDistance 5 200
 
 GeometryTemplate.create StandardMesh Type38_Hull_L1
 GeometryTemplate.file Type38_Hull_L1
+GeometryTemplate.setLodDistance 0 300
+GeometryTemplate.setLodDistance 1 400
+GeometryTemplate.setLodDistance 2 500
+GeometryTemplate.setLodDistance 3 600
+GeometryTemplate.setLodDistance 4 700
+GeometryTemplate.setLodDistance 5 800
 
 GeometryTemplate.create StandardMesh 1p_Type38_hull_m1
 GeometryTemplate.file 1P_Type38_Hull_M1
@@ -44597,6 +44172,7 @@ ObjectTemplate.NameTagOffset -1/4/0
 ObjectTemplate.setNetworkableInfo Type38BoatBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 1.2
 ObjectTemplate.dragOffset 0/0/-1
 ObjectTemplate.mass 20450
@@ -45229,6 +44805,7 @@ GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 500
 
 renderer.endGlobalCluster
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Yahagi1943
@@ -45826,6 +45403,7 @@ GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 500
 
 renderer.endGlobalCluster
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Yahagi1944
@@ -46427,6 +46005,7 @@ GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 500
 
 renderer.endGlobalCluster
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Yahagi1945
@@ -46463,6 +46042,7 @@ NetworkableInfo.createNewInfo YahagiEngineInfo
 NetworkableInfo.setPredictionMode PMLinear
 
 rem *** end of file ***
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Yahagi1945
@@ -53694,6 +53274,7 @@ GeometryTemplate.file zuiho_Floater_BL_m1
 
 GeometryTemplate.create StandardMesh Zuiho_Floater_BR_m1
 GeometryTemplate.file zuiho_Floater_BR_m1
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Zuiho

@@ -2759,6 +2759,7 @@ ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 30
 ObjectTemplate.setMinDev 0.75
 ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 75mmM2A1
@@ -10343,11 +10344,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 2
 ObjectTemplate.roundOfFire 5
 ObjectTemplate.setInputFire c_PIAltFire
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Howitzer105mm_mobile
 rem sauce = Network.con
 rem ============================================================================
+NetworkableInfo.createNewInfo Howitzer105mm_mobileTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
 
 NetworkableInfo.createNewInfo Howitzer105mm_mobileBodyInfo
 NetworkableInfo.setPredictionMode PMLinear
@@ -10494,7 +10498,7 @@ ObjectTemplate.DirBarYScaleMax 0
 
 rem *** 105mm_HowitzerMobileGunBase ***
 ObjectTemplate.create RotationalBundle 105mm_HowitzerMobileGunBase
-ObjectTemplate.setNetworkableInfo ../Howitzer105mm/105mm_HowitzerBodyInfo
+ObjectTemplate.setNetworkableInfo Howitzer105mm_mobileTurretInfo
 ObjectTemplate.loadSoundScript ../Howitzer105mm_mobile/Sounds/priestTurret.ssc
 ObjectTemplate.geometry 105_gun_base_X
 ObjectTemplate.hasCollisionPhysics 1
@@ -13983,6 +13987,7 @@ NetworkableInfo.setPredictionMode PMLinear
 
 NetworkableInfo.createNewInfo M18HellcatBodyInfo
 NetworkableInfo.setPredictionMode PMLinear
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = M18Hellcat_BG42
@@ -15817,6 +15822,7 @@ ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = M19GMC
@@ -20474,6 +20480,7 @@ ObjectTemplate.fireingForce 25
 ObjectTemplate.recoilSpeed 8
 ObjectTemplate.recoilSize 15
 ObjectTemplate.setFireCameraShakeAnimationState FireTank100CanonShake
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = m3a1
@@ -49071,6 +49078,7 @@ ObjectTemplate.geometry Sherman_Canon1_M1
 rem -------------------------------------
 ObjectTemplate.addTemplate TankFlamethrower_GunBarrel_108sec
 ObjectTemplate.setPosition 0/0/1.66
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Sherman-POA_USMC
@@ -56060,6 +56068,7 @@ ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 14
 ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = T22E1
@@ -56729,6 +56738,7 @@ ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 14
 ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = T23E3
@@ -59230,7 +59240,7 @@ ObjectTemplate.geometry T29_Wreck_m1
 rem *** T29HTLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 T29HTLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
-LodSelectorTemplate.addLodDistance 135
+LodSelectorTemplate.addLodDistance 250
 
 rem *******************************************************************************
 
@@ -65917,4 +65927,5 @@ ObjectTemplate.spawnOffset 0/0.2/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
+
 rem ===== EOF =====
