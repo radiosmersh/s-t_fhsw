@@ -43,8 +43,9 @@ ObjectTemplate.addTemplate AnimatedSoFlag
 game.setTeamSkin 1 FinishSoldier
 game.setKit 1 0 1Fin_OfficerMP40Smoke3R
 game.setKit 1 1 2Fin_AssaultNagant
-rem game.setKit 1 2 3Fin_ATRandomPzf3
-game.setKit 1 2 Cavalry_3Fin_ATRandomPzf3
+rem *** kabusaba SSM 2020/05/06 ***
+game.setKit 1 2 3Fin_ATRandomPzf3
+rem game.setKit 1 2 Cavalry_3Fin_ATRandomPzf3
 game.setKit 1 3 4Fin_AssaultNagantMolotov
 game.setKit 1 4 5Fin_EngineerNagant
 

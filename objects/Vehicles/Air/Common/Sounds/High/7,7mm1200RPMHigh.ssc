@@ -40,7 +40,7 @@ volume 0
 #################
 newPatch
 
-load @ROOT/Sound/@RTD/Air7,62mm/7,7mm_Browning303_Loop_ST.wav
+load @ROOT/Sound/@RTD/Air7,62mm/7,7mm_Type92_Loop_ST.wav
 loop
 stereo
 dopplerOff
@@ -57,7 +57,7 @@ beginEffect
   param -1
 endEffect
 
-load @ROOT/Sound/@RTD/Air7,62mm/7,7mm_Browning303_Loop_MO.wav
+load @ROOT/Sound/@RTD/Air7,62mm/7,7mm_Type92_Loop_Mono.wav
 loop
 dopplerOff
 minDistance 30

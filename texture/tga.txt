@@ -1,1 +1,0 @@
-./GENERAL_GER_AFRICA/p4Whe1_f.tga: Targa image data - RGB 64 x 64

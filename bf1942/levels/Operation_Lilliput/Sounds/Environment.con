@@ -1,0 +1,12 @@
+EnvironmentSound.load Environment.ssc
+run pswamp1.con
+run Bird1.con
+run cricket1.con
+
+
+
+
+
+
+
+

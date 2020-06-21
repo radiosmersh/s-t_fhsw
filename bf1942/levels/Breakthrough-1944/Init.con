@@ -67,7 +67,7 @@ run Init/SkyAndSun
 run Init/Terrain
 
 run Sounds/Environment
-run objects/go
+rem run objects/go
 
 rem *** Set team 1 ***
 game.setBeforeSpawnCameraPosition 2 1201.83/66.8514/892.928

@@ -1,0 +1,8 @@
+
+
+rem *** knallen3 ***
+ObjectTemplate.create SimpleObject knallen3
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript knallen3.ssc
+ObjectTemplate.triggerRadius 100
+

@@ -38,132 +38,46 @@ volume 0
 #################
 newPatch
 
-load @ROOT/Sound/@RTD/Air12,7mm/13,2mm800R1.wav
-minDistance 2
+load @ROOT/Sound/@RTD/Air7,62mm/13,2mm_Type3_Loop_ST.wav
+loop
 stereo
-loop
-stop FinishSample
 dopplerOff
-priority 10
-randomStartPitch 0.06 / 0.0
-relativePosition 0/0/1
-volume 0.8
-
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 0
-	param 6
-	param 1
-	param 1
-endEffect
-
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 6
-	param 6
-	param 1
-	param -1
-endEffect
-
-load @ROOT/Sound/@RTD/Air12,7mm/13,2mm800R2.wav
 minDistance 2
-stereo
-loop
-stop FinishSample
-dopplerOff
 priority 10
-randomStartPitch 0.05 / 0.0
-relativePosition 0/0/1
-volume 0.8
-
 *** Distance Volume ***
 beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 0
-	param 6
-	param 1
-	param 1
+  controlDestination Volume
+  controlSource Distance
+  envelope Ramp
+  param 10
+  param 10
+  param 1
+  param -1
 endEffect
 
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 6
-	param 6
-	param 1
-	param -1
-endEffect
-
-load @ROOT/Sound/@RTD/Air12,7mm/13,2mm800Rdist1.wav
-minDistance 30
+load @ROOT/Sound/@RTD/Air7,62mm/13,2mm_Type3_Loop_Mono.wav
 loop
-stop FinishSample
 dopplerOff
-priority 8
-randomStartPitch 0.05 / 0.0
-relativePosition 0/0/1
-volume 0.8
-
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 6
-	param 6
-	param 0
-	param 1
-endEffect
-
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 130
-	param 250
-	param 1
-	param -1
-endEffect
-
-load @ROOT/Sound/@RTD/Air12,7mm/13,2mm800Rdist2.wav
 minDistance 30
-loop
-stop FinishSample
-dopplerOff
-priority 8
-randomStartPitch 0.05 / 0.0
-relativePosition 0/0/1
-volume 0.8
-
+priority 10
 *** Distance Volume ***
 beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 6
-	param 6
-	param 0
-	param 1
+  controlDestination Volume
+  controlSource Distance
+  envelope Ramp
+  param 10
+  param 10
+  param 0
+  param 1
 endEffect
 
 *** Distance Volume ***
 beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 130
-	param 250
-	param 1
-	param -1
+  controlDestination Volume
+  controlSource Distance
+  envelope Ramp
+  param 250
+  param 250
+  param 1
+  param -1
 endEffect

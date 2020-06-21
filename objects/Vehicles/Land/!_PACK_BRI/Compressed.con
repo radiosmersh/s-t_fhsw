@@ -26084,16 +26084,17 @@ rem folder = CrusaderIII
 rem sauce = Physics.con
 rem ============================================================================
 
-rem *** Crusader_IIIEngine ***
+
+rem *** CrusaderIIIEngine ***
 ObjectTemplate.create Engine CrusaderIIIEngine
 ObjectTemplate.setNetworkableInfo Crusader_IIIEngineInfo
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../Engines/Sounds/A15TankEngine.ssc
 ObjectTemplate.hasMobilePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate CrusaderI_L_Track
+ObjectTemplate.addTemplate CrusaderIII_L_Track
 ObjectTemplate.setPosition -1/0/0
-ObjectTemplate.addTemplate CrusaderI_R_Track
+ObjectTemplate.addTemplate CrusaderIII_R_Track
 ObjectTemplate.setPosition 1/0/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation -1/0/-1
@@ -41123,7 +41124,7 @@ rem sauce = Weapons.con
 rem ============================================================================
 rem *** SextupleBofors_Barrel1 ***
 ObjectTemplate.create FireArms SextupleBofors_Barrel1
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.loadSoundScript ../SextupleBofors/Sounds/SextupleBoforsGunBarrel.ssc
 ObjectTemplate.aiTemplate SextupleBoforsMainGun
 ObjectTemplate.geometry SextupleBofors_barrel_m1
@@ -41152,7 +41153,7 @@ ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 rem *** SextupleBofors_Barrel2 ***
 ObjectTemplate.create FireArms SextupleBofors_Barrel2
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.loadSoundScript ../SextupleBofors/Sounds/SextupleBoforsGunBarrel.ssc
 ObjectTemplate.aiTemplate SextupleBoforsMainGun
 ObjectTemplate.geometry SextupleBofors_barrel_m1
@@ -41182,7 +41183,7 @@ ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 rem *** SextupleBofors_Barrel3 ***
 ObjectTemplate.create FireArms SextupleBofors_Barrel3
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.loadSoundScript ../SextupleBofors/Sounds/SextupleBoforsGunBarrel.ssc
 ObjectTemplate.aiTemplate SextupleBoforsMainGun
 ObjectTemplate.geometry SextupleBofors_barrel_m1
@@ -41212,7 +41213,7 @@ ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 rem *** SextupleBofors_Barrel4 ***
 ObjectTemplate.create FireArms SextupleBofors_Barrel4
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.loadSoundScript ../SextupleBofors/Sounds/SextupleBoforsGunBarrel.ssc
 ObjectTemplate.aiTemplate SextupleBoforsMainGun
 ObjectTemplate.geometry SextupleBofors_barrel_m1
@@ -41242,7 +41243,7 @@ ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 rem *** SextupleBofors_Barrel5 ***
 ObjectTemplate.create FireArms SextupleBofors_Barrel5
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.loadSoundScript ../SextupleBofors/Sounds/SextupleBoforsGunBarrel.ssc
 ObjectTemplate.aiTemplate SextupleBoforsMainGun
 ObjectTemplate.geometry SextupleBofors_barrel_m1
@@ -41272,7 +41273,7 @@ ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 rem *** SextupleBofors_Barrel6 ***
 ObjectTemplate.create FireArms SextupleBofors_Barrel6
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.loadSoundScript ../SextupleBofors/Sounds/SextupleBoforsGunBarrel.ssc
 ObjectTemplate.aiTemplate SextupleBoforsMainGun
 ObjectTemplate.geometry SextupleBofors_barrel_m1
@@ -42637,8 +42638,8 @@ rem *** Tortoise_Gunbarrel_TracGunBarrel ***
 ObjectTemplate.create FireArms Tortoise_Gunbarrel_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
-rem ObjectTemplate.projectileTemplate Arty9,4cmL65Projectile_Tracer
+rem ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty9,4cmL65Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999

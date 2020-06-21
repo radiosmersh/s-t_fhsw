@@ -1,7 +1,7 @@
 rem *********************************************
 rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
 rem *********************************************
-ShaderManager.setTextureParam envmap bf1942\levels\Midway-1942\Textures\ENVMAP_G_.rcm
+ShaderManager.setTextureParam envmap bf1942\levels\Midway\Textures\ENVMAP_G_.rcm
 renderer.vertexFogEnable 1
 renderer.setFogColorVec 0.678/0.729/0.776
 rem renderer.fogColorVec 0.976600/0.968800/0.984400
@@ -17,7 +17,7 @@ renderer.animatedMeshAmbientColor 0.3
 
 textureManager.alternativePath Texture/SPECIAL_US_SBD_Navy
 textureManager.alternativePath bf1942/levels/Midway-1942/Texture
-textureManager.alternativePath Texture/LEVELS/midway
+rem textureManager.alternativePath Texture/LEVELS/midway
 textureManager.alternativePath Texture/GENERAL_JAP_NAVY
 textureManager.alternativePath Texture/GENERAL_US_NAVY
 textureManager.alternativePath Texture/GENERAL_US_PACIFIC
@@ -28,7 +28,7 @@ Game.setViewDistance 1500
 rem Game.setViewDistance 500
 Game.spawnPlayers 1
 
-Physics.airDensityZeroAtHeight 2000
+Physics.airDensityZeroAtHeight 2100
 
 rem 
 rem *** Define flags ***
@@ -47,12 +47,12 @@ ObjectTemplate.radius 5
 ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedUkFlag
 
-game.setTeamSkin 1 JapaneseSoldier
+game.setTeamSkin 1 TurboWrenchJapaneseSoldier
 game.setKit 1 0 1Jap_IJNPilot
 game.setKit 1 1 2Jap_IJNPilot
 game.setKit 1 2 3Jap_IJNPilot
-game.setKit 1 3 4Jap_IJNSeamanNW
-game.setKit 1 4 5Jap_IJNSeamanNW
+game.setKit 1 3 4Jap_IJNSeaman
+game.setKit 1 4 5Jap_IJNSeaman
 
 game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1USN_Pilot
@@ -103,6 +103,6 @@ run objects/go
 run Sounds/Environment
 
 rem *** Set team 1 ***
-game.setBeforeSpawnCameraPosition 2 550/140/2500
+game.setBeforeSpawnCameraPosition 1 550/140/6000
 rem *** Set team 2 ***
-game.setBeforeSpawnCameraPosition 1 7856/140/400
+game.setBeforeSpawnCameraPosition 2 7856/140/400

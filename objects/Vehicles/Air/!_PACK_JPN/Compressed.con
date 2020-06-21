@@ -14737,6 +14737,7 @@ ObjectTemplate.addTemplate e_wdustPlaneL
 rem -------------------------------------
 ObjectTemplate.setStrength 24
 ObjectTemplate.setDamping 12
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = AichiVal
@@ -16191,6 +16192,7 @@ ObjectTemplate.addTemplate e_wdustPlaneL
 rem -------------------------------------
 ObjectTemplate.setStrength 24
 ObjectTemplate.setDamping 12
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = AichiVal-T
@@ -21465,6 +21467,7 @@ NetworkableInfo.setPredictionMode PMLinear
 
 NetworkableInfo.createNewInfo D4Y2BaseInfo
 NetworkableInfo.setPredictionMode PMLinear
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = D4Y2
@@ -21483,8 +21486,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.0675
-ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.07
+ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -22021,8 +22024,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.0675
-ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.07
+ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -22154,8 +22157,8 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.0675
-ObjectTemplate.drag 0.07
+rem ObjectTemplate.drag 0.07
+ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1

@@ -9,7 +9,7 @@ renderer.ambientColor 0.19/0.17/0.2
 renderer.diffuseColor 0.5/0.48/0.4
 renderer.specularColor 0.3/0.3/0.3
 renderer.animatedMeshAmbientColor 0.3
-renderer.setFogColorVec 0.812/0.832/0.921
+renderer.FogColorVec 0.812/0.832/0.921
 rem renderer.fogColorVec 0.976600/0.968800/0.984400
 
 textureManager.alternativePath Texture/SPECIAL_TurboWrench
@@ -21,7 +21,7 @@ textureManager.alternativePath Texture/CAMO
 
 shadow.shadowColor 0.550000
 
-Game.setViewDistance 1000
+Game.setViewDistance 1800
 rem Game.setViewDistance 500
 Game.spawnPlayers 1
 

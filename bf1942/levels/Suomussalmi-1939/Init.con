@@ -1,0 +1,95 @@
+ShaderManager.setTextureParam envmap bf1942\levels\Suomussalmi-1939\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1 
+renderer.fogColorVec 0.7176/0.7290/0.7169
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.1
+renderer.ambientColor .15/.15/.18
+renderer.diffuseColor .3/.3/.3
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.25
+
+textureManager.alternativePath bf1942/levels/Suomussalmi-1939/Textures
+textureManager.alternativePath bf1942/levels/Suomussalmi-1939/Texture
+textureManager.alternativePath Texture/ENVIROMENT_WINTER
+textureManager.alternativePath Texture/GENERAL_RUS_WINTER
+textureManager.alternativePath Texture/GENERAL_FIN
+textureManager.alternativePath Texture/GENERAL_FIN_WINTER
+textureManager.alternativePath Texture\Special_skys\Meuse
+
+shadow.shadowColor 0.22
+
+Game.setViewDistance 230
+Game.spawnPlayers 1
+renderer.fogstart 45
+renderer.fogend 230
+
+game.setTeamSkin 1 FinishSoldier
+game.setKit 1 0 1Fin_CloseQuartersMP18
+game.setKit 1 1 2Fin_AssaultNagantMolotovRDG33
+game.setKit 1 2 3Fin_TankhunterC38
+game.setKit 1 3 4Fin_OfficerKP31Smoke3R
+game.setKit 1 4 5Fin_EngineerNagant
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_OfficerPPD25Smoke2R
+rem game.setKit 2 1 2Rus_AssaultNagant
+game.setKit 2 1 Cavalry_2Rus_AssaultNagant
+rem game.setKit 2 2 3Rus_TankhunterNagantRDGGeballte
+game.setKit 2 2 Cavalry_3Rus_TankhunterNagantRDGGeballte
+game.setKit 2 3 4Rus_SupportDP1928
+game.setKit 2 4 5Rus_TankCommanderBravery
+
+game.setActiveCombatArea 0 0 1024 1024
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+run Sounds/Environment
+run Objects/Objects
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/water07
+water.texLayer2 texture/water03green
+water.normalMap texture/normalMap02
+beginrem
+water.scrollDirectionNormalmap -0.7/-0.7
+water.scrollDirection1 -1/-0.5
+water.scrollDirection2 -1/0.5
+water.specularColor 0.24/0.24/0.24
+water.scrollLayer1 0.02
+water.scrollLayer2 0.03
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.5
+water.lightDirection 0.857174/0.129634/-0.498445
+water.color 0.8/0.7/0.4
+water.waterColorDepth 40
+water.envmapcolor 0.70/0.80/0.70
+water.deepColor 0.35/0.425/0.4
+water.waterAlphaDepth 0.2
+water.waterShallowAlpha 0.7
+endrem
+water.scrollDirectionNormalmap 1.000000/0.000000
+water.scrollDirection1 1.000000/-0.500000
+water.scrollDirection2 1.000000/0.500000
+water.specularColor 0.750000/0.730000/0.780000
+water.scrollLayer1 0.030000
+water.scrollLayer2 0.030000
+water.scrollNormalmap 0.010000
+water.specularStreakFactor 0.001000
+water.tileLayer1 0.500000
+water.tileLayer2 0.500000
+water.tileNormalmap 0.250000
+water.lightDirection -0.087/0.319/-0.944
+water.color 0.6/0.6/0.63
+water.deepColor 0.5/0.5/0.5
+water.waterAlphaDepth 0.5
+water.waterShallowAlpha 0.6
+
+game.setBeforeSpawnCameraPosition 1 159.82/75.57/115.8
+game.setBeforeSpawnCameraPosition 2 840.19/78.49/800.76

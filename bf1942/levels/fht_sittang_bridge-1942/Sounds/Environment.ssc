@@ -1,0 +1,21 @@
+#templateLevel HIGH
+
+newPatch
+
+load @ROOT/Sound/@RTD/Ambience/jungle_ambience_1.wav
+loop
+minDistance 10
+randomStartPitch 0.25 / 0.0
+volume .6
+priority -10
+
+#templateLevel MEDIUM
+
+newPatch
+
+load @ROOT/Sound/@RTD/Ambience/jungle_ambience_1.wav
+loop
+minDistance 10
+randomStartPitch 0.25 / 0.0
+volume .6
+priority -10

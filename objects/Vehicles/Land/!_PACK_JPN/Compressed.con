@@ -373,6 +373,7 @@ ObjectTemplate.roundOfFire 5
 ObjectTemplate.recoilSpeed 18
 ObjectTemplate.recoilSize 5
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsLightShake
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 20mmType2Multi
@@ -791,6 +792,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aa_16x16.tga"
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 20mmType2Multi
@@ -1294,6 +1296,7 @@ ObjectTemplate.roundOfFire 5
 ObjectTemplate.recoilSpeed 18
 ObjectTemplate.recoilSize 5
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsLightShake
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 25mmAA
@@ -6119,6 +6122,7 @@ ObjectTemplate.setMaxRotation 0/7/0
 ObjectTemplate.setMaxSpeed 0/40/0
 ObjectTemplate.setAcceleration 0/150.0/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 25mmType4
@@ -16509,6 +16513,7 @@ GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh ExpHighPower10cmCannon_move_l1
 GeometryTemplate.file type96_move_l1
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = ExpHighPower10cmCannonMobile_towed
@@ -19082,7 +19087,7 @@ rem *** Ho-Chi_Cannon_TracGunBarrel ***
 ObjectTemplate.create FireArms Ho-Chi_Cannon_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty15,0cmL23,5Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0.173/4
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -26219,6 +26224,7 @@ renderer.endGlobalCluster
 
 GeometryTemplate.create StandardMesh Ho-Ru_LOD_m1
 GeometryTemplate.file Ho_Ru_LOD_m1
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Ho-Ru
@@ -40335,6 +40341,7 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.velocity 736
 ObjectTemplate.setFireDev 0.9 0.2 0.05
 ObjectTemplate.setMinDev 0.25
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Type96_15cm
@@ -41064,7 +41071,7 @@ rem *** Type96_15cmGunHEAT_TracGunBarrel ***
 ObjectTemplate.create FireArms Type96_15cmGunHEAT_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty15,0cmL23,5Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0.173/4
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999

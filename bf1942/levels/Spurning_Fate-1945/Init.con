@@ -1,0 +1,96 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003 Digital Illusions CE
+rem *********************************************
+
+renderer.globalAmbientColor 0.07058/0.07058/0.10196
+renderer.ambientColor 0.07058/0.07058/0.10196
+renderer.diffuseColor 0.07058/0.07058/0.10196
+renderer.specularColor 0.07058/0.07058/0.10196
+
+rem renderer.globalAmbientColor .1/.1/.12
+rem renderer.ambientColor .12/.12/.12
+rem renderer.diffuseColor .3/.28/.25
+rem renderer.specularColor 0.2157/0.2667/0.2706
+
+renderer.animatedMeshAmbientColor 0.2
+renderer.globalLodPercent 1
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.07058/0.07058/0.10196
+rem renderer.fogColorVec 0.08235/0.08627/0.11764
+rem renderer.fogColorVec 0.14901/0.15686/0.23529
+rem renderer.fogColorVec 0.09605/0.09015/0.1294
+rem renderer.fogColorVec 0.2157/0.2667/0.2706
+
+ShaderManager.setTextureParam envmap bf1942\levels\Spurning_Fate-1945\Textures\ENVMAP_G_.rcm
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+textureManager.alternativePath texture/levels/Spurning_Fate
+textureManager.alternativePath bf1942/levels/Spurning_Fate-1945/Texture
+textureManager.alternativePath texture/Special_skys/night
+textureManager.alternativePath texture/ENVIROMENT_NIGHT
+textureManager.alternativePath texture/GENERAL_GER_NIGHT
+textureManager.alternativePath texture/GENERAL_RUS_NIGHT
+
+shadow.shadowColor 0.5
+
+Game.setViewDistance 250
+Game.spawnPlayers 1
+renderer.fogstart -200
+rem renderer.fogstart -100
+rem renderer.fogstart 0
+rem renderer.fogstart 180
+renderer.fogend 250
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 1German_OfficerMp40_3008SignalNight
+game.setKit 1 1 2German_AssaultSg44Night
+game.setKit 1 2 3German_ATRandomPzfNight
+rem game.setKit 1 2 3German_ATGeballteLadungNight
+game.setKit 1 3 4German_TankhunterK98SatchelNight
+game.setKit 1 4 5German_TankCommanderWalterP38FlareNight
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_OfficerPPS43Night
+game.setKit 2 1 2Rus_AssaultRandomSVTASNight
+game.setKit 2 2 3Rus_ATPTRDNight
+rem game.setKit 2 2 3Rus_TankhunterNagantRDGGeballteNight
+game.setKit 2 3 4Rus_TankhunterNagantRPG43Night
+game.setKit 2 4 5Rus_TankCommanderTT33Night
+
+game.setActiveCombatArea 0 0 1024 1024
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+run Sounds/Environment
+
+game.assaultTeam 2
+
+water.specularEnable 1
+water.texLayer1 texture/Water01night
+water.texLayer2 texture/Water02night
+water.normalMap texture/normalMap01
+water.scrollDirectionNormalmap -1/-1
+water.scrollDirection1 -1/-0.5
+water.scrollDirection2 -1/-0.5
+water.specularColor 0.2157/0.2667/0.2706
+water.scrollLayer1 0.03
+water.scrollLayer2 0.04
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 1
+water.tileNormalmap 1
+water.lightDirection 0.764000/0.587000/-0.251000
+water.waterShallowAlpha 0.8
+water.waterAlphaDepth 0.2
+water.color 0.63/0.59/0.33
+water.deepcolor 0.5/0.45/0.3
+
+run Sounds/Environment
+run Objects/INIT
+
+game.setBeforeSpawnCameraPosition 1 713.5/88.4/90.3
+game.setBeforeSpawnCameraPosition 2 190/86.3/581

@@ -4870,8 +4870,8 @@ rem *** A-19Cannon_TracGunBarrel ***
 ObjectTemplate.create FireArms A-19Cannon_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
-rem ObjectTemplate.projectileTemplate Arty12,2cmL43Projectile_Tracer
+rem ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty12,2cmL43Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/4
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -15492,6 +15492,7 @@ GeometryTemplate.setLodDistance 2 200
 GeometryTemplate.setLodDistance 3 250
 GeometryTemplate.setLodDistance 4 300
 GeometryTemplate.setLodDistance 5 500
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = BT7
@@ -20502,6 +20503,7 @@ GeometryTemplate.setLodDistance 2 250
 GeometryTemplate.setLodDistance 3 300
 GeometryTemplate.setLodDistance 4 350
 GeometryTemplate.setLodDistance 5 500
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = IS3
@@ -20518,6 +20520,7 @@ NetworkableInfo.setPredictionMode PMLinear
 
 NetworkableInfo.createNewInfo IS3EngineInfo
 NetworkableInfo.setPredictionMode PMLinear
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = IS3
@@ -26077,7 +26080,7 @@ rem *** ISU152TracGunBarrel ***
 ObjectTemplate.create FireArms ISU152TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -26582,7 +26585,7 @@ rem *** ISU152BMTracGunBarrel ***
 ObjectTemplate.create FireArms ISU152BMTracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty15,2cmL47,2Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -34662,7 +34665,8 @@ ObjectTemplate.lodSelector KV2LodSelector
 
 rem *** KV2Complex ***
 ObjectTemplate.create Bundle KV2Complex
-ObjectTemplate.geometry KV2_Hull_M1
+ObjectTemplate.geometry KV1_Hull_M1
+rem ObjectTemplate.geometry KV2_Hull_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -35276,7 +35280,8 @@ ObjectTemplate.lodSelector KV2-107LodSelector
 
 rem *** KV2-107Complex ***
 ObjectTemplate.create Bundle KV2-107Complex
-ObjectTemplate.geometry KV2-107_Hull_M1
+ObjectTemplate.geometry KV1_Hull_M1
+rem ObjectTemplate.geometry KV2-107_Hull_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -35758,7 +35763,8 @@ ObjectTemplate.lodSelector KV2-85LodSelector
 
 rem *** KV2-85Complex ***
 ObjectTemplate.create Bundle KV2-85Complex
-ObjectTemplate.geometry KV2-85_Hull_M1
+ObjectTemplate.geometry KV1_Hull_M1
+rem ObjectTemplate.geometry KV2-85_Hull_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -42475,8 +42481,8 @@ rem *** ML-20Cannon_TracGunBarrelAP
 ObjectTemplate.create FireArms ML-20Cannon_TracGunBarrelAP
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
-rem ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Tracer
+rem ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/4
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -47552,7 +47558,7 @@ ObjectTemplate.setNetworkableInfo TankFireArmInfo
 rem -------------------------------------
 rem -------------------------------------
 ObjectTemplate.projectileTemplate Arty12,2cmL22Projectile
-ObjectTemplate.projectilePosition 0/17.4512/21.7
+ObjectTemplate.projectilePosition 0/17.4512/1.7
 ObjectTemplate.setMinDev 0.79
 ObjectTemplate.magSize 40
 ObjectTemplate.numOfMag 1
@@ -50739,7 +50745,7 @@ rem *** SU152TracGunBarrel ***
 ObjectTemplate.create FireArms SU152TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty15,2cmL28,8Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -65588,6 +65594,7 @@ GeometryTemplate.setLodDistance 2 200
 GeometryTemplate.setLodDistance 3 250
 GeometryTemplate.setLodDistance 4 300
 GeometryTemplate.setLodDistance 5 500
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = T26
@@ -75046,6 +75053,7 @@ GeometryTemplate.setLodDistance 2 30
 GeometryTemplate.setLodDistance 3 40
 GeometryTemplate.setLodDistance 4 80
 GeometryTemplate.setLodDistance 5 100
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = T35-95
