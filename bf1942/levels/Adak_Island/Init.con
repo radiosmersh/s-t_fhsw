@@ -1,8 +1,8 @@
 rem *********************************************
 rem Created by Battlecraft 1942.  Copyright (c)2003 Digital Illusions CE
 rem Map Created cand designed by Jim Rogers aka "Rad" for Forgotten Hope Mod
-rem �2003 wG|Rad  email: jrogers@autoadart.com
-rem �2003 Forgotten Hope mod  http://www.FHmod.org
+rem ©2003 wG|Rad  email: jrogers@autoadart.com
+rem ©2003 Forgotten Hope mod  http://www.FHmod.org
 rem *********************************************
 ShaderManager.setTextureParam envmap bf1942\levels\Adak_Island\Textures\ENVMAP_G_.rcm
 renderer.globalLodPercent 1
