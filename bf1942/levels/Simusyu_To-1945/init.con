@@ -18,9 +18,10 @@ textureManager.alternativePath bf1942/levels/Simusyu_To-1945/Texture
 textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1945_SPRING
 textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
 textureManager.alternativePath Texture/SPECIAL_JAP_PACIFIC_1943_SUMMER
+textureManager.alternativePath Texture/SPECIAL_JAP_TANK_26REGIMENT
 textureManager.alternativePath Texture/GENERAL_JAP_ARMY
 textureManager.alternativePath Texture/SPECIAL_JAP_MAINLAND
-textureManager.alternativePath Texture/SPECIAL_JAP_TANK_26REGIMENT
+
 
 shadow.shadowColor 0.600000
 

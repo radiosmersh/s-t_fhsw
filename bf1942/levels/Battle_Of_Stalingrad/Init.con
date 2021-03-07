@@ -8,6 +8,7 @@ renderer.vertexFogEnable 1
 renderer.fogColorVec 0.68235/0.63529/0.61568
 renderer.animatedMeshAmbientColor 0.15
 
+textureManager.alternativePath Texture/Levels/Pavlov
 textureManager.alternativePath Texture/ENVIROMENT_BUILDINGS_ALTERNATIVE
 textureManager.alternativePath Texture/LEVELS/STALINGRAD
 textureManager.alternativePath bf1942/levels/Battle_of_Stalingrad/customtextures

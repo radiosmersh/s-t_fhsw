@@ -152,6 +152,43 @@ beginEffect
 endEffect
 
 
+###############
+### SOUND 9 ###
+###############
+load @ROOT/Sound/@RTD/fleshimpact9.wav
+minDistance 8
+randomStartPitch 0.05 / 0.05
+priority 8
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 15
+	param 1
+	param -1	
+endEffect
+
+
+################
+### SOUND 10 ###
+################
+load @ROOT/Sound/@RTD/fleshimpact10.wav
+minDistance 8
+randomStartPitch 0.05 / 0.05
+priority 8
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 3
+	param 15
+	param 1
+	param -1	
+endEffect
+
 #################
 ### RANDOMIZE ###
 #################

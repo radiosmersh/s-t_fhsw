@@ -8,7 +8,7 @@ load @ROOT/Sound/@RTD/sandstorm.wav
 loop
 minDistance 10
 randomStartPitch 0.25 / 0.0
-volume 1
+volume 1.0
 priority -10
 
 #templateLevel MEDIUM
@@ -21,5 +21,5 @@ load @ROOT/Sound/@RTD/sandstorm.wav
 loop
 minDistance 10
 randomStartPitch 0.25 / 0.0
-volume 1
+volume 1.0
 priority -10

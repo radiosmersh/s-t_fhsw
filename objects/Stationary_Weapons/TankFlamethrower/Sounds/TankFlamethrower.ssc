@@ -31,12 +31,12 @@ beginEffect
 	envelope Ramp
 	param 6
 	param 6
-	param 1
-	param -1
+	param 2
+	param -2
 endEffect
 
 load @ROOT/Sound/@RTD/flameloop_end.wav
-minDistance 30
+minDistance 10
 dopplerOff
 priority 9
 *** Distance Volume ***
@@ -47,7 +47,7 @@ beginEffect
 	param 6
 	param 6
 	param 0
-	param 1
+	param 2
 endEffect
 
 *** Distance Volume ***
@@ -56,9 +56,9 @@ beginEffect
 	controlSource Distance
 	envelope Ramp
 	param 6
-	param 160
-	param 1
-	param -1
+	param 100
+	param 2
+	param -2
 endEffect
 
 ###########################################################################################################
@@ -82,13 +82,13 @@ priority 0
 #################
 newPatch
 
-load @ROOT/Sound/@RTD/flameloop_mid.wav
+load @ROOT/Sound/@RTD/flameloop_midST.wav
 minDistance 2
 stereo
 loop
-stop FinishSample
 dopplerOff
 priority 9
+stereo
 *** Distance Volume ***
 beginEffect
 	controlDestination Volume
@@ -96,14 +96,13 @@ beginEffect
 	envelope Ramp
 	param 6
 	param 6
-	param 1
-	param -1
+	param 2
+	param -2
 endEffect
 
 load @ROOT/Sound/@RTD/flameloop_mid.wav
-minDistance 30
+minDistance 10
 loop
-stop FinishSample
 dopplerOff
 priority 9
 *** Distance Volume ***
@@ -114,7 +113,7 @@ beginEffect
 	param 6
 	param 6
 	param 0
-	param 1
+	param 2
 endEffect
 
 *** Distance Volume ***
@@ -123,7 +122,34 @@ beginEffect
 	controlSource Distance
 	envelope Ramp
 	param 6
-	param 160
-	param 1
-	param -1
+	param 100
+	param 2
+	param -2
+endEffect
+
+load @ROOT/Sound/@RTD/flameloop_mid.wav
+minDistance 10
+loop
+dopplerOff
+priority 9
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 6
+	param 0
+	param 2
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 6
+	param 100
+	param 2
+	param -2
 endEffect

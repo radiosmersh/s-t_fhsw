@@ -22,7 +22,6 @@ Object.create B29_SP66spawnrotator
 Object.absolutePosition 5500/150/7200
 Object.rotation 90/0/0
 Object.setTeam 2
-Endrem
 rem
 rem ***  ***
 rem
@@ -30,7 +29,6 @@ Object.create B29_SP66spawnrotator
 Object.absolutePosition 5500/150/7200
 Object.rotation 180/0/0
 Object.setTeam 2
-Beginrem
 rem
 rem ***  ***
 rem
@@ -38,38 +36,33 @@ Object.create B29_SP66spawnrotator
 Object.absolutePosition 5500/150/7200
 Object.rotation 270/0/0
 Object.setTeam 2
-Endrem
 
-Beginrem
 rem
 rem ***  ***
 rem
 Object.create A26_SP72spawnrotator
-Object.absolutePosition 7000/150/6900
+Object.absolutePosition 7200/150/6900
 Object.rotation 0/0/0
 Object.setTeam 2
-Endrem
 rem
 rem ***  ***
 rem
 Object.create A26_SP72spawnrotator
-Object.absolutePosition 7000/150/6900
+Object.absolutePosition 7200/150/6900
 Object.rotation 90/0/0
 Object.setTeam 2
-Beginrem
 rem
 rem ***  ***
 rem
 Object.create A26_SP72spawnrotator
-Object.absolutePosition 7000/150/6900
+Object.absolutePosition 7200/150/6900
 Object.rotation 180/0/0
 Object.setTeam 2
-Endrem
 rem
 rem ***  ***
 rem
 Object.create A26_SP72spawnrotator
-Object.absolutePosition 7000/150/6900
+Object.absolutePosition 7200/150/6900
 Object.rotation 270/0/0
 Object.setTeam 2
 
@@ -78,56 +71,56 @@ Object.setTeam 2
 rem
 rem ***  ***
 rem
-Object.create G4M2_800kg_SP64spawnrotator
-Object.absolutePosition 2000/150/1250
+Object.create G4M2_800kg_SP76spawnrotator
+Object.absolutePosition 750/150/1750
 Object.rotation 0/0/0
 Object.setTeam 1
 rem
 rem ***  ***
 rem
-Object.create G4M2_800kg_SP64spawnrotator
-Object.absolutePosition 2000/150/1250
+Object.create Ki-109_SP76spawnrotator
+Object.absolutePosition 750/150/1750
 Object.rotation 90/0/0
 Object.setTeam 1
 rem
 rem ***  ***
 rem
-Object.create G4M2_800kg_SP64spawnrotator
-Object.absolutePosition 2000/150/1250
+Object.create G4M2_800kg_SP76spawnrotator
+Object.absolutePosition 750/150/1750
 Object.rotation 180/0/0
 Object.setTeam 1
 rem
 rem ***  ***
 rem
-Object.create G4M2_800kg_SP64spawnrotator
-Object.absolutePosition 2000/150/1250
+Object.create Ki-109_SP76spawnrotator
+Object.absolutePosition 750/150/1750
 Object.rotation 270/0/0
 Object.setTeam 1
 
 
-Object.create H8K2_Torpedo_SP82spawnrotator
-Object.absolutePosition 1700/150/1700
+Object.create H8K2_2000_SP82spawnrotator
+Object.absolutePosition 1500/150/1700
 Object.rotation 0/0/0
 Object.setTeam 1
 rem
 rem ***  ***
 rem
 Object.create H8K2_Torpedo_SP82spawnrotator
-Object.absolutePosition 1700/150/1700
+Object.absolutePosition 1500/150/1700
 Object.rotation 90/0/0
 Object.setTeam 1
 rem
 rem ***  ***
 rem
 Object.create H8K2_2000_SP82spawnrotator
-Object.absolutePosition 1700/150/1700
+Object.absolutePosition 1500/150/1700
 Object.rotation 180/0/0
 Object.setTeam 1
 rem
 rem ***  ***
 rem
 Object.create H8K2_Torpedo_SP82spawnrotator
-Object.absolutePosition 1700/150/1700
+Object.absolutePosition 1500/150/1700
 Object.rotation 270/0/0
 Object.setTeam 1
 

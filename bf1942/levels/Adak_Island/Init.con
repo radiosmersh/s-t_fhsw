@@ -1,8 +1,8 @@
 rem *********************************************
 rem Created by Battlecraft 1942.  Copyright (c)2003 Digital Illusions CE
 rem Map Created cand designed by Jim Rogers aka "Rad" for Forgotten Hope Mod
-rem ©2003 wG|Rad  email: jrogers@autoadart.com
-rem ©2003 Forgotten Hope mod  http://www.FHmod.org
+rem ï¿½2003 wG|Rad  email: jrogers@autoadart.com
+rem ï¿½2003 Forgotten Hope mod  http://www.FHmod.org
 rem *********************************************
 ShaderManager.setTextureParam envmap bf1942\levels\Adak_Island\Textures\ENVMAP_G_.rcm
 renderer.globalLodPercent 1
@@ -33,10 +33,10 @@ shadow.shadowColor 0.550000
 
 Game.setViewDistance 300
 Game.spawnPlayers 1
-renderer.fogstart -200
-rem renderer.fogstart -100
-rem renderer.fogstart -300
+renderer.fogstart -100
 renderer.fogend 250
+rem renderer.fogstart -200
+rem renderer.fogstart -300
 rem renderer.fogend 200
 
 beginrem
@@ -76,7 +76,7 @@ game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1Us_AssaultGarand
 game.setKit 2 1 2Us_AssaultGarandSmoke2R
 game.setKit 2 2 3Us_ATSpringfieldGrenade
-game.setKit 2 3 4Us_OfficerThompsonSmoke2R
+game.setKit 2 3 4Us_OfficerThompsonSmoke2RD
 game.setKit 2 4 5US_EngineerM1Carabine
 
 

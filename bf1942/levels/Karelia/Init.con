@@ -88,7 +88,7 @@ water.waterColordepth 6
 water.waterShallowAlpha 0.200000
 
 run Sounds/Environment
-run objects/go
+rem run objects/go
 
 rem *** Set team 1 ***
 game.setBeforeSpawnCameraPosition 1 861.824524/94.556389/407.041199

@@ -1607,6 +1607,117 @@ objectTemplate.timeDelayOnOverHeat 3
 ObjectTemplate.FireDelay 0.3
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
+rem -------------------------------------
+rem --- No Shake
+rem -------------------------------------
+
+rem *** 28mmAA_L_Gun1NoShake ***
+ObjectTemplate.create FireArms 28mmAA_L_Gun1NoShake
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../28mmAA/Sounds/28mmAAGunBarrelST.ssc
+ObjectTemplate.aiTemplate 28mmAAMainGun
+ObjectTemplate.geometry 28mmAA_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/0/1.74
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
+ObjectTemplate.projectilePosition 0/0/12
+ObjectTemplate.setMinDev 2.7
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 999
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 472.5
+rem *** balance tweak 630 x 75% ***
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 2.5
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.06
+objectTemplate.coolDownPerSec 0.058
+objectTemplate.timeDelayOnOverHeat 3
+
+rem *** 28mmAA_L_Gun2NoShake ***
+ObjectTemplate.create FireArms 28mmAA_L_Gun2NoShake
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../28mmAA/Sounds/28mmAAGunBarrelST.ssc
+ObjectTemplate.aiTemplate 28mmAAMainGun
+ObjectTemplate.geometry 28mmAA_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/0/1.74
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
+ObjectTemplate.projectilePosition 0/0/12
+ObjectTemplate.setMinDev 2.7
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 999
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 472.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 3.333333
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.07
+objectTemplate.coolDownPerSec 0.058
+objectTemplate.timeDelayOnOverHeat 3
+ObjectTemplate.FireDelay 0.1
+
+rem *** 28mmAA_L_Gun3NoShake ***
+ObjectTemplate.create FireArms 28mmAA_L_Gun3NoShake
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../28mmAA/Sounds/28mmAAGunBarrelST.ssc
+ObjectTemplate.aiTemplate 28mmAAMainGun
+ObjectTemplate.geometry 28mmAA_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/0/1.74
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
+ObjectTemplate.projectilePosition 0/0/12
+ObjectTemplate.setMinDev 2.7
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 999
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 472.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 5.0
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.086
+objectTemplate.coolDownPerSec 0.058
+objectTemplate.timeDelayOnOverHeat 3
+ObjectTemplate.FireDelay 0.2
+
+rem *** 28mmAA_L_Gun4NoShake ***
+ObjectTemplate.create FireArms 28mmAA_L_Gun4NoShake
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../28mmAA/Sounds/28mmAAGunBarrelST.ssc
+ObjectTemplate.aiTemplate 28mmAAMainGun
+ObjectTemplate.geometry 28mmAA_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/0/1.74
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
+ObjectTemplate.projectilePosition 0/0/12
+ObjectTemplate.setMinDev 2.7
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 999
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 472.5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 10.0
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.092
+objectTemplate.coolDownPerSec 0.058
+objectTemplate.timeDelayOnOverHeat 3
+ObjectTemplate.FireDelay 0.3
 
 rem -------------------------------------
 rem --- No Sounds
@@ -1623,7 +1734,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1650,7 +1761,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1678,7 +1789,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1706,7 +1817,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1740,7 +1851,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1768,7 +1879,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1797,7 +1908,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1826,7 +1937,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1862,7 +1973,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1890,7 +2001,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1919,7 +2030,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -1948,7 +2059,7 @@ ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition 0/0/1.74
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HETracer_28x199_AA_Projectile
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 2.7
 ObjectTemplate.magSize 8
 ObjectTemplate.numOfMag 999
@@ -3587,9 +3698,10 @@ rem *** 75mmM2A1mobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner 75mmM2A1mobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 75mmM2A1mobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 75mmM2A1mobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -4276,6 +4388,7 @@ ObjectTemplate.networkableInfo AA_Allies_TurretInfo
 ObjectTemplate.geometry AA_Allies_carriage_m1
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../AA_Base/Sounds/AA_Allies_Carriage.ssc
+ObjectTemplate.hasCollisionPhysics 1
 rem ---------------------------------------------------
 ObjectTemplate.addTemplate AA_AlliesSeat
 ObjectTemplate.setPosition 0.7/0.7/-0.2
@@ -4630,8 +4743,12 @@ ObjectTemplate.addTemplate BoforsM1936mobileSimple_Turret
 
 ObjectTemplate.create Bundle BoforsM1936mobileSimple_Turret
 ObjectTemplate.geometry AA_Allies_carriage_m1
-ObjectTemplate.addTemplate AA_AlliesCockpitExternal
+ObjectTemplate.addTemplate BoforsM1936mobileSimpleGun
 ObjectTemplate.setPosition 0/0.987/-0.171
+
+rem *** BoforsM1936mobileSimpleGun ***
+ObjectTemplate.create SimpleObject BoforsM1936mobileSimpleGun
+ObjectTemplate.geometry AA_Allies_cannon_m1
 
 rem *** BoforsM1936mobileLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 BoforsM1936mobileLodSelector
@@ -4655,7 +4772,6 @@ rem -------------------------------------
 rem *** BoforsM1936mobile_base ***
 ObjectTemplate.create SimpleObject BoforsM1936mobile_base
 ObjectTemplate.geometry aa_Allies_base_M1
-ObjectTemplate.hasCollisionPhysics 1
 
 rem *** BoforsM1936mobile_tower ***
 ObjectTemplate.create RotationalBundle BoforsM1936mobile_tower
@@ -5463,9 +5579,10 @@ rem *** BoforsM1936mobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner BoforsM1936mobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 BoforsM1936mobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 BoforsM1936mobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -7146,9 +7263,9 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../DualBofors/Sounds/DualBoforsgunbase.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate DualBoforsCockpitExternal
-ObjectTemplate.addTemplate DualBofors_L_Gun
+ObjectTemplate.addTemplate DualBofors_L_GunNS
 ObjectTemplate.setPosition -0.1438/0.06914/1.158842
-ObjectTemplate.addTemplate DualBofors_R_Gun
+ObjectTemplate.addTemplate DualBofors_R_GunNS
 ObjectTemplate.setPosition 0.1438/0.06914/1.158842
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -7409,6 +7526,62 @@ ObjectTemplate.FireDelay 0.18512
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 
+rem *** DualBofors_L_GunNS ***
+ObjectTemplate.create FireArms DualBofors_L_GunNS
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../DualBofors/Sounds/DualBoforsGunBarrel.ssc
+ObjectTemplate.aiTemplate DualBoforsMainGun
+ObjectTemplate.geometry bofors_L_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.029/1.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_40x311AA_Projectile
+ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
+ObjectTemplate.projectilePosition 0/0/13
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 500
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 660
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 2.7
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.044
+objectTemplate.coolDownPerSec 0.1
+objectTemplate.timeDelayOnOverHeat 2
+
+rem *** DualBofors_R_GunNS ***
+ObjectTemplate.create FireArms DualBofors_R_GunNS
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../DualBofors/Sounds/DualBoforsGunBarrel.ssc
+ObjectTemplate.aiTemplate DualBoforsMainGun
+ObjectTemplate.geometry bofors_R_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.029/1.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_40x311AA_Projectile
+ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
+ObjectTemplate.projectilePosition 0/0/13
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 500
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 660
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 5.4
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.060
+objectTemplate.coolDownPerSec 0.1
+objectTemplate.timeDelayOnOverHeat 2
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.FireDelay 0.18512
+
 
 rem *** DualBofors_L_GunAlt ***
 ObjectTemplate.create FireArms DualBofors_L_GunAlt
@@ -7422,7 +7595,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_40x311AA_Projectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -7437,7 +7610,6 @@ objectTemplate.heatAddWhenFire 0.044
 objectTemplate.coolDownPerSec 0.1
 objectTemplate.timeDelayOnOverHeat 2
 ObjectTemplate.setInputFire c_PIAltFire
-rem ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 rem *** DualBofors_R_GunAlt ***
 ObjectTemplate.create FireArms DualBofors_R_GunAlt
@@ -7451,7 +7623,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_40x311AA_Projectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -9368,7 +9540,7 @@ rem *** GreyhoundEngine ***
 ObjectTemplate.create Engine GreyhoundEngine
 ObjectTemplate.setNetworkableInfo GreyhoundEngineInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../Engines/Sounds/M8GreyEngine.ssc
+ObjectTemplate.loadSoundScript ../Greyhound/Sounds/GreyhoundEngine.ssc
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -10837,9 +11009,10 @@ rem *** Howitzer105mmmobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Howitzer105mmmobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Howitzer105mmmobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Howitzer105mmmobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -12888,7 +13061,7 @@ rem *** M10Engine ***
 ObjectTemplate.create Engine M10Engine
 ObjectTemplate.setNetworkableInfo M10EngineInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../Engines/Sounds/M10Engine.ssc
+ObjectTemplate.loadSoundScript ../Engines/Sounds/FordGAEngine.ssc
 ObjectTemplate.hasMobilePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate M10_TrackL
@@ -13066,6 +13239,537 @@ ObjectTemplate.velocity 400
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 0.35
 ObjectTemplate.roundOfFire 0.286
+ObjectTemplate.AmmoType	4
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = M10Achilles
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo M10AchillesTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo M10AchillesGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo M10AchillesGunSelectorInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo M10AchillesEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo M10AchillesBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo M10AchillesPassengerInfo
+NetworkableInfo.setPredictionMode PMNone
+NetworkableInfo.setBasePriority 0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = M10Achilles
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = USA
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
+rem *** M10Achilles
+rem *** M10Achilles_AP
+
+rem *** M10 ***
+ObjectTemplate.create PlayerControlObject M10Achilles
+ObjectTemplate.setNetworkableInfo M10AchillesBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.drag 2
+ObjectTemplate.mass 29600
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 117
+ObjectTemplate.maxhitpoints 117
+ObjectTemplate.material 35
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.timetoliveafterdeath 35
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.aiTemplate M10
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM10Achilles
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 85
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m10Achilles_AmmoSelect.tga"
+ObjectTemplate.setVehicleIconPos 71/63
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76mmOQFmarkV_AP+HERndAPDS.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 180
+ObjectTemplate.DirBarYScaleAbove 90
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -90
+ObjectTemplate.DirBarYScaleMax 0
+
+rem *** lodM10Achilles ***
+ObjectTemplate.create LodObject lodM10Achilles
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10AchillesComplex
+ObjectTemplate.addTemplate M10Simple
+ObjectTemplate.addTemplate M10Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector M10AchillesLodSelector
+
+rem *** M10AchillesComplex ***
+ObjectTemplate.create Bundle M10AchillesComplex
+ObjectTemplate.geometry M10_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10Entry
+ObjectTemplate.setPosition 0/-0.149/1
+ObjectTemplate.addTemplate M10Entry
+ObjectTemplate.setPosition 0/-0.149/-0.999
+ObjectTemplate.addTemplate M10Engine
+ObjectTemplate.addTemplate M10AchillesTower
+ObjectTemplate.setPosition 0/1.485/-0.099
+if v_is_coop == False
+	ObjectTemplate.addTemplate M10Achilles_Passenger_PCO3
+	ObjectTemplate.addTemplate M10Achilles_Passenger_PCO4
+endIf
+
+ObjectTemplate.addTemplate e_TankExhaust20Liner
+ObjectTemplate.setPosition 0/0.15/-2.68
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+
+rem *** M10AchillesTower ***
+ObjectTemplate.create RotationalBundle M10AchillesTower
+ObjectTemplate.setNetworkableInfo M10AchillesTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M10Achilles/Sounds/m10AchillesTower.ssc
+ObjectTemplate.geometry M10_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10AchillesCannonBase
+ObjectTemplate.setPosition 0/0.015/1.2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 33/0/0
+ObjectTemplate.setAcceleration 139/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** M10AchillesCannonBase ***
+ObjectTemplate.create RotationalBundle M10AchillesCannonBase
+ObjectTemplate.setNetworkableInfo M10AchillesGunInfo
+ObjectTemplate.loadSoundScript ../M10Achilles/Sounds/M10Achillesgunbase.ssc
+ObjectTemplate.geometry M10_Cannon2_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10AchillesCannon
+ObjectTemplate.setPosition 0/-0.04/-0.2
+ObjectTemplate.addTemplate lodM10AchillesCockpit
+ObjectTemplate.setPosition -0.42/0.4432/0.73
+ObjectTemplate.addTemplate M10AchillesCamera
+ObjectTemplate.setPosition -0.42/0.4432/-0.17
+
+ObjectTemplate.addTemplate M10AchillesGunSelector
+ObjectTemplate.setPosition 0.01/-12.639/-0.2
+ObjectTemplate.setRotation 0/4.5/0
+ObjectTemplate.addTemplate M10_BulletCatcherBundle
+ObjectTemplate.setPosition 0.01/-12.639/-0.2
+ObjectTemplate.setRotation 0/9/179.999
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-19/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/33/0
+ObjectTemplate.setAcceleration 0/139/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** M10AchillesGunSelector ***
+ObjectTemplate.create RotationalBundle M10AchillesGunSelector
+ObjectTemplate.setNetworkableInfo M10AchillesGunSelectorInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate M10AchillesGunBarrelAP
+ObjectTemplate.setRotation 0/-4.5/0
+ObjectTemplate.addTemplate M10AchillesGunBarrelHE
+ObjectTemplate.setRotation 0/4.5/179.999
+rem ----------------------------------
+ObjectTemplate.setMinRotation 0/0/-180
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/900000
+ObjectTemplate.setAcceleration 0/0/90000000
+ObjectTemplate.setInputToRoll c_PIPitch
+
+rem *** lodM10AchillesCockpit ***
+ObjectTemplate.create LodObject lodM10AchillesCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate M10AchillesCockpitInternal
+ObjectTemplate.setPosition 0/-0.66725/-0.47
+ObjectTemplate.addTemplate M10AchillesCockpitExternal
+rem -------------------------------------
+ObjectTemplate.lodSelector M10AchillescockpitSelector
+
+rem *** M10AchillesCockpitExternal ***
+ObjectTemplate.create SimpleObject M10AchillesCockpitExternal
+ObjectTemplate.geometry 
+
+rem *** M10AchillesCockpitInternal ***
+ObjectTemplate.create SimpleObject M10AchillesCockpitInternal
+ObjectTemplate.geometry 1P_Firefly_Gunner_M1
+
+rem *** M10AchillescockpitSelector ***
+LodSelectorTemplate.create DistanceSelector M10AchillescockpitSelector
+LodSelectorTemplate.addLodDistance 0.2
+
+rem *** M10AchillesCamera ***
+ObjectTemplate.create Camera M10AchillesCamera
+ObjectTemplate.OutsideHudOffset 0.0005/0/0.9
+rem ObjectTemplate.OutsideHudOffset 0.0005/0.64325/0.7
+ObjectTemplate.CVMExternTrace 1
+
+rem *** M10AchillesLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 M10AchillesLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 135
+
+rem *** M10Achilles_Passenger_PCO3 ***
+ObjectTemplate.create PlayerControlObject M10Achilles_Passenger_PCO3
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.NameTagOffset 0/-0.2/-1
+ObjectTemplate.setNetworkableInfo M10AchillesPassengerInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate M10Entrysmall
+ObjectTemplate.setPosition 0/0/-2.599
+ObjectTemplate.addTemplate M10PassengerCamera
+ObjectTemplate.setPosition -1.3/1.2/-1.599
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate M10PassengerSeat
+ObjectTemplate.setPosition -0.97/1.85/-2.2
+ObjectTemplate.setRotation -90/0/5
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -0.47/2.35/-2.2 -90/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_M10Achilles.tga"
+ObjectTemplate.setVehicleIconPos 114/60
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+
+
+rem *** M10Achilles_Passenger_PCO4 ***
+ObjectTemplate.create PlayerControlObject M10Achilles_Passenger_PCO4
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.NameTagOffset 0/-0.2/-1
+ObjectTemplate.setNetworkableInfo M10AchillesPassengerInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate M10Entrysmall
+ObjectTemplate.setPosition 0/0/-2.599
+ObjectTemplate.addTemplate M10PassengerCamera
+ObjectTemplate.setPosition 1.3/1.2/-1.599
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate M10PassengerSeat
+ObjectTemplate.setPosition 0.97/1.85/-2.2
+ObjectTemplate.setRotation 90/5/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0.47/2.35/-2.2 90/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_M10Achilles.tga"
+ObjectTemplate.setVehicleIconPos 97/52
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+
+rem *******************************************************************************
+
+rem *** M10Achilles_AP ***
+ObjectTemplate.create PlayerControlObject M10Achilles_AP
+ObjectTemplate.setNetworkableInfo M10AchillesBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 2
+ObjectTemplate.speedMod 0.75
+ObjectTemplate.drag 2
+ObjectTemplate.mass 29600
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 117
+ObjectTemplate.maxhitpoints 117
+ObjectTemplate.material 35
+ObjectTemplate.criticalDamage 11
+if v_is_coop == True
+	ObjectTemplate.hpLostWhileCriticalDamage 1
+else
+	ObjectTemplate.hpLostWhileCriticalDamage 0
+endIf
+ObjectTemplate.explosionForceMod 6
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.4
+ObjectTemplate.addArmorEffect 11 e_PanzFire 0/1/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.timetoliveafterdeath 35
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.aiTemplate M10
+rem -------------------------------------
+ObjectTemplate.addTemplate lodM10Achilles_AP
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 85
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 2.2 1.2 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_m10Achilles_AmmoSelect.tga"
+ObjectTemplate.setVehicleIconPos 71/63
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76mmOQFmarkV_AP+HE.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 180
+ObjectTemplate.DirBarYScaleAbove 90
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -90
+ObjectTemplate.DirBarYScaleMax 0
+
+rem *** lodM10Achilles_AP ***
+ObjectTemplate.create LodObject lodM10Achilles_AP
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10AchillesComplex_AP
+ObjectTemplate.addTemplate M10Simple
+ObjectTemplate.addTemplate M10Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector M10AchillesLodSelector
+
+rem *** M10AchillesComplex_AP ***
+ObjectTemplate.create Bundle M10AchillesComplex_AP
+ObjectTemplate.geometry M10_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10Entry
+ObjectTemplate.setPosition 0/-0.149/1
+ObjectTemplate.addTemplate M10Entry
+ObjectTemplate.setPosition 0/-0.149/-0.999
+ObjectTemplate.addTemplate M10Engine
+ObjectTemplate.addTemplate M10AchillesTower_AP
+ObjectTemplate.setPosition 0/1.485/-0.099
+if v_is_coop == False
+	ObjectTemplate.addTemplate M10Achilles_Passenger_PCO3
+	ObjectTemplate.addTemplate M10Achilles_Passenger_PCO4
+endIf
+
+ObjectTemplate.addTemplate e_TankExhaust20Liner
+ObjectTemplate.setPosition 0/0.15/-2.68
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+
+rem *** M10AchillesTower_AP ***
+ObjectTemplate.create RotationalBundle M10AchillesTower_AP
+ObjectTemplate.setNetworkableInfo M10AchillesTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../M10Achilles/Sounds/m10AchillesTower.ssc
+ObjectTemplate.geometry M10_Tower_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10AchillesCannonBase_AP
+ObjectTemplate.setPosition 0/0.015/1.2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 33/0/0
+ObjectTemplate.setAcceleration 139/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** M10AchillesCannonBase_AP ***
+ObjectTemplate.create RotationalBundle M10AchillesCannonBase_AP
+ObjectTemplate.setNetworkableInfo M10AchillesGunInfo
+ObjectTemplate.loadSoundScript ../M10Achilles/Sounds/M10Achillesgunbase.ssc
+ObjectTemplate.geometry M10_Cannon2_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate M10AchillesCannon
+ObjectTemplate.setPosition 0/-0.04/-0.2
+ObjectTemplate.addTemplate lodM10AchillesCockpit
+ObjectTemplate.setPosition -0.42/0.4432/0.73
+ObjectTemplate.addTemplate M10AchillesCamera
+ObjectTemplate.setPosition -0.42/0.4432/-0.17
+
+ObjectTemplate.addTemplate M10AchillesGunSelector_AP
+ObjectTemplate.setPosition 0.01/-12.639/0.3
+ObjectTemplate.setRotation 0/4.5/0
+ObjectTemplate.addTemplate M10_BulletCatcherBundle
+ObjectTemplate.setPosition 0.01/-12.639/0.3
+ObjectTemplate.setRotation 0/9/179.999
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-19/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/33/0
+ObjectTemplate.setAcceleration 0/139/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** M10AchillesGunSelector_AP ***
+ObjectTemplate.create RotationalBundle M10AchillesGunSelector_AP
+ObjectTemplate.setNetworkableInfo M10AchillesGunSelectorInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate M10AchillesGunBarrelAP_AP
+ObjectTemplate.setRotation 0/-4.5/0
+ObjectTemplate.addTemplate M10AchillesGunBarrelHE
+ObjectTemplate.setRotation 0/4.5/179.999
+rem ----------------------------------
+ObjectTemplate.setMinRotation 0/0/-180
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/900000
+ObjectTemplate.setAcceleration 0/0/90000000
+ObjectTemplate.setInputToRoll c_PIPitch
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = M10Achilles
+rem sauce = Weapons.con
+rem ============================================================================
+
+rem *** M10AchillesCannon ***
+ObjectTemplate.create FireArms M10AchillesCannon
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../M10Achilles/Sounds/M10AchillesCannon.ssc
+ObjectTemplate.geometry Firefly_gun
+ObjectTemplate.aiTemplate M10MainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSW_50_1000_Main
+ObjectTemplate.setPosition 0/0/3.6294
+
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition -0.0971/0/3.5279
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition 0.0971/0/3.5279
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition -0.0955/0/3.4124
+ObjectTemplate.setRotation -110/0/0
+ObjectTemplate.addTemplate e_MuzzSW_75_1000_Sub
+ObjectTemplate.setPosition 0.0955/0/3.4124
+ObjectTemplate.setRotation 110/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 450
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.35
+ObjectTemplate.roundOfFire 0.276
+ObjectTemplate.fireingForce 25
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 20
+ObjectTemplate.setFireCameraShakeAnimationState FireTank100CanonShake
+
+rem *** M10AchillesGunBarrelAP_AP ***
+ObjectTemplate.create FireArms M10AchillesGunBarrelAP_AP
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.aiTemplate M10MainGun
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.35
+ObjectTemplate.projectileTemplate 76,2mmL58,3_17pdr_Projectile
+ObjectTemplate.projectilePosition 0/12.5/1
+rem ObjectTemplate.setMinDev 0.75
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 450
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.35
+ObjectTemplate.roundOfFire 0.276
+ObjectTemplate.AmmoType	4
+
+rem *** M10AchillesGunBarrelHE ***
+ObjectTemplate.create FireArms M10AchillesGunBarrelHE
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Arty7,62cmL50Projectile
+ObjectTemplate.projectilePosition 0/12.5/1
+ObjectTemplate.setMinDev 0.35
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 450
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.35
+ObjectTemplate.roundOfFire 0.276
+ObjectTemplate.AmmoType	5
+
+rem *** M10AchillesGunBarrelAP ***
+ObjectTemplate.create FireArms M10AchillesGunBarrelAP
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.aiTemplate M10MainGun
+rem -------------------------------------
+rem -------------------------------------
+ObjectTemplate.setMinDev 0.35
+ObjectTemplate.projectileTemplate 76,2mmL58,3_17pdr_Projectile
+ObjectTemplate.setTracerTemplate 76,2mmL58,3APDS_17pdr_Projectile CRD_UNIFORM/1/6/0
+ObjectTemplate.projectilePosition 0/12.5/1
+rem ObjectTemplate.setMinDev 0.7
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 450
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.35
+ObjectTemplate.roundOfFire 0.276
 ObjectTemplate.AmmoType	4
 
 rem ===== EOF =====
@@ -14097,6 +14801,9 @@ ObjectTemplate.setPosition 0.0/0.25/0.0
 ObjectTemplate.addTemplate M18Hellcat_Addons
 ObjectTemplate.setPosition 0/0.3/0
 
+ObjectTemplate.addTemplate M18Hellcat_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M18Hellcat_Tankdesant_PCO1
 ObjectTemplate.setPosition -1.1/1.85/-2.14
 ObjectTemplate.setRotation -90/0/0
@@ -14104,6 +14811,10 @@ ObjectTemplate.addTemplate M18Hellcat_Tankdesant_PCO2
 ObjectTemplate.setPosition 1.1/1.85/-2.14
 ObjectTemplate.setRotation 90/0/0
 rem -------------------------------------
+
+rem *** 18Hellcat_thing ***
+ObjectTemplate.create SimpleObject M18Hellcat_thing
+ObjectTemplate.geometry bullet_m1
 
 
 rem *** M18Hellcat_Tankdesant_PCO1 ***
@@ -14527,6 +15238,9 @@ ObjectTemplate.addTemplate M18HellcatRoller
 ObjectTemplate.setPosition 0.0/0.25/0.0
 ObjectTemplate.addTemplate M18Hellcat_Addons
 ObjectTemplate.setPosition 0/0.3/0
+
+ObjectTemplate.addTemplate M18Hellcat_thing
+ObjectTemplate.setPosition 0/0/-4
 
 ObjectTemplate.addTemplate M18Hellcat_Tankdesant_PCO1
 ObjectTemplate.setPosition -1.1/1.85/-2.14
@@ -15632,6 +16346,9 @@ ObjectTemplate.addTemplate M24LT_Suspension
 ObjectTemplate.addTemplate M19GMC_Accs
 ObjectTemplate.addTemplate M24LT_Hull_Hatch
 
+ObjectTemplate.addTemplate M24LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M19GMCEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M19GMCEngine
@@ -15710,7 +16427,8 @@ ObjectTemplate.addTemplate M19GMC_GunBarrel2
 ObjectTemplate.setPosition 0.11/0/0
 ObjectTemplate.addTemplate lodM19GMCCockpit
 ObjectTemplate.addTemplate M19GMCCamera
-ObjectTemplate.setPosition 0.9/0.35/0.18
+ObjectTemplate.setPosition 0.9/0.75/0.18
+rem ObjectTemplate.setPosition 0.9/0.35/0.18
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/5/0
@@ -15741,7 +16459,8 @@ LodSelectorTemplate.addLodComparison 0.5
 
 rem *** M19GMCCamera ***
 ObjectTemplate.create Camera M19GMCCamera
-ObjectTemplate.OutsideHudOffset 0/0.5/0
+ObjectTemplate.OutsideHudOffset 0/-0.4/0
+rem ObjectTemplate.OutsideHudOffset 0/0.5/0
 
 rem ***M19GMCSeat***
 ObjectTemplate.create SeatObject M19GMCSeat
@@ -16431,6 +17150,9 @@ ObjectTemplate.addTemplate M24LT_Accs
 ObjectTemplate.addTemplate M24LT_Grill
 ObjectTemplate.addTemplate M24LT_Hull_Hatch
 
+ObjectTemplate.addTemplate M24LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M24LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M24LTEngine
@@ -16476,6 +17198,12 @@ rem ****************************************************************************
 rem *** M24LTEntry ***
 ObjectTemplate.create EntryPoint M24LTEntry
 ObjectTemplate.setEntryRadius 3.5
+
+
+rem *** M24LT_thing ***
+ObjectTemplate.create SimpleObject M24LT_thing
+ObjectTemplate.geometry bullet_m1
+
 
 rem *** M24LT_Turret ***
 ObjectTemplate.create RotationalBundle M24LT_Turret
@@ -17143,6 +17871,9 @@ ObjectTemplate.addTemplate M24LT_Suspension
 ObjectTemplate.addTemplate M24LT_Accs
 ObjectTemplate.addTemplate M24LT_Grill
 ObjectTemplate.addTemplate M24LT_Hull_Hatch
+
+ObjectTemplate.addTemplate M24LT_thing
+ObjectTemplate.setPosition 0/0/-4
 
 ObjectTemplate.addTemplate M24LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
@@ -34806,6 +35537,9 @@ ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate M5A1LT_body_SPEC
 
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M5A1LTEngine
@@ -34854,6 +35588,10 @@ rem *** M5A1LT_goods_2 ***
 ObjectTemplate.create SimpleObject M5A1LT_goods_2
 ObjectTemplate.geometry M5A1LT_goods_m1
 ObjectTemplate.hasCollisionPhysics 1
+
+rem *** M5A1LT_thing ***
+ObjectTemplate.create SimpleObject M5A1LT_thing
+ObjectTemplate.geometry bullet_m1
 
 rem *** M5A1LT_Turret ***
 ObjectTemplate.create RotationalBundle M5A1LT_Turret
@@ -35759,6 +36497,9 @@ rem -------------------------------------
 ObjectTemplate.addTemplate M5A1LT_body_SPEC
 ObjectTemplate.addTemplate M8HMC_sandbag_m1
 
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M5A1LTEngine
@@ -36276,6 +37017,10 @@ ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate M8HMC_body_SPEC
 
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
+
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M8A1GMCEngine
@@ -36551,6 +37296,10 @@ rem -------------------------------------
 ObjectTemplate.addTemplate M8HMC_body_SPEC
 ObjectTemplate.addTemplate M8HMC_sandbag_m1
 
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
+
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M8A1GMCEngine
@@ -36761,6 +37510,9 @@ ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate M8HMC_body_SPEC
 
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M8A1GMCEngine
@@ -36910,6 +37662,9 @@ ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate M8HMC_body_SPEC
 ObjectTemplate.addTemplate M8HMC_sandbag_m1
+
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
 
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
@@ -37379,6 +38134,9 @@ ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate M8HMC_body_SPEC
 
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M8HMCEngine
@@ -37751,6 +38509,10 @@ ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate M8HMC_body_SPEC
 ObjectTemplate.addTemplate M8HMC_sandbag_m1
+
+ObjectTemplate.addTemplate M5A1LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 
 ObjectTemplate.addTemplate M5A1LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
@@ -39418,7 +40180,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate HE_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 120
 ObjectTemplate.numOfMag 46
@@ -39441,7 +40203,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 120
 ObjectTemplate.numOfMag 46
@@ -39463,7 +40225,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 120
 ObjectTemplate.numOfMag 46
@@ -39486,7 +40248,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate HE_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 120
 ObjectTemplate.numOfMag 46
@@ -39509,7 +40271,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate HE_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 120
 ObjectTemplate.numOfMag 46
@@ -39533,7 +40295,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 120
 ObjectTemplate.numOfMag 46
@@ -39556,7 +40318,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 120
 ObjectTemplate.numOfMag 46
@@ -40898,7 +41660,7 @@ ObjectTemplate.setPosition 0/0.01/2.1
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate HE_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 60
 ObjectTemplate.numOfMag 46
@@ -40919,7 +41681,7 @@ ObjectTemplate.setPosition 0/0.01/2.1
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate APTracer_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate DummyGunProjectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 60
 ObjectTemplate.numOfMag 46
@@ -40939,7 +41701,7 @@ ObjectTemplate.setPosition 0/0.01/2.1
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate APTracer_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate DummyGunProjectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 60
 ObjectTemplate.numOfMag 46
@@ -40960,7 +41722,7 @@ ObjectTemplate.setPosition 0/0.01/2.1
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate HE_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 60
 ObjectTemplate.numOfMag 46
@@ -40981,7 +41743,7 @@ ObjectTemplate.setPosition 0/0.01/2.1
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate HE_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 60
 ObjectTemplate.numOfMag 46
@@ -41003,7 +41765,7 @@ ObjectTemplate.setPosition 0/0.01/2.1
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate APTracer_20x110AASL_Projectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 60
 ObjectTemplate.numOfMag 46
@@ -41024,7 +41786,7 @@ ObjectTemplate.setPosition 0/0.01/2.1
 rem ---------------------------------------------
 ObjectTemplate.projectileTemplate APTracer_20x110AASL_Projectile
 ObjectTemplate.setTracerTemplate DummyGunProjectile CRD_UNIFORM/1/3/0
-ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.projectilePosition 0/0/12
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 60
 ObjectTemplate.numOfMag 46
@@ -43814,7 +44576,7 @@ ObjectTemplate.addTemplate QuadBofors_Entry
 ObjectTemplate.setPosition -1.8/1.03669/-0.25
 ObjectTemplate.addTemplate QuadBofors_gunL2
 ObjectTemplate.setPosition -0.8/1.41331/-0.243263
-ObjectTemplate.addTemplate QuadBofors_gunR
+ObjectTemplate.addTemplate QuadBofors_gunR2
 ObjectTemplate.setPosition 0.8/1.41331/-0.243263
 ObjectTemplate.addTemplate QuadBofors_handle2
 ObjectTemplate.setPosition -1.375/1.05/0.06
@@ -43835,7 +44597,7 @@ ObjectTemplate.addTemplate QuadBofors_Entry
 ObjectTemplate.setPosition -1.8/1.03669/-0.25
 ObjectTemplate.addTemplate QuadBofors_gunL2
 ObjectTemplate.setPosition -0.8/1.41331/-0.243263
-ObjectTemplate.addTemplate QuadBofors_gunR
+ObjectTemplate.addTemplate QuadBofors_gunR2
 ObjectTemplate.setPosition 0.8/1.41331/-0.243263
 ObjectTemplate.addTemplate QuadBofors_handle2
 ObjectTemplate.setPosition -1.375/1.05/0.06
@@ -44061,7 +44823,7 @@ ObjectTemplate.addTemplate QuadBofors_Entry
 ObjectTemplate.setPosition -1.8/1.03669/-0.25
 ObjectTemplate.addTemplate QuadBofors_gunL2
 ObjectTemplate.setPosition -0.8/1.41331/-0.243263
-ObjectTemplate.addTemplate QuadBofors_gunR
+ObjectTemplate.addTemplate QuadBofors_gunR2
 ObjectTemplate.setPosition 0.8/1.41331/-0.243263
 rem ObjectTemplate.addTemplate QuadBofors_Seat
 rem ObjectTemplate.setPosition -1.79/1.06622/-0.309521
@@ -44333,7 +45095,7 @@ ObjectTemplate.addTemplate QuadBofors_Entry
 ObjectTemplate.setPosition -1.8/1.03669/-0.25
 ObjectTemplate.addTemplate QuadBofors_gunL2
 ObjectTemplate.setPosition -0.8/1.41331/-0.243263
-ObjectTemplate.addTemplate QuadBofors_gunR
+ObjectTemplate.addTemplate QuadBofors_gunR2
 ObjectTemplate.setPosition 0.8/1.41331/-0.243263
 rem ObjectTemplate.addTemplate QuadBofors_Seat
 rem ObjectTemplate.setPosition -1.79/1.06622/-0.309521
@@ -44689,9 +45451,9 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../QuadBofors/Sounds/QuadBoforsgunbase.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate QuadBoforsCockpitExternal
-ObjectTemplate.addTemplate QuadBofors_L_Gun
+ObjectTemplate.addTemplate QuadBofors_L_GunNS
 ObjectTemplate.setPosition -0.1438/0.06914/1.158842
-ObjectTemplate.addTemplate QuadBofors_R_Gun
+ObjectTemplate.addTemplate QuadBofors_R_GunNS
 ObjectTemplate.setPosition 0.1438/0.06914/1.158842
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -44710,6 +45472,24 @@ ObjectTemplate.addTemplate QuadBoforsCockpitR
 ObjectTemplate.addTemplate QuadBofors_L_Gun2
 ObjectTemplate.setPosition -0.1438/0.06914/1.158842
 ObjectTemplate.addTemplate QuadBofors_R_Gun2
+ObjectTemplate.setPosition 0.1438/0.06914/1.158842
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-85/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/40.0/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** QuadBofors_gunR2 ***
+ObjectTemplate.create RotationalBundle QuadBofors_gunR2
+ObjectTemplate.setNetworkableInfo QuadBofors_BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../QuadBofors/Sounds/QuadBoforsgunbase.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate QuadBoforsCockpitR
+ObjectTemplate.addTemplate QuadBofors_L_Gun2NS
+ObjectTemplate.setPosition -0.1438/0.06914/1.158842
+ObjectTemplate.addTemplate QuadBofors_R_Gun2NS
 ObjectTemplate.setPosition 0.1438/0.06914/1.158842
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -44763,7 +45543,7 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../QuadBofors/Sounds/QuadBoforsgunbase.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate QuadBoforsCockpitExternal
-ObjectTemplate.addTemplate QuadBofors_L_Gun
+ObjectTemplate.addTemplate QuadBofors_L_GunNS
 ObjectTemplate.setPosition -0.1438/0.06914/1.158842
 ObjectTemplate.addTemplate QuadBofors_R_GunD
 ObjectTemplate.setPosition 0.1438/0.06914/1.158842
@@ -45274,6 +46054,119 @@ ObjectTemplate.FireDelay 0.18
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 
+
+rem *** QuadBofors_L_GunNS ***
+ObjectTemplate.create FireArms QuadBofors_L_GunNS
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../QuadBofors/Sounds/QuadBoforsGunBarrel.ssc
+ObjectTemplate.aiTemplate QuadBoforsMainGun
+ObjectTemplate.geometry bofors_Quad_L_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.029/1.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
+ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
+ObjectTemplate.projectilePosition 0/0/13
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 500
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 660
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 2.77778
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.045
+objectTemplate.coolDownPerSec 0.1
+objectTemplate.timeDelayOnOverHeat 2
+
+rem *** QuadBofors_R_GunNS ***
+ObjectTemplate.create FireArms QuadBofors_R_GunNS
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../QuadBofors/Sounds/QuadBoforsGunBarrel.ssc
+ObjectTemplate.aiTemplate QuadBoforsMainGun
+ObjectTemplate.geometry bofors_Quad_R_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.029/1.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
+ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
+ObjectTemplate.projectilePosition 0/0/13
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 500
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 660
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 3.33333
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.051
+objectTemplate.coolDownPerSec 0.1
+objectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.FireDelay 0.06
+
+rem *** QuadBofors_L_Gun2NS ***
+ObjectTemplate.create FireArms QuadBofors_L_Gun2NS
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../QuadBofors/Sounds/QuadBoforsGunBarrel.ssc
+ObjectTemplate.aiTemplate QuadBoforsMainGun
+ObjectTemplate.geometry bofors_Quad_L_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.029/1.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
+ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
+ObjectTemplate.projectilePosition 0/0/13
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 500
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 660
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 4.16667
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.057
+objectTemplate.coolDownPerSec 0.1
+objectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.FireDelay 0.12
+
+rem *** QuadBofors_R_Gun2NS ***
+ObjectTemplate.create FireArms QuadBofors_R_Gun2NS
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../QuadBofors/Sounds/QuadBoforsGunBarrel.ssc
+ObjectTemplate.aiTemplate QuadBoforsMainGun
+ObjectTemplate.geometry bofors_Quad_R_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.029/1.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
+ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
+ObjectTemplate.projectilePosition 0/0/13
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 500
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 660
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 5.55556
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.063
+objectTemplate.coolDownPerSec 0.1
+objectTemplate.timeDelayOnOverHeat 2
+ObjectTemplate.FireDelay 0.18
+
+
 rem *** Alt Fire ***
 
 rem *** QuadBofors_L_GunAlt ***
@@ -45288,7 +46181,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45317,7 +46210,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45347,7 +46240,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45377,7 +46270,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_40x311NTAA_Projectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45410,7 +46303,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45437,7 +46330,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45465,7 +46358,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45493,7 +46386,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45524,7 +46417,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45553,7 +46446,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45583,7 +46476,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -45613,7 +46506,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate DummyGunProjectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -52041,7 +52934,7 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../SingleBofors/Sounds/SingleBoforsgunbase.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate SingleBoforsCockpitExternal
-ObjectTemplate.addTemplate SingleBofors_Gun
+ObjectTemplate.addTemplate SingleBofors_GunNS
 ObjectTemplate.setPosition 0/0.06914/1.158842
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -52171,6 +53064,31 @@ objectTemplate.timeDelayOnOverHeat 2
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
 
+rem *** SingleBofors_GunNS ***
+ObjectTemplate.create FireArms SingleBofors_GunNS
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../AA_Base/Sounds/AA_Allies_GunBarrel.ssc
+ObjectTemplate.geometry bofors_L_barrel_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.029/1.5
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_40x311AA_Projectile
+ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
+ObjectTemplate.projectilePosition 0/0/13
+ObjectTemplate.setMinDev 2.5
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 500
+ObjectTemplate.magType 0
+ObjectTemplate.velocity 660
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.001
+ObjectTemplate.roundOfFire 2.7
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+objectTemplate.heatAddWhenFire 0.044
+objectTemplate.coolDownPerSec 0.1
+objectTemplate.timeDelayOnOverHeat 2
 
 
 rem *** SingleBofors_GunAlt ***
@@ -52184,7 +53102,7 @@ ObjectTemplate.setPosition 0/-0.029/1.5
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_40x311AA_Projectile
 ObjectTemplate.setTracerTemplate HETracer_40x311AA_Projectile CRD_UNIFORM/1/4/0
-ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.projectilePosition 0/0/13
 ObjectTemplate.setMinDev 2.5
 ObjectTemplate.magSize 4
 ObjectTemplate.numOfMag 500
@@ -55223,7 +56141,7 @@ rem *** T19HMCEngine ***
 ObjectTemplate.create Engine T19HMCEngine
 ObjectTemplate.setNetworkableInfo T19HMCEngineInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../Engines/Sounds/M3APCEngine.ssc
+ObjectTemplate.loadSoundScript ../Engines/Sounds/White160AXEngine.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate m3a1TrackL
 ObjectTemplate.setPosition 0/-0.749/-0.949
@@ -55288,7 +56206,7 @@ rem *** HMCCannon_Dummy ***
 ObjectTemplate.create FireArms T19HMCCannon_Dummy
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.projectileTemplate Arty10,5cmL22,5Projectile_Tracer
 ObjectTemplate.projectilePosition 0/0.4/2
 ObjectTemplate.setMinDev 0.94
 ObjectTemplate.magSize 35
@@ -57633,6 +58551,9 @@ ObjectTemplate.addTemplate M24LT_Suspension
 ObjectTemplate.addTemplate T24E1LT_Accs
 ObjectTemplate.addTemplate M24LT_Hull_Hatch
 
+ObjectTemplate.addTemplate M24LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M24LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate T24E1LTEngine
@@ -57947,6 +58868,9 @@ ObjectTemplate.addTemplate T24E1LT_Hull_Add
 ObjectTemplate.addTemplate M24LT_Suspension
 ObjectTemplate.addTemplate T24E1LT_Accs
 ObjectTemplate.addTemplate M24LT_Hull_Hatch
+
+ObjectTemplate.addTemplate M24LT_thing
+ObjectTemplate.setPosition 0/0/-4
 
 ObjectTemplate.addTemplate M24LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
@@ -59686,6 +60610,7 @@ ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate T34CalliopeLauncherFireArms1
 ObjectTemplate.addTemplate T34CalliopeLauncherTracerFireArms
+rem ObjectTemplate.addTemplate T34CalliopeLauncherFireArms1Effect
 ObjectTemplate.addTemplate T34CalliopeLauncherFireArms2PCO
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-25/0
@@ -59702,6 +60627,8 @@ ObjectTemplate.setSoldierExitLocation -2.5/0/1.0 0/0/0
 rem -------------------------------------
 ObjectTemplate.addTemplate T34CalliopeLauncherFireArms2
 ObjectTemplate.addTemplate T34CalliopeLauncherFireArms3Alt
+ObjectTemplate.addTemplate T34CalliopeLauncherFireArms2Effect
+ObjectTemplate.addTemplate T34CalliopeLauncherFireArms3AltEffect
 ObjectTemplate.addTemplate T34CalliopeCamera2
 ObjectTemplate.setPosition 0/0.5/0
 rem -------------------------------------
@@ -59803,6 +60730,23 @@ ObjectTemplate.reloadtime 2
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.setInputFire c_PIAltFire
 
+rem *** T34CalliopeLauncherFireArms1Effect ***
+ObjectTemplate.create FireArms T34CalliopeLauncherFireArms1Effect
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.setTracerTemplate Rocket_114mm_M8_Effect CRD_UNIFORM/4/0/0
+ObjectTemplate.projectilePosition 0/0/2.5
+ObjectTemplate.magSize 24
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 160
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 48
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.setMinDev 1.7
+ObjectTemplate.AmmoType	5
+
+
+
 
 
 rem *** T34CalliopeLauncherFireArms2 ***
@@ -59869,6 +60813,41 @@ ObjectTemplate.addFireArmsPosition 0.3508/0.1357/0 -0.3/0/0
 ObjectTemplate.addFireArmsPosition 0.211/0.1357/0 -0.2/0/0
 ObjectTemplate.addFireArmsPosition 0.0699/0.1357/0 -0.6/0/0
 ObjectTemplate.setInputFire c_PIAltFire
+
+
+
+
+rem *** T34CalliopeLauncherFireArms2Effect ***
+ObjectTemplate.create FireArms T34CalliopeLauncherFireArms2Effect
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.setTracerTemplate Rocket_114mm_M8_Effect CRD_UNIFORM/4/0/0
+ObjectTemplate.projectilePosition 0/0/2.5
+ObjectTemplate.magSize 18
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 160
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 36
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.setMinDev 1.7
+ObjectTemplate.AmmoType	5
+
+rem *** T34CalliopeLauncherFireArms3AltEffect ***
+ObjectTemplate.create FireArms T34CalliopeLauncherFireArms3AltEffect
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.setTracerTemplate Rocket_114mm_M8_Effect CRD_UNIFORM/4/0/0
+ObjectTemplate.projectilePosition 0/0/2.5
+ObjectTemplate.magSize 18
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 160
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 36
+ObjectTemplate.roundOfFire 3
+ObjectTemplate.setMinDev 1.7
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType	5
+
 
 rem ===== EOF =====
 rem ============================================================================
@@ -60508,6 +61487,9 @@ ObjectTemplate.addTemplate M24LT_Accs
 ObjectTemplate.addTemplate M24LT_Grill
 ObjectTemplate.addTemplate M24LT_Hull_Hatch
 
+ObjectTemplate.addTemplate M24LT_thing
+ObjectTemplate.setPosition 0/0/-4
+
 ObjectTemplate.addTemplate M24LTEntry
 ObjectTemplate.setPosition 0/0/-0.5
 ObjectTemplate.addTemplate M24LTEngine
@@ -60840,6 +61822,9 @@ ObjectTemplate.addTemplate M18HellcatRoller
 ObjectTemplate.setPosition 0.0/0.25/0.0
 ObjectTemplate.addTemplate M18Hellcat_Addons
 ObjectTemplate.setPosition 0/0.3/0
+
+ObjectTemplate.addTemplate M18Hellcat_thing
+ObjectTemplate.setPosition 0/0/-4
 
 ObjectTemplate.addTemplate T88HMC_Tankdesant_PCO1
 ObjectTemplate.setPosition -1.1/1.85/-2.14
@@ -62562,8 +63547,8 @@ rem *** T95GMC_Gunbarrel_TracGunBarrel ***
 ObjectTemplate.create FireArms T95GMC_Gunbarrel_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
-rem ObjectTemplate.projectileTemplate Arty10,5cmL65AProjectile_Tracer
+rem ObjectTemplate.projectileTemplate Tankgun_Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty10,5cmL65AProjectile_Tracer
 ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -62831,6 +63816,8 @@ ObjectTemplate.setPosition 0/.4/-0.999
 ObjectTemplate.addTemplate USMCWillyFireArmsBundle
 ObjectTemplate.setPosition 0/0.1/0
 ObjectTemplate.addTemplate USMCWillyTracerFireArms
+ObjectTemplate.setPosition 0/0.1/0
+ObjectTemplate.addTemplate USMCWillyEffectFireArmsBundle
 ObjectTemplate.setPosition 0/0.1/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-45/0
@@ -63130,6 +64117,25 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 2
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.setInputFire c_PIAltFire
+
+
+
+
+rem *** USMCWillyEffectFireArmsBundle ***
+ObjectTemplate.create FireArms USMCWillyEffectFireArmsBundle
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.setTracerTemplate Rocket_114mm_M8_Effect CRD_UNIFORM/4/0/0
+ObjectTemplate.projectilePosition 0/0/1.5
+ObjectTemplate.magSize 12
+ObjectTemplate.numOfMag 2
+ObjectTemplate.velocity 160
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 4
+rem ObjectTemplate.AmmoType	3
+ObjectTemplate.setMinDev 1.7
+ObjectTemplate.AmmoType	5
 
 
 rem ===== EOF =====

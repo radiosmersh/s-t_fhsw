@@ -1454,9 +1454,10 @@ rem *** 45mmATGunmobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner 45mmATGunmobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 45mmATGunmobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 45mmATGunmobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -4043,9 +4044,10 @@ rem *** 85mmAAmobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner 85mmAAmobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 85mmAAmobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 85mmAAmobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 1
-ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -6604,9 +6606,10 @@ rem *** A-19mobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner A-19mobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 A-19mobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 A-19mobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -10462,9 +10465,10 @@ rem *** B4howitzermobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner B4howitzermobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 B4howitzermobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 B4howitzermobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -11921,6 +11925,7 @@ ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate BM-8-24_FireArmsBundle
 ObjectTemplate.addTemplate BM-8-24_TracerFireArms
+ObjectTemplate.addTemplate BM-8-24_EffectFireArmsBundle
 ObjectTemplate.addTemplate BM-8-24_Reticule_Ramp_Camera
 ObjectTemplate.setPosition 0/0.9/-0.8
 rem -------------------------------------
@@ -12053,6 +12058,25 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 2
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.setInputFire c_PIAltFire
+
+
+
+
+rem *** BM-8-24_EffectFireArmsBundle ***
+ObjectTemplate.create FireArms BM-8-24_EffectFireArmsBundle
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.aiTemplate BM-8-24MainGun
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.setTracerTemplate Rocket_82mm_M-8_Effect CRD_UNIFORM/4/0/0
+ObjectTemplate.projectilePosition 0/0.355/1
+ObjectTemplate.setMinDev 2
+ObjectTemplate.magSize 24
+ObjectTemplate.numOfMag 3
+ObjectTemplate.velocity 75
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 29
+ObjectTemplate.roundOfFire 6.0
+ObjectTemplate.AmmoType	5
 
 rem ===== EOF =====
 rem ============================================================================
@@ -14095,9 +14119,10 @@ rem *** Br5mobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Br5mobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Br5mobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Br5mobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -18351,9 +18376,10 @@ rem *** Flak18/36mobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Flak18/36mobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Flak18/36mobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Flak18/36mobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 1
-ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -18918,6 +18944,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 14 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -19199,6 +19226,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 14 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -19450,6 +19478,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 10 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -19725,6 +19754,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 10 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -19969,6 +19999,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 14 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -20247,6 +20278,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 14 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -20557,6 +20589,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.3
 ObjectTemplate.addArmorEffect 14 e_PanzFire 0/1.8/-2.3
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -20857,6 +20890,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.3
 ObjectTemplate.addArmorEffect 14 e_PanzFire 0/1.8/-2.3
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -21381,6 +21415,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.2/-1.7
 ObjectTemplate.addArmorEffect 16 e_PanzFire 0/1.2/-1.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect 0 e_Flamehit -2/0/2
 ObjectTemplate.addArmorEffect 0 e_Flamehit 2/0/2
@@ -21898,6 +21933,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.2/-1.7
 ObjectTemplate.addArmorEffect 16 e_PanzFire 0/1.2/-1.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -22679,6 +22715,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.2/-1.7
 ObjectTemplate.addArmorEffect 16 e_PanzFire 0/1.2/-1.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -23092,6 +23129,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.2/-1.7
 ObjectTemplate.addArmorEffect 16 e_PanzFire 0/1.2/-1.7
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -23483,6 +23521,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -23791,6 +23830,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -24250,6 +24290,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -24726,6 +24767,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -25219,6 +25261,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 50 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 14 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -25700,6 +25743,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -26206,6 +26250,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -26674,6 +26719,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27055,6 +27101,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27124,6 +27171,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27262,6 +27310,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27331,6 +27380,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27400,6 +27450,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27469,6 +27520,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27538,6 +27590,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27607,6 +27660,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27676,6 +27730,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27745,6 +27800,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27838,6 +27894,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27896,6 +27953,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -27954,6 +28012,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28012,6 +28071,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28070,6 +28130,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28128,6 +28189,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28186,6 +28248,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28244,6 +28307,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28302,6 +28366,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28360,6 +28425,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -28418,6 +28484,7 @@ ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 60 e_PanzDamage 0/1.8/-2.4
 ObjectTemplate.addArmorEffect 15 e_PanzFire 0/1.8/-2.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 45
@@ -31029,6 +31096,7 @@ rem ObjectTemplate.addTemplate KatyushaRampSeat
 ObjectTemplate.addTemplate Katyusha_Camera_PcoId1
 ObjectTemplate.addTemplate KatyushaFireArmsBundle
 ObjectTemplate.addTemplate KatyushaTracerFireArms
+ObjectTemplate.addTemplate KatyushaEffectFireArms
 rem -------------------------------------
 ObjectTemplate.setMaxRotation 0/-3.5/0
 ObjectTemplate.setMinRotation 0/-45/0
@@ -31142,6 +31210,23 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 1
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.setInputFire c_PIAltFire
+
+
+
+rem *** KatyushaEffectFireArms ***
+ObjectTemplate.create FireArms KatyushaEffectFireArms
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+ObjectTemplate.setTracerTemplate Rocket_132mm_M-13_Effect CRD_UNIFORM/4/0/0
+ObjectTemplate.projectilePosition 0/0.586/4
+ObjectTemplate.setMinDev 1.7
+ObjectTemplate.magSize 16
+ObjectTemplate.numOfMag 2.5
+ObjectTemplate.velocity 100
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 6
+ObjectTemplate.AmmoType	5
 
 rem ===== EOF =====
 rem ============================================================================
@@ -43083,9 +43168,10 @@ rem *** ML-20mobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner ML-20mobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 ML-20mobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 ML-20mobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -74635,7 +74721,7 @@ ObjectTemplate.loadSoundScript ../T35/Sounds/T35TrackL.ssc
 ObjectTemplate.geometry T35_TrackL_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.createSkeleton animations/T35_trackL.ske
-ObjectTemplate.setAnimatedTextureSpeed 0.005/0
+ObjectTemplate.setAnimatedTextureSpeed -0.005/0
 rem -------------------------------------
 ObjectTemplate.addTemplate T35_RL_Whel
 ObjectTemplate.setPosition -1.3/0.4908/-4.2203
@@ -74705,7 +74791,7 @@ ObjectTemplate.loadSoundScript ../T35/Sounds/T35TrackR.ssc
 ObjectTemplate.geometry T35_TrackR_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.createSkeleton animations/T35_trackR.ske
-ObjectTemplate.setAnimatedTextureSpeed 0.005/0
+ObjectTemplate.setAnimatedTextureSpeed -0.005/0
 rem -------------------------------------
 ObjectTemplate.addTemplate T35_RL_Whel
 ObjectTemplate.setPosition 1.3/0.4908/-4.2203
@@ -81603,9 +81689,10 @@ rem *** Zis2mobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Zis2mobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Zis2mobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Zis2mobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -83570,7 +83657,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.56/-0.83
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile
+ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.5593/3.8166
 rem *** BATTERY MOD
 ObjectTemplate.magSize 19
@@ -83615,7 +83702,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.56/-0.83
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile
+ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.5593/3.8166
 rem *** BATTERY MOD
 ObjectTemplate.magSize 19
@@ -83659,7 +83746,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.56/-0.83
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile
+ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.5593/3.8166
 rem *** BATTERY MOD
 ObjectTemplate.magSize 19
@@ -83703,7 +83790,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.56/-0.83
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile
+ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.5593/3.8166
 rem *** BATTERY MOD
 ObjectTemplate.magSize 19
@@ -83747,7 +83834,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.56/-0.83
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile
+ObjectTemplate.projectileTemplate Arty7,62cmL41,89Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.5593/3.8166
 rem *** BATTERY MOD
 ObjectTemplate.magSize 19
@@ -84237,9 +84324,10 @@ rem *** Zis3mobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Zis3mobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Zis3mobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Zis3mobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -85696,7 +85784,9 @@ ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ZSU37GunBarrel
 ObjectTemplate.setPosition 0/0.138/1.28
 ObjectTemplate.addTemplate ZSU37_Reticule_Camera
-ObjectTemplate.setPosition -0.6/0.1/0.6
+ObjectTemplate.setPosition -0.6/0.1/0.65
+rem ObjectTemplate.setPosition -0.6/0.1/0.7
+rem ObjectTemplate.setPosition -0.6/0.1/0.6
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-65/0
 ObjectTemplate.setMaxRotation 0/5/0
@@ -85707,7 +85797,9 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** ZSU37_Reticule_Camera ***
 ObjectTemplate.create Camera ZSU37_Reticule_Camera
-ObjectTemplate.OutsideHudOffset 0.0005/0.61625/0.8
+ObjectTemplate.OutsideHudOffset 0.0005/0.61625/0.75
+rem ObjectTemplate.OutsideHudOffset 0.0005/0.61625/0.7
+rem ObjectTemplate.OutsideHudOffset 0.0005/0.61625/0.8
 rem ObjectTemplate.OutsideHudOffset 0.0005/0.61625/0.7
 rem ObjectTemplate.CVMExternTrace 1
 

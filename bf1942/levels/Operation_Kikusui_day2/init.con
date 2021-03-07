@@ -23,7 +23,7 @@ textureManager.alternativePath Texture/GENERAL_US_NAVY
 
 shadow.shadowColor 0.6
 
-Physics.airDensityZeroAtHeight 2000
+rem Physics.airDensityZeroAtHeight 2000
 
 beginrem
 rem Game.setViewDistance 600

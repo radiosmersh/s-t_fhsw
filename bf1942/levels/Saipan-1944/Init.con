@@ -51,13 +51,15 @@ ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedUsFlag
 
 game.setTeamSkin 1 JapaneseSoldier
-game.setKit 1 0 1Jap_OfficerArisakaD
+game.setKit 1 0 1Jap_Officer100SMGD
+rem game.setKit 1 0 1Jap_OfficerArisakaD
 rem game.setKit 1 1 2Jap_AssaultArisaka
 rem game.setKit 1 2 3Jap_AntiTankHEAT
 rem game.setKit 1 3 4Jap_SupportType99
 game.setKit 1 1 2Jap_AssaultArisakaHEAT
 game.setKit 1 2 3Jap_AntiTankType3AT
-game.setKit 1 3 4Jap_MedicArisaka
+game.setKit 1 3 4Jap_TankhunterMp18Turtle
+rem game.setKit 1 3 4Jap_MedicArisaka
 game.setKit 1 4 5Jap_EngineerTurtle
 
 game.setTeamSkin 2 USSoldier

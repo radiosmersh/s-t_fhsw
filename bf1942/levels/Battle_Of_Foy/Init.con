@@ -18,6 +18,7 @@ textureManager.alternativePath Texture/Special_skys/bulge
 textureManager.alternativePath Texture/Levels/bulge
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
 textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath Texture/GENERAL_GER_WINTER
 textureManager.alternativePath Texture/GENERAL_US_WINTER
 
 Game.setViewDistance 350

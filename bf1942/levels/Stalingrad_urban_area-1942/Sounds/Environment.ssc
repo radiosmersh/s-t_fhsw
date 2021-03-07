@@ -4,7 +4,7 @@ newPatch
 ############
 ### Near ###
 ############
-load @ROOT/Sound/@RTD/Ambience/Foyambience.wav
+load @ROOT/bf1942/levels/Stalingrad_urban_area-1942/Sounds/Solnetschnogorskamb.wav
 loop
 minDistance 10
 volume 1.0
@@ -16,7 +16,7 @@ newPatch
 ############
 ### Near ###
 ############
-load @ROOT/Sound/@RTD/Ambience/Foyambience.wav
+load @ROOT/bf1942/levels/Stalingrad_urban_area-1942/Sounds/Solnetschnogorskamb.wav
 loop
 minDistance 10
 volume 1.0

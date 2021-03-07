@@ -14,6 +14,7 @@ textureManager.alternativePath bf1942/levels/Battle_of_Gela-1943/texture
 textureManager.alternativePath texture/levels/D-Day
 textureManager.alternativePath texture/GENERAL_US
 textureManager.alternativePath texture/SPECIAL_ITALY_CAMO
+textureManager.alternativePath texture/GENERAL_ITALY_MAINLAND
 textureManager.alternativePath texture/GENERAL_ITALY_1942
 textureManager.alternativePath texture/GENERAL_ITALY_EUROPE
 textureManager.alternativePath texture/GENERAL_GER_AFRICA

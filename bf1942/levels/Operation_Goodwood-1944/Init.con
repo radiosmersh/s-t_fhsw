@@ -1,8 +1,8 @@
 rem *********************************************
 rem Created by Battlecraft 1942.  Copyright (c)2003 Digital Illusions CE
 rem Map Created and designed by GI_JOEJK for Forgotten Hope Mod
-rem ©2004 GI_JOEJK  email: gboy_3d@yahoo.com
-rem ©2004 Forgotten Hope mod  http://www.FHmod.com
+rem ï¿½2004 GI_JOEJK  email: gboy_3d@yahoo.com
+rem ï¿½2004 Forgotten Hope mod  http://www.FHmod.com
 rem *********************************************
 renderer.globalAmbientColor 0.200000/0.200000/0.200000
 renderer.ambientColor 0.020000/0.020000/0.030000
@@ -55,8 +55,8 @@ game.setKit 1 4 5German_TankCommander_P08Artillerie
 game.setTeamSkin 2 BritishSoldier
 game.setKit 2 0 1GB_OfficerThompsonSmoke2R
 game.setKit 2 1 2GB_AssaultNo4SmokeRG
-rem game.setKit 2 2 3GB_ATPiat
-game.setKit 2 2 3GB_AT345RCL
+game.setKit 2 2 3GB_ATPiat
+rem game.setKit 2 2 3GB_AT345RCL
 game.setKit 2 3 4GB_SupportBren
 game.setKit 2 4 5GB_EngineerNo4
 

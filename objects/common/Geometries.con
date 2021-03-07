@@ -1,0 +1,320 @@
+GeometryTemplate.create StandardMesh tracklight_m1
+GeometryTemplate.file tracklight_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh yellowtracklight_m1
+GeometryTemplate.file tracklightyellow_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh greentracklight_m1
+GeometryTemplate.file tracklightgreen_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh bluetracklight_m1
+GeometryTemplate.file tracklightblue_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh whitetracklight_m1
+GeometryTemplate.file tracklightwhite_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh pinktracklight_m1
+GeometryTemplate.file tracklightpink_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh orangetracklight_m1
+GeometryTemplate.file tracklightorange_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+
+GeometryTemplate.create StandardMesh tracklightBT_m1
+GeometryTemplate.file tracklightBT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightyellowBT_m1
+GeometryTemplate.file tracklightyellowBT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightgreenBT_m1
+GeometryTemplate.file tracklightgreenBT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightblueBT_m1
+GeometryTemplate.file tracklightblueBT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightwhiteBT_m1
+GeometryTemplate.file tracklightwhiteBT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightpinkBT_m1
+GeometryTemplate.file tracklightpinkBT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightorangeBT_m1
+GeometryTemplate.file tracklightorangeBT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+
+GeometryTemplate.create StandardMesh projectile_m1
+GeometryTemplate.file projectile_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tripod_stick_m1
+GeometryTemplate.file tripod_stick_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh tripod_stick_2_m1
+GeometryTemplate.file tripod_stick_2_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+GeometryTemplate.create StandardMesh tripod_stick_mg42_m1
+GeometryTemplate.file tripod_stick_mg42_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 25
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 75
+GeometryTemplate.setLodDistance 4 100
+GeometryTemplate.setLodDistance 5 200
+
+
+
+GeometryTemplate.create StandardMesh tracklight_mid_m1
+GeometryTemplate.file tracklight_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightblue_mid_m1
+GeometryTemplate.file tracklightblue_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightgreen_mid_m1
+GeometryTemplate.file tracklightgreen_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightorange_mid_m1
+GeometryTemplate.file tracklightorange_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightpink_mid_m1
+GeometryTemplate.file tracklightpink_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightwhite_mid_m1
+GeometryTemplate.file tracklightwhite_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightyellow_mid_m1
+GeometryTemplate.file tracklightyellow_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+
+GeometryTemplate.create StandardMesh tracklight_big_m1
+GeometryTemplate.file tracklight_big_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightblue_big_m1
+GeometryTemplate.file tracklightblue_big_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightgreen_big_m1
+GeometryTemplate.file tracklightgreen_big_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightorange_big_m1
+GeometryTemplate.file tracklightorange_big_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightpink_big_m1
+GeometryTemplate.file tracklightpink_big_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightwhite_big_m1
+GeometryTemplate.file tracklightwhite_big_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tracklightyellow_big_m1
+GeometryTemplate.file tracklightyellow_big_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh tanktracer_m1
+GeometryTemplate.file tanktracer_m1
+geometryTemplate.cullFactor 0.0001
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 5000
+GeometryTemplate.setLodDistance 2 5001
+GeometryTemplate.setLodDistance 3 5002
+GeometryTemplate.setLodDistance 4 5003
+GeometryTemplate.setLodDistance 5 5004
+
+GeometryTemplate.create StandardMesh Invisible_Box_10m_m1
+GeometryTemplate.file Invisible_Box_10m_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Invisible_Box_20m_m1
+GeometryTemplate.file Invisible_Box_20m_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
