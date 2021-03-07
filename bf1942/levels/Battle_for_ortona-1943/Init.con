@@ -9,8 +9,10 @@ renderer.vertexFogEnable 1
 renderer.fogColorVec 0.8594/0.8359/0.8906
 renderer.animatedMeshAmbientColor 0.15
 TreeRenderer.billboardlightscale 0.8594/0.8359/0.8906
+
 textureManager.alternativePath bf1942/levels/Battle_for_ortona-1943/CustomTextures
 textureManager.alternativePath bf1942/levels/Battle_for_ortona-1943/Texture
+textureManager.alternativePath Texture/GENERAL_ITALY_MAINLAND
 textureManager.alternativePath Texture/ENVIROMENT_BUILDINGS_ALTERNATIVE
 textureManager.alternativePath Texture/GENERAL_Canadian
 textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_FALL

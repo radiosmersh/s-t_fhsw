@@ -1,0 +1,104 @@
+ShaderManager.setTextureParam envmap bf1942\levels\konstantinovsk-1942\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1 
+renderer.globalLodPercent 1
+
+renderer.globalAmbientColor .2/.2/.2
+renderer.ambientColor .1/.1/.1
+renderer.diffuseColor .38/.37/.36
+renderer.specularColor .3/.3/.3
+
+
+renderer.animatedMeshAmbientColor 0.35
+
+TreeRenderer.billboardlightscale 0.1
+shadow.shadowColor 0.5
+renderer.fogColorVec 0.85490/0.87059/0.87059
+
+textureManager.alternativePath bf1942/levels/konstantinovsk-1942/customtextures
+textureManager.alternativePath bf1942/levels/konstantinovsk-1942/Texture
+textureManager.alternativePath Texture/Russia
+textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath Texture/GENERAL_HUN
+textureManager.alternativePath Texture/SPECIAL_HUN_TANK_LIGHTGREEN
+textureManager.alternativePath Texture/SPECIAL_HUN_TANK_GREEN
+textureManager.alternativePath Texture/SPECIAL_HUN_TANK_CAMO
+textureManager.alternativePath Texture/GENERAL_FRENCH
+textureManager.alternativePath Texture/GENERAL_POL
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1943_SPRING
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1942_SPRING
+textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1943_SPRING
+textureManager.alternativePath Texture/levels/Konstantinovsk-1942
+textureManager.alternativePath Texture/levels/prokhorovka
+
+
+Game.setViewDistance 400
+renderer.fogstart 35
+renderer.fogend 400
+Game.spawnPlayers 1
+
+
+ObjectTemplate.create Flag BlueFlag
+ObjectTemplate.team 1
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedItaFlag
+
+ObjectTemplate.create Flag RedFlag
+ObjectTemplate.team 2
+ObjectTemplate.networkableInfo FlagBodyInfo
+ObjectTemplate.radius 5
+ObjectTemplate.TimeToReSpawn 10
+ObjectTemplate.addTemplate AnimatedSoFlag
+
+
+game.setTeamSkin 1 HungarianSoldier
+game.setKit 1 0 1Hun_CloseQuarters39Mgr36MSmoke2R
+game.setKit 1 1 2Hun_Assault35Mgr36M
+game.setKit 1 2 3Hun_AT356noHE
+game.setKit 1 3 4Hun_Support31M
+game.setKit 1 4 5Hun_Engineer35M
+
+game.setTeamSkin 2 RussianSoldier
+game.setKit 2 0 1Rus_CloseQuartersPPD25Smoke2R
+game.setKit 2 1 2Rus_AssaultNagant
+game.setKit 2 2 3Rus_AssaultNagantMolotov
+game.setKit 2 3 4Rus_TankhunterNagantRDGGeballte
+game.setKit 2 4 5Rus_TankCommanderTT33Smoke2R
+
+game.setActiveCombatArea 0 0 2048 2048
+
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+game.assaultTeam 1
+
+water.specularEnable 1
+water.texLayer1 texture/water01
+water.texLayer2 texture/water01
+water.normalMap texture/normalMap01
+water.scrollDirectionNormalmap 1.000000/0.000000
+water.scrollDirection1 1.000000/-0.500000
+water.scrollDirection2 1.000000/0.500000
+water.specularColor 0.650000/0.550000/0.400000
+water.scrollLayer1 0.020000
+water.scrollLayer2 0.020000
+water.scrollNormalmap 0.020000
+water.specularStreakFactor 0.001000
+water.tileLayer1 0.500000
+water.tileLayer2 0.500000
+water.tileNormalmap 1.000000
+water.lightDirection -0.300000/0.500000/-0.650000
+water.color 1.000000/1.000000/1.000000
+water.deepColor 1.000000/1.000000/1.000000
+water.waterAlphaDepth 0.000000
+water.waterShallowAlpha 0.500000
+
+run Sounds/Environment
+run objects/go
+
+game.setBeforeSpawnCameraPosition 1 1410.73/130/1329.41
+game.setBeforeSpawnCameraPosition 2 1410.73/130/1329.41
+

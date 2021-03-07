@@ -4461,13 +4461,10 @@ ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 500
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 1
-ObjectTemplate.roundOfFire 0.625
+ObjectTemplate.roundOfFire 0.228
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 25
-ObjectTemplate.heatAddWhenFire 0.612
-ObjectTemplate.coolDownPerSec 0.206
-ObjectTemplate.timeDelayOnOverHeat 0
 ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
 
 rem *** ARL-44GunBarrel_APCR ***
@@ -4496,13 +4493,10 @@ ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 500
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 1
-ObjectTemplate.roundOfFire 0.625
+ObjectTemplate.roundOfFire 0.228
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 25
-ObjectTemplate.heatAddWhenFire 0.612
-ObjectTemplate.coolDownPerSec 0.206
-ObjectTemplate.timeDelayOnOverHeat 0
 ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
 
 rem ===== EOF =====
@@ -11784,9 +11778,10 @@ rem *** French155mmmobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner French155mmmobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 French155mmmobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 French155mmmobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -11862,6 +11857,7 @@ ObjectTemplate.workOnVehicles 1
 rem ------------------------------------
 ObjectTemplate.setHealth 0 0 0
 ObjectTemplate.addAmmoType 17 1 100 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
 
 rem *** French155mmmobile_dummySpawnObjRepairSupplyDepot ***
 ObjectTemplate.create SupplyDepot French155mmmobile_dummySpawnObjRepairSupplyDepot
@@ -13995,9 +13991,10 @@ rem *** French75mmmobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner French75mmmobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 French75mmmobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 French75mmmobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -19625,9 +19622,10 @@ rem *** SA37mobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner SA37mobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 SA37mobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 SA37mobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0

@@ -2198,7 +2198,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition -0.2/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition -0.2/0/3.2
+ObjectTemplate.projectilePosition -0.2/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -2221,7 +2221,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0.2/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0.2/0/3.2
+ObjectTemplate.projectilePosition 0.2/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -2249,7 +2249,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition -0.2/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition -0.2/0/3.2
+ObjectTemplate.projectilePosition -0.2/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -2273,7 +2273,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0.2/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0.2/0/3.2
+ObjectTemplate.projectilePosition 0.2/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3735,7 +3735,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3758,7 +3758,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3782,7 +3782,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3806,7 +3806,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3830,7 +3830,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3854,7 +3854,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3879,7 +3879,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -3904,7 +3904,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0.05/3.2
+ObjectTemplate.projectilePosition 0/0.05/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -5773,7 +5773,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition -0.328/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition -0.328/0/3.2
+ObjectTemplate.projectilePosition -0.328/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -5796,7 +5796,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0/3.2
+ObjectTemplate.projectilePosition 0/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -5823,7 +5823,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0.328/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0.328/0/3.2
+ObjectTemplate.projectilePosition 0.328/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -5850,7 +5850,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition -0.328/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition -0.328/0/3.2
+ObjectTemplate.projectilePosition -0.328/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -5874,7 +5874,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0/0/3.2
+ObjectTemplate.projectilePosition 0/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -5901,7 +5901,7 @@ ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0.328/0.05/2.2
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_25x163AA_Projectile
-ObjectTemplate.projectilePosition 0.328/0/3.2
+ObjectTemplate.projectilePosition 0.328/0/13.2
 ObjectTemplate.setTracerTemplate APTracer_25x163AA_Projectile CRD_UNIFORM/1/3/0
 ObjectTemplate.setMinDev 0.5
 ObjectTemplate.magSize 15
@@ -6139,6 +6139,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_YMT_25x163AA_Projectile
 ObjectTemplate.setTracerTemplate APTracer_YMT_25x163AA_Projectile CRD_UNIFORM/1/2/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.magSize 45
 ObjectTemplate.numOfMag 999
 ObjectTemplate.velocity 675
@@ -6166,6 +6167,7 @@ ObjectTemplate.visibleBarrelTemplate e_Muzz30mmWC
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HE_YMT_25x163AA_Projectile
 ObjectTemplate.setTracerTemplate APTracer_YMT_25x163AA_Projectile CRD_UNIFORM/1/2/0
+ObjectTemplate.projectilePosition 0/0/10
 ObjectTemplate.magSize 45
 ObjectTemplate.numOfMag 999
 ObjectTemplate.velocity 675
@@ -6991,9 +6993,10 @@ rem *** 47mmType1mobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner 47mmType1mobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 47mmType1mobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 47mmType1mobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -8153,7 +8156,7 @@ GeometryTemplate.setLodDistance 5 100
 
 renderer.beginGlobalCluster Chi-ha
 GeometryTemplate.create StandardMesh Chi-ha_Tower_m1
-GeometryTemplate.file Chi-ha_Tower_m1
+GeometryTemplate.file Chi-ha_tow
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -16735,9 +16738,10 @@ rem *** ExpHighPower10cmCannonmobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner ExpHighPower10cmCannonmobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 ExpHighPower10cmCannonmobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 ExpHighPower10cmCannonmobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -17493,6 +17497,14 @@ ObjectTemplate.addTemplate Ha-Go_Entry
 ObjectTemplate.setPosition 0/0/1.2
 ObjectTemplate.addTemplate Ha-Go_Entry
 ObjectTemplate.setPosition 0/0/-1.2
+
+ObjectTemplate.addTemplate Ha-Go_Entry
+ObjectTemplate.setPosition -1/0.3/-2.2
+ObjectTemplate.addTemplate Ha-Go_Entry
+ObjectTemplate.setPosition 0/0.3/-2.2
+ObjectTemplate.addTemplate Ha-Go_Entry
+ObjectTemplate.setPosition 1/0.3/-2.2
+
 ObjectTemplate.addTemplate Ha-Go_Engine
 
 ObjectTemplate.addTemplate Ha-Go_HullGun_PCO2
@@ -17666,7 +17678,7 @@ ObjectTemplate.create Camera MG_Camera
 
 rem *** Ha-Go_Entry ***
 ObjectTemplate.create EntryPoint Ha-Go_Entry
-ObjectTemplate.setEntryRadius 3
+ObjectTemplate.setEntryRadius 5
 
 
 
@@ -18028,6 +18040,14 @@ ObjectTemplate.addTemplate Ha-Go_Entry
 ObjectTemplate.setPosition 0/0/1.2
 ObjectTemplate.addTemplate Ha-Go_Entry
 ObjectTemplate.setPosition 0/0/-1.2
+
+ObjectTemplate.addTemplate Ha-Go_Entry
+ObjectTemplate.setPosition -1/0.3/-2.2
+ObjectTemplate.addTemplate Ha-Go_Entry
+ObjectTemplate.setPosition 0/0.3/-2.2
+ObjectTemplate.addTemplate Ha-Go_Entry
+ObjectTemplate.setPosition 1/0.3/-2.2
+
 ObjectTemplate.addTemplate Ha-Go_Engine
 
 ObjectTemplate.addTemplate Ha-Go_Late_HullGun_PCO2
@@ -28353,7 +28373,7 @@ ObjectTemplate.setToolTipType  TTLightTank
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 rem ---------------- Scope 2.0x---------------------------
-ObjectTemplate.vehicleFov 0.5
+rem ObjectTemplate.vehicleFov 0.5
 rem --------------------------------------------------
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -28434,7 +28454,8 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** Navy12cmSPG_Camera ***
 ObjectTemplate.create Camera Navy12cmSPG_Camera
-ObjectTemplate.OutsideHudOffset 0.6005/0.56725/0.52
+ObjectTemplate.OutsideHudOffset 0.6005/0.56725/0.42
+rem ObjectTemplate.OutsideHudOffset 0.6005/0.56725/0.52
 rem ObjectTemplate.OutsideHudOffset 0.6005/0.56725/0.42
 ObjectTemplate.CVMExternTrace 1
 
@@ -28443,7 +28464,8 @@ ObjectTemplate.create LodObject lodNavy12cmSPG_Cockpit
 rem -------------------------------------
 ObjectTemplate.addTemplate Navy12cmSPG_CockpitExternal
 ObjectTemplate.addTemplate Navy12cmSPG_CockpitInternal
-ObjectTemplate.setPosition -0.3/0.055/0.25
+ObjectTemplate.setPosition -0.3/0.055/0
+rem ObjectTemplate.setPosition -0.3/0.055/0.25
 rem ObjectTemplate.setPosition -0.3/0.055/0.25
 rem ObjectTemplate.setPosition -0.9/0.105/0.23
 rem ObjectTemplate.setPosition -0.434/0.005/0.23
@@ -30675,7 +30697,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.22/-0.6
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile
+ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.34/2.0
 ObjectTemplate.setMinDev 0.78
 rem *** BATTERY MOD
@@ -30710,7 +30732,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.22/-0.6
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile
+ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.34/2.0
 ObjectTemplate.setMinDev 0.78
 rem *** BATTERY MOD
@@ -30744,7 +30766,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.22/-0.6
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile
+ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.34/2.0
 ObjectTemplate.setMinDev 0.78
 rem *** BATTERY MOD
@@ -30778,7 +30800,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.22/-0.6
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile
+ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.34/2.0
 ObjectTemplate.setMinDev 0.78
 rem *** BATTERY MOD
@@ -30812,7 +30834,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.22/-0.6
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile
+ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile_DistEffect
 ObjectTemplate.projectilePosition 0/0.34/2.0
 ObjectTemplate.setMinDev 0.78
 rem *** BATTERY MOD
@@ -30835,7 +30857,7 @@ rem *** Type38FieldGunBattery_TracGunBarrel
 ObjectTemplate.create FireArms Type38FieldGunBattery_TracGunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile_Tracer
+ObjectTemplate.projectileTemplate Arty7,5cmL31Projectile_DistEffect_Tracer
 ObjectTemplate.projectilePosition 0/0/4
 ObjectTemplate.setMinDev 0
 ObjectTemplate.magSize 999
@@ -31768,9 +31790,10 @@ rem *** Type38FieldGunmobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Type38FieldGunmobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Type38FieldGunmobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Type38FieldGunmobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -33789,9 +33812,10 @@ rem *** Type88DPGunmobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Type88DPGunmobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Type88DPGunmobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Type88DPGunmobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -43466,9 +43490,10 @@ rem *** Type96_15cmmobilemobile_towed_SupplyObjSpawner ***
 ObjectTemplate.create ObjectSpawner Type96_15cmmobilemobile_towed_SupplyObjSpawner
 ObjectTemplate.setObjectTemplate 1 Type96_15cmmobilemobile_towed_SupplyObj
 ObjectTemplate.setObjectTemplate 2 Type96_15cmmobilemobile_towed_SupplyObj
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 0
-ObjectTemplate.maxSpawnDelay 0
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 120
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/30/0
@@ -44253,6 +44278,10 @@ ObjectTemplate.setRotation 0/0/90
 
 ObjectTemplate.addTemplate Type98_Rocket_Engine
 ObjectTemplate.setPosition 0/0/-1.5
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate PenetrateExplosion36cmSpawner
+ObjectTemplate.setPosition 0/0/0.05
 ObjectTemplate.setRotation 0/0/0
 
 

@@ -52,7 +52,7 @@ game.setKit 1 4 5German_TankCommanderWalterP38FlareNight
 game.setTeamSkin 2 RussianSoldier
 game.setKit 2 0 1Rus_OfficerPPS43Night
 game.setKit 2 1 2Rus_AssaultRandomSVTASNight
-game.setKit 2 2 3Rus_ATPTRDNight
+game.setKit 2 2 3Rus_ATPTRSNight
 rem game.setKit 2 2 3Rus_TankhunterNagantRDGGeballteNight
 game.setKit 2 3 4Rus_TankhunterNagantRPG43Night
 game.setKit 2 4 5Rus_TankCommanderTT33Night

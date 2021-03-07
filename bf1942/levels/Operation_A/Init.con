@@ -17,6 +17,7 @@ textureManager.alternativePath Texture/GENERAL_US_NAVY
 textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1944_SPRING
 textureManager.alternativePath Texture/GENERAL_US_PACIFIC 
 textureManager.alternativePath Texture/GENERAL_JAP_NAVY 
+textureManager.alternativePath Texture/SPECIAL_JAP_NAVY_NOCAMO
 textureManager.alternativePath Texture/SPECIAL_JAP_PACIFIC_1943_SPRING 
 textureManager.alternativePath Texture/SPECIAL_JAP_PACIFIC_1939_SPRING
 
