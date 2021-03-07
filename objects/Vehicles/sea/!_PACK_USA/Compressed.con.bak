@@ -575,8 +575,7 @@ ObjectTemplate.create FireArms 16inchL45Mk6GunBarrel_PenetrateExploder_Prm
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.setAsynchronyFire 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/13.25
 ObjectTemplate.velocity 350
 ObjectTemplate.numOfMag 130
@@ -622,8 +621,7 @@ ObjectTemplate.create FireArms 16inchL45Mk6GunBarrel_PenetrateExploder_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.setAsynchronyFire 1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/13.25
 ObjectTemplate.velocity 350
 ObjectTemplate.numOfMag 130
@@ -637,7 +635,6 @@ ObjectTemplate.addFireArmsPosition 2.85/0/13.3 0/0/0
 ObjectTemplate.AmmoType	3
 ObjectTemplate.setMinDev 2.6
 ObjectTemplate.setInputFire c_PIAltFire
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 533mmMk15TorpedoTube
@@ -687,7 +684,6 @@ GeometryTemplate.setLodDistance 2 100
 GeometryTemplate.setLodDistance 3 200
 GeometryTemplate.setLodDistance 4 400
 GeometryTemplate.setLodDistance 5 800
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 533mmMk15TorpedoTube
@@ -1664,7 +1660,6 @@ rem -------------------------------------
 ObjectTemplate.setMaxSpeed 10/0/0
 ObjectTemplate.setAcceleration 100/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = 533mmMk15TorpedoTube
@@ -3819,8 +3814,7 @@ ObjectTemplate.addTemplate lodShipCockpitAA
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.16/-0.08/0.23
-rem ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -6631,7 +6625,7 @@ ObjectTemplate.geometry Atlanta_hull_L1
 
 rem *** AtlantaLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 AtlantaLodSelector
-LodSelectorTemplate.addLodDistance 750
+LodSelectorTemplate.addLodDistance 500
 
 rem ===== EOF =====
 rem ============================================================================
@@ -6751,7 +6745,7 @@ ObjectTemplate.addFireArmsPosition 0.36/0.9/2.4 0/0/0
 ObjectTemplate.addFireArmsPosition 1.1/0.9/2.4 0/0/0
 ObjectTemplate.AmmoType	13
 ObjectTemplate.setMinDev 0.512
-ObjectTemplate.setInputFire c_PIAltFire
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Bagley
@@ -6799,7 +6793,7 @@ rem *** Bagley1942	SPID66
 rem *** Blue		SPID67
 rem *** Helm		SPID68
 rem *** Mugford		SPID69
-rem *** Ralph_Talbot	SPID72
+rem *** Ralph_Talbot	SPID73
 rem *** Henley		SPID73
 rem *** Patterson	SPID74
 rem *** Jarvis		SPID79
@@ -7729,7 +7723,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.team 1
 ObjectTemplate.MaxNrOfObjectSpawned 3
 ObjectTemplate.damageWhenLost 10
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Bagley
@@ -7746,7 +7739,6 @@ NetworkableInfo.setPredictionMode PMLinear
 
 
 rem *** end of file ***
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Bagley
@@ -8315,7 +8307,7 @@ ObjectTemplate.geometry Bagley_hull_L1
 
 rem *** BagleyLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 BagleyLodSelector
-LodSelectorTemplate.addLodDistance 650
+LodSelectorTemplate.addLodDistance 1000
 
 rem *** Bagley1942 ***
 ObjectTemplate.create PlayerControlObject Bagley1942
@@ -12595,7 +12587,6 @@ NetworkableInfo.setPredictionMode PMLinear
 
 
 rem *** end of file ***
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Benham
@@ -12604,12 +12595,12 @@ rem ============================================================================
 rem ===== COMPRESS = USA
 
 rem *** Benham		SPID66
-rem *** Benham1942	SPID66
-rem *** Ellet		SPID67
-rem *** Lang		SPID68
+rem *** Benham1942		SPID66
+rem *** Ellet			SPID67
+rem *** Lang			SPID68
 rem *** Mayrant		SPID69
 rem *** Rowan		SPID72
-rem *** Stack		SPID73
+rem *** Stack			SPID73
 rem *** Sterett		SPID74
 
 rem *** Benham ***
@@ -13160,11 +13151,13 @@ ObjectTemplate.sonarPos 1
 
 rem *** BenhamSimple ***
 ObjectTemplate.create SimpleObject BenhamSimple
-ObjectTemplate.geometry Bagley_hull_L1
+ObjectTemplate.geometry Benham_hull_L1
 
 rem *** BenhamLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 BenhamLodSelector
-LodSelectorTemplate.addLodDistance 650
+LodSelectorTemplate.addLodDistance 1000
+
+
 
 rem *** Benham1942 ***
 ObjectTemplate.create PlayerControlObject Benham1942
@@ -17489,7 +17482,6 @@ ObjectTemplate.setGroup 80
 rem ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Cleveland1942
@@ -18635,17 +18627,16 @@ ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.5/0/4.92
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 3
 rem ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 9999
-ObjectTemplate.velocity 426
-rem ObjectTemplate.velocity 856
+rem ObjectTemplate.velocity 426
+ObjectTemplate.velocity 856
 ObjectTemplate.reloadtime 9
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
+ObjectTemplate.roundOfFire 9
 rem ObjectTemplate.fireingForce 4
 ObjectTemplate.recoilSpeed 6
 ObjectTemplate.recoilSize 11
@@ -18705,17 +18696,16 @@ ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.5/0/4.92
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 3
 rem ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 9999
-ObjectTemplate.velocity 426
-rem ObjectTemplate.velocity 856
+rem ObjectTemplate.velocity 426
+ObjectTemplate.velocity 856
 ObjectTemplate.reloadtime 9
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
+ObjectTemplate.roundOfFire 9
 rem ObjectTemplate.fireingForce 4
 ObjectTemplate.recoilSpeed 6
 ObjectTemplate.recoilSize 11
@@ -18773,7 +18763,7 @@ ObjectTemplate.numOfMag -1
 ObjectTemplate.velocity 426
 ObjectTemplate.reloadtime 9
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
+ObjectTemplate.roundOfFire 9
 ObjectTemplate.setPosition 0/0/4.72 0/0/0
 ObjectTemplate.setPosition -1.18/0/4.72 0/0/0
 ObjectTemplate.setPosition 1.5/0/4.72 0/0/0
@@ -18822,7 +18812,7 @@ ObjectTemplate.numOfMag -1
 ObjectTemplate.velocity 426
 ObjectTemplate.reloadtime 9
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
+ObjectTemplate.roundOfFire 9
 ObjectTemplate.setPosition 0/0/4.72 0/0/0
 ObjectTemplate.setPosition -1.18/0/4.72 0/0/0
 ObjectTemplate.setPosition 1.5/0/4.72 0/0/0
@@ -18901,7 +18891,6 @@ ObjectTemplate.setGroup 81
 rem ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Cleveland1944
@@ -19507,1055 +19496,6 @@ ObjectTemplate.setToolTipType TTCarrier
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_cruiser_64x64"
 ObjectTemplate.setMinimapIconSize 48
 ObjectTemplate.sonarPos 1
-
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Elco80
-rem sauce = Effects.con
-rem ============================================================================
-rem *** e_PTBoatWreck ***
-ObjectTemplate.create EffectBundle e_PTBoatWreck
-ObjectTemplate.saveInSeparateFile 1
-rem -------------------------------------
-ObjectTemplate.addTemplate Em_PTBoatSpawnRaft
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
-rem -------------------------------------
-
-
-rem *** Em_PTBoatSpawnRaft ***
-ObjectTemplate.create Emitter Em_PTBoatSpawnRaft
-ObjectTemplate.template Elco80Raft
-ObjectTemplate.addEmitterSpeed 1
-ObjectTemplate.emitterSpeedScale 1
-ObjectTemplate.lodDistance 375
-ObjectTemplate.timeToLive CRD_NONE/1/0/0
-ObjectTemplate.intensity CRD_NONE/1/0/0
-ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
-ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
-ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
-ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
-ObjectTemplate.startRotation CRD_UNIFORM/0/0/0
-ObjectTemplate.movetowatersurface 0
-ObjectTemplate.IsSpawnEffect 1
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Elco80
-rem sauce = Geometries.con
-rem ============================================================================
-
-GeometryTemplate.create StandardMesh Elco80_Hull_M1
-GeometryTemplate.file Pt_Elco_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-GeometryTemplate.create StandardMesh PT_Elco_l1
-GeometryTemplate.file PT_Elco_l1
-GeometryTemplate.setLodDistance 0 300
-GeometryTemplate.setLodDistance 1 400
-GeometryTemplate.setLodDistance 2 500
-GeometryTemplate.setLodDistance 3 600
-GeometryTemplate.setLodDistance 4 700
-GeometryTemplate.setLodDistance 5 800
-
-GeometryTemplate.create StandardMesh 1p_Elco80_hull_m1
-GeometryTemplate.file 1P_Pt_Elco_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-
-GeometryTemplate.create StandardMesh Elco80_SideGunner_Base_M1
-GeometryTemplate.file PT_SidePod_M1
-GeometryTemplate.cullFactor 1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-GeometryTemplate.create StandardMesh Elco80_SideGunner_Support_M1
-GeometryTemplate.file PT_SideGunner_Support_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-GeometryTemplate.create StandardMesh Elco80_SideGunner_Gun_M1
-GeometryTemplate.file PT_SideGunner_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-
-GeometryTemplate.create StandardMesh Elco80Ladder_M1
-GeometryTemplate.file Pt_Boat_Ladder_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 15
-GeometryTemplate.setLodDistance 2 30
-GeometryTemplate.setLodDistance 3 40
-GeometryTemplate.setLodDistance 4 60
-GeometryTemplate.setLodDistance 5 100
-
-
-GeometryTemplate.create StandardMesh Elco80_Steering_M1
-GeometryTemplate.file Pt_Elco_Str_M1
-geometryTemplate.cullFactor 0.4
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 100
-
-GeometryTemplate.create StandardMesh 1P_Elco80_str_M1
-GeometryTemplate.file 1P_PT_Elco_Str_M1
-GeometryTemplate.cullFactor 2
-
-GeometryTemplate.create StandardMesh PT_ElcoLL_M1
-GeometryTemplate.file PT_ElcoLL_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 100
-GeometryTemplate.setLodDistance 3 200
-GeometryTemplate.setLodDistance 4 400
-GeometryTemplate.setLodDistance 5 800
-
-GeometryTemplate.create StandardMesh 1PPT_ElcoLL_M1
-GeometryTemplate.file 1PPT_ElcoLL_M1
-GeometryTemplate.cullFactor 2
-
-GeometryTemplate.create StandardMesh FloatingMine_m1
-GeometryTemplate.file PT_Mine_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 15
-GeometryTemplate.setLodDistance 2 30
-GeometryTemplate.setLodDistance 3 40
-GeometryTemplate.setLodDistance 4 60
-GeometryTemplate.setLodDistance 5 300
-
-GeometryTemplate.create StandardMesh PTLadder_M1
-GeometryTemplate.file Pt_Boat_Ladder_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 15
-GeometryTemplate.setLodDistance 2 30
-GeometryTemplate.setLodDistance 3 40
-GeometryTemplate.setLodDistance 4 60
-GeometryTemplate.setLodDistance 5 100
-
-
-GeometryTemplate.create StandardMesh PT_Steering_M1
-GeometryTemplate.file Pt_Elco_Str_M1
-geometryTemplate.cullFactor 0.4
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 100
-
-GeometryTemplate.create StandardMesh 1P_PT_Str_M1
-GeometryTemplate.file 1P_PT_Elco_Str_M1
-GeometryTemplate.cullFactor 2
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Elco80
-rem sauce = Network.con
-rem ============================================================================
-NetworkableInfo.createNewInfo Elco80EngineInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo Elco80BodyInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo Elco80BrowningInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo Elco80TurretInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo Elco80WingInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Elco80
-rem sauce = Objects.con
-rem ============================================================================
-rem ===== COMPRESS = USA
-
-rem *** Elco80 ***
-ObjectTemplate.create PlayerControlObject Elco80
-ObjectTemplate.NameTagOffset -1/4/0
-ObjectTemplate.setNetworkableInfo Elco80BodyInfo
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.6
-ObjectTemplate.dragOffset 0/0/-1
-ObjectTemplate.mass 40000
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 500
-ObjectTemplate.maxhitpoints 500
-ObjectTemplate.material 138
-ObjectTemplate.speedMod 0.7
-ObjectTemplate.criticalDamage 350
-ObjectTemplate.hpLostWhileCriticalDamage 40
-ObjectTemplate.explosionRadius 5
-ObjectTemplate.explosionDamage 5
-ObjectTemplate.explosionForceMod 5
-ObjectTemplate.hpLostWhileUpSideDown 10
-ObjectTemplate.addArmorEffect 200 em_LcvpDamage 0/1.4/-0.5
-ObjectTemplate.addArmorEffect 125 e_waterBoatSinkSmall 0/2/0
-ObjectTemplate.addArmorEffect 0 e_scrapmetal_Willy 0/1.4/-0.5
-rem ObjectTemplate.addArmorEffect -1 e_PTBoatWreck 2/1.4/2.4
-ObjectTemplate.addArmorEffect -1 e_PTBoatWreck 0/1.4/12.4
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.aiTemplate Elco80
-rem -------------------------------------
-ObjectTemplate.addTemplate lodElco80
-
-ObjectTemplate.addTemplate Elco80_Floater
-ObjectTemplate.setPosition 2.5/2.9/-5.5
-ObjectTemplate.addTemplate Elco80_Floater
-ObjectTemplate.setPosition -2.5/2.9/-5.5
-ObjectTemplate.addTemplate Elco80_Floater
-ObjectTemplate.setPosition 3/2.75/5
-ObjectTemplate.addTemplate Elco80_Floater
-ObjectTemplate.setPosition -3/2.75/5
-ObjectTemplate.addTemplate Elco80_MiddleFloater
-ObjectTemplate.setPosition 0/2.2/5
-ObjectTemplate.addTemplate Elco80_MiddleFloater
-ObjectTemplate.setPosition 0/2.35/-5.5
-
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation -0.694/4.36/-1.133 0/0/0
-ObjectTemplate.GUIIndex 42
-ObjectTemplate.setMiniMapIcon "Minimap/minimap_icon_PT_Boat.tga"
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Elco.tga"
-ObjectTemplate.setVehicleIconPos 75/75
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_TP53,3cmMark15.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_PT_Mine.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTLcvp
-ObjectTemplate.setToolTipType TTPTBoat
-ObjectTemplate.submarineData 0 0 0 0 0 5 40
-
-rem *** lodElco80 ***
-ObjectTemplate.create LodObject lodElco80
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate Elco80Complex
-ObjectTemplate.addTemplate Elco80Simple
-rem -------------------------------------
-ObjectTemplate.lodSelector Elco80LodSelector
-
-rem *** Elco80Complex ***
-ObjectTemplate.create Bundle Elco80Complex
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate lodElco80Cockpit
-ObjectTemplate.addTemplate Elco80_Engine
-ObjectTemplate.setPosition 0/.75/-3.7
-ObjectTemplate.addTemplate PT_FrontLandEngine
-ObjectTemplate.addTemplate PT_BackLandEngine
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Elco80_Driver_Entry
-ObjectTemplate.setPosition -2.899/3/1
-ObjectTemplate.addTemplate Elco80_Driver_Entry
-ObjectTemplate.setPosition 2.9/3/1
-ObjectTemplate.addTemplate Elco80_Driver_Entry
-ObjectTemplate.setPosition -2.899/3/-3.999
-ObjectTemplate.addTemplate Elco80_Driver_Entry
-ObjectTemplate.setPosition 2.9/3/-3.999
-
-ObjectTemplate.addTemplate Elco80PassengerSeat
-ObjectTemplate.setPosition -0.694/4.36/0.133
-ObjectTemplate.addTemplate Elco80_Driver_Camera
-ObjectTemplate.setPosition -0.746/5.10/0
-ObjectTemplate.addTemplate Elco80_Rudder_Stern
-ObjectTemplate.setPosition 0/1.4/3.3
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate Elco80_Rudder_Aft
-ObjectTemplate.setPosition 0/1.4/-4.3
-ObjectTemplate.setRotation 0/0/-90
-
-ObjectTemplate.addTemplate Elco80_FrontGunnerPCO
-ObjectTemplate.setPosition 2/3.5/1.3
-
-ObjectTemplate.addTemplate Elco80_Torpedos
-ObjectTemplate.addTemplate FloatingMineLauncher
-ObjectTemplate.setPosition 0.039/2.783/-9.865
-ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate Elco80_Torpedos_HullDamage
-
-
-ObjectTemplate.addTemplate PT_SteeringDummy
-ObjectTemplate.setPosition -0.697/4.66/0.74
-ObjectTemplate.addTemplate PT_Ladder
-ObjectTemplate.setPosition -1.425/2.53/-9.138
-
-ObjectTemplate.addTemplate Elco_ThrottleLDummy
-ObjectTemplate.setPosition -1.055/4.73/0.84
-ObjectTemplate.addTemplate Elco_ThrottleLDummy
-ObjectTemplate.setPosition -1.015/4.73/0.84
-ObjectTemplate.addTemplate Elco_ThrottleRDummy
-ObjectTemplate.setPosition -0.966/4.73/0.84
-ObjectTemplate.setRotation 0/30/0
-
-ObjectTemplate.addTemplate PTPropellerRudderBundle
-ObjectTemplate.setPosition -1.004/1.13/-7.659
-ObjectTemplate.addTemplate PTPropellerRudderBundle
-ObjectTemplate.setPosition 1.004/1.13/-7.659
-
-ObjectTemplate.addTemplate AnimatedUsFlag
-ObjectTemplate.setPosition -0.019/7.3/-1.978
-ObjectTemplate.setRotation 90/-0.919/-8.085
-
-ObjectTemplate.addTemplate e_WaterFrontPTBoat
-ObjectTemplate.setPosition 0/0.4/7.4
-ObjectTemplate.addTemplate e_WaterBackMedium
-ObjectTemplate.setPosition 0/0.801/-8.596
-
-
-rem ====== Elco80Simple ======
-ObjectTemplate.create SimpleObject Elco80Simple
-ObjectTemplate.geometry PT_Elco_l1
-
-
-rem ====== Elco80LodSelector ======
-LodSelectorTemplate.create DistCompareSelector2 Elco80LodSelector
-LodSelectorTemplate.addLodDistance 100
-
-
-rem ************************
-rem *** lodElco80Cockpit ***
-rem ************************
-ObjectTemplate.create LodObject lodElco80Cockpit
-rem -------------------------------------
-ObjectTemplate.addTemplate Elco80CockpitExternal
-ObjectTemplate.addTemplate Elco80CockpitInternal
-rem -------------------------------------
-ObjectTemplate.lodSelector Elco80cockpitSelector
-
-rem *** Elco80CockpitExternal ***
-ObjectTemplate.create SimpleObject Elco80CockpitExternal
-ObjectTemplate.geometry Elco80_Hull_M1
-
-rem *** Elco80CockpitInternal ***
-ObjectTemplate.create Bundle Elco80CockpitInternal
-ObjectTemplate.geometry 1p_Elco80_hull_m1
-
-rem *** Elco80cockpitSelector ***
-LodSelectorTemplate.create DistCompareSelector Elco80cockpitSelector
-LodSelectorTemplate.addLodDistance 35
-LodSelectorTemplate.addLodComparison 0.5
-
-rem *** Elco80_Driver_Entry ***
-ObjectTemplate.create EntryPoint Elco80_Driver_Entry
-ObjectTemplate.setEntryRadius 4
-
-rem *** Elco80_Driver_Camera ***
-ObjectTemplate.create Camera Elco80_Driver_Camera
-ObjectTemplate.setMinRotation -120/-30/0
-ObjectTemplate.setMaxRotation 120/10/0
-ObjectTemplate.setMaxSpeed 200/200/0
-ObjectTemplate.setAcceleration 100000/100000/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-rem ************************************************
-rem ** Elco80 Front Gunner PCO and Parts
-rem ************************************************
-
-rem *** Elco80_FrontGunnerPCO ***
-ObjectTemplate.create PlayerControlObject Elco80_FrontGunnerPCO
-ObjectTemplate.setNetworkableInfo Elco80BodyInfo
-ObjectTemplate.aiTemplate Elco80MG
-rem -------------------------------------
-ObjectTemplate.addTemplate Elco80_SideGunner_Base
-ObjectTemplate.addTemplate Elco80_SideGunnerBase
-ObjectTemplate.addTemplate Elco80_Entry2
-ObjectTemplate.setPosition -4.898/-0.499/-0.299
-ObjectTemplate.addTemplate Elco80_Entry2
-ObjectTemplate.setPosition 0.9/-0.499/-0.299
-ObjectTemplate.addTemplate Elco80_Entry2
-ObjectTemplate.setPosition -4.898/-0.499/-5.298
-ObjectTemplate.addTemplate Elco80_Entry2
-ObjectTemplate.setPosition 0.9/-0.499/-5.298
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.setSoldierExitLocation -0.5/1/-3.999 0/0/0
-ObjectTemplate.GUIIndex 103
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Elco.tga"
-ObjectTemplate.setVehicleIconPos 57/87
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmM2.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTLcvp
-ObjectTemplate.setToolTipType TTPTBoat
-
-rem *** Elco80_SideGunner_Base ***
-ObjectTemplate.create SimpleObject Elco80_SideGunner_Base
-ObjectTemplate.geometry Elco80_SideGunner_Base_M1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-
-rem *** Elco80_SideGunnerBase ***
-ObjectTemplate.create RotationalBundle Elco80_SideGunnerBase
-ObjectTemplate.setNetworkableInfo Elco80TurretInfo
-ObjectTemplate.setAttachToListener 1
-rem -------------------------------------
-ObjectTemplate.addTemplate Elco80_SideGunner_Support
-ObjectTemplate.setPosition 0/0.801/0.43
-ObjectTemplate.addTemplate Elco80_SideGunnerRotation
-ObjectTemplate.setPosition 0/1.57/0.412
-ObjectTemplate.addTemplate Elco80SideGunnerSeat
-ObjectTemplate.setPosition 0/1.131/-0.267
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 90/0/0
-ObjectTemplate.setAcceleration 5000/0/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-
-rem *** Elco80_SideGunner_Support ***
-ObjectTemplate.create SimpleObject Elco80_SideGunner_Support
-ObjectTemplate.geometry Elco80_SideGunner_Support_M1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-
-rem *** Elco80_SideGunnerRotation ***
-ObjectTemplate.create RotationalBundle Elco80_SideGunnerRotation
-ObjectTemplate.setNetworkableInfo Elco80TurretInfo
-ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../Elco80/Sounds/SBDBrowningRotation.ssc
-rem -------------------------------------
-ObjectTemplate.addTemplate 50calShipAATwin_Gun
-ObjectTemplate.setPosition 0/0/0.3125
-ObjectTemplate.addTemplate Elco80_Camera_For_PCO1
-ObjectTemplate.setPosition 0/0.26/-0.6
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/-40/0
-ObjectTemplate.setMaxRotation 0/10/0
-ObjectTemplate.setMaxSpeed 0/90/0
-ObjectTemplate.setAcceleration 0/5000/0
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-rem *** Elco80_Camera_For_PCO1 ***
-ObjectTemplate.create Camera Elco80_Camera_For_PCO1
-ObjectTemplate.setMaxSpeed 0/0/0
-ObjectTemplate.setAcceleration 0/0/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-
-rem ************************************************
-rem ** Elco_ThrottleLDummy
-rem ************************************************
-
-rem *** Elco_ThrottleLDummy ***
-ObjectTemplate.create AnimatedBundle Elco_ThrottleLDummy
-rem -------------------------------------
-ObjectTemplate.addTemplate Elco_ThrottleL
-
-rem *** Elco_ThrottleL ***
-ObjectTemplate.create RotationalBundle Elco_ThrottleL
-rem -------------------------------------
-ObjectTemplate.addTemplate lodElco_Throttle
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/60/0
-ObjectTemplate.setMaxRotation 0/60/0
-ObjectTemplate.setMaxSpeed 0/360/0
-ObjectTemplate.setAcceleration 0/360/0
-ObjectTemplate.setInputToPitch c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-
-
-rem ************************************************
-rem ** Elco_ThrottleRDummy
-rem ************************************************
-
-rem *** Elco_ThrottleRDummy ***
-ObjectTemplate.create AnimatedBundle Elco_ThrottleRDummy
-rem -------------------------------------
-ObjectTemplate.addTemplate Elco_ThrottleR
-
-rem *** Elco_ThrottleR ***
-ObjectTemplate.create RotationalBundle Elco_ThrottleR
-rem -------------------------------------
-ObjectTemplate.addTemplate lodElco_Throttle
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/-30/0
-ObjectTemplate.setMaxRotation 0/30/0
-ObjectTemplate.setMaxSpeed 0/60/0
-ObjectTemplate.setAcceleration 0/60/0
-ObjectTemplate.setInputToPitch c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-
-rem ************************************************
-rem ** lodElco_Throttle
-rem ************************************************
-
-rem *** lodElco_Throttle ***
-ObjectTemplate.create LodObject lodElco_Throttle
-rem -------------------------------------
-ObjectTemplate.addTemplate Elco_HighThrottle
-ObjectTemplate.addTemplate Elco_LowThrottle
-rem -------------------------------------
-ObjectTemplate.lodSelector Elco_ThrottleSelector
-
-rem *** Elco_HighThrottle ***
-ObjectTemplate.create SimpleObject Elco_HighThrottle
-ObjectTemplate.geometry 1PPT_ElcoLL_M1
-
-rem *** Elco_LowThrottle ***
-ObjectTemplate.create SimpleObject Elco_LowThrottle
-ObjectTemplate.geometry PT_ElcoLL_M1
-
-rem *** Elco_ThrottleSelector ***
-LodSelectorTemplate.create DistanceSelector Elco_ThrottleSelector
-LodSelectorTemplate.addLodDistance 1
-
-rem ************************************************
-rem ** Elco80 Misc Parts
-rem ************************************************
-
-rem *** Elco80PassengerSeat ***
-ObjectTemplate.create SeatObject Elco80PassengerSeat
-ObjectTemplate.seatFlags c_SeatIsOutside
-ObjectTemplate.seatFlags c_SeatShowStandingSoldier
-
-rem *** Elco80SideGunnerSeat ***
-ObjectTemplate.create SeatObject Elco80SideGunnerSeat
-ObjectTemplate.seatFlags c_SeatIsOutside
-ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
-
-rem *** Elco80RearGunnerSeat ***
-ObjectTemplate.create SeatObject Elco80RearGunnerSeat
-ObjectTemplate.seatFlags c_SeatIsOutside
-
-rem *** Elco80_Entry2 ***
-ObjectTemplate.create EntryPoint Elco80_Entry2
-ObjectTemplate.setEntryRadius 4
-
-rem ************************************************
-rem ** Common PTBoat Parts
-rem ************************************************
-
-rem ************************************************
-rem ** PT_SteeringDummy
-rem ************************************************
-
-rem *** PT_SteeringDummy ***
-ObjectTemplate.create AnimatedBundle PT_SteeringDummy
-rem -------------------------------------
-ObjectTemplate.addTemplate PT_Steering
-
-rem *** PT_Steering ***
-ObjectTemplate.create RotationalBundle PT_Steering
-rem -------------------------------------
-ObjectTemplate.addTemplate lodPT_Steering
-
-ObjectTemplate.addTemplate Attach_R_Hand
-ObjectTemplate.setPosition 0.24/0.1/-0.107
-ObjectTemplate.setRotation -28.129/57.594/62.804
-ObjectTemplate.addTemplate Attach_L_Hand
-ObjectTemplate.setPosition -0.238/0.1/-0.098
-ObjectTemplate.setRotation -85.962/-74.896/41.369
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/0/-60
-ObjectTemplate.setMaxRotation 0/0/60
-ObjectTemplate.setMaxSpeed 0/0/180
-ObjectTemplate.setAcceleration 0/0/-180
-ObjectTemplate.setInputToRoll c_PIYaw
-ObjectTemplate.setAutomaticReset 1
-
-rem *** lodPT_Steering ***
-ObjectTemplate.create LodObject lodPT_Steering
-rem -------------------------------------
-ObjectTemplate.addTemplate PT_HighRSteering
-ObjectTemplate.addTemplate PT_LowSteering
-rem -------------------------------------
-ObjectTemplate.lodSelector PT_SteeringSelector
-
-rem *** PT_HighRSteering ***
-ObjectTemplate.create SimpleObject PT_HighRSteering
-ObjectTemplate.geometry 1P_PT_Str_M1
-
-rem *** PT_LowSteering ***
-ObjectTemplate.create AnimatedBundle PT_LowSteering
-ObjectTemplate.geometry PT_Steering_M1
-
-rem *** PT_SteeringSelector ***
-LodSelectorTemplate.create DistanceSelector PT_SteeringSelector
-LodSelectorTemplate.addLodDistance 1
-
-
-rem ************************************************
-rem ** PT Misc Parts
-rem ************************************************
-
-rem *** PTPropellerRudderBundle ***
-ObjectTemplate.create Bundle PTPropellerRudderBundle
-ObjectTemplate.addTemplate LcvpPropeller
-ObjectTemplate.setPosition 0.0/0.3/1.4
-ObjectTemplate.setRotation -0.051/-6.935/0.94
-ObjectTemplate.addTemplate LcvpRudder
-
-rem *** PT_Ladder ***
-ObjectTemplate.create SimpleObject PT_Ladder
-ObjectTemplate.setHasCollisionPhysics 1
-ObjectTemplate.setHasResponsePhysics 1
-ObjectTemplate.addToCollisionGroup c_CGLadders
-ObjectTemplate.geometry PTLadder_M1
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Elco80
-rem sauce = Physics.con
-rem ============================================================================
-rem *** Elco80_Engine ***
-ObjectTemplate.create Engine Elco80_Engine
-ObjectTemplate.setNetworkableInfo Elco80EngineInfo
-ObjectTemplate.loadSoundScript ../Elco80/Sounds/Elco80_Engine_Water.ssc
-ObjectTemplate.setMinRotation 0/0/-4000
-ObjectTemplate.setMaxRotation 0/0/5000
-ObjectTemplate.setMaxSpeed 0/0/5000
-ObjectTemplate.setAcceleration 0/0/5000
-ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setEngineType c_ETShip
-ObjectTemplate.setTorque 23
-ObjectTemplate.setDifferential .7
-ObjectTemplate.setNoPropellerEffectAtSpeed 150
-
-
-rem *** Elco80_Rudder_Stern ***
-ObjectTemplate.create Wing Elco80_Rudder_Stern
-ObjectTemplate.setNetworkableInfo Elco80WingInfo
-ObjectTemplate.setMinRotation 0/-12/0
-ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/6/0
-ObjectTemplate.setAcceleration 0/-15/0
-ObjectTemplate.setInputToPitch c_PIYaw
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setWingLift 0
-ObjectTemplate.setFlapLift 2
-
-
-rem *** Elco80_Rudder_Aft ***
-ObjectTemplate.create Wing Elco80_Rudder_Aft
-ObjectTemplate.setNetworkableInfo Elco80WingInfo
-ObjectTemplate.setMinRotation 0/-12/0
-ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/6/0
-ObjectTemplate.setAcceleration 0/15/0
-ObjectTemplate.setInputToPitch c_PIYaw
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setWingLift 0
-ObjectTemplate.setFlapLift 2
-
-
-rem *** Elco80_Floater ***
-ObjectTemplate.create FloatingBundle Elco80_Floater
-ObjectTemplate.setHullHeight 1
-ObjectTemplate.setFloatMaxLift 8
-ObjectTemplate.setFloatMinLift 8
-ObjectTemplate.setSinkingSpeedMod 3
-
-
-rem *** Elco80_MiddleFloater ***
-ObjectTemplate.create FloatingBundle Elco80_MiddleFloater
-ObjectTemplate.setHullHeight 1
-ObjectTemplate.setFloatMaxLift 9
-ObjectTemplate.setFloatMinLift 3
-ObjectTemplate.setSinkingSpeedMod 1
-
-
-rem ************************************************
-rem ** Common PTBoat Parts
-rem ************************************************
-
-rem *** PT_FrontLandEngine ***
-ObjectTemplate.create Engine PT_FrontLandEngine
-ObjectTemplate.setAttachToListener 1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate PT_FrontWheel
-ObjectTemplate.setPosition 1.54/1.64/8.9
-ObjectTemplate.addTemplate PT_FrontWheel
-ObjectTemplate.setPosition -1.699/1.64/8.9
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/0/-4000
-ObjectTemplate.setMaxRotation 0/0/2500
-ObjectTemplate.setMaxSpeed 0/0/5000
-ObjectTemplate.setAcceleration 0/0/5000
-ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setEngineType c_ETCar
-ObjectTemplate.setTorque 8
-ObjectTemplate.setDifferential 2
-ObjectTemplate.setNumberOfGears 5
-ObjectTemplate.setGearUp 0.95
-ObjectTemplate.setGearDown 0.4
-
-rem *** PT_FrontWheel ***
-ObjectTemplate.create Spring PT_FrontWheel
-ObjectTemplate.geometry Willy_WheelR_M1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineGrip
-ObjectTemplate.setStrength 25
-ObjectTemplate.setDamping 5
-ObjectTemplate.createInvisible 1
-
-rem *** PT_BackLandEngine ***
-ObjectTemplate.create Engine PT_BackLandEngine
-ObjectTemplate.setAttachToListener 1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate PT_BackWheel
-ObjectTemplate.setPosition 8.5/1.25/1.45
-ObjectTemplate.addTemplate PT_BackWheel
-ObjectTemplate.setPosition 8.5/1.25/-1.449
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/0/-5000
-ObjectTemplate.setMaxRotation 0/0/5000
-ObjectTemplate.setMaxSpeed 0/0/55000
-ObjectTemplate.setAcceleration 0/0/2500
-ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setEngineType c_ETCar
-ObjectTemplate.setTorque 8
-ObjectTemplate.setDifferential 2
-ObjectTemplate.setNumberOfGears 5
-ObjectTemplate.setGearUp 0.95
-ObjectTemplate.setGearDown 0.4
-
-rem *** PT_BackWheel ***
-ObjectTemplate.create Spring PT_BackWheel
-ObjectTemplate.geometry Willy_WheelR_M1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFRollGrip
-ObjectTemplate.setStrength 25
-ObjectTemplate.setDamping 5
-ObjectTemplate.createInvisible 1
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Elco80
-rem sauce = Weapons.con
-rem ============================================================================
-rem *******************************
-rem ***     Elco80_Torpedos     ***
-rem *******************************
-
-rem *** Elco80_Torpedos ***
-ObjectTemplate.create FireArms Elco80_Torpedos
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate Elco80TorpedoAI
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.projectileTemplate 53,3cmMark15Torpedo
-ObjectTemplate.projectilePosition 0/-1.5/3.55
-ObjectTemplate.visibleDummyProjectileTemplate PT_Dummy_Torpedo
-ObjectTemplate.magSize 2
-ObjectTemplate.numOfMag 2
-ObjectTemplate.velocity 30
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 40
-ObjectTemplate.roundOfFire 3.5
-ObjectTemplate.fireOnce 1
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.AmmoType	13
-ObjectTemplate.setMinDev 0.512
-
-ObjectTemplate.addFirearmsPosition -2.999/2.935/0.4 0/0/0
-ObjectTemplate.addFirearmsPosition 3/2.935/0.4 0/0/0
-
-rem ObjectTemplate.loadSoundScript Sounds/PT_Torpedo_Left.ssc
-ObjectTemplate.loadSoundScript ../Common/Sounds/MTBfire.ssc
-
-rem *** PT_Dummy_Torpedo ***
-ObjectTemplate.create SimpleObject PT_Dummy_Torpedo
-ObjectTemplate.geometry Torpedo_Sml_m1
-
-
-rem *** Elco80_Torpedos_HullDamage ***
-ObjectTemplate.create FireArms Elco80_Torpedos_HullDamage
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.aiTemplate Elco80TorpedoAI
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.projectileTemplate 53,3cmMark15TorpedoHullDamage
-ObjectTemplate.projectilePosition 0/-1.5/3.55
-ObjectTemplate.magSize 2
-ObjectTemplate.numOfMag 2
-ObjectTemplate.velocity 30
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 40
-ObjectTemplate.roundOfFire 3.5
-ObjectTemplate.fireOnce 1
-ObjectTemplate.setInputFire c_PIFire
-ObjectTemplate.AmmoType	13
-ObjectTemplate.setMinDev 0.512
-
-ObjectTemplate.addFirearmsPosition -2.999/2.935/0.4 0/0/0
-ObjectTemplate.addFirearmsPosition 3/2.935/0.4 0/0/0
-
-
-rem *******************************
-rem ***      PTBoatTorpedo      ***
-rem *******************************
-
-rem *** PTBoatTorpedo ***
-ObjectTemplate.create Projectile PTBoatTorpedo
-ObjectTemplate.geometry Torpedo_Sml_M1
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.timeToLive CRD_NONE/20/0/0
-ObjectTemplate.endEffectTemplate WaterExplosionTorpedo
-ObjectTemplate.gravityModifier 1.0
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasCollisionEffect 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.setHasPointPhysics 0
-ObjectTemplate.DetonateOnWaterCollision 0
-ObjectTemplate.drag 0.04
-ObjectTemplate.mass 200
-ObjectTemplate.material 245
-ObjectTemplate.material2 205
-ObjectTemplate.radius 30
-rem -------------------------------------------------
-ObjectTemplate.addTemplate e_WaterTorpedo 
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate Shallow_Torpedo_Floater
-ObjectTemplate.setPosition 0/3/-2
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate Shallow_Torpedo_Floater
-ObjectTemplate.setPosition 0/3/2
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate Shallow_Torpedo_Engine
-ObjectTemplate.setPosition 0/0/-3
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate Torpedo_Wing
-ObjectTemplate.setPosition 0/0/-3
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate Torpedo_Wing
-ObjectTemplate.setPosition 0/0/-3
-ObjectTemplate.setRotation 0/0/-90
-
-rem *** Shallow_Torpedo_Engine ***
-ObjectTemplate.create Engine Shallow_Torpedo_Engine
-ObjectTemplate.setPosition 0/0/90
-ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.setPivotPosition 0/0/0
-ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 0/0/15000
-ObjectTemplate.setMaxSpeed 0/0/17500
-ObjectTemplate.setAcceleration 0/0/25000
-ObjectTemplate.setContinousRotationSpeed 0/0/0
-ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setEngineType c_ETTorpedo
-ObjectTemplate.setTorque 12.5
-ObjectTemplate.setNoPropellerEffectAtSpeed 200
-ObjectTemplate.setDifferential 5
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.loadSoundScript ../Elco80/Sounds/TorpedEngine.ssc
-
-rem *** Shallow_Torpedo_Floater ***
-ObjectTemplate.create FloatingBundle Shallow_Torpedo_Floater
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.setHullHeight 6.3
-ObjectTemplate.setFloatMaxLift 7.9
-ObjectTemplate.setFloatMinLift 7.9
-ObjectTemplate.setDragModifier 8000.0     
-ObjectTemplate.setMinRotation 0/0.5/0
-ObjectTemplate.setMaxRotation 0/0.5/0
-ObjectTemplate.setMaxSpeed 0/0.1/0
-ObjectTemplate.setAcceleration 0/-0.1/0
-ObjectTemplate.setInputToPitch 1
-ObjectTemplate.setAutomaticReset 1
-
-rem *** Shallow_Torpedo_Wing ***
-ObjectTemplate.create Wing Shallow_Torpedo_Wing
-ObjectTemplate.setWingLift 0.4
-
-
-rem *******************************
-rem *** Elco80_SideGunner Parts ***
-rem *******************************
-
-rem *** Elco80_SideGunner ***
-ObjectTemplate.create FireArms Elco80_SideGunner
-ObjectTemplate.setNetworkableInfo Vehicle_Browning_Info
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.aiTemplate Browning
-ObjectTemplate.projectileTemplate Incendiary_12,7x99AA_Projectile
-ObjectTemplate.setTracerTemplate APTracer_12,7x99AA_Projectile CRD_NONE/2/0/0
-ObjectTemplate.magSize 800
-ObjectTemplate.numOfMag 1
-ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 0.1
-ObjectTemplate.recoilSpeed 50.0
-ObjectTemplate.roundOfFire 9.16
-ObjectTemplate.autoReload 1
-ObjectTemplate.addDevFire 0
-ObjectTemplate.addFireArmsPosition -0.089/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0.09/0/0 0/0/0
-ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
-ObjectTemplate.AmmoType	4
-ObjectTemplate.velocity 898
-ObjectTemplate.setFireDev 0.7 0.3 0.048
-ObjectTemplate.setMinDev 0.5
-
-ObjectTemplate.fireInCameraDof 1
-objectTemplate.heatAddWhenFire 0.01
-objectTemplate.coolDownPerSec 0.05
-objectTemplate.timeDelayOnOverHeat 2
-
-ObjectTemplate.addTemplate Attach_R_Hand
-ObjectTemplate.setPosition 0.22/-0.019/-0.399
-ObjectTemplate.setRotation 83.382/-0.34/142.417
-ObjectTemplate.addTemplate Attach_L_Hand
-ObjectTemplate.setPosition -0.209/0.01/-0.399
-ObjectTemplate.setRotation 86.37/-3.458/169.818
-
-ObjectTemplate.addTemplate Elco80_SideGunner_Gun
-ObjectTemplate.addTemplate e_MuzzHeavy
-ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition -0.099/0.01/1.3
-ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.addTemplate e_MuzzHeavy
-ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0.1/0.01/1.3
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate e_Shell1250mm
-ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition -0.089/0.12/0.16
-ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.addTemplate e_Shell1250mm
-ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0.09/0.12/0.16
-ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.loadSoundScript ../Elco80/Sounds/Elco80_Oerlikon.ssc
-
-rem *** Elco80_SideGunner_Gun ***
-ObjectTemplate.create SimpleObject Elco80_SideGunner_Gun
-ObjectTemplate.geometry Elco80_SideGunner_Gun_M1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-
-rem **********************************
-rem *** FloatingMineLauncher Parts ***
-rem **********************************
-
-rem *** FloatingMineLauncher ***
-ObjectTemplate.create FireArms FloatingMineLauncher
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.projectileTemplate FloatingSeamine
-ObjectTemplate.projectilePosition 0/0/5
-ObjectTemplate.visibleDummyProjectileTemplate FloatingMineLauncherDummy
-ObjectTemplate.magSize 8
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 1
-ObjectTemplate.reloadtime 10
-ObjectTemplate.roundOfFire 0.75
-ObjectTemplate.autoReload 1
-rem ObjectTemplate.altfireOnce 1
-ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.AmmoType	13
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-
-ObjectTemplate.loadSoundScript Sounds\bomb.ssc
-
-rem *** FloatingMineLauncherDummy ***
-ObjectTemplate.create SimpleObject FloatingMineLauncherDummy
-ObjectTemplate.geometry FloatingMine_m1
-
-rem *** FloatingMine ***
-ObjectTemplate.create Projectile FloatingMine
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.networkableInfo ProjectileInfo
-ObjectTemplate.geometry FloatingMine_m1
-ObjectTemplate.timeToLive CRD_NONE/600/0/0
-ObjectTemplate.endEffectTemplate e_WaterExplosion
-rem -------------------------------------------------
-ObjectTemplate.addTemplate FloatingMine_Floater
-ObjectTemplate.setPosition 0/0.150/-1
-ObjectTemplate.addTemplate FloatingMine_Floater
-ObjectTemplate.setPosition 0/0.150/1
-rem -------------------------------------------------
-ObjectTemplate.sethasCollisionPhysics 1
-ObjectTemplate.sethaspointphysics 0
-ObjectTemplate.sethasMobilePhysics 1
-ObjectTemplate.setHasResponsePhysics 1
-ObjectTemplate.gravityModifier 1.0
-ObjectTemplate.hasCollisionEffect 1
-ObjectTemplate.hasOnTimeEffect 1
-ObjectTemplate.invisibleAtEndEffect 1
-ObjectTemplate.DetonateOnWaterCollision 0
-ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.dieAfterColl 1
-ObjectTemplate.invisible 0
-ObjectTemplate.material 232
-ObjectTemplate.material2 209
-ObjectTemplate.damageType 1
-ObjectTemplate.radius 15
-ObjectTemplate.drag 50
-ObjectTemplate.mass 10000
-ObjectTemplate.ForceOnExplosion 30
-ObjectTemplate.explodeNearEnemyDistance 3
-rem ObjectTemplate.addtoprojectilelist 1
-rem ObjectTemplate.projectiletype 1
-
-rem *** FloatingMine_Floater ***
-ObjectTemplate.create FloatingBundle FloatingMine_Floater
-ObjectTemplate.setHullHeight 1
-ObjectTemplate.setFloatMaxLift 6
-ObjectTemplate.setFloatMinLift 6
-ObjectTemplate.setSinkingSpeedMod 5
 
 
 
@@ -22886,7 +21826,7 @@ ObjectTemplate.geometry Fletch_hull_L1
 
 rem *** FletcherLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 FletcherLodSelector
-LodSelectorTemplate.addLodDistance 650
+LodSelectorTemplate.addLodDistance 500
 
 rem **********************************************************
 rem **********************************************************
@@ -23342,7 +22282,6 @@ GeometryTemplate.setLodDistance 4 300
 GeometryTemplate.setLodDistance 5 500
 
 renderer.endGlobalCluster
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = GambierBay
@@ -23362,7 +22301,6 @@ NetworkableInfo.setPredictionMode PMLinear
 
 NetworkableInfo.createNewInfo ZuihoElevator2Info
 NetworkableInfo.setPredictionMode PMLinear
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = GambierBay
@@ -24449,7 +23387,6 @@ ObjectTemplate.create FloatingBundle GambierBay_Floater
 ObjectTemplate.setHullHeight 22
 ObjectTemplate.setFloatMaxLift 2.5
 ObjectTemplate.setFloatMinLift 2.5
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Gearing
@@ -26022,7 +24959,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.team 1
 ObjectTemplate.MaxNrOfObjectSpawned 3
 ObjectTemplate.damageWhenLost 10
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Gridley
@@ -26039,7 +24975,6 @@ NetworkableInfo.setPredictionMode PMLinear
 
 
 rem *** end of file ***
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Gridley
@@ -26674,7 +25609,7 @@ ObjectTemplate.geometry Gridley_hull_L1
 
 rem *** GridleyLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 GridleyLodSelector
-LodSelectorTemplate.addLodDistance 650
+LodSelectorTemplate.addLodDistance 1000
 
 rem *** Gridley1943Jun ***
 ObjectTemplate.create PlayerControlObject Gridley1943Jun
@@ -30442,7 +29377,6 @@ ObjectTemplate.setGroup 84
 rem ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Independence
@@ -33457,7 +32391,6 @@ NetworkableInfo.setPredictionMode PMLinear
 
 
 rem *** end of file ***
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = John_C,Butler
@@ -33465,7 +32398,7 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = USA
 
-rem *** John_C,Butler		SPID66
+rem *** John_C,Butler	SPID66
 rem *** Oberrender		SPID67
 rem *** John_L,Williamson	SPID68
 rem *** Eversole		SPID69
@@ -36507,7 +35440,6 @@ GeometryTemplate.setLodDistance 2 50
 GeometryTemplate.setLodDistance 3 100
 GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 500
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Juneau
@@ -36530,7 +35462,6 @@ NetworkableInfo.setPredictionMode PMLinear
 
 
 rem *** end of file ***
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Juneau
@@ -36673,9 +35604,9 @@ ObjectTemplate.setPosition -5/4.2/-35
 ObjectTemplate.addTemplate JuneauSoldierSpawn12
 ObjectTemplate.setPosition 5/4.2/-35
 
-ObjectTemplate.addTemplate JuneauLcvpSpawner
+ObjectTemplate.addTemplate AtlantaLcvpSpawner
 ObjectTemplate.setPosition -10.1/1.2/-4.95
-ObjectTemplate.addTemplate JuneauLcvpSpawner
+ObjectTemplate.addTemplate AtlantaLcvpSpawner
 ObjectTemplate.setPosition 10.1/1.2/-4.95
 
 ObjectTemplate.addTemplate DestroyerSonar
@@ -36933,21 +35864,6 @@ rem ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
 
-rem *** JuneauLcvpSpawner ***
-ObjectTemplate.create ObjectSpawner JuneauLcvpSpawner
-ObjectTemplate.setObjectTemplate 1 None
-ObjectTemplate.setObjectTemplate 2 None
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 20
-ObjectTemplate.maxSpawnDelay 20
-ObjectTemplate.TimeToLive 30
-ObjectTemplate.Distance 20
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.MaxNrOfObjectSpawned 3
-ObjectTemplate.damageWhenLost 10
-
-
 rem *** Juneau_Back_Canons_PCO2 ***
 ObjectTemplate.create PlayerControlObject Juneau_Back_Canons_PCO2
 ObjectTemplate.setNetworkableInfo AtlantaBodyInfo
@@ -37156,7 +36072,7 @@ ObjectTemplate.sonarPos 1
 
 rem *** JuneauLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 JuneauLodSelector
-LodSelectorTemplate.addLodDistance 750
+LodSelectorTemplate.addLodDistance 500
 
 
 rem *** Spokane ***
@@ -37290,9 +36206,9 @@ ObjectTemplate.setPosition -5/4.2/-35
 ObjectTemplate.addTemplate SpokaneSoldierSpawn12
 ObjectTemplate.setPosition 5/4.2/-35
 
-ObjectTemplate.addTemplate SpokaneLcvpSpawner
+ObjectTemplate.addTemplate AtlantaLcvpSpawner
 ObjectTemplate.setPosition -10.1/1.2/-4.95
-ObjectTemplate.addTemplate SpokaneLcvpSpawner
+ObjectTemplate.addTemplate AtlantaLcvpSpawner
 ObjectTemplate.setPosition 10.1/1.2/-4.95
 
 ObjectTemplate.addTemplate DestroyerSonar
@@ -37549,21 +36465,6 @@ ObjectTemplate.setGroup 73
 rem ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** SpokaneLcvpSpawner ***
-ObjectTemplate.create ObjectSpawner SpokaneLcvpSpawner
-ObjectTemplate.setObjectTemplate 1 None
-ObjectTemplate.setObjectTemplate 2 None
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 20
-ObjectTemplate.maxSpawnDelay 20
-ObjectTemplate.TimeToLive 30
-ObjectTemplate.Distance 20
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.MaxNrOfObjectSpawned 3
-ObjectTemplate.damageWhenLost 10
-
 
 rem *** Spokane_Back_Canons_PCO2 ***
 ObjectTemplate.create PlayerControlObject Spokane_Back_Canons_PCO2
@@ -37893,9 +36794,9 @@ ObjectTemplate.setPosition -5/4.2/-35
 ObjectTemplate.addTemplate FresnoSoldierSpawn12
 ObjectTemplate.setPosition 5/4.2/-35
 
-ObjectTemplate.addTemplate FresnoLcvpSpawner
+ObjectTemplate.addTemplate AtlantaLcvpSpawner
 ObjectTemplate.setPosition -10.1/1.2/-4.95
-ObjectTemplate.addTemplate FresnoLcvpSpawner
+ObjectTemplate.addTemplate AtlantaLcvpSpawner
 ObjectTemplate.setPosition 10.1/1.2/-4.95
 
 ObjectTemplate.addTemplate DestroyerSonar
@@ -38152,21 +37053,6 @@ ObjectTemplate.setGroup 74
 rem ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** FresnoLcvpSpawner ***
-ObjectTemplate.create ObjectSpawner FresnoLcvpSpawner
-ObjectTemplate.setObjectTemplate 1 None
-ObjectTemplate.setObjectTemplate 2 None
-ObjectTemplate.holdObject 1
-ObjectTemplate.minSpawnDelay 20
-ObjectTemplate.maxSpawnDelay 20
-ObjectTemplate.TimeToLive 30
-ObjectTemplate.Distance 20
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.team 1
-ObjectTemplate.MaxNrOfObjectSpawned 3
-ObjectTemplate.damageWhenLost 10
-
 
 rem *** Fresno_Back_Canons_PCO2 ***
 ObjectTemplate.create PlayerControlObject Fresno_Back_Canons_PCO2
@@ -38864,7 +37750,6 @@ ObjectTemplate.loadSoundScript ../LCI(R)/Sounds/KatyushaRampRot.ssc
 ObjectTemplate.geometry escort_rkt_rck_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate LCI(R)_RocketEffect
 ObjectTemplate.addTemplate LCI(R)_Rocket_Delay
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
@@ -38897,7 +37782,6 @@ ObjectTemplate.geometry escort_rkt_rck_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate LCI(R)_Rocket
-ObjectTemplate.addTemplate LCI(R)_RocketEffect_Delay
 ObjectTemplate.addTemplate LCI(R)_TracerFireArms
 ObjectTemplate.addTemplate LCI(R)_Camera
 ObjectTemplate.setPosition -0.499/0.5/-0.8
@@ -39060,7 +37944,7 @@ ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.aiTemplate LCI(R)MainGun
 ObjectTemplate.projectileTemplate Rocket_127mm_GPSR_HE_Projectile
-ObjectTemplate.projectilePosition 0/0.3/3
+ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.magSize 16
 ObjectTemplate.numOfMag 999
 ObjectTemplate.velocity 110
@@ -39117,7 +38001,7 @@ ObjectTemplate.addFireArmsPosition 0.2071/0.1222/0 -0.8/0/0
 ObjectTemplate.addFireArmsPosition -0.1794/0.1222/0 0.8/0/0
 ObjectTemplate.addFireArmsPosition -0.4312/0.1222/0 0.1/0/0
 ObjectTemplate.addFireArmsPosition -0.8008/0.1222/0 0.6/0/0
-ObjectTemplate.addFireArmsPosition -1.0526/0.1222/0 0.6/0/0
+ObjectTemplate.addFireArmsPosition -1.0526 0.6/0/0
 
 rem *** LCI(R)_TracerFireArms ***
 ObjectTemplate.create FireArms LCI(R)_TracerFireArms
@@ -39134,41 +38018,6 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 1
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.setInputFire c_PIAltFire
-
-
-
-
-
-rem *** LCI(R)_RocketEffect ***
-ObjectTemplate.create FireArms LCI(R)_RocketEffect
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-ObjectTemplate.setTracerTemplate Rocket_127mm_GPSR_Effect CRD_UNIFORM/4/0/0
-ObjectTemplate.projectilePosition 0/0/2
-ObjectTemplate.magSize 16
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 110
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 16
-ObjectTemplate.roundOfFire 4
-ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 2
-
-rem *** LCI(R)_RocketEffect_Delay ***
-ObjectTemplate.create FireArms LCI(R)_RocketEffect_Delay
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-ObjectTemplate.setTracerTemplate Rocket_127mm_GPSR_Effect CRD_UNIFORM/4/0/0
-ObjectTemplate.projectilePosition 0/0/2
-ObjectTemplate.magSize 16
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 110
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 16
-ObjectTemplate.roundOfFire 8
-ObjectTemplate.AmmoType	3
-ObjectTemplate.FireDelay 0.125
-ObjectTemplate.setMinDev 2
 
 
 rem ===== EOF =====
@@ -39361,9 +38210,9 @@ ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate LCT_MK5_Glas
 
-ObjectTemplate.addTemplate LCT_MK5_20mm_Gun_LeftPCO
+ObjectTemplate.addTemplate LCT_MK5_20mm_Gun_LeftPCO 
 ObjectTemplate.setPosition -3.2/3.24/-13.27
-ObjectTemplate.addTemplate LCT_MK5_20mm_Gun_RightPCO
+ObjectTemplate.addTemplate LCT_MK5_20mm_Gun_RightPCO 
 ObjectTemplate.setPosition 3.2/3.24/-13.27
 
 ObjectTemplate.addTemplate e_WaterFrontWide
@@ -39486,7 +38335,7 @@ ObjectTemplate.geometry LCT_MK5_Hull_L1
 
 rem *** LCT_MK5LodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 LCT_MK5LodSelector
-LodSelectorTemplate.addLodDistance 450
+LodSelectorTemplate.addLodDistance 250
 
 rem *** LCT_MK5_ChurchillSpawner ***
 ObjectTemplate.create ObjectSpawner LCT_MK5_ChurchillSpawner
@@ -39843,7 +38692,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Left Side
 rem ***********************************************
 rem *** LCT_MK5_20mm_Gun_LeftPCO ***
-ObjectTemplate.create PlayerControlObject LCT_MK5_20mm_Gun_LeftPCO
+ObjectTemplate.create PlayerControlObject LCT_MK5_20mm_Gun_LeftPCO 
 ObjectTemplate.setNetworkableInfo LCT_MK5BodyInfo
 ObjectTemplate.aiTemplate LCT_MK5_GunAALeftAI
 rem -------------------------------------
@@ -39873,7 +38722,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Right Side
 rem ***********************************************
 rem *** LCT_MK5_20mm_Gun_RightPCO  ***
-ObjectTemplate.create PlayerControlObject LCT_MK5_20mm_Gun_RightPCO
+ObjectTemplate.create PlayerControlObject LCT_MK5_20mm_Gun_RightPCO 
 ObjectTemplate.setNetworkableInfo LCT_MK5BodyInfo
 ObjectTemplate.aiTemplate LCT_MK5_GunAARightAI
 rem -------------------------------------
@@ -40394,7 +39243,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem ************************************
 rem ***  LCT_MK5_stu  ***
-ObjectTemplate.create PlayerControlObject LCT_MK5_Stu
+ObjectTemplate.create PlayerControlObject LCT_MK5_stu
 ObjectTemplate.setNetworkableInfo LCT_MK5BodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
@@ -40878,7 +39727,7 @@ rem ***********************************************
 rem *** Browning Cal.50 Anti-Air-Gun Left Side
 rem ***********************************************
 rem *** LCT_MK5_Cal50_Gun_LeftPCO  ***
-ObjectTemplate.create PlayerControlObject LCT_MK5_Cal50_Gun_LeftPCO
+ObjectTemplate.create PlayerControlObject LCT_MK5_Cal50_Gun_LeftPCO 
 ObjectTemplate.setNetworkableInfo LCT_MK5BodyInfo
 ObjectTemplate.aiTemplate LCT_MK5_GunAALeftAI
 rem -------------------------------------
@@ -40908,7 +39757,7 @@ rem ***********************************************
 rem *** Browning Cal.50 Anti-Air-Gun Right Side
 rem ***********************************************
 rem *** LCT_MK5_Cal50_Gun_RightPCO  ***
-ObjectTemplate.create PlayerControlObject LCT_MK5_Cal50_Gun_RightPCO
+ObjectTemplate.create PlayerControlObject LCT_MK5_Cal50_Gun_RightPCO 
 ObjectTemplate.setNetworkableInfo LCT_MK5BodyInfo
 ObjectTemplate.aiTemplate LCT_MK5_GunAARightAI
 rem -------------------------------------
@@ -41191,9 +40040,9 @@ ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate LCT_MK5_Glas
 
-ObjectTemplate.addTemplate LCT_MK5_DP_Gun_LeftPCO
+ObjectTemplate.addTemplate LCT_MK5_DP_Gun_LeftPCO 
 ObjectTemplate.setPosition -3.2/3.24/-13.27
-ObjectTemplate.addTemplate LCT_MK5_DP_Gun_RightPCO
+ObjectTemplate.addTemplate LCT_MK5_DP_Gun_RightPCO 
 ObjectTemplate.setPosition 3.2/3.24/-13.27
 
 ObjectTemplate.addTemplate e_WaterFrontWide
@@ -41285,7 +40134,7 @@ rem ***********************************************
 rem *** 7,62 DP Anti-Air-Gun Right Side
 rem ***********************************************
 rem *** LCT_MK5_DP_Gun_RightPCO  ***
-ObjectTemplate.create PlayerControlObject LCT_MK5_DP_Gun_RightPCO
+ObjectTemplate.create PlayerControlObject LCT_MK5_DP_Gun_RightPCO 
 ObjectTemplate.setNetworkableInfo LCT_MK5BodyInfo
 ObjectTemplate.aiTemplate LCT_MK5_GunAARightAI
 rem -------------------------------------
@@ -42578,11 +41427,6 @@ rem folder = Lcvp
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = USA
-
-rem Lcvp
-rem Lcvp_Omaha		SPID72
-rem Lcvp_Omaha_2	SPID73
-rem Lcvp_Omaha_3	SPID74
 
 rem *** Lcvp ***
 ObjectTemplate.create PlayerControlObject Lcvp
@@ -45061,7 +43905,7 @@ ObjectTemplate.geometry Lexington_hull_L1
 
 rem *** LexingtonLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 LexingtonLodSelector
-LodSelectorTemplate.addLodDistance 850
+LodSelectorTemplate.addLodDistance 450
 
 rem ===== EOF =====
 rem ============================================================================
@@ -45278,7 +44122,7 @@ run bf1942/game/is_coop.con
 console.useRelativePaths 1
 
 
-rem *** USS Liberty Ship Jeremiah O Brien ***
+rem *** USS Liberty Ship Jeremiah O³¡rien ***
 rem *** +3000 criticalDamage for sink effect ***
 ObjectTemplate.create PlayerControlObject Liberty_Jeremiah_O_Brien
 ObjectTemplate.setNetworkableInfo Liberty_JeremiahOBrienBodyInfo
@@ -45828,7 +44672,7 @@ rem ***********************************************
 rem *** Front Gun
 rem ***********************************************
 rem *** Liberty_JOB_Front_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JOB_Front_Gun_PCO
+ObjectTemplate.create PlayerControlObject Liberty_JOB_Front_Gun_PCO 
 ObjectTemplate.setNetworkableInfo Liberty_JeremiahOBrienBodyInfo
 ObjectTemplate.aiTemplate Liberty_JOB_FrontGunAI
 rem -------------------------------------
@@ -45864,7 +44708,7 @@ rem ***********************************************
 rem *** Rear Gun
 rem ***********************************************
 rem *** Liberty_JOB_Rear_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JOB_Rear_Gun_PCO
+ObjectTemplate.create PlayerControlObject Liberty_JOB_Rear_Gun_PCO 
 ObjectTemplate.setNetworkableInfo Liberty_JeremiahOBrienBodyInfo
 ObjectTemplate.aiTemplate Liberty_JOB_RearGunAI
 rem -------------------------------------
@@ -45900,7 +44744,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Left Side
 rem ***********************************************
 rem *** Liberty_JOB_20mm_Gun_LeftPCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JOB_20mm_Gun_LeftPCO
+ObjectTemplate.create PlayerControlObject Liberty_JOB_20mm_Gun_LeftPCO 
 ObjectTemplate.setNetworkableInfo Liberty_JeremiahOBrienBodyInfo
 ObjectTemplate.aiTemplate Liberty_JOB_GunAALeftAI
 rem -------------------------------------
@@ -45955,7 +44799,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Right Side
 rem ***********************************************
 rem *** Liberty_JOB_20mm_Gun_RightPCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JOB_20mm_Gun_RightPCO
+ObjectTemplate.create PlayerControlObject Liberty_JOB_20mm_Gun_RightPCO 
 ObjectTemplate.setNetworkableInfo Liberty_JeremiahOBrienBodyInfo
 ObjectTemplate.aiTemplate Liberty_JOB_GunAARightAI
 rem -------------------------------------
@@ -46498,11 +45342,11 @@ ObjectTemplate.setRotation 90/0/0
 
 ObjectTemplate.addTemplate Liberty_JF_Front_Gun_PCO
 ObjectTemplate.setPosition 0/10.492/61.5
-ObjectTemplate.addTemplate Liberty_JF_Rear_Gun_PCO
+ObjectTemplate.addTemplate Liberty_JF_Rear_Gun_PCO 
 ObjectTemplate.setPosition 0/9.53/-59.602
 ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate Liberty_JF_20mm_Gun_LeftPCO
-ObjectTemplate.addTemplate Liberty_JF_20mm_Gun_RightPCO
+ObjectTemplate.addTemplate Liberty_JF_20mm_Gun_LeftPCO 
+ObjectTemplate.addTemplate Liberty_JF_20mm_Gun_RightPCO 
 
 ObjectTemplate.addTemplate e_waterfrontBig
 ObjectTemplate.setPosition 0/-1/64.67
@@ -46790,7 +45634,7 @@ rem ***********************************************
 rem *** Front Gun
 rem ***********************************************
 rem *** Liberty_JF_Front_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JF_Front_Gun_PCO
+ObjectTemplate.create PlayerControlObject Liberty_JF_Front_Gun_PCO 
 ObjectTemplate.setNetworkableInfo Liberty_JohnFiskeBodyInfo
 ObjectTemplate.aiTemplate Liberty_JF_GunAAAI
 rem -------------------------------------
@@ -46830,7 +45674,7 @@ rem ***********************************************
 rem *** Rear Gun
 rem ***********************************************
 rem *** Liberty_JF_Rear_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JF_Rear_Gun_PCO
+ObjectTemplate.create PlayerControlObject Liberty_JF_Rear_Gun_PCO 
 ObjectTemplate.setNetworkableInfo Liberty_JohnFiskeBodyInfo
 ObjectTemplate.aiTemplate Liberty_JF_GunAAAI
 rem -------------------------------------
@@ -46870,7 +45714,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Left Side
 rem ***********************************************
 rem *** Liberty_JF_20mm_Gun_LeftPCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JF_20mm_Gun_LeftPCO
+ObjectTemplate.create PlayerControlObject Liberty_JF_20mm_Gun_LeftPCO 
 ObjectTemplate.setNetworkableInfo Liberty_JohnFiskeBodyInfo
 ObjectTemplate.aiTemplate Liberty_JF_GunAALeftAI
 rem -------------------------------------
@@ -46933,7 +45777,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Right Side
 rem ***********************************************
 rem *** Liberty_JF_20mm_Gun_RightPCO ***
-ObjectTemplate.create PlayerControlObject Liberty_JF_20mm_Gun_RightPCO
+ObjectTemplate.create PlayerControlObject Liberty_JF_20mm_Gun_RightPCO 
 ObjectTemplate.setNetworkableInfo Liberty_JohnFiskeBodyInfo
 ObjectTemplate.aiTemplate Liberty_JF_GunAARightAI
 rem -------------------------------------
@@ -47490,11 +46334,11 @@ ObjectTemplate.setRotation 90/0/0
 
 ObjectTemplate.addTemplate Liberty_REP_Front_Gun_PCO
 ObjectTemplate.setPosition 0/10.492/61.5
-ObjectTemplate.addTemplate Liberty_REP_Rear_Gun_PCO
+ObjectTemplate.addTemplate Liberty_REP_Rear_Gun_PCO 
 ObjectTemplate.setPosition 0/9.53/-59.602
 ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate Liberty_REP_20mm_Gun_LeftPCO
-ObjectTemplate.addTemplate Liberty_REP_20mm_Gun_RightPCO
+ObjectTemplate.addTemplate Liberty_REP_20mm_Gun_LeftPCO 
+ObjectTemplate.addTemplate Liberty_REP_20mm_Gun_RightPCO 
 
 ObjectTemplate.addTemplate e_waterfrontBig
 ObjectTemplate.setPosition 0/-1/64.67
@@ -47770,7 +46614,7 @@ rem ***********************************************
 rem *** Front Gun
 rem ***********************************************
 rem *** Liberty_REP_Front_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Liberty_REP_Front_Gun_PCO
+ObjectTemplate.create PlayerControlObject Liberty_REP_Front_Gun_PCO 
 ObjectTemplate.setNetworkableInfo Liberty_RobertEPearyBodyInfo
 ObjectTemplate.aiTemplate Liberty_REP_GunAAAI
 rem -------------------------------------
@@ -47810,7 +46654,7 @@ rem ***********************************************
 rem *** Rear Gun
 rem ***********************************************
 rem *** Liberty_REP_Rear_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Liberty_REP_Rear_Gun_PCO
+ObjectTemplate.create PlayerControlObject Liberty_REP_Rear_Gun_PCO 
 ObjectTemplate.setNetworkableInfo Liberty_RobertEPearyBodyInfo
 ObjectTemplate.aiTemplate Liberty_REP_GunAAAI
 rem -------------------------------------
@@ -47850,7 +46694,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Left Side
 rem ***********************************************
 rem *** Liberty_REP_20mm_Gun_LeftPCO ***
-ObjectTemplate.create PlayerControlObject Liberty_REP_20mm_Gun_LeftPCO
+ObjectTemplate.create PlayerControlObject Liberty_REP_20mm_Gun_LeftPCO 
 ObjectTemplate.setNetworkableInfo Liberty_RobertEPearyBodyInfo
 ObjectTemplate.aiTemplate Liberty_REP_GunAALeftAI
 rem -------------------------------------
@@ -47909,7 +46753,7 @@ rem ***********************************************
 rem *** 20mm Oerlikon Anti-Air-Gun Right Side
 rem ***********************************************
 rem *** Liberty_REP_20mm_Gun_RightPCO ***
-ObjectTemplate.create PlayerControlObject Liberty_REP_20mm_Gun_RightPCO
+ObjectTemplate.create PlayerControlObject Liberty_REP_20mm_Gun_RightPCO 
 ObjectTemplate.setNetworkableInfo Liberty_RobertEPearyBodyInfo
 ObjectTemplate.aiTemplate Liberty_REP_GunAARightAI
 rem -------------------------------------
@@ -48922,9 +47766,6 @@ GeometryTemplate.file LST-1_Class_Floater_BL_m1
 GeometryTemplate.create StandardMesh LST-1_Class_Floater_BR_m1
 GeometryTemplate.file LST-1_Class_Floater_BR_m1
 
-GeometryTemplate.create StandardMesh LST-1_Class_RampIndicator_m1
-GeometryTemplate.file 1p_ship_RampIndicator_m1
-
 renderer.endGlobalCluster
 
 rem ===== EOF =====
@@ -49260,8 +48101,8 @@ ObjectTemplate.addTemplate LST-1FRAA_PCO_5
 ObjectTemplate.setPosition 6/5.65/20
 ObjectTemplate.setRotation 90/0/0
 
-rem ObjectTemplate.addTemplate LST-1Ramp_PCO_6
-rem ObjectTemplate.setPosition 0/5.9112/30.3141
+ObjectTemplate.addTemplate LST-1Ramp_PCO_6
+ObjectTemplate.setPosition 0/5.9112/30.3141
 
 ObjectTemplate.addTemplate LST-1_Front_Ramp
 ObjectTemplate.setPosition 0/0.2423/45.3013
@@ -49318,13 +48159,6 @@ ObjectTemplate.setPosition -4.35/3.55/-19.5
 ObjectTemplate.setRotation -90/0/0
 ObjectTemplate.addTemplate ShipLadder05m	
 ObjectTemplate.setPosition 4.35/3.55/-19.5
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate ShipLadder05m	
-ObjectTemplate.setPosition -4.45/3.3/25
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate ShipLadder05m	
-ObjectTemplate.setPosition 4.45/3.3/25
 ObjectTemplate.setRotation 90/0/0
 
 ObjectTemplate.addTemplate ShipLadder02	
@@ -49389,7 +48223,7 @@ ObjectTemplate.addTemplate AnimatedUsFlag
 ObjectTemplate.setPosition 0/17.7/-34.6
 ObjectTemplate.setRotation 90/0/-9
 
-rem ObjectTemplate.addTemplate LCT_MK5_whistle
+ObjectTemplate.addTemplate LCT_MK5_whistle
 
 ObjectTemplate.addTemplate LST-1_BackLandEngine
 ObjectTemplate.addTemplate LST-1_LeaveEngineFireArms
@@ -49398,45 +48232,13 @@ ObjectTemplate.setRotation 0/45/0
 rem -------------------------------------
 
 rem *** LST-1_Camera ***
-ObjectTemplate.create RotationalBundle LST-1_Camera
-ObjectTemplate.networkableInfo LST-1BodyInfo
-rem ----------------------------------------------------------
-ObjectTemplate.addTemplate LST-1_CameraReal
-
-ObjectTemplate.addTemplate LST-1_RampIndicator
-ObjectTemplate.setPosition -0.17/-0.09/0.28
-ObjectTemplate.setRotation -45/5/0
-rem ----------------------------------------------------------
+ObjectTemplate.create Camera LST-1_Camera
 rem ObjectTemplate.setMinRotation -180/-20/0
 rem ObjectTemplate.setMaxRotation 180/20/0
 ObjectTemplate.setMaxSpeed 50/50/0
 ObjectTemplate.setAcceleration 100000/100000/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-rem *** LST-1_CameraReal ***
-ObjectTemplate.create Camera LST-1_CameraReal
-
-rem *** LST-1_RampIndicator ***
-ObjectTemplate.create Bundle LST-1_RampIndicator
-ObjectTemplate.geometry LST-1_Class_RampIndicator_m1
-rem ----------------------------------
-ObjectTemplate.addTemplate LST-1_RampIndicator_Rot
-ObjectTemplate.setPosition 0/0/-0.005
-ObjectTemplate.setRotation 0/0/45
-rem ----------------------------------
-
-rem *** LST-1_RampIndicator_Rot ***
-ObjectTemplate.create RotationalBundle LST-1_RampIndicator_Rot
-ObjectTemplate.setNetworkableInfo LST-1RampInfo
-rem -----------------------------------------------------
-ObjectTemplate.addTemplate lodShipgun_plAmmoNeedle
-rem -----------------------------------------------------
-ObjectTemplate.setMinRotation 0/0/-90
-ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/0/45
-ObjectTemplate.setAcceleration 0/0/45
-ObjectTemplate.setInputToRoll c_PIPitch
 
 rem *** LST-1SoldierSpawn1 ***
 ObjectTemplate.create SpawnPoint LST-1SoldierSpawn1
@@ -49615,25 +48417,22 @@ ObjectTemplate.setAcceleration -30/0/0
 ObjectTemplate.setInputToYaw c_PIPitch
 
 rem *** LST-1_Front_Ramp ***
-ObjectTemplate.create Bundle LST-1_Front_Ramp
-rem ----------------------------------
-ObjectTemplate.addTemplate LST-1_Front_RampReal
-ObjectTemplate.addTemplate LST-1_Top_Ramp
-ObjectTemplate.setPosition 0/5.669/-14.987
-rem ----------------------------------
-
-rem *** LST-1_Front_RampReal ***
-ObjectTemplate.create RotationalBundle LST-1_Front_RampReal
+ObjectTemplate.create RotationalBundle LST-1_Front_Ramp
 ObjectTemplate.setNetworkableInfo LST-1RampInfo
 ObjectTemplate.geometry LST-1_Class_Front_Ramp_m1
-ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
 rem ----------------------------------
-rem ObjectTemplate.addTemplate LST-1_Front_Ramp_Vehicle_Spawner
+ObjectTemplate.addTemplate LST-1_Front_Ramp_Vehicle_Spawner
 rem ----------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 0/94/0
-ObjectTemplate.setMaxSpeed 0/47/0
-ObjectTemplate.setAcceleration 0/-47/0
+rem ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/-30/0
+rem ObjectTemplate.setMaxSpeed 0/15/0
+rem ObjectTemplate.setAcceleration 0/-15/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 rem *** LST-1_Front_Ramp_Vehicle_Spawner ***
@@ -49649,20 +48448,6 @@ ObjectTemplate.holdObject 1
 ObjectTemplate.team 2
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.damageWhenLost 10
-
-rem *** LST-1_Top_Ramp ***
-ObjectTemplate.create RotationalBundle LST-1_Top_Ramp
-ObjectTemplate.setNetworkableInfo LST-1RampInfo
-ObjectTemplate.geometry LST-1_Class_Top_Ramp_m1
-ObjectTemplate.hasCollisionPhysics 1
-rem ----------------------------------
-rem ObjectTemplate.addTemplate LST-1_Top_Ramp_Vehicle_Spawner
-rem ----------------------------------
-ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 0/25/0
-ObjectTemplate.setMaxSpeed 0/12.5/0
-ObjectTemplate.setAcceleration 0/-12.5/0
-ObjectTemplate.setInputToPitch c_PIPitch
 
 rem ******************************************************
 
@@ -49887,6 +48672,22 @@ ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTCarrier
 ObjectTemplate.setToolTipType  TTCarrier
 
+rem *** LST-1_Top_Ramp ***
+ObjectTemplate.create RotationalBundle LST-1_Top_Ramp
+ObjectTemplate.setNetworkableInfo LST-1RampInfo
+ObjectTemplate.geometry LST-1_Class_Top_Ramp_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.hasResponsePhysics 1
+rem ----------------------------------
+ObjectTemplate.addTemplate LST-1_Top_Ramp_Vehicle_Spawner
+rem ----------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/-15/0
+ObjectTemplate.setInputToPitch c_PIPitch
+
 rem *** LST-1_Top_Ramp_Vehicle_Spawner ***
 ObjectTemplate.create ObjectSpawner LST-1_Top_Ramp_Vehicle_Spawner
 ObjectTemplate.setObjectTemplate 1 LST-1_Top_Ramp_Vehicle
@@ -50031,7 +48832,9 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 120
 
 
 rem *** LST-1_BackLandEngine ***
-ObjectTemplate.create Bundle LST-1_BackLandEngine
+ObjectTemplate.create Engine LST-1_BackLandEngine
+ObjectTemplate.setNetworkableInfo LST-1EngineInfo
+ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -50042,19 +48845,19 @@ ObjectTemplate.addTemplate LST-1_BackWheelRot
 ObjectTemplate.setPosition 7/-2/35
 ObjectTemplate.addTemplate LST-1_BackWheelRot
 ObjectTemplate.setPosition 7/-2.5/25
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition 7/-2.5/15
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition 7/-3/5
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition 7/-3/-5
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition 7/-3.5/-15
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition 7/-3.5/-25
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition 7/-4/-35
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition 7/-4/-45
 
 ObjectTemplate.addTemplate LST-1_BackWheelRot
@@ -50063,19 +48866,19 @@ ObjectTemplate.addTemplate LST-1_BackWheelRot
 ObjectTemplate.setPosition -7/-2/35
 ObjectTemplate.addTemplate LST-1_BackWheelRot
 ObjectTemplate.setPosition -7/-2.5/25
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition -7/-2.5/15
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition -7/-3/5
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition -7/-3/-5
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition -7/-3.5/-15
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition -7/-3.5/-25
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition -7/-4/-35
-ObjectTemplate.addTemplate LST-1_BackWheelRot
+ObjectTemplate.addTemplate LST-1_BackWheelRot2
 ObjectTemplate.setPosition -7/-4/-45
 rem -------------------------------------
 ObjectTemplate.setMinRotation -1/0/-5000
@@ -50207,7 +49010,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1LTankSpawner2
 ObjectTemplate.setObjectTemplate 1 M5A1LT_Bag
@@ -50220,7 +49022,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1LTankSpawner3
 ObjectTemplate.setObjectTemplate 1 M5A1LT_Bag
@@ -50233,7 +49034,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1LTankSpawner4
 ObjectTemplate.setObjectTemplate 1 M5A1LT_Bag
@@ -50246,7 +49046,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1LTankSpawner5
 ObjectTemplate.setObjectTemplate 1 M5A1LT_Bag
@@ -50259,7 +49058,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1LTankSpawner6
 ObjectTemplate.setObjectTemplate 1 M5A1LT_Bag
@@ -50272,7 +49070,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1TankSpawner1
 ObjectTemplate.setObjectTemplate 1 Pershing 
@@ -50285,7 +49082,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1TankSpawner2
 ObjectTemplate.setObjectTemplate 1 Pershing 
@@ -50298,7 +49094,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1TankSpawner3
 ObjectTemplate.setObjectTemplate 1 Pershing 
@@ -50311,7 +49106,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 ObjectTemplate.create ObjectSpawner LST-1TankSpawner4
 ObjectTemplate.setObjectTemplate 1 Pershing 
@@ -50324,7 +49118,6 @@ ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 
 rem ===== EOF =====
 rem ============================================================================
@@ -53832,7 +52625,6 @@ GeometryTemplate.setLodDistance 4 300
 GeometryTemplate.setLodDistance 5 500
 
 renderer.endGlobalCluster
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Northampton
@@ -53844,7 +52636,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53855,7 +52647,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53866,7 +52658,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53877,7 +52669,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53888,7 +52680,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53899,7 +52691,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53910,7 +52702,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53921,7 +52713,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53932,7 +52724,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53943,7 +52735,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53954,7 +52746,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53965,7 +52757,7 @@ ObjectTemplate.setSpawnRotation 0/0/0
 ObjectTemplate.setSpawnPositionOffset 0/0/0
 ObjectTemplate.setSpawnPreventionDelay 0
 ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 81
+ObjectTemplate.setGroup 84
 ObjectTemplate.setEnterOnSpawn 0
 ObjectTemplate.setAIEnterOnSpawn 1
 ObjectTemplate.setSpawnAsParaTroper 0
@@ -53983,152 +52775,6 @@ ObjectTemplate.holdObject 1
 ObjectTemplate.team 2
 ObjectTemplate.teamOnVehicle 1
 
-
-
-rem *** LouisvilleSoldierSpawn1 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn1
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn2 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn2
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn3 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn3
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn4 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn4
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn5 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn5
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn6 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn6
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn7 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn7
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn8 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn8
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn9 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn9
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn10 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn10
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn11 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn11
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvilleSoldierSpawn12 ***
-ObjectTemplate.create SpawnPoint LouisvilleSoldierSpawn12
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 84
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** LouisvillePlaneSpawner ***
-ObjectTemplate.create ObjectSpawner LouisvillePlaneSpawner
-ObjectTemplate.setObjectTemplate 1 F4F-3S_Catfish
-ObjectTemplate.setObjectTemplate 2 F4F-3S_Catfish
-ObjectTemplate.minSpawnDelay 20
-ObjectTemplate.maxSpawnDelay 40
-ObjectTemplate.TimeToLive 120
-ObjectTemplate.Distance 200
-ObjectTemplate.spawnOffset 0/0/0
-ObjectTemplate.holdObject 1
-ObjectTemplate.team 2
-ObjectTemplate.teamOnVehicle 1
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Northampton
@@ -54162,16 +52808,12 @@ NetworkableInfo.createNewInfo NorthamptonEngineInfo
 NetworkableInfo.setPredictionMode PMLinear
 
 rem *** end of file ***
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Northampton
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = USA
-
-rem *** Northampton	SPID81
-rem *** Louisville	SPID84
 
 Var v_is_coop
 console.useRelativePaths 0
@@ -54281,7 +52923,7 @@ rem -------------------------------------
 ObjectTemplate.setPcoId 0
 ObjectTemplate.setSoldierExitLocation 5.57/8/49 30/0/0
 ObjectTemplate.GUIIndex 55
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Northampton.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Louisville.tga"
 ObjectTemplate.setVehicleIconPos 70/85
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_203mmMarkIX.tga"
@@ -54701,7 +53343,7 @@ ObjectTemplate.setPosition 0/-5.3/10.4
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 5/-3.5/0 90/0/0
 ObjectTemplate.GUIIndex 56
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Northampton.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Louisville.tga"
 ObjectTemplate.setVehicleIconPos 118/68
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_203mmMarkIX.tga"
@@ -54740,7 +53382,7 @@ ObjectTemplate.setRotation 90/0/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/3.5/0 0/0/0
 ObjectTemplate.GUIIndex 55
-ObjectTemplate.setVehicleIcon "Vehicle/icon_NorthamptonCTP.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_LouisvilleCTP.tga"
 ObjectTemplate.setVehicleIconPos 104/77
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
@@ -54778,7 +53420,7 @@ LodSelectorTemplate.addLodDistance 300
 rem *** NorthamptonSimple_Dummy ***
 ObjectTemplate.create SimpleObject NorthamptonSimple_Dummy
 
-rem *** NorthamptonRightAAPCO4 ***
+rem *** KumanoRightAAPCO4 ***
 ObjectTemplate.create PlayerControlObject NorthamptonRightAAPCO4
 ObjectTemplate.setNetworkableInfo NorthamptonBodyInfo
 ObjectTemplate.aiTemplate MogamiAARightAI
@@ -54804,7 +53446,7 @@ ObjectTemplate.setRotation -90/0/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/3.5/0 0/0/0
 ObjectTemplate.GUIIndex 56
-ObjectTemplate.setVehicleIcon "Vehicle/icon_NorthamptonCTP.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_LouisvilleCTP.tga"
 ObjectTemplate.setVehicleIconPos 96/76
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
@@ -54861,7 +53503,7 @@ ObjectTemplate.setPosition -9.05/-0.85/2.2
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1.2/-2 0/0/0
 ObjectTemplate.GUIIndex 55
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Northampton.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Louisville.tga"
 ObjectTemplate.setVehicleIconPos 110/74
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
@@ -54920,7 +53562,7 @@ ObjectTemplate.setPosition 9.05/-0.85/2.2
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1.2/-2 0/0/0
 ObjectTemplate.GUIIndex 56
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Northampton.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Louisville.tga"
 ObjectTemplate.setVehicleIconPos 102/72
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
@@ -54956,8 +53598,6 @@ ObjectTemplate.setPosition 45/-2.9/-1.6471
 rem *** lodNorthamptonRearRightAAPCO6Selector ***
 LodSelectorTemplate.create DistCompareSelector2 lodNorthamptonRearRightAAPCO6Selector
 LodSelectorTemplate.addLodDistance 300
-
-
 
 rem *** Louisville ***
 rem *** +3000 criticalDamage for sink effect ***
@@ -55017,7 +53657,7 @@ ObjectTemplate.addArmorEffect 4216 e_waterBoatSinkEf -17/3/-35
 ObjectTemplate.addArmorEffect 4216 e_waterBoatSinkEf -14/2/-75
 ObjectTemplate.addArmorEffect 0 e_ExploShipDestroyedBundle_MediumShip 0/0/0
 rem -------------------------------------
-ObjectTemplate.addTemplate lodLouisville
+ObjectTemplate.addTemplate lodNorthampton
 
 ObjectTemplate.addTemplate NorthamptonFloater
 ObjectTemplate.setPosition -10/11/100
@@ -55053,7 +53693,7 @@ ObjectTemplate.setPosition 0/11.1/41.9
 ObjectTemplate.addTemplate Northampton203_Invis_X_Alt
 ObjectTemplate.setPosition 0/8.4/56.2
 
-ObjectTemplate.addTemplate LouisvilleRearPCO2
+ObjectTemplate.addTemplate NorthamptonRearPCO2
 ObjectTemplate.setPosition 0/10.5/-48
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
@@ -55076,329 +53716,6 @@ ObjectTemplate.setMinimapIconSize 64
 ObjectTemplate.sonarPos 1
 ObjectTemplate.submarineData 0 0 0 0 0 13.5 200
 
-
-rem *** lodLouisville ***
-ObjectTemplate.create LodObject lodLouisville
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate LouisvilleComplex
-ObjectTemplate.addTemplate NorthamptonSimple
-rem -------------------------------------
-ObjectTemplate.lodSelector NorthamptonLodSelector
-
-
-rem *** LouisvilleComplex ***
-ObjectTemplate.create Bundle LouisvilleComplex
-rem ObjectTemplate.setNetworkableInfo NorthamptonBodyInfo
-ObjectTemplate.geometry Northampton_hull
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate NorthamptonFront
-ObjectTemplate.addTemplate NorthamptonBack
-ObjectTemplate.addTemplate NorthamptonLine
-
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate LouisvilleLeftAAPCO3
-ObjectTemplate.setPosition -4.5/8/27
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate LouisvilleRightAAPCO4
-ObjectTemplate.setPosition 4.5/8/27
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate LouisvilleRearLeftAAPCO5
-ObjectTemplate.setPosition -4.5/8/-25
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate LouisvilleRearRightAAPCO6
-ObjectTemplate.setPosition 4.5/8/-25
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate NorthamptonEngine
-ObjectTemplate.setPosition 0/-5/-40
-ObjectTemplate.addTemplate NorthamptonHullWing
-ObjectTemplate.setPosition 0/-6/90
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate NorthamptonRudder
-ObjectTemplate.setPosition 0/-6/-90
-ObjectTemplate.setRotation 0/0/-90
-
-ObjectTemplate.addTemplate NorthamptonEntry
-ObjectTemplate.setPosition 0/8.3/45
-ObjectTemplate.addTemplate NorthamptonEntry_Small
-ObjectTemplate.setPosition -2/8.3/-20
-ObjectTemplate.addTemplate NorthamptonEntry_Small
-ObjectTemplate.setPosition 2/8.3/-20
-
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn1
-ObjectTemplate.setPosition -5/10.3/33
-ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn2
-ObjectTemplate.setPosition 5/10.3/33
-ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn3
-ObjectTemplate.setPosition -1.5/14/24
-ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn4
-ObjectTemplate.setPosition 1.5/14/24
-ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn5
-ObjectTemplate.setPosition -2/7.5/8
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn6
-ObjectTemplate.setPosition 2/7.5/8
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn7
-ObjectTemplate.setPosition -4/10/-5
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn8
-ObjectTemplate.setPosition 4/10/-5
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn9
-ObjectTemplate.setPosition -2/9/-29
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn10
-ObjectTemplate.setPosition 2/9/-29
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn11
-ObjectTemplate.setPosition -6/7.5/-50
-ObjectTemplate.addTemplate LouisvilleSoldierSpawn12
-ObjectTemplate.setPosition 6/7.5/-50
-
-beginrem
-ObjectTemplate.addTemplate e_WaterFrontBigC
-ObjectTemplate.setPosition 0/-1/85
-ObjectTemplate.addTemplate e_waterBoatSvallNarrow
-ObjectTemplate.setPosition 0/-2/90
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate e_waterBoatSvall
-ObjectTemplate.setPosition 0/-2/-90
-ObjectTemplate.setRotation 270/0/0
-ObjectTemplate.addTemplate e_waterBackBig
-ObjectTemplate.setPosition 0/-1/-85
-endrem
-
-ObjectTemplate.addTemplate shipladder03
-ObjectTemplate.setPosition 0/8.9/23.836
-ObjectTemplate.addTemplate shipladder03
-ObjectTemplate.setPosition -4/12/27.1
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate shipladder03
-ObjectTemplate.setPosition 4/12/27.1
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate shipladder04
-ObjectTemplate.setPosition -6.5821/8.6142/37.957
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate shipladder04
-ObjectTemplate.setPosition 6.5821/8.6142/37.957
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate shipladder05m
-ObjectTemplate.setPosition 2.1/7.7/-2.2
-ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate climbingnet_3m
-ObjectTemplate.setPosition -9.9/0.7/16
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate climbingnet_3m
-ObjectTemplate.setPosition 9.9/0.7/16
-ObjectTemplate.setRotation -90/0/0
-
-ObjectTemplate.addTemplate ammobox
-ObjectTemplate.setPosition 1/7.5/-5
-
-ObjectTemplate.addTemplate Northampton_MapModObj
-rem -------------------------------------
-
-
-
-rem *** LouisvilleRearPCO2 ***
-ObjectTemplate.create PlayerControlObject LouisvilleRearPCO2
-ObjectTemplate.setNetworkableInfo NorthamptonBodyInfo
-ObjectTemplate.aiTemplate MogamiRearAI
-rem -------------------------------------
-ObjectTemplate.addTemplate NorthamptonEntry
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate Pensacola203_Dummy_X
-ObjectTemplate.setPosition 0/-5.3/10.4
-
-ObjectTemplate.addTemplate Pensacola203_Invis_X
-ObjectTemplate.setPosition 0/-5.3/10.4
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 5/-3.5/0 90/0/0
-ObjectTemplate.GUIIndex 56
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Louisville.tga"
-ObjectTemplate.setVehicleIconPos 118/68
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_203mmMarkIX.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTBattleship
-ObjectTemplate.setToolTipType TTBattleship
-ObjectTemplate.setMinimapIcon "minimap_icon_cruiser_64x64.tga"
-ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.sonarPos 1
-
-
-
-rem *** LouisvilleLeftAAPCO3 ***
-ObjectTemplate.create PlayerControlObject LouisvilleLeftAAPCO3
-ObjectTemplate.setNetworkableInfo NorthamptonBodyInfo
-ObjectTemplate.aiTemplate MogamiAALeftAI
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition -34.7/1.75/2.4
-
-ObjectTemplate.addTemplate lodNorthamptonLeftAAPCO3
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition -34.7/1.75/2.4
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition -41.6/1.75/2.4
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition -41.6/1.75/2.4
-
-ObjectTemplate.addTemplate Northampton_CatapultL
-ObjectTemplate.setPosition -19.5/3.0/2.6
-ObjectTemplate.setRotation 90/0/0
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 0/3.5/0 0/0/0
-ObjectTemplate.GUIIndex 55
-ObjectTemplate.setVehicleIcon "Vehicle/icon_LouisvilleCTP.tga"
-ObjectTemplate.setVehicleIconPos 104/77
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_40mmBofors.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTBattleship
-ObjectTemplate.setToolTipType TTBattleship
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_cruiser_64x64.tga"
-ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.sonarPos 1
-
-
-
-rem *** LouisvilleRightAAPCO4 ***
-ObjectTemplate.create PlayerControlObject LouisvilleRightAAPCO4
-ObjectTemplate.setNetworkableInfo NorthamptonBodyInfo
-ObjectTemplate.aiTemplate MogamiAARightAI
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition 34.7/1.75/2.4
-
-ObjectTemplate.addTemplate lodNorthamptonRightAAPCO4
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition 34.7/1.75/2.4
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition 41.6/1.75/2.4
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition 41.6/1.75/2.4
-
-ObjectTemplate.addTemplate Northampton_CatapultR
-ObjectTemplate.setPosition 19.5/3.0/2.6
-ObjectTemplate.setRotation -90/0/0
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 0/3.5/0 0/0/0
-ObjectTemplate.GUIIndex 56
-ObjectTemplate.setVehicleIcon "Vehicle/icon_LouisvilleCTP.tga"
-ObjectTemplate.setVehicleIconPos 96/76
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_40mmBofors.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTBattleship
-ObjectTemplate.setToolTipType TTBattleship
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_cruiser_64x64.tga"
-ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.sonarPos 1
-
-
-
-rem *** LouisvilleRearLeftAAPCO5 ***
-ObjectTemplate.create PlayerControlObject LouisvilleRearLeftAAPCO5
-ObjectTemplate.setNetworkableInfo NorthamptonBodyInfo
-ObjectTemplate.aiTemplate MogamiAALeftAI
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition -2.65/-0.85/2.2
-
-ObjectTemplate.addTemplate lodNorthamptonRearLeftAAPCO5
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition -2.65/-0.85/2.2
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition -9.05/-0.85/2.2
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition -9.05/-0.85/2.2
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1.2/-2 0/0/0
-ObjectTemplate.GUIIndex 55
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Louisville.tga"
-ObjectTemplate.setVehicleIconPos 110/74
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_40mmBofors.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTBattleship
-ObjectTemplate.setToolTipType TTBattleship
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_cruiser_64x64.tga"
-ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.sonarPos 1
-
-
-
-rem *** LouisvilleRearRightAAPCO6 ***
-ObjectTemplate.create PlayerControlObject LouisvilleRearRightAAPCO6
-ObjectTemplate.setNetworkableInfo NorthamptonBodyInfo
-ObjectTemplate.aiTemplate MogamiAARightAI
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition 2.65/-0.85/2.2
-
-ObjectTemplate.addTemplate lodNorthamptonRearRightAAPCO6
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition 2.65/-0.85/2.2
-
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Dummy_180_X
-ObjectTemplate.setPosition 9.05/-0.85/2.2
-ObjectTemplate.addTemplate 5inchL25SingleOpen_Invis_180_X
-ObjectTemplate.setPosition 9.05/-0.85/2.2
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 0/1.2/-2 0/0/0
-ObjectTemplate.GUIIndex 56
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Louisville.tga"
-ObjectTemplate.setVehicleIconPos 102/72
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_127mmMark12.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_40mmBofors.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTBattleship
-ObjectTemplate.setToolTipType TTBattleship
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_cruiser_64x64.tga"
-ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.sonarPos 1
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Northampton
@@ -55471,8 +53788,7 @@ ObjectTemplate.addTemplate e_MuzzMBGun
 ObjectTemplate.setPosition 1.5/0/9
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag -1
@@ -55530,7 +53846,6 @@ ObjectTemplate.addFireArmsPosition 1.5/0/9 0/0/0
 ObjectTemplate.AmmoType	3
 ObjectTemplate.setMinDev 2
 ObjectTemplate.setInputFire c_PIAltFire
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Pensacola
@@ -55632,7 +53947,6 @@ GeometryTemplate.setLodDistance 4 300
 GeometryTemplate.setLodDistance 5 500
 
 renderer.endGlobalCluster
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Pensacola
@@ -55816,7 +54130,6 @@ NetworkableInfo.createNewInfo PensacolaEngineInfo
 NetworkableInfo.setPredictionMode PMLinear
 
 rem *** end of file ***
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Pensacola
@@ -56824,8 +55137,7 @@ ObjectTemplate.addTemplate e_MuzzMBGun
 ObjectTemplate.setPosition 0.85/0/9
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag -1
@@ -56861,8 +55173,7 @@ ObjectTemplate.addTemplate e_MuzzMBGun
 ObjectTemplate.setPosition 1.5/0/9
 ObjectTemplate.setRotation -180/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag -1
@@ -57061,7 +55372,6 @@ ObjectTemplate.drag 0.2
 ObjectTemplate.mass 40000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 350
 ObjectTemplate.maxhitpoints 350
@@ -57387,7 +55697,6 @@ ObjectTemplate.drag 0.2
 ObjectTemplate.mass 40000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 350
 ObjectTemplate.maxhitpoints 350
@@ -57545,7 +55854,6 @@ ObjectTemplate.drag 0.2
 ObjectTemplate.mass 40000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 350
 ObjectTemplate.maxhitpoints 350
@@ -60605,7 +58913,7 @@ ObjectTemplate.geometry Saratoga_hull_L1
 
 rem *** SaratogaLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 SaratogaLodSelector
-LodSelectorTemplate.addLodDistance 850
+LodSelectorTemplate.addLodDistance 450
 
 rem ===== EOF =====
 rem ============================================================================
@@ -61477,7 +59785,6 @@ ObjectTemplate.Distance 200
 ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.holdObject 1
 ObjectTemplate.team 2
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = SouthDakota
@@ -61511,7 +59818,7 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = USA
 
-rem *** SouthDakota1942		SPID66
+rem *** SouthDakota		1942	SPID66
 rem *** SouthDakota1942Nov	SPID66
 rem *** SouthDakota1943Feb	SPID66
 rem *** Indiana			SPID67
@@ -62060,8 +60367,7 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.16/-0.08/0.23
-rem ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -63987,8 +62293,7 @@ ObjectTemplate.addTemplate lodShipAAFinderJP
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.16/-0.08/0.23
-rem ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -67757,884 +66062,6 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTCarrier
 ObjectTemplate.setToolTipType  TTCarrier
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Wickes
-rem sauce = Geometries.con
-rem ============================================================================
-GeometryTemplate.create StandardMesh Wickes_hull_m1
-GeometryTemplate.file Wickes_hull_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh 4inchL50_Base_m1
-GeometryTemplate.file 3inchL50_Base_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh 4inchL50_Gunbase_m1
-GeometryTemplate.file 3inchL50_Gunbase_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh 4inchL50_Gunbarrel_m1
-GeometryTemplate.file 3inchL50_Gunbarrel_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh 4inchL50_HalfShield_m1
-GeometryTemplate.file 3inchL50_HalfShield_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 30
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 200
-GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh Wickes_Floater_FL_m1
-GeometryTemplate.file Wickes_Floater_FL_m1
-
-GeometryTemplate.create StandardMesh Wickes_Floater_BL_m1
-GeometryTemplate.file Wickes_Floater_BL_m1
-
-GeometryTemplate.create StandardMesh Wickes_Floater_FR_m1
-GeometryTemplate.file Wickes_Floater_FR_m1
-
-GeometryTemplate.create StandardMesh Wickes_Floater_BR_m1
-GeometryTemplate.file Wickes_Floater_BR_m1
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Wickes
-rem sauce = Network.con
-rem ============================================================================
-NetworkableInfo.createNewInfo WickesBodyInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo WickesRudderInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo WickesEngineInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo 4inchL50Single_TurretInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo 4inchL50Single_GunInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-rem *** end of file ***
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Wickes
-rem sauce = Objects.con
-rem ============================================================================
-rem ===== COMPRESS = USA
-
-rem *** Wickes			SPID68
-
-rem *** Wickes ***
-ObjectTemplate.create PlayerControlObject Wickes
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-ObjectTemplate.saveInSeparateFile 1
-objectTemplate.cullRadiusScale 5
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.drag 3
-ObjectTemplate.mass 2500000
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 6000
-ObjectTemplate.maxhitpoints 6000
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 3000
-ObjectTemplate.hpLostWhileCriticalDamage 3
-rem ObjectTemplate.hpLostWhileCriticalDamage 5
-ObjectTemplate.explosionForceMod 10
-ObjectTemplate.dontClearTeamOnExit 1
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/12.5/13.05
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/13.5/13.05
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/12.5/8.65
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/13.5/8.65
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/12.5/1.25
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/13.5/1.25
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/12.5/-3.15
-ObjectTemplate.addArmorEffect 7000 em_ExFumePOW 0/13.5/-3.15
-ObjectTemplate.addArmorEffect 4097 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 4097 em_FletcherDamage 0/0/20
-ObjectTemplate.addArmorEffect 4097 em_FletcherDamage 0/0/-30
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/12.5/13.05
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/13.5/13.05
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/12.5/8.65
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/13.5/8.65
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/12.5/1.25
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/13.5/1.25
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/12.5/-3.15
-ObjectTemplate.addArmorEffect 4097 em_ExFumePOW 0/13.5/-3.15
-ObjectTemplate.addArmorEffect 3000 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 3000 em_FletcherDamage 0/0/20
-ObjectTemplate.addArmorEffect 3000 em_FletcherDamage 0/0/-30
-ObjectTemplate.addArmorEffect 3000 e_waterBoatSink 0/5/0
-ObjectTemplate.addArmorEffect 3000 e_waterBoatSinkEf 0/-2/-5
-ObjectTemplate.addArmorEffect 3000 e_waterBoatSinkEf 0/-2/25
-ObjectTemplate.addArmorEffect 3000 e_waterBoatSinkEf 0/-2/-35
-rem -------------------------------------
-ObjectTemplate.addTemplate lodWickes
-
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition -4/5.5/25
-ObjectTemplate.addTemplate WickesFloaterBreakerFL
-
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition -4/5.5/-25
-ObjectTemplate.addTemplate WickesFloaterBreakerBL
-
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition 4/5.5/25
-ObjectTemplate.addTemplate WickesFloaterBreakerFR
-
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition 4/5.5/-25
-ObjectTemplate.addTemplate WickesFloaterBreakerBR
-rem -------------------------------------
-ObjectTemplate.setPcoId 0
-ObjectTemplate.sonarPos 1
-ObjectTemplate.setSoldierExitLocation -2.8/6.5/20.5 0/0/0
-ObjectTemplate.GUIIndex 30
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wickes.tga"
-ObjectTemplate.setVehicleIconPos 51/97
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmMark9.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.sonarPos 1
-ObjectTemplate.submarineData 0 0 0 0 0 6 140
-
-rem *** WickesFloaterBreakerFL ***
-ObjectTemplate.create RotationalBundle WickesFloaterBreakerFL
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-ObjectTemplate.saveInSeparateFile 1
-objectTemplate.cullRadiusScale 5
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.explosionRadius 0
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.drag 3
-ObjectTemplate.mass 1000
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 500600
-ObjectTemplate.maxhitpoints 500600
-ObjectTemplate.material 146
-ObjectTemplate.criticalDamage 500000
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 0
-ObjectTemplate.hpLostWhileUpSideDown 0
-ObjectTemplate.hpLostWhileDamageFromWater 0
-ObjectTemplate.geometry Wickes_Floater_FL_m1
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSink -5/5/40
-rem ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec -5/-2/60
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec -5/-2/20
-rem ------------------------------------
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition -4/5.5/25
-rem ------------------------------------
-
-rem *** WickesFloaterBreakerBL ***
-ObjectTemplate.create RotationalBundle WickesFloaterBreakerBL
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-ObjectTemplate.saveInSeparateFile 1
-objectTemplate.cullRadiusScale 5
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.explosionRadius 0
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.drag 3
-ObjectTemplate.mass 1000
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 500600
-ObjectTemplate.maxhitpoints 500600
-ObjectTemplate.material 146
-ObjectTemplate.criticalDamage 500000
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 0
-ObjectTemplate.hpLostWhileUpSideDown 0
-ObjectTemplate.hpLostWhileDamageFromWater 0
-ObjectTemplate.geometry Wickes_Floater_BL_m1
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSink -5/5/-40
-rem ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec -5/-2/-60
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec -5/-2/-20
-rem ------------------------------------
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition -4/5.5/-25
-rem ------------------------------------
-
-rem *** WickesFloaterBreakerFR ***
-ObjectTemplate.create RotationalBundle WickesFloaterBreakerFR
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-ObjectTemplate.saveInSeparateFile 1
-objectTemplate.cullRadiusScale 5
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.explosionRadius 0
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.drag 3
-ObjectTemplate.mass 1000
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 500600
-ObjectTemplate.maxhitpoints 500600
-ObjectTemplate.material 146
-ObjectTemplate.criticalDamage 500000
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 0
-ObjectTemplate.hpLostWhileUpSideDown 0
-ObjectTemplate.hpLostWhileDamageFromWater 0
-ObjectTemplate.geometry Wickes_Floater_FR_m1
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSink 5/5/40
-rem ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec 5/-2/60
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec 5/-2/20
-rem ------------------------------------
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition 4/5.5/25
-rem ------------------------------------
-
-rem *** WickesFloaterBreakerBR ***
-ObjectTemplate.create RotationalBundle WickesFloaterBreakerBR
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-ObjectTemplate.saveInSeparateFile 1
-objectTemplate.cullRadiusScale 5
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.explosionRadius 0
-ObjectTemplate.explosionDamage 0
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.drag 3
-ObjectTemplate.mass 1000
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 500600
-ObjectTemplate.maxhitpoints 500600
-ObjectTemplate.material 146
-ObjectTemplate.criticalDamage 500000
-ObjectTemplate.hpLostWhileCriticalDamage 0
-ObjectTemplate.timetoliveafterdeath 0
-ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
-ObjectTemplate.damageFromWater 0
-ObjectTemplate.hpLostWhileUpSideDown 0
-ObjectTemplate.hpLostWhileDamageFromWater 0
-ObjectTemplate.geometry Wickes_Floater_BR_m1
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSink 5/5/-40
-rem ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec 5/-2/-60
-ObjectTemplate.addArmorEffect 500000 e_waterBoatSinkEf30sec 5/-2/-20
-rem ------------------------------------
-ObjectTemplate.addTemplate Wickes_Floater
-ObjectTemplate.setPosition 4/5.5/-25
-rem ------------------------------------
-
-rem *** lodWickes ***
-ObjectTemplate.create LodObject lodWickes
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate WickesComplex
-ObjectTemplate.addTemplate WickesSimple
-rem -------------------------------------
-ObjectTemplate.lodSelector WickesLodSelector
-
-rem *** WickesComplex ***
-ObjectTemplate.create Bundle WickesComplex
-rem ObjectTemplate.setNetworkableInfo WickesBodyInfo
-ObjectTemplate.geometry Wickes_hull_m1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate WickesSoldierSpawn1
-ObjectTemplate.setPosition -2.5/3.8/16
-ObjectTemplate.addTemplate WickesSoldierSpawn2
-ObjectTemplate.setPosition 2.5/3.8/16
-ObjectTemplate.addTemplate WickesSoldierSpawn3
-ObjectTemplate.setPosition -2.5/3.3/5.2
-ObjectTemplate.addTemplate WickesSoldierSpawn4
-ObjectTemplate.setPosition 2.5/3.3/5.2
-ObjectTemplate.addTemplate WickesSoldierSpawn5
-ObjectTemplate.setPosition -1.3/6.3/4.5
-ObjectTemplate.addTemplate WickesSoldierSpawn6
-ObjectTemplate.setPosition 1.3/6.3/4.5
-ObjectTemplate.addTemplate WickesSoldierSpawn7
-ObjectTemplate.setPosition -2.5/3.2/-0.5
-ObjectTemplate.addTemplate WickesSoldierSpawn8
-ObjectTemplate.setPosition 2.5/3.2/-0.5
-ObjectTemplate.addTemplate WickesSoldierSpawn9
-ObjectTemplate.setPosition -2.5/2.7/-17.5
-ObjectTemplate.addTemplate WickesSoldierSpawn10
-ObjectTemplate.setPosition 2.5/2.7/-17.5
-
-ObjectTemplate.addTemplate DestroyerSonar
-
-ObjectTemplate.addTemplate Wickes_HullWing
-ObjectTemplate.setPosition 0/-5/45
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate Wickes_rudder
-ObjectTemplate.setPosition 0/-5/-45
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate Wickes_Engine
-ObjectTemplate.setPosition 0/-4/-30
-
-ObjectTemplate.addTemplate 4inchL50Single_360_S_X
-ObjectTemplate.setPosition 0/4.3/33
-
-ObjectTemplate.addTemplate DepthChargeUSLauncher
-ObjectTemplate.setPosition -0.65/2.63/-46.64
-ObjectTemplate.setRotation -180/0/-90
-ObjectTemplate.addTemplate DepthChargeUSLauncher
-ObjectTemplate.setPosition 0.65/2.63/-46.64
-ObjectTemplate.setRotation -180/0/90
-
-ObjectTemplate.addTemplate Wickes_Back_CannonPCO_2
-ObjectTemplate.setPosition 0/4.4/-34.3
-ObjectTemplate.setRotation 180/0/0
-
-ObjectTemplate.addTemplate Wickes_LeftCannonPCO_3
-ObjectTemplate.setPosition -3/6.1/6.6
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate Wickes_RightCannonPCO_4
-ObjectTemplate.setPosition 3/6.1/6.6
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Wickes_LeftTorpedoPCO_5
-ObjectTemplate.setPosition -2.5/2.4/-23
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate Wickes_RightTorpedoPCO_6
-ObjectTemplate.setPosition 2.5/2.3/-27.3
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Wickes_Entry
-ObjectTemplate.setPosition -3/23/4
-
-ObjectTemplate.addTemplate Wickes_Entry
-ObjectTemplate.setPosition -2.8/6.5/20.5
-ObjectTemplate.addTemplate Wickes_Entry
-ObjectTemplate.setPosition 2.8/6.5/20.5
-
-ObjectTemplate.addTemplate Wickes_Entry
-ObjectTemplate.setPosition -1.9/3.9/18.4
-
-ObjectTemplate.addTemplate e_waterfrontBig
-ObjectTemplate.setPosition 0/-2/47
-ObjectTemplate.addTemplate e_waterBoatSvallNarrow
-ObjectTemplate.setPosition 0/-2/47
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate e_waterBoatSvallNarrow
-ObjectTemplate.setPosition 0/-2/-50
-ObjectTemplate.setRotation 270/0/0
-ObjectTemplate.addTemplate e_waterBackBig
-ObjectTemplate.setPosition 0/-0.5/-47
-
-ObjectTemplate.addTemplate ShipLadder02
-ObjectTemplate.setPosition -2.25/7.6/20
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate ShipLadder02
-ObjectTemplate.setPosition 1.45/5.05/18.7
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate ShipLadder03
-ObjectTemplate.setPosition -3.05/4.5/2.65
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate ShipLadder05m
-ObjectTemplate.setPosition 0/7/-16.35
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate ShipLadder02
-ObjectTemplate.setPosition -2.03/3.5/-30.7
-ObjectTemplate.setRotation 180/0/0
-
-ObjectTemplate.addTemplate AnimatedUsFlag
-ObjectTemplate.setPosition 0/19.6/-31.1
-ObjectTemplate.setRotation 90/0/53
-
-rem -------------------------------------
-
-rem *** WickesSoldierSpawn1 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn1
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn2 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn2
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn3 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn3
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn4 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn4
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn5 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn5
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn6 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn6
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn7 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn7
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn8 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn8
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn9 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn9
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** WickesSoldierSpawn10 ***
-ObjectTemplate.create SpawnPoint WickesSoldierSpawn10
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 68
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** Wickes_Entry ***
-ObjectTemplate.create EntryPoint Wickes_Entry
-ObjectTemplate.setEntryRadius 4
-
-rem *** Wickes_Back_CannonPCO_2 ***
-ObjectTemplate.create PlayerControlObject Wickes_Back_CannonPCO_2
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-ObjectTemplate.addTemplate 4inchL50Single_360_S_X
-
-ObjectTemplate.addTemplate ShipAlarm3
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.setSoldierExitLocation 0/1/-1 0/0/0
-ObjectTemplate.GUIIndex 31
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wickes.tga"
-ObjectTemplate.setVehicleIconPos 123/71
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmMark9.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.sonarPos 1
-
-rem *** Wickes_LeftCannonPCO_3 ***
-ObjectTemplate.create PlayerControlObject Wickes_LeftCannonPCO_3
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate 4inchL50Single_L145_NS_X
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_NC_Alt_L145
-ObjectTemplate.setPosition -13/-3.3/0
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_HullDamage_NC_Alt_L145
-ObjectTemplate.setPosition -13/-3.3/0
-ObjectTemplate.setRotation 90/0/0
-rem -------------------------------------
-ObjectTemplate.setPcoId 2
-ObjectTemplate.setSoldierExitLocation 0/1/-1 0/0/0
-ObjectTemplate.GUIIndex 32
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wickes.tga"
-ObjectTemplate.setVehicleIconPos 95/82
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmMark9.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_TP53,3cmMark15.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 142
-ObjectTemplate.DirBarYScaleAbove 60
-ObjectTemplate.DirBarYScaleBelow 10
-ObjectTemplate.DirBarRotate 180
-ObjectTemplate.DirBarYScaleMin -100
-ObjectTemplate.DirBarYScaleMax -30
-ObjectTemplate.sonarPos 1
-
-rem *** Wickes_RightCannonPCO_4 ***
-ObjectTemplate.create PlayerControlObject Wickes_RightCannonPCO_4
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate 4inchL50Single_R145_NS_X
-ObjectTemplate.setRotation -90/0/0
-
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_NC_Alt_R145
-ObjectTemplate.setPosition 16.8/-3.4/0
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_HullDamage_NC_Alt_R145
-ObjectTemplate.setPosition 16.8/-3.4/0
-ObjectTemplate.setRotation -90/0/0
-rem -------------------------------------
-ObjectTemplate.setPcoId 3
-ObjectTemplate.setSoldierExitLocation 0/1/-1 0/0/0
-ObjectTemplate.GUIIndex 33
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wickes.tga"
-ObjectTemplate.setVehicleIconPos 87/78
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmMark9.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_TP53,3cmMark15.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.sonarPos 1
-
-rem *** Wickes_LeftTorpedoPCO_5 ***
-ObjectTemplate.create PlayerControlObject Wickes_LeftTorpedoPCO_5
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_C_Prm_R145
-ObjectTemplate.setRotation 270/0/0
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_HullDamage_C_Prm_R145
-ObjectTemplate.setRotation 270/0/0
-
-ObjectTemplate.addTemplate ShipAlarm2
-rem -------------------------------------
-ObjectTemplate.setPcoId 4
-ObjectTemplate.setSoldierExitLocation 0/3/0 0/0/0
-ObjectTemplate.GUIIndex 34
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wickes.tga"
-ObjectTemplate.setVehicleIconPos 119/77
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_TP53,3cmMark15.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.sonarPos 1
-
-rem *** Wickes_RightTorpedoPCO_6 ***
-ObjectTemplate.create PlayerControlObject Wickes_RightTorpedoPCO_6
-ObjectTemplate.setNetworkableInfo WickesBodyInfo
-rem -------------------------------------
-ObjectTemplate.addTemplate BattleshipRadar
-
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_C_Prm_L145
-ObjectTemplate.setRotation -270/0/0
-ObjectTemplate.addTemplate Triple_533mmTorpedoHolder_HullDamage_C_Prm_L145
-ObjectTemplate.setRotation -270/0/0
-
-ObjectTemplate.addTemplate ShipAlarm2
-rem -------------------------------------
-ObjectTemplate.setPcoId 5
-ObjectTemplate.setSoldierExitLocation 0/3/0 0/0/0
-ObjectTemplate.GUIIndex 35
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wickes.tga"
-ObjectTemplate.setVehicleIconPos 114/74
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_TP53,3cmMark15.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.sonarPos 1
-
-rem *** 4inchL50_HalfShield ***
-ObjectTemplate.create SimpleObject 4inchL50_HalfShield_m1
-ObjectTemplate.geometry 4inchL50_HalfShield_m1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasResponsePhysics 1
-
-rem *** 4inchL50Single_Entry ***
-ObjectTemplate.create EntryPoint 4inchL50Single_Entry
-ObjectTemplate.setEntryRadius 2
-
-rem *** 4inchL50Single_360_S_X ***
-ObjectTemplate.create RotationalBundle 4inchL50Single_360_S_X
-ObjectTemplate.setNetworkableInfo 4inchL50Single_TurretInfo
-ObjectTemplate.loadSoundScript ../Common/Sounds/AAbase.ssc
-ObjectTemplate.geometry 4inchL50_Base_m1
-ObjectTemplate.hasCollisionPhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate 4inchL50Single_Gunbase_Y
-ObjectTemplate.setPosition 0/1.75/-0.165
-ObjectTemplate.addTemplate 4inchL50_HalfShield_m1
-ObjectTemplate.addTemplate 4inchL50Single_Entry
-rem -------------------------------------
-ObjectTemplate.setMinRotation -150/0/0
-ObjectTemplate.setMaxRotation 150/0/0
-ObjectTemplate.setMaxSpeed 40/0/0
-ObjectTemplate.setAcceleration 150/0/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-
-rem *** 4inchL50Single_L145_NS_X ***
-ObjectTemplate.create RotationalBundle 4inchL50Single_L145_NS_X
-ObjectTemplate.setNetworkableInfo 4inchL50Single_TurretInfo
-ObjectTemplate.loadSoundScript ../Common/Sounds/Sounds/AAbase.ssc
-ObjectTemplate.geometry 4inchL50_Base_m1
-ObjectTemplate.hasCollisionPhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate 4inchL50Single_Gunbase_Y
-ObjectTemplate.setPosition 0/1.75/-0.165
-ObjectTemplate.addTemplate 4inchL50Single_Entry
-rem -------------------------------------
-ObjectTemplate.setMinRotation -145/0/0
-ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 10/0/0
-ObjectTemplate.setAcceleration 100/0/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-
-rem *** 4inchL50Single_R145_NS_X ***
-ObjectTemplate.create RotationalBundle 4inchL50Single_R145_NS_X
-ObjectTemplate.setNetworkableInfo 4inchL50Single_TurretInfo
-ObjectTemplate.loadSoundScript ../Common/Sounds/AAbase.ssc
-ObjectTemplate.geometry 4inchL50_Base_m1
-ObjectTemplate.hasCollisionPhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate 4inchL50Single_Gunbase_Y
-ObjectTemplate.setPosition 0/1.75/-0.165
-ObjectTemplate.addTemplate 4inchL50Single_Entry
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 145/0/0
-ObjectTemplate.setMaxSpeed 10/0/0
-ObjectTemplate.setAcceleration 100/0/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-
-rem *** 4inchL50Single_Gunbase_Y ***
-ObjectTemplate.create RotationalBundle 4inchL50Single_Gunbase_Y
-ObjectTemplate.networkableInfo 4inchL50Single_GunInfo
-ObjectTemplate.loadSoundScript ../Common/Sounds/AAPitch.ssc
-ObjectTemplate.geometry 4inchL50_Gunbase_m1
-ObjectTemplate.hasCollisionPhysics 1
-rem ----------------------------------------------------------
-ObjectTemplate.addTemplate 4inchL50Single_GunBarrel
-ObjectTemplate.addTemplate 4inchL50Single_CameraBundle
-ObjectTemplate.setPosition 0/1/1
-rem ObjectTemplate.setPosition -0.736/0.718/-0.5
-rem ----------------------------------------------------------
-ObjectTemplate.setMinRotation 0/-85/0
-ObjectTemplate.setMaxRotation 0/5/0
-ObjectTemplate.setMaxSpeed 0/40/0
-ObjectTemplate.setAcceleration 0/150/0
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-rem *** 4inchL50Single_CameraBundle  ***
-ObjectTemplate.create Bundle 4inchL50Single_CameraBundle
-rem -------------------------------------
-ObjectTemplate.addTemplate 4inchL50Single_Camera
-ObjectTemplate.addTemplate lodShipCockpitAAopen
-ObjectTemplate.setPosition 0.538/-0.02/0.098
-rem -------------------------------------
-
-rem *** 4inchL50Single_Camera ***
-ObjectTemplate.create Camera 4inchL50Single_Camera
-ObjectTemplate.CVMExternTrace 1
-
-rem *** WickesSimple ***
-ObjectTemplate.create SimpleObject WickesSimple
-ObjectTemplate.geometry Wickes_hull_L1
-
-rem *** WickesLodSelector ***
-LodSelectorTemplate.create DistCompareSelector2 WickesLodSelector
-LodSelectorTemplate.addLodDistance 650
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Wickes
-rem sauce = Physics.con
-rem ============================================================================
-rem *** Wickes_HullWing ***
-ObjectTemplate.create Wing Wickes_HullWing
-ObjectTemplate.setMinRotation 0/-25/0
-ObjectTemplate.setMaxRotation 0/25/0
-ObjectTemplate.setMaxSpeed 0/15/0
-ObjectTemplate.setAcceleration 0/-10/0
-ObjectTemplate.setInputToPitch c_PIYaw
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 0
-ObjectTemplate.setFlapLift 2
-
-rem *** Wickes_rudder ***
-ObjectTemplate.create Wing Wickes_rudder
-ObjectTemplate.setNetworkableInfo WickesRudderInfo
-ObjectTemplate.setMinRotation 0/-25/0
-ObjectTemplate.setMaxRotation 0/25/0
-ObjectTemplate.setMaxSpeed 0/15/0
-ObjectTemplate.setAcceleration 0/10/0
-ObjectTemplate.setInputToPitch c_PIYaw
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 0
-ObjectTemplate.setFlapLift 2
-
-rem *** Wickes_Engine ***
-ObjectTemplate.create Engine Wickes_Engine
-ObjectTemplate.setNetworkableInfo WickesEngineInfo
-ObjectTemplate.loadSoundScript ../Wickes/Sounds/FletcherEngine.ssc
-ObjectTemplate.setMinRotation 0/0/-4000
-ObjectTemplate.setMaxRotation 0/0/5000
-ObjectTemplate.setMaxSpeed 0/0/5000
-ObjectTemplate.setAcceleration 0/0/5000
-ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setEngineType c_ETShip
-ObjectTemplate.setTorque 2
-ObjectTemplate.setDifferential 2
-ObjectTemplate.setNoPropellerEffectAtSpeed 120
-
-rem *** Wickes_Floater ***
-ObjectTemplate.create FloatingBundle Wickes_Floater
-ObjectTemplate.setHullHeight 15
-ObjectTemplate.setFloatMaxLift 2
-ObjectTemplate.setFloatMinLift 2
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Wickes
-rem sauce = Weapons.con
-rem ============================================================================
-rem *** 4inchL50Single_GunBarrel ***
-ObjectTemplate.create FireArms 4inchL50Single_GunBarrel
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6.ssc
-ObjectTemplate.geometry 4inchL50_Gunbarrel_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzztankGunbig1smokeless
-ObjectTemplate.setPosition 0/0/3
-ObjectTemplate.setRotation -179.999/0/0
-rem -------------------------------------
-ObjectTemplate.projectileTemplate Ship10,5cmL45Projectile
-ObjectTemplate.projectilePosition 0/0/5
-ObjectTemplate.magSize -1
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 400
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 6
-ObjectTemplate.roundOfFire 0.166
-rem ObjectTemplate.fireingForce 40
-ObjectTemplate.recoilSpeed 10.0
-ObjectTemplate.recoilSize 20
-ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 1.6
-ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
-
-
 
 rem ===== EOF =====
 rem ============================================================================

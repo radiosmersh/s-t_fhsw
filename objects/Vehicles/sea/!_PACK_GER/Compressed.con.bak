@@ -257,8 +257,7 @@ ObjectTemplate.addTemplate 4,1inchL65SKC33_Camera
 ObjectTemplate.addTemplate lodShipCockpitAA
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.16/-0.08/0.23
-rem ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -2138,7 +2137,7 @@ ObjectTemplate.geometry Bismarck_hull_L1
 
 rem *** BismarckLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 BismarckLodSelector
-LodSelectorTemplate.addLodDistance 850
+LodSelectorTemplate.addLodDistance 550
 
 rem *** Bismarck_Rudder ***
 ObjectTemplate.create SimpleObject Bismarck_rod
@@ -2251,8 +2250,7 @@ rem *** BismarckMediumCannonBarrel_PenetrateExploder ***
 ObjectTemplate.create FireArms BismarckMediumCannon_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/-5
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 150
@@ -2299,8 +2297,7 @@ rem *** BismarckFatCannonBarrel_PenetrateExploder ***
 ObjectTemplate.create FireArms BismarckFatCannon_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/-13
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 110
@@ -2736,17 +2733,17 @@ ObjectTemplate.setPosition -6/9.7/-48
 ObjectTemplate.addTemplate Dithmarschen_DriverSoldierSpawn10
 ObjectTemplate.setPosition 6/9.7/-48
 
-ObjectTemplate.addTemplate Dithmarschen_Rear_Gun_PCO
+ObjectTemplate.addTemplate Dithmarschen_Rear_Gun_PCO 
 ObjectTemplate.setPosition 0/7.504/-74.753
 ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate Dithmarschen_Left_Gun_PCO
+ObjectTemplate.addTemplate Dithmarschen_Left_Gun_PCO 
 ObjectTemplate.setPosition -10.15/6.484/20.387
-ObjectTemplate.addTemplate Dithmarschen_Right_Gun_PCO
+ObjectTemplate.addTemplate Dithmarschen_Right_Gun_PCO 
 ObjectTemplate.setPosition 10.15/6.484/20.387
 
-ObjectTemplate.addTemplate Dithmarschen_AAGun_Gun_LeftPCO
+ObjectTemplate.addTemplate Dithmarschen_AAGun_Gun_LeftPCO 
 ObjectTemplate.setPosition -9.544/14.026/25.25
-ObjectTemplate.addTemplate Dithmarschen_AAGun_Gun_RightPCO
+ObjectTemplate.addTemplate Dithmarschen_AAGun_Gun_RightPCO 
 ObjectTemplate.setPosition 9.544/14.026/25.25
 
 ObjectTemplate.addTemplate e_waterfrontBig
@@ -3038,7 +3035,7 @@ rem ***********************************************
 rem *** Rear Gun
 rem ***********************************************
 rem *** Dithmarschen_Rear_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Dithmarschen_Rear_Gun_PCO
+ObjectTemplate.create PlayerControlObject Dithmarschen_Rear_Gun_PCO 
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
 ObjectTemplate.aiTemplate Dithmarschen_GunAAAI
 rem -------------------------------------
@@ -3078,7 +3075,7 @@ rem ***********************************************
 rem *** Left Gun
 rem ***********************************************
 rem *** Dithmarschen_Left_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Dithmarschen_Left_Gun_PCO
+ObjectTemplate.create PlayerControlObject Dithmarschen_Left_Gun_PCO 
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
 ObjectTemplate.aiTemplate Dithmarschen_GunAAAI
 rem -------------------------------------
@@ -3118,7 +3115,7 @@ rem ***********************************************
 rem *** Right Gun
 rem ***********************************************
 rem *** Dithmarschen_Right_Gun_PCO ***
-ObjectTemplate.create PlayerControlObject Dithmarschen_Right_Gun_PCO
+ObjectTemplate.create PlayerControlObject Dithmarschen_Right_Gun_PCO 
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
 ObjectTemplate.aiTemplate Dithmarschen_GunAAAI
 rem -------------------------------------
@@ -3269,7 +3266,7 @@ rem ***********************************************
 rem *** Anti-Air-Gun Left Side
 rem ***********************************************
 rem *** Dithmarschen_AAGun_Gun_LeftPCO ***
-ObjectTemplate.create PlayerControlObject Dithmarschen_AAGun_Gun_LeftPCO
+ObjectTemplate.create PlayerControlObject Dithmarschen_AAGun_Gun_LeftPCO 
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
 ObjectTemplate.aiTemplate Dithmarschen_GunAALeftAI
 rem -------------------------------------
@@ -3310,7 +3307,7 @@ rem ***********************************************
 rem *** Anti-Air-Gun Right Side
 rem ***********************************************
 rem *** Dithmarschen_AAGun_Gun_LeftPCO ***
-ObjectTemplate.create PlayerControlObject Dithmarschen_AAGun_Gun_RightPCO
+ObjectTemplate.create PlayerControlObject Dithmarschen_AAGun_Gun_RightPCO 
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
 ObjectTemplate.aiTemplate Dithmarschen_GunAALeftAI
 rem -------------------------------------
@@ -5544,7 +5541,7 @@ ObjectTemplate.geometry PrinzEugen_hull_L1
 
 rem *** PrinzEugenLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 PrinzEugenLodSelector
-LodSelectorTemplate.addLodDistance 750
+LodSelectorTemplate.addLodDistance 500
 
 
 
@@ -5664,8 +5661,7 @@ rem *** PrinzEugenFatCannonBarrel_PenetrateExploder ***
 ObjectTemplate.create FireArms PrinzEugenFatCannon_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 120
@@ -5935,7 +5931,6 @@ ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/5/0
 ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
 ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
 ObjectTemplate.startRotation CRD_NONE/1/0/0
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Sturmboot
@@ -7707,7 +7702,7 @@ ObjectTemplate.geometry Sub14_Hull_M1
 
 rem *** Sub14LodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 Sub14LodSelector
-LodSelectorTemplate.addLodDistance 450
+LodSelectorTemplate.addLodDistance 150
 
 
 rem *** Sub14Entry2 ***
@@ -8952,7 +8947,7 @@ ObjectTemplate.geometry SubVII_Hull_M1
 
 rem *** Sub7CLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 Sub7CLodSelector
-LodSelectorTemplate.addLodDistance 450
+LodSelectorTemplate.addLodDistance 150
 
 
 rem *** Sub7cEntry2 ***
@@ -12627,7 +12622,7 @@ ObjectTemplate.geometry Sub9B_Hull_M1
 
 rem *** Sub9BLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 Sub9BLodSelector
-LodSelectorTemplate.addLodDistance 450
+LodSelectorTemplate.addLodDistance 150
 
 
 rem *** Sub9BEntry2 ***
@@ -15359,7 +15354,7 @@ ObjectTemplate.geometry Tirpitz_hull_L1
 
 rem *** TirpitzLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 TirpitzLodSelector
-LodSelectorTemplate.addLodDistance 850
+LodSelectorTemplate.addLodDistance 500
 
 
 
@@ -15467,8 +15462,7 @@ rem *** TirpitzMediumCannonBarrel_PenetrateExploder ***
 ObjectTemplate.create FireArms TirpitzMediumCannon_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/-5
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 150
@@ -15516,8 +15510,7 @@ rem *** TirpitzFatCannonBarrel_PenetrateExploder ***
 ObjectTemplate.create FireArms TirpitzFatCannon_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/-13
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 110
@@ -15622,7 +15615,6 @@ ObjectTemplate.drag 1.80
 ObjectTemplate.mass 102000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 150
 ObjectTemplate.maxhitpoints 150
@@ -15820,7 +15812,6 @@ ObjectTemplate.drag 1.80
 ObjectTemplate.mass 102000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 150
 ObjectTemplate.maxhitpoints 150
@@ -16017,7 +16008,6 @@ ObjectTemplate.drag 1.80
 ObjectTemplate.mass 102000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 150
 ObjectTemplate.maxhitpoints 150
@@ -16334,7 +16324,6 @@ ObjectTemplate.drag 1.80
 ObjectTemplate.mass 102000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 150
 ObjectTemplate.maxhitpoints 150
@@ -16389,7 +16378,6 @@ ObjectTemplate.drag 1.80
 ObjectTemplate.mass 102000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 150
 ObjectTemplate.maxhitpoints 150
@@ -16444,7 +16432,6 @@ ObjectTemplate.drag 1.80
 ObjectTemplate.mass 102000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 150
 ObjectTemplate.maxhitpoints 150
@@ -16491,7 +16478,7 @@ ObjectTemplate.submarineData 0 0 0 0 0 10 200
 rem ******************
 rem *** Torpedoschnellboot 38 ***
 rem ******************
-ObjectTemplate.create PlayerControlObject S38
+ObjectTemplate.create PlayerControlObject tS38
 ObjectTemplate.setNetworkableInfo TSBootBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
@@ -16499,7 +16486,6 @@ ObjectTemplate.drag 1.80
 ObjectTemplate.mass 102000
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 150
 ObjectTemplate.maxhitpoints 150

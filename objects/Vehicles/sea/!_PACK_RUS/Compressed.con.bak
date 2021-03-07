@@ -302,22 +302,22 @@ ObjectTemplate.setRotation 270/0/0
 ObjectTemplate.addTemplate e_waterBackBig
 ObjectTemplate.setPosition 0/-0.499/-49.999
 
-ObjectTemplate.addTemplate Gnevny_ShipLadder01
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
 ObjectTemplate.setPosition 0/8.82/21.82
 ObjectTemplate.setRotation 180/0/0
-ObjectTemplate.addTemplate Gnevny_ShipLadder01
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
 ObjectTemplate.setPosition 0/4.51/-17.30
 ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.addTemplate Gnevny_ShipLadder01
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
 ObjectTemplate.setPosition 2.12/6.55/23.31
 ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.addTemplate Gnevny_ShipLadder01
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
 ObjectTemplate.setPosition -2.12/6.55/23.31
 ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.addTemplate Gnevny_ShipLadder01
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
 ObjectTemplate.setPosition 2.58/4.51/19.18
 ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate Gnevny_ShipLadder01
+ObjectTemplate.addTemplate Gnevny_ShipLadder01 
 ObjectTemplate.setPosition -2.58/4.51/19.18
 ObjectTemplate.setRotation 90/0/0
 
@@ -541,7 +541,7 @@ rem ***********************************************
 rem *** Medium Cannon 7,6cm Flak
 rem ***********************************************
 rem *** Gnevny_Flak_Big_PCO ***
-ObjectTemplate.create PlayerControlObject Gnevny_Flak_Big_PCO
+ObjectTemplate.create PlayerControlObject Gnevny_Flak_Big_PCO 
 ObjectTemplate.setNetworkableInfo GnevnyBodyInfo
 ObjectTemplate.aiTemplate GnevnyAAAI
 rem -------------------------------------
@@ -1411,7 +1411,7 @@ ObjectTemplate.setVehicleIconPos 35/57
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_76,2mmPattern1935AA.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer

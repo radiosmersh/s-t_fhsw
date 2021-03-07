@@ -238,7 +238,8 @@ ObjectTemplate.addTemplate 4inchL45QF_Camera
 ObjectTemplate.addTemplate lodShipCockpitAA
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -249,7 +250,8 @@ ObjectTemplate.addTemplate 4inchL45QF_Camera
 ObjectTemplate.addTemplate lodShipCockpitAA
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -2668,7 +2670,7 @@ ObjectTemplate.geometry Ark_Royal_hull_L1
 
 rem *** Ark_RoyalLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 Ark_RoyalLodSelector
-LodSelectorTemplate.addLodDistance 450
+LodSelectorTemplate.addLodDistance 750
 
 rem *** ArkRoyal ***
 ObjectTemplate.create PlayerControlObject ArkRoyal
@@ -4013,7 +4015,7 @@ ObjectTemplate.geometry Audacity_hull_L1
 
 rem *** AudacityLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 AudacityLodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 750
 
 rem ===== EOF =====
 rem ============================================================================
@@ -4138,830 +4140,6 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 0.125
 ObjectTemplate.setInputFire c_PIAltFire
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Bluebell
-rem sauce = Network.con
-rem ============================================================================
-NetworkableInfo.createNewInfo BluebellBodyInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Bluebell
-rem sauce = Objects.con
-rem ============================================================================
-rem ===== COMPRESS = BRI
-
-rem *** Bluebell ***
-ObjectTemplate.create PlayerControlObject Bluebell
-ObjectTemplate.setNetworkableInfo BluebellBodyInfo
-ObjectTemplate.saveInSeparateFile 1
-objectTemplate.cullRadiusScale 5
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.drag 3
-ObjectTemplate.mass 2500000
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 1390
-ObjectTemplate.maxhitpoints 1390
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 139
-ObjectTemplate.hpLostWhileCriticalDamage 5
-ObjectTemplate.explosionForceMod 10
-ObjectTemplate.dontClearTeamOnExit 1
-ObjectTemplate.addArmorEffect 1448 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 521 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/10
-ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/-10
-ObjectTemplate.addArmorEffect 278 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/10
-ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/-10
-ObjectTemplate.addArmorEffect 278 e_waterBoatSink 0/0/0
-ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/10
-ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/-10
-ObjectTemplate.addArmorEffect 139 e_waterBoatSink 0/5/0
-ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-0
-ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/15
-ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-15
-ObjectTemplate.aiTemplate SnapdragonAI
-rem -------------------------------------
-ObjectTemplate.addTemplate lodBluebell
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -1.999/7.5/50
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 2/7.5/50
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -4.999/7.5/17
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 5/7.5/17
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -4.999/7.5/-16.999
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 5/7.5/-16.999
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -1.999/7.5/-49.999
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 2/7.5/-49.999
-rem -------------------------------------
-ObjectTemplate.setPcoId 0
-ObjectTemplate.sonarPos 1
-ObjectTemplate.setSoldierExitLocation -0.2/7.5/11 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
-ObjectTemplate.setVehicleIconPos 78/89
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmBLMarkIX.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 120
-ObjectTemplate.DirBarYScaleAbove 60
-ObjectTemplate.DirBarYScaleBelow 10
-ObjectTemplate.DirBarRotate 180
-ObjectTemplate.DirBarYScaleMin -100
-ObjectTemplate.DirBarYScaleMax -30
-ObjectTemplate.submarineData 0 0 0 0 0 10 200
-
-
-rem *** lodBluebell ***
-ObjectTemplate.create LodObject lodBluebell
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate BluebellComplex
-ObjectTemplate.addTemplate SnapdragonSimple
-rem -------------------------------------
-ObjectTemplate.lodSelector SnapdragonLodSelector
-
-
-rem *** BluebellComplex ***
-ObjectTemplate.create Bundle BluebellComplex
-rem ObjectTemplate.setNetworkableInfo BluebellBodyInfo
-ObjectTemplate.geometry Snapdragon_hull_M1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate BluebellSoldierSpawn1
-ObjectTemplate.setPosition 3/5/21
-ObjectTemplate.addTemplate BluebellSoldierSpawn2
-ObjectTemplate.setPosition 1/5/16
-ObjectTemplate.addTemplate BluebellSoldierSpawn3
-ObjectTemplate.setPosition 3/5/8
-ObjectTemplate.addTemplate BluebellSoldierSpawn4
-ObjectTemplate.setPosition -3/4.5/3.5
-ObjectTemplate.addTemplate BluebellSoldierSpawn5
-ObjectTemplate.setPosition 3/4.5/3.5
-ObjectTemplate.addTemplate BluebellSoldierSpawn6
-ObjectTemplate.setPosition 0/7.6/-2
-ObjectTemplate.addTemplate BluebellSoldierSpawn7
-ObjectTemplate.setPosition -4/4.2/-15
-ObjectTemplate.addTemplate BluebellSoldierSpawn8
-ObjectTemplate.setPosition 4/4.2/-15
-ObjectTemplate.addTemplate BluebellSoldierSpawn9
-ObjectTemplate.setPosition -3/4.2/-20
-ObjectTemplate.addTemplate BluebellSoldierSpawn10
-ObjectTemplate.setPosition 3/4.2/-20
-
-ObjectTemplate.addTemplate DestroyerSonar
-ObjectTemplate.setPosition 0/-1.3/0
-ObjectTemplate.addTemplate Snapdragon_propeller
-ObjectTemplate.setPosition 2.01/-2.63/-26.6
-ObjectTemplate.setRotation 0/-1.999/0
-ObjectTemplate.addTemplate Snapdragon_propeller
-ObjectTemplate.setPosition -2.424/-2.63/-26.6
-ObjectTemplate.setRotation 0/-1.999/0
-ObjectTemplate.addTemplate Snapdragon_HullWing
-ObjectTemplate.setPosition 0/-5/31.6
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate Snapdragon_rudder
-ObjectTemplate.setPosition 0/-5/-31.6
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate Snapdragon_Engine
-ObjectTemplate.setPosition 0/-4/-16.6
-
-ObjectTemplate.addTemplate Snapdragon_tower
-ObjectTemplate.setPosition 0/7.1/18.5
-ObjectTemplate.setRotation -179.999/0/0
-ObjectTemplate.addTemplate DepthChargeLauncher
-ObjectTemplate.setPosition -1.35/4.45/-34.508
-ObjectTemplate.setRotation -179.999/0/-89.999
-ObjectTemplate.addTemplate DepthChargeLauncher
-ObjectTemplate.setPosition 1.35/4.45/-34.508
-ObjectTemplate.setRotation -179.999/0/90
-
-ObjectTemplate.addTemplate Bluebell_BackCanons_PCO
-ObjectTemplate.setPosition 0/7.1/-15.5
-ObjectTemplate.setRotation -179.999/0/0
-ObjectTemplate.addTemplate BluebellAAPCO_3
-ObjectTemplate.setPosition 4.5/7.25/-7.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate BluebellAAPCO_4
-ObjectTemplate.setPosition -4.259/7.25/-7.5
-ObjectTemplate.setRotation -89.999/0/0
-
-ObjectTemplate.addTemplate Snapdragon_Entry
-ObjectTemplate.setPosition 0/7/11
-
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition -5.4/1.55/-4.3
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition -5/1.5/-26.3
-ObjectTemplate.setRotation 82/0/0
-
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition 5.6/1.55/-4.3
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition 5.1/1.5/-26.3
-ObjectTemplate.setRotation -82/0/0
-
-ObjectTemplate.addTemplate e_waterfrontBig
-ObjectTemplate.setPosition 0/-2/33
-ObjectTemplate.addTemplate e_waterBoatSvallNarrow
-ObjectTemplate.setPosition 0/-2/33
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate e_waterBoatSvallNarrow
-ObjectTemplate.setPosition 0/-2/-35
-ObjectTemplate.setRotation 270/0/0
-ObjectTemplate.addTemplate e_waterBackBig
-ObjectTemplate.setPosition 0/-0.499/-27
-
-ObjectTemplate.addTemplate ShipLadder03
-ObjectTemplate.setPosition 3/5.4/-12
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate ShipLadder03
-ObjectTemplate.setPosition -2.8/5.4/-12
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Ammobox
-ObjectTemplate.setPosition -0.169/3.7/3.5
-ObjectTemplate.addTemplate AnimatedUkFlag
-ObjectTemplate.setPosition 0/29.2/2.4
-rem ObjectTemplate.setPosition 0/29.2/12.9
-rem -------------------------------------
-
-rem *** BluebellSoldierSpawn1 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn1
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn2 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn2
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn3 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn3
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn4 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn4
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn5 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn5
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn6 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn6
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn7 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn7
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn8 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn8
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn9 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn9
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** BluebellSoldierSpawn10 ***
-ObjectTemplate.create SpawnPoint BluebellSoldierSpawn10
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 66
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** Bluebell_BackCanons_PCO ***
-ObjectTemplate.create PlayerControlObject Bluebell_BackCanons_PCO
-ObjectTemplate.setNetworkableInfo BluebellBodyInfo
-ObjectTemplate.aiTemplate SnapdragonRearGunAI
-rem -------------------------------------
-ObjectTemplate.addTemplate PomPomSingle_360_X
-ObjectTemplate.addTemplate ShipAlarm2
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.setSoldierExitLocation 0/0.5/-2 0/0/0
-ObjectTemplate.GUIIndex 41
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
-ObjectTemplate.setVehicleIconPos 31/66
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_40mmPomPomMk8_HE+HET.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 120
-ObjectTemplate.DirBarYScaleAbove 60
-ObjectTemplate.DirBarYScaleBelow 10
-ObjectTemplate.DirBarRotate 180
-ObjectTemplate.DirBarYScaleMin -100
-ObjectTemplate.DirBarYScaleMax -30
-
-rem ***BluebellAAPCO_3***
-ObjectTemplate.create PlayerControlObject BluebellAAPCO_3
-ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
-ObjectTemplate.setNetworkableInfo BluebellBodyInfo
-rem ---------------------------------------------------
-ObjectTemplate.addTemplate Vickers50_AAQuad_X
-ObjectTemplate.addTemplate Snapdragon_EntrySmall
-
-ObjectTemplate.addTemplate ShipBuzzer
-rem ---------------------------------------------------
-ObjectTemplate.setPcoId 3
-ObjectTemplate.GUIIndex 90
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
-ObjectTemplate.setVehicleIconPos 33/74
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.setHasCollisionPhysics 1
-ObjectTemplate.setHasResponsePhysics 1
-ObjectTemplate.aiTemplate SnapdragonAA2AI
-
-rem *** BluebellAAPCO_4***
-ObjectTemplate.create PlayerControlObject BluebellAAPCO_4
-ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
-ObjectTemplate.setNetworkableInfo BluebellBodyInfo
-rem ---------------------------------------------------
-ObjectTemplate.addTemplate Vickers50_AAQuad_X
-ObjectTemplate.addTemplate Snapdragon_EntrySmall
-
-ObjectTemplate.addTemplate ShipBuzzer
-rem ---------------------------------------------------
-ObjectTemplate.setPcoId 2
-ObjectTemplate.GUIIndex 90
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
-ObjectTemplate.setVehicleIconPos 49/69
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.setHasCollisionPhysics 1
-ObjectTemplate.setHasResponsePhysics 1
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Celandine
-rem sauce = Network.con
-rem ============================================================================
-NetworkableInfo.createNewInfo CelandineBodyInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Celandine
-rem sauce = Objects.con
-rem ============================================================================
-rem ===== COMPRESS = BRI
-
-rem *** Celandine ***
-ObjectTemplate.create PlayerControlObject Celandine
-ObjectTemplate.setNetworkableInfo CelandineBodyInfo
-ObjectTemplate.saveInSeparateFile 1
-objectTemplate.cullRadiusScale 5
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.drag 3
-ObjectTemplate.mass 2500000
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 1390
-ObjectTemplate.maxhitpoints 1390
-ObjectTemplate.material 139
-ObjectTemplate.criticalDamage 139
-ObjectTemplate.hpLostWhileCriticalDamage 5
-ObjectTemplate.explosionForceMod 10
-ObjectTemplate.dontClearTeamOnExit 1
-ObjectTemplate.addArmorEffect 1448 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 521 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/10
-ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/-10
-ObjectTemplate.addArmorEffect 278 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/10
-ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/-10
-ObjectTemplate.addArmorEffect 278 e_waterBoatSink 0/0/0
-ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/0
-ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/10
-ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/-10
-ObjectTemplate.addArmorEffect 139 e_waterBoatSink 0/5/0
-ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-0
-ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/15
-ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-15
-ObjectTemplate.aiTemplate SnapdragonAI
-rem -------------------------------------
-ObjectTemplate.addTemplate lodCelandine
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -1.999/7.5/50
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 2/7.5/50
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -4.999/7.5/17
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 5/7.5/17
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -4.999/7.5/-16.999
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 5/7.5/-16.999
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition -1.999/7.5/-49.999
-ObjectTemplate.addTemplate Snapdragon_Floater
-ObjectTemplate.setPosition 2/7.5/-49.999
-rem -------------------------------------
-ObjectTemplate.setPcoId 0
-ObjectTemplate.sonarPos 1
-ObjectTemplate.setSoldierExitLocation -0.2/7.5/11 0/0/0
-ObjectTemplate.GUIIndex 40
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
-ObjectTemplate.setVehicleIconPos 78/89
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmBLMarkIX.tga"
-ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 120
-ObjectTemplate.DirBarYScaleAbove 60
-ObjectTemplate.DirBarYScaleBelow 10
-ObjectTemplate.DirBarRotate 180
-ObjectTemplate.DirBarYScaleMin -100
-ObjectTemplate.DirBarYScaleMax -30
-ObjectTemplate.submarineData 0 0 0 0 0 10 200
-
-
-rem *** lodCelandine ***
-ObjectTemplate.create LodObject lodCelandine
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate CelandineComplex
-ObjectTemplate.addTemplate SnapdragonSimple
-rem -------------------------------------
-ObjectTemplate.lodSelector SnapdragonLodSelector
-
-
-rem *** CelandineComplex ***
-ObjectTemplate.create Bundle CelandineComplex
-rem ObjectTemplate.setNetworkableInfo CelandineBodyInfo
-ObjectTemplate.geometry Snapdragon_hull_M1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate CelandineSoldierSpawn1
-ObjectTemplate.setPosition 3/5/21
-ObjectTemplate.addTemplate CelandineSoldierSpawn2
-ObjectTemplate.setPosition 1/5/16
-ObjectTemplate.addTemplate CelandineSoldierSpawn3
-ObjectTemplate.setPosition 3/5/8
-ObjectTemplate.addTemplate CelandineSoldierSpawn4
-ObjectTemplate.setPosition -3/4.5/3.5
-ObjectTemplate.addTemplate CelandineSoldierSpawn5
-ObjectTemplate.setPosition 3/4.5/3.5
-ObjectTemplate.addTemplate CelandineSoldierSpawn6
-ObjectTemplate.setPosition 0/7.6/-2
-ObjectTemplate.addTemplate CelandineSoldierSpawn7
-ObjectTemplate.setPosition -4/4.2/-15
-ObjectTemplate.addTemplate CelandineSoldierSpawn8
-ObjectTemplate.setPosition 4/4.2/-15
-ObjectTemplate.addTemplate CelandineSoldierSpawn9
-ObjectTemplate.setPosition -3/4.2/-20
-ObjectTemplate.addTemplate CelandineSoldierSpawn10
-ObjectTemplate.setPosition 3/4.2/-20
-
-ObjectTemplate.addTemplate DestroyerSonar
-ObjectTemplate.setPosition 0/-1.3/0
-ObjectTemplate.addTemplate Snapdragon_propeller
-ObjectTemplate.setPosition 2.01/-2.63/-26.6
-ObjectTemplate.setRotation 0/-1.999/0
-ObjectTemplate.addTemplate Snapdragon_propeller
-ObjectTemplate.setPosition -2.424/-2.63/-26.6
-ObjectTemplate.setRotation 0/-1.999/0
-ObjectTemplate.addTemplate Snapdragon_HullWing
-ObjectTemplate.setPosition 0/-5/31.6
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate Snapdragon_rudder
-ObjectTemplate.setPosition 0/-5/-31.6
-ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate Snapdragon_Engine
-ObjectTemplate.setPosition 0/-4/-16.6
-
-ObjectTemplate.addTemplate Snapdragon_tower
-ObjectTemplate.setPosition 0/7.1/18.5
-ObjectTemplate.setRotation -179.999/0/0
-ObjectTemplate.addTemplate DepthChargeLauncher
-ObjectTemplate.setPosition -1.35/4.45/-34.508
-ObjectTemplate.setRotation -179.999/0/-89.999
-ObjectTemplate.addTemplate DepthChargeLauncher
-ObjectTemplate.setPosition 1.35/4.45/-34.508
-ObjectTemplate.setRotation -179.999/0/90
-
-ObjectTemplate.addTemplate Celandine_BackCanons_PCO
-ObjectTemplate.setPosition 0/7.1/-15.5
-ObjectTemplate.setRotation -179.999/0/0
-ObjectTemplate.addTemplate CelandineAAPCO_3
-ObjectTemplate.setPosition 4.5/7.25/-7.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate CelandineAAPCO_4
-ObjectTemplate.setPosition -4.259/7.25/-7.5
-ObjectTemplate.setRotation -89.999/0/0
-
-ObjectTemplate.addTemplate Snapdragon_Entry
-ObjectTemplate.setPosition 0/7/11
-
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition -5.4/1.55/-4.3
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition -5/1.5/-26.3
-ObjectTemplate.setRotation 82/0/0
-
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition 5.6/1.55/-4.3
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate ClimbingNet_3mx4m
-ObjectTemplate.setPosition 5.1/1.5/-26.3
-ObjectTemplate.setRotation -82/0/0
-
-ObjectTemplate.addTemplate e_waterfrontBig
-ObjectTemplate.setPosition 0/-2/33
-ObjectTemplate.addTemplate e_waterBoatSvallNarrow
-ObjectTemplate.setPosition 0/-2/33
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate e_waterBoatSvallNarrow
-ObjectTemplate.setPosition 0/-2/-35
-ObjectTemplate.setRotation 270/0/0
-ObjectTemplate.addTemplate e_waterBackBig
-ObjectTemplate.setPosition 0/-0.499/-27
-
-ObjectTemplate.addTemplate ShipLadder03
-ObjectTemplate.setPosition 3/5.4/-12
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate ShipLadder03
-ObjectTemplate.setPosition -2.8/5.4/-12
-ObjectTemplate.setRotation 90/0/0
-
-ObjectTemplate.addTemplate Ammobox
-ObjectTemplate.setPosition -0.169/3.7/3.5
-ObjectTemplate.addTemplate AnimatedUkFlag
-ObjectTemplate.setPosition 0/29.2/2.4
-rem ObjectTemplate.setPosition 0/29.2/12.9
-rem -------------------------------------
-
-rem *** CelandineSoldierSpawn1 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn1
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn2 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn2
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn3 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn3
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn4 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn4
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn5 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn5
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn6 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn6
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn7 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn7
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn8 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn8
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn9 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn9
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** CelandineSoldierSpawn10 ***
-ObjectTemplate.create SpawnPoint CelandineSoldierSpawn10
-ObjectTemplate.setSpawnRotation 0/0/0
-ObjectTemplate.setSpawnPositionOffset 0/0/0
-ObjectTemplate.setSpawnPreventionDelay 0
-ObjectTemplate.setSpawnId 0
-ObjectTemplate.setGroup 67
-ObjectTemplate.setEnterOnSpawn 0
-ObjectTemplate.setAIEnterOnSpawn 1
-ObjectTemplate.setSpawnAsParaTroper 0
-
-rem *** Celandine_BackCanons_PCO ***
-ObjectTemplate.create PlayerControlObject Celandine_BackCanons_PCO
-ObjectTemplate.setNetworkableInfo CelandineBodyInfo
-ObjectTemplate.aiTemplate SnapdragonRearGunAI
-rem -------------------------------------
-ObjectTemplate.addTemplate PomPomSingle_360_X
-
-ObjectTemplate.addTemplate ShipAlarm2
-rem -------------------------------------
-ObjectTemplate.setPcoId 1
-ObjectTemplate.setSoldierExitLocation 0/0.5/-2 0/0/0
-ObjectTemplate.GUIIndex 41
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
-ObjectTemplate.setVehicleIconPos 31/66
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_40mmPomPomMk8_HE+HET.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 120
-ObjectTemplate.DirBarYScaleAbove 60
-ObjectTemplate.DirBarYScaleBelow 10
-ObjectTemplate.DirBarRotate 180
-ObjectTemplate.DirBarYScaleMin -100
-ObjectTemplate.DirBarYScaleMax -30
-
-rem ***CelandineAAPCO_3***
-ObjectTemplate.create PlayerControlObject CelandineAAPCO_3
-ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
-ObjectTemplate.setNetworkableInfo CelandineBodyInfo
-rem ---------------------------------------------------
-ObjectTemplate.addTemplate Vickers50_AAQuad_X
-ObjectTemplate.addTemplate Snapdragon_EntrySmall
-
-ObjectTemplate.addTemplate ShipBuzzer
-rem ---------------------------------------------------
-ObjectTemplate.setPcoId 3
-ObjectTemplate.GUIIndex 90
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
-ObjectTemplate.setVehicleIconPos 33/74
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.setHasCollisionPhysics 1
-ObjectTemplate.setHasResponsePhysics 1
-ObjectTemplate.aiTemplate SnapdragonAA2AI
-
-rem *** CelandineAAPCO_4***
-ObjectTemplate.create PlayerControlObject CelandineAAPCO_4
-ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
-ObjectTemplate.setNetworkableInfo CelandineBodyInfo
-rem ---------------------------------------------------
-ObjectTemplate.addTemplate Vickers50_AAQuad_X
-ObjectTemplate.addTemplate Snapdragon_EntrySmall
-
-ObjectTemplate.addTemplate ShipBuzzer
-rem ---------------------------------------------------
-ObjectTemplate.setPcoId 2
-ObjectTemplate.GUIIndex 90
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
-ObjectTemplate.setVehicleIconPos 49/69
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
-ObjectTemplate.setVehicleCategory VCSea
-ObjectTemplate.setVehicleType VTDestroyer
-ObjectTemplate.setToolTipType  TTDestroyer
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
-ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.setHasCollisionPhysics 1
-ObjectTemplate.setHasResponsePhysics 1
-ObjectTemplate.aiTemplate SnapdragonAA1AI
 
 rem ===== EOF =====
 rem ============================================================================
@@ -6591,7 +5769,8 @@ ObjectTemplate.create FireArms Hood_CannonPipes2_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.setAsynchronyFire 0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/11.5
 ObjectTemplate.velocity 378
 ObjectTemplate.numOfMag -1
@@ -6891,6 +6070,9 @@ rem folder = Juno
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = BRI
+
+rem *** Juno	SPID68
+rem *** Juno_FS	SPID68
 
 rem *** Juno ***
 ObjectTemplate.create PlayerControlObject Juno
@@ -7587,7 +6769,7 @@ ObjectTemplate.geometry Juno_hull_L1
 
 rem *** JunoLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 JunoLodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 650
 
 
 
@@ -8225,8 +7407,8 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = BRI
 
-rem *** Laforey
-rem *** Laforey_FireSupport
+rem *** Laforey			SPID68
+rem *** Laforey_FireSupport	SPID68
 
 rem *** Laforey ***
 ObjectTemplate.create PlayerControlObject Laforey
@@ -9017,7 +8199,7 @@ ObjectTemplate.geometry Laforey_hull_L1
 
 rem *** LaforeyLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 LaforeyLodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 650
 
 
 
@@ -10473,7 +9655,7 @@ ObjectTemplate.geometry Lance_hull_L1
 
 rem *** LanceLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 LanceLodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 650
 
 rem ===== EOF =====
 rem ============================================================================
@@ -11725,7 +10907,8 @@ ObjectTemplate.addTemplate lodShipCockpitAA
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -11825,7 +11008,7 @@ ObjectTemplate.geometry Lion_Hul1_L1
 
 rem *** LionLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 LionLodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 850
 
 
 ObjectTemplate.create SimpleObject Long_ladder
@@ -11950,7 +11133,8 @@ rem *** Lion_MainGun_Barrel_HiPos_PenetrateExploder ***
 ObjectTemplate.create FireArms Lion_MainGun_Barrel_HiPos_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/6.5/10
 ObjectTemplate.velocity 378
 ObjectTemplate.numOfMag -1
@@ -12004,7 +11188,8 @@ rem *** Lion_MainGun_Barrel_PenetrateExploder ***
 ObjectTemplate.create FireArms Lion_MainGun_Barrel_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1.5/10
 ObjectTemplate.velocity 378
 ObjectTemplate.numOfMag -1
@@ -13132,7 +12317,8 @@ ObjectTemplate.addTemplate lodShipCockpitAA
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
@@ -13541,7 +12727,7 @@ ObjectTemplate.geometry Lion45_Hul1_L1
 
 rem *** Lion45LodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 Lion45LodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 850
 
 
 rem ===== EOF =====
@@ -13659,7 +12845,8 @@ rem *** Lion45_MainGun_Barrel_HiPos_PenetrateExploder ***
 ObjectTemplate.create FireArms Lion45_MainGun_Barrel_HiPos_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/6.5/10
 ObjectTemplate.velocity 378
 ObjectTemplate.numOfMag -1
@@ -13715,7 +12902,8 @@ rem *** Lion45_MainGun_Barrel_PenetrateExploder ***
 ObjectTemplate.create FireArms Lion45_MainGun_Barrel_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/1.5/10
 ObjectTemplate.velocity 378
 ObjectTemplate.numOfMag -1
@@ -15334,7 +14522,8 @@ ObjectTemplate.addTemplate lodShipCockpitAA
 ObjectTemplate.setPosition 0.538/-0.02/0.098
 
 ObjectTemplate.addTemplate Shipgun_AmmoSelecterAA
-ObjectTemplate.setPosition -0.17/-0.08/0.23
+ObjectTemplate.setPosition -0.16/-0.08/0.23
+rem ObjectTemplate.setPosition -0.17/-0.08/0.23
 ObjectTemplate.setRotation -45/5/0
 rem -------------------------------------
 
@@ -15529,7 +14718,7 @@ ObjectTemplate.geometry PrinceOW_Hul1_L1
 
 rem *** PrinceOWLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 PrinceOWLodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 850
 
 
 ObjectTemplate.create SimpleObject Long_ladder
@@ -15590,7 +14779,8 @@ rem *** PrinceOW_CannonPipes4_PenetrateExploder ***
 ObjectTemplate.create FireArms PrinceOW_CannonPipes4_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/5/26
 ObjectTemplate.velocity 378
 ObjectTemplate.numOfMag -1
@@ -15640,7 +14830,8 @@ rem *** PrinceOW_CannonPipes2_PenetrateExploder ***
 ObjectTemplate.create FireArms PrinceOW_CannonPipes2_PenetrateExploder
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 rem -------------------------------------
-ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
 ObjectTemplate.projectilePosition 0/0/26
 ObjectTemplate.velocity 378
 ObjectTemplate.numOfMag -1
@@ -16224,6 +15415,10 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = BRI
 
+rem *** Snapdragon	SPID68
+rem *** Bluebell	SPID66
+rem *** Celandine	SPID67
+
 rem *** Snapdragon ***
 ObjectTemplate.create PlayerControlObject Snapdragon
 ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
@@ -16750,7 +15945,804 @@ ObjectTemplate.geometry Snapdragon_hull_L1
 
 rem *** SnapdragonLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 SnapdragonLodSelector
-LodSelectorTemplate.addLodDistance 500
+LodSelectorTemplate.addLodDistance 650
+
+
+
+
+rem *** Bluebell ***
+ObjectTemplate.create PlayerControlObject Bluebell
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 3
+ObjectTemplate.mass 2500000
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1390
+ObjectTemplate.maxhitpoints 1390
+ObjectTemplate.material 139
+ObjectTemplate.criticalDamage 139
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 1448 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 521 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/10
+ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/-10
+ObjectTemplate.addArmorEffect 278 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/10
+ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/-10
+ObjectTemplate.addArmorEffect 278 e_waterBoatSink 0/0/0
+ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/10
+ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/-10
+ObjectTemplate.addArmorEffect 139 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-0
+ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/15
+ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-15
+ObjectTemplate.aiTemplate SnapdragonAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBluebell
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -1.999/7.5/50
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 2/7.5/50
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -4.999/7.5/17
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 5/7.5/17
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -4.999/7.5/-16.999
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 5/7.5/-16.999
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -1.999/7.5/-49.999
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 2/7.5/-49.999
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation -0.2/7.5/11 0/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
+ObjectTemplate.setVehicleIconPos 78/89
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmBLMarkIX.tga"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 120
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+ObjectTemplate.submarineData 0 0 0 0 0 10 200
+
+
+rem *** lodBluebell ***
+ObjectTemplate.create LodObject lodBluebell
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BluebellComplex
+ObjectTemplate.addTemplate SnapdragonSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector SnapdragonLodSelector
+
+
+rem *** BluebellComplex ***
+ObjectTemplate.create Bundle BluebellComplex
+rem ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+ObjectTemplate.geometry Snapdragon_hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BluebellSoldierSpawn1
+ObjectTemplate.setPosition 3/5/21
+ObjectTemplate.addTemplate BluebellSoldierSpawn2
+ObjectTemplate.setPosition 1/5/16
+ObjectTemplate.addTemplate BluebellSoldierSpawn3
+ObjectTemplate.setPosition 3/5/8
+ObjectTemplate.addTemplate BluebellSoldierSpawn4
+ObjectTemplate.setPosition -3/4.5/3.5
+ObjectTemplate.addTemplate BluebellSoldierSpawn5
+ObjectTemplate.setPosition 3/4.5/3.5
+ObjectTemplate.addTemplate BluebellSoldierSpawn6
+ObjectTemplate.setPosition 0/7.6/-2
+ObjectTemplate.addTemplate BluebellSoldierSpawn7
+ObjectTemplate.setPosition -4/4.2/-15
+ObjectTemplate.addTemplate BluebellSoldierSpawn8
+ObjectTemplate.setPosition 4/4.2/-15
+ObjectTemplate.addTemplate BluebellSoldierSpawn9
+ObjectTemplate.setPosition -3/4.2/-20
+ObjectTemplate.addTemplate BluebellSoldierSpawn10
+ObjectTemplate.setPosition 3/4.2/-20
+
+ObjectTemplate.addTemplate DestroyerSonar
+ObjectTemplate.setPosition 0/-1.3/0
+ObjectTemplate.addTemplate Snapdragon_propeller
+ObjectTemplate.setPosition 2.01/-2.63/-26.6
+ObjectTemplate.setRotation 0/-1.999/0
+ObjectTemplate.addTemplate Snapdragon_propeller
+ObjectTemplate.setPosition -2.424/-2.63/-26.6
+ObjectTemplate.setRotation 0/-1.999/0
+ObjectTemplate.addTemplate Snapdragon_HullWing
+ObjectTemplate.setPosition 0/-5/31.6
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Snapdragon_rudder
+ObjectTemplate.setPosition 0/-5/-31.6
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Snapdragon_Engine
+ObjectTemplate.setPosition 0/-4/-16.6
+
+ObjectTemplate.addTemplate Snapdragon_tower
+ObjectTemplate.setPosition 0/7.1/18.5
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition -1.35/4.45/-34.508
+ObjectTemplate.setRotation -179.999/0/-89.999
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition 1.35/4.45/-34.508
+ObjectTemplate.setRotation -179.999/0/90
+
+ObjectTemplate.addTemplate Bluebell_BackCanons_PCO
+ObjectTemplate.setPosition 0/7.1/-15.5
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate BluebellAAPCO_3
+ObjectTemplate.setPosition 4.5/7.25/-7.5
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate BluebellAAPCO_4
+ObjectTemplate.setPosition -4.259/7.25/-7.5
+ObjectTemplate.setRotation -89.999/0/0
+
+ObjectTemplate.addTemplate Snapdragon_Entry
+ObjectTemplate.setPosition 0/7/11
+
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition -5.4/1.55/-4.3
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition -5/1.5/-26.3
+ObjectTemplate.setRotation 82/0/0
+
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition 5.6/1.55/-4.3
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition 5.1/1.5/-26.3
+ObjectTemplate.setRotation -82/0/0
+
+ObjectTemplate.addTemplate e_waterfrontBig
+ObjectTemplate.setPosition 0/-2/33
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/33
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/-35
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/-0.499/-27
+
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition 3/5.4/-12
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition -2.8/5.4/-12
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate Ammobox
+ObjectTemplate.setPosition -0.169/3.7/3.5
+ObjectTemplate.addTemplate AnimatedUkFlag
+ObjectTemplate.setPosition 0/29.2/2.4
+rem ObjectTemplate.setPosition 0/29.2/12.9
+rem -------------------------------------
+
+rem *** BluebellSoldierSpawn1 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn2 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn3 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn3
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn4 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn4
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn5 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn5
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn6 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn6
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn7 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn7
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn8 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn8
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn9 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn9
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** BluebellSoldierSpawn10 ***
+ObjectTemplate.create SpawnPoint BluebellSoldierSpawn10
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** Bluebell_BackCanons_PCO ***
+ObjectTemplate.create PlayerControlObject Bluebell_BackCanons_PCO
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+ObjectTemplate.aiTemplate SnapdragonRearGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate PomPomSingle_360_X
+ObjectTemplate.addTemplate ShipAlarm2
+rem -------------------------------------
+ObjectTemplate.setPcoId 1
+ObjectTemplate.setSoldierExitLocation 0/0.5/-2 0/0/0
+ObjectTemplate.GUIIndex 41
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
+ObjectTemplate.setVehicleIconPos 31/66
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_40mmPomPomMk8_HE+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 120
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+
+rem ***BluebellAAPCO_3***
+ObjectTemplate.create PlayerControlObject BluebellAAPCO_3
+ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate Vickers50_AAQuad_X
+ObjectTemplate.addTemplate Snapdragon_EntrySmall
+
+ObjectTemplate.addTemplate ShipBuzzer
+rem ---------------------------------------------------
+ObjectTemplate.setPcoId 3
+ObjectTemplate.GUIIndex 90
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
+ObjectTemplate.setVehicleIconPos 33/74
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.aiTemplate SnapdragonAA2AI
+
+rem *** BluebellAAPCO_4***
+ObjectTemplate.create PlayerControlObject BluebellAAPCO_4
+ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate Vickers50_AAQuad_X
+ObjectTemplate.addTemplate Snapdragon_EntrySmall
+
+ObjectTemplate.addTemplate ShipBuzzer
+rem ---------------------------------------------------
+ObjectTemplate.setPcoId 2
+ObjectTemplate.GUIIndex 90
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Bluebell.tga"
+ObjectTemplate.setVehicleIconPos 49/69
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+
+
+
+rem *** Celandine ***
+ObjectTemplate.create PlayerControlObject Celandine
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 3
+ObjectTemplate.mass 2500000
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1390
+ObjectTemplate.maxhitpoints 1390
+ObjectTemplate.material 139
+ObjectTemplate.criticalDamage 139
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 1448 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 521 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/10
+ObjectTemplate.addArmorEffect 521 em_FletcherDamage 0/0/-10
+ObjectTemplate.addArmorEffect 278 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/10
+ObjectTemplate.addArmorEffect 278 em_FletcherDamage 0/0/-10
+ObjectTemplate.addArmorEffect 278 e_waterBoatSink 0/0/0
+ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/10
+ObjectTemplate.addArmorEffect 139 em_FletcherDamage 0/0/-10
+ObjectTemplate.addArmorEffect 139 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-0
+ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/15
+ObjectTemplate.addArmorEffect 139 e_waterBoatSinkEf 0/-2/-15
+ObjectTemplate.aiTemplate SnapdragonAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodCelandine
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -1.999/7.5/50
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 2/7.5/50
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -4.999/7.5/17
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 5/7.5/17
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -4.999/7.5/-16.999
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 5/7.5/-16.999
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition -1.999/7.5/-49.999
+ObjectTemplate.addTemplate Snapdragon_Floater
+ObjectTemplate.setPosition 2/7.5/-49.999
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation -0.2/7.5/11 0/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
+ObjectTemplate.setVehicleIconPos 78/89
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_102mmBLMarkIX.tga"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 120
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+ObjectTemplate.submarineData 0 0 0 0 0 10 200
+
+
+rem *** lodCelandine ***
+ObjectTemplate.create LodObject lodCelandine
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate CelandineComplex
+ObjectTemplate.addTemplate SnapdragonSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector SnapdragonLodSelector
+
+
+rem *** CelandineComplex ***
+ObjectTemplate.create Bundle CelandineComplex
+rem ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+ObjectTemplate.geometry Snapdragon_hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate CelandineSoldierSpawn1
+ObjectTemplate.setPosition 3/5/21
+ObjectTemplate.addTemplate CelandineSoldierSpawn2
+ObjectTemplate.setPosition 1/5/16
+ObjectTemplate.addTemplate CelandineSoldierSpawn3
+ObjectTemplate.setPosition 3/5/8
+ObjectTemplate.addTemplate CelandineSoldierSpawn4
+ObjectTemplate.setPosition -3/4.5/3.5
+ObjectTemplate.addTemplate CelandineSoldierSpawn5
+ObjectTemplate.setPosition 3/4.5/3.5
+ObjectTemplate.addTemplate CelandineSoldierSpawn6
+ObjectTemplate.setPosition 0/7.6/-2
+ObjectTemplate.addTemplate CelandineSoldierSpawn7
+ObjectTemplate.setPosition -4/4.2/-15
+ObjectTemplate.addTemplate CelandineSoldierSpawn8
+ObjectTemplate.setPosition 4/4.2/-15
+ObjectTemplate.addTemplate CelandineSoldierSpawn9
+ObjectTemplate.setPosition -3/4.2/-20
+ObjectTemplate.addTemplate CelandineSoldierSpawn10
+ObjectTemplate.setPosition 3/4.2/-20
+
+ObjectTemplate.addTemplate DestroyerSonar
+ObjectTemplate.setPosition 0/-1.3/0
+ObjectTemplate.addTemplate Snapdragon_propeller
+ObjectTemplate.setPosition 2.01/-2.63/-26.6
+ObjectTemplate.setRotation 0/-1.999/0
+ObjectTemplate.addTemplate Snapdragon_propeller
+ObjectTemplate.setPosition -2.424/-2.63/-26.6
+ObjectTemplate.setRotation 0/-1.999/0
+ObjectTemplate.addTemplate Snapdragon_HullWing
+ObjectTemplate.setPosition 0/-5/31.6
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Snapdragon_rudder
+ObjectTemplate.setPosition 0/-5/-31.6
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Snapdragon_Engine
+ObjectTemplate.setPosition 0/-4/-16.6
+
+ObjectTemplate.addTemplate Snapdragon_tower
+ObjectTemplate.setPosition 0/7.1/18.5
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition -1.35/4.45/-34.508
+ObjectTemplate.setRotation -179.999/0/-89.999
+ObjectTemplate.addTemplate DepthChargeLauncher
+ObjectTemplate.setPosition 1.35/4.45/-34.508
+ObjectTemplate.setRotation -179.999/0/90
+
+ObjectTemplate.addTemplate Celandine_BackCanons_PCO
+ObjectTemplate.setPosition 0/7.1/-15.5
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate CelandineAAPCO_3
+ObjectTemplate.setPosition 4.5/7.25/-7.5
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate CelandineAAPCO_4
+ObjectTemplate.setPosition -4.259/7.25/-7.5
+ObjectTemplate.setRotation -89.999/0/0
+
+ObjectTemplate.addTemplate Snapdragon_Entry
+ObjectTemplate.setPosition 0/7/11
+
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition -5.4/1.55/-4.3
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition -5/1.5/-26.3
+ObjectTemplate.setRotation 82/0/0
+
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition 5.6/1.55/-4.3
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition 5.1/1.5/-26.3
+ObjectTemplate.setRotation -82/0/0
+
+ObjectTemplate.addTemplate e_waterfrontBig
+ObjectTemplate.setPosition 0/-2/33
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/33
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-2/-35
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/-0.499/-27
+
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition 3/5.4/-12
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition -2.8/5.4/-12
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate Ammobox
+ObjectTemplate.setPosition -0.169/3.7/3.5
+ObjectTemplate.addTemplate AnimatedUkFlag
+ObjectTemplate.setPosition 0/29.2/2.4
+rem ObjectTemplate.setPosition 0/29.2/12.9
+rem -------------------------------------
+
+rem *** CelandineSoldierSpawn1 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn2 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn3 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn3
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn4 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn4
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn5 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn5
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn6 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn6
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn7 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn7
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn8 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn8
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn9 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn9
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** CelandineSoldierSpawn10 ***
+ObjectTemplate.create SpawnPoint CelandineSoldierSpawn10
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** Celandine_BackCanons_PCO ***
+ObjectTemplate.create PlayerControlObject Celandine_BackCanons_PCO
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+ObjectTemplate.aiTemplate SnapdragonRearGunAI
+rem -------------------------------------
+ObjectTemplate.addTemplate PomPomSingle_360_X
+
+ObjectTemplate.addTemplate ShipAlarm2
+rem -------------------------------------
+ObjectTemplate.setPcoId 1
+ObjectTemplate.setSoldierExitLocation 0/0.5/-2 0/0/0
+ObjectTemplate.GUIIndex 41
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
+ObjectTemplate.setVehicleIconPos 31/66
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_40mmPomPomMk8_HE+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 120
+ObjectTemplate.DirBarYScaleAbove 60
+ObjectTemplate.DirBarYScaleBelow 10
+ObjectTemplate.DirBarRotate 180
+ObjectTemplate.DirBarYScaleMin -100
+ObjectTemplate.DirBarYScaleMax -30
+
+rem ***CelandineAAPCO_3***
+ObjectTemplate.create PlayerControlObject CelandineAAPCO_3
+ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate Vickers50_AAQuad_X
+ObjectTemplate.addTemplate Snapdragon_EntrySmall
+
+ObjectTemplate.addTemplate ShipBuzzer
+rem ---------------------------------------------------
+ObjectTemplate.setPcoId 3
+ObjectTemplate.GUIIndex 90
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
+ObjectTemplate.setVehicleIconPos 33/74
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.aiTemplate SnapdragonAA2AI
+
+rem *** CelandineAAPCO_4***
+ObjectTemplate.create PlayerControlObject CelandineAAPCO_4
+ObjectTemplate.setSoldierExitLocation 1/0.5/-2.0 0/0/0
+ObjectTemplate.setNetworkableInfo SnapdragonBodyInfo
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate Vickers50_AAQuad_X
+ObjectTemplate.addTemplate Snapdragon_EntrySmall
+
+ObjectTemplate.addTemplate ShipBuzzer
+rem ---------------------------------------------------
+ObjectTemplate.setPcoId 2
+ObjectTemplate.GUIIndex 90
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Celandine.tga"
+ObjectTemplate.setVehicleIconPos 49/69
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmMarkIII.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.aiTemplate SnapdragonAA1AI
 
 rem ===== EOF =====
 rem ============================================================================
