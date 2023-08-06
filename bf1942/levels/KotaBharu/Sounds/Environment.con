@@ -1,3 +1,0 @@
-EnvironmentSound.load Environment.ssc
-run Coastline.con
-run River.con
