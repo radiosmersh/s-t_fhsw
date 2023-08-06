@@ -122,7 +122,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_345RCL_HEAT_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNone
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 ObjectTemplate.setHasMag 1
 
 Rem *** Deviation Begin *****
@@ -290,7 +292,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_345RCL_HESH_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNone
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 ObjectTemplate.setHasMag 1
 
 Rem *** Deviation Begin *****
@@ -4945,7 +4949,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_Bazooka_Rocket_M6_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -5025,7 +5031,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_Bazooka_Rocket_T12_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 ObjectTemplate.velocity 82
@@ -5098,7 +5106,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_Bazooka_Rocket_HE4sec_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 ObjectTemplate.velocity 82
@@ -5171,7 +5181,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_Bazooka_Rocket_Smoke_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 ObjectTemplate.velocity 82
@@ -5902,7 +5914,9 @@ ObjectTemplate.loadSoundScript ../Brandfaust/Sounds/Brandfaust.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -11675,7 +11689,9 @@ ObjectTemplate.loadSoundScript ../Flammfaust/Sounds/Flammfaust.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -12875,7 +12891,9 @@ ObjectTemplate.loadSoundScript ../Gasfaust/Sounds/Gasfaust.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -15611,8 +15629,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-rem ObjectTemplate.setCrossHairType CHTCrossHair
-ObjectTemplate.setCrossHairType CHTNone
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -22226,7 +22245,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_M18RR_HEAT_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNone
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 ObjectTemplate.setHasMag 1
 
 Rem *** Deviation Begin *****
@@ -22386,7 +22407,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_M18RR_HE_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNone
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 ObjectTemplate.setHasMag 1
 
 Rem *** Deviation Begin *****
@@ -22477,7 +22500,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_M18RR_Smoke_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNone
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 ObjectTemplate.setHasMag 1
 
 Rem *** Deviation Begin *****
@@ -22568,7 +22593,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_M18RR_Canister_256x128.tga"
-ObjectTemplate.setCrossHairType CHTNone
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 ObjectTemplate.setHasMag 1
 
 ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
@@ -29745,7 +29772,9 @@ ObjectTemplate.loadSoundScript ../Panzerfaust250/Sounds/Panzerfaust250.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -29822,7 +29851,9 @@ ObjectTemplate.loadSoundScript ../Panzerfaust250/Sounds/Panzerfaust250.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -29884,7 +29915,9 @@ ObjectTemplate.loadSoundScript ../Panzerfaust250/Sounds/Panzerfaust250.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -30235,7 +30268,9 @@ ObjectTemplate.loadSoundScript ../Panzershreck/Sounds/panzershrek.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -30338,7 +30373,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -32770,7 +32807,9 @@ ObjectTemplate.loadSoundScript ../RandomGerGrenadier100Faust/Sounds/Panzerfaust1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -32962,7 +33001,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -33253,7 +33294,9 @@ ObjectTemplate.loadSoundScript ../Panzershreck/Sounds/panzershrek.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -33378,7 +33421,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -33550,7 +33595,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -33742,7 +33789,9 @@ ObjectTemplate.loadSoundScript ../Brandfaust/Sounds/Brandfaust.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -33929,7 +33978,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -34125,7 +34176,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -34332,7 +34385,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -34529,7 +34584,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -34737,7 +34794,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -34933,7 +34992,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -35140,7 +35201,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -35337,7 +35400,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -36233,7 +36298,9 @@ ObjectTemplate.loadSoundScript ../Panzerfaust250/Sounds/Panzerfaust250.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -36294,7 +36361,9 @@ ObjectTemplate.loadSoundScript ../Brandfaust/Sounds/Brandfaust.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -36358,7 +36427,9 @@ ObjectTemplate.loadSoundScript ../Flammfaust/Sounds/Flammfaust.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -36441,7 +36512,9 @@ ObjectTemplate.loadSoundScript ../Gasfaust/Sounds/Gasfaust.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 Rem *** Deviation Begin *****
 
 ObjectTemplate.setFireDev 4.0 1.5 1.0
@@ -43922,6 +43995,42 @@ ObjectTemplate.addTemplate scoldLod
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = scoldWrenchID5
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem **********************************************************
+rem ********** scoldWrenchID5
+rem **********************************************************
+ObjectTemplate.create HandFireArms scoldWrenchID5
+ObjectTemplate.itemIndex 5
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate Melee_Scold_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.fireOnce c_True
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.GUIIndex 83
+ObjectTemplate.setHudAmmoType ATNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../KnifeAxis/Sounds/knife.ssc
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
+ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
+
+ObjectTemplate.velocity 80
+
+ObjectTemplate.createSkeleton animations/RepairPack.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate RepairPackLod
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = Sg44
 rem sauce = Geometries.con
 rem ============================================================================
@@ -50137,7 +50246,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 
@@ -50290,7 +50401,9 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.GUIIndex 17
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTNONE
+rem AT CrossHair Test
+ObjectTemplate.setCrossHairType CHTCrossHair
+rem ObjectTemplate.setCrossHairType CHTNONE
 
 Rem *** Deviation Begin *****
 

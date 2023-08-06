@@ -39,13 +39,15 @@ renderer.fogstart 325
 renderer.fogend 508
 
 game.setTeamSkin 1 GermanSoldier
-game.setKit 1 0 1German_OfficerMp40Smoke2R
+game.setKit 1 0 1German_OfficerMP40_II
+rem game.setKit 1 0 1German_OfficerMp40Smoke2R
 game.setKit 1 1 2German_AssaultSg44
 rem game.setKit 1 2 3German_ATPanzerfaust30
 game.setKit 1 2 3German_ATPanzerfaust150
 rem game.setKit 1 3 4German_TankhunterMp40
 game.setKit 1 3 4German_TankhunterTimedLandmine
-game.setKit 1 4 5German_TankCommanderWalterP38Smoke2R
+game.setKit 1 4 5German_TankCommanderWalterP38
+rem game.setKit 1 4 5German_TankCommanderWalterP38Smoke2R
 
 game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1Us_ClosequartersThompsonSmoke2R

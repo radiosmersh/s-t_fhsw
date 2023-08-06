@@ -42,7 +42,8 @@ ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedUsFlag
 
 game.setTeamSkin 1 GermanSoldier
-game.setKit 1 0 1German_CloseQuarters_WinterMp40
+rem game.setKit 1 0 1German_CloseQuarters_WinterMp40
+game.setKit 1 0 1German_CloseQuarters_WinterMp40_EihGr39
 game.setKit 1 1 2German_AssaultG43WNWinter
 game.setKit 1 2 3German_Assault_WinterK98
 game.setKit 1 3 4German_Officer_WinterMp40Smoke2R
@@ -52,7 +53,8 @@ game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1Us_ClosequartersThompson
 game.setKit 2 1 2Us_AssaultGarandRGL
 game.setKit 2 2 3Us_AssaultSpringfield
-game.setKit 2 3 4Us_OfficerGreasegunSmoke2R
+rem game.setKit 2 3 4Us_OfficerGreasegunSmoke2R
+game.setKit 2 3 4Us_OfficerGreasegunSmoke2RD44
 game.setKit 2 4 5RandomUS_EngineerM1_M2Carabine
 
 game.setActiveCombatArea 0 0 1024 1024

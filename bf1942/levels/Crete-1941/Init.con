@@ -47,7 +47,7 @@ run ../../game/is_coop.con
 
 if v_is_coop == True
 
-game.setTeamSkin 1 GermanSoldier
+game.setTeamSkin 1 FMGermanSoldier
 game.setKit 1 0 1German_CloseQuartersMp40Smoke2RP
 game.setKit 1 1 2German_AssaultK98P
 game.setKit 1 2 3German_ATPzB35(p)P
@@ -56,13 +56,12 @@ game.setKit 1 4 5German_EngineerK98P
 
 else
 
-game.setTeamSkin 1 GermanSoldier
-game.setKit 1 0 1German_CloseQuartersMp40Smoke2RP
-game.setKit 1 1 2German_AssaultK98P
+game.setTeamSkin 1 FMGermanSoldier
+game.setKit 1 0 1German_CloseQuartersMp40Smoke2RP39
+game.setKit 1 1 2German_AssaultK98P39
 game.setKit 1 2 3German_ATPzB35(p)P
 game.setKit 1 3 4German_OfficerMp40MarkerP
 game.setKit 1 4 5German_EngineerK98
-
 endIf
 
 game.setTeamSkin 2 BritishSoldier

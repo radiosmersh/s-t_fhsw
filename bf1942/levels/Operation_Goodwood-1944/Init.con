@@ -55,8 +55,8 @@ game.setKit 1 4 5German_TankCommander_P08Artillerie
 game.setTeamSkin 2 BritishSoldier
 game.setKit 2 0 1GB_OfficerThompsonSmoke2R
 game.setKit 2 1 2GB_AssaultNo4SmokeRG
-rem game.setKit 2 2 3GB_ATPiat
-game.setKit 2 2 3GB_AT345RCL
+game.setKit 2 2 3GB_ATPiat
+rem game.setKit 2 2 3GB_AT345RCL
 game.setKit 2 3 4GB_SupportBren
 game.setKit 2 4 5GB_EngineerNo4
 

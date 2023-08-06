@@ -4311,6 +4311,7 @@ rem 75mmL24_Projectile
 rem 75mmL24HEAT_Hl-A_Projectile
 rem 75mmL24HEAT_Hl-C_Projectile
 rem 75mmL24HEAT_Hl-C_DP_Projectile
+rem 75mmL24HEAT_Hl-Klw_DP_Projectile
 rem 75mmL25_Projectile
 rem 75mmL28,5_Projectile
 rem 75mmL31HEAT_Projectile
@@ -4368,6 +4369,7 @@ rem 105mmL65A_Projectile
 rem 105mmL65A_HVAP_Projectile
 rem 105mmL68_Projectile
 rem 107mmL48.6_Projectile
+rem 108mmL23,5HESH_Projectile
 rem 114mmL15,55HEAT_Projectile
 rem 120mmL45_Projectile
 rem 120mmL60_Projectile
@@ -4382,6 +4384,7 @@ rem 128mmL55_Projectile
 rem 128mmL66_Projectile
 rem 130mmL54,7_Projectile
 rem 150mmL12HEAT_Projectile
+rem 150mmL12HEAT_Klw_Projectile
 rem 150mmL23,5HEAT_Projectile
 rem 152mmL23_Projectile
 rem 152mmL28,8_Projectile
@@ -5824,6 +5827,26 @@ ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
 
+rem *** 75mmL24HEAT_Hl-C_DP_Projectile ***
+ObjectTemplate.create Projectile 75mmL24HEAT_Hl-Klw_DP_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 653
+ObjectTemplate.material2 200
+ObjectTemplate.radius 18.6
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_pink
+
 rem *** 75mmL25_Projectile ***
 ObjectTemplate.create Projectile 75mmL25_Projectile
 ObjectTemplate.createNotInGrid 1
@@ -6890,6 +6913,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 95mmL18,65HEAT_Projectile ***
 ObjectTemplate.create Projectile 95mmL18,65HEAT_Projectile
@@ -6912,6 +6937,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 95mmL41_Projectile ***
 ObjectTemplate.create Projectile 95mmL41_Projectile
@@ -6934,6 +6961,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 100mmL56_Projectile ***
 ObjectTemplate.create Projectile 100mmL56_Projectile
@@ -6956,6 +6985,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmPAW1000HEAT_Projectile ***
 ObjectTemplate.create Projectile 105mmPAW1000HEAT_Projectile
@@ -6969,13 +7000,15 @@ ObjectTemplate.timeToLive CRD_NONE/10/0/0
 ObjectTemplate.gravityModifier 1.0
 ObjectTemplate.damageType 1
 ObjectTemplate.material 633
-ObjectTemplate.material2 200
+ObjectTemplate.material2 199
 ObjectTemplate.radius 17.19
 ObjectTemplate.ForceOnExplosion 0
 ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL22,5HEAT_Projectile ***
 ObjectTemplate.create Projectile 105mmL22,5HEAT_Projectile
@@ -6998,6 +7031,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL28HEAT_Projectile ***
 ObjectTemplate.create Projectile 105mmL28HEAT_Projectile
@@ -7020,6 +7055,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL65_Projectile ***
 ObjectTemplate.create Projectile 105mmL65_Projectile
@@ -7042,6 +7079,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL65A_Projectile ***
 ObjectTemplate.create Projectile 105mmL65A_Projectile
@@ -7064,6 +7103,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL65A_HVAP_Projectile ***
 ObjectTemplate.create Projectile 105mmL65A_HVAP_Projectile
@@ -7086,6 +7127,7 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_bulletsmoke_green
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL68_Projectile ***
 ObjectTemplate.create Projectile 105mmL68_Projectile
@@ -7108,6 +7150,8 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 107mmL48.6_Projectile ***
 ObjectTemplate.create Projectile 107mmL48.6_Projectile
@@ -7130,6 +7174,33 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
+
+rem *** 108mmL23,5HESH_Projectile ***
+ObjectTemplate.create Projectile 108mmL23,5HESH_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 655
+ObjectTemplate.material2 206
+ObjectTemplate.radius 21.75
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion12cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.startEffectTemplate e_tanktracer_pink
 
 rem *** 114mmL15,55HEAT_Projectile ***
 ObjectTemplate.create Projectile 114mmL15,55HEAT_Projectile
@@ -7152,6 +7223,9 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 120mmL45_Projectile ***
 ObjectTemplate.create Projectile 120mmL45_Projectile
@@ -7197,6 +7271,9 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion12cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 120mmL60_APCR_Projectile ***
 ObjectTemplate.create Projectile 120mmL60_APCR_Projectile
@@ -7243,6 +7320,9 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion12cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 120mmL60_APCR_stereo_Projectile ***
 ObjectTemplate.create Projectile 120mmL60_APCR_stereo_Projectile
@@ -7289,6 +7369,9 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion12cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 122mmL43_Projectile ***
 ObjectTemplate.create Projectile 122mmL43_Projectile
@@ -7311,6 +7394,9 @@ ObjectTemplate.distToMinDamage 3000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion12cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 122mmL48_Projectile ***
 ObjectTemplate.create Projectile 122mmL48_Projectile
@@ -7333,6 +7419,9 @@ ObjectTemplate.distToMinDamage 3000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion12cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 122mmL59,5_Projectile ***
 ObjectTemplate.create Projectile 122mmL59,5_Projectile
@@ -7355,6 +7444,9 @@ ObjectTemplate.distToMinDamage 3000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion12cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 128mmL55_Projectile ***
 ObjectTemplate.create Projectile 128mmL55_Projectile
@@ -7377,6 +7469,9 @@ ObjectTemplate.distToMinDamage 5000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion13cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 128mmL66_Projectile ***
 ObjectTemplate.create Projectile 128mmL66_Projectile
@@ -7399,6 +7494,9 @@ ObjectTemplate.distToMinDamage 5000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion13cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 130mmL54,7_Projectile ***
 ObjectTemplate.create Projectile 130mmL54,7_Projectile
@@ -7421,6 +7519,9 @@ ObjectTemplate.distToMinDamage 3000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion13cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 150mmL12HEAT_Projectile ***
 ObjectTemplate.create Projectile 150mmL12HEAT_Projectile
@@ -7441,6 +7542,32 @@ ObjectTemplate.minDamage 0.001
 ObjectTemplate.distToStartLoseDamage 1
 ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion15cmSpawner
+ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_pink
+
+rem *** 150mmL12HEAT_Klw_Projectile ***
+ObjectTemplate.create Projectile 150mmL12HEAT_Klw_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 654
+ObjectTemplate.material2 605
+ObjectTemplate.radius 32.12
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 9999
 ObjectTemplate.addTemplate PenetrateExplosion15cmSpawner
 ObjectTemplate.setPosition 0/0/0.5
 ObjectTemplate.CullRadiusScale 10
@@ -7465,6 +7592,7 @@ ObjectTemplate.minDamage 0.001
 ObjectTemplate.distToStartLoseDamage 1
 ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 9999
 ObjectTemplate.addTemplate PenetrateExplosion15cmSpawner
 ObjectTemplate.setPosition 0/0/0.5
 ObjectTemplate.CullRadiusScale 10
@@ -7489,6 +7617,7 @@ ObjectTemplate.minDamage 0.001
 ObjectTemplate.distToStartLoseDamage 1
 ObjectTemplate.distToMinDamage 3000
 ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 9999
 ObjectTemplate.addTemplate PenetrateExplosion15cmSpawner
 ObjectTemplate.setPosition 0/0/0.5
 ObjectTemplate.CullRadiusScale 10
@@ -7513,6 +7642,7 @@ ObjectTemplate.minDamage 0.001
 ObjectTemplate.distToStartLoseDamage 1
 ObjectTemplate.distToMinDamage 3000
 ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 9999
 ObjectTemplate.addTemplate PenetrateExplosion15cmSpawner
 ObjectTemplate.setPosition 0/0/0.5
 ObjectTemplate.CullRadiusScale 10
@@ -7537,6 +7667,7 @@ ObjectTemplate.minDamage 0.001
 ObjectTemplate.distToStartLoseDamage 1
 ObjectTemplate.distToMinDamage 3000
 ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 9999
 ObjectTemplate.addTemplate PenetrateExplosion15cmSpawner
 ObjectTemplate.setPosition 0/0/0.5
 ObjectTemplate.CullRadiusScale 10
@@ -16052,28 +16183,65 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
 
-rem *** PenetrateExplosion10cmHESH
-rem *** PenetrateExplosion15cm
-rem *** PenetrateExplosion20cm
-rem *** PenetrateExplosion20cmNoSound
-rem *** PenetrateExplosion36cm
-rem *** PenetrateExplosion36cmNoSound
-rem *** PenetrateExplosion36cmVisible
-rem *** PenetrateExplosion40cm
+rem *** ArtyEffectPCOMortar8cmSpawner
+rem *** ArtyEffectPCOMortar8cmX3Spawner 
+rem *** ArtyEffectPCOMortar12cmSpawner
 
-rem *** PenetrateExplosion10cm ***
-ObjectTemplate.create PlayerControlObject PenetrateExplosion10cmHESH
+rem *** ArtyEffectPCO8cmSpawner
+rem *** ArtyEffectPCO10cmSpawner
+rem *** ArtyEffectPCO15cmSpawner
+
+rem *** RocketEffectPCO8cmX3Spawner
+rem *** RocketEffectPCO10cmSpawner
+rem *** RocketEffectPCO10cmX2Spawner
+rem *** RocketEffectPCO10cmX3Spawner
+
+rem *** PenetrateExplosion9cmSpawner
+rem *** PenetrateExplosion10cmSpawner
+rem *** PenetrateExplosion10cmHESHSpawner
+rem *** PenetrateExplosion12cmSpawner
+rem *** PenetrateExplosion13cmSpawner
+rem *** PenetrateExplosion15cmSpawner
+rem *** PenetrateExplosion20cmSpawner
+rem *** PenetrateExplosion20cmNoSoundSpawner
+rem *** PenetrateExplosion28cmSpawner
+rem *** PenetrateExplosion28cmRocketSpawner
+rem *** PenetrateExplosion36cmSpawner
+rem *** PenetrateExplosion36cmNoSoundSpawner
+rem *** PenetrateExplosion36cmVisibleSpawner
+rem *** PenetrateExplosion40cmSpawner
+
+
+rem *** ArtyEffectPCOMortar8cmSpawner *** 
+ObjectTemplate.create ObjectSpawner ArtyEffectPCOMortar8cmSpawner
+ObjectTemplate.setObjectTemplate 1 ArtyEffectPCOMortar8cm
+ObjectTemplate.setObjectTemplate 2 ArtyEffectPCOMortar8cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** ArtyEffectPCOMortar8cm ***
+ObjectTemplate.create PlayerControlObject ArtyEffectPCOMortar8cm
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
 ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.explosionRadius 15
-ObjectTemplate.explosionDamage 8
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16085,9 +16253,7 @@ ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 3
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
-rem ObjectTemplate.addArmorEffect 0 e_ExploHESHscrap 0/0/0
-ObjectTemplate.addArmorEffect 0 e_signalpistol 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket 0/0/0
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -16095,35 +16261,47 @@ ObjectTemplate.geometry PenetrateExplosion_m1
 ObjectTemplate.gravityModifier 0.75
 rem ----------------------------------
 ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileMortar.ssc
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
-rem *** PenetrateExplosion15cm ***
-ObjectTemplate.create PlayerControlObject PenetrateExplosion15cm
+
+rem *** ArtyEffectPCOMortar8cmX3Spawner *** 
+ObjectTemplate.create ObjectSpawner ArtyEffectPCOMortar8cmX3Spawner
+ObjectTemplate.setObjectTemplate 1 ArtyEffectPCOMortar8cmX3
+ObjectTemplate.setObjectTemplate 2 ArtyEffectPCOMortar8cmX3
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** ArtyEffectPCOMortar8cmX3 ***
+ObjectTemplate.create PlayerControlObject ArtyEffectPCOMortar8cmX3
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
 ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.explosionRadius 20
-ObjectTemplate.explosionDamage 8
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16135,10 +16313,250 @@ ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 3
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
-rem ObjectTemplate.addArmorEffect 0 e_ExploHESHscrap150mm 0/0/0
-ObjectTemplate.addArmorEffect 0 e_ExploMega 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket -10/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket 0/5/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileMortar.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+
+rem *** ArtyEffectPCOMortar12cmSpawner *** 
+ObjectTemplate.create ObjectSpawner ArtyEffectPCOMortar12cmSpawner
+ObjectTemplate.setObjectTemplate 1 ArtyEffectPCOMortar12cm
+ObjectTemplate.setObjectTemplate 2 ArtyEffectPCOMortar12cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** ArtyEffectPCOMortar12cm ***
+ObjectTemplate.create PlayerControlObject ArtyEffectPCOMortar12cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileMortar.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** ArtyEffectPCO8cmSpawner *** 
+ObjectTemplate.create ObjectSpawner ArtyEffectPCO8cmSpawner
+ObjectTemplate.setObjectTemplate 1 ArtyEffectPCO8cm
+ObjectTemplate.setObjectTemplate 2 ArtyEffectPCO8cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** ArtyEffectPCO8cm ***
+ObjectTemplate.create PlayerControlObject ArtyEffectPCO8cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** ArtyEffectPCO10cmSpawner *** 
+ObjectTemplate.create ObjectSpawner ArtyEffectPCO10cmSpawner
+ObjectTemplate.setObjectTemplate 1 ArtyEffectPCO10cm
+ObjectTemplate.setObjectTemplate 2 ArtyEffectPCO10cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** ArtyEffectPCO10cm ***
+ObjectTemplate.create PlayerControlObject ArtyEffectPCO10cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** ArtyEffectPCO15cmSpawner *** 
+ObjectTemplate.create ObjectSpawner ArtyEffectPCO15cmSpawner
+ObjectTemplate.setObjectTemplate 1 ArtyEffectPCO15cm
+ObjectTemplate.setObjectTemplate 2 ArtyEffectPCO15cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** ArtyEffectPCO15cm ***
+ObjectTemplate.create PlayerControlObject ArtyEffectPCO15cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -16150,32 +16568,651 @@ ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileLarge.ssc
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
-rem *** PenetrateExplosion20cm ***
-ObjectTemplate.create PlayerControlObject PenetrateExplosion20cm
+
+rem *** RocketEffectPCO8cmX3Spawner *** 
+ObjectTemplate.create ObjectSpawner RocketEffectPCO8cmX3Spawner
+ObjectTemplate.setObjectTemplate 1 RocketEffectPCO8cmX3
+ObjectTemplate.setObjectTemplate 2 RocketEffectPCO8cmX3
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** RocketEffectPCO8cmX3 ***
+ObjectTemplate.create PlayerControlObject RocketEffectPCO8cmX3
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
 ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.explosionRadius 25
-ObjectTemplate.explosionDamage 10
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 1 e_RocketTailFumeShort 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket -10/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplMedRocket 0/5/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../PenetrateExplosion/Sounds/RocketEngine.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** RocketEffectPCO10cmSpawner *** 
+ObjectTemplate.create ObjectSpawner RocketEffectPCO10cmSpawner
+ObjectTemplate.setObjectTemplate 1 RocketEffectPCO10cm
+ObjectTemplate.setObjectTemplate 2 RocketEffectPCO10cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** RocketEffectPCO10cm ***
+ObjectTemplate.create PlayerControlObject RocketEffectPCO10cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 1 e_RocketTailFume 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../PenetrateExplosion/Sounds/RocketEngine.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** RocketEffectPCO10cmX2Spawner *** 
+ObjectTemplate.create ObjectSpawner RocketEffectPCO10cmX2Spawner
+ObjectTemplate.setObjectTemplate 1 RocketEffectPCO10cmX2
+ObjectTemplate.setObjectTemplate 2 RocketEffectPCO10cmX2
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** RocketEffectPCO10cmX2 ***
+ObjectTemplate.create PlayerControlObject RocketEffectPCO10cmX2
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 1 e_RocketTailFume 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 10/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../PenetrateExplosion/Sounds/RocketEngine.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** RocketEffectPCO10cmX3Spawner *** 
+ObjectTemplate.create ObjectSpawner RocketEffectPCO10cmX3Spawner
+ObjectTemplate.setObjectTemplate 1 RocketEffectPCO10cmX3
+ObjectTemplate.setObjectTemplate 2 RocketEffectPCO10cmX3
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** RocketEffectPCO10cmX3 ***
+ObjectTemplate.create PlayerControlObject RocketEffectPCO10cmX3
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 1 e_RocketTailFume 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 10/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/5/0
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../PenetrateExplosion/Sounds/RocketEngine.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion9cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion9cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion9cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion9cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion9cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion9cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 10
+ObjectTemplate.explosionDamage 4
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_WoodExplMedRocket 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion10cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion10cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion10cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion10cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion10cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion10cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 14
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion10cmHESHSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion10cmHESHSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion10cmHESH
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion10cmHESH
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion10cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion10cmHESH
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 6.3
+ObjectTemplate.explosionDamage 16
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_signalpistol 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion12cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion12cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion12cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion12cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion12cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion12cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 16
+ObjectTemplate.explosionDamage 6.3
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion13cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion13cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion13cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion13cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion13cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion13cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 18
+ObjectTemplate.explosionDamage 6.9
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion15cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion15cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion15cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion15cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion15cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion15cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 20
+ObjectTemplate.explosionDamage 8.2
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploMega 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileLarge.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion20cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion20cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion20cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion20cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion20cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion20cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 26
+ObjectTemplate.explosionDamage 11.5
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16189,8 +17226,6 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
 rem ObjectTemplate.addArmorEffect 0 e_ExploHESHscrap200mm 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ExploMega 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -16202,32 +17237,43 @@ ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileLarge.ssc
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
+
+rem *** PenetrateExplosion20cmNoSoundSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion20cmNoSoundSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion20cmNoSound
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion20cmNoSound
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
 rem *** PenetrateExplosion20cmNoSound ***
 ObjectTemplate.create PlayerControlObject PenetrateExplosion20cmNoSound
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
 ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.explosionRadius 25
-ObjectTemplate.explosionDamage 10
+ObjectTemplate.explosionRadius 26
+ObjectTemplate.explosionDamage 11.5
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16239,8 +17285,6 @@ ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 6
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
-rem ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -16251,24 +17295,96 @@ ObjectTemplate.addTemplate PenetrateExplosion_Engine
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
-rem *** PenetrateExplosion36cm ***
-ObjectTemplate.create PlayerControlObject PenetrateExplosion36cm
+
+rem *** PenetrateExplosion20cmRocketSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion20cmRocketSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion20cmRocket
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion20cmRocket
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion20cmRocket ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion20cmRocket
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 26
+ObjectTemplate.explosionDamage 11.5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 9
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 1 e_RocketTailFumeLong 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploGiga 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../PenetrateExplosion/Sounds/RocketEngine.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion28cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion28cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion28cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion28cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion28cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion28cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
@@ -16276,7 +17392,7 @@ ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 35
-ObjectTemplate.explosionDamage 12
+ObjectTemplate.explosionDamage 17.3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16290,8 +17406,6 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
 rem ObjectTemplate.addArmorEffect 0 e_ExploHESHscrap350mm 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ExploGiga 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -16303,24 +17417,35 @@ ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileHuge.ssc
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
-rem *** PenetrateExplosion36cm ***
-ObjectTemplate.create PlayerControlObject PenetrateExplosion36cmNoSound
+
+rem *** PenetrateExplosion28cmRocketSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion28cmRocketSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion28cmRocket
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion28cmRocket
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion28cmRocket ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion28cmRocket
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
@@ -16328,7 +17453,7 @@ ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 35
-ObjectTemplate.explosionDamage 12
+ObjectTemplate.explosionDamage 17.3
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16340,8 +17465,128 @@ ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 9
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
-rem ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 1 e_RocketTailFumeLong 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploGiga 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../PenetrateExplosion/Sounds/RocketEngine.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion36cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion36cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion36cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion36cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion36cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion36cm
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 44
+ObjectTemplate.explosionDamage 23.4
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 9
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+rem ObjectTemplate.addArmorEffect 0 e_ExploHESHscrap350mm 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExploGiga 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileHuge.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion36cmNoSoundSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion36cmNoSoundSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion36cmNoSound
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion36cmNoSound
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion36cm ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion36cmNoSound
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 44
+ObjectTemplate.explosionDamage 23.4
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 9
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -16352,32 +17597,43 @@ ObjectTemplate.addTemplate PenetrateExplosion_Engine
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
+
+rem *** PenetrateExplosion36cmVisibleSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion36cmVisibleSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion36cmVisible
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion36cmVisible
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
 rem *** PenetrateExplosion36cmVisible ***
 ObjectTemplate.create PlayerControlObject PenetrateExplosion36cmVisible
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
 ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.explosionRadius 35
-ObjectTemplate.explosionDamage 12
+ObjectTemplate.explosionRadius 44
+ObjectTemplate.explosionDamage 23.4
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16404,32 +17660,43 @@ ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileHuge.ssc
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_ArtyShellBattleship.tga"
+
+
+rem *** PenetrateExplosion40cmSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion40cmSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion40cm
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion40cm
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
 
 rem *** PenetrateExplosion40cm ***
 ObjectTemplate.create PlayerControlObject PenetrateExplosion40cm
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.cullRadiusScale 9999
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 0
 ObjectTemplate.drag 2
 ObjectTemplate.mass 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.explosionRadius 40
-ObjectTemplate.explosionDamage 14
+ObjectTemplate.explosionRadius 48
+ObjectTemplate.explosionDamage 26.5
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.0
 ObjectTemplate.exitTimer 1
@@ -16443,8 +17710,6 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
 rem ObjectTemplate.addArmorEffect 0 e_ExploHESHscrap350mm 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ExploGiga 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
-rem ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -16456,13 +17721,6 @@ ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileHuge.ssc
 rem ----------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
 ObjectTemplate.GUIIndex 79
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_25mmAA.tga"
-ObjectTemplate.setVehicleIconPos 68/49
-ObjectTemplate.setNumberOfWeaponIcons 2
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_25mmType96.tga"
-ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
@@ -18923,6 +20181,7 @@ rem *** TimeLimitedSpawn83
 
 rem *** TimeLimitedSpawn64 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn64
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -18983,6 +20242,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn65 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn65
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19043,6 +20303,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn66 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn66
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19104,6 +20365,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn67 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn67
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19165,6 +20427,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn68 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn68
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19225,6 +20488,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn69 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn69
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19285,6 +20549,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn70 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn70
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19345,6 +20610,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn71 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn71
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19405,6 +20671,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn72 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn72
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19465,6 +20732,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn73 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn73
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19525,6 +20793,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn74 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn74
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19585,6 +20854,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn75 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn75
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19645,6 +20915,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn76 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn76
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19705,6 +20976,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn77 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn77
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19765,6 +21037,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn78 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn78
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19825,6 +21098,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn79 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn79
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19885,6 +21159,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn80 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn80
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -19945,6 +21220,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn81 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn81
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -20005,6 +21281,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn82 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn82
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -20065,6 +21342,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn83 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn83
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4
@@ -20125,6 +21403,7 @@ ObjectTemplate.setSpawnAsParaTroper 0
 
 rem *** TimeLimitedSpawn84 ***
 ObjectTemplate.create PlayerControlObject TimeLimitedSpawn84
+rem ===== IS_MOTHER_PCO = FALSE
 ObjectTemplate.setNetworkableInfo TimeLimitedSpawnBodyInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 4

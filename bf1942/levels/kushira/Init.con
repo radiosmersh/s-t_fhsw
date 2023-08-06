@@ -3,18 +3,19 @@ rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
 rem *********************************************
 ShaderManager.setTextureParam envmap bf1942\levels\kushira\Textures\ENVMAP_G_.rcm
 renderer.globalLodPercent 1
-renderer.globalAmbientColor 0.050000/0.050000/0.070000
-renderer.ambientColor 0.120000/0.120000/0.120000
-renderer.diffuseColor 0.400000/0.380000/0.350000
-renderer.specularColor 0.300000/0.300000/0.300000
-renderer.vertexFogEnable 1
-renderer.fogColorVec 0.750000/0.800000/0.860000
-renderer.animatedMeshAmbientColor 0.15
+renderer.globalAmbientColor .15/.15/.15
+renderer.ambientColor .04/.02/.03
+renderer.diffuseColor .4/.35/.2
+renderer.specularColor .3/.3/.3
+renderer.animatedMeshAmbientColor 0.2
+renderer.vertexFogEnable 1 
+renderer.fogColorVec .409441/.380392/.327451
 
 textureManager.alternativePath bf1942/levels/kushira/Textures
 textureManager.alternativePath bf1942/levels/kushira/Texture
 textureManager.alternativePath Texture/SPECIAL_JAP_MAINLAND_47SQUADRON
 textureManager.alternativePath Texture/SPECIAL_JAP_ARTILLERY_GREEN
+textureManager.alternativePath Texture/SPECIAL_JAP_TANK_37REGIMENT
 textureManager.alternativePath Texture/SPECIAL_JAP_TANK_GREEN
 textureManager.alternativePath Texture/CAMO
 textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1944_SPRING

@@ -12,8 +12,8 @@ renderer.animatedMeshAmbientColor 0.3
 textureManager.alternativePath Texture/SPECIAL_TurboWrench
 textureManager.alternativePath Texture/GENERAL_BRIT_NAVY
 textureManager.alternativePath Texture/SPECIAL_GER_UNIFORM_KIREGSMARINE
-textureManager.alternativePath Texture/Special_skysrheinuebung
-textureManager.alternativePath Texture/LEVELS/rheinuebung
+textureManager.alternativePath Texture\Special_skys\rheinuebung
+textureManager.alternativePath Texture\LEVELS\rheinuebung
 
 shadow.shadowColor 0.4
 

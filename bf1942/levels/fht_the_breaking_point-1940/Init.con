@@ -97,3 +97,5 @@ rem *** Set team 1 ***
 game.setBeforeSpawnCameraPosition 1 1781.000000/84.000000/118.000000
 rem *** Set team 2 ***
 game.setBeforeSpawnCameraPosition 2 423.000000/54.000000/1520.000000
+
+run objects/objects

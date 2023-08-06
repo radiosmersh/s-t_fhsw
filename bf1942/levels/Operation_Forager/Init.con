@@ -59,10 +59,13 @@ game.setKit 1 4 5Jap_EngineerArisakaExpack
 game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1USMC_OfficerGreasegunSmoke3RD44
 game.setKit 2 1 2USMC_AssaultGarand
-game.setKit 2 2 3USMC_TankhunterGarand
-rem game.setKit 2 3 4USMC_SupportBAR
-game.setKit 2 3 4Us_OfficerThompson
-game.setKit 2 4 5USMC_RandomM1_M2CarbineWinchester
+game.setKit 2 2 3Us_OfficerThompson
+game.setKit 2 3 4Us_TankhunterGarandSocks
+game.setKit 2 4 5US_TankCommanderColt
+
+rem game.setKit 2 2 3USMC_TankhunterGarand
+rem game.setKit 2 3 4Us_OfficerThompson
+rem game.setKit 2 4 5USMC_RandomM1_M2CarbineWinchester
 
 game.setActiveCombatArea 120 200 650 650
 

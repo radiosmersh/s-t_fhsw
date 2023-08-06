@@ -49,12 +49,12 @@ game.setTeamSkin 1 GermanSoldier
 game.setKit 1 0 1German_OfficerMp40Smoke3RMarker
 game.setKit 1 1 2German_AssaultG43
 game.setKit 1 2 3German_AssaultK98
-game.setKit 1 3 4German_TankhunterMp40
+game.setKit 1 3 4German_SupportMg34
 game.setKit 1 4 5German_EngineerK98
 
 
 game.setTeamSkin 2 FrenchSoldier
-game.setKit 2 0 1Fre_OfficerMas38
+game.setKit 2 0 1Fre_OfficerMas38Smoke3R
 game.setKit 2 1 2Fre_AssaultGarand
 game.setKit 2 2 3Fre_ATBoysMk2
 game.setKit 2 3 4Fre_SupportBren

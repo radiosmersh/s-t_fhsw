@@ -15,7 +15,7 @@ textureManager.alternativePath Texture/Levels/Caen
 textureManager.alternativePath bf1942/Levels/Liberation_of_Caen/Textures
 textureManager.alternativePath Texture/GENERAL_Canadian
 textureManager.alternativePath Texture/Canadian
-textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1944_FALL
 
 
 shadow.shadowColor 0.5
@@ -26,9 +26,10 @@ Game.spawnPlayers 1
 game.setTeamSkin 1 GermanSoldier
 game.setKit 1 0 1German_AssaultK98KamEg
 game.setKit 1 1 2German_AssaultK98
-game.setKit 1 2 3German_ATRandomPzf2
+game.setKit 1 2 3German_ATRandomPzf3
+rem game.setKit 1 2 3German_ATRandomPzf2
 rem game.setKit 1 3 4German_OfficerMp40Smoke2RMarker
-game.setKit 1 3 4German_OfficerMp40Smoke2RMarker
+game.setKit 1 3 4German_OfficerMp40Smoke2RMarkerD
 game.setKit 1 4 5German_EngineerK98
 
 game.setTeamSkin 2 CanadianSoldier

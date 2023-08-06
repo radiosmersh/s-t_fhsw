@@ -6,6 +6,17 @@ randomStartPitch 0.05 / 0.0
 dopplerOff
 priority 10
 
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1	
+endEffect
+
 
 load @ROOT/Sound/@RTD/w_svd_fire_mono2.wav
 minDistance 20
@@ -13,3 +24,14 @@ randomStartPitch 0.05 / 0.0
 dopplerOff
 priority 10
 volume 0.5
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1	
+endEffect
