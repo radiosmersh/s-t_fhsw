@@ -1,0 +1,37 @@
+raytracer.init
+raytracer.ambientIntensity 0.05
+raytracer.blockSize 16
+raytracer.sampleOffset 0.05
+
+rem *** 1 == Trace only the nearest 256x256 meter patch.
+rem *** 0 == Trace all patches.
+raytracer.OnlyNearest 0
+
+rem *** < 0, trace all pixels
+rem *** Else, number of meters from moving free camera to trace the shadows. Preview tool.
+raytracer.shadowsNearCamera -10.0
+
+raytracer.light.create
+raytracer.light.direction 0.783000/0.380000/-0.490000
+raytracer.light.selfshadowing 1
+raytracer.light.objectShadows 0
+raytracer.light.shadowIntensity 1
+raytracer.light.intensity 0.35
+raytracer.light.softness 1.0
+raytracer.light.fov 130
+raytracer.light.viewDistance 200
+
+raytracer.light.create
+rem **** Should be sun direction ***
+raytracer.light.direction 0.783000/0.380000/-0.490000
+raytracer.light.selfshadowing 1
+raytracer.light.objectShadows 1
+raytracer.light.shadowIntensity 1
+raytracer.light.intensity 0.6
+raytracer.light.softness 0.0
+raytracer.light.fov 8
+raytracer.light.viewDistance 500
+
+
+raytracer.addIgnoreObject terrain
+raytracer.addIgnoreObject track

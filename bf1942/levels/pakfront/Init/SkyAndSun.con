@@ -1,0 +1,40 @@
+rem *********************************************
+rem Created by Battlecraft 1942.  Copyright (c)2003,2004 Digital Illusions CE
+rem *********************************************
+TextureManager.mipmaps 0
+
+ObjectTemplate.create LensFlare TSun
+ObjectTemplate.setLensFlareCount 5
+ObjectTemplate.setBackFlareCount 0
+ObjectTemplate.setCoronaCount 2
+ObjectTemplate.initLensFlares
+ObjectTemplate.setVisibilityAngleDeg 360
+
+Object.create TSun
+Object.isSaveable 0
+Object.name sun
+ObjectTemplate.setflarefadeall 0.1
+ObjectTemplate.setcoronafadeall 0.3
+
+GeometryTemplate.create StandardMesh SkyBox
+GeometryTemplate.file Sky_Bocage_m1
+Sky.initSky
+
+Sky.addCloud
+Cloud.setName cloud_0
+Cloud.setSrcBlend BMSourceAlpha
+Cloud.setDstBlend BMInvSourceAlpha
+Cloud.setTexScale 8
+Cloud.setSpeed -0.03 0.015
+Cloud.setHeight 3500
+
+Sky.changeOfsCloudHeight 2500
+Sky.changeOfsCloudDist 333
+Sky.setCloudFog 0
+
+Sky.setSun sun
+sky.changeOfsSkyHeight 150
+rem sky.setRotAngle 180
+sky.sunLightDirectionVec -0.191000/0.450000/-0.873000
+TextureManager.mipmaps 1
+

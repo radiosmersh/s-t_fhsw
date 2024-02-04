@@ -1,0 +1,40 @@
+rem
+rem ******** Example of a terrain shadow creation script.
+rem
+
+GeometryTemplate.setActive patchGeometry
+rem *** 4.0 is 4 pixels per meter.
+GeometryTemplate.shadowPrecision 4
+
+raytracer.init
+raytracer.ambientIntensity 0.3
+raytracer.blockSize 16
+
+rem *** 1 == Trace only the nearest terrain patch.
+rem *** 0 == Trace all patches.
+raytracer.OnlyNearest 0
+
+rem *** < 0, trace all pixels
+rem *** Else, number of meters from moving free camera to trace the shadows. Preview tool.
+raytracer.shadowsNearCamera -10.0
+
+raytracer.light.create
+rem **** Should be sun direction ***
+raytracer.light.direction 0.628/0.661/-0.41
+raytracer.light.selfshadowing 1
+raytracer.light.objectShadows 1
+raytracer.light.shadowIntensity 1
+raytracer.light.intensity 1
+raytracer.light.fov 2
+raytracer.light.viewDistance 500
+raytracer.light.softness 0.0
+
+raytracer.light.create
+raytracer.light.direction 0/1/0
+raytracer.light.selfshadowing 0
+raytracer.light.objectShadows 1
+raytracer.light.shadowIntensity 0.8
+raytracer.light.intensity 0
+raytracer.light.fov 45
+raytracer.light.viewDistance 20
+raytracer.light.softness 0.0
