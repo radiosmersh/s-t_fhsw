@@ -91,7 +91,7 @@ rem pen 120mm
 
 rem 345RCL_HESH
 rem ID:4 linked to 3
-pen 180mm
+rem pen 180mm
 
 ObjectTemplate.create HandFireArms 345RCL
 ObjectTemplate.networkableInfo HandFireArmsInfo
@@ -265,8 +265,9 @@ ObjectTemplate.addTemplate 345RCLSimple
 ObjectTemplate.create HandFireArms 345RCL_HESH
 ObjectTemplate.networkableInfo HandFireArmsInfo
 ObjectTemplate.aiTemplate 345RCLRPG
-ObjectTemplate.itemIndex 4
-ObjectTemplate.setWeaponLink 3
+ObjectTemplate.itemIndex 3
+rem ObjectTemplate.itemIndex 4
+rem ObjectTemplate.setWeaponLink 3
 ObjectTemplate.projectileTemplate RCL345_HESH_Projectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
@@ -451,26 +452,75 @@ ObjectTemplate.radius 22
 ObjectTemplate.ForceOnExplosion 80
 ObjectTemplate.damageType 1
 ObjectTemplate.mass 1
-ObjectTemplate.material 814
+ObjectTemplate.material 70
 ObjectTemplate.material2 607
 ObjectTemplate.damageType 1
 ObjectTemplate.endEffectTemplate e_ExploMega
 ObjectTemplate.noFFSound 1
-ObjectTemplate.isSticky 1
-ObjectTemplate.addTemplate PenetrateExplosion36cmNoSoundSpawner
-ObjectTemplate.setPosition 1/0/1
-ObjectTemplate.addTemplate PenetrateExplosion36cmNoSoundSpawner
-ObjectTemplate.setPosition 1/0/-1
-ObjectTemplate.addTemplate PenetrateExplosion36cmNoSoundSpawner
-ObjectTemplate.setPosition -1/0/1
-ObjectTemplate.addTemplate PenetrateExplosion36cmNoSoundSpawner
-ObjectTemplate.setPosition -1/0/-1
-ObjectTemplate.addTemplate PenetrateExplosion36cmNoSoundSpawner
-ObjectTemplate.setPosition 0/1/0
-ObjectTemplate.addTemplate PenetrateExplosion36cmNoSoundSpawner
+rem ObjectTemplate.isSticky 1
+ObjectTemplate.addTemplate 50lbsExplosivePenetrateExplosionSpawner
 ObjectTemplate.setPosition 0/-1/0
+ObjectTemplate.addTemplate 50lbsExplosivePenetrateExplosionSpawner
+ObjectTemplate.setPosition 0/0/1
 
 
+rem *** 50lbsExplosivePenetrateExplosionSpawner *** 
+ObjectTemplate.create ObjectSpawner 50lbsExplosivePenetrateExplosionSpawner
+ObjectTemplate.setObjectTemplate 1 50lbsExplosivePenetrateExplosion
+ObjectTemplate.setObjectTemplate 2 50lbsExplosivePenetrateExplosion
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** 50lbsExplosivePenetrateExplosion ***
+ObjectTemplate.create PlayerControlObject 50lbsExplosivePenetrateExplosion
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 22
+ObjectTemplate.explosionDamage 6
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploGiga 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
 
 rem ===== EOF =====
 rem ============================================================================
@@ -1074,7 +1124,7 @@ rem ============================================================================
 rem ===== COMPRESS = COMMON
 ObjectTemplate.create HandFireArms AmmoPackInfantryATGerman
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.itemIndex 4
+ObjectTemplate.itemIndex 5
 ObjectTemplate.projectileTemplate AmmoPackInfantryATGermanProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.projectileVisible 0
@@ -1653,7 +1703,7 @@ rem ============================================================================
 rem ===== COMPRESS = COMMON
 ObjectTemplate.create HandFireArms AmmoPackPanzerfaust
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.itemIndex 4
+ObjectTemplate.itemIndex 5
 ObjectTemplate.projectileTemplate AmmoPackPanzerfaustProjectile
 ObjectTemplate.projectilePosition 0/0/0.5
 ObjectTemplate.projectileVisible 0
@@ -1737,8 +1787,8 @@ ObjectTemplate.create SupplyDepot AmmoPackPanzerfaustSupplyDepot
 ObjectTemplate.radius 3
 ObjectTemplate.team 0
 ObjectTemplate.setHealth 0 0 0
-ObjectTemplate.addAmmoType 3 4 1.2 0
-ObjectTemplate.addAmmoType 4 4 1.2 0
+ObjectTemplate.addAmmoType 3 4 0.25 0
+ObjectTemplate.addAmmoType 4 4 0.25 0
 ObjectTemplate.workOnVehicles 0
 ObjectTemplate.workOnSoldiers 1
 ObjectTemplate.loadSoundScript ../../Common/Sounds/SupplyDepot.ssc
@@ -2117,7 +2167,7 @@ ObjectTemplate.fireOnce 1
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.ForceOnExplosion 2
 objectTemplate.aiTemplate T2HEATAI
-ObjectTemplate.AmmoType	2
+ObjectTemplate.AmmoType 7
 ObjectTemplate.setHasMag 1
 ObjectTemplate.autoReload 1
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -2188,7 +2238,7 @@ ObjectTemplate.fireOnce 1
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.ForceOnExplosion 2
 objectTemplate.aiTemplate T2HEATAI
-ObjectTemplate.AmmoType	2
+ObjectTemplate.AmmoType 7
 ObjectTemplate.setHasMag 1
 ObjectTemplate.autoReload 1
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -2260,7 +2310,7 @@ ObjectTemplate.fireOnce 1
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.ForceOnExplosion 2
 objectTemplate.aiTemplate T2HEATAI
-ObjectTemplate.AmmoType	2
+ObjectTemplate.AmmoType 7
 ObjectTemplate.setHasMag 1
 ObjectTemplate.autoReload 1
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -2627,7 +2677,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.769
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate ArisakaAI
+objectTemplate.aiTemplate Arisaka_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.altFireOnce 1
 
@@ -2967,7 +3017,7 @@ ObjectTemplate.fireOnce 1
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.ForceOnExplosion 2
 objectTemplate.aiTemplate T2HEATAI
-ObjectTemplate.AmmoType	2
+ObjectTemplate.AmmoType 7
 ObjectTemplate.setHasMag 1
 ObjectTemplate.autoReload 1
 ObjectTemplate.cantSelectWhenNoAmmo 1
@@ -3066,7 +3116,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.769
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate ArisakaAI
+objectTemplate.aiTemplate Arisaka_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.altFireOnce 1
 
@@ -3356,6 +3406,152 @@ ObjectTemplate.addTemplate AS44Simple
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = Auto5_BF1918
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh Auto5
+GeometryTemplate.file Auto5_bf1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 5
+GeometryTemplate.setLodDistance 3 8
+GeometryTemplate.setLodDistance 4 10
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Shad_Auto5
+GeometryTemplate.file Shad_Auto5_bf1
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Auto5_BF1918
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+ObjectTemplate.create HandFireArms Auto5
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 3
+ObjectTemplate.projectileTemplate ShotgunProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 5
+ObjectTemplate.numOfMag 9
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5.5
+rem ObjectTemplate.reloadtime 7
+ObjectTemplate.roundOfFire 5
+rem ObjectTemplate.roundOfFire 1.5
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate WinchesterAI
+rem ObjectTemplate.aiTemplate Auto5AI
+ObjectTemplate.zoomFov 0.7
+rem ObjectTemplate.zoomFov 0.8
+ObjectTemplate.altFireOnce 1
+
+ObjectTemplate.GUIIndex 3
+rem ObjectTemplate.GUIIndex 6
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/magbar_shotgun_empty_32x64.dds"
+ObjectTemplate.setAmmoBarFill "Ingame/magbar_shotgun_full_32x64.dds"
+ObjectTemplate.setAmmoBarSize 36
+ObjectTemplate.setAmmoBarPosX 6
+ObjectTemplate.setAmmoBarPosY -17
+ObjectTemplate.setAmmoBarTextPosX 5
+ObjectTemplate.setAmmoBarTextPosY 10
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+beginrem
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+endrem
+
+ObjectTemplate.addFireArmsPosition 0/0/0 1.3/-0.8/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.2/-0.75/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.55/1.0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.6/0.8/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.2/-1/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.1/0.35/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0.22/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.8/-1.2/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.1/-0.2/0
+
+ObjectTemplate.soldierZoomFov 0.6
+rem ObjectTemplate.soldierZoomFov 0.8
+ObjectTemplate.soldierZoomPosition -0.0015/-0.045/0
+ObjectTemplate.soldierCameraPosition -0.0015/-0.045/0
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+ObjectTemplate.setBlastAmmoCount 1
+
+rem *** Deviation Begin ***
+
+ObjectTemplate.velocity 300
+rem ObjectTemplate.velocity 358
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.56/0.64/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.3/0.3/0
+rem ObjectTemplate.setRecoilForceUp CRD_UNIFORM/2.0/2.0/0
+rem ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+rem ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 4.5 2.25 0.1
+rem ObjectTemplate.setFireDev 3.0 1.5 0.07
+ObjectTemplate.setDevMod 1.5 0.9 1.25
+ObjectTemplate.setMinDev 1.5
+ObjectTemplate.setTurnDev 2.5 0.1 0.1 0.4
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.5
+ObjectTemplate.setMiscDev 3.5 3.5 0.35
+beginrem
+ObjectTemplate.setFireDev 5 2.25 0.12
+ObjectTemplate.setDevMod 1.5 1 0.9
+ObjectTemplate.setMinDev 2
+ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
+ObjectTemplate.setSpeedDev 3.5 0.5 0.5 0.5
+ObjectTemplate.setMiscDev 18 8 0.35
+endrem
+
+rem *** Deviation End ***
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../Auto5_BF1918/Sounds/Auto5.ssc
+ObjectTemplate.createSkeleton animations/Auto5.ske
+ObjectTemplate.useSkeletonPartAsMain Auto5
+ObjectTemplate.addTemplate Auto5Lod
+
+ObjectTemplate.addTemplate e_MuzzSG44
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+rem ObjectTemplate.addTemplate e_MuzzShotgun
+ObjectTemplate.setPosition 0/0.05/0.545
+ObjectTemplate.setRotation 0/0/0
+
+rem ObjectTemplate.addTemplate e_shell_Shotgun
+rem ObjectTemplate.setPosition 0/0.13/0.03
+rem ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create SimpleObject Auto5Simple
+ObjectTemplate.geometry Auto5
+
+ObjectTemplate.create AnimatedBundle Auto5Complex
+ObjectTemplate.geometry Auto5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Auto5.ske
+
+ObjectTemplate.create LodObject Auto5Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Auto5Complex
+ObjectTemplate.addTemplate Auto5Simple
+rem ===== EOF =====
+rem ============================================================================
 rem folder = Bar1918
 rem sauce = Objects.con
 rem ============================================================================
@@ -3471,7 +3667,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 6
-objectTemplate.aiTemplate BarAI
+objectTemplate.aiTemplate Bar_semiAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.08/0.03/-0.04
@@ -3575,7 +3771,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 10.8
-objectTemplate.aiTemplate BarAI
+objectTemplate.aiTemplate Bar_ID2AI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.08/0.03/-0.04
@@ -3741,7 +3937,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 10.8
-objectTemplate.aiTemplate BarAI
+objectTemplate.aiTemplate Bar_ID2AI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.08/0.03/-0.04
@@ -3818,7 +4014,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 6
-objectTemplate.aiTemplate BarAI
+rem objectTemplate.aiTemplate BarAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.08/0.03/-0.04
@@ -3889,7 +4085,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 10.8
-objectTemplate.aiTemplate BarAI
+rem objectTemplate.aiTemplate BarAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.08/0.03/-0.04
@@ -3963,7 +4159,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 5.8
-objectTemplate.aiTemplate BarAI
+rem objectTemplate.aiTemplate BarAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.08/0.03/-0.04
@@ -4037,7 +4233,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 10.8
-objectTemplate.aiTemplate BarAI
+rem objectTemplate.aiTemplate BarAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.08/0.03/-0.04
@@ -4581,7 +4777,7 @@ rem ObjectTemplate.velocity 124
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../Bayonet/Sounds/BayonetWinchester.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.045/0
-ObjectTemplate.aiTemplate ai_BajonetRifle
+ObjectTemplate.aiTemplate ai_BajonetRifle_ID3
 
 ObjectTemplate.addFireArmsPosition 0.35/0.4/0.05 0/0/0
 ObjectTemplate.addFireArmsPosition 0.15/-0.2/0.05 0/0/0
@@ -5078,7 +5274,7 @@ ObjectTemplate.addTemplate BazookaSimple
 
 ObjectTemplate.create HandFireArms Bazooka_HE4sec
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.aiTemplate BazookaRPG
+ObjectTemplate.aiTemplate BazookaRPG_HE
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.projectileTemplate Bazooka_HE4sec_Projectile
@@ -5153,7 +5349,7 @@ ObjectTemplate.addTemplate BazookaSimple
 
 ObjectTemplate.create HandFireArms Bazooka_Smoke
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.aiTemplate BazookaRPG
+ObjectTemplate.aiTemplate BazookaRPG_Smoke
 ObjectTemplate.itemIndex 5
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.projectileTemplate Bazooka_Smoke_Projectile
@@ -5703,6 +5899,7 @@ include ../Boys/Boys.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
+objectTemplate.aiTemplate BoysAI
 
 ObjectTemplate.create HandFireArms Boys_Lay
 include ../Boys/Boys.inc
@@ -5809,6 +6006,7 @@ rem BoysMk2_Lay
 
 ObjectTemplate.create HandFireArms BoysMk2
 include ../BoysMk2/BoysMk2.inc
+objectTemplate.aiTemplate BoysMk2AI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -6142,7 +6340,7 @@ ObjectTemplate.numOfMag 10
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 8.33
-objectTemplate.aiTemplate brenAI
+rem objectTemplate.aiTemplate brenAI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.zoomFov 0.7
@@ -6430,7 +6628,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.83
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate CarcanoAI
+objectTemplate.aiTemplate Carcano_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.altFireOnce 1
@@ -8141,7 +8339,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_ArisakaProjectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_ArisakaAI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8218,7 +8416,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_AS44Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_AS44AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8295,7 +8493,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_K98Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_K98AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8372,7 +8570,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_Mas36Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_Mas36AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8449,7 +8647,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_Mas38Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_Mas38AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8526,7 +8724,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_MG42Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_MG42AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8603,7 +8801,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_MorsProjectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_MorsAI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8680,7 +8878,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_MP18Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_MP18AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8757,7 +8955,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_MP40Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_MP40AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8834,7 +9032,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_NagantProjectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_NagantAI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8911,7 +9109,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_PPShProjectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_PPShAI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -8988,7 +9186,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_Sg44Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_Sg44AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -9065,7 +9263,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_Type100Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_Type100AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -9142,7 +9340,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_Wz29Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_Wz29AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -9219,7 +9417,7 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.projectileTemplate Deploy_Cavalry_Wz35Projectile
 ObjectTemplate.projectilePosition 0/1/1
 ObjectTemplate.hasDynamicShadow 1
-objectTemplate.aiTemplate Deploy_Cavalry_Wz35AI
+objectTemplate.aiTemplate Deploy_CavalryAI
 ObjectTemplate.projectileVisible 0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
@@ -10641,7 +10839,7 @@ ObjectTemplate.setAmomBarPosY -11
 ObjectTemplate.setAmomBarTextPosX 8
 ObjectTemplate.setAmomBarTextPosY 4
 ObjectTemplate.setCrossHairType CHTCrossHair
-objectTemplate.aiTemplate DPAI
+rem objectTemplate.aiTemplate DPAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.7
@@ -12244,7 +12442,7 @@ ObjectTemplate.setGoBackOnRecoil 0
 
 ObjectTemplate.setFireDev 5 2.25 0.144
 ObjectTemplate.setDevMod 1.5 1.0 0.9
-ObjectTemplate.setMinDev 0.55
+ObjectTemplate.setMinDev 0.45
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.42
 ObjectTemplate.setSpeedDev 8.0 0.5 0.5 0.525
 ObjectTemplate.setMiscDev 18 8.0 0.385
@@ -12438,8 +12636,9 @@ ObjectTemplate.projectileTemplate G43GrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
@@ -12454,8 +12653,8 @@ ObjectTemplate.addFireArmsPosition -0.01/-0.03/0.12 0/0/0
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
 ObjectTemplate.altFireOnce 1
-rem objectTemplate.UseScope 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.timeToNotAllowChange 0.25
+ObjectTemplate.FireDelay 0.8
 
 Rem *** Deviation Begin *****
 
@@ -12465,12 +12664,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.4/0.4/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 3.0 1.5 0.035
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
-ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.075
-ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.15
-ObjectTemplate.setMiscDev 3.5 3.5 0.075
+ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
+ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
+ObjectTemplate.setMiscDev 18 8 0.35
 
 Rem *** Deviation  End *****
 
@@ -12483,8 +12682,7 @@ ObjectTemplate.setAmmoBarFill "Ingame/magbar_BAR_full_32x64.tga"
 ObjectTemplate.setAmmoBarSize 48
 ObjectTemplate.setAmomBarPosX 5
 ObjectTemplate.setAmomBarPosY -11
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_G43.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -12594,8 +12792,9 @@ ObjectTemplate.projectileTemplate GarandGrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 5
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
@@ -12610,7 +12809,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
 ObjectTemplate.ejectClipTime 0.6
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 ObjectTemplate.altFireOnce 1
 
@@ -12621,8 +12820,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -12641,8 +12840,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_M1Garand.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -14385,7 +14583,7 @@ ObjectTemplate.numOfMag 12
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 5.4
 ObjectTemplate.roundOfFire 7.5
-objectTemplate.aiTemplate HF_31M_MGAI
+rem objectTemplate.aiTemplate HF_31M_MGAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.04/0/0
@@ -14706,7 +14904,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.769
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate HF_35M_rifleAI
+objectTemplate.aiTemplate HF_35M_rifle_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.altFireOnce 1
@@ -14834,7 +15032,7 @@ ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.projectileTemplate HF_35M_rifleGrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
@@ -14853,7 +15051,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 
 objectTemplate.GUIIndex 11
@@ -14865,8 +15063,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_35M.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -14879,8 +15076,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 1.5 1.25 0.9
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -15778,6 +15975,7 @@ rem *** HF_S18-100HE_SC_Lay
 ObjectTemplate.create HandFireArms HF_S18-100AP
 include ../HF_S18-100/HF_S18-100AP.inc
 include ../HF_S18-100/HF_S18-100.inc
+objectTemplate.aiTemplate HF_S18-100APAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -15785,6 +15983,7 @@ ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
 ObjectTemplate.create HandFireArms HF_S18-100HE
 include ../HF_S18-100/HF_S18-100HE.inc
 include ../HF_S18-100/HF_S18-100.inc
+objectTemplate.aiTemplate HF_S18-100HEAI
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
@@ -15811,17 +16010,23 @@ ObjectTemplate.setSpeedDev 36 512 512 0.35
 ObjectTemplate.create HandFireArms HF_S18-100AP_SC
 include ../HF_S18-100/HF_S18-100AP_SC.inc
 include ../HF_S18-100/HF_S18-100.inc
+objectTemplate.aiTemplate HF_S18-100APAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-100HE_SC
 include ../HF_S18-100/HF_S18-100HE_SC.inc
 include ../HF_S18-100/HF_S18-100.inc
+objectTemplate.aiTemplate HF_S18-100HEAI
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-100AP_SC_Lay
 include ../HF_S18-100/HF_S18-100AP_SC.inc
@@ -15830,6 +16035,8 @@ ObjectTemplate.itemIndex 7
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 0.9 0.9 0.9
 ObjectTemplate.setSpeedDev 36 512 512 0.35
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-100HE_SC_Lay
 include ../HF_S18-100/HF_S18-100HE_SC.inc
@@ -15838,7 +16045,8 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 0.9 0.9 0.9
 ObjectTemplate.setSpeedDev 36 512 512 0.35
-
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 
 
@@ -16013,6 +16221,7 @@ rem *** HF_S18-1000HE_SC_Lay
 ObjectTemplate.create HandFireArms HF_S18-1000AP
 include ../HF_S18-1000/HF_S18-1000AP.inc
 include ../HF_S18-1000/HF_S18-1000.inc
+objectTemplate.aiTemplate HF_S18-1000APAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -16020,6 +16229,7 @@ ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
 ObjectTemplate.create HandFireArms HF_S18-1000HE
 include ../HF_S18-1000/HF_S18-1000HE.inc
 include ../HF_S18-1000/HF_S18-1000.inc
+objectTemplate.aiTemplate HF_S18-1000HEAI
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
@@ -16046,17 +16256,23 @@ ObjectTemplate.setSpeedDev 36 512 512 0.35
 ObjectTemplate.create HandFireArms HF_S18-1000AP_SC
 include ../HF_S18-1000/HF_S18-1000AP_SC.inc
 include ../HF_S18-1000/HF_S18-1000.inc
+objectTemplate.aiTemplate HF_S18-1000APAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-1000HE_SC
 include ../HF_S18-1000/HF_S18-1000HE_SC.inc
 include ../HF_S18-1000/HF_S18-1000.inc
+objectTemplate.aiTemplate HF_S18-1000HEAI
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-1000AP_SC_Lay
 include ../HF_S18-1000/HF_S18-1000AP_SC.inc
@@ -16065,6 +16281,8 @@ ObjectTemplate.itemIndex 7
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 0.9 0.9 0.9
 ObjectTemplate.setSpeedDev 36 512 512 0.35
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-1000HE_SC_Lay
 include ../HF_S18-1000/HF_S18-1000HE_SC.inc
@@ -16073,7 +16291,8 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 0.9 0.9 0.9
 ObjectTemplate.setSpeedDev 36 512 512 0.35
-
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 
 rem *** SimpleObjects
@@ -16241,6 +16460,7 @@ rem *** HF_S18-1100HE_SC_Lay
 ObjectTemplate.create HandFireArms HF_S18-1100AP
 include ../HF_S18-1000/HF_S18-1000AP.inc
 include ../HF_S18-1100/HF_S18-1100.inc
+objectTemplate.aiTemplate HF_S18-1100APFULLAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -16248,6 +16468,7 @@ ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
 ObjectTemplate.create HandFireArms HF_S18-1100HE
 include ../HF_S18-1000/HF_S18-1000HE.inc
 include ../HF_S18-1100/HF_S18-1100.inc
+objectTemplate.aiTemplate HF_S18-1100HEFULLAI
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
@@ -16275,17 +16496,23 @@ ObjectTemplate.setSpeedDev 36 512 512 0.35
 ObjectTemplate.create HandFireArms HF_S18-1100AP_SC
 include ../HF_S18-1000/HF_S18-1000AP_SC.inc
 include ../HF_S18-1100/HF_S18-1100.inc
+objectTemplate.aiTemplate HF_S18-1100APFULLAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-1100HE_SC
 include ../HF_S18-1000/HF_S18-1000HE_SC.inc
 include ../HF_S18-1100/HF_S18-1100.inc
+objectTemplate.aiTemplate HF_S18-1100HEFULLAI
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-1100AP_SC_Lay
 include ../HF_S18-1000/HF_S18-1000AP_SC.inc
@@ -16294,6 +16521,8 @@ ObjectTemplate.itemIndex 7
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 0.9 0.9 0.9
 ObjectTemplate.setSpeedDev 36 512 512 0.35
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 ObjectTemplate.create HandFireArms HF_S18-1100HE_SC_Lay
 include ../HF_S18-1000/HF_S18-1000HE_SC.inc
@@ -16302,6 +16531,8 @@ ObjectTemplate.itemIndex 8
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.setDevMod 0.9 0.9 0.9
 ObjectTemplate.setSpeedDev 36 512 512 0.35
+ObjectTemplate.ZoomFov 0.47
+ObjectTemplate.soldierZoomFov 0.5
 
 rem ===== EOF =====
 rem ============================================================================
@@ -16668,7 +16899,7 @@ ObjectTemplate.numOfMag 15
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 5.4
 ObjectTemplate.roundOfFire 15
-objectTemplate.aiTemplate JohnsonLMGAI
+rem objectTemplate.aiTemplate JohnsonLMGAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.6 
 ObjectTemplate.soldierZoomPosition -0.04/0/0
@@ -16921,7 +17152,7 @@ ObjectTemplate.setMiscDev 18 8 0.35
 Rem *** Deviation  End *****
 
 ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../K98/Sounds/k98sniper.ssc
+ObjectTemplate.loadSoundScript ../K98/Sounds/k98.ssc
 
 ObjectTemplate.createSkeleton animations/K98.ske
 ObjectTemplate.useSkeletonPartAsMain K98
@@ -17036,7 +17267,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.769
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate K98AI
+objectTemplate.aiTemplate K98_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.altFireOnce 1
@@ -17492,7 +17723,7 @@ ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.projectileTemplate k98GrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
@@ -17511,7 +17742,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 objectTemplate.GUIIndex 11
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -17522,8 +17753,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_K98.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -17535,8 +17765,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -17623,7 +17853,7 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate K98GrenadeAI
+objectTemplate.aiTemplate K98Grenade_HEATAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addFireArmsPosition 0.0/0.035/1.0 0/0/0
@@ -17722,7 +17952,7 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate K98GrenadeAI
+objectTemplate.aiTemplate K98Grenade_HEATAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addFireArmsPosition 0.0/0.035/1.0 0/0/0
@@ -19670,6 +19900,7 @@ ObjectTemplate.roundOfFire 1
 ObjectTemplate.GUIIndex 83
 ObjectTemplate.velocity 80
 ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.aiTemplate katanaAlt
 ObjectTemplate.addFireArmsPosition 0.6/-0.3/0.15 60/0/0
 ObjectTemplate.addFireArmsPosition 0.55/-0.3/0.15 55/0/0
 ObjectTemplate.addFireArmsPosition 0.5/-0.25/0.15 50/0/0
@@ -19776,7 +20007,7 @@ rem ObjectTemplate.addFireArmsPosition 0/0/0 140/160/0
 
 
 ObjectTemplate.GUIIndex 12
-ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setHudAmmoType ATAmmoBar
 ObjectTemplate.setAmmoIcon "Ammo/icon_kneemorter7sec.tga"
 ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "KneeMortar_Sight.tga"
@@ -19794,12 +20025,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0/0/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 6.0 0.65 0.3
-ObjectTemplate.setDevMod 3.0 0.9 0.9
+ObjectTemplate.setFireDev 8.0 10 0.3
+ObjectTemplate.setDevMod 2.0 0.9 0.9
 ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4.0 0.075 0.075 0.1
-ObjectTemplate.setSpeedDev 6.0 0.3 0.25 0.1
-ObjectTemplate.setMiscDev 6.0 5 0.1
+ObjectTemplate.setTurnDev 5.0 0.4 0.4 0.3
+ObjectTemplate.setSpeedDev 6.0 0.4 0.35 0.1
+ObjectTemplate.setMiscDev 18.0 8 0.3
 
 Rem *** Deviation  End *****
 
@@ -19876,7 +20107,7 @@ ObjectTemplate.setWeaponLink 5
 
 
 ObjectTemplate.GUIIndex 12
-ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setHudAmmoType ATAmmoBar
 ObjectTemplate.setAmmoIcon "Ammo/icon_kneemorterQuick.tga"
 ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "KneeMortar_Sight.tga"
@@ -19894,12 +20125,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0/0/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 6.0 0.65 0.3
-ObjectTemplate.setDevMod 3.0 0.9 0.9
+ObjectTemplate.setFireDev 8.0 10 0.3
+ObjectTemplate.setDevMod 2.0 0.9 0.9
 ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4.0 0.075 0.075 0.1
-ObjectTemplate.setSpeedDev 6.0 0.3 0.25 0.1
-ObjectTemplate.setMiscDev 6.0 5 0.1
+ObjectTemplate.setTurnDev 5.0 0.4 0.4 0.3
+ObjectTemplate.setSpeedDev 6.0 0.4 0.35 0.1
+ObjectTemplate.setMiscDev 18.0 8 0.3
 
 Rem *** Deviation  End *****
 
@@ -20084,12 +20315,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0/0/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 6.0 0.65 0.3
-ObjectTemplate.setDevMod 3.0 0.9 0.9
+ObjectTemplate.setFireDev 8.0 10 0.3
+ObjectTemplate.setDevMod 2.0 0.9 0.9
 ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4.0 0.075 0.075 0.1
-ObjectTemplate.setSpeedDev 6.0 0.3 0.25 0.1
-ObjectTemplate.setMiscDev 6.0 5 0.1
+ObjectTemplate.setTurnDev 5.0 0.4 0.4 0.3
+ObjectTemplate.setSpeedDev 6.0 0.4 0.35 0.1
+ObjectTemplate.setMiscDev 18.0 8 0.3
 
 Rem *** Deviation  End *****
 
@@ -20187,12 +20418,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0/0/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 6.0 0.65 0.3
-ObjectTemplate.setDevMod 3.0 0.9 0.9
+ObjectTemplate.setFireDev 8.0 10 0.3
+ObjectTemplate.setDevMod 2.0 0.9 0.9
 ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4.0 0.075 0.075 0.1
-ObjectTemplate.setSpeedDev 6.0 0.3 0.25 0.1
-ObjectTemplate.setMiscDev 6.0 5 0.1
+ObjectTemplate.setTurnDev 5.0 0.4 0.4 0.3
+ObjectTemplate.setSpeedDev 6.0 0.4 0.35 0.1
+ObjectTemplate.setMiscDev 18.0 8 0.3
 
 Rem *** Deviation  End *****
 
@@ -20296,12 +20527,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0/0/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 6.0 0.65 0.3
-ObjectTemplate.setDevMod 3.0 0.9 0.9
+ObjectTemplate.setFireDev 8.0 10 0.3
+ObjectTemplate.setDevMod 2.0 0.9 0.9
 ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4.0 0.075 0.075 0.1
-ObjectTemplate.setSpeedDev 6.0 0.3 0.25 0.1
-ObjectTemplate.setMiscDev 6.0 5 0.1
+ObjectTemplate.setTurnDev 5.0 0.4 0.4 0.3
+ObjectTemplate.setSpeedDev 6.0 0.4 0.35 0.1
+ObjectTemplate.setMiscDev 18.0 8 0.3
 
 Rem *** Deviation  End *****
 
@@ -20405,12 +20636,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0/0/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 6.0 0.65 0.3
-ObjectTemplate.setDevMod 3.0 0.9 0.9
+ObjectTemplate.setFireDev 8.0 10 0.3
+ObjectTemplate.setDevMod 2.0 0.9 0.9
 ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4.0 0.075 0.075 0.1
-ObjectTemplate.setSpeedDev 6.0 0.3 0.25 0.1
-ObjectTemplate.setMiscDev 6.0 5 0.1
+ObjectTemplate.setTurnDev 5.0 0.4 0.4 0.3
+ObjectTemplate.setSpeedDev 6.0 0.4 0.35 0.1
+ObjectTemplate.setMiscDev 18.0 8 0.3
 
 Rem *** Deviation  End *****
 
@@ -20514,12 +20745,12 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/0/0/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 0
 
-ObjectTemplate.setFireDev 6.0 0.65 0.3
-ObjectTemplate.setDevMod 3.0 0.9 0.9
+ObjectTemplate.setFireDev 8.0 10 0.3
+ObjectTemplate.setDevMod 2.0 0.9 0.9
 ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4.0 0.075 0.075 0.1
-ObjectTemplate.setSpeedDev 6.0 0.3 0.25 0.1
-ObjectTemplate.setMiscDev 6.0 5 0.1
+ObjectTemplate.setTurnDev 5.0 0.4 0.4 0.3
+ObjectTemplate.setSpeedDev 6.0 0.4 0.35 0.1
+ObjectTemplate.setMiscDev 18.0 8 0.3
 
 Rem *** Deviation  End *****
 
@@ -20724,7 +20955,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../KnifeAllies/Sounds/knife.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate KnifeAllies
+ObjectTemplate.aiTemplate KnifeAllies_ID2
 
 ObjectTemplate.zoomFov 0.2
 ObjectTemplate.altFireOnce 1
@@ -20844,7 +21075,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../KnifeAxis/Sounds/knife.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate KnifeAxis
+ObjectTemplate.aiTemplate KnifeAxis_ID2
 
 ObjectTemplate.zoomFov 0.2
 ObjectTemplate.altFireOnce 1
@@ -22018,7 +22249,7 @@ ObjectTemplate.reloadtime 9
 rem ObjectTemplate.reloadtime 2.5
 ObjectTemplate.roundOfFire 0.83
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate LebelAI
+objectTemplate.aiTemplate Lebel_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.GUIIndex 6
@@ -22380,7 +22611,7 @@ LodSelectorTemplate.addLodDistance 0.15
 
 ObjectTemplate.create HandFireArms M18_57mm_RLR_HE
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.aiTemplate M18_57mm_RLRRPG
+ObjectTemplate.aiTemplate M18_57mm_RLRRPG_HE
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.projectileTemplate M18RR_HE_Projectile
@@ -22473,7 +22704,7 @@ ObjectTemplate.geometry M18_57mm_RLR_HE_m1
 
 ObjectTemplate.create HandFireArms M18_57mm_RLR_Smoke
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.aiTemplate M18_57mm_RLRRPG
+ObjectTemplate.aiTemplate M18_57mm_RLRRPG_Smoke
 ObjectTemplate.itemIndex 5
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.projectileTemplate M18RR_Smoke_Projectile
@@ -22566,7 +22797,7 @@ ObjectTemplate.geometry M18_57mm_RLR_WP_m1
 
 ObjectTemplate.create HandFireArms M18_57mm_RLR_Canister
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.aiTemplate M18_57mm_RLRRPG
+ObjectTemplate.aiTemplate M18_57mm_RLRRPG_Canister
 ObjectTemplate.itemIndex 6
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.projectileTemplate M18RR_Canister_Projectile
@@ -23090,7 +23321,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4.0
 ObjectTemplate.roundOfFire 6
 rem ObjectTemplate.roundOfFire 4
-objectTemplate.aiTemplate M1GarandAI
+objectTemplate.aiTemplate M1Garand_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.fireOnce 1
@@ -23481,7 +23712,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 0
-objectTemplate.aiTemplate M2CarabineAI
+objectTemplate.aiTemplate M2CarabineFullAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7 
 ObjectTemplate.soldierZoomPosition -0.1/0.02/-0.04
@@ -23799,6 +24030,7 @@ rem M35_Lay
 
 ObjectTemplate.create HandFireArms M35
 include ../m35/m35.inc
+objectTemplate.aiTemplate M35AI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -24238,7 +24470,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.71
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate Mas36AI
+objectTemplate.aiTemplate Mas36_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.altFireOnce 1
@@ -24372,7 +24604,7 @@ ObjectTemplate.itemIndex 5
 ObjectTemplate.projectileTemplate Mas36GrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
@@ -24391,7 +24623,7 @@ ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
 ObjectTemplate.addFireArmsPosition -0.01/0.043/1.04 0/0/0
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 objectTemplate.GUIIndex 11
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -24402,8 +24634,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_Mas36.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -24415,8 +24646,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -24434,7 +24665,7 @@ ObjectTemplate.addTemplate Mas36GrenadeLod
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.05/0.84
+ObjectTemplate.setPosition 0/0.05/1.0
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -24888,7 +25119,7 @@ ObjectTemplate.numOfMag 6
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 15
-objectTemplate.aiTemplate Mg34LAI
+rem objectTemplate.aiTemplate Mg34LAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.1075/0.068/0.055
@@ -25285,7 +25516,7 @@ ObjectTemplate.numOfMag 6
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 20
-objectTemplate.aiTemplate Mg42HAI
+rem objectTemplate.aiTemplate Mg42HAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.112/0.0075/0.14
@@ -26681,7 +26912,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.83
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate MosinNagantAI
+objectTemplate.aiTemplate MosinNagant_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.altFireOnce 1
@@ -27377,23 +27608,6 @@ ObjectTemplate.addTemplate Mp40-IISimple
 
 rem ===== EOF =====
 rem ============================================================================
-rem folder = Mp40_II
-rem sauce = Objects.con
-rem ============================================================================
-rem ===== COMPRESS = COMMON
-rem Mp40_II
-rem 1000RPM
-
-rem ----------------------------------------------------------
-rem Firearm: Mp40_II
-rem ----------------------------------------------------------
-ObjectTemplate.create HandFireArms Mp40_II
-ObjectTemplate.itemIndex 3
-include ../Mp40_II/Mp40_II.inc
-ObjectTemplate.numOfMag 6
-
-rem ===== EOF =====
-rem ============================================================================
 rem folder = MP717(r)
 rem sauce = Geometries.con
 rem ============================================================================
@@ -27632,7 +27846,7 @@ ObjectTemplate.itemIndex 5
 ObjectTemplate.projectileTemplate NagantGrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
@@ -27650,7 +27864,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 objectTemplate.GUIIndex 11
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -27661,8 +27875,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_MosinNagant.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -27674,8 +27887,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -27752,6 +27965,84 @@ ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
 
+rem ===== EOF =====
+rem ============================================================================
+rem folder = NagantRevolver_BF1918
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh NagantRevolver
+GeometryTemplate.file nagant_revolver
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Shad_NagantRevolver
+GeometryTemplate.file nagant_revolver
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh NagantRevolverTrigger
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh NagantRevolverMantel
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh NagantRevolverHane
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+rem ===== EOF =====
+rem ============================================================================
+rem folder = NagantRevolver_BF1918
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+ObjectTemplate.create HandFireArms NagantRevolver
+include ../NagantRevolver_BF1918/NagantRevolver.inc
+ObjectTemplate.itemIndex 2
+ObjectTemplate.numOfMag 4
+
+ObjectTemplate.create AnimatedBundle NagantRevolverComplex
+ObjectTemplate.createSkeleton animations/NagantRevolver.ske
+ObjectTemplate.geometry NagantRevolver
+ObjectTemplate.addTemplate NagantRevolverTrigger
+ObjectTemplate.bindToSkeletonPart Trigger
+ObjectTemplate.addTemplate NagantRevolverHane
+ObjectTemplate.bindToSkeletonPart Hane
+ObjectTemplate.addTemplate NagantRevolverMantel
+ObjectTemplate.bindToSkeletonPart mantel
+
+ObjectTemplate.create SimpleObject NagantRevolverSimple
+ObjectTemplate.geometry Shad_NagantRevolver
+
+ObjectTemplate.create SimpleObject NagantRevolverTrigger
+
+ObjectTemplate.create SimpleObject NagantRevolverMantel
+
+ObjectTemplate.create SimpleObject NagantRevolverHane
+
+ObjectTemplate.create LodObject NagantRevolverLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate NagantRevolverComplex
+ObjectTemplate.addTemplate NagantRevolverSimple
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Nailclub
@@ -28417,7 +28708,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate No4AI
+objectTemplate.aiTemplate No4_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.GUIIndex 6
@@ -28541,7 +28832,7 @@ ObjectTemplate.projectileTemplate No4GrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
@@ -28559,7 +28850,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 ObjectTemplate.GUIIndex 6
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -28570,8 +28861,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_No4.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -28584,8 +28874,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -31311,6 +31601,7 @@ rem PTRD_Lay
 
 ObjectTemplate.create HandFireArms PTRD
 include ../PTRD/PTRD.inc
+objectTemplate.aiTemplate PTRDAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -31453,6 +31744,7 @@ rem PTRS_Lay
 
 ObjectTemplate.create HandFireArms PTRS
 include ../PTRS/PTRS.inc
+objectTemplate.aiTemplate PTRSAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.5 1.4 0.9
 ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.21
@@ -31844,6 +32136,7 @@ rem PzB35(p)_Lay
 
 ObjectTemplate.create HandFireArms PzB35(p)
 include ../m35/m35.inc
+objectTemplate.aiTemplate M35AI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -32349,13 +32642,13 @@ ObjectTemplate.projectileTemplate No4GrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate No4GrenadeAI
+objectTemplate.aiTemplate No4Grenade_ID4AI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.addFireArmsPosition 0/0.0/0.2 0/0/0
 ObjectTemplate.altFireOnce 1
@@ -32367,7 +32660,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 ObjectTemplate.GUIIndex 6
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -32378,8 +32671,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_No4.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -32392,8 +32684,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -32428,16 +32720,19 @@ ObjectTemplate.create HandFireArms RandomFreTankcommander1
 include ../Ruby/Ruby.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+ObjectTemplate.aiTemplate Ruby_ID3AI
 
 ObjectTemplate.create HandFireArms RandomFreTankcommander2
 include ../Ruby/Ruby.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+ObjectTemplate.aiTemplate Ruby_ID3AI
 
 ObjectTemplate.create HandFireArms RandomFreTankcommander3
 include ../No2/No2.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+ObjectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomFreTankcommander4
 include ../Mas38/Mas38.inc
@@ -32502,16 +32797,19 @@ ObjectTemplate.create HandFireArms RandomGBTankcommander1
 include ../No2/No2.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+ObjectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGBTankcommander2
 include ../No2/No2.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+ObjectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGBTankcommander3
 include ../No2/No2.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+ObjectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGBTankcommander4
 include ../StenMK2/StenMK2.inc
@@ -32535,16 +32833,19 @@ ObjectTemplate.create HandFireArms RandomGBTankcommander451
 include ../No2/No2.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+ObjectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGBTankcommander452
 include ../BrowningHi-Power/BrowningHi-Power.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+ObjectTemplate.aiTemplate BrowningHi-Power_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGBTankcommander453
 include ../No2/No2.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+ObjectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGBTankcommander454
 include ../StenMK5/StenMK5.inc
@@ -32555,6 +32856,7 @@ ObjectTemplate.create HandFireArms RandomGBTankcommander455
 include ../BrowningHi-Power/BrowningHi-Power.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+ObjectTemplate.aiTemplate BrowningHi-Power_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGBTankcommander456
 include ../StenMK5/StenMK5.inc
@@ -33165,13 +33467,13 @@ ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.projectileTemplate k98GrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate K98GrenadeAI
+objectTemplate.aiTemplate K98Grenade_ID4AI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addFireArmsPosition 0.0/0.035/1.0 0/0/0
@@ -33184,7 +33486,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 objectTemplate.GUIIndex 11
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -33195,8 +33497,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_K98.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -33208,8 +33509,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.22
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -33277,7 +33578,7 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 5.6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate PanzerschrekRPG
+objectTemplate.aiTemplate PanzerschrekRPG_ID4
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
@@ -33335,7 +33636,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -33389,7 +33690,7 @@ rem ********** RandomGerHEAT4 PIAT
 rem **********************************************************
 ObjectTemplate.create HandFireArms RandomGerHEAT4
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.aiTemplate PiatRPG
+ObjectTemplate.aiTemplate PiatRPG_ID4
 ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.itemIndex 4
 ObjectTemplate.projectileTemplate PiatProjectile
@@ -33547,7 +33848,7 @@ ObjectTemplate.velocity 8
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.8
-objectTemplate.aiTemplate SatchelAI
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -33568,7 +33869,7 @@ rem ********** RandomGerHEAT9 Bazooka
 rem **********************************************************
 ObjectTemplate.create HandFireArms RandomGerHEAT9
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.aiTemplate BazookaRPG
+ObjectTemplate.aiTemplate BazookaRPG_ID4
 ObjectTemplate.itemIndex 4
 ObjectTemplate.projectileTemplate BazookaProjectile
 ObjectTemplate.projectilePosition 0/0/0
@@ -33702,7 +34003,7 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate K98GrenadeAI
+objectTemplate.aiTemplate K98Grenade_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addFireArmsPosition 0.0/0.035/1.0 0/0/0
@@ -33843,7 +34144,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34023,7 +34324,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34088,7 +34389,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34221,7 +34522,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34286,7 +34587,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34431,7 +34732,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34496,7 +34797,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34630,7 +34931,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34695,7 +34996,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34839,7 +35140,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -34904,7 +35205,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -35037,7 +35338,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -35102,7 +35403,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -35247,7 +35548,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -35312,7 +35613,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -35380,7 +35681,7 @@ ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-objectTemplate.aiTemplate Panzerfaust30AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
@@ -35446,7 +35747,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -35511,7 +35812,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate KampfPistole_HEAT_AI
+objectTemplate.aiTemplate KampfPistole_HEAT_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -36569,6 +36870,7 @@ rem RandomGerSeizedATR6		M35		PzB35(p)
 
 ObjectTemplate.create HandFireArms RandomGerSeizedATR1
 include ../m35/m35.inc
+objectTemplate.aiTemplate M35AI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -36576,6 +36878,7 @@ ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
 
 ObjectTemplate.create HandFireArms RandomGerSeizedATR2
 include ../PTRS/PTRS.inc
+objectTemplate.aiTemplate PTRSAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.5 1.4 0.9
 ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.21
@@ -36591,6 +36894,7 @@ ObjectTemplate.setSpeedDev 36 512 512 0.35
 ObjectTemplate.create HandFireArms RandomGerSeizedATR3
 include ../HF_S18-1000/HF_S18-1000.inc
 include ../HF_S18-1000/HF_S18-1000AP.inc
+objectTemplate.aiTemplate HF_S18-1000APAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -36598,6 +36902,7 @@ ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
 
 ObjectTemplate.create HandFireArms RandomGerSeizedATR4
 include ../Boys/Boys.inc
+objectTemplate.aiTemplate BoysAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -36612,6 +36917,7 @@ ObjectTemplate.setSpeedDev 36 512 512 0.35
 
 ObjectTemplate.create HandFireArms RandomGerSeizedATR5
 include ../PTRD/PTRD.inc
+objectTemplate.aiTemplate PTRDAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -36626,6 +36932,7 @@ ObjectTemplate.setSpeedDev 36 512 512 0.35
 
 ObjectTemplate.create HandFireArms RandomGerSeizedATR6
 include ../m35/m35.inc
+objectTemplate.aiTemplate M35AI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.setDevMod 1.7 1.5 0.9
 ObjectTemplate.setSpeedDev 5.0 0.3 0.25 0.21
@@ -36727,12 +37034,12 @@ rem RandomGerSeizedSMG1	MP722(f)	Mas38
 rem RandomGerSeizedSMG2	MP749(e)	StenMK2
 rem RandomGerSeizedSMG3	MP761(a)	Thompson
 rem RandomGerSeizedSMG4			MP3008
-rem RandomGerSeizedSMG5			MP40/II
-rem RandomGerSeizedSMG6	MP717(r)	PPSh41
+rem RandomGerSeizedSMG5			MP40/I
+rem RandomGerSeizedSMG6	MP41(r)		PPSh41
 rem RandomGerSeizedSMG7	MP739(i)	BerettaM1938
 rem RandomGerSeizedSMG8	MP719(r)	PPS43
 rem RandomGerSeizedSMG9	MP760(e)	Tommygun
-rem RandomGerSeizedSMG10			MP40-II
+rem RandomGerSeizedSMG10			MP40/I
 rem RandomGerSeizedSMG11	MP749(e)	StenMK2
 rem RandomGerSeizedSMG12	MP39(u)	HF_39M_SMG
 rem RandomGerSeizedSMG13			MP18
@@ -36773,15 +37080,74 @@ ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 6
 
 rem **********************************************************
-rem ********** RandomGerSeizedSMG5 MP40
+rem ********** RandomGerSeizedSMG5 MP40/I
 rem **********************************************************
 ObjectTemplate.create HandFireArms RandomGerSeizedSMG5
-include ../Mp40_II/Mp40_II.inc
 ObjectTemplate.itemIndex 3
-ObjectTemplate.numOfMag 6
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate 9x19mmProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 64
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4.3
+ObjectTemplate.roundOfFire 8.33
+ObjectTemplate.GUIIndex 7
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 46
+ObjectTemplate.setAmomBarPosX 4
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setAmomBarTextPosX 8
+ObjectTemplate.setAmomBarTextPosY 4
+ObjectTemplate.setCrossHairType CHTCrossHair
+objectTemplate.aiTemplate Mp40-IIAI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.7
+ObjectTemplate.soldierZoomPosition -0.08/0/0.02
+ObjectTemplate.soldierCameraPosition -0.07/-0.02/0.00
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	1
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 380
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.2/0.4/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.1/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 10 1.5 0.4
+ObjectTemplate.setDevMod 1.2 1 1.2
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 4 0.5 0.5 0.3
+ObjectTemplate.setSpeedDev 4 0.35 1 0.2
+ObjectTemplate.setMiscDev 18 8 0.35
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../Mp40-II/Sounds/Mp40-II.ssc
+
+ObjectTemplate.createSkeleton animations/Mp40.ske
+ObjectTemplate.useSkeletonPartAsMain Mp40-II
+ObjectTemplate.addTemplate Mp40-IILod
+
+ObjectTemplate.addTemplate e_MuzzThomp
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.023/0.43
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.02/0.43
+ObjectTemplate.setRotation 0/0/0
 
 rem **********************************************************
-rem ********** RandomGerSeizedSMG6 MP717(r) PPSh41 with 9x19mm 32mag
+rem ********** RandomGerSeizedSMG6 MP41(r) PPSh41 with 9x19mm 32mag
 rem **********************************************************
 ObjectTemplate.create HandFireArms RandomGerSeizedSMG6
 ObjectTemplate.itemIndex 3
@@ -36996,7 +37362,7 @@ ObjectTemplate.setRotation 0/0/0
 
 
 rem **********************************************************
-rem ********** RandomGerSeizedSMG10 MP40-II
+rem ********** RandomGerSeizedSMG10 MP40/I
 rem **********************************************************
 ObjectTemplate.create HandFireArms RandomGerSeizedSMG10
 ObjectTemplate.itemIndex 3
@@ -37338,16 +37704,19 @@ ObjectTemplate.create HandFireArms RandomGerTankcommander1
 include ../WalterP38/WalterP38.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+objectTemplate.aiTemplate P38_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGerTankcommander2
 include ../WalterP38/WalterP38.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+objectTemplate.aiTemplate P38_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGerTankcommander3
 include ../P08Artillerie/P08Artillerie.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 2
+objectTemplate.aiTemplate P08Artillerie_ID3AI
 
 ObjectTemplate.create HandFireArms RandomGerTankcommander4
 include ../Mp40/Mp40.inc
@@ -37776,19 +38145,22 @@ rem *** RandomPolTankcommander3
 rem *** RandomPolTankcommander4
 
 ObjectTemplate.create HandFireArms RandomPolTankcommander1
-include ../No2/No2.inc
+include ../NagantRevolver_BF1918/NagantRevolver.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomPolTankcommander2
-include ../No2/No2.inc
+include ../NagantRevolver_BF1918/NagantRevolver.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomPolTankcommander3
-include ../No2/No2.inc
+include ../NagantRevolver_BF1918/NagantRevolver.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomPolTankcommander4
 include ../mors/mors.inc
@@ -38616,16 +38988,19 @@ ObjectTemplate.create HandFireArms RandomRusTankcommander1
 include ../TT33/TT33.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate TT33_ID3AI
 
 ObjectTemplate.create HandFireArms RandomRusTankcommander2
 include ../TT33/TT33.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate TT33_ID3AI
 
 ObjectTemplate.create HandFireArms RandomRusTankcommander3
 include ../TT33/TT33.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate TT33_ID3AI
 
 ObjectTemplate.create HandFireArms RandomRusTankcommander4
 ObjectTemplate.itemIndex 3
@@ -38798,7 +39173,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -38850,7 +39225,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -38945,7 +39320,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -38978,7 +39353,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39036,7 +39411,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 0.8
-objectTemplate.aiTemplate SmokeGren_GerAI
+objectTemplate.aiTemplate SmokeGren_Ger_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -39074,7 +39449,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39107,7 +39482,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39165,7 +39540,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 0.8
-objectTemplate.aiTemplate SmokeGren_GerAI
+objectTemplate.aiTemplate SmokeGren_Ger_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -39203,7 +39578,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39236,7 +39611,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeGer/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39349,7 +39724,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39404,7 +39779,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39500,7 +39875,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39533,7 +39908,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39591,7 +39966,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 1
-objectTemplate.aiTemplate SmokeGren_M8AI
+objectTemplate.aiTemplate SmokeGren_M8_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -39629,7 +40004,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39662,7 +40037,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39720,7 +40095,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 1
-objectTemplate.aiTemplate SmokeGren_M8AI
+objectTemplate.aiTemplate SmokeGren_M8_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -39758,7 +40133,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39791,7 +40166,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeM8/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39904,7 +40279,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -39958,7 +40333,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40054,7 +40429,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40087,7 +40462,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40145,7 +40520,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 1
-objectTemplate.aiTemplate SmokeGren_RDG2AI
+objectTemplate.aiTemplate SmokeGren_RDG2_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -40183,7 +40558,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40216,7 +40591,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40274,7 +40649,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 1
-objectTemplate.aiTemplate SmokeGren_RDG2AI
+objectTemplate.aiTemplate SmokeGren_RDG2_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -40312,7 +40687,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40345,7 +40720,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeRDG2/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40458,7 +40833,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40491,7 +40866,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40587,7 +40962,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40620,7 +40995,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID4AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40678,7 +41053,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 1
-objectTemplate.aiTemplate SmokeGren_Type11AI
+objectTemplate.aiTemplate SmokeGren_Type11_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -40716,7 +41091,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40749,7 +41124,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40807,7 +41182,7 @@ ObjectTemplate.maxDeviation 0.08
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.4
 ObjectTemplate.fireDelay 1
-objectTemplate.aiTemplate SmokeGren_Type11AI
+objectTemplate.aiTemplate SmokeGren_Type11_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -40845,7 +41220,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -40878,7 +41253,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../RandomSmokeType11/Sounds/scold.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -41225,16 +41600,19 @@ ObjectTemplate.create HandFireArms RandomUSTankcommander1
 include ../Colt/Colt.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+objectTemplate.aiTemplate Colt_ID3AI
 
 ObjectTemplate.create HandFireArms RandomUSTankcommander2
 include ../M1917_revolver/M1917_revolver.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomUSTankcommander3
 include ../Colt/Colt.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+objectTemplate.aiTemplate Colt_ID3AI
 
 ObjectTemplate.create HandFireArms RandomUSTankcommander4
 include ../Thompson/Thompson.inc
@@ -41258,16 +41636,19 @@ ObjectTemplate.create HandFireArms RandomUSTankcommander441
 include ../Colt/Colt.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 3
+objectTemplate.aiTemplate Colt_ID3AI
 
 ObjectTemplate.create HandFireArms RandomUSTankcommander442
 include ../M1917_revolver/M1917_revolver.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomUSTankcommander443
 include ../M1917_revolver_Carbine/M1917_revolver_Carbine.inc
 ObjectTemplate.itemIndex 3
 ObjectTemplate.numOfMag 4
+objectTemplate.aiTemplate No2_ID3AI
 
 ObjectTemplate.create HandFireArms RandomUSTankcommander444
 include ../Greasegun/Greasegun.inc
@@ -43984,7 +44365,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../KnifeAxis/Sounds/knife.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID7AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -44020,7 +44401,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../KnifeAxis/Sounds/knife.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1
-ObjectTemplate.aiTemplate scoldAI
+ObjectTemplate.aiTemplate scold_ID5AI
 ObjectTemplate.addFireArmsPosition 0/0/0.15 0/0/0
 
 ObjectTemplate.velocity 80
@@ -47032,7 +47413,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.769
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate Springfield03AI
+objectTemplate.aiTemplate Springfield03_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.GUIIndex 6
@@ -47158,7 +47539,7 @@ ObjectTemplate.projectileTemplate SpringfieldGrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6.25
@@ -47176,7 +47557,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 ObjectTemplate.autoReload 1
 
 ObjectTemplate.GUIIndex 6
@@ -47188,8 +47569,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_Springfield.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -47202,8 +47582,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 2.5 1.35 2.5
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
@@ -48389,7 +48769,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 6
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate SVT40AI
+objectTemplate.aiTemplate SVT40_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 rem ObjectTemplate.soldierZoomFov 0.7
 rem ObjectTemplate.soldierZoomPosition -0.08/0.01/-0.05
@@ -48575,7 +48955,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 
 ObjectTemplate.fireDelay 0.8
-objectTemplate.aiTemplate taimatuAI
+objectTemplate.aiTemplate taimatu_ID2AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 
 ObjectTemplate.createSkeleton animations/GrenadeAxis.ske
@@ -48620,7 +49000,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 
 ObjectTemplate.fireDelay 0.8
-objectTemplate.aiTemplate taimatuAI
+objectTemplate.aiTemplate taimatu_ID4AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 
 ObjectTemplate.createSkeleton animations/GrenadeAxis.ske
@@ -48665,7 +49045,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 
 ObjectTemplate.fireDelay 0.8
-objectTemplate.aiTemplate taimatuAI
+objectTemplate.aiTemplate taimatu_ID5AI
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 
 ObjectTemplate.createSkeleton animations/GrenadeAxis.ske
@@ -49430,7 +49810,7 @@ ObjectTemplate.networkableInfo HandFireArmsInfo
 ObjectTemplate.projectileTemplate 8x22mmProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.magSize 32
+ObjectTemplate.magSize 30
 ObjectTemplate.numOfMag 6
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4.3
@@ -49531,7 +49911,7 @@ ObjectTemplate.networkableInfo HandFireArmsInfo
 ObjectTemplate.projectileTemplate 8x22mmSilensedProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.magSize 32
+ObjectTemplate.magSize 30
 ObjectTemplate.numOfMag 6
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4.3
@@ -49732,7 +50112,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate type10_signal_Marker_AI
+objectTemplate.aiTemplate type10_signal_Marker_ID7AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -49799,7 +50179,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate type10_signal_Marker_AI
+objectTemplate.aiTemplate type10_signal_Marker_ID8AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -49860,7 +50240,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 3
 ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate type10_signal_Marker_AI
+objectTemplate.aiTemplate type10_signal_Marker_ID4AI
 ObjectTemplate.zoomFov 0.8
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.5 
@@ -50666,7 +51046,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 5.0
 ObjectTemplate.roundOfFire 6
 rem ObjectTemplate.roundOfFire 4
-objectTemplate.aiTemplate Type5AI
+objectTemplate.aiTemplate Type5_ID1AI
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.fireOnce 1
 ObjectTemplate.altFireOnce 1
@@ -50877,7 +51257,7 @@ ObjectTemplate.numOfMag 10
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4.0
 ObjectTemplate.roundOfFire 9.2
-objectTemplate.aiTemplate Type96LMGAI
+rem objectTemplate.aiTemplate Type96LMGAI
 ObjectTemplate.hasDynamicShadow 1
 rem ---------------- Scope 2.5x---------------------------
 ObjectTemplate.useScope 1
@@ -51082,7 +51462,7 @@ ObjectTemplate.numOfMag 10
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4.0
 ObjectTemplate.roundOfFire 9.2
-objectTemplate.aiTemplate Type96LMGAI
+rem objectTemplate.aiTemplate Type96LMGAI
 ObjectTemplate.hasDynamicShadow 1
 rem ---------------- Scope 2.5x---------------------------
 ObjectTemplate.useScope 1
@@ -51191,6 +51571,7 @@ rem *** Type97ATR_HE_Lay
 
 ObjectTemplate.create HandFireArms Type97ATR
 include ../Type97ATR/Type97ATR.inc
+objectTemplate.aiTemplate Type97ATRAI
 ObjectTemplate.itemIndex 3
 ObjectTemplate.projectileTemplate 20mmT97ATProjectile
 ObjectTemplate.setDevMod 1.5 1.4 0.9
@@ -51198,6 +51579,7 @@ ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.21
 
 ObjectTemplate.create HandFireArms Type97ATR_HE
 include ../Type97ATR/Type97ATR.inc
+objectTemplate.aiTemplate Type97ATR_HEAI
 ObjectTemplate.itemIndex 4
 ObjectTemplate.setWeaponLink 3
 ObjectTemplate.projectileTemplate 20mmT97HEProjectile
@@ -51426,7 +51808,7 @@ ObjectTemplate.setAmomBarPosX 3
 ObjectTemplate.setAmomBarPosY -11
 ObjectTemplate.setAmomBarTextPosX 8
 ObjectTemplate.setAmomBarTextPosY 4
-objectTemplate.aiTemplate Type99AI
+rem objectTemplate.aiTemplate Type99AI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.6 
@@ -52600,7 +52982,7 @@ ObjectTemplate.numOfMag 15
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 8
-objectTemplate.aiTemplate BarAI
+rem objectTemplate.aiTemplate BarAI
 ObjectTemplate.zoomFov 0.7
 ObjectTemplate.soldierZoomFov 0.6 
 ObjectTemplate.soldierZoomPosition -0.1/0/0
@@ -52896,7 +53278,7 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 0.769
 ObjectTemplate.fireOnce 1
-objectTemplate.aiTemplate Wz29AI
+objectTemplate.aiTemplate Wz29_ID1AI
 rem ObjectTemplate.zoomFov 0.7
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.altFireOnce 1
@@ -52999,7 +53381,7 @@ ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.projectileTemplate Wz29GrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 1
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.magType 0
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 6
@@ -53018,7 +53400,7 @@ ObjectTemplate.AmmoType	2
 ObjectTemplate.timeToNotAllowChange 0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 
 objectTemplate.GUIIndex 11
@@ -53030,8 +53412,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_K98.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -53043,8 +53424,8 @@ ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
 ObjectTemplate.setHasRecoilForce 1
 ObjectTemplate.setGoBackOnRecoil 1
 
-ObjectTemplate.setFireDev 5 2.25 0.12
-ObjectTemplate.setDevMod 1.5 1.25 0.9
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
 ObjectTemplate.setMinDev 1
 ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
 ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5

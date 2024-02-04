@@ -102,6 +102,11 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = POL
 
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
 rem *** 14TP ***
 ObjectTemplate.create PlayerControlObject 14TP
 rem ObjectTemplate.NameTagOffset 0/-0.3/0
@@ -194,13 +199,14 @@ ObjectTemplate.setPosition 0.5/0.8/1.4
 ObjectTemplate.addTemplate e_TankExhaust20U
 ObjectTemplate.setPosition -0.91/0.88/-2.61
 ObjectTemplate.setRotation -25/0/90
-
-ObjectTemplate.addTemplate 14TP_Tankdesant_PCO1
-ObjectTemplate.setPosition -0.55/1.73/-1.33
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate 14TP_Tankdesant_PCO2
-ObjectTemplate.setPosition 0.55/1.73/-1.33
-ObjectTemplate.setRotation 90/0/0
+if v_is_coop == False
+    ObjectTemplate.addTemplate 14TP_Tankdesant_PCO1
+    ObjectTemplate.setPosition -0.55/1.73/-1.33
+    ObjectTemplate.setRotation -90/0/0
+    ObjectTemplate.addTemplate 14TP_Tankdesant_PCO2
+    ObjectTemplate.setPosition 0.55/1.73/-1.33
+    ObjectTemplate.setRotation 90/0/0
+endIf
 rem ----------------------------------
 
 rem *** 14tp_Hull_addcol
@@ -211,6 +217,7 @@ ObjectTemplate.hasCollisionPhysics 1
 rem *** 14TP_Tankdesant_PCO1 ***
 ObjectTemplate.create PlayerControlObject 14TP_Tankdesant_PCO1
 ObjectTemplate.setNetworkableInfo 14TPBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO4
 rem -------------------------------------
 ObjectTemplate.addTemplate Tankdesant_Entry
 ObjectTemplate.addTemplate Tankdesant_Camera
@@ -230,6 +237,7 @@ ObjectTemplate.setToolTipType  TTHeavyTank
 rem *** 14TP_Tankdesant_PCO2 ***
 ObjectTemplate.create PlayerControlObject 14TP_Tankdesant_PCO2
 ObjectTemplate.setNetworkableInfo 14TPBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO5
 rem -------------------------------------
 ObjectTemplate.addTemplate Tankdesant_Entry
 ObjectTemplate.addTemplate Tankdesant_Camera
@@ -254,7 +262,7 @@ ObjectTemplate.setEntryRadius 3.6
 rem *** 14TP lod tree stucture
 LodSelectorTemplate.create DistCompareSelector2 14TPLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
-LodSelectorTemplate.addLodDistance 135
+LodSelectorTemplate.addLodDistance 150
 
 
 rem *** 14TP with no tree structure
@@ -417,6 +425,7 @@ ObjectTemplate.create Camera 14TPBowMGCamera
 rem *** 14TP_Director_PCO ***
 ObjectTemplate.create PlayerControlObject 14TP_Director_PCO
 ObjectTemplate.setNetworkableInfo 14TPBodyInfo
+ObjectTemplate.aiTemplate Director_PCO2
 rem -------------------------------------
 ObjectTemplate.addTemplate Common_DirectorPCO_Entry
 ObjectTemplate.addTemplate Common_DirectorPCO_Camera
@@ -490,7 +499,7 @@ rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_50_750_Main
 ObjectTemplate.setPosition -0.0546/0.0488/2.6149
 rem -------------------------------------
-ObjectTemplate.setMinDev 0.53
+ObjectTemplate.setMinDev 0.43
 ObjectTemplate.projectileTemplate 47mmL53_Projectile
 ObjectTemplate.projectilePosition 0/0/1.5
 ObjectTemplate.magSize 65
@@ -502,10 +511,208 @@ ObjectTemplate.roundOfFire 0.369
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 8
 ObjectTemplate.recoilSize 2
-rem ObjectTemplate.setMinDev 0.75
 ObjectTemplate.setFireCameraShakeAnimationState FireTank50CanonShake
 
 
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = 7tp
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster 7tp
+GeometryTemplate.create StandardMesh 7tp_Canon2_M1
+GeometryTemplate.file 7tp_canon01
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+
+GeometryTemplate.create StandardMesh 1P_7tp_Gunner_M1
+GeometryTemplate.file 1p_BritTank_Aim
+
+GeometryTemplate.create StandardMesh 7tp_Hull_M1
+GeometryTemplate.file 7tp_body
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh 7tp_L_Track_m1
+GeometryTemplate.file 7tp_L_Track_m1
+GeometryTemplate.setSkin animations/7tp_L_Track.skn
+
+GeometryTemplate.create AnimatedMesh 7tp_R_Track_m1
+GeometryTemplate.file 7tp_R_Track_m1
+GeometryTemplate.setSkin animations/7tp_R_Track.skn
+
+
+rem ****** LEFTWheels ********
+
+
+
+GeometryTemplate.create StandardMesh 7tp_L_Fwhel_m1
+GeometryTemplate.file t26_frontWheel
+rem GeometryTemplate.file 7tp_L_Fwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 7tp_L_Bwhel_m1
+GeometryTemplate.file 7tp_L_Bwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tp_L_Twhel_m1
+GeometryTemplate.file 7tp_L_Twhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tp_L_Rwhel_m1
+GeometryTemplate.file t26_rearWheel
+rem GeometryTemplate.file 7tp_L_Rwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+
+rem ****** RightWheels ********
+
+GeometryTemplate.create StandardMesh 7tp_R_Fwhel_m1
+GeometryTemplate.file t26_frontWheel
+rem GeometryTemplate.file 7tp_R_Fwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 7tp_R_Bwhel_m1
+GeometryTemplate.file 7tp_R_Bwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tp_R_Twhel_m1
+GeometryTemplate.file 7tp_R_Twhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tp_R_Rwhel_m1
+GeometryTemplate.file t26_rearWheel
+rem GeometryTemplate.file 7tp_R_Rwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+
+
+GeometryTemplate.create StandardMesh 7tp_Hull_Hatch_M1
+GeometryTemplate.file Sherman_Hull_Hatch_M1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 7tp_Tow_M1
+GeometryTemplate.file 7tp_tow
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 7tp_Tow_Hatch1_M1
+GeometryTemplate.file Sherman_Tow_Hatch1_M1
+geometryTemplate.cullFactor 0.1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 30
+GeometryTemplate.setLodDistance 3 40
+GeometryTemplate.setLodDistance 4 80
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 7tp_MGun_con_M1
+GeometryTemplate.file Sherman_MGun_con_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 7tp_MGun_Mount_M1
+GeometryTemplate.file Tank_MGun_Mount_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 7tp_Tow_Hatch2_M1
+GeometryTemplate.file Sherman_Tow_Hatch2_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh 7tp_Canon1_M1
+GeometryTemplate.file 7tp_canon02
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh 7tp_Hull_L1
+GeometryTemplate.file 7tp_main_L1
+
+GeometryTemplate.create StandardMesh Wreck_7tp_M1
+GeometryTemplate.file 7tp_wreck
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
 
 rem ===== EOF =====
 rem ============================================================================
@@ -530,6 +737,11 @@ rem folder = 7tp
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = POL
+
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
 
 rem *** 7tp ***
 ObjectTemplate.create PlayerControlObject 7tp
@@ -619,13 +831,14 @@ ObjectTemplate.setPosition -0.14/0.98996/0.022
 ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition -0.91/0.88/-1.91
 ObjectTemplate.setRotation -25/0/90
-
-ObjectTemplate.addTemplate 7tp_Tankdesant_PCO1
-ObjectTemplate.setPosition -0.58/1.75/-1.45
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate 7tp_Tankdesant_PCO2
-ObjectTemplate.setPosition 0.58/1.75/-1.45
-ObjectTemplate.setRotation 90/0/0
+if v_is_coop == False
+    ObjectTemplate.addTemplate 7tp_Tankdesant_PCO1
+    ObjectTemplate.setPosition -0.58/1.75/-1.45
+    ObjectTemplate.setRotation -90/0/0
+    ObjectTemplate.addTemplate 7tp_Tankdesant_PCO2
+    ObjectTemplate.setPosition 0.58/1.75/-1.45
+    ObjectTemplate.setRotation 90/0/0
+endIf
 rem -------------------------------------
 
 
@@ -637,6 +850,7 @@ ObjectTemplate.setEntryRadius 3.6
 rem *** 7tp_Tankdesant_PCO1 ***
 ObjectTemplate.create PlayerControlObject 7tp_Tankdesant_PCO1
 ObjectTemplate.setNetworkableInfo 7tpBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO3
 rem -------------------------------------
 ObjectTemplate.addTemplate Tankdesant_Entry
 ObjectTemplate.addTemplate Tankdesant_Camera
@@ -656,6 +870,7 @@ ObjectTemplate.setToolTipType  TTHeavyTank
 rem *** 7tp_Tankdesant_PCO2 ***
 ObjectTemplate.create PlayerControlObject 7tp_Tankdesant_PCO2
 ObjectTemplate.setNetworkableInfo 7tpBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO4
 rem -------------------------------------
 ObjectTemplate.addTemplate Tankdesant_Entry
 ObjectTemplate.addTemplate Tankdesant_Camera
@@ -915,6 +1130,7 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 rem *** 7tp_Director_PCO ***
 ObjectTemplate.create PlayerControlObject 7tp_Director_PCO
 ObjectTemplate.setNetworkableInfo 7tpBodyInfo
+ObjectTemplate.aiTemplate Director_PCO2
 rem -------------------------------------
 ObjectTemplate.addTemplate Common_DirectorPCO_Entry
 ObjectTemplate.addTemplate Common_DirectorPCO_Camera
@@ -956,7 +1172,7 @@ ObjectTemplate.geometry Wreck_7tp_m1
 rem *** 7tpLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 7tpLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
-LodSelectorTemplate.addLodDistance 135
+LodSelectorTemplate.addLodDistance 150
 
 rem ===== EOF =====
 rem ============================================================================
@@ -1034,8 +1250,8 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.Grip c_PGFEngineDummyGrip
-ObjectTemplate.setStrength 18
-ObjectTemplate.setDamping 1
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
 
 rem *** 7tp_L_MwhelDummySmoke***
 ObjectTemplate.create Spring 7tp_L_MwhelDummySmoke
@@ -1105,8 +1321,8 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.Grip c_PGFEngineDummyGrip
-ObjectTemplate.setStrength 18
-ObjectTemplate.setDamping 1
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
 
 rem *** 7tp_R_MwhelDummySmoke***
 ObjectTemplate.create Spring 7tp_R_MwhelDummySmoke
@@ -1150,10 +1366,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_37_750_Main
 ObjectTemplate.setPosition -0.0541/0.0488/1.8039
 rem -------------------------------------
-ObjectTemplate.setMinDev 0.66
-rem  ObjectTemplate.setMinDev 0.99
+ObjectTemplate.setMinDev 0.56
 ObjectTemplate.projectileTemplate 37mmL46,5_Common_Projectile
-rem ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.magSize 80
 ObjectTemplate.numOfMag 1
@@ -1164,10 +1378,158 @@ ObjectTemplate.roundOfFire 0.504
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 8
 ObjectTemplate.recoilSize 2
-rem ObjectTemplate.setMinDev 0.75
 ObjectTemplate.setFireCameraShakeAnimationState FireTank37CanonShake
 
 
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = 7tpTwin
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster 7tpTwin
+GeometryTemplate.create StandardMesh 7tpTwin_Canon2_M1
+GeometryTemplate.file 7tp_twin_mg
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 1P_7tpTwin_Gunner_M1
+GeometryTemplate.file 1p_leFH18_m1
+GeometryTemplate.Scale 0.75/0.75/0.5
+
+GeometryTemplate.create StandardMesh 7tpTwin_Hull_M1
+GeometryTemplate.file 7tp_twin_body
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh 7tptwin_L_Track_m1
+GeometryTemplate.file 7tp_L_Track_m1
+GeometryTemplate.setSkin animations/7tp_L_Track.skn
+
+GeometryTemplate.create AnimatedMesh 7tptwin_R_Track_m1
+GeometryTemplate.file 7tp_R_Track_m1
+GeometryTemplate.setSkin animations/7tp_R_Track.skn
+
+
+
+GeometryTemplate.create StandardMesh 7tptwin_L_Fwhel_m1
+GeometryTemplate.file t26_frontWheel
+rem GeometryTemplate.file 7tp_L_Fwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 7tptwin_L_Bwhel_m1
+GeometryTemplate.file 7tp_L_Bwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tptwin_L_Twhel_m1
+GeometryTemplate.file 7tp_L_Twhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tptwin_L_Rwhel_m1
+GeometryTemplate.file t26_rearWheel
+rem GeometryTemplate.file 7tp_L_Rwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+
+rem ****** RightWheels ********
+
+GeometryTemplate.create StandardMesh 7tptwin_R_Fwhel_m1
+GeometryTemplate.file t26_frontWheel
+rem GeometryTemplate.file 7tp_R_Fwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh 7tptwin_R_Bwhel_m1
+GeometryTemplate.file 7tp_R_Bwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tptwin_R_Twhel_m1
+GeometryTemplate.file 7tp_R_Twhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 7tptwin_R_Rwhel_m1
+GeometryTemplate.file t26_rearWheel
+rem GeometryTemplate.file 7tp_R_Rwhel_m1
+geometryTemplate.cullFactor 0.025
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+
+GeometryTemplate.create StandardMesh 7tpTwin_Tow_M1
+GeometryTemplate.file 7tp_twin_turret
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh 7TPTwin_13mmMG_m1
+GeometryTemplate.file 7TPTwin_13mmMG_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh 7tpTwin_Hull_L1
+GeometryTemplate.file 7tp_main_L1
+
+GeometryTemplate.create StandardMesh Wreck_7tpTwin_M1
+GeometryTemplate.file 7tp_twin_wreck
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
 
 rem ===== EOF =====
 rem ============================================================================
@@ -1192,6 +1554,9 @@ rem folder = 7tpTwin
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = POL
+
+rem *** 7tpTwin
+rem *** 7tpTwin13mm
 
 rem *** 7tpTwin ***
 ObjectTemplate.create PlayerControlObject 7tpTwin
@@ -1240,13 +1605,12 @@ ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
 ObjectTemplate.setSecondaryAmmoBar ABIconOnly
 ObjectTemplate.setHasTurretIcon 1
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lighttank_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
-
 
 rem *** lod7tpTwin ***
 ObjectTemplate.create LodObject lod7tpTwin
@@ -1259,7 +1623,6 @@ ObjectTemplate.addTemplate 7tpTwinSimple
 ObjectTemplate.addTemplate 7tpTwinWreck
 rem -------------------------------------
 ObjectTemplate.lodSelector 7tpTwinLodSelector
-
 
 rem *** 7tpTwinComplex ***
 ObjectTemplate.create Bundle 7tpTwinComplex
@@ -1284,16 +1647,15 @@ ObjectTemplate.setRotation -15/90/0
 ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition 0.69/0.25/-2.55
 ObjectTemplate.setRotation 15/90/0
-
-ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO1
-ObjectTemplate.setPosition -0.58/1.75/-1.45
-ObjectTemplate.setRotation -90/0/0
-ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO2
-ObjectTemplate.setPosition 0.58/1.75/-1.45
-ObjectTemplate.setRotation 90/0/0
-
+if v_is_coop == False
+    ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO1
+    ObjectTemplate.setPosition -0.58/1.75/-1.45
+    ObjectTemplate.setRotation -90/0/0
+    ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO2
+    ObjectTemplate.setPosition 0.58/1.75/-1.45
+    ObjectTemplate.setRotation 90/0/0
+endIf
 rem -------------------------------------
-
 
 rem *** 7tpTwinEntry ***
 ObjectTemplate.create EntryPoint 7tpTwinEntry
@@ -1303,6 +1665,7 @@ ObjectTemplate.setEntryRadius 3.6
 rem *** 7tpTwin_Tankdesant_PCO1 ***
 ObjectTemplate.create PlayerControlObject 7tpTwin_Tankdesant_PCO1
 ObjectTemplate.setNetworkableInfo 7tpTwinBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO3
 rem -------------------------------------
 ObjectTemplate.addTemplate Tankdesant_Entry
 ObjectTemplate.addTemplate Tankdesant_Camera
@@ -1322,6 +1685,7 @@ ObjectTemplate.setToolTipType  TTHeavyTank
 rem *** 7tpTwin_Tankdesant_PCO2 ***
 ObjectTemplate.create PlayerControlObject 7tpTwin_Tankdesant_PCO2
 ObjectTemplate.setNetworkableInfo 7tpTwinBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO4
 rem -------------------------------------
 ObjectTemplate.addTemplate Tankdesant_Entry
 ObjectTemplate.addTemplate Tankdesant_Camera
@@ -1338,8 +1702,6 @@ ObjectTemplate.setVehicleType  VTHeavyTank
 ObjectTemplate.setToolTipType  TTHeavyTank
 
 
-
-
 rem *** 7tpTwinTower ***
 ObjectTemplate.create RotationalBundle 7tpTwinTower
 ObjectTemplate.setNetworkableInfo 7tpTwinTurretInfo
@@ -1349,7 +1711,7 @@ ObjectTemplate.geometry 7tpTwin_Tow_M1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate 7tpTwinGunBase
-ObjectTemplate.setPosition -0.48/0.15/0.42
+ObjectTemplate.setPosition 0.125/0.27/0.449
 rem -------------------------------------
 ObjectTemplate.setMinRotation -30/0/0
 ObjectTemplate.setMaxRotation 210/0/0
@@ -1365,14 +1727,13 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../7tpTwin/Sounds/7tpTwinGunBase.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate lod7tpTwinCockpit
-ObjectTemplate.setPosition 0.512/0.208/0
-rem ObjectTemplate.addTemplate 7tpTwinGunBarrel
-ObjectTemplate.addTemplate bow_wz30
-ObjectTemplate.setPosition 0.605/0/-0.3
+ObjectTemplate.setPosition -0.225/0/0.075
+ObjectTemplate.addTemplate bow_wz30_heatgauge_bundle
+ObjectTemplate.setPosition 0/-0.125/-0.491
 ObjectTemplate.addTemplate 7tpTwin_MG_Visible
-ObjectTemplate.setPosition 0.605/0.12/0.049
+ObjectTemplate.setPosition 0/0/0.029
 ObjectTemplate.addTemplate 7tpTwinCamera
-ObjectTemplate.setPosition 0.59/0.389/-0.074
+ObjectTemplate.setPosition -0.225/0/0.075
 
 ObjectTemplate.addTemplate Land_Spotter_Alt
 rem -------------------------------------
@@ -1391,10 +1752,8 @@ ObjectTemplate.create LodObject lod7tpTwinCockpit
 rem -------------------------------------
 ObjectTemplate.addTemplate 7tpTwinCockpitExternal
 ObjectTemplate.addTemplate 7tpTwinCockpitInternal
-ObjectTemplate.setPosition 0.62/0.165/0.024
 rem -------------------------------------
 ObjectTemplate.lodSelector 7tpTwincockpitSelector
-
 
 rem *** 7tpTwinCockpitExternal ***
 ObjectTemplate.create SimpleObject 7tpTwinCockpitExternal
@@ -1404,16 +1763,13 @@ rem *** 7tpTwinCockpitInternal ***
 ObjectTemplate.create SimpleObject 7tpTwinCockpitInternal
 ObjectTemplate.geometry 1P_7tpTwin_Gunner_M1
 
-
 rem *** 7tpTwincockpitSelector ***
 LodSelectorTemplate.create DistCompareSelector 7tpTwincockpitSelector
 LodSelectorTemplate.addLodDistance 1
 LodSelectorTemplate.addLodComparison 0.5
 
-
 rem *** 7tpTwinCamera ***
 ObjectTemplate.create Camera 7tpTwinCamera
-
 
 rem *** 7tpTwin_Hull_Hatch ***
 ObjectTemplate.create SimpleObject 7tpTwin_Hull_Hatch
@@ -1441,13 +1797,13 @@ ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmwz30.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
 ObjectTemplate.setSecondaryAmmoBar ABIconOnly
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTLightTank
 ObjectTemplate.setToolTipType  TTLightTank
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lighttank_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
-
 
 rem *** 7tpTwinTower2 ***
 ObjectTemplate.create RotationalBundle 7tpTwinTower2
@@ -1458,7 +1814,7 @@ ObjectTemplate.geometry 7tpTwin_Tow_M1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate 7tpTwinGunBase
-ObjectTemplate.setPosition -0.48/0.15/0.42
+ObjectTemplate.setPosition 0.125/0.27/0.449
 rem -------------------------------------
 ObjectTemplate.setMinRotation -180/0/0
 ObjectTemplate.setMaxRotation 60/0/0
@@ -1471,16 +1827,229 @@ rem *** 7tpTwinSimple ***
 ObjectTemplate.create SimpleObject 7tpTwinSimple
 ObjectTemplate.geometry 7tpTwin_Hull_L1
 
-
 rem *** 7tpTwinWreck ***
 ObjectTemplate.create SimpleObject 7tpTwinWreck
 ObjectTemplate.geometry Wreck_7tpTwin_m1
-
 
 rem *** 7tpTwinLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 7tpTwinLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
 LodSelectorTemplate.addLodDistance 135
+
+
+
+
+rem *** 7tpTwin13mm ***
+ObjectTemplate.create PlayerControlObject 7tpTwin13mm
+ObjectTemplate.NameTagOffset 0/-0.3/0
+ObjectTemplate.setNetworkableInfo 7tpTwinBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 25000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 73
+ObjectTemplate.maxhitpoints 73
+ObjectTemplate.material 34
+ObjectTemplate.speedMod 1
+ObjectTemplate.criticalDamage 7
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/0.9/-1.8
+ObjectTemplate.addArmorEffect 7 e_PanzFire 0/1.2/-1.4
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetalsmoke 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate 7tpTwin
+rem -------------------------------------
+ObjectTemplate.addTemplate lod7tpTwin13mm
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 1.8 1.0 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_7tpTwin13mm.tga"
+ObjectTemplate.setVehicleIconPos 69/46
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_13,2mmWz30.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lighttank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lod7tpTwin13mm ***
+ObjectTemplate.create LodObject lod7tpTwin13mm
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 7tpTwin13mmComplex
+ObjectTemplate.addTemplate 7tpTwinSimple
+ObjectTemplate.addTemplate 7tpTwinWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector 7tpTwinLodSelector
+
+
+rem *** 7tpTwin13mmComplex ***
+ObjectTemplate.create Bundle 7tpTwin13mmComplex
+ObjectTemplate.geometry 7tpTwin_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 7tpTwinEntry
+ObjectTemplate.setPosition 0/0/1.2
+ObjectTemplate.addTemplate 7tpTwinEntry
+ObjectTemplate.setPosition 0/0/-1.2
+ObjectTemplate.addTemplate 7tpTwinEngine
+ObjectTemplate.addTemplate 7tpTwin13mmTower
+ObjectTemplate.setPosition 0.45/0.949/0.014
+ObjectTemplate.addTemplate 7tpTwin13mmTower2_PCO
+ObjectTemplate.setPosition -0.43/0.949/0.014
+
+ObjectTemplate.addTemplate e_TankExhaust20
+ObjectTemplate.setPosition -0.67/0.25/-2.55
+ObjectTemplate.setRotation -15/90/0
+ObjectTemplate.addTemplate e_TankExhaust20
+ObjectTemplate.setPosition 0.69/0.25/-2.55
+ObjectTemplate.setRotation 15/90/0
+if v_is_coop == False
+    ObjectTemplate.addTemplate 7tpTwin13mm_Tankdesant_PCO1
+    ObjectTemplate.setPosition -0.58/1.75/-1.45
+    ObjectTemplate.setRotation -90/0/0
+    ObjectTemplate.addTemplate 7tpTwin13mm_Tankdesant_PCO2
+    ObjectTemplate.setPosition 0.58/1.75/-1.45
+    ObjectTemplate.setRotation 90/0/0
+endIf
+rem -------------------------------------
+
+
+rem *** 7tpTwin13mm_Tankdesant_PCO1 ***
+ObjectTemplate.create PlayerControlObject 7tpTwin13mm_Tankdesant_PCO1
+ObjectTemplate.setNetworkableInfo 7tpTwinBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO3
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/icon_7tpTwin13mm.tga"
+ObjectTemplate.setVehicleIconPos 114/45
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+rem *** 7tpTwin13mm_Tankdesant_PCO2 ***
+ObjectTemplate.create PlayerControlObject 7tpTwin13mm_Tankdesant_PCO2
+ObjectTemplate.setNetworkableInfo 7tpTwinBodyInfo
+ObjectTemplate.aiTemplate Tankdesant_Passenger_PCO4
+rem -------------------------------------
+ObjectTemplate.addTemplate Tankdesant_Entry
+ObjectTemplate.addTemplate Tankdesant_Camera
+ObjectTemplate.addTemplate Tankdesant_PassengerSeat
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/icon_7tpTwin13mm.tga"
+ObjectTemplate.setVehicleIconPos 90/38
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTHeavyTank
+ObjectTemplate.setToolTipType  TTHeavyTank
+
+
+rem *** 7tpTwin13mmTower ***
+ObjectTemplate.create RotationalBundle 7tpTwin13mmTower
+ObjectTemplate.setNetworkableInfo 7tpTwinTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../7tpTwin/Sounds/7tpTwinTower.ssc
+ObjectTemplate.geometry 7tpTwin_Tow_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate 7tpTwin13mmGunBase
+ObjectTemplate.setPosition 0.125/0.27/0.449
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 210/0/0
+ObjectTemplate.setMaxSpeed 36/0/0
+ObjectTemplate.setAcceleration 112/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** 7tpTwin13mmGunBase ***
+ObjectTemplate.create RotationalBundle 7tpTwin13mmGunBase
+ObjectTemplate.setNetworkableInfo 7tpTwinGunInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../7tpTwin/Sounds/7tpTwinGunBase.ssc
+ObjectTemplate.geometry 7TPTwin_13mmMG_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate lod7tpTwinCockpit
+ObjectTemplate.setPosition -0.225/0/0.075
+ObjectTemplate.addTemplate 7tpTwin13mmGunBarrel
+ObjectTemplate.addTemplate 7tpTwinCamera
+ObjectTemplate.setPosition -0.225/0/0.075
+
+ObjectTemplate.addTemplate Land_Spotter_Alt
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/36/0
+ObjectTemplate.setAcceleration 0/112/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** 7tpTwin13mmTower2_PCO ***
+ObjectTemplate.create PlayerControlObject 7tpTwin13mmTower2_PCO
+ObjectTemplate.NameTagOffset -0.4/-0.3/0
+ObjectTemplate.setNetworkableInfo 7tpTwinBodyInfo
+ObjectTemplate.aiTemplate 7tpTwinTopMG
+ObjectTemplate.setSoldierExitLocation -2/0/-1.0 0/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate 7tpTwinEntry
+ObjectTemplate.setPosition -1/0/0
+ObjectTemplate.addTemplate 7tpTwinTower2
+ObjectTemplate.setRotation -30/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0/0 0/0/0
+ObjectTemplate.GUIIndex 25
+ObjectTemplate.setVehicleIcon "Vehicle/icon_7tpTwin13mm.tga"
+ObjectTemplate.setVehicleIconPos 93/54
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmwz30.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setHasTurretIcon 1
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTLightTank
+ObjectTemplate.setToolTipType  TTLightTank
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_lighttank_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
 
 rem ===== EOF =====
 rem ============================================================================
@@ -1523,37 +2092,31 @@ rem folder = 7tpTwin
 rem sauce = Weapons.con
 rem ============================================================================
 
-
-rem *** 7tpTwinGunBarrel ***
-ObjectTemplate.create FireArms 7tpTwinGunBarrel
+rem *** 7tpTwin13mmGunBarrel ***
+ObjectTemplate.create FireArms 7tpTwin13mmGunBarrel
 ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.geometry 7tpTwin_Canon2_M1
+ObjectTemplate.loadSoundScript ../Type92HAC/Sounds/Type92HAC_HullCannon.ssc
+ObjectTemplate.geometry 
 ObjectTemplate.aiTemplate 7tpTwinMainGun
-ObjectTemplate.projectileTemplate 7,92x57mmProjectile
-ObjectTemplate.setTracerTemplate Tracer_7,92x57mmProjectile CRD_NONE/2/0/0
-ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.magSize 200
-ObjectTemplate.numOfMag 20
+ObjectTemplate.projectileTemplate Incendiary_13,2x99_Projectile
+ObjectTemplate.setTracerTemplate APTracer_13,2x99_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 30
+ObjectTemplate.numOfMag 15
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 7.0
-ObjectTemplate.recoilSpeed 50.0
-ObjectTemplate.roundOfFire 15
+ObjectTemplate.reloadtime 4
+ObjectTemplate.roundOfFire 6.666
 ObjectTemplate.autoReload 1
-
-ObjectTemplate.velocity 755
+ObjectTemplate.velocity 735
 ObjectTemplate.setFireDev 0.9 0.2 0.05
 ObjectTemplate.setMinDev 0.25
-objectTemplate.heatAddWhenFire 0.01
-objectTemplate.coolDownPerSec 0.05
-objectTemplate.timeDelayOnOverHeat 4
-
 rem -------------------------------------
 ObjectTemplate.addTemplate e_Muzz13mmWC
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/-0.05/0.4
+ObjectTemplate.setPosition 0/0/0.977
 rem -------------------------------------
+ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
-ObjectTemplate.loadSoundScript ../7tpTwin/Sounds/7tpTwinMG.ssc
 
 rem ===== EOF =====
 rem ============================================================================
@@ -1598,7 +2161,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 109
 ObjectTemplate.maxhitpoints 109
 ObjectTemplate.material 34
-ObjectTemplate.speedMod 1
+ObjectTemplate.speedMod 1.5
 ObjectTemplate.criticalDamage 12
 ObjectTemplate.hpLostWhileCriticalDamage 1.5
 ObjectTemplate.explosionForceMod 13
@@ -2208,7 +2771,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 109
 ObjectTemplate.maxhitpoints 109
 ObjectTemplate.material 34
-ObjectTemplate.speedMod 1
+ObjectTemplate.speedMod 1.5
 ObjectTemplate.criticalDamage 12
 ObjectTemplate.hpLostWhileCriticalDamage 1.5
 ObjectTemplate.explosionForceMod 13
@@ -2454,7 +3017,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 109
 ObjectTemplate.maxhitpoints 109
 ObjectTemplate.material 34
-ObjectTemplate.speedMod 1
+ObjectTemplate.speedMod 1.5
 ObjectTemplate.criticalDamage 12
 ObjectTemplate.hpLostWhileCriticalDamage 1.5
 ObjectTemplate.explosionForceMod 13
@@ -2700,7 +3263,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 109
 ObjectTemplate.maxhitpoints 109
 ObjectTemplate.material 34
-ObjectTemplate.speedMod 1
+ObjectTemplate.speedMod 1.5
 ObjectTemplate.criticalDamage 12
 ObjectTemplate.hpLostWhileCriticalDamage 1.5
 ObjectTemplate.explosionForceMod 13
@@ -3147,7 +3710,7 @@ ObjectTemplate.material 34
 ObjectTemplate.criticalDamage 4
 ObjectTemplate.explosionRadius 5
 ObjectTemplate.explosionDamage 2
-ObjectTemplate.explosionForceMod 5
+ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileCriticalDamage 1.5
 ObjectTemplate.hpLostWhileUpSideDown 10
 ObjectTemplate.hpLostWhileDamageFromWater 10
@@ -3158,7 +3721,7 @@ ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.speedMod 1
-ObjectTemplate.aiTemplate tks20mm
+ObjectTemplate.aiTemplate tksMG
 rem -------------------------------------
 ObjectTemplate.addTemplate lodtks20mm
 rem -------------------------------------
@@ -3557,7 +4120,7 @@ rem *** tks20mmCannon ***
 ObjectTemplate.create FireArms tks20mmcannon
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../Tks20mm/Sounds/TKS20mmGunBarrel.ssc
-ObjectTemplate.aiTemplate tks20mmMainGun
+ObjectTemplate.aiTemplate PanzerIIMainGun
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzAAgunB
 rem -------------------------------------
@@ -3572,6 +4135,7 @@ ObjectTemplate.roundOfFire 2.8
 ObjectTemplate.fireingForce 5
 ObjectTemplate.recoilSpeed 20
 ObjectTemplate.recoilSize 1
+ObjectTemplate.setMinDev 0.62
 objectTemplate.heatAddWhenFire 0.07
 objectTemplate.coolDownPerSec 0.3
 objectTemplate.timeDelayOnOverHeat 2
@@ -3665,7 +4229,7 @@ ObjectTemplate.hitpoints 47
 ObjectTemplate.maxhitpoints 47
 ObjectTemplate.material 34
 ObjectTemplate.criticalDamage 4
-ObjectTemplate.explosionForceMod 5
+ObjectTemplate.explosionForceMod 13
 ObjectTemplate.explosionRadius 5
 ObjectTemplate.explosionDamage 2
 ObjectTemplate.hpLostWhileCriticalDamage 1.5
@@ -3868,6 +4432,133 @@ rem -------------------------------------
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Ursus
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster wz29
+
+GeometryTemplate.create StandardMesh wz29_Hull_M1
+GeometryTemplate.file wz29_main_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh wz29_tow
+GeometryTemplate.file wz29_Tow
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh wz29_canon01
+GeometryTemplate.file wz29_gunBase
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh wz29_MG
+GeometryTemplate.file wz29_MGgun
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh wz29_canon02
+GeometryTemplate.file wz29_gun
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh wz29_SpareWheel
+GeometryTemplate.file wz29_sparewheel
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh wz29_WheelR_M1
+GeometryTemplate.file wz29_FrontWheelR
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh wz29_WheelL_M1
+GeometryTemplate.file wz29_FrontWheelL
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh wz29_backWheelR_M1
+GeometryTemplate.file wz29_RearWheelR
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh wz29_backWheelL_M1
+GeometryTemplate.file wz29_RearWheelL
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+
+GeometryTemplate.create StandardMesh 1P_wz29_Hul_M1
+GeometryTemplate.file 1P_Hanomag_Driver_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh wz29_Hull_L1
+GeometryTemplate.file wz29_main_l1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_wz29_M1
+GeometryTemplate.file wz29_wreck
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh 1p_wz29Gunner_m1
+GeometryTemplate.file 1p_00_SimpleArtyWide_m1
+GeometryTemplate.Scale 0.75/0.75/0.75
+
+renderer.endGlobalCluster
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Ursus
 rem sauce = Network.con
 rem ============================================================================
 NetworkableInfo.createNewInfo wz29EngineInfo
@@ -3909,14 +4600,14 @@ ObjectTemplate.mass 4800
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 2
+ObjectTemplate.speedMod 1.2
 ObjectTemplate.exitTimer 0.75
 ObjectTemplate.hitpoints 68
 ObjectTemplate.maxhitpoints 68
 ObjectTemplate.material 33
 ObjectTemplate.criticalDamage 6
 ObjectTemplate.hpLostWhileCriticalDamage 2
-ObjectTemplate.explosionForceMod 20
+ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileUpSideDown 5
 ObjectTemplate.hpLostWhileDamageFromWater 5
 ObjectTemplate.addArmorEffect 20 e_WillyDamage 0/1.7/0.5
@@ -3944,7 +4635,7 @@ ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,92mmwz25.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBarHeatBar
 rem ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
 rem ObjectTemplate.setSecondaryAmmoBar ABIconOnly
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTScoutCar
 ObjectTemplate.setToolTipType  TTScoutCar
@@ -4113,12 +4804,36 @@ ObjectTemplate.setNetworkableInfo wz29_GunInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate wz29Camera 
 ObjectTemplate.setPosition -0.3/0/0.5
+ObjectTemplate.addTemplate lodwz29_Cockpit 
+ObjectTemplate.setPosition -0.3/0/0.5
+ObjectTemplate.addTemplate Tankgun_AmmoIndicator_AAMG-APHE-MG 
+ObjectTemplate.setPosition -0.3/0/0.5
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-30/0
 ObjectTemplate.setMaxRotation 0/13/0
 ObjectTemplate.setMaxSpeed 0/40/0
 ObjectTemplate.setAcceleration 0/119/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** lodwz29_Cockpit ***
+ObjectTemplate.create LodObject lodwz29_Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate wz29_CockpitInternal
+ObjectTemplate.addTemplate wz29_CockpitExternal
+rem -------------------------------------
+ObjectTemplate.lodSelector wz29_cockpitSelector
+
+rem *** wz29_CockpitExternal ***
+ObjectTemplate.create SimpleObject wz29_CockpitExternal
+ObjectTemplate.geometry 
+
+rem *** wz29_CockpitInternal ***
+ObjectTemplate.create SimpleObject wz29_CockpitInternal
+ObjectTemplate.geometry 1p_wz29Gunner_m1
+
+rem *** wz29_cockpitSelector ***
+LodSelectorTemplate.create DistanceSelector wz29_cockpitSelector
+LodSelectorTemplate.addLodDistance 0.2
 
 
 rem *** wz29_GunBase ***
@@ -4188,7 +4903,7 @@ ObjectTemplate.setVehicleIconPos 32/33
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmwz25.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTApc
 ObjectTemplate.setToolTipType  VTApc
@@ -4210,7 +4925,7 @@ ObjectTemplate.setVehicleIconPos 46/37
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmwz25.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTApc
 ObjectTemplate.setToolTipType  VTApc
@@ -4232,7 +4947,7 @@ ObjectTemplate.setVehicleIconPos 58/29
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmwz25.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTApc
 ObjectTemplate.setToolTipType  VTApc
@@ -4253,6 +4968,8 @@ ObjectTemplate.setPosition 0.3/0/0
 ObjectTemplate.addTemplate UrsusMGObject
 ObjectTemplate.setPosition 0/0/-0.06
 ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate lodwz29_Cockpit 
+ObjectTemplate.setPosition 0.3/0/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation -25/-20/0
 ObjectTemplate.setMaxRotation 25/15/0
@@ -4448,9 +5165,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_37_500_Main
 ObjectTemplate.setPosition 0/0.0415/0.5235
 rem -------------------------------------
-ObjectTemplate.setMinDev 2.46
+ObjectTemplate.setMinDev 1.26
 ObjectTemplate.projectileTemplate 37mmL21_Projectile
-rem ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.magSize 96
 ObjectTemplate.numOfMag 1
@@ -4696,12 +5412,12 @@ ObjectTemplate.setPosition 0/-0.35/1.25
 ObjectTemplate.addTemplate wz1897MobileEntry
 ObjectTemplate.setPosition 0/-0.35/-0.75
 
-ObjectTemplate.addTemplate wz1897MobileGunBase
+ObjectTemplate.addTemplate wz1897GunBase
 ObjectTemplate.setPosition 0/0/-0.5
-ObjectTemplate.addTemplate wz1897MobileCamHolder
+ObjectTemplate.addTemplate wz1897CamHolder
 ObjectTemplate.setPosition 0.52/0.375/-0.252
 
-ObjectTemplate.addTemplate wz1897MobileGunnerSeat
+ObjectTemplate.addTemplate wz1897GunnerSeat
 ObjectTemplate.setPosition 0.7/-0.125/-1.75
 rem ObjectTemplate.setPosition 0.7/0.05/-1.75
 ObjectTemplate.setRotation -45/0/0
@@ -4733,133 +5449,6 @@ ObjectTemplate.DirBarYScaleBelow 0
 ObjectTemplate.DirBarYScaleMin -90
 ObjectTemplate.DirBarYScaleMax 0
 
-
-
-rem *** wz1897MobileGunBase ***
-ObjectTemplate.create RotationalBundle wz1897MobileGunBase
-ObjectTemplate.setNetworkableInfo wz1897MobileTurretInfo
-ObjectTemplate.geometry wz1897Mobile_Cannon1_M1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.loadSoundScript ../French75mm_BF1918/Sounds/Frz75erTurret.ssc
-rem -------------------------------------
-ObjectTemplate.addTemplate wz1897MobileCannonDummy
-ObjectTemplate.setPosition 0.002/0.182/0.634
-
-ObjectTemplate.addTemplate wz1897MobileGunSelector_AP
-ObjectTemplate.setPosition 0.002/-9.818/0.634
-ObjectTemplate.setRotation 0/3.5/0
-ObjectTemplate.addTemplate wz1897MobileGunSelector
-ObjectTemplate.setPosition 0.002/-9.818/0.634
-ObjectTemplate.setRotation 0/3.5/0
-
-ObjectTemplate.addTemplate wz1897Cannon_BulletCatcherBundle
-ObjectTemplate.setPosition 0/-10/0
-ObjectTemplate.setRotation 0/7/180
-rem -------------------------------------
-ObjectTemplate.setMinRotation -3/-18/0
-ObjectTemplate.setMaxRotation 3/11/0
-ObjectTemplate.setMaxSpeed 15/15/0
-ObjectTemplate.setAcceleration 71/71/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-rem *** wz1897MobileGunSelector ***
-ObjectTemplate.create RotationalBundle wz1897MobileGunSelector
-ObjectTemplate.setNetworkableInfo wz1897MobileGunInfo
-rem ----------------------------------
-ObjectTemplate.addTemplate wz1897MobileCannonShrapnel
-ObjectTemplate.setRotation 0/3.5/179.999
-ObjectTemplate.addTemplate wz1897Mobile_GunSelector_HE
-rem ----------------------------------
-ObjectTemplate.setMinRotation 0/0/-180
-ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/0/900000
-ObjectTemplate.setAcceleration 0/0/90000000
-ObjectTemplate.setInputToRoll c_PIThrottle
-
-rem *** wz1897Mobile_GunSelector_HE ***
-ObjectTemplate.create RotationalBundle wz1897Mobile_GunSelector_HE
-ObjectTemplate.setNetworkableInfo wz1897MobileGunInfo
-rem ----------------------------------
-ObjectTemplate.addTemplate wz1897MobileCannonHE
-ObjectTemplate.setRotation 0/-3.5/0
-rem ----------------------------------
-ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 0/0/179.999
-ObjectTemplate.setMaxSpeed 0/0/900000
-ObjectTemplate.setAcceleration 0/0/90000000
-ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.RememberExcessInput 1
-
-rem *** wz1897MobileGunSelector_AP ***
-ObjectTemplate.create RotationalBundle wz1897MobileGunSelector_AP
-ObjectTemplate.setNetworkableInfo wz1897MobileTurretInfo
-rem ----------------------------------
-ObjectTemplate.addTemplate wz1897MobileCannonAP
-ObjectTemplate.setRotation 0/3.5/179.999
-rem ----------------------------------
-ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 0/0/179.999
-ObjectTemplate.setMaxSpeed 0/0/900000
-ObjectTemplate.setAcceleration 0/0/90000000
-ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.RememberExcessInput 1
-
-
-
-rem *** wz1897MobileCamHolder ***
-ObjectTemplate.create RotationalBundle wz1897MobileCamHolder
-ObjectTemplate.setNetworkableInfo wz1897TurretInfo
-rem -------------------------------------
-ObjectTemplate.addTemplate lodMwz1897MobileGunner
-ObjectTemplate.addTemplate wz1897MobileGunnerCamera
-ObjectTemplate.setPosition -0.1/0.4/-1
-rem -------------------------------------
-ObjectTemplate.setMinRotation -3/-18/0
-ObjectTemplate.setMaxRotation 3/11/0
-ObjectTemplate.setMaxSpeed 15/15/0
-ObjectTemplate.setAcceleration 71/71/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-
-rem *** lodMwz1897MobileGunner ***
-ObjectTemplate.create LodObject lodMwz1897MobileGunner
-rem -------------------------------------
-ObjectTemplate.addTemplate wz1897MobileGunnerInternal
-ObjectTemplate.addTemplate wz1897MobileGunnerExternal
-rem -------------------------------------
-ObjectTemplate.lodSelector wz1897MobileGunnerSelector
-
-rem *** wz1897MobileGunnerExternal ***
-ObjectTemplate.create SimpleObject wz1897MobileGunnerExternal
-ObjectTemplate.geometry 
-
-rem *** wz1897MobileGunnerInternal ***
-ObjectTemplate.create SimpleObject wz1897MobileGunnerInternal
-ObjectTemplate.geometry 1p_wz1897Mobile_m1
-
-rem *** wz1897MobileGunnerSelector ***
-LodSelectorTemplate.create DistanceSelector wz1897MobileGunnerSelector
-LodSelectorTemplate.addLodDistance 0.1
-
-
-rem *** wz1897MobileGunnerCamera ***
-ObjectTemplate.create Camera wz1897MobileGunnerCamera
-ObjectTemplate.OutsideHudOffset 0.1/-0.4/1
-ObjectTemplate.CVMExternTrace 1
-
-
-rem *** wz1897MobileGunnerSeat ***
-ObjectTemplate.create SeatObject wz1897MobileGunnerSeat
-ObjectTemplate.seatFlags c_SeatShowStandingSoldier
-ObjectTemplate.seatFlags c_SeatIsOutside
-rem ObjectTemplate.seatAnimationUpperBody Ub_KneelMortar
-rem ObjectTemplate.seatAnimationLowerBody Lb_KneelMortar
-
-
 rem *** wz1897MobileSimple ***
 ObjectTemplate.create SimpleObject wz1897MobileSimple
 ObjectTemplate.geometry wz1897Mobile_Hull_L1
@@ -4888,13 +5477,20 @@ ObjectTemplate.setNetworkableInfo wz1897MobileEngineInfo
 ObjectTemplate.setAttachToListener 1
 ObjectTemplate.hasMobilePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1897MobileSteering
-ObjectTemplate.setPosition 0.0/0.65/-2.2
-ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate wz1897Invis_Whel
+ObjectTemplate.setPosition -1.108/0.7/2
+ObjectTemplate.addTemplate wz1897Invis_Whel
+ObjectTemplate.setPosition 1.108/0.7/2
+
 ObjectTemplate.addTemplate wz1897MobileWheelR
 ObjectTemplate.setPosition 1.173/0.7/1.485
 ObjectTemplate.addTemplate wz1897MobileWheelL
 ObjectTemplate.setPosition -1.108/0.7/1.485
+
+ObjectTemplate.addTemplate wz1897Invis_Whel
+ObjectTemplate.setPosition -1.108/0.7/-2
+ObjectTemplate.addTemplate wz1897Invis_Whel
+ObjectTemplate.setPosition 1.108/0.7/-2
 rem -------------------------------------
 ObjectTemplate.setMinRotation -1/0/-1
 ObjectTemplate.setMaxRotation 1/0/1
@@ -4909,7 +5505,7 @@ ObjectTemplate.setTorque 100
 rem ObjectTemplate.setTorque 10
 ObjectTemplate.setDifferential 1.32
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -4937,10 +5533,9 @@ ObjectTemplate.geometry wz1897Mobile_SteerWheel
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineGrip 
-ObjectTemplate.setStrength 22
-ObjectTemplate.setDamping 5
-
+ObjectTemplate.Grip c_PGFEngineDummyGrip 
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
 
 rem *** wz1897MobileWheelR ***
 ObjectTemplate.create Spring wz1897MobileWheelR
@@ -4948,9 +5543,9 @@ ObjectTemplate.geometry wz1897Mobile_WheelR_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineGrip 
-ObjectTemplate.setStrength 22
-ObjectTemplate.setDamping 5
+ObjectTemplate.Grip c_PGFEngineDummyGrip 
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
 
 rem *** wz1897MobileWheelL ***
 ObjectTemplate.create Spring wz1897MobileWheelL
@@ -4958,214 +5553,22 @@ ObjectTemplate.geometry wz1897Mobile_WheelL_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineGrip 
-ObjectTemplate.setStrength 22
-ObjectTemplate.setDamping 5
+ObjectTemplate.Grip c_PGFEngineDummyGrip 
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
 
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = wz1897Mobile_BF1918
-rem sauce = Weapons.con
-rem ============================================================================
-rem *** wz1897MobileCannonDummy ***
-ObjectTemplate.create FireArms wz1897MobileCannonDummy
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.loadSoundScript ../French75mm_BF1918/Sounds/Frz75erGun.ssc
-ObjectTemplate.geometry wz1897Mobile_Cannon2_M1
+rem *** wz1897Invis_Whel ***
+ObjectTemplate.create Spring wz1897Invis_Whel
+ObjectTemplate.geometry wz1897Mobile_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.CreateInvisible 1
 rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSW_75_500_Main
-ObjectTemplate.setPosition 0/0/1.8638
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 2.5
 
-ObjectTemplate.addTemplate e_CartridgeEjection_75x350R
-ObjectTemplate.setInputId 0
-ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.07/-1.9
-rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-ObjectTemplate.projectilePosition 0/0/2
-ObjectTemplate.setMinDev 0.65
-ObjectTemplate.magSize 50
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 210
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.25
-ObjectTemplate.roundOfFire 0.303
-rem towed gun tweak
-rem ObjectTemplate.fireingForce 50
-ObjectTemplate.recoilSpeed 10
-ObjectTemplate.recoilSize 25
-ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
-
-rem *** wz1897MobileCannonAP ***
-ObjectTemplate.create FireArms wz1897MobileCannonAP
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.aiTemplate wz1897MobileAIMainGun
-rem -------------------------------------
-ObjectTemplate.projectileTemplate 75mmL36_Projectile
-ObjectTemplate.projectilePosition 0/10/2
-ObjectTemplate.setMinDev 0.79
-ObjectTemplate.magSize 50
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 292.5
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.25
-ObjectTemplate.roundOfFire 0.303
-ObjectTemplate.AmmoType	4
-
-rem  *** wz1897MobileCannonHE ***
-ObjectTemplate.create FireArms wz1897MobileCannonHE
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.aiTemplate wz1897MobileAIMainGun
-rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty7,5cmL36Projectile
-ObjectTemplate.projectilePosition 0/10/2
-ObjectTemplate.setMinDev 0.65
-ObjectTemplate.magSize 50
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 262
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.25
-ObjectTemplate.roundOfFire 0.303
-ObjectTemplate.AmmoType	4
-
-rem *** wz1897MobileCannonShrapnel ***
-ObjectTemplate.create FireArms wz1897MobileCannonShrapnel
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.aiTemplate wz1897MobileAIMainGun
-rem -------------------------------------
-ObjectTemplate.projectileTemplate 7,92x57mmProjectile
-ObjectTemplate.projectilePosition 0/10/2
-ObjectTemplate.setMinDev 2
-ObjectTemplate.magSize 50
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 500
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.25
-ObjectTemplate.roundOfFire 0.303
-ObjectTemplate.AmmoType	5
-ObjectTemplate.setBlastAmmoCount 1
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-rem *** 54bullets ***
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-rem *** 108bullets ***
 
 rem ===== EOF =====
 rem ============================================================================
@@ -5825,7 +6228,7 @@ ObjectTemplate.setEngineType c_ETTank
 ObjectTemplate.setTorque 2.03
 ObjectTemplate.setDifferential 0.6
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -5852,7 +6255,7 @@ ObjectTemplate.setEngineType c_ETTank
 ObjectTemplate.setTorque 2.03
 ObjectTemplate.setDifferential 0.6
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -6009,7 +6412,7 @@ ObjectTemplate.setPosition 0/0.9/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 1.5/0/-0.8 0/0/0
 ObjectTemplate.GUIIndex 53
-ObjectTemplate.setVehicleIcon "Vehicle/icon_wz1897_AP-HE.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_wz1897_AP-HE-SH.tga"
 ObjectTemplate.setVehicleIconPos 39/62
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_75mmwz1897.tga"
@@ -6062,11 +6465,8 @@ ObjectTemplate.setPosition 1.173/-0.15/1.485
 
 ObjectTemplate.addTemplate wz1897GunBase
 ObjectTemplate.setPosition 0/0.125/1.252
-
 ObjectTemplate.addTemplate wz1897CamHolder
 ObjectTemplate.setPosition 0.52/0.5/1.5
-
-rem ObjectTemplate.setPosition 0/0.125/1.752
 
 ObjectTemplate.addTemplate wz1897GunnerSeat
 ObjectTemplate.setPosition 0.7/0.175/0.002
@@ -6125,14 +6525,17 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.loadSoundScript ../French75mm_BF1918/Sounds/Frz75erGunbase.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate wz1897Cannon_Dummy
-ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setPosition 0.002/0.182/0.634
 
-ObjectTemplate.addTemplate wz1897Cannon_GunSelector
-ObjectTemplate.setPosition 0/-10/0
+ObjectTemplate.addTemplate wz1897GunSelector_Shrapnel
+ObjectTemplate.setPosition 0.002/-9.818/0.634
+ObjectTemplate.setRotation 0/3.5/0
+ObjectTemplate.addTemplate wz1897GunSelector
+ObjectTemplate.setPosition 0.002/-9.818/0.634
 ObjectTemplate.setRotation 0/3.5/0
 
 ObjectTemplate.addTemplate wz1897Cannon_BulletCatcherBundle
-ObjectTemplate.setPosition 0/-10/0
+ObjectTemplate.setPosition 0.002/-9.818/0.634
 ObjectTemplate.setRotation 0/7/180
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-18/0
@@ -6148,20 +6551,50 @@ ObjectTemplate.addTemplate BulletCatcher10m
 ObjectTemplate.setPosition 0/0/2
 rem -------------------------------------
 
-rem *** wz1897Cannon_GunSelector ***
-ObjectTemplate.create RotationalBundle wz1897Cannon_GunSelector
+
+rem *** wz1897GunSelector ***
+ObjectTemplate.create RotationalBundle wz1897GunSelector
 ObjectTemplate.setNetworkableInfo wz1897GunInfo
 rem ----------------------------------
 ObjectTemplate.addTemplate wz1897Cannon_AP
 ObjectTemplate.setRotation 0/3.5/179.999
-ObjectTemplate.addTemplate wz1897Cannon_HE
-ObjectTemplate.setRotation 0/-3.5/0
+ObjectTemplate.addTemplate wz1897_GunSelector_HE
 rem ----------------------------------
 ObjectTemplate.setMinRotation 0/0/-180
 ObjectTemplate.setMaxRotation 0/0/0
 ObjectTemplate.setMaxSpeed 0/0/900000
-ObjectTemplate.setAcceleration 0/0/90000000
+ObjectTemplate.setAcceleration 0/0/-90000000
 ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem *** wz1897_GunSelector_HE ***
+ObjectTemplate.create RotationalBundle wz1897_GunSelector_HE
+ObjectTemplate.setNetworkableInfo wz1897GunInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate wz1897Cannon_HE
+ObjectTemplate.setRotation 0/-3.5/0
+rem ----------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/179.999
+ObjectTemplate.setMaxSpeed 0/0/900000
+ObjectTemplate.setAcceleration 0/0/-90000000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.RememberExcessInput 1
+
+rem *** wz1897GunSelector_AP ***
+ObjectTemplate.create RotationalBundle wz1897GunSelector_Shrapnel
+ObjectTemplate.setNetworkableInfo wz1897TurretInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate wz1897Cannon_Shrapnel
+ObjectTemplate.setRotation 0/3.5/179.999
+rem ----------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/179.999
+ObjectTemplate.setMaxSpeed 0/0/900000
+ObjectTemplate.setAcceleration 0/0/-90000000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.RememberExcessInput 1
 
 
 rem *** wz1897CamHolder ***
@@ -6170,6 +6603,9 @@ ObjectTemplate.setNetworkableInfo wz1897TurretInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate lodMwz1897Gunner
 ObjectTemplate.addTemplate wz1897GunnerCamera
+ObjectTemplate.setPosition -0.1/0.4/-1
+
+ObjectTemplate.addTemplate wz1897_AmmoIndicator_AP-HE-Shrapnel_Bundle
 ObjectTemplate.setPosition -0.1/0.4/-1
 rem -------------------------------------
 ObjectTemplate.setMinRotation -3/-18/0
@@ -6204,6 +6640,10 @@ rem *** wz1897GunnerCamera ***
 ObjectTemplate.create Camera wz1897GunnerCamera
 ObjectTemplate.OutsideHudOffset 0.1/-0.4/1
 ObjectTemplate.CVMExternTrace 1
+
+ObjectTemplate.create Bundle wz1897_AmmoIndicator_AP-HE-Shrapnel_Bundle
+ObjectTemplate.addTemplate Tankgun_AmmoIndicator_W-S_AP-HE-Shrapnel
+ObjectTemplate.setPosition 0.1/-0.4/1
 
 rem *** wz1897Simple ***
 ObjectTemplate.create SimpleObject wz1897Simple
@@ -6243,7 +6683,7 @@ ObjectTemplate.setPosition 0/0.07/-1.9
 rem -------------------------------------
 ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
 ObjectTemplate.projectilePosition 0/0/2
-ObjectTemplate.setMinDev 0.81
+ObjectTemplate.setMinDev 0.64
 ObjectTemplate.magSize 100
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 210
@@ -6259,33 +6699,132 @@ ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
 rem *** wz1897Cannon_HE ***
 ObjectTemplate.create FireArms wz1897Cannon_HE
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.aiTemplate wz1897AIMainGun
 rem -------------------------------------
 ObjectTemplate.projectileTemplate Arty7,5cmL36Projectile
 ObjectTemplate.projectilePosition 0/10/2
-ObjectTemplate.setMinDev 0.65
+ObjectTemplate.setMinDev 0.64
 ObjectTemplate.magSize 100
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 262
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 0.25
 ObjectTemplate.roundOfFire 0.303
+ObjectTemplate.AmmoType	4
 
 rem *** wz1897Cannon_AP ***
 ObjectTemplate.create FireArms wz1897Cannon_AP
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.aiTemplate wz1897AIMainGun
 rem -------------------------------------
 ObjectTemplate.projectileTemplate 75mmL36_Projectile
 ObjectTemplate.projectilePosition 0/10/2
-ObjectTemplate.setMinDev 0.79
+ObjectTemplate.setMinDev 0.64
 ObjectTemplate.magSize 100
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 292.5
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 0.25
 ObjectTemplate.roundOfFire 0.303
+ObjectTemplate.AmmoType	5
 
+rem *** wz1897Cannon_Shrapnel ***
+ObjectTemplate.create FireArms wz1897Cannon_Shrapnel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate CanisterGunProjectile
+ObjectTemplate.projectilePosition 0/10/2
+ObjectTemplate.setMinDev 2
+ObjectTemplate.magSize 100
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 450
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.25
+ObjectTemplate.roundOfFire 0.303
+ObjectTemplate.AmmoType	6
+ObjectTemplate.setBlastAmmoCount 1
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+rem *** 75bullets ***
 
 rem ===== EOF =====
 rem ============================================================================
@@ -7419,13 +7958,28 @@ rem -------------------------------------
 ObjectTemplate.addTemplate wz1917BatteryGunBase1
 ObjectTemplate.setPosition 0/1.296/0.092
 
-ObjectTemplate.addTemplate wz1917CamHolder
+ObjectTemplate.addTemplate wz1917BatteryCamHolder
 ObjectTemplate.setPosition -0.6/1.7/0.2
 
 ObjectTemplate.addTemplate wz1917Gunner_Seat
 ObjectTemplate.setPosition -0.7/1.0/-0.5
 ObjectTemplate.setRotation 45/0/0
 rem -------------------------------------
+
+rem *** wz1917BatteryCamHolder***
+ObjectTemplate.create RotationalBundle wz1917BatteryCamHolder
+ObjectTemplate.setNetworkableInfo wz1917GunInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate lodwz1917Cockpit
+ObjectTemplate.setPosition 0/0/0.15
+ObjectTemplate.addTemplate wz1917GunnerCamera
+ObjectTemplate.setPosition 0/0.4/-0.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-42/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/8/0
+ObjectTemplate.setAcceleration 0/51/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** wz1917BatteryLaf2 ***
 ObjectTemplate.create Bundle wz1917BatteryLaf2
@@ -8026,9 +8580,6 @@ r
 NetworkableInfo.createNewInfo wz1917MobileGunInfo
 NetworkableInfo.setPredictionMode PMLinear
 
-NetworkableInfo.createNewInfo wz1917MobileGunSelectorInfo
-NetworkableInfo.setPredictionMode PMLinear
-
 NetworkableInfo.createNewInfo wz1917MobileEngineInfo
 NetworkableInfo.setPredictionMode PMLinear
 
@@ -8116,7 +8667,7 @@ ObjectTemplate.setPosition -0.399/-1.149/-0.199
 ObjectTemplate.addTemplate wz1917Mobile_Engine
 ObjectTemplate.setPosition 0/-0.22/0
 ObjectTemplate.addTemplate wz1917MobileCamera
-ObjectTemplate.setPosition 0.8264/1.7/-1
+ObjectTemplate.setPosition 0.6/2.1/-0.1
 ObjectTemplate.addTemplate wz1917MobileSeat
 ObjectTemplate.setPosition 0.7/0.9/-0.5
 
@@ -8171,7 +8722,7 @@ ObjectTemplate.setNetworkableInfo wz1917MobileBodyInfo
 ObjectTemplate.aiTemplate wz1917MobileAICannon
 ObjectTemplate.hasMobilePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1917MobilePivot
+ObjectTemplate.addTemplate wz1917Pivot
 ObjectTemplate.setPosition -0.046/0/-3.7
 
 ObjectTemplate.addTemplate wz1917MobileWheelAxis
@@ -8218,138 +8769,15 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate wz1917MobileWheelL
-ObjectTemplate.setPosition -0.93/0.2776/0.1382
+ObjectTemplate.setPosition -0.93/0.5276/0.1382
 ObjectTemplate.addTemplate wz1917MobileWheelR
-ObjectTemplate.setPosition 0.86/0.2776/0.1382
+ObjectTemplate.setPosition 0.86/0.5276/0.1382
 rem -------------------------------------
 ObjectTemplate.setMinRotation -3/0/0
 ObjectTemplate.setMaxRotation 3/0/0
-ObjectTemplate.setMaxSpeed 2/0/0
-ObjectTemplate.setAcceleration 4/0/0
+ObjectTemplate.setMaxSpeed 8/0/0
+ObjectTemplate.setAcceleration 51/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
-
-rem *** wz1917MobilePivot ***
-ObjectTemplate.create RotationalBundle wz1917MobilePivot
-ObjectTemplate.setNetworkableInfo wz1917MobileTurretInfo
-ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155Tower.ssc
-rem -------------------------------------
-ObjectTemplate.addTemplate wz1917MobileLaf
-ObjectTemplate.setPosition 0.046/0/3.7
-rem -------------------------------------
-ObjectTemplate.setMinRotation -3/0/0
-ObjectTemplate.setMaxRotation 3/0/0
-ObjectTemplate.setMaxSpeed 2/0/0
-ObjectTemplate.setAcceleration 4/0/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-
-rem *** wz1917MobileLaf ***
-ObjectTemplate.create Bundle wz1917MobileLaf
-ObjectTemplate.geometry wz1917_LafMobile
-ObjectTemplate.hasCollisionPhysics 1
-rem -------------------------------------
-ObjectTemplate.addTemplate wz1917MobileCannonBase
-ObjectTemplate.setPosition 0/1.296/0.092
-
-ObjectTemplate.addTemplate wz1917MobileCamHolder
-ObjectTemplate.setPosition -0.6/1.7/0.2
-
-ObjectTemplate.addTemplate wz1917MobileGunnerSeat
-ObjectTemplate.setPosition -0.7/0.9/-0.5
-ObjectTemplate.setRotation 45/0/0
-rem -------------------------------------
-
-
-rem *** wz1917MobileCannonBase ***
-ObjectTemplate.create RotationalBundle wz1917MobileCannonBase
-ObjectTemplate.setNetworkableInfo wz1917MobileGunInfo
-ObjectTemplate.geometry wz1917Mobile_Cannon1_M1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155Gunbase.ssc
-rem -------------------------------------
-ObjectTemplate.addTemplate wz1917MobileCannonDummy
-ObjectTemplate.addTemplate wz1917MobileGunSelector
-ObjectTemplate.setPosition 0/-20/0
-ObjectTemplate.setRotation 0/21/0
-ObjectTemplate.addTemplate wz1917Mobile_BulletCatcherBundle
-ObjectTemplate.setPosition 0/-20/0
-ObjectTemplate.setRotation 0/42/180
-ObjectTemplate.addTemplate wz1917Cannon_TracGunBarrel
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/-42/0
-ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/8/0
-ObjectTemplate.setAcceleration 0/51/0
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-rem *** wz1917Mobile_BulletCatcherBundle ***
-ObjectTemplate.create Bundle wz1917Mobile_BulletCatcherBundle
-rem -------------------------------------
-ObjectTemplate.addTemplate BulletCatcher20m
-ObjectTemplate.setPosition -0.04/0.1246/2
-rem -------------------------------------
-
-rem *** wz1917MobileGunSelector ***
-ObjectTemplate.create RotationalBundle wz1917MobileGunSelector
-ObjectTemplate.setNetworkableInfo wz1917MobileGunSelectorInfo
-rem ----------------------------------
-ObjectTemplate.addTemplate wz1917MobileCannonShrapnel
-ObjectTemplate.setRotation 0/21/180
-ObjectTemplate.addTemplate wz1917MobileCannonHE
-ObjectTemplate.setRotation 0/-21/0
-rem ----------------------------------
-ObjectTemplate.setMinRotation 0/0/-180
-ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/0/900000
-ObjectTemplate.setAcceleration 0/0/90000000
-ObjectTemplate.setInputToRoll c_PIThrottle
-
-rem *** wz1917MobileCamHolder***
-ObjectTemplate.create RotationalBundle wz1917MobileCamHolder
-ObjectTemplate.setNetworkableInfo wz1917MobileGunInfo
-rem -------------------------------------
-ObjectTemplate.addTemplate lodwz1917MobileCockpit
-ObjectTemplate.setPosition -0/-0.3/0
-ObjectTemplate.addTemplate wz1917MobileGunnerCamera
-ObjectTemplate.setPosition -0.5/0/-1
-rem -------------------------------------
-ObjectTemplate.setMinRotation 0/-42/0
-ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/8/0
-ObjectTemplate.setAcceleration 0/51/0
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
-
-rem *** lodwz1917MobileCockpit ***
-ObjectTemplate.create LodObject lodwz1917MobileCockpit
-rem -------------------------------------
-ObjectTemplate.addTemplate wz1917MobileCockpitInternal
-ObjectTemplate.addTemplate wz1917MobileCockpitExternal
-rem -------------------------------------
-ObjectTemplate.lodSelector wz1917MobilecockpitSelector
-
-rem *** wz1917MobileCockpitExternal ***
-ObjectTemplate.create SimpleObject wz1917MobileCockpitExternal
-ObjectTemplate.geometry 
-
-rem *** wz1917MobileCockpitInternal ***
-ObjectTemplate.create SimpleObject wz1917MobileCockpitInternal
-ObjectTemplate.geometry 1p_wz1917Mobile_m1
-
-rem *** wz1917MobilecockpitSelector ***
-LodSelectorTemplate.create DistanceSelector wz1917MobilecockpitSelector
-LodSelectorTemplate.addLodDistance 0.1
-
-
-rem *** wz1917MobileGunnerCamera ***
-ObjectTemplate.create Camera wz1917MobileGunnerCamera
-ObjectTemplate.OutsideHudOffset 0.5/-0.3/1
-ObjectTemplate.CVMExternTrace 1
-
-
-rem *** wz1917MobileGunnerSeat ***
-ObjectTemplate.create SeatObject wz1917MobileGunnerSeat
-ObjectTemplate.seatFlags c_SeatShowStandingSoldier
-ObjectTemplate.seatFlags c_SeatIsOutside
 
 
 rem *** wz1917MobileSimple ***
@@ -8402,7 +8830,7 @@ ObjectTemplate.setTorque 100
 rem ObjectTemplate.setTorque 10
 ObjectTemplate.setDifferential 1.09
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -8459,10 +8887,11 @@ ObjectTemplate.CreateInvisible 1
 rem *** wz1917MobileWheelR ***
 ObjectTemplate.create Spring wz1917MobileWheelR
 ObjectTemplate.geometry wz1917Mobile_WheelR_M1
+rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.Grip c_PGFEngineDummyGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -8474,10 +8903,11 @@ ObjectTemplate.setDamping 0
 rem *** wz1917MobileWheelL ***
 ObjectTemplate.create Spring wz1917MobileWheelL
 ObjectTemplate.geometry wz1917Mobile_WheelL_M1
+rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.Grip c_PGFEngineDummyGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -8485,234 +8915,6 @@ ObjectTemplate.addTemplate e_wdirtWheel
 rem -------------------------------------
 ObjectTemplate.setStrength 0
 ObjectTemplate.setDamping 0
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = wz1917Mobile_BF1918
-rem sauce = Weapons.con
-rem ============================================================================
-
-rem *** wz1917MobileCannonDummy ***
-ObjectTemplate.create FireArms wz1917MobileCannonDummy
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155Cannon.ssc
-ObjectTemplate.geometry wz1917Mobile_gunbarrel_m1
-ObjectTemplate.aiTemplate wz1917MobileAIMainGun
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSW_150_500_Main
-ObjectTemplate.setPosition -0.0402/0.1255/1.8377
-rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile_Penetrator
-ObjectTemplate.projectilePosition -0.04/0.1246/2
-ObjectTemplate.setMinDev 0.96
-ObjectTemplate.magSize 50
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 225
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.20
-ObjectTemplate.roundOfFire 0.104
-rem towed gun tweak
-rem ObjectTemplate.fireingForce 90
-ObjectTemplate.recoilSpeed 10
-ObjectTemplate.recoilSize 40
-ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
-
-rem *** wz1917MobileCannonHE ***
-ObjectTemplate.create FireArms wz1917MobileCannonHE
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.aiTemplate wz1917MobileAIMainGun
-rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile
-ObjectTemplate.projectilePosition -0.04/20.1246/2
-ObjectTemplate.setMinDev 0.96
-ObjectTemplate.magSize 50
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 225
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.20
-ObjectTemplate.roundOfFire 0.104
-ObjectTemplate.AmmoType	4
-
-rem *** wz1917MobileCannonShrapnel ***
-ObjectTemplate.create FireArms wz1917MobileCannonShrapnel
-ObjectTemplate.setNetworkableInfo TankFireArmInfo
-ObjectTemplate.aiTemplate wz1917MobileAIMainGun
-rem -------------------------------------
-ObjectTemplate.projectileTemplate 7,92x57mmProjectile
-ObjectTemplate.projectilePosition -0.04/20.1246/2
-ObjectTemplate.setMinDev 2
-ObjectTemplate.magSize 50
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 500
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 0.20
-ObjectTemplate.roundOfFire 0.104
-ObjectTemplate.AmmoType	5
-ObjectTemplate.setBlastAmmoCount 1
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-rem *** 36bullets ***
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-rem *** 72bullets ***
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-rem *** 108bullets ***
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-
-ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
-ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
-rem *** 144bullets ***
 
 rem ===== EOF =====
 rem ============================================================================
@@ -8933,7 +9135,7 @@ ObjectTemplate.workOnVehicles 1
 rem ------------------------------------
 ObjectTemplate.setHealth 0 0 0
 ObjectTemplate.addAmmoType 18 -1 100 0
-ObjectTemplate.loadSoundScript ../../../Common/Sounds/ATG_putdown.ssc
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
 
 
 rem *** wz1917mobilemobile_towed_SupplyObj ***
@@ -8993,6 +9195,7 @@ ObjectTemplate.workOnVehicles 1
 rem ------------------------------------
 ObjectTemplate.setHealth 0 0 0
 ObjectTemplate.addAmmoType 17 1 100 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
 
 rem *** wz1917mobile_dummySpawnObjRepairSupplyDepot ***
 ObjectTemplate.create SupplyDepot wz1917mobile_dummySpawnObjRepairSupplyDepot
@@ -9238,7 +9441,6 @@ rem ------------------------------------
 ObjectTemplate.addVehicleType wz1917mobile_towed_dummySpawnObj -1 10000 0
 rem ------------------------------------
 ObjectTemplate.setHealth -1 -1000 0
-ObjectTemplate.loadSoundScript ../../../Common/Sounds/ATG_liftup.ssc
 
 
 
@@ -9363,7 +9565,7 @@ ObjectTemplate.setEngineType c_ETTank
 ObjectTemplate.setTorque 2.03
 ObjectTemplate.setDifferential 0.6
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -9390,7 +9592,7 @@ ObjectTemplate.setEngineType c_ETTank
 ObjectTemplate.setTorque 2.03
 ObjectTemplate.setDifferential 0.6
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -9529,6 +9731,9 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo wz1917BodyInfo
 NetworkableInfo.setPredictionMode PMLinear
 
+NetworkableInfo.createNewInfo wz1917GunSelectorInfo
+NetworkableInfo.setPredictionMode PMLinear
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = wz1917_BF1918
@@ -9567,10 +9772,10 @@ ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
 ObjectTemplate.GUIIndex 19
-ObjectTemplate.setVehicleIcon "Vehicle/icon_wz1917.tga"
-ObjectTemplate.setVehicleIconPos 102/61
+ObjectTemplate.setVehicleIcon "Vehicle/icon_wz1917_AmmoSelect.tga"
+ObjectTemplate.setVehicleIconPos 101/52
 ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_155mmwz1917.tga"
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_155mmwz1917_HE+Shrapnel.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
@@ -9690,8 +9895,13 @@ ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155gunbase.ssc
 ObjectTemplate.geometry wz1917_gunbase_m1
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate wz1917Cannon_PenetrateExploder
-ObjectTemplate.addTemplate wz1917Cannon
+ObjectTemplate.addTemplate wz1917CannonDummy
+ObjectTemplate.addTemplate wz1917GunSelector
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.setRotation 0/21/0
+ObjectTemplate.addTemplate wz1917_BulletCatcherBundle
+ObjectTemplate.setPosition 0/-20/0
+ObjectTemplate.setRotation 0/42/180
 ObjectTemplate.addTemplate wz1917Cannon_TracGunBarrel
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
@@ -9700,14 +9910,38 @@ ObjectTemplate.setMaxSpeed 0/8/0
 ObjectTemplate.setAcceleration 0/51/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
+rem *** wz1917_BulletCatcherBundle ***
+ObjectTemplate.create Bundle wz1917_BulletCatcherBundle
+rem -------------------------------------
+ObjectTemplate.addTemplate BulletCatcher20m
+ObjectTemplate.setPosition -0.04/0.1246/2
+rem -------------------------------------
 
-rem *** wz1917CamHolder ***
+rem *** wz1917GunSelector ***
+ObjectTemplate.create RotationalBundle wz1917GunSelector
+ObjectTemplate.setNetworkableInfo wz1917GunSelectorInfo
+rem ----------------------------------
+ObjectTemplate.addTemplate wz1917CannonShrapnel
+ObjectTemplate.setRotation 0/21/180
+ObjectTemplate.addTemplate wz1917CannonHE
+ObjectTemplate.setRotation 0/-21/0
+rem ----------------------------------
+ObjectTemplate.setMinRotation 0/0/-180
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/900000
+ObjectTemplate.setAcceleration 0/0/90000000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem *** wz1917CamHolder***
 ObjectTemplate.create RotationalBundle wz1917CamHolder
 ObjectTemplate.setNetworkableInfo wz1917GunInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate lodwz1917Cockpit
+ObjectTemplate.setPosition 0/0/0.15
 ObjectTemplate.addTemplate wz1917GunnerCamera
-ObjectTemplate.setPosition -0.5/0/-1
+ObjectTemplate.setPosition 0/0.4/-0.3
+ObjectTemplate.addTemplate wz1917_AmmoIndicator_HE-Shrapnel_Bundle
+ObjectTemplate.setPosition 0/0.4/-0.3
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-42/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -9739,8 +9973,12 @@ LodSelectorTemplate.addLodDistance 0.1
 
 rem *** wz1917GunnerCamera ***
 ObjectTemplate.create Camera wz1917GunnerCamera
-ObjectTemplate.OutsideHudOffset 0.5/0/1
+ObjectTemplate.OutsideHudOffset 0/-0.4/0.45
 ObjectTemplate.CVMExternTrace 1
+
+ObjectTemplate.create Bundle wz1917_AmmoIndicator_HE-Shrapnel_Bundle
+ObjectTemplate.addTemplate Tankgun_AmmoIndicator_W-S_HE-Shrapnel
+ObjectTemplate.setPosition 0/-0.4/0.45
 
 rem *** wz1917GunnerSeat ***
 ObjectTemplate.create SeatObject wz1917Gunner_Seat
@@ -9765,21 +10003,21 @@ rem ============================================================================
 rem folder = wz1917_BF1918
 rem sauce = Weapons.con
 rem ============================================================================
-
-rem *** wz1917Cannon ***
-ObjectTemplate.create FireArms wz1917Cannon
+rem *** wz1917CannonDummy ***
+ObjectTemplate.create FireArms wz1917CannonDummy
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../French155mm_BF1918/Sounds/Frz155Cannon.ssc
 ObjectTemplate.geometry wz1917_gunbarrel_m1
-ObjectTemplate.aiTemplate wz1917MainGun
+ObjectTemplate.aiTemplate wz1917AIMainGun
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_150_500_Main
 ObjectTemplate.setPosition -0.0402/0.1255/1.8377
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile
+ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
+rem ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile_Penetrator
 ObjectTemplate.projectilePosition -0.04/0.1246/2
 ObjectTemplate.setMinDev 0.96
-ObjectTemplate.magSize 100
+ObjectTemplate.magSize 50
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 225
 ObjectTemplate.autoReload 1
@@ -9791,14 +10029,14 @@ ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 40
 ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
 
-rem *** wz1917Cannon_PenetrateExploder ***
-ObjectTemplate.create FireArms wz1917Cannon_PenetrateExploder
+rem *** wz1917CannonHE ***
+ObjectTemplate.create FireArms wz1917CannonHE
 ObjectTemplate.setNetworkableInfo TankFireArmInfo
 rem -------------------------------------
-ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile_Penetrator
-ObjectTemplate.projectilePosition -0.04/0.1246/2
+ObjectTemplate.projectileTemplate Arty15,5cmL19,3Projectile
+ObjectTemplate.projectilePosition -0.04/20.1246/2
 ObjectTemplate.setMinDev 0.96
-ObjectTemplate.magSize 100
+ObjectTemplate.magSize 50
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 225
 ObjectTemplate.autoReload 1
@@ -9820,6 +10058,195 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 2
 ObjectTemplate.roundOfFire 5
 ObjectTemplate.setInputFire c_PIAltFire
+
+rem *** wz1917CannonShrapnel ***
+ObjectTemplate.create FireArms wz1917CannonShrapnel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate CanisterGunProjectile
+ObjectTemplate.projectilePosition -0.04/20.1246/2
+ObjectTemplate.setMinDev 2
+ObjectTemplate.magSize 50
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 450
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.20
+ObjectTemplate.roundOfFire 0.104
+ObjectTemplate.AmmoType	5
+ObjectTemplate.setBlastAmmoCount 1
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -2/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 1.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 2/0/0
+
+ObjectTemplate.addFireArmsPosition 0/0/0 -0.5/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
+rem *** 155bullets ***
 
 rem ===== EOF =====
 rem ============================================================================
@@ -9864,14 +10291,14 @@ ObjectTemplate.mass 2500
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 2
+ObjectTemplate.speedMod 1.2
 ObjectTemplate.exitTimer 0.75
 ObjectTemplate.hitpoints 55
 ObjectTemplate.maxhitpoints 55
 ObjectTemplate.material 30
 ObjectTemplate.criticalDamage 5
 ObjectTemplate.hpLostWhileCriticalDamage 2
-ObjectTemplate.explosionForceMod 20
+ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileUpSideDown 5
 ObjectTemplate.hpLostWhileDamageFromWater 5
 ObjectTemplate.addArmorEffect 20 e_WillyDamage 0/1.7/0
@@ -9975,7 +10402,7 @@ ObjectTemplate.setAttachToListener 1
 ObjectTemplate.loadSoundScript ../wz34/Sounds/wz34Turret.ssc
 rem -------------------------------------
 rem ObjectTemplate.addTemplate wz34_GunBarrel
-ObjectTemplate.addTemplate wz25v
+ObjectTemplate.addTemplate wz25v_heatgauge_bundle
 ObjectTemplate.setPosition 0.0207642/0.068/0.215048
 ObjectTemplate.addTemplate wz34MG_Visible
 ObjectTemplate.setPosition 0.0207642/0.038/0.015048
@@ -10241,14 +10668,14 @@ ObjectTemplate.mass 2500
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.speedMod 2
+ObjectTemplate.speedMod 1.2
 ObjectTemplate.exitTimer 0.75
 ObjectTemplate.hitpoints 52
 ObjectTemplate.maxhitpoints 52
 ObjectTemplate.material 30
 ObjectTemplate.criticalDamage 5
 ObjectTemplate.hpLostWhileCriticalDamage 2
-ObjectTemplate.explosionForceMod 20
+ObjectTemplate.explosionForceMod 13
 ObjectTemplate.hpLostWhileUpSideDown 5
 ObjectTemplate.hpLostWhileDamageFromWater 5
 ObjectTemplate.addArmorEffect 20 e_WillyDamage 0/1.7/0
@@ -10520,10 +10947,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSW_37_500_Main
 ObjectTemplate.setPosition 0/0.0546/0.5192
 rem -------------------------------------
-ObjectTemplate.setMinDev 1.23
-rem ObjectTemplate.setMinDev 2.46
+ObjectTemplate.setMinDev 1.08
 ObjectTemplate.projectileTemplate 37mmL21_Projectile
-rem ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.magSize 50
 ObjectTemplate.numOfMag 1
@@ -10872,8 +11297,7 @@ ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition -0.0064/0.0095/-0.46
 rem -------------------------------------
-ObjectTemplate.setMinDev 0.66
-rem  ObjectTemplate.setMinDev 0.99
+ObjectTemplate.setMinDev 0.56
 ObjectTemplate.projectileTemplate 37mmL46,5_Common_Projectile
 ObjectTemplate.projectilePosition 0/0.0756/2.2067
 ObjectTemplate.magSize 122
@@ -11102,7 +11526,7 @@ ObjectTemplate.setTorque 100
 rem ObjectTemplate.setTorque 10
 ObjectTemplate.setDifferential 1.53
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -11126,10 +11550,11 @@ ObjectTemplate.setDifferential 1.0
 rem *** Wz36mobile_WhelL ***
 ObjectTemplate.create Spring Wz36mobile_WhelL
 ObjectTemplate.geometry wz36_mobile_wheel_L_m1
+rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.Grip c_PGFEngineDummyGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -11141,10 +11566,11 @@ ObjectTemplate.setDamping 0
 rem *** Wz36mobile_WhelR ***
 ObjectTemplate.create Spring Wz36mobile_WhelR
 ObjectTemplate.geometry wz36_mobile_wheel_R_m1
+rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.Grip c_PGFEngineDummyGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -11828,7 +12254,7 @@ ObjectTemplate.setEngineType c_ETTank
 ObjectTemplate.setTorque 2.03
 ObjectTemplate.setDifferential 0.6
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05
@@ -11855,7 +12281,7 @@ ObjectTemplate.setEngineType c_ETTank
 ObjectTemplate.setTorque 2.03
 ObjectTemplate.setDifferential 0.6
 rem mobile gun
-rem ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.45
 ObjectTemplate.setGearChangeTime 0.05

@@ -1,5 +1,148 @@
 rem ============================================================================
 rem folder = A6M2-N
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster A6M2-N
+GeometryTemplate.create StandardMesh A6M2-N_fus_m1
+GeometryTemplate.file A6M2-N_fuslage_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh A6M2-N_canopy_m1
+GeometryTemplate.file zero_canopy_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_flap_left_lo_m1
+GeometryTemplate.file zero_flap_left_lo_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_flap_left_up_m1
+GeometryTemplate.file zero_flap_left_up_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_flap_right_lo_m1
+GeometryTemplate.file zero_flap_right_lo_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_flap_right_up_m1
+GeometryTemplate.file zero_flap_right_up_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_tail_mid_m1
+GeometryTemplate.file zero_tail_mid_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_tailflap_left_m1
+GeometryTemplate.file zero_tailflap_left_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_tailflap_right_m1
+GeometryTemplate.file zero_tailflap_right_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_floater_m1
+GeometryTemplate.file A6M2-N_floater
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_prop_m1
+GeometryTemplate.file zero_prop_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh A6M2-N_propblur_m1
+GeometryTemplate.alphaLodDistance 750
+GeometryTemplate.file zero_propblur_m1
+
+GeometryTemplate.create StandardMesh 1P_A6M2-N_M1
+GeometryTemplate.file 1P_Zero_m1
+
+GeometryTemplate.create StandardMesh A6M2-N_stick
+GeometryTemplate.file bf110_Joystick
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh A6M2-N_fus_L1
+GeometryTemplate.file A6M2-N_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Wreck_A6M2-N_m1
+GeometryTemplate.file Wreck_Zero_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 150
+GeometryTemplate.setLodDistance 2 200
+GeometryTemplate.setLodDistance 3 250
+GeometryTemplate.setLodDistance 4 300
+GeometryTemplate.setLodDistance 5 500
+rem ===== EOF =====
+rem ============================================================================
+rem folder = A6M2-N
 rem sauce = Network.con
 rem ============================================================================
 NetworkableInfo.createNewInfo A6M2-N_wing_info
@@ -6122,7 +6265,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.44/1.44/1.44
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -6251,7 +6394,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -6379,7 +6522,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -6501,7 +6644,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -6708,7 +6851,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.44/1.44/1.44
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -6767,7 +6910,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -6827,7 +6970,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -6887,7 +7030,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7008,7 +7151,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.44/1.44/1.44
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7067,7 +7210,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7127,7 +7270,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7187,7 +7330,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7308,7 +7451,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.44/1.44/1.44
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7367,7 +7510,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7427,7 +7570,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7487,7 +7630,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7608,7 +7751,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.44/1.44/1.44
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7667,7 +7810,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7727,7 +7870,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7787,7 +7930,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7908,7 +8051,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.44/1.44/1.44
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -7967,7 +8110,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -8027,7 +8170,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -8087,7 +8230,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10131,7 +10274,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10256,7 +10399,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10381,7 +10524,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10641,7 +10784,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10701,7 +10844,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10761,7 +10904,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10882,7 +11025,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -10942,7 +11085,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11002,7 +11145,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11123,7 +11266,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11183,7 +11326,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11243,7 +11386,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11304,7 +11447,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11364,7 +11507,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11424,7 +11567,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11484,7 +11627,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11605,7 +11748,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11665,7 +11808,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -11725,7 +11868,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0675
 rem ObjectTemplate.drag 0.0775
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.8/0.8/0.9
+ObjectTemplate.inertiaModifier 0.66/0.66/0.77
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -21486,7 +21629,6 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.07
 ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
@@ -22024,7 +22166,6 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.07
 ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
@@ -22157,7 +22298,6 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.07
 ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
@@ -22343,11 +22483,11 @@ ObjectTemplate.setAcceleration 30/0/600
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 15
-ObjectTemplate.setDifferential 3.9
+ObjectTemplate.setTorque 22
+ObjectTemplate.setDifferential 3.2
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
-ObjectTemplate.setNoPropellerEffectAtSpeed 70
+ObjectTemplate.setNoPropellerEffectAtSpeed 75
 
 rem *** D4Y2CatapultEngine ***
 ObjectTemplate.create Engine D4Y2CatapultEngine
@@ -22387,11 +22527,11 @@ ObjectTemplate.setAcceleration 30/0/600
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 15
-ObjectTemplate.setDifferential 3.9
+ObjectTemplate.setTorque 22
+ObjectTemplate.setDifferential 3.2
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
-ObjectTemplate.setNoPropellerEffectAtSpeed 70
+ObjectTemplate.setNoPropellerEffectAtSpeed 75
 
 rem *** D4Y2WheelLeft ***
 ObjectTemplate.create Spring D4Y2WheelLeft
@@ -22784,6 +22924,426 @@ ObjectTemplate.setHasPointPhysics 1
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = D4Y2-R
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo D4Y2-RAirSpawner_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo D4Y2-RAirSpawner_DummyEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = D4Y2-R
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = JPN
+
+rem *** D4Y2-R
+
+
+rem *** D4Y2-R ***
+ObjectTemplate.create PlayerControlObject D4Y2-R
+ObjectTemplate.setNetworkableInfo D4Y2_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.0725
+ObjectTemplate.mass 4000
+ObjectTemplate.inertiaModifier 0.8/0.7/0.7
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 160
+ObjectTemplate.maxhitpoints 160
+ObjectTemplate.material 22
+ObjectTemplate.criticalDamage 60
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 110 em_AichiValDamage 0/0.39/3
+ObjectTemplate.addArmorEffect 80 em_AichiValDamage 0/0.39/3
+ObjectTemplate.addArmorEffect 80 em_PlaneDamage 0/0.39/3
+ObjectTemplate.addArmorEffect 60 e_ScrapMetal_PlaneBody 0/0.39/3
+ObjectTemplate.addArmorEffect 60 e_AichiValFire 0/0.39/3
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_plane 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate B7A2
+rem -------------------------------------
+ObjectTemplate.addTemplate lodD4Y2-R
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -4/0.243/-2 0/0/0
+ObjectTemplate.setPcoId 0
+ObjectTemplate.GUIIndex 109
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_D4Y2.tga"
+ObjectTemplate.setVehicleIconPos 54/70
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,7mmType97.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_AirSpawnBase.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_reconplane_16x16.tga"
+ObjectTemplate.setMinimapIconSize 16
+
+rem *** lodD4Y2-R ***
+ObjectTemplate.create LodObject lodD4Y2-R
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate D4Y2-RComplex
+ObjectTemplate.addTemplate D4Y2Simple
+ObjectTemplate.addTemplate D4Y2Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector D4Y2LodSelector
+
+rem *** D4Y2-RComplex ***
+ObjectTemplate.create Bundle D4Y2-RComplex
+rem ObjectTemplate.setNetworkableInfo D4Y2_body_info
+rem Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate CarrierBorneLockEngine
+ObjectTemplate.addTemplate lodD4Y2Cockpit
+ObjectTemplate.addTemplate D4Y2Camera
+ObjectTemplate.setPosition 0/0.943/0.6
+
+ObjectTemplate.addTemplate D4Y2Entry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate D4Y2Seat
+ObjectTemplate.setPosition 0/0.35/0.75
+ObjectTemplate.addTemplate D4Y2-REngine
+ObjectTemplate.setPosition 0/0.3/1.3
+
+ObjectTemplate.addTemplate D4Y2flapleft
+ObjectTemplate.setPosition -3/0/-1
+
+ObjectTemplate.addTemplate D4Y2flapright
+ObjectTemplate.setPosition 3/0/-1
+
+ObjectTemplate.addTemplate D4Y2AilronLeft_Visible
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate D4Y2AilronLeft
+ObjectTemplate.setPosition -8/0/0
+
+ObjectTemplate.addTemplate D4Y2AilronRight_Visible
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate D4Y2AilronRight
+ObjectTemplate.setPosition 8/0/0
+
+ObjectTemplate.addTemplate D4Y2Elevator_Visible
+ObjectTemplate.setPosition 0/0.3531/-4.6123
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate D4Y2Elevator
+ObjectTemplate.setPosition 0/0/-6
+
+ObjectTemplate.addTemplate D4Y2Rudder
+ObjectTemplate.setPosition 0/1.0419/-4.8158
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate D4Y2BodyWingVertical
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate D4Y2-RBombHatch_Bundle
+ObjectTemplate.setPosition 0/0.3/1.3
+
+ObjectTemplate.addTemplate D4Y2Guns
+
+ObjectTemplate.addTemplate D4Y2-RAirSpawnerPCO_Spawner
+ObjectTemplate.setPosition 0/2/0
+
+ObjectTemplate.addTemplate D4Y2-RRearGunControl
+ObjectTemplate.setPosition 0/0/-1.169
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+
+rem *** D4Y2-RBombHatch_Bundle ***
+ObjectTemplate.create Bundle D4Y2-RBombHatch_Bundle
+rem -------------------------------------
+ObjectTemplate.addTemplate D4Y2-RBombHatchleft
+ObjectTemplate.setPosition -0.2721/-0.885/0.015
+ObjectTemplate.setRotation 180/0/0 
+ObjectTemplate.addTemplate D4Y2-RBombHatchright
+ObjectTemplate.setPosition 0.2721/-0.885/0.015
+rem -------------------------------------
+
+rem *** D4Y2-RBombHatchleft ***
+ObjectTemplate.create RotationalBundle D4Y2-RBombHatchleft
+ObjectTemplate.addTemplate D4Y1_bomb_hatch_L_Dummy
+ObjectTemplate.setRotation 180/0/0
+
+rem *** D4Y2-RBombHatchright ***
+ObjectTemplate.create RotationalBundle D4Y2-RBombHatchright
+ObjectTemplate.geometry D4Y1_bomb_hatch_R
+
+
+rem *** D4Y2-RRearGunControl ***
+ObjectTemplate.create PlayerControlObject D4Y2-RRearGunControl
+ObjectTemplate.setNetworkableInfo D4Y2_body_info
+ObjectTemplate.aiTemplate AichivalMGAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodD4Y2CockpitRear
+ObjectTemplate.setPosition 0/0/-1.169
+ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.addTemplate D4Y2BrowningRotation
+ObjectTemplate.setPosition 0/0.6/0.4
+ObjectTemplate.addTemplate D4Y2Entry
+ObjectTemplate.setPosition 0/-0.191/-0.67
+ObjectTemplate.addTemplate D4Y2RearSeat
+ObjectTemplate.setPosition 0/0.2/-0.199
+
+ObjectTemplate.addTemplate D4Y2_Engine_PCO1
+ObjectTemplate.setPosition 0/0/-1.169
+ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.addTemplate AirSelfRepairer_LightBomber_Engine
+ObjectTemplate.setPosition 0/-0.191/-1.169
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/0.05/1 0/0/0
+ObjectTemplate.setPcoId 1
+ObjectTemplate.GUIIndex 34
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_D4Y2.tga"
+ObjectTemplate.setVehicleIconPos 74/59
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_13mmType2.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_reconplane_16x16.tga"
+ObjectTemplate.setMinimapIconSize 16
+
+
+ObjectTemplate.create ObjectSpawner D4Y2-RAirSpawnerPCO_Spawner
+ObjectTemplate.setObjectTemplate 1 D4Y2-RAirSpawnerPCO
+ObjectTemplate.setObjectTemplate 2 D4Y2-RAirSpawnerPCO
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelay 10
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 0
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 100
+
+rem *** D4Y2-RAirSpawnerPCO ***
+ObjectTemplate.create PlayerControlObject D4Y2-RAirSpawnerPCO
+ObjectTemplate.setNetworkableInfo D4Y2-RAirSpawner_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 1
+ObjectTemplate.mass 15000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 137
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.CreateInvisible 1
+rem ----------------------------------
+ObjectTemplate.addTemplate D4Y2-RAirSpawnerDummyEngine
+ObjectTemplate.addTemplate D4Y2-RAirSpawnerComplex
+rem ----------------------------------
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** D4Y2-RAirSpawnerComplex ***
+ObjectTemplate.create Bundle D4Y2-RAirSpawnerComplex
+rem -------------------------------------
+ObjectTemplate.addTemplate D4Y2-RAirSpawnerLeft
+ObjectTemplate.setPosition -30/0/-20
+ObjectTemplate.addTemplate AirSpawn_PilotSpawn_SP64
+ObjectTemplate.setPosition -30/0/-20
+
+ObjectTemplate.addTemplate D4Y2-RAirSpawnerRight
+ObjectTemplate.setPosition 30/0/-40
+ObjectTemplate.addTemplate AirSpawn_PilotSpawn_SP64
+ObjectTemplate.setPosition 30/0/-40
+
+ObjectTemplate.addTemplate D4Y2-RAirSpawnerMiddle
+ObjectTemplate.setPosition 0/0/-60
+ObjectTemplate.addTemplate AirSpawn_PilotSpawn_SP64
+ObjectTemplate.setPosition 0/0/-60
+rem -------------------------------------
+
+ObjectTemplate.create ObjectSpawner D4Y2-RAirSpawnerLeft
+ObjectTemplate.setObjectTemplate 1 B7A2
+ObjectTemplate.setObjectTemplate 2 B7A2
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelay 30
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 0
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 100
+
+ObjectTemplate.create ObjectSpawner D4Y2-RAirSpawnerRight
+ObjectTemplate.setObjectTemplate 1 Kate
+ObjectTemplate.setObjectTemplate 2 Kate
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelay 30
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 0
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 100
+
+ObjectTemplate.create ObjectSpawner D4Y2-RAirSpawnerMiddle
+ObjectTemplate.setObjectTemplate 1 A6M3
+ObjectTemplate.setObjectTemplate 2 A6M3
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelay 30
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 0
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = D4Y2-R
+rem sauce = Physics.con
+rem ============================================================================
+
+rem *** D4Y2-REngine ***
+ObjectTemplate.create Engine D4Y2-REngine
+ObjectTemplate.setNetworkableInfo D4Y2_engine_info
+ObjectTemplate.loadSoundScript ../Engines/Sounds/DB601Engine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodD4Y2Propeller
+ObjectTemplate.setPosition 0/-0.05/0
+
+ObjectTemplate.addTemplate D4Y2LandingGearLeft
+ObjectTemplate.setPosition -2.144/-0.4/-0.8407
+ObjectTemplate.addTemplate D4Y2LandingGearRight
+ObjectTemplate.setPosition 2.144/-0.4/-0.8407
+
+ObjectTemplate.addTemplate D4Y2HatchLeft
+ObjectTemplate.setPosition -0.5/-0.7/-0.82
+ObjectTemplate.setRotation 0/0/90
+ObjectTemplate.addTemplate D4Y2HatchRight
+ObjectTemplate.setPosition 0.5/-0.7/-0.82
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate D4Y2WheelBack
+ObjectTemplate.setPosition 0/-0.6/-5.986
+
+ObjectTemplate.addTemplate lodD4Y2Canopy1
+rem ObjectTemplate.setPosition 0/-0.3/-1.9
+ObjectTemplate.setPosition 0/0.643/-0.75
+
+ObjectTemplate.addTemplate PlaneAltimeter
+ObjectTemplate.setPosition 0/0.643/4.3
+ObjectTemplate.addTemplate AirSight_type95
+ObjectTemplate.setPosition 0/0.643/4.3
+
+ObjectTemplate.addTemplate D4Y2-R_SpawnerKillerRotator
+ObjectTemplate.setPosition 0/-0.3/-1.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-1000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 30/0/600
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 22
+ObjectTemplate.setDifferential 3.2
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 75
+
+
+ObjectTemplate.create LandingGear D4Y2-R_SpawnerKillerRotator
+rem -------------------------------------
+ObjectTemplate.addTemplate D4Y2-R_SpawnerKiller
+ObjectTemplate.setPosition 0/2/0
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/180
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 100
+ObjectTemplate.setGearUpHeight 100
+ObjectTemplate.setGearDownEngineInput 10
+ObjectTemplate.setGearUpEngineInput 0
+
+rem *** D4Y2-R_SpawnerKiller ***
+ObjectTemplate.create SupplyDepot D4Y2-R_SpawnerKiller
+ObjectTemplate.radius 2
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+rem ------------------------------------
+ObjectTemplate.addVehicleType D4Y2-RAirSpawnerPCO -1 -1000 0
+rem ------------------------------------
+ObjectTemplate.setHealth -1 -1000 0
+
+rem *** D4Y2-RAirSpawnerDummyEngine ***
+ObjectTemplate.create Engine D4Y2-RAirSpawnerDummyEngine
+ObjectTemplate.setNetworkableInfo D4Y2-RAirSpawner_DummyEngineInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setInputToPitch c_PINone
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.03
+ObjectTemplate.setDifferential 0.6
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = D4Y2CatapultA
 rem sauce = Objects.con
 rem ============================================================================
@@ -22810,8 +23370,7 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.0675
-ObjectTemplate.drag 0.07
+ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -23404,8 +23963,7 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.0675
-ObjectTemplate.drag 0.07
+ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -23998,8 +24556,7 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.0675
-ObjectTemplate.drag 0.07
+ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -24592,8 +25149,7 @@ ObjectTemplate.saveInSeparateFile 1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-rem ObjectTemplate.drag 0.0675
-ObjectTemplate.drag 0.07
+ObjectTemplate.drag 0.0725
 ObjectTemplate.mass 4000
 ObjectTemplate.inertiaModifier 0.8/0.7/0.7
 ObjectTemplate.hasCollisionPhysics 1
@@ -25649,7 +26205,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.0825
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -26267,7 +26823,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.08
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -26713,7 +27269,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.0825
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -27316,7 +27872,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.0825
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -27919,7 +28475,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.0825
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -28522,7 +29078,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.0825
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -29396,7 +29952,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.08
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -29574,7 +30130,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.08
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -29759,7 +30315,7 @@ ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
 ObjectTemplate.setTorque 22.5
-ObjectTemplate.setDifferential 7.95
+ObjectTemplate.setDifferential 5.25
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
 ObjectTemplate.setNoPropellerEffectAtSpeed 70
@@ -29792,7 +30348,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.08
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -30395,7 +30951,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.08
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -30999,7 +31555,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.08
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -31602,7 +32158,7 @@ ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.08
+ObjectTemplate.drag 0.04
 ObjectTemplate.mass 2500
 ObjectTemplate.inertiaModifier 0.75/0.75/0.75
 ObjectTemplate.hasCollisionPhysics 1
@@ -32364,9 +32920,10 @@ objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.065
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.75/0.75/0.75
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -32701,9 +33258,10 @@ objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.065
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.75/0.75/0.75
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -32854,9 +33412,10 @@ objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
-ObjectTemplate.drag 0.065
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.75/0.75/0.75
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -33025,7 +33584,7 @@ ObjectTemplate.setTorque 20
 ObjectTemplate.setDifferential 4.5
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
-ObjectTemplate.setNoPropellerEffectAtSpeed 70
+ObjectTemplate.setNoPropellerEffectAtSpeed 50
 
 rem *** F1M2Engine2 ***
 ObjectTemplate.create Engine F1M2Engine2
@@ -33287,6 +33846,324 @@ ObjectTemplate.geometry bomb_SC50X_m1
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = F1M2-Supply
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo F1M2-SupplyAirSpawner_DummyEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo F1M2-SupplyAirSpawner_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = F1M2-Supply
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = JPN
+
+
+rem *** F1M2-Supply ***
+ObjectTemplate.create PlayerControlObject F1M2-Supply
+ObjectTemplate.setNetworkableInfo F1M2BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.CullRadiusScale 3
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
+ObjectTemplate.mass 2500
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 140
+ObjectTemplate.maxhitpoints 140
+rem *** AA Splash mod NEW ***
+ObjectTemplate.material 22
+rem *** AA Splash mod OLD ***
+rem ObjectTemplate.material 22
+ObjectTemplate.criticalDamage 60
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 100 em_SBD-6Damage 0/0.615/0.8
+ObjectTemplate.addArmorEffect 80 em_PlaneDamage 0/0.175/1.51
+ObjectTemplate.addArmorEffect 60 e_SBD-6Fire 0/0.615/0.8
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate F1M2
+rem -------------------------------------
+ObjectTemplate.addTemplate lodF1M2-Supply
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.addTemplate F1M2_PFloater
+ObjectTemplate.setPosition 0/-0.15/4.5
+ObjectTemplate.addTemplate F1M2_PFloater
+ObjectTemplate.setPosition 0/-0.15/-4.5
+
+ObjectTemplate.addTemplate F1M2_PFloater
+ObjectTemplate.setPosition 4.8/0.1/0
+ObjectTemplate.addTemplate F1M2_PFloater
+ObjectTemplate.setPosition -4.8/0.1/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.1/0.6/-1.8 0/0/0
+ObjectTemplate.GUIIndex 33
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_F1M2.tga"
+ObjectTemplate.setVehicleIconPos 69/68
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,7mmType97.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_Spotter.tga"
+ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+rem SightTweak
+rem ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_ammoplane_16x16.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+
+rem *** lodF1M2-Supply ***
+ObjectTemplate.create LodObject lodF1M2-Supply
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate F1M2-SupplyComplex
+ObjectTemplate.addTemplate F1M2Simple
+ObjectTemplate.addTemplate F1M2Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector F1M2LodSelector
+
+
+rem *** F1M2-SupplyComplex ***
+ObjectTemplate.create Bundle F1M2-SupplyComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodF1M2Cockpit
+ObjectTemplate.addTemplate F1M2Camera_For_PCO0
+ObjectTemplate.setPosition 0.0/0.817/-1.9
+ObjectTemplate.addTemplate F1M2Seat
+ObjectTemplate.setPosition 0/0.3/-1.5
+ObjectTemplate.addTemplate F1M2Entry
+ObjectTemplate.setPosition 0/0.9/-0.4
+
+ObjectTemplate.addTemplate F1M2_PCO1
+ObjectTemplate.setPosition 0/-0.2/-3.3
+ObjectTemplate.setRotation -180/0/0
+
+ObjectTemplate.addTemplate F1M2FlapR
+ObjectTemplate.setPosition 2.4/-0.45/-1.8
+ObjectTemplate.setRotation -5/0/3.8
+ObjectTemplate.addTemplate F1M2FlapL
+ObjectTemplate.setPosition -2.4/-0.45/-1.8
+ObjectTemplate.setRotation 5/0/-3.8
+
+ObjectTemplate.addTemplate F1M2BodyWing
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/-89.999
+
+ObjectTemplate.addTemplate F1M2AileronR
+ObjectTemplate.setPosition 4.4/-0.32/-1.45
+ObjectTemplate.setRotation -9.8/0/4.5
+
+ObjectTemplate.addTemplate F1M2AileronRU
+ObjectTemplate.setPosition 4/1.5/-0.92
+ObjectTemplate.setRotation -8.5/0/5
+
+ObjectTemplate.addTemplate F1M2AileronL
+ObjectTemplate.setPosition -4.4/-0.32/-1.45
+ObjectTemplate.setRotation 9.8/0/-4.5
+
+ObjectTemplate.addTemplate F1M2AileronLU
+ObjectTemplate.setPosition -4/1.5/-0.92
+ObjectTemplate.setRotation 8.5/0/-5
+
+ObjectTemplate.addTemplate F1M2Elevator
+ObjectTemplate.setPosition 0/0.14/-6.0
+ObjectTemplate.addTemplate F1M2Rudder
+ObjectTemplate.setPosition 0/1/-5.94
+ObjectTemplate.setRotation 0/0/-89.999
+
+ObjectTemplate.addTemplate F1M2-SupplyEngine
+ObjectTemplate.setPosition 0/0.0278/1.8811
+
+ObjectTemplate.addTemplate F1M2Floaters
+
+ObjectTemplate.addTemplate F1M2Guns
+ObjectTemplate.setPosition 0/0/0.5
+
+ObjectTemplate.addTemplate Air_Spotter
+
+ObjectTemplate.addTemplate F1M2-SupplyAirSpawnerPCO_Spawner
+ObjectTemplate.setPosition 0/2/0
+
+ObjectTemplate.addTemplate e_waterbacksmall
+ObjectTemplate.setPosition 0/-3.2/-2.6
+ObjectTemplate.addTemplate e_WaterBacklittle
+ObjectTemplate.setPosition -4.8/-2.8/-1.5
+ObjectTemplate.addTemplate e_WaterBacklittle
+ObjectTemplate.setPosition 4.8/-2.8/-1.5
+rem -------------------------------------
+
+ObjectTemplate.create ObjectSpawner F1M2-SupplyAirSpawnerPCO_Spawner
+ObjectTemplate.setObjectTemplate 1 F1M2-SupplyAirSpawnerPCO
+ObjectTemplate.setObjectTemplate 2 F1M2-SupplyAirSpawnerPCO
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelay 10
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 0
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 100
+
+rem *** F1M2-SupplyAirSpawnerPCO ***
+ObjectTemplate.create PlayerControlObject F1M2-SupplyAirSpawnerPCO
+ObjectTemplate.setNetworkableInfo F1M2-SupplyAirSpawner_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 1
+ObjectTemplate.mass 15000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 137
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.CreateInvisible 1
+rem ----------------------------------
+ObjectTemplate.addTemplate F1M2-SupplyAirSpawnerDummyEngine
+ObjectTemplate.addTemplate F1M2-SupplyDepot
+rem ----------------------------------
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+rem *** F1M2-SupplyDepot ***
+ObjectTemplate.create SupplyDepot F1M2-SupplyDepot
+ObjectTemplate.radius 75
+ObjectTemplate.team 1
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 10 -1 1000 0
+ObjectTemplate.addAmmoType 9 1 1 1
+ObjectTemplate.addAmmoType 8 -1 1000 0
+ObjectTemplate.addAmmoType 7 1 1 1
+ObjectTemplate.addAmmoType 6 -1 20 0
+ObjectTemplate.addAmmoType 5 -1 20 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+rem ===== EOF =====
+rem ============================================================================
+rem folder = F1M2-Supply
+rem sauce = Physics.con
+rem ============================================================================
+rem *** F1M2-SupplyEngine ***
+ObjectTemplate.create Engine F1M2-SupplyEngine
+ObjectTemplate.setNetworkableInfo F1M2EngineInfo
+ObjectTemplate.loadSoundScript ../Engines/Sounds/SakaeEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodF1M2Propeller
+
+ObjectTemplate.addTemplate PlaneAltimeter
+ObjectTemplate.setPosition 0/0.689/0.2189
+ObjectTemplate.addTemplate AirSight_type95
+ObjectTemplate.setPosition 0/0.689/0.2189
+
+ObjectTemplate.addTemplate F1M2-Supply_SpawnerKillerRotator
+ObjectTemplate.setPosition 0/-0.0278/-1.8811
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-1000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 100/0/500
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 20
+ObjectTemplate.setDifferential 4.5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 50
+
+
+ObjectTemplate.create LandingGear F1M2-Supply_SpawnerKillerRotator
+rem -------------------------------------
+ObjectTemplate.addTemplate F1M2-Supply_SpawnerKiller
+ObjectTemplate.setPosition 0/2/0
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/180
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/100
+ObjectTemplate.setGearDownHeight 100
+ObjectTemplate.setGearUpHeight 100
+ObjectTemplate.setGearDownEngineInput 10
+ObjectTemplate.setGearUpEngineInput 0
+
+rem *** F1M2-Supply_SpawnerKiller ***
+ObjectTemplate.create SupplyDepot F1M2-Supply_SpawnerKiller
+ObjectTemplate.radius 2
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+rem ------------------------------------
+ObjectTemplate.addVehicleType F1M2-SupplyAirSpawnerPCO -1 -1000 0
+rem ------------------------------------
+ObjectTemplate.setHealth -1 -1000 0
+
+rem *** F1M2-SupplyAirSpawnerDummyEngine ***
+ObjectTemplate.create Engine F1M2-SupplyAirSpawnerDummyEngine
+ObjectTemplate.setNetworkableInfo F1M2-SupplyAirSpawner_DummyEngineInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setInputToPitch c_PINone
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.03
+ObjectTemplate.setDifferential 0.6
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = F1M2CatapultA
 rem sauce = Objects.con
 rem ============================================================================
@@ -33312,9 +34189,10 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.065
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.75/0.75/0.75
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -33912,9 +34790,10 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.065
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.75/0.75/0.75
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -34512,9 +35391,10 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.065
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.75/0.75/0.75
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -35112,9 +35992,10 @@ ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.drag 0.065
+ObjectTemplate.drag 0.095
+rem ObjectTemplate.drag 0.065
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 0.75/0.75/0.75
+ObjectTemplate.inertiaModifier 0.5/0.5/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -41422,7 +42303,7 @@ rem **********************************************
 rem *** H8K2_TailGunner_PCO2 ***
 ObjectTemplate.create PlayerControlObject H8K2_TailGunner_PCO2
 ObjectTemplate.setNetworkableInfo H8K2BodyInfo
-ObjectTemplate.aiTemplate G4M2(Betty)RearMGAI
+ObjectTemplate.aiTemplate H8K2_RearMGAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodH8K2TailGunner
 ObjectTemplate.setPosition 0/0.89/-14.5
@@ -41693,7 +42574,7 @@ rem **********************************************
 rem *** H8K2_NoseGunner_PCO5 ***
 ObjectTemplate.create PlayerControlObject H8K2_NoseGunner_PCO5
 ObjectTemplate.setNetworkableInfo H8K2BodyInfo
-ObjectTemplate.aiTemplate G4M2(Betty)FrontMGAI
+ObjectTemplate.aiTemplate H8K2_FrontMGAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodH8K2Nose
 ObjectTemplate.setPosition 0/1.35/-13.95
@@ -42779,7 +43660,7 @@ ObjectTemplate.geometry bomb_SC50X_m1
 rem *** H8K2ClusterBombRack120 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack120
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.visibleDummyProjectileTemplate H8K2_Bomb60Dummy
 ObjectTemplate.projectileTemplate ClusterHEAT120
@@ -42804,7 +43685,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack124 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack124
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT124
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42828,7 +43709,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack128 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack128
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT128
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42852,7 +43733,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack132 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack132
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT132
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42876,7 +43757,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack136 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack136
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT136
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42900,7 +43781,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack140 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack140
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT140
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42924,7 +43805,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack144 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack144
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT144
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42948,7 +43829,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack148 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack148
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT148
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42972,7 +43853,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack152 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack152
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT152
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -42996,7 +43877,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack156 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack156
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT156
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43020,7 +43901,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack160 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack160
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT160
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43044,7 +43925,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack164 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack164
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT164
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43068,7 +43949,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack168 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack168
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT168
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43092,7 +43973,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack172 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack172
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT172
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43116,7 +43997,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack176 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack176
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT176
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43140,7 +44021,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack180 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack180
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT180
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43164,7 +44045,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack184 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack184
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT184
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43188,7 +44069,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack188 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack188
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT188
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43212,7 +44093,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack192 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack192
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT192
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43236,7 +44117,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack196 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack196
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT196
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43260,7 +44141,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack200 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack200
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT200
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43284,7 +44165,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack204 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack204
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT204
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43308,7 +44189,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack208 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack208
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT208
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43332,7 +44213,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack212 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack212
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT212
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43356,7 +44237,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack216 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack216
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT216
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43380,7 +44261,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack220 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack220
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT220
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43404,7 +44285,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack224 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack224
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT224
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43428,7 +44309,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack228 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack228
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT228
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43452,7 +44333,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack232 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack232
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT232
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -43476,7 +44357,7 @@ ObjectTemplate.AmmoType	7
 rem *** H8K2ClusterBombRack236 ***
 ObjectTemplate.create FireArms H8K2ClusterBombRack236
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate H8K2Bombs
+ObjectTemplate.aiTemplate H8K2Bombs_Prm
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT236
 ObjectTemplate.projectilePosition 0/-0.5/0
@@ -44653,7 +45534,7 @@ ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_SeaSkipbomb250.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_Skipbomb60.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCAir
 ObjectTemplate.setVehicleType  VTDiveBomber
 ObjectTemplate.setToolTipType  TTDiveBomber
@@ -48408,7 +49289,7 @@ ObjectTemplate.setRotation -179.999/0/0
 rem -------------------------------------
 ObjectTemplate.projectileTemplate Ki109DPProjectile
 ObjectTemplate.projectilePosition 0/0/3.5
-ObjectTemplate.setMinDev 0.75
+ObjectTemplate.setMinDev 0.25
 ObjectTemplate.magSize 15
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 408
@@ -48428,7 +49309,7 @@ ObjectTemplate.aiTemplate ki109Cannon
 rem -------------------------------------
 ObjectTemplate.projectileTemplate Ki109APProjectile
 ObjectTemplate.projectilePosition 0/0/3.5
-ObjectTemplate.setMinDev 0.75
+ObjectTemplate.setMinDev 0.25
 ObjectTemplate.magSize 15
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 408
@@ -50090,13 +50971,13 @@ ObjectTemplate.setNetworkableInfo Ki27-binfo
 ObjectTemplate.geometry Ki27-b_tailflap_left_m1
 ObjectTemplate.setMinRotation 0/-12.5/0
 ObjectTemplate.setMaxRotation 0/12.5/0
-ObjectTemplate.setMaxSpeed 0/12.35/0
-ObjectTemplate.setAcceleration 0/-24.7/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0.5/0/0
 ObjectTemplate.setWingLift 2.5
-ObjectTemplate.setFlapLift 2.4
+ObjectTemplate.setFlapLift 2.5
 ObjectTemplate.rememberExcessInput 1
 
 rem *** Ki27-bFlapTailRight ***
@@ -50105,13 +50986,13 @@ ObjectTemplate.setNetworkableInfo Ki27-binfo
 ObjectTemplate.geometry Ki27-b_tailflap_right_m1
 ObjectTemplate.setMinRotation 0/-12.5/0
 ObjectTemplate.setMaxRotation 0/12.5/0
-ObjectTemplate.setMaxSpeed 0/12.35/0
-ObjectTemplate.setAcceleration 0/-24.7/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset -0.5/0/0
 ObjectTemplate.setWingLift 2.5
-ObjectTemplate.setFlapLift 2.4
+ObjectTemplate.setFlapLift 2.5
 ObjectTemplate.rememberExcessInput 1
 
 rem *** Ki27-bRudder ***
@@ -50120,8 +51001,8 @@ ObjectTemplate.setNetworkableInfo Ki27-binfo
 ObjectTemplate.geometry Ki27-b_Rodder_m1
 ObjectTemplate.setMinRotation 0/-14/0
 ObjectTemplate.setMaxRotation 0/14/0
-ObjectTemplate.setMaxSpeed 0/13.3/0
-ObjectTemplate.setAcceleration 0/26.6/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/28/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
@@ -50163,8 +51044,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
 ObjectTemplate.geometry Ki27-b_flap_left_up_m1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/11.4/0
-ObjectTemplate.setAcceleration 0/-22.8/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5
@@ -50179,8 +51060,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
 ObjectTemplate.geometry Ki27-b_flap_right_up_m1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/11.4/0
-ObjectTemplate.setAcceleration 0/22.8/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5
@@ -50900,9 +51781,9 @@ rem ============================================================================
 rem folder = Ki-43
 rem sauce = Geometries.con
 rem ============================================================================
-renderer.beginGlobalCluster Ki43
-GeometryTemplate.create StandardMesh Ki43_fus_m1
-GeometryTemplate.file Ki43_fus_m1
+renderer.beginGlobalCluster ki43iib
+GeometryTemplate.create StandardMesh ki43iib_fus_m1
+GeometryTemplate.file ki43iib_fus_m1
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
@@ -50911,8 +51792,10 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Leg_L_m1
-GeometryTemplate.file Ki43_Leg_L_m1
+
+
+GeometryTemplate.create StandardMesh ki43iib_Leg_L_m1
+GeometryTemplate.file ki43iib_Leg_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -50920,8 +51803,8 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Leg_R_m1
-GeometryTemplate.file Ki43_Leg_R_m1
+GeometryTemplate.create StandardMesh ki43iib_Leg_R_m1
+GeometryTemplate.file ki43iib_Leg_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -50929,8 +51812,8 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Leg_Tail_m1
-GeometryTemplate.file Ki43_Leg_Tail_m1
+GeometryTemplate.create StandardMesh ki43iib_Leg_Tail_m1
+GeometryTemplate.file ki43iib_Leg_Tail_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -50938,8 +51821,8 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_LegCover_L_m1
-GeometryTemplate.file Ki43_LegCover_R_m1
+GeometryTemplate.create StandardMesh ki43iib_LegCover_L_m1
+GeometryTemplate.file ki43iib_LegCover_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -50947,8 +51830,8 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_LegCover_R_m1
-GeometryTemplate.file Ki43_LegCover_R_m1
+GeometryTemplate.create StandardMesh ki43iib_LegCover_R_m1
+GeometryTemplate.file ki43iib_LegCover_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -50956,8 +51839,8 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Can_m1
-GeometryTemplate.file Ki43_Can_m1
+GeometryTemplate.create StandardMesh ki43iib_Can_m1
+GeometryTemplate.file ki43iib_Can_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -50965,8 +51848,8 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Elevator_m1
-GeometryTemplate.file Ki43_Elevator_m1
+GeometryTemplate.create StandardMesh ki43iib_Elevator_m1
+GeometryTemplate.file ki43iib_Elevator_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 30
 GeometryTemplate.setLodDistance 2 50
@@ -50974,8 +51857,8 @@ GeometryTemplate.setLodDistance 3 80
 GeometryTemplate.setLodDistance 4 90
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Rudder_m1
-GeometryTemplate.file Ki43_Rudder_m1
+GeometryTemplate.create StandardMesh ki43iib_Rudder_m1
+GeometryTemplate.file ki43iib_Rudder_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 30
 GeometryTemplate.setLodDistance 2 50
@@ -50983,8 +51866,8 @@ GeometryTemplate.setLodDistance 3 80
 GeometryTemplate.setLodDistance 4 90
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Flap_L_m1
-GeometryTemplate.file Ki43_Flap_L_m1
+GeometryTemplate.create StandardMesh ki43iib_Flap_L_m1
+GeometryTemplate.file ki43iib_Flap_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 30
 GeometryTemplate.setLodDistance 2 50
@@ -50992,8 +51875,8 @@ GeometryTemplate.setLodDistance 3 80
 GeometryTemplate.setLodDistance 4 90
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Flap_R_m1
-GeometryTemplate.file Ki43_Flap_R_m1
+GeometryTemplate.create StandardMesh ki43iib_Flap_R_m1
+GeometryTemplate.file ki43iib_Flap_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 30
 GeometryTemplate.setLodDistance 2 50
@@ -51001,8 +51884,8 @@ GeometryTemplate.setLodDistance 3 80
 GeometryTemplate.setLodDistance 4 90
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Aileron_L_m1
-GeometryTemplate.file Ki43_Aileron_L_m1
+GeometryTemplate.create StandardMesh ki43iib_Aileron_L_m1
+GeometryTemplate.file ki43iib_Aileron_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 30
 GeometryTemplate.setLodDistance 2 50
@@ -51010,8 +51893,8 @@ GeometryTemplate.setLodDistance 3 80
 GeometryTemplate.setLodDistance 4 90
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Aileron_R_m1
-GeometryTemplate.file Ki43_Aileron_R_m1
+GeometryTemplate.create StandardMesh ki43iib_Aileron_R_m1
+GeometryTemplate.file ki43iib_Aileron_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -51019,8 +51902,8 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Engine_m1
-GeometryTemplate.file Ki43_Engine_m1
+GeometryTemplate.create StandardMesh ki43iib_Engine_m1
+GeometryTemplate.file ki43iib_Engine_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -51028,29 +51911,34 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_Wheel_L_m1
-GeometryTemplate.file Ki43_Wheel_L_m1
+GeometryTemplate.create StandardMesh ki43iib_Wheel_L_m1
+GeometryTemplate.file ki43iib_Wheel_L_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
 GeometryTemplate.setLodDistance 2 60
 GeometryTemplate.setLodDistance 3 100
 
-GeometryTemplate.create StandardMesh Ki43_Wheel_R_m1
-GeometryTemplate.file Ki43_Wheel_R_m1
+GeometryTemplate.create StandardMesh ki43iib_Wheel_R_m1
+GeometryTemplate.file ki43iib_Wheel_R_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
 GeometryTemplate.setLodDistance 2 60
 GeometryTemplate.setLodDistance 3 100
 
-GeometryTemplate.create StandardMesh Ki43_Wheel_Tail_m1
-GeometryTemplate.file Ki43_Wheel_Tail_m1
+GeometryTemplate.create StandardMesh ki43iib_Wheel_Tail_m1
+GeometryTemplate.file ki43iib_Wheel_Tail_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 20
 GeometryTemplate.setLodDistance 2 60
 GeometryTemplate.setLodDistance 3 100
 
-GeometryTemplate.create StandardMesh Ki43_Prop_m1
-GeometryTemplate.file Ki43_Prop_m1
+GeometryTemplate.create StandardMesh ki43iib_dummywhl
+GeometryTemplate.file ki43iib_dummywhl
+GeometryTemplate.setLodDistance 0 0
+
+
+GeometryTemplate.create StandardMesh ki43iib_Prop_m1
+GeometryTemplate.file ki43iib_Prop_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 10
 GeometryTemplate.setLodDistance 2 15
@@ -51058,17 +51946,27 @@ GeometryTemplate.setLodDistance 3 30
 GeometryTemplate.setLodDistance 4 50
 GeometryTemplate.setLodDistance 5 100
 
-GeometryTemplate.create StandardMesh Ki43_PropBlur_m1
-GeometryTemplate.file Ki43_PropBlur_m1
+GeometryTemplate.create StandardMesh ki43iib_PropBlur_m1
+GeometryTemplate.file ki43iib_PropBlur_m1
 GeometryTemplate.alphaLodDistance 750
 
-GeometryTemplate.create StandardMesh Ki43_1p_Cockpit_m1
-GeometryTemplate.file Ki43_1p_Cockpit_m1
+GeometryTemplate.create StandardMesh ki43iib_1p_Cockpit_m1
+GeometryTemplate.file ki43iib_1p_Cockpit_m1
 
 renderer.endGlobalCluster
 
-GeometryTemplate.create StandardMesh Ki43_LOD_m1
-GeometryTemplate.file Ki43_LOD_m1
+GeometryTemplate.create StandardMesh ki43iib_rack
+GeometryTemplate.file ki43iib_rack
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh ki43iib_LOD_m1
+GeometryTemplate.file ki43iib_LOD_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 150
 GeometryTemplate.setLodDistance 2 200
@@ -51076,8 +51974,8 @@ GeometryTemplate.setLodDistance 3 250
 GeometryTemplate.setLodDistance 4 300
 GeometryTemplate.setLodDistance 5 500
 
-GeometryTemplate.create StandardMesh Ki43_Wreck_m1
-GeometryTemplate.file Ki43_Wreck_m1
+GeometryTemplate.create StandardMesh ki43iib_Wreck_m1
+GeometryTemplate.file ki43iib_Wreck_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 150
 GeometryTemplate.setLodDistance 2 200
@@ -51089,13 +51987,13 @@ rem ============================================================================
 rem folder = Ki-43
 rem sauce = Network.con
 rem ============================================================================
-NetworkableInfo.createNewInfo Ki43_wing_info
+NetworkableInfo.createNewInfo ki43iib_wing_info
 NetworkableInfo.setPredictionMode PMLinear
 
-NetworkableInfo.createNewInfo Ki43_engine_info
+NetworkableInfo.createNewInfo ki43iib_engine_info
 NetworkableInfo.setPredictionMode PMLinear
 
-NetworkableInfo.createNewInfo Ki43_body_info
+NetworkableInfo.createNewInfo ki43iib_body_info
 NetworkableInfo.setPredictionMode PMLinear
 
 
@@ -51106,20 +52004,20 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = JPN
 
-rem *** Ki-43
-rem *** Ki-43_bomber
-rem *** Ki-43_HEAT
+rem *** ki-43
+rem *** ki-43_bomber
+rem *** ki-43_HEAT
 
-rem *** Ki43 ***
+rem *** ki43iib ***
 ObjectTemplate.create PlayerControlObject Ki-43
-ObjectTemplate.setNetworkableInfo Ki43_body_info
+ObjectTemplate.setNetworkableInfo ki43iib_body_info
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.08
-ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.1/1.1/1.1
+ObjectTemplate.mass 2000
+ObjectTemplate.inertiaModifier 1.1/1.1/0.5
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -51127,13 +52025,13 @@ ObjectTemplate.explosionDamage 5
 ObjectTemplate.hasArmor 1
 ObjectTemplate.angleMod 1
 ObjectTemplate.speedMod 2
-ObjectTemplate.hitpoints 140
-ObjectTemplate.maxhitpoints 140
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
 rem *** AA Splash mod NEW ***
 ObjectTemplate.material 22
 rem *** AA Splash mod OLD ***
 rem ObjectTemplate.material 22
-ObjectTemplate.criticalDamage 55
+ObjectTemplate.criticalDamage 30
 ObjectTemplate.hpLostWhileCriticalDamage 1.5
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileUpSideDown 10
@@ -51148,11 +52046,11 @@ ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate Zero
 rem -------------------------------------
-ObjectTemplate.addTemplate lodKi43
+ObjectTemplate.addTemplate lodki43iib
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -3/0.1/-2.8 0/0/0
 ObjectTemplate.GUIIndex 101
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Ki43.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_ki43iib.tga"
 rem ObjectTemplate.setVehicleIconPos 75/79
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmHo103.tga"
@@ -51162,94 +52060,96 @@ rem SightTweak
 rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCAir
 ObjectTemplate.setVehicleType  VTFighter
-ObjectTemplate.setToolTipType  TTFighter
+ObjectTemplate.setToolTipType  TTFightercam
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
 
-rem *** lodKi43 ***
-ObjectTemplate.create LodObject lodKi43
+rem *** lodki43iib ***
+ObjectTemplate.create LodObject lodki43iib
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43Complex
-ObjectTemplate.addTemplate Ki43Simple
-ObjectTemplate.addTemplate Ki43Wreck
+ObjectTemplate.addTemplate ki43iibComplex
+ObjectTemplate.addTemplate ki43iibSimple
+ObjectTemplate.addTemplate ki43iibWreck
 rem -------------------------------------
-ObjectTemplate.lodSelector Ki43LodSelector
+ObjectTemplate.lodSelector ki43iibLodSelector
 
-rem *** Ki43Complex ***
-ObjectTemplate.create Bundle Ki43Complex
-ObjectTemplate.geometry Ki43_fus_m1
+rem *** ki43iibComplex ***
+ObjectTemplate.create Bundle ki43iibComplex
+ObjectTemplate.geometry ki43iib_fus_m1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Engine
-ObjectTemplate.addTemplate Ki43_Can
-ObjectTemplate.addTemplate lodKi43Cockpit
-ObjectTemplate.addTemplate Ki43Camera
-ObjectTemplate.setPosition 0/0.9/0.3
-ObjectTemplate.addTemplate Ki43Entry
+ObjectTemplate.addTemplate ki43iib_Engine
+ObjectTemplate.addTemplate ki43iib_Can
+ObjectTemplate.addTemplate lodki43iibCockpit
+ObjectTemplate.addTemplate ki43iibCamera
+ObjectTemplate.setPosition 0/0.8/0.1
+rem ObjectTemplate.setPosition 0/0.8/0.3
+ObjectTemplate.addTemplate ki43iibEntry
 ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate Ki43Seat
-ObjectTemplate.setPosition 0/0.35/0.35
-ObjectTemplate.addTemplate Ki43Engine
-ObjectTemplate.setPosition 0/0/3.3648
-ObjectTemplate.addTemplate Ki43BodyWingVertical
+ObjectTemplate.addTemplate ki43iibSeat
+ObjectTemplate.setPosition 0/0.15/0.3
+ObjectTemplate.addTemplate ki43iibEngine
+ObjectTemplate.setPosition 0/0/2.516
+rem ObjectTemplate.setPosition 0/0/3.3648
+ObjectTemplate.addTemplate ki43iibBodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate Ki43_Elevator
-ObjectTemplate.setPosition 0/0.2/-5.96
-ObjectTemplate.addTemplate Ki43Rudder
-ObjectTemplate.setPosition 0/0/-6.19
+ObjectTemplate.addTemplate ki43iib_Elevator
+ObjectTemplate.setPosition 0/0.135/-4.62
+ObjectTemplate.addTemplate ki43iibRudder
+ObjectTemplate.setPosition 0/-0.01/-4.77
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate Ki43_Flap_L
-ObjectTemplate.setPosition -3/0/-1
-ObjectTemplate.addTemplate Ki43_Flap_R
-ObjectTemplate.setPosition 3/0/-1
+ObjectTemplate.addTemplate ki43iib_Flap_L
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ki43iib_Flap_R
+ObjectTemplate.setPosition 0/0/0
 
-ObjectTemplate.addTemplate Ki43_Aileron_L
-ObjectTemplate.setPosition -6.1315/0.0175/0.5621
-ObjectTemplate.setRotation 11.6/0/-5.8
-ObjectTemplate.addTemplate Ki43_Aileron_R
-ObjectTemplate.setPosition 6.1315/0.0175/0.5621
-ObjectTemplate.setRotation -11.6/0/5.8
+ObjectTemplate.addTemplate ki43iib_Aileron_L
+ObjectTemplate.setPosition -4.936/0.05/0.542
+ObjectTemplate.setRotation 11.5/0/-6.7
+ObjectTemplate.addTemplate ki43iib_Aileron_R
+ObjectTemplate.setPosition 4.936/0.05/0.542
+ObjectTemplate.setRotation -11.5/0/6.7
 
-ObjectTemplate.addTemplate Ki43Guns
+ObjectTemplate.addTemplate ki43iibGuns
 rem -------------------------------------
 
-rem *** Ki43_Engine ***
-ObjectTemplate.create SimpleObject Ki43_Engine
-ObjectTemplate.geometry Ki43_Engine_m1
+rem *** ki43iib_Engine ***
+ObjectTemplate.create SimpleObject ki43iib_Engine
+ObjectTemplate.geometry ki43iib_Engine_m1
 
-rem *** Ki43_Can ***
-ObjectTemplate.create SimpleObject Ki43_Can
-ObjectTemplate.geometry Ki43_Can_m1
+rem *** ki43iib_Can ***
+ObjectTemplate.create SimpleObject ki43iib_Can
+ObjectTemplate.geometry ki43iib_Can_m1
 
-rem *** lodKi43Cockpit ***
-ObjectTemplate.create LodObject lodKi43Cockpit
+rem *** lodki43iibCockpit ***
+ObjectTemplate.create LodObject lodki43iibCockpit
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43CockpitInternal
-ObjectTemplate.addTemplate Ki43CockpitExternal
+ObjectTemplate.addTemplate ki43iibCockpitInternal
+ObjectTemplate.addTemplate ki43iibCockpitExternal
 rem -------------------------------------
-ObjectTemplate.lodSelector Ki43CockpitSelector
+ObjectTemplate.lodSelector ki43iibCockpitSelector
 
-rem *** Ki43CockpitExternal ***
-ObjectTemplate.create SimpleObject Ki43CockpitExternal
+rem *** ki43iibCockpitExternal ***
+ObjectTemplate.create SimpleObject ki43iibCockpitExternal
 ObjectTemplate.geometry 
 
-rem *** Ki43CockpitInternal ***
-ObjectTemplate.create SimpleObject Ki43CockpitInternal
-ObjectTemplate.geometry Ki43_1p_Cockpit_m1
+rem *** ki43iibCockpitInternal ***
+ObjectTemplate.create SimpleObject ki43iibCockpitInternal
+ObjectTemplate.geometry ki43iib_1p_Cockpit_m1
 
-rem *** Ki43CockpitSelector ***
-LodSelectorTemplate.create DistanceSelector Ki43CockpitSelector
+rem *** ki43iibCockpitSelector ***
+LodSelectorTemplate.create DistanceSelector ki43iibCockpitSelector
 LodSelectorTemplate.addLodDistance 3
 
-rem *** Ki43Camera ***
-ObjectTemplate.create Camera Ki43Camera
+rem *** ki43iibCamera ***
+ObjectTemplate.create Camera ki43iibCamera
 ObjectTemplate.setMinRotation -70/-40/0
 ObjectTemplate.setMaxRotation 70/10/0
 ObjectTemplate.setMaxSpeed 90/90/0
@@ -51259,42 +52159,45 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 ObjectTemplate.toggleMouseLook 1
 ObjectTemplate.OutsideHudOffset 0/0/4
 
-rem *** Ki43Entry ***
-ObjectTemplate.create EntryPoint Ki43Entry
+rem *** ki43iibEntry ***
+ObjectTemplate.create EntryPoint ki43iibEntry
 ObjectTemplate.setEntryRadius 5.5
 
-rem *** Ki43Seat ***
-ObjectTemplate.create SeatObject Ki43Seat
+rem *** ki43iibSeat ***
+ObjectTemplate.create SeatObject ki43iibSeat
 ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
 
-rem *** lodKi43Propeller ***
-ObjectTemplate.create LodObject lodKi43Propeller
+rem *** lodki43iibPropeller ***
+ObjectTemplate.create LodObject lodki43iibPropeller
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43PropellerStatic
-ObjectTemplate.addTemplate Ki43PropellerBlurred
+ObjectTemplate.addTemplate ki43iibPropellerStatic
+ObjectTemplate.addTemplate ki43iibPropellerBlurred
 rem -------------------------------------
-ObjectTemplate.lodSelector Ki43PropSelector
+ObjectTemplate.lodSelector ki43iibPropSelector
 
-rem *** Ki43PropellerStatic ***
-ObjectTemplate.create SimpleObject Ki43PropellerStatic
-ObjectTemplate.geometry Ki43_Prop_m1
+rem *** ki43iibPropellerStatic ***
+ObjectTemplate.create SimpleObject ki43iibPropellerStatic
+ObjectTemplate.geometry ki43iib_Prop_m1
 
-rem *** Ki43PropellerBlurred ***
-ObjectTemplate.create SimpleObject Ki43PropellerBlurred
-ObjectTemplate.geometry Ki43_PropBlur_m1
-LodSelectorTemplate.create CompareSelector Ki43PropSelector
+rem *** ki43iibPropellerBlurred ***
+ObjectTemplate.create SimpleObject ki43iibPropellerBlurred
+ObjectTemplate.geometry ki43iib_PropBlur_m1
+LodSelectorTemplate.create CompareSelector ki43iibPropSelector
 LodSelectorTemplate.addLodComparison 0.07
 
-rem *** Ki43LandingGear_L ***
-ObjectTemplate.create LandingGear Ki43LandingGear_L
+rem *** ki43iibLandingGear_L ***
+ObjectTemplate.create LandingGear ki43iibLandingGear_L
 ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
-ObjectTemplate.geometry Ki43_Leg_L_m1
+ObjectTemplate.geometry ki43iib_Leg_L_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Wheel_L
-ObjectTemplate.setPosition -0.0167/-1.6649/0.3095
+ObjectTemplate.addTemplate ki43iib_Wheel_L
+ObjectTemplate.setPosition 0/-1.112/0.298
+ObjectTemplate.addTemplate ki43iib_Wheel_L_Dummy
+ObjectTemplate.setPosition 0/-1.2/0.298
+ObjectTemplate.invisible 1
 rem ObjectTemplate.setPosition -0.0167/-1.5649/0.3095
 rem -------------------------------------
 ObjectTemplate.setMaxRotation 0/0/83
@@ -51304,17 +52207,21 @@ ObjectTemplate.setGearDownHeight 25
 ObjectTemplate.setGearUpHeight 23
 ObjectTemplate.setGearDownEngineInput 0.55
 
-rem *** Ki43LandingGear_R ***
-ObjectTemplate.create LandingGear Ki43LandingGear_R
+
+
+rem *** ki43iibLandingGear_R ***
+ObjectTemplate.create LandingGear ki43iibLandingGear_R
 ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
-ObjectTemplate.geometry Ki43_Leg_R_m1
+ObjectTemplate.geometry ki43iib_Leg_R_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Wheel_R
-ObjectTemplate.setPosition 0.0167/-1.6649/0.3095
-rem ObjectTemplate.setPosition 0.0167/-1.5649/0.3095
+ObjectTemplate.addTemplate ki43iib_Wheel_R
+ObjectTemplate.setPosition 0/-1.112/0.298
+ObjectTemplate.addTemplate ki43iib_Wheel_R_Dummy
+ObjectTemplate.setPosition 0/-1.2/0.298
+ObjectTemplate.invisible 1
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/-83
 ObjectTemplate.setMaxSpeed 0/0/28
@@ -51323,9 +52230,11 @@ ObjectTemplate.setGearDownHeight 25
 ObjectTemplate.setGearUpHeight 23
 ObjectTemplate.setGearDownEngineInput 0.55
 
-rem *** Ki43LandingGearCover_L ***
-ObjectTemplate.create LandingGear Ki43LandingGearCover_L
-ObjectTemplate.geometry Ki43_LegCover_L_m1
+
+
+rem *** ki43iibLandingGearCover_L ***
+ObjectTemplate.create LandingGear ki43iibLandingGearCover_L
+ObjectTemplate.geometry ki43iib_LegCover_L_m1
 rem -------------------------------------
 ObjectTemplate.setMaxRotation 0/0/83
 ObjectTemplate.setMaxSpeed 0/0/28
@@ -51334,27 +52243,29 @@ ObjectTemplate.setGearDownHeight 25
 ObjectTemplate.setGearUpHeight 23
 ObjectTemplate.setGearDownEngineInput 0.55
 
-rem *** Ki43LandingGearCover_R ***
-ObjectTemplate.create LandingGear Ki43LandingGearCover_R
-ObjectTemplate.geometry Ki43_LegCover_R_m1
+rem *** ki43iibLandingGearCover_R ***
+ObjectTemplate.create LandingGear ki43iibLandingGearCover_R
+ObjectTemplate.geometry ki43iib_LegCover_R_m1
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/-83
 ObjectTemplate.setMaxSpeed 0/0/28
-ObjectTemplate.setAcceleration 0/0/-90
+ObjectTemplate.setAcceleration 0/0/90
 ObjectTemplate.setGearDownHeight 25
 ObjectTemplate.setGearUpHeight 23
 ObjectTemplate.setGearDownEngineInput 0.55
 
-rem *** Ki43LandingGear_Tail ***
-ObjectTemplate.create RotationalBundle Ki43LandingGear_Tail
-ObjectTemplate.geometry Ki43_Leg_Tail_m1
+rem *** ki43iibLandingGear_Tail ***
+ObjectTemplate.create RotationalBundle ki43iibLandingGear_Tail
+ObjectTemplate.geometry ki43iib_Leg_Tail_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Wheel_Tail
-ObjectTemplate.setPosition 0/-0.4392/-0.234
-rem ObjectTemplate.setPosition 0/-0.3892/-0.234
+ObjectTemplate.addTemplate ki43iib_Wheel_Tail
+ObjectTemplate.setPosition 0/-0.33/-0.188
+ObjectTemplate.addTemplate ki43iib_Wheel_Tail_Dummy
+ObjectTemplate.setPosition 0/-0.3/-0.188
+
 rem -------------------------------------
 ObjectTemplate.setMinRotation -20/0/0
 ObjectTemplate.setMaxRotation 20/0/0
@@ -51363,16 +52274,18 @@ ObjectTemplate.setAcceleration -110/0/0
 ObjectTemplate.setInputToYaw c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 
-rem *** Ki43_Flap_L_visible_Bundle ***
-ObjectTemplate.create Bundle Ki43_Flap_L_visible_Bundle
+
+
+rem *** ki43iib_Flap_L_visible_Bundle ***
+ObjectTemplate.create Bundle ki43iib_Flap_L_visible_Bundle
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Flap_L_visible
+ObjectTemplate.addTemplate ki43iib_Flap_L_visible
 ObjectTemplate.setRotation 0/-30/0
 rem -------------------------------------
 
-rem *** Ki43_Flap_L_visible ***
-ObjectTemplate.create LandingGear Ki43_Flap_L_visible
-ObjectTemplate.geometry Ki43_Flap_L_m1
+rem *** ki43iib_Flap_L_visible ***
+ObjectTemplate.create LandingGear ki43iib_Flap_L_visible
+ObjectTemplate.geometry ki43iib_Flap_L_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -51385,16 +52298,16 @@ ObjectTemplate.setGearUpHeight 40
 ObjectTemplate.setGearDownEngineInput 0.7
 ObjectTemplate.setGearUpEngineInput 0.8
 
-rem *** Ki43_Flap_R_visible_Bundle ***
-ObjectTemplate.create Bundle Ki43_Flap_R_visible_Bundle
+rem *** ki43iib_Flap_R_visible_Bundle ***
+ObjectTemplate.create Bundle ki43iib_Flap_R_visible_Bundle
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Flap_R_visible
+ObjectTemplate.addTemplate ki43iib_Flap_R_visible
 ObjectTemplate.setRotation 0/-30/0
 rem -------------------------------------
 
-rem *** Ki43_Flap_R_visible ***
-ObjectTemplate.create LandingGear Ki43_Flap_R_visible
-ObjectTemplate.geometry Ki43_Flap_R_m1
+rem *** ki43iib_Flap_R_visible ***
+ObjectTemplate.create LandingGear ki43iib_Flap_R_visible
+ObjectTemplate.geometry ki43iib_Flap_R_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -51407,24 +52320,24 @@ ObjectTemplate.setGearUpHeight 40
 ObjectTemplate.setGearDownEngineInput 0.7
 ObjectTemplate.setGearUpEngineInput 0.8
 
-rem *** Ki43Simple ***
-ObjectTemplate.create SimpleObject Ki43Simple
-ObjectTemplate.geometry Ki43_LOD_m1
+rem *** ki43iibSimple ***
+ObjectTemplate.create SimpleObject ki43iibSimple
+ObjectTemplate.geometry ki43iib_LOD_m1
 
-rem *** Ki43Wreck ***
-ObjectTemplate.create SimpleObject Ki43Wreck
-ObjectTemplate.geometry Ki43_Wreck_m1
+rem *** ki43iibWreck ***
+ObjectTemplate.create SimpleObject ki43iibWreck
+ObjectTemplate.geometry ki43iib_Wreck_m1
 
-rem *** Ki43LodSelector ***
-LodSelectorTemplate.create DistCompareSelector2 Ki43LodSelector
+rem *** ki43iibLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 ki43iibLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
 LodSelectorTemplate.addLodDistance 200
 
 rem ***************************************************************************
 
-rem *** Ki43_bomber ***
+rem *** Ki-43_bomber ***
 ObjectTemplate.create PlayerControlObject Ki-43_bomber
-ObjectTemplate.setNetworkableInfo Ki43_body_info
+ObjectTemplate.setNetworkableInfo ki43iib_body_info
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
@@ -51432,7 +52345,7 @@ ObjectTemplate.CullRadiusScale 3
 rem ObjectTemplate.drag 0.08
 ObjectTemplate.drag 0.088
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.21/1.21/1.21
+ObjectTemplate.inertiaModifier 1.21/1.5/1.21
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -51461,11 +52374,11 @@ ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate Zero
 rem -------------------------------------
-ObjectTemplate.addTemplate lodKi43_bomber
+ObjectTemplate.addTemplate lodki43iib_bomber
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -3/0.1/-2.8 0/0/0
 ObjectTemplate.GUIIndex 101
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Ki43.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_ki43iib.tga"
 rem ObjectTemplate.setVehicleIconPos 75/79
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmHo103.tga"
@@ -51480,67 +52393,73 @@ ObjectTemplate.setVehicleType  VTFighter
 ObjectTemplate.setToolTipType  TTFighter
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_fighterbomber_16x16.tga"
 
-rem *** lodKi43_bomber ***
-ObjectTemplate.create LodObject lodKi43_bomber
+rem *** lodki43iib_bomber ***
+ObjectTemplate.create LodObject lodki43iib_bomber
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_bomber_Complex
-ObjectTemplate.addTemplate Ki43Simple
-ObjectTemplate.addTemplate Ki43Wreck
+ObjectTemplate.addTemplate ki43iib_bomber_Complex
+ObjectTemplate.addTemplate ki43iibSimple
+ObjectTemplate.addTemplate ki43iibWreck
 rem -------------------------------------
-ObjectTemplate.lodSelector Ki43LodSelector
+ObjectTemplate.lodSelector ki43iibLodSelector
 
-rem *** Ki43_bomber_Complex ***
-ObjectTemplate.create Bundle Ki43_bomber_Complex
-ObjectTemplate.geometry Ki43_fus_m1
+rem *** ki43iib_bomber_Complex ***
+ObjectTemplate.create Bundle ki43iib_bomber_Complex
+ObjectTemplate.geometry ki43iib_fus_m1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Engine
-ObjectTemplate.addTemplate Ki43_Can
-ObjectTemplate.addTemplate lodKi43Cockpit
-ObjectTemplate.addTemplate Ki43Camera
-ObjectTemplate.setPosition 0/0.9/0.3
-ObjectTemplate.addTemplate Ki43Entry
+ObjectTemplate.addTemplate ki43iib_Engine
+ObjectTemplate.addTemplate ki43iib_Can
+ObjectTemplate.addTemplate lodki43iibCockpit
+ObjectTemplate.addTemplate ki43iibCamera
+ObjectTemplate.setPosition 0/0.8/0.1
+rem ObjectTemplate.setPosition 0/0.8/0.3
+ObjectTemplate.addTemplate ki43iibEntry
 ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate Ki43Seat
-ObjectTemplate.setPosition 0/0.35/0.35
-ObjectTemplate.addTemplate Ki43Engine
-ObjectTemplate.setPosition 0/0/3.3648
-ObjectTemplate.addTemplate Ki43BodyWingVertical
+ObjectTemplate.addTemplate ki43iibSeat
+ObjectTemplate.setPosition 0/0.15/0.3
+ObjectTemplate.addTemplate ki43iibEngine
+ObjectTemplate.setPosition 0/0/2.516
+ObjectTemplate.addTemplate ki43iibBodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate Ki43_Bomber_Elevator
-ObjectTemplate.setPosition 0/0.2/-5.96
-ObjectTemplate.addTemplate Ki43Rudder
-ObjectTemplate.setPosition 0/0/-6.19
+ObjectTemplate.addTemplate ki43iib_rack
+
+ObjectTemplate.addTemplate ki43iib_bomber_Elevator
+ObjectTemplate.setPosition 0/0.135/-4.62
+ObjectTemplate.addTemplate ki43iibRudder
+ObjectTemplate.setPosition 0/-0.01/-4.77
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate Ki43_Flap_L
-ObjectTemplate.setPosition -3/0/-1
-ObjectTemplate.addTemplate Ki43_Flap_R
-ObjectTemplate.setPosition 3/0/-1
+ObjectTemplate.addTemplate ki43iib_Flap_L
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ki43iib_Flap_R
+ObjectTemplate.setPosition 0/0/0
 
-ObjectTemplate.addTemplate Ki43_Bomber_Aileron_L
-ObjectTemplate.setPosition -6.1315/0.0175/0.5621
-ObjectTemplate.setRotation 11.6/0/-5.8
-ObjectTemplate.addTemplate Ki43_Bomber_Aileron_R
-ObjectTemplate.setPosition 6.1315/0.0175/0.5621
-ObjectTemplate.setRotation -11.6/0/5.8
+ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_L
+ObjectTemplate.setPosition -4.936/0.05/0.542
+ObjectTemplate.setRotation 11.5/0/-6.7
+ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_R
+ObjectTemplate.setPosition 4.936/0.05/0.542
+ObjectTemplate.setRotation -11.5/0/6.7
 
-ObjectTemplate.addTemplate Ki43Guns
-ObjectTemplate.addTemplate Ki43BombRack
+ObjectTemplate.addTemplate ki43iibGuns
+ObjectTemplate.addTemplate ki43iibBombRack
+
+ObjectTemplate.create SimpleObject ki43iib_rack
+ObjectTemplate.geometry ki43iib_rack
 rem -------------------------------------
 
 rem ***************************************************************************
 
-rem *** Ki43_HEAT ***
+rem *** Ki-43_HEAT ***
 ObjectTemplate.create PlayerControlObject Ki-43_HEAT
-ObjectTemplate.setNetworkableInfo Ki43_body_info
+ObjectTemplate.setNetworkableInfo ki43iib_body_info
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasDynamicShadow 1
@@ -51548,7 +52467,7 @@ ObjectTemplate.CullRadiusScale 3
 rem ObjectTemplate.drag 0.08
 ObjectTemplate.drag 0.088
 ObjectTemplate.mass 2500
-ObjectTemplate.inertiaModifier 1.21/1.21/1.21
+ObjectTemplate.inertiaModifier 1.21/1.3/1.21
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -51577,11 +52496,11 @@ ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate Zero
 rem -------------------------------------
-ObjectTemplate.addTemplate lodKi43_HEAT
+ObjectTemplate.addTemplate lodki43iib_HEAT
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -3/0.1/-2.8 0/0/0
 ObjectTemplate.GUIIndex 101
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Ki43.tga"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_ki43iib.tga"
 rem ObjectTemplate.setVehicleIconPos 75/79
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmHo103.tga"
@@ -51596,105 +52515,109 @@ ObjectTemplate.setVehicleType  VTFighter
 ObjectTemplate.setToolTipType  TTFighter
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_fighterbomber_16x16.tga"
 
-rem *** lodKi43_HEAT ***
-ObjectTemplate.create LodObject lodKi43_HEAT
+rem *** lodki43iib_HEAT ***
+ObjectTemplate.create LodObject lodki43iib_HEAT
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_HEAT_Complex
-ObjectTemplate.addTemplate Ki43Simple
-ObjectTemplate.addTemplate Ki43Wreck
+ObjectTemplate.addTemplate ki43iib_HEAT_Complex
+ObjectTemplate.addTemplate ki43iibSimple
+ObjectTemplate.addTemplate ki43iibWreck
 rem -------------------------------------
-ObjectTemplate.lodSelector Ki43LodSelector
+ObjectTemplate.lodSelector ki43iibLodSelector
 
-rem *** Ki43_HEAT_Complex ***
-ObjectTemplate.create Bundle Ki43_HEAT_Complex
-ObjectTemplate.geometry Ki43_fus_m1
+rem *** ki43iib_HEAT_Complex ***
+ObjectTemplate.create Bundle ki43iib_HEAT_Complex
+ObjectTemplate.geometry ki43iib_fus_m1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Ki43_Engine
-ObjectTemplate.addTemplate Ki43_Can
-ObjectTemplate.addTemplate lodKi43Cockpit
-ObjectTemplate.addTemplate Ki43Camera
-ObjectTemplate.setPosition 0/0.9/0.3
-ObjectTemplate.addTemplate Ki43Entry
+ObjectTemplate.addTemplate ki43iib_Engine
+ObjectTemplate.addTemplate ki43iib_Can
+ObjectTemplate.addTemplate lodki43iibCockpit
+ObjectTemplate.addTemplate ki43iibCamera
+ObjectTemplate.setPosition 0/0.8/0.1
+rem ObjectTemplate.setPosition 0/0.8/0.3
+ObjectTemplate.addTemplate ki43iibEntry
 ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate Ki43Seat
-ObjectTemplate.setPosition 0/0.35/0.35
-ObjectTemplate.addTemplate Ki43Engine
-ObjectTemplate.setPosition 0/0/3.3648
-ObjectTemplate.addTemplate Ki43BodyWingVertical
+ObjectTemplate.addTemplate ki43iibSeat
+ObjectTemplate.setPosition 0/0.15/0.3
+ObjectTemplate.addTemplate ki43iibEngine
+ObjectTemplate.setPosition 0/0/2.516
+ObjectTemplate.addTemplate ki43iibBodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate Ki43_Bomber_Elevator
-ObjectTemplate.setPosition 0/0.2/-5.96
-ObjectTemplate.addTemplate Ki43Rudder
-ObjectTemplate.setPosition 0/0/-6.19
+ObjectTemplate.addTemplate ki43iib_rack
+
+
+ObjectTemplate.addTemplate ki43iib_bomber_Elevator
+ObjectTemplate.setPosition 0/0.135/-4.62
+ObjectTemplate.addTemplate ki43iibRudder
+ObjectTemplate.setPosition 0/-0.01/-4.77
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate Ki43_Flap_L
-ObjectTemplate.setPosition -3/0/-1
-ObjectTemplate.addTemplate Ki43_Flap_R
-ObjectTemplate.setPosition 3/0/-1
+ObjectTemplate.addTemplate ki43iib_Flap_L
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ki43iib_Flap_R
+ObjectTemplate.setPosition 0/0/0
 
-ObjectTemplate.addTemplate Ki43_Bomber_Aileron_L
-ObjectTemplate.setPosition -6.1315/0.0175/0.5621
-ObjectTemplate.setRotation 11.6/0/-5.8
-ObjectTemplate.addTemplate Ki43_Bomber_Aileron_R
-ObjectTemplate.setPosition 6.1315/0.0175/0.5621
-ObjectTemplate.setRotation -11.6/0/5.8
+ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_L
+ObjectTemplate.setPosition -4.936/0.05/0.542
+ObjectTemplate.setRotation 11.5/0/-6.7
+ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_R
+ObjectTemplate.setPosition 4.936/0.05/0.542
+ObjectTemplate.setRotation -11.5/0/6.7
 
-ObjectTemplate.addTemplate Ki43Guns
-ObjectTemplate.addTemplate Ki43_DummyCounter
+ObjectTemplate.addTemplate ki43iibGuns
+ObjectTemplate.addTemplate ki43iib_DummyCounter
 
-ObjectTemplate.addTemplate Ki43_Container130
-ObjectTemplate.addTemplate Ki43_Container150
-ObjectTemplate.addTemplate Ki43_Container170
-ObjectTemplate.addTemplate Ki43_Container190
-ObjectTemplate.addTemplate Ki43_Container210
-ObjectTemplate.addTemplate Ki43_Container230
+ObjectTemplate.addTemplate ki43iib_Container130
+ObjectTemplate.addTemplate ki43iib_Container150
+ObjectTemplate.addTemplate ki43iib_Container170
+ObjectTemplate.addTemplate ki43iib_Container190
+ObjectTemplate.addTemplate ki43iib_Container210
+ObjectTemplate.addTemplate ki43iib_Container230
 
-ObjectTemplate.addTemplate Ki43_BombRack120
-ObjectTemplate.addTemplate Ki43_BombRack124
-ObjectTemplate.addTemplate Ki43_BombRack128
-ObjectTemplate.addTemplate Ki43_BombRack132
-ObjectTemplate.addTemplate Ki43_BombRack136
+ObjectTemplate.addTemplate ki43iib_BombRack120
+ObjectTemplate.addTemplate ki43iib_BombRack124
+ObjectTemplate.addTemplate ki43iib_BombRack128
+ObjectTemplate.addTemplate ki43iib_BombRack132
+ObjectTemplate.addTemplate ki43iib_BombRack136
 
-ObjectTemplate.addTemplate Ki43_BombRack140
-ObjectTemplate.addTemplate Ki43_BombRack144
-ObjectTemplate.addTemplate Ki43_BombRack148
-ObjectTemplate.addTemplate Ki43_BombRack152
-ObjectTemplate.addTemplate Ki43_BombRack156
+ObjectTemplate.addTemplate ki43iib_BombRack140
+ObjectTemplate.addTemplate ki43iib_BombRack144
+ObjectTemplate.addTemplate ki43iib_BombRack148
+ObjectTemplate.addTemplate ki43iib_BombRack152
+ObjectTemplate.addTemplate ki43iib_BombRack156
 
-ObjectTemplate.addTemplate Ki43_BombRack160
-ObjectTemplate.addTemplate Ki43_BombRack164
-ObjectTemplate.addTemplate Ki43_BombRack168
-ObjectTemplate.addTemplate Ki43_BombRack172
-ObjectTemplate.addTemplate Ki43_BombRack176
+ObjectTemplate.addTemplate ki43iib_BombRack160
+ObjectTemplate.addTemplate ki43iib_BombRack164
+ObjectTemplate.addTemplate ki43iib_BombRack168
+ObjectTemplate.addTemplate ki43iib_BombRack172
+ObjectTemplate.addTemplate ki43iib_BombRack176
 
-ObjectTemplate.addTemplate Ki43_BombRack180
-ObjectTemplate.addTemplate Ki43_BombRack184
-ObjectTemplate.addTemplate Ki43_BombRack188
-ObjectTemplate.addTemplate Ki43_BombRack192
-ObjectTemplate.addTemplate Ki43_BombRack196
+ObjectTemplate.addTemplate ki43iib_BombRack180
+ObjectTemplate.addTemplate ki43iib_BombRack184
+ObjectTemplate.addTemplate ki43iib_BombRack188
+ObjectTemplate.addTemplate ki43iib_BombRack192
+ObjectTemplate.addTemplate ki43iib_BombRack196
 
-ObjectTemplate.addTemplate Ki43_BombRack200
-ObjectTemplate.addTemplate Ki43_BombRack204
-ObjectTemplate.addTemplate Ki43_BombRack208
-ObjectTemplate.addTemplate Ki43_BombRack212
-ObjectTemplate.addTemplate Ki43_BombRack216
+ObjectTemplate.addTemplate ki43iib_BombRack200
+ObjectTemplate.addTemplate ki43iib_BombRack204
+ObjectTemplate.addTemplate ki43iib_BombRack208
+ObjectTemplate.addTemplate ki43iib_BombRack212
+ObjectTemplate.addTemplate ki43iib_BombRack216
 
-ObjectTemplate.addTemplate Ki43_BombRack220
-ObjectTemplate.addTemplate Ki43_BombRack224
-ObjectTemplate.addTemplate Ki43_BombRack228
-ObjectTemplate.addTemplate Ki43_BombRack232
-ObjectTemplate.addTemplate Ki43_BombRack236
+ObjectTemplate.addTemplate ki43iib_BombRack220
+ObjectTemplate.addTemplate ki43iib_BombRack224
+ObjectTemplate.addTemplate ki43iib_BombRack228
+ObjectTemplate.addTemplate ki43iib_BombRack232
+ObjectTemplate.addTemplate ki43iib_BombRack236
 
-ObjectTemplate.addTemplate Ki43_BombRack240
+ObjectTemplate.addTemplate ki43iib_BombRack240
 rem -------------------------------------
 
 rem ===== EOF =====
@@ -51704,56 +52627,119 @@ rem sauce = Physics.con
 rem ============================================================================
 rem *** mobility +-0% ***
 
-rem *** Ki43Engine ***
-ObjectTemplate.create Engine Ki43Engine
-ObjectTemplate.setNetworkableInfo Ki43_engine_info
+rem *** ki43iibEngine ***
+ObjectTemplate.create Engine ki43iibEngine
+ObjectTemplate.setNetworkableInfo ki43iib_engine_info
 ObjectTemplate.loadSoundScript ../Engines/Sounds/SakaeEngine.ssc
 rem -----------------------
-ObjectTemplate.addTemplate lodKi43Propeller
+ObjectTemplate.addTemplate lodki43iibPropeller
 
-ObjectTemplate.addTemplate Ki43LandingGear_L
-ObjectTemplate.setPosition -2.0162/-0.4517/-1.9442
-ObjectTemplate.addTemplate Ki43LandingGear_R
-ObjectTemplate.setPosition 2.0162/-0.4517/-1.9442
+ObjectTemplate.addTemplate ki43iibLandingGear_L
+ObjectTemplate.setPosition -1.483/-0.363/-1.397
+ObjectTemplate.addTemplate ki43iibLandingGear_R
+ObjectTemplate.setPosition 1.483/-0.363/-1.397
 
-ObjectTemplate.addTemplate Ki43LandingGearCover_L
-ObjectTemplate.setPosition -2.2558/-0.5117/-1.6676
-ObjectTemplate.setRotation -1.5/1.2/-83
-ObjectTemplate.addTemplate Ki43LandingGearCover_R
-ObjectTemplate.setPosition 2.2558/-0.5117/-1.6676
-ObjectTemplate.setRotation 1.5/1.2/83
+ObjectTemplate.addTemplate ki43iibLandingGearCover_L
+ObjectTemplate.setPosition -1.679/-0.434/-1.142
+ObjectTemplate.setRotation 0/-0.5/0
+ObjectTemplate.addTemplate ki43iibLandingGearCover_R
+ObjectTemplate.setPosition 1.679/-0.434/-1.142
+ObjectTemplate.setRotation 0/-0.5/0
+ObjectTemplate.addTemplate ki43iibLandingGear_Tail
+ObjectTemplate.setPosition 0/-0.211/-6.388
 
-ObjectTemplate.addTemplate Ki43LandingGear_Tail
-ObjectTemplate.setPosition 0/-0.3015/-8.3084
-
-ObjectTemplate.addTemplate Ki43_Flap_L_visible_Bundle
-ObjectTemplate.setPosition -2.7561/-0.4385/-3.8848
-ObjectTemplate.setRotation 5.09/0/-6.58
-ObjectTemplate.addTemplate Ki43_Flap_R_visible_Bundle
-ObjectTemplate.setPosition 2.7561/-0.4385/-3.8848
-ObjectTemplate.setRotation -5.09/0/6.58
+ObjectTemplate.addTemplate ki43iib_Flap_L_visible_Bundle
+ObjectTemplate.setPosition -1.9541/-0.365/-2.903
+ObjectTemplate.setRotation 5.12/0/-6.69
+ObjectTemplate.addTemplate ki43iib_Flap_R_visible_Bundle
+ObjectTemplate.setPosition 1.954/-0.365/-2.903
+ObjectTemplate.setRotation -5.12/0/6.69
 
 ObjectTemplate.addTemplate PlaneAltimeter
-ObjectTemplate.setPosition 0/0.9/0.9352
-ObjectTemplate.addTemplate AirSight_type100
-ObjectTemplate.setPosition 0/0.9/0.9352
+ObjectTemplate.setPosition 0/0.8/1.6
+ObjectTemplate.addTemplate AirSight_type3
+ObjectTemplate.setPosition 0/0.8/1.6
 rem -----------------------
-ObjectTemplate.setMinRotation -0.3/0/-1000
-ObjectTemplate.setMaxRotation 0.3/0/5000
-ObjectTemplate.setMaxSpeed 1000/0/800
-ObjectTemplate.setAcceleration 100/0/900
+ObjectTemplate.setMinRotation -0.5/0/-1000
+ObjectTemplate.setMaxRotation 0.5/0/5200
+rem ObjectTemplate.setMaxSpeed 1000/0/800
+ObjectTemplate.setMaxSpeed 1000/0/1000
+rem ObjectTemplate.setAcceleration 100/0/900
+ObjectTemplate.setAcceleration 100/0/1500
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
 ObjectTemplate.setTorque 35
-ObjectTemplate.setDifferential 5
+rem ObjectTemplate.setDifferential 5.1
+ObjectTemplate.setDifferential 4.5
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
-ObjectTemplate.setNoPropellerEffectAtSpeed 67.5
+rem ObjectTemplate.setNoPropellerEffectAtSpeed 67
+ObjectTemplate.setNoPropellerEffectAtSpeed 80
 
-rem *** Ki43_Wheel_L ***
-ObjectTemplate.create Spring Ki43_Wheel_L
-ObjectTemplate.geometry Ki43_Wheel_L_m1
+rem *** ki43iib_Wheel_L ***
+ObjectTemplate.create Spring ki43iib_Wheel_L
+ObjectTemplate.geometry ki43iib_Wheel_L_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -----------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -----------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** ki43iib_Wheel_R ***
+ObjectTemplate.create Spring ki43iib_Wheel_R
+ObjectTemplate.geometry ki43iib_Wheel_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -----------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -----------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** ki43iib_Wheel_Tail ***
+ObjectTemplate.create Spring ki43iib_Wheel_Tail
+ObjectTemplate.geometry ki43iib_Wheel_Tail_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** ki43iib_Wheel_L_Dummy ***
+ObjectTemplate.create Spring ki43iib_Wheel_L_Dummy
+ObjectTemplate.geometry ki43iib_dummywhl
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -----------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -----------------------
+rem ObjectTemplate.setStrength 24
+rem ObjectTemplate.setDamping 12
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+ObjectTemplate.invisible 1
+
+
+rem *** ki43iib_Wheel_R_Dummy ***
+ObjectTemplate.create Spring ki43iib_Wheel_R_Dummy
+ObjectTemplate.geometry ki43iib_dummywhl
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -51765,186 +52751,191 @@ ObjectTemplate.addTemplate e_wdustPlaneL
 rem -----------------------
 ObjectTemplate.setStrength 24
 ObjectTemplate.setDamping 12
+ObjectTemplate.invisible 1
 
-rem *** Ki43_Wheel_R ***
-ObjectTemplate.create Spring Ki43_Wheel_R
-ObjectTemplate.geometry Ki43_Wheel_R_m1
-ObjectTemplate.hasMobilePhysics 1
-ObjectTemplate.hasCollisionPhysics 1
-ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFRollGripWhenOccupied
-rem -----------------------
-ObjectTemplate.addTemplate e_WaterTouchPlane
-ObjectTemplate.addTemplate e_wdustPlane
-ObjectTemplate.addTemplate e_wdustPlaneL
-rem -----------------------
-ObjectTemplate.setStrength 24
-ObjectTemplate.setDamping 12
 
-rem *** Ki43_Wheel_Tail ***
-ObjectTemplate.create Spring Ki43_Wheel_Tail
-ObjectTemplate.geometry Ki43_Wheel_Tail_m1
+rem *** ki43iib_Wheel_Tail_Dummy  ***
+ObjectTemplate.create Spring ki43iib_Wheel_Tail_Dummy
+ObjectTemplate.geometry ki43iib_dummywhl
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.Grip c_PGFRollGripWhenOccupied
 ObjectTemplate.setStrength 24
 ObjectTemplate.setDamping 12
+ObjectTemplate.invisible 1
 
-rem *** Ki43BodyWingVertical ***
-ObjectTemplate.create Wing Ki43BodyWingVertical
+
+
+
+rem *** ki43iibBodyWingVertical ***
+ObjectTemplate.create Wing ki43iibBodyWingVertical
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/0/-0.1
-ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 0
+ObjectTemplate.setWingLift 1
+rem ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.2
 
-rem *** Ki43_Elevator ***
-ObjectTemplate.create Wing Ki43_Elevator
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
-ObjectTemplate.geometry Ki43_Elevator_m1
-ObjectTemplate.setMinRotation 0/-12.5/0
-ObjectTemplate.setMaxRotation 0/12.5/0
+rem *** ki43iib_Elevator ***
+ObjectTemplate.create Wing ki43iib_Elevator
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
+ObjectTemplate.geometry ki43iib_Elevator_m1
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
 ObjectTemplate.setMaxSpeed 0/13/0
 ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 1.2
-ObjectTemplate.setFlapLift 2.1
+ObjectTemplate.setWingLift 1
+ObjectTemplate.setFlapLift 2.5
+rem ObjectTemplate.setWingLift 1.2
+rem ObjectTemplate.setFlapLift 2.1
 ObjectTemplate.rememberExcessInput 1
 
-rem *** Ki43_Bomber_Elevator ***
-ObjectTemplate.create Wing Ki43_Bomber_Elevator
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
-ObjectTemplate.geometry Ki43_Elevator_m1
+rem *** ki43iib_Bomber_Elevator ***
+ObjectTemplate.create Wing ki43iib_Bomber_Elevator
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
+ObjectTemplate.geometry ki43iib_Elevator_m1
 ObjectTemplate.setMinRotation 0/-11.25/0
 ObjectTemplate.setMaxRotation 0/11.25/0
-ObjectTemplate.setMaxSpeed 0/11.25/0
-ObjectTemplate.setAcceleration 0/-22.5/0
+ObjectTemplate.setMaxSpeed 0/22.5/0
+ObjectTemplate.setAcceleration 0/-100/0
+rem ObjectTemplate.setAcceleration 0/-22.5/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/0/0
 ObjectTemplate.setWingLift 1.2
-ObjectTemplate.setFlapLift 2.1
+ObjectTemplate.setFlapLift 2
 ObjectTemplate.rememberExcessInput 1
 
 
-rem *** Ki43Rudder ***
-ObjectTemplate.create Wing Ki43Rudder
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
-ObjectTemplate.geometry Ki43_Rudder_m1
-ObjectTemplate.setMinRotation 0/-13/0
-ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/13/0
-ObjectTemplate.setAcceleration 0/26/0
+rem *** ki43iibRudder ***
+ObjectTemplate.create Wing ki43iibRudder
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
+ObjectTemplate.geometry ki43iib_Rudder_m1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/30/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
 ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 1.5
+ObjectTemplate.setFlapLift 3
 
-rem *** Ki43_Flap_L ***
-ObjectTemplate.create Wing Ki43_Flap_L
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
+rem *** ki43iib_Flap_L ***
+ObjectTemplate.create Wing ki43iib_Flap_L
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.setMinRotation 0/-2/0
 ObjectTemplate.setMaxRotation 0/2/0
 ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/30/0
 ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setPositionOffset 3/0/0.5
-ObjectTemplate.setFlapLift 3
-ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setPositionOffset 0/0/-1
+rem ObjectTemplate.setPositionOffset 0/0/0 UP
+rem ObjectTemplate.setPositionOffset 3/0/0.5
+ObjectTemplate.setFlapLift 1
+ObjectTemplate.setRegulateToLift 6
 ObjectTemplate.setWingToRegulatorRatio 1
 
-rem *** Ki43_Flap_R ***
-ObjectTemplate.create Wing Ki43_Flap_R
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
+rem *** ki43iib_Flap_R ***
+ObjectTemplate.create Wing ki43iib_Flap_R
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.setMinRotation 0/-2/0
 ObjectTemplate.setMaxRotation 0/2/0
 ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/30/0
 ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setPositionOffset -3/0/0.5
-ObjectTemplate.setFlapLift 3
-ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setPositionOffset 0/0/-1
+rem ObjectTemplate.setPositionOffset 0/0/0 UP
+rem ObjectTemplate.setPositionOffset -3/0/0.5
+ObjectTemplate.setFlapLift 1
+ObjectTemplate.setRegulateToLift 6
 ObjectTemplate.setWingToRegulatorRatio 1
 
-rem *** Ki43_Aileron_L ***
-ObjectTemplate.create Wing Ki43_Aileron_L
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
+rem *** ki43iib_Aileron_L ***
+ObjectTemplate.create Wing ki43iib_Aileron_L
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
-ObjectTemplate.geometry Ki43_Aileron_L_m1
-ObjectTemplate.setMinRotation 0/-12/0
-ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.geometry ki43iib_Aileron_L_m1
+ObjectTemplate.setMinRotation 0/-18/0
+ObjectTemplate.setMaxRotation 0/18/0
+ObjectTemplate.setMaxSpeed 0/24/0
 ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPitchOffset -0.5
+ObjectTemplate.setPitchOffset -0.25
 ObjectTemplate.setPositionOffset 0.45/0/0
-ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 4.0
+ObjectTemplate.setWingLift 0.7
+ObjectTemplate.setFlapLift 2.8
 
-rem *** Ki43_Aileron_R ***
-ObjectTemplate.create Wing Ki43_Aileron_R
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
+rem *** ki43iib_Aileron_R ***
+ObjectTemplate.create Wing ki43iib_Aileron_R
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
-ObjectTemplate.geometry Ki43_Aileron_R_m1
-ObjectTemplate.setMinRotation 0/-12/0
-ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.geometry ki43iib_Aileron_R_m1
+ObjectTemplate.setMinRotation 0/-18/0
+ObjectTemplate.setMaxRotation 0/18/0
+ObjectTemplate.setMaxSpeed 0/24/0
 ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPitchOffset -0.5
+ObjectTemplate.setPitchOffset -0.25
 ObjectTemplate.setPositionOffset -0.45/0/0
-ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 4.0
+ObjectTemplate.setWingLift 0.7
+ObjectTemplate.setFlapLift 2.8
 
 
-rem *** Ki43_Bomber_Aileron_L ***
-ObjectTemplate.create Wing Ki43_Bomber_Aileron_L
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
+rem *** ki43iib_Bomber_Aileron_L ***
+ObjectTemplate.create Wing ki43iib_Bomber_Aileron_L
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
-ObjectTemplate.geometry Ki43_Aileron_L_m1
+ObjectTemplate.geometry ki43iib_Aileron_L_m1
 ObjectTemplate.setMinRotation 0/-10.8/0
 ObjectTemplate.setMaxRotation 0/10.8/0
-ObjectTemplate.setMaxSpeed 0/10.8/0
-ObjectTemplate.setAcceleration 0/-22.6/0
+ObjectTemplate.setMaxSpeed 0/100/0
+rem ObjectTemplate.setMaxSpeed 0/10.8/0
+ObjectTemplate.setAcceleration 0/-100/0
+rem ObjectTemplate.setAcceleration 0/-22.6/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset -0.25
 ObjectTemplate.setPitchOffset -0.5
 ObjectTemplate.setPositionOffset 0.45/0/0
-ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 4.0
+ObjectTemplate.setWingLift 0.7
+rem ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 2.2
 
-rem *** Ki43_Bomber_Aileron_R ***
-ObjectTemplate.create Wing Ki43_Bomber_Aileron_R
-ObjectTemplate.setNetworkableInfo Ki43_wing_info
+rem *** ki43iib_Bomber_Aileron_R ***
+ObjectTemplate.create Wing ki43iib_Bomber_Aileron_R
+ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
-ObjectTemplate.geometry Ki43_Aileron_R_m1
+ObjectTemplate.geometry ki43iib_Aileron_R_m1
 ObjectTemplate.setMinRotation 0/-10.8/0
 ObjectTemplate.setMaxRotation 0/10.8/0
-ObjectTemplate.setMaxSpeed 0/10.8/0
-ObjectTemplate.setAcceleration 0/22.6/0
+ObjectTemplate.setMaxSpeed 0/100/0
+rem ObjectTemplate.setMaxSpeed 0/10.8/0
+ObjectTemplate.setAcceleration 0/100/0
+rem ObjectTemplate.setAcceleration 0/22.6/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset -0.25
 ObjectTemplate.setPitchOffset -0.5
 ObjectTemplate.setPositionOffset -0.45/0/0
-ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 4.0
+ObjectTemplate.setWingLift 0.7
+rem ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 2.2
 
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Ki-43
 rem sauce = Weapons.con
 rem ============================================================================
-rem ----- Ki43GunBarrel -----
-ObjectTemplate.create FireArms Ki43Guns
+rem ----- ki43iibGunBarrel -----
+ObjectTemplate.create FireArms ki43iibGuns
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
 ObjectTemplate.loadSoundScript ../common/Sounds/12,7mm900RPM.ssc
 ObjectTemplate.aiTemplate ZeroMachineGun
@@ -51961,19 +52952,19 @@ ObjectTemplate.roundOfFire 15
 ObjectTemplate.setMinDev 0.50
 ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
-ObjectTemplate.addFireArmsPosition 0.2749/0.6847/3.25 -0.08/0/0
-ObjectTemplate.addFireArmsPosition -0.2749/0.6847/3.25 0.08/0/0
+ObjectTemplate.addFireArmsPosition 0.2749/0.5/2.487 -0.08/0/0
+ObjectTemplate.addFireArmsPosition -0.2749/0.5/2.487 0.08/0/0
 ObjectTemplate.AmmoType	8
 
-rem ----- Ki43BombDummy -----
-ObjectTemplate.create FireArms Ki43BombRack
+rem ----- ki43iibBombDummy -----
+ObjectTemplate.create FireArms ki43iibBombRack
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.projectileTemplate SC250WaterSkipBomb
 ObjectTemplate.projectilePosition 0/-1.45/-2
 rem ObjectTemplate.projectileTemplate SC250Bomb
 rem ObjectTemplate.projectilePosition 0/-0.95/0
-ObjectTemplate.visibleDummyProjectileTemplate Ki43BombDummy
+ObjectTemplate.visibleDummyProjectileTemplate ki43iibBombDummy
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 0
@@ -51983,18 +52974,18 @@ ObjectTemplate.roundOfFire 4
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsLightShake
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.68/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.68/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-ObjectTemplate.create SimpleObject Ki43BombDummy
+ObjectTemplate.create SimpleObject ki43iibBombDummy
 ObjectTemplate.geometry bomb_SC250_m1
 
 
-rem *** Ki43_DummyCounter ***
-ObjectTemplate.create FireArms Ki43_DummyCounter
+rem *** ki43iib_DummyCounter ***
+ObjectTemplate.create FireArms ki43iib_DummyCounter
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.visibleDummyProjectileTemplate Type2HEATContainer_Dummy_M1
 ObjectTemplate.projectileTemplate YellProjectile
@@ -52006,14 +52997,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.52/0.84 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.52/0.84 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_Container130 ***
-ObjectTemplate.create FireArms Ki43_Container130
+rem *** ki43iib_Container130 ***
+ObjectTemplate.create FireArms ki43iib_Container130
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate Type2HEATContainer130
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52024,14 +53015,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_Container150 ***
-ObjectTemplate.create FireArms Ki43_Container150
+rem *** ki43iib_Container150 ***
+ObjectTemplate.create FireArms ki43iib_Container150
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate Type2HEATContainer150
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52042,14 +53033,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_Container170 ***
-ObjectTemplate.create FireArms Ki43_Container170
+rem *** ki43iib_Container170 ***
+ObjectTemplate.create FireArms ki43iib_Container170
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate Type2HEATContainer170
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52060,14 +53051,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_Container190 ***
-ObjectTemplate.create FireArms Ki43_Container190
+rem *** ki43iib_Container190 ***
+ObjectTemplate.create FireArms ki43iib_Container190
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate Type2HEATContainer190
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52078,14 +53069,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_Container210 ***
-ObjectTemplate.create FireArms Ki43_Container210
+rem *** ki43iib_Container210 ***
+ObjectTemplate.create FireArms ki43iib_Container210
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate Type2HEATContainer210
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52096,14 +53087,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_Container230 ***
-ObjectTemplate.create FireArms Ki43_Container230
+rem *** ki43iib_Container230 ***
+ObjectTemplate.create FireArms ki43iib_Container230
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate Type2HEATContainer230
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52114,16 +53105,16 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
 
 
-rem *** Ki43_BombRack120 ***
-ObjectTemplate.create FireArms Ki43_BombRack120
+rem *** ki43iib_BombRack120 ***
+ObjectTemplate.create FireArms ki43iib_BombRack120
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT120
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52134,14 +53125,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack124 ***
-ObjectTemplate.create FireArms Ki43_BombRack124
+rem *** ki43iib_BombRack124 ***
+ObjectTemplate.create FireArms ki43iib_BombRack124
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT124
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52152,14 +53143,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack128 ***
-ObjectTemplate.create FireArms Ki43_BombRack128
+rem *** ki43iib_BombRack128 ***
+ObjectTemplate.create FireArms ki43iib_BombRack128
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT128
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52170,14 +53161,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack132 ***
-ObjectTemplate.create FireArms Ki43_BombRack132
+rem *** ki43iib_BombRack132 ***
+ObjectTemplate.create FireArms ki43iib_BombRack132
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT132
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52188,14 +53179,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack136 ***
-ObjectTemplate.create FireArms Ki43_BombRack136
+rem *** ki43iib_BombRack136 ***
+ObjectTemplate.create FireArms ki43iib_BombRack136
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT136
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52206,14 +53197,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack140 ***
-ObjectTemplate.create FireArms Ki43_BombRack140
+rem *** ki43iib_BombRack140 ***
+ObjectTemplate.create FireArms ki43iib_BombRack140
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT140
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52224,14 +53215,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack144 ***
-ObjectTemplate.create FireArms Ki43_BombRack144
+rem *** ki43iib_BombRack144 ***
+ObjectTemplate.create FireArms ki43iib_BombRack144
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT144
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52242,14 +53233,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack148 ***
-ObjectTemplate.create FireArms Ki43_BombRack148
+rem *** ki43iib_BombRack148 ***
+ObjectTemplate.create FireArms ki43iib_BombRack148
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT148
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52260,14 +53251,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack152 ***
-ObjectTemplate.create FireArms Ki43_BombRack152
+rem *** ki43iib_BombRack152 ***
+ObjectTemplate.create FireArms ki43iib_BombRack152
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT152
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52278,14 +53269,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack156 ***
-ObjectTemplate.create FireArms Ki43_BombRack156
+rem *** ki43iib_BombRack156 ***
+ObjectTemplate.create FireArms ki43iib_BombRack156
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT156
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52296,14 +53287,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack160 ***
-ObjectTemplate.create FireArms Ki43_BombRack160
+rem *** ki43iib_BombRack160 ***
+ObjectTemplate.create FireArms ki43iib_BombRack160
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT160
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52314,14 +53305,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack164 ***
-ObjectTemplate.create FireArms Ki43_BombRack164
+rem *** ki43iib_BombRack164 ***
+ObjectTemplate.create FireArms ki43iib_BombRack164
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT164
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52332,14 +53323,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack168 ***
-ObjectTemplate.create FireArms Ki43_BombRack168
+rem *** ki43iib_BombRack168 ***
+ObjectTemplate.create FireArms ki43iib_BombRack168
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT168
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52350,14 +53341,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack172 ***
-ObjectTemplate.create FireArms Ki43_BombRack172
+rem *** ki43iib_BombRack172 ***
+ObjectTemplate.create FireArms ki43iib_BombRack172
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT172
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52368,14 +53359,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack176 ***
-ObjectTemplate.create FireArms Ki43_BombRack176
+rem *** ki43iib_BombRack176 ***
+ObjectTemplate.create FireArms ki43iib_BombRack176
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT176
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52386,14 +53377,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack180 ***
-ObjectTemplate.create FireArms Ki43_BombRack180
+rem *** ki43iib_BombRack180 ***
+ObjectTemplate.create FireArms ki43iib_BombRack180
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT180
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52404,14 +53395,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack184 ***
-ObjectTemplate.create FireArms Ki43_BombRack184
+rem *** ki43iib_BombRack184 ***
+ObjectTemplate.create FireArms ki43iib_BombRack184
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT184
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52422,14 +53413,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack188 ***
-ObjectTemplate.create FireArms Ki43_BombRack188
+rem *** ki43iib_BombRack188 ***
+ObjectTemplate.create FireArms ki43iib_BombRack188
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT188
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52440,14 +53431,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack192 ***
-ObjectTemplate.create FireArms Ki43_BombRack192
+rem *** ki43iib_BombRack192 ***
+ObjectTemplate.create FireArms ki43iib_BombRack192
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT192
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52458,14 +53449,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack196 ***
-ObjectTemplate.create FireArms Ki43_BombRack196
+rem *** ki43iib_BombRack196 ***
+ObjectTemplate.create FireArms ki43iib_BombRack196
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT196
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52476,14 +53467,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack200 ***
-ObjectTemplate.create FireArms Ki43_BombRack200
+rem *** ki43iib_BombRack200 ***
+ObjectTemplate.create FireArms ki43iib_BombRack200
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT200
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52494,14 +53485,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack204 ***
-ObjectTemplate.create FireArms Ki43_BombRack204
+rem *** ki43iib_BombRack204 ***
+ObjectTemplate.create FireArms ki43iib_BombRack204
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT204
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52512,14 +53503,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack208 ***
-ObjectTemplate.create FireArms Ki43_BombRack208
+rem *** ki43iib_BombRack208 ***
+ObjectTemplate.create FireArms ki43iib_BombRack208
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT208
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52530,14 +53521,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack212 ***
-ObjectTemplate.create FireArms Ki43_BombRack212
+rem *** ki43iib_BombRack212 ***
+ObjectTemplate.create FireArms ki43iib_BombRack212
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT212
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52548,14 +53539,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack216 ***
-ObjectTemplate.create FireArms Ki43_BombRack216
+rem *** ki43iib_BombRack216 ***
+ObjectTemplate.create FireArms ki43iib_BombRack216
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT216
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52566,14 +53557,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack220 ***
-ObjectTemplate.create FireArms Ki43_BombRack220
+rem *** ki43iib_BombRack220 ***
+ObjectTemplate.create FireArms ki43iib_BombRack220
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT220
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52584,14 +53575,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack224 ***
-ObjectTemplate.create FireArms Ki43_BombRack224
+rem *** ki43iib_BombRack224 ***
+ObjectTemplate.create FireArms ki43iib_BombRack224
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT224
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52602,14 +53593,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack228 ***
-ObjectTemplate.create FireArms Ki43_BombRack228
+rem *** ki43iib_BombRack228 ***
+ObjectTemplate.create FireArms ki43iib_BombRack228
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT228
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52620,14 +53611,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack232 ***
-ObjectTemplate.create FireArms Ki43_BombRack232
+rem *** ki43iib_BombRack232 ***
+ObjectTemplate.create FireArms ki43iib_BombRack232
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT232
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52638,14 +53629,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack236 ***
-ObjectTemplate.create FireArms Ki43_BombRack236
+rem *** ki43iib_BombRack236 ***
+ObjectTemplate.create FireArms ki43iib_BombRack236
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT236
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52656,14 +53647,14 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
 
-rem *** Ki43_BombRack240 ***
-ObjectTemplate.create FireArms Ki43_BombRack240
+rem *** ki43iib_BombRack240 ***
+ObjectTemplate.create FireArms ki43iib_BombRack240
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
-ObjectTemplate.aiTemplate Ki43Bombs
+ObjectTemplate.aiTemplate ki43iibBombs
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.projectileTemplate ClusterHEAT240
 ObjectTemplate.projectilePosition 0/-0.95/0
@@ -52674,10 +53665,9 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 40
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.addFireArmsPosition -2.5/-0.58/0.75 0/0/0
-ObjectTemplate.addFireArmsPosition 2.5/-0.58/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -2.02/-0.62/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition 2.02/-0.62/0.75 0/0/0
 ObjectTemplate.AmmoType	7
-
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Ki-45a_RBS
@@ -57173,7 +58163,7 @@ ObjectTemplate.addTemplate e_MuzzAirgun
 ObjectTemplate.setPosition 0/-0.09/3.7
 ObjectTemplate.setRotation -179.999/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate HETracer_37x112_Projectile
+ObjectTemplate.projectileTemplate APTracer_37x112_Projectile
 ObjectTemplate.projectilePosition 0/0/0.5
 ObjectTemplate.magSize 16
 ObjectTemplate.numOfMag 1
@@ -57181,7 +58171,7 @@ rem ObjectTemplate.velocity 378
 ObjectTemplate.velocity 570
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.setMinDev 0.5
+ObjectTemplate.setMinDev 0.25
 ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneCanonShake
 ObjectTemplate.addFireArmsPosition 0/0.91/3.7 0/0/0
@@ -57198,14 +58188,14 @@ ObjectTemplate.addTemplate e_MuzzAirgun
 ObjectTemplate.setPosition 0/-0.09/3.7
 ObjectTemplate.setRotation -179.999/0/0
 rem -------------------------------------
-ObjectTemplate.projectileTemplate HETracer_37x112_Projectile
+ObjectTemplate.projectileTemplate APTracer_37x112_Projectile
 ObjectTemplate.projectilePosition 0/0/0.5
 ObjectTemplate.magSize 16
 ObjectTemplate.numOfMag 1
 rem ObjectTemplate.velocity 378
 ObjectTemplate.velocity 570
 ObjectTemplate.roundOfFire 2
-ObjectTemplate.setMinDev 0.5
+ObjectTemplate.setMinDev 0.25
 ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsBigShake
 ObjectTemplate.addFireArmsPosition 0/0.91/3.7 0/0/0
@@ -57957,15 +58947,14 @@ ObjectTemplate.aiTemplate Ki-45Cannon
 rem -------------------------------------
 ObjectTemplate.visibleBarrelTemplate e_MuzzAAgunB
 rem -------------------------------------
-ObjectTemplate.projectileTemplate HE_37x144_Projectile
+ObjectTemplate.projectileTemplate APTracer_37x144_Projectile
 ObjectTemplate.projectilePosition 0/0/0.5
-ObjectTemplate.setTracerTemplate APTracer_37x144_Projectile CRD_NONE/2/0/0
 ObjectTemplate.magSize 40
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 710
 ObjectTemplate.roundOfFire 6.666
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.setMinDev 0.50
+ObjectTemplate.setMinDev 0.25
 ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneCanonShake
 ObjectTemplate.addFireArmsPosition 0/-0.19/4.2 0/0/0
@@ -57998,7 +58987,7 @@ rem ===== COMPRESS = JPN
 rem ***************************************************************
 rem *** Ki-45t401 Fighter
 rem Prm	12.7mm	Ho103	x2
-rem Alt	20mm	Ho-3	x1
+rem Alt	57mm	Ho-401	x1
 rem ***************************************************************
 
 rem *** Ki-45t401
@@ -58185,7 +59174,7 @@ ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 495
 ObjectTemplate.roundOfFire 1.333
 ObjectTemplate.setInputFire c_PIAltFire
-ObjectTemplate.setMinDev 1.00
+ObjectTemplate.setMinDev 0.25
 ObjectTemplate.setAsynchronyFire 0
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneCanonShake
 ObjectTemplate.addFireArmsPosition 0/-0.19/4.0 0/0/0
@@ -60350,7 +61339,7 @@ ObjectTemplate.setPcoId 1
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_Ki-67.dds"
 ObjectTemplate.setVehicleIconPos 28/51
 ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmHo5.tga"
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_12,7mmHo103.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
@@ -60364,7 +61353,7 @@ ObjectTemplate.setNetworkableInfo Ki67TailTurretInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate Ki67_Camera_Tail
 ObjectTemplate.setPosition 0/0.15/-0.6
-ObjectTemplate.addTemplate Ho5AirTwinTwin
+ObjectTemplate.addTemplate Ho103AirTwin
 ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation -25/-25/0
@@ -66885,14 +67874,13 @@ ObjectTemplate.setNetworkableInfo Ki84_wing_info
 ObjectTemplate.geometry Ki84_tailflap_left_m1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/-23.4/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0.5/0/0
 ObjectTemplate.setWingLift 0.65
-ObjectTemplate.setFlapLift 0.65
-rem ObjectTemplate.setFlapLift 0.6
+ObjectTemplate.setFlapLift 0.6
 ObjectTemplate.rememberExcessInput 1
 
 rem ----- Ki84-bomberFlapTailRight -----
@@ -66901,14 +67889,13 @@ ObjectTemplate.setNetworkableInfo Ki84_wing_info
 ObjectTemplate.geometry Ki84_tailflap_right_m1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/-23.4/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset -0.5/0/0
 ObjectTemplate.setWingLift 0.65
-ObjectTemplate.setFlapLift 0.65
-rem ObjectTemplate.setFlapLift 0.6
+ObjectTemplate.setFlapLift 0.6
 ObjectTemplate.rememberExcessInput 1
 
 rem ----- Ki84-bomberRudder -----
@@ -66917,8 +67904,8 @@ ObjectTemplate.setNetworkableInfo Ki84_wing_info
 ObjectTemplate.geometry Ki84_tail_mid_m1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/23.4/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/26/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
@@ -66932,8 +67919,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
 ObjectTemplate.geometry Ki84_flap_left_up_m1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/-23.4/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5
@@ -66948,8 +67935,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
 ObjectTemplate.geometry Ki84_flap_right_up_m1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/23.4/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/26/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5
@@ -68281,6 +69268,7 @@ ObjectTemplate.addArmorEffect 5 e_StukaFire 0/0.6/-1.11
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Shusui
 rem -------------------------------------
 ObjectTemplate.addTemplate lodBaka
 rem -------------------------------------
@@ -68460,7 +69448,7 @@ ObjectTemplate.geometry wreck_Baka_1_m1
 rem *** BakaLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 BakaLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
-LodSelectorTemplate.addLodDistance 60
+LodSelectorTemplate.addLodDistance 200
 
 
 rem     =====================
@@ -69773,8 +70761,8 @@ ObjectTemplate.setNetworkableInfo N1K1_wing_info
 ObjectTemplate.geometry n1k1_rudder_m1
 ObjectTemplate.setMinRotation 0/-14/0
 ObjectTemplate.setMaxRotation 0/14/0
-ObjectTemplate.setMaxSpeed 0/13.3/0
-ObjectTemplate.setAcceleration 0/26.6/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/28/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
@@ -69811,8 +70799,8 @@ ObjectTemplate.setNetworkableInfo N1K1_wing_info
 ObjectTemplate.geometry n1k1_elevator_m1
 ObjectTemplate.setMinRotation 0/-11/0
 ObjectTemplate.setMaxRotation 0/11/0
-ObjectTemplate.setMaxSpeed 0/10.45/0
-ObjectTemplate.setAcceleration 0/-20.9/0
+ObjectTemplate.setMaxSpeed 0/11/0
+ObjectTemplate.setAcceleration 0/-22/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0.5/0/0
@@ -69861,8 +70849,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
 ObjectTemplate.geometry n1k1_L_airleron_m1
 ObjectTemplate.setMinRotation 0/-14/0
 ObjectTemplate.setMaxRotation 0/14/0
-ObjectTemplate.setMaxSpeed 0/13.3/0
-ObjectTemplate.setAcceleration 0/-26.6/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/-28/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5
@@ -69877,8 +70865,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
 ObjectTemplate.geometry n1k1_R_airleron_m1
 ObjectTemplate.setMinRotation 0/-14/0
 ObjectTemplate.setMaxRotation 0/14/0
-ObjectTemplate.setMaxSpeed 0/13.3/0
-ObjectTemplate.setAcceleration 0/26.6/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/28/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5

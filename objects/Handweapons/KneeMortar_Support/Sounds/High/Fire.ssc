@@ -27,3 +27,98 @@ beginEffect
 	param 1
 	param -1	
 endEffect
+
+load @ROOT/Sound/@RTD/RldRCL12.wav
+dopplerOff
+minDistance 1
+priority 7
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.7
+	param 1.7
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+########################
+### reload ###
+##############
+newPatch
+
+load @ROOT/Sound/@RTD/RldRCL12.wav
+dopplerOff
+minDistance 1
+priority 7
+
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.7
+	param 1.7
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+###############
+### Release ###
+###############
+newPatch
+
+load @ROOT/Sound/@RTD/RldRCL12.wav
+minDistance 1
+randomStartPitch 0.02 / 0.02
+priority 7
+dopplerOff
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.7
+	param 1.7
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 0
+	param 1
+endEffect
+

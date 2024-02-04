@@ -1,63 +1,25 @@
 newPatch
-
-#############
-### Close ###
-#############
-load @ROOT/Sound/@RTD/WSAAAFIRE2.wav
-minDistance 200
-relativePosition 0/0/0
-priority 10
-*** Engine Pitch ***
-beginEffect
-	controlDestination Pitch
-	controlSource Default
-	envelope Linear
-	param 1
-	param 0
-endEffect
-
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 0
-	param 380
-	param 1
-	param -1	
-endEffect
-
-##############
-### Reload ###
-##############
-newPatch
-
-load @ROOT/Sound/@RTD/bofors_rel.wav
-stereo
-relativePosition 0.8/0/-0.5
-dopplerOff
-priority 10
-
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 2
-	param 2
-	param 1
-	param -1
-endEffect
-
-###############
-### Release ###
-###############
-newPatch
-
+########################################################################################################
+### Fire ###
+############
 load @ROOT/Sound/@RTD/silence.wav
 volume 0
 
-####################
+#########################################################################################################
+### Reload ###
+##############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+##########################################################################################################
+### Release ###
+###############
+newPatch
+load @ROOT/Sound/@RTD/silence.wav
+volume 0
+
+###########################################################################################################
 ### Shell Bounce ###
 ####################
 newPatch
@@ -75,5 +37,62 @@ volume 0
 ### Fire Loop ###
 #################
 newPatch
-load @ROOT/Sound/@RTD/silence.wav
-volume 0
+
+load @ROOT/Sound/@RTD/WSAAAFIRE2Stereo.wav
+minDistance 4
+dopplerOff
+priority 10
+relativePosition 0/0/1
+stereo
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 0
+	param 4
+	param 1
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/WSAAAFIRE2.wav
+minDistance 30
+dopplerOff
+priority 8
+relativePosition 0/0/1
+volume 1.0
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 4
+	param 4
+	param 0
+	param 1
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 2
+	param 200
+	param 1
+	param -1
+endEffect

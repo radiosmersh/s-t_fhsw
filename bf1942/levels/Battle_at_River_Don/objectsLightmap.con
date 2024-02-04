@@ -26,8 +26,8 @@ rem **** Should be sun direction ***
 raytracer.light.direction -0.191000/0.450000/-0.873000
 raytracer.light.selfshadowing 1
 raytracer.light.objectShadows 1
-raytracer.light.shadowIntensity 0.8
-raytracer.light.intensity 0.4
+raytracer.light.shadowIntensity 1
+raytracer.light.intensity 0.6
 raytracer.light.softness 0.0
 raytracer.light.fov 8
 raytracer.light.viewDistance 500

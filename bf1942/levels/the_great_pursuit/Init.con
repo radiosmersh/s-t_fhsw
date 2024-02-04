@@ -8,6 +8,7 @@ renderer.specularColor 0.150000/0.150000/0.150000
 renderer.animatedMeshDiffuseFactor 1
 renderer.animatedMeshAmbientColor 0.2
 
+textureManager.alternativePath Texture/SPECIAL_GER_JAGDTIGER_PRIMER
 textureManager.alternativePath texture/SPECIAL_HUN_TANK_METAL
 textureManager.alternativePath texture/SPECIAL_HUN_TANK_GREEN
 textureManager.alternativePath texture/SPECIAL_HUN_TANK_LIGHTCAMO

@@ -27,3 +27,57 @@ beginEffect
 	param 1
 	param -1	
 endEffect
+
+load @ROOT/Sound/@RTD/RldRCL12.wav
+minDistance 1
+dopplerOff
+priority 7
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 1.4
+	param 1.4
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl4walt.WAV
+minDistance 1
+dopplerOff
+priority 1
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 2.4
+	param 2.4
+	param 0
+	param 1
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect

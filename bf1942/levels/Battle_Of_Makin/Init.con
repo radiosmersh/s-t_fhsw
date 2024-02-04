@@ -8,6 +8,7 @@ renderer.vertexFogEnable 1
 renderer.fogColorVec 0.86/0.9/0.98
 renderer.animatedMeshAmbientColor 0.3
 
+textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_USARMY_1943
 textureManager.alternativePath Texture/SPECIAL_US_Fletcher_noCAMO
 textureManager.alternativePath Texture/Levels/Makin
 textureManager.alternativePath Texture/CAMO

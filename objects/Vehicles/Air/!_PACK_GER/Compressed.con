@@ -10404,10 +10404,10 @@ ObjectTemplate.setWingToRegulatorRatio 1
 rem *** Bf110-C7ailL ***
 ObjectTemplate.create Wing Bf110-C7ailL
 ObjectTemplate.setNetworkableInfo Bf110-C7_wing_info
-ObjectTemplate.setMinRotation 0/-11.7/0
-ObjectTemplate.setMaxRotation 0/11.7/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/-23.4/0
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0
@@ -10418,20 +10418,20 @@ ObjectTemplate.setFlapLift 2
 rem *** Bf110-C7ailLVisible ***
 ObjectTemplate.create RotationalBundle Bf110-C7ailLVisible
 ObjectTemplate.geometry Bf110-C7_ail_left
-ObjectTemplate.setMinRotation 0/-11.7/0
-ObjectTemplate.setMaxRotation 0/11.7/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/-23.4/0
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 
 rem *** Bf110-C7ailR***
 ObjectTemplate.create Wing Bf110-C7ailR
 ObjectTemplate.setNetworkableInfo Bf110-C7_wing_info
-ObjectTemplate.setMinRotation 0/-11.7/0
-ObjectTemplate.setMaxRotation 0/11.7/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/23.4/0
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0
@@ -10442,10 +10442,10 @@ ObjectTemplate.setFlapLift 2
 rem *** Bf110-C7ailRVisible ***
 ObjectTemplate.create RotationalBundle Bf110-C7ailRVisible
 ObjectTemplate.geometry Bf110-C7_ail_right
-ObjectTemplate.setMinRotation 0/-11.7/0
-ObjectTemplate.setMaxRotation 0/11.7/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/23.4/0
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 
@@ -10459,10 +10459,10 @@ rem *** Bf110-C7RudderL***
 ObjectTemplate.create Wing Bf110-C7RudderL
 ObjectTemplate.setNetworkableInfo Bf110-C7_wing_info
 ObjectTemplate.geometry Bf110-C7_rudderL
-ObjectTemplate.setMinRotation 0/-11.7/0
-ObjectTemplate.setMaxRotation 0/11.7/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/-23.4/0
+ObjectTemplate.setMinRotation 0/-13/0
+ObjectTemplate.setMaxRotation 0/13/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset -0.5156/0/0
@@ -10476,11 +10476,11 @@ ObjectTemplate.setNetworkableInfo Bf110-C7_wing_info
 ObjectTemplate.geometry Bf110-C7_rudderR
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/-23.4/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset -0.5156/0/0
+ObjectTemplate.setPositionOffset 0.5/0/0
 ObjectTemplate.rememberExcessInput 1
 ObjectTemplate.setWingLift 2
 ObjectTemplate.setFlapLift 1.5
@@ -10490,13 +10490,13 @@ ObjectTemplate.create Wing Bf110-C7Elevator
 ObjectTemplate.setNetworkableInfo Bf110-C7_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
 ObjectTemplate.geometry Bf110-C7_elevator
-ObjectTemplate.setMinRotation 0/-10.5/0
-ObjectTemplate.setMaxRotation 0/10.5/0
-ObjectTemplate.setMaxSpeed 0/9.9/0
-ObjectTemplate.setAcceleration 0/-19.8/0
+ObjectTemplate.setMinRotation 0/-11/0
+ObjectTemplate.setMaxRotation 0/11/0
+ObjectTemplate.setMaxSpeed 0/11/0
+ObjectTemplate.setAcceleration 0/-22/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0/-0.4111/0
+ObjectTemplate.setPositionOffset 0/0/0
 ObjectTemplate.rememberExcessInput 1
 ObjectTemplate.setWingLift 2.6
 ObjectTemplate.setFlapLift 2.0
@@ -11835,6 +11835,2883 @@ ObjectTemplate.geometry Bf110_antenne_M1
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = Do335
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster Do335
+GeometryTemplate.create StandardMesh Do335A-1_Fuselage_M1
+GeometryTemplate.file Do335A-1_Fuselage_M1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Do335A-1_Cockpit_M1
+GeometryTemplate.file Do335A-1_Cockpit_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Propeller_F
+GeometryTemplate.file Do335A-1_Propeller_F_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Propeller_F_Bl
+GeometryTemplate.file Do335A-1_Propeller_F_Bl
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Do335A-1_Propeller_B
+GeometryTemplate.file Do335A-1_Propeller_B_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Propeller_B_Bl
+GeometryTemplate.file Do335A-1_Propeller_B_Bl
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Do335A-1_Aileron_L_M1
+GeometryTemplate.file Do335A-1_Aileron_L_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Aileron_R_M1
+GeometryTemplate.file Do335A-1_Aileron_R_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Flap_L_M1
+GeometryTemplate.file Do335A-1_Flap_L_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Flap_R_M1
+GeometryTemplate.file Do335A-1_Flap_R_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Rudders_M1
+GeometryTemplate.file Do335A-1_Rudders_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Elevator_M1
+GeometryTemplate.file Do335A-1_Elevator_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Gear_Front_M1
+GeometryTemplate.file Do335A-1_Gear_Front_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Gear_Front_Fork_M1
+GeometryTemplate.file Do335A-1_Gear_Front_Fork_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Wheel_Front_M1
+GeometryTemplate.file Do335A-1_Wheel_Front_M1
+geometryTemplate.cullFactor 0.005
+
+GeometryTemplate.create StandardMesh Do335A-1_Gear_Left_M1
+GeometryTemplate.file Do335A-1_Gear_Left_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Gear_Right_M1
+GeometryTemplate.file Do335A-1_Gear_Right_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Geardoor_L_M1
+GeometryTemplate.file Do335A-1_Geardoor_L_M1
+geometryTemplate.cullFactor 0.01
+
+GeometryTemplate.create StandardMesh Do335A-1_Geardoor_R_M1
+GeometryTemplate.file Do335A-1_Geardoor_R_M1
+geometryTemplate.cullFactor 0.01
+
+GeometryTemplate.create StandardMesh Do335A-1_Geardoor_FL_M1
+GeometryTemplate.file Do335A-1_Geardoor_FL_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Geardoor_FR_M1
+GeometryTemplate.file Do335A-1_Geardoor_FR_M1
+
+
+GeometryTemplate.create StandardMesh Do335A-1_Fuselage_L1
+GeometryTemplate.file Do335A-1_L1
+
+GeometryTemplate.create StandardMesh Do335A-1_Fuselage_Wreck_M1
+GeometryTemplate.file Do335A-1_Fuselage_Wreck_M1
+
+GeometryTemplate.create StandardMesh Do335A-1_Wing_Wreck_M1
+GeometryTemplate.file Do335A-1_Wing_Wreck_M1
+
+
+
+GeometryTemplate.create StandardMesh Do335B-2_Fuselage_M1
+GeometryTemplate.file Do335B-2_Fuselage_M1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Do335B-2_Cockpit_M1
+GeometryTemplate.file Do335B-2_Cockpit_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Propeller_F
+GeometryTemplate.file Do335B-2_Propeller_F_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Propeller_F_Bl
+GeometryTemplate.file Do335B-2_Propeller_F_Bl
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Do335B-2_Propeller_B
+GeometryTemplate.file Do335B-2_Propeller_B_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Propeller_B_Bl
+GeometryTemplate.file Do335B-2_Propeller_B_Bl
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Do335B-2_Aileron_L_M1
+GeometryTemplate.file Do335B-2_Aileron_L_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Aileron_R_M1
+GeometryTemplate.file Do335B-2_Aileron_R_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Flap_L_M1
+GeometryTemplate.file Do335B-2_Flap_L_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Flap_R_M1
+GeometryTemplate.file Do335B-2_Flap_R_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Rudders_M1
+GeometryTemplate.file Do335B-2_Rudders_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Elevator_M1
+GeometryTemplate.file Do335B-2_Elevator_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Gear_Front_M1
+GeometryTemplate.file Do335B-2_Gear_Front_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Gear_Front_Fork_M1
+GeometryTemplate.file Do335B-2_Gear_Front_Fork_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Wheel_Front_M1
+GeometryTemplate.file Do335B-2_Wheel_Front_M1
+geometryTemplate.cullFactor 0.005
+
+GeometryTemplate.create StandardMesh Do335B-2_Gear_Left_M1
+GeometryTemplate.file Do335B-2_Gear_Left_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Gear_Right_M1
+GeometryTemplate.file Do335B-2_Gear_Right_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Geardoor_L_M1
+GeometryTemplate.file Do335B-2_Geardoor_L_M1
+geometryTemplate.cullFactor 0.01
+
+GeometryTemplate.create StandardMesh Do335B-2_Geardoor_R_M1
+GeometryTemplate.file Do335B-2_Geardoor_R_M1
+geometryTemplate.cullFactor 0.01
+
+GeometryTemplate.create StandardMesh Do335B-2_Geardoor_FL_M1
+GeometryTemplate.file Do335B-2_Geardoor_FL_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Geardoor_FR_M1
+GeometryTemplate.file Do335B-2_Geardoor_FR_M1
+
+
+GeometryTemplate.create StandardMesh Do335B-2_Fuselage_L1
+GeometryTemplate.file Do335B-2_L1
+
+GeometryTemplate.create StandardMesh Do335B-2_Fuselage_Wreck_M1
+GeometryTemplate.file Do335B-2_Fuselage_Wreck_M1
+
+GeometryTemplate.create StandardMesh Do335B-2_Wing_Wreck_M1
+GeometryTemplate.file Do335B-2_Wing_Wreck_M1
+
+
+rem *** shared geometry
+
+GeometryTemplate.create StandardMesh Do335_Hardpoints_M1
+GeometryTemplate.file Do335_Hardpoints_M1
+
+GeometryTemplate.create StandardMesh Do335_Gear_Back_Linkage_M1
+GeometryTemplate.file Do335_Gear_Back_Linkage_M1
+
+GeometryTemplate.create StandardMesh Do335_Geardoor_Linkage_M1
+GeometryTemplate.file Do335_Geardoor_Linkage_M1
+
+GeometryTemplate.create StandardMesh Do335_Wheel_Back_M1
+GeometryTemplate.file Do335_Wheel_Back_M1
+geometryTemplate.cullFactor 0.005
+
+GeometryTemplate.create StandardMesh Do335_Cockpit_L1
+GeometryTemplate.file Do335_Cockpit_L1
+
+GeometryTemplate.create StandardMesh Do335_Revi16D_M1
+GeometryTemplate.file Do335_Revi16D_M1
+
+GeometryTemplate.create StandardMesh Do335_Stick_Holder_M1
+GeometryTemplate.file Do335_Stick_Holder_M1
+
+GeometryTemplate.create StandardMesh Do335_Stick_M1
+GeometryTemplate.file Do335_Stick_M1
+renderer.endGlobalCluster
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Do335
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo Do335_Body_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Do335_Engine_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Do335_Wing_Info
+NetworkableInfo.setPredictionMode PMLinear
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Do335
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = GER
+
+rem *** Do335A-1
+rem 500kg bomb x1
+
+rem *** Do335A-1_250
+rem 250kg bomb x4
+
+rem *** Do335B-2
+
+
+rem *** Do335A-1_500 ***
+ObjectTemplate.create PlayerControlObject Do335A-1
+ObjectTemplate.setNetworkableInfo Do335_Body_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.CullRadiusScale 3
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 9600
+ObjectTemplate.inertiaModifier 0.935/1.1/0.99
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 23
+ObjectTemplate.criticalDamage 60
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 150 em_b17Damage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 150 em_PlaneDamage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_b17Damage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_b17Damage 0/0.2/3.08
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 0/0.2/3.08
+ObjectTemplate.addArmorEffect 60 e_StukaFire 0/0.2/3.08
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Do335A-1 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Do335
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335A-1
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/-0.5/-1 0/0/0
+ObjectTemplate.GUIIndex 32
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Do335A-1.tga"
+ObjectTemplate.setVehicleIconPos 88/85
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_30mmMk103+20mm.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_SeaSkipbomb500.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setToolTipType  TTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_fighterbomber_16x16.tga"
+
+
+rem *** lodDo335A-1 ***
+ObjectTemplate.create LodObject lodDo335A-1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335A-1_Complex
+ObjectTemplate.addTemplate Do335A-1_Simple
+ObjectTemplate.addTemplate Do335A-1_Fuselage_Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_LodSelector
+
+
+rem *** Do335A-1_Complex ***
+ObjectTemplate.create Bundle Do335A-1_Complex
+ObjectTemplate.geometry Do335A-1_Fuselage_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335A-1_Cockpit
+ObjectTemplate.addTemplate Do335_Entry
+ObjectTemplate.setPosition 0/0/-0.499
+
+ObjectTemplate.addTemplate Do335_Seat
+ObjectTemplate.setPosition 0/0.6/0.47
+
+ObjectTemplate.addTemplate Do335_Camera
+ObjectTemplate.setPosition 0.052/1.161/0.5
+ObjectTemplate.addTemplate lodDo335_AirReflexSight
+ObjectTemplate.setPosition 0.052/1.161/0.5
+
+ObjectTemplate.addTemplate Do335A-1_Engine_Front
+ObjectTemplate.setPosition 0/0.27/4.279
+ObjectTemplate.addTemplate Do335A-1_Engine_Back
+ObjectTemplate.setPosition 0/0.926/-7.816
+
+ObjectTemplate.addTemplate Do335_Stick_Pitch
+ObjectTemplate.setPosition 0/0.396/0.921
+ObjectTemplate.setRotation 0/20/0
+
+ObjectTemplate.addTemplate Do335_Body_Wing
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Do335_Flap_Left
+ObjectTemplate.setPosition -1.931/0/-2.291
+ObjectTemplate.addTemplate Do335_Flap_Right
+ObjectTemplate.setPosition 1.931/0/-2.291
+
+ObjectTemplate.addTemplate Do335A-1_Aileron_Left
+ObjectTemplate.setPosition -4.882/0.251/-2.286
+ObjectTemplate.setRotation 0/0/-5.5
+ObjectTemplate.addTemplate Do335A-1_Aileron_Right
+ObjectTemplate.setPosition 4.887/0.251/-2.286
+ObjectTemplate.setRotation 0/0/5.5
+ObjectTemplate.addTemplate Do335A-1_Rudders
+ObjectTemplate.setPosition 0/0.734/-7.236
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate Do335A-1_Elevator
+ObjectTemplate.setPosition 0/0.95/-7.178
+
+ObjectTemplate.addTemplate Do335_20mm_Nose
+ObjectTemplate.addTemplate Do335_Bomb_Rack_500
+ObjectTemplate.addTemplate Do335_MK103_Motor_Cannon
+rem -------------------------------------
+
+
+rem *** Do335A-1_250 ***
+ObjectTemplate.create PlayerControlObject Do335A-1_250
+ObjectTemplate.setNetworkableInfo Do335_Body_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.CullRadiusScale 3
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 9600
+ObjectTemplate.inertiaModifier 0.935/1.1/0.99
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 23
+ObjectTemplate.criticalDamage 60
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 150 em_b17Damage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 150 em_PlaneDamage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_b17Damage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_b17Damage 0/0.2/3.08
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 0/0.2/3.08
+ObjectTemplate.addArmorEffect 60 e_StukaFire 0/0.2/3.08
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Do335A-1 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Do335
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335A-1_250
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/-0.5/-1 0/0/0
+ObjectTemplate.GUIIndex 32
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Do335A-1.tga"
+ObjectTemplate.setVehicleIconPos 88/85
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_30mmMk103+20mm.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_SeaSkipbomb250.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setToolTipType  TTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_fighterbomber_16x16.tga"
+
+
+rem *** lodDo335A-1_250 ***
+ObjectTemplate.create LodObject lodDo335A-1_250
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335A-1_Complex_250
+ObjectTemplate.addTemplate Do335A-1_Simple
+ObjectTemplate.addTemplate Do335A-1_Fuselage_Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_LodSelector
+
+
+rem *** Do335A-1_Complex_250 ***
+ObjectTemplate.create Bundle Do335A-1_Complex_250
+ObjectTemplate.geometry Do335A-1_Fuselage_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335A-1_Cockpit
+ObjectTemplate.addTemplate Do335_Entry
+ObjectTemplate.setPosition 0/0/-0.499
+
+ObjectTemplate.addTemplate Do335_Seat
+ObjectTemplate.setPosition 0/0.6/0.47
+
+ObjectTemplate.addTemplate Do335_Camera
+ObjectTemplate.setPosition 0.052/1.161/0.5
+ObjectTemplate.addTemplate lodDo335_AirReflexSight
+ObjectTemplate.setPosition 0.052/1.161/0.5
+
+ObjectTemplate.addTemplate Do335A-1_Engine_Front
+ObjectTemplate.setPosition 0/0.27/4.279
+ObjectTemplate.addTemplate Do335A-1_Engine_Back
+ObjectTemplate.setPosition 0/0.926/-7.816
+
+ObjectTemplate.addTemplate Do335_Stick_Pitch
+ObjectTemplate.setPosition 0/0.396/0.921
+ObjectTemplate.setRotation 0/20/0
+
+ObjectTemplate.addTemplate Do335_Body_Wing
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Do335_Flap_Left
+ObjectTemplate.setPosition -1.931/0/-2.291
+ObjectTemplate.addTemplate Do335_Flap_Right
+ObjectTemplate.setPosition 1.931/0/-2.291
+
+ObjectTemplate.addTemplate Do335A-1_Aileron_Left
+ObjectTemplate.setPosition -4.882/0.251/-2.286
+ObjectTemplate.setRotation 0/0/-5.5
+ObjectTemplate.addTemplate Do335A-1_Aileron_Right
+ObjectTemplate.setPosition 4.887/0.251/-2.286
+ObjectTemplate.setRotation 0/0/5.5
+ObjectTemplate.addTemplate Do335A-1_Rudders
+ObjectTemplate.setPosition 0/0.734/-7.236
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate Do335A-1_Elevator
+ObjectTemplate.setPosition 0/0.95/-7.178
+
+ObjectTemplate.addTemplate Do335_20mm_Nose
+ObjectTemplate.addTemplate Do335_Bomb_Rack_250
+ObjectTemplate.addTemplate Do335_MK103_Motor_Cannon
+
+ObjectTemplate.addTemplate Do335_Hardpoints_M1
+rem -------------------------------------
+
+rem *** lodDo335A-1_Cockpit ***
+ObjectTemplate.create LodObject lodDo335A-1_Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335A-1_Cockpit_M1
+ObjectTemplate.addTemplate Do335_Cockpit_L1
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Cockpit_Selector
+
+rem *** Do335A-1_Cockpit_M1 ***
+ObjectTemplate.create SimpleObject Do335A-1_Cockpit_M1
+ObjectTemplate.geometry Do335A-1_Cockpit_M1
+
+rem *** Do335_Cockpit_L1 ***
+ObjectTemplate.create SimpleObject Do335_Cockpit_L1
+ObjectTemplate.geometry Do335_Cockpit_L1
+
+rem *** Do335_Cockpit_Selector ***
+LodSelectorTemplate.create DistanceSelector Do335_Cockpit_Selector
+LodSelectorTemplate.addLodDistance 20
+
+
+rem *** Do335_Entry ***
+ObjectTemplate.create EntryPoint Do335_Entry
+ObjectTemplate.setEntryRadius 5.5
+
+
+rem *** Do335_Seat ***
+ObjectTemplate.create SeatObject Do335_Seat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** Do335_Camera ***
+ObjectTemplate.create Camera Do335_Camera
+ObjectTemplate.setMinRotation -85/-90/0
+ObjectTemplate.setMaxRotation 85/25/0
+ObjectTemplate.setMaxSpeed 90/-90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/0/7
+
+
+rem *** lodDo335_AirReflexSight ***
+ObjectTemplate.create LodObject lodDo335_AirReflexSight
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_AirReflexSight_Internal
+ObjectTemplate.addTemplate Do335_AirReflexSight_External
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_AirReflexSight_Selector
+
+rem *** Do335_AirReflexSight_Internal ***
+ObjectTemplate.create SimpleObject Do335_AirReflexSight_Internal
+ObjectTemplate.geometry Do335_Revi16D_M1
+
+rem *** Do335_AirReflexSight_External ***
+ObjectTemplate.create SimpleObject Do335_AirReflexSight_External
+
+rem *** Do335_AirReflexSight_Selector ***
+LodSelectorTemplate.create DistanceSelector Do335_AirReflexSight_Selector
+LodSelectorTemplate.addLodDistance 0.5
+
+rem *** lodDo335A-1_Propeller_F ***
+ObjectTemplate.create LodObject lodDo335A-1_Propeller_F
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335A-1_Propeller_F_Static
+ObjectTemplate.addTemplate Do335A-1_Propeller_F_Blurred
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Propeller_Selector
+
+rem *** Do335A-1_Propeller_F_Static ***
+ObjectTemplate.create SimpleObject Do335A-1_Propeller_F_Static
+ObjectTemplate.geometry Do335A-1_Propeller_F
+
+rem *** Do335A-1_Propeller_F_Blurred ***
+ObjectTemplate.create SimpleObject Do335A-1_Propeller_F_Blurred
+ObjectTemplate.geometry Do335A-1_Propeller_F_Bl
+
+rem *** Do335_Propeller_Selector ***
+LodSelectorTemplate.create CompareSelector Do335_Propeller_Selector
+LodSelectorTemplate.addLodComparison 0.07
+
+
+rem *** Do335A-1_Gear_Front ***
+ObjectTemplate.create LandingGear Do335A-1_Gear_Front
+ObjectTemplate.geometry Do335A-1_Gear_Front_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335A-1_Gear_Front_Fork
+ObjectTemplate.setRotation 0/-23/0
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/118/0
+ObjectTemplate.setMaxSpeed 0/64/0
+ObjectTemplate.setAcceleration 0/80/0
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+rem *** Do335A-1_Gear_Front_Fork ***
+ObjectTemplate.create RotationalBundle Do335A-1_Gear_Front_Fork
+ObjectTemplate.geometry Do335A-1_Gear_Front_Fork_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335A-1_Wheel_Front
+ObjectTemplate.setPosition 0/-1.87/-0.037
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 150/0/0
+ObjectTemplate.setAcceleration 150/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** Do335A-1_Geardoor_FL ***
+ObjectTemplate.create LandingGear Do335A-1_Geardoor_FL
+ObjectTemplate.geometry Do335A-1_Geardoor_FL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/75
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/80
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335A-1_Geardoor_FR ***
+ObjectTemplate.create LandingGear Do335A-1_Geardoor_FR
+ObjectTemplate.geometry Do335A-1_Geardoor_FR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-75
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/-80
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335A-1_Gear_Left ***
+ObjectTemplate.create LandingGear Do335A-1_Gear_Left
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry Do335A-1_Gear_Left_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Wheel_Back
+ObjectTemplate.setPosition 0.132/-1.894/0.002
+ObjectTemplate.addTemplate Do335_Linkage_Left
+ObjectTemplate.setPosition 0.013/-0.735/0
+ObjectTemplate.setRotation 0/0/-50
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 5/0/82
+ObjectTemplate.setMaxSpeed 32/0/32
+ObjectTemplate.setAcceleration 9999/0/9999
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+rem *** Do335_Linkage_Left ***
+ObjectTemplate.create LandingGear Do335_Linkage_Left
+ObjectTemplate.geometry Do335_Gear_Back_Linkage_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-120
+ObjectTemplate.setMaxSpeed 0/0/47
+ObjectTemplate.setAcceleration 0/0/-9999
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335A-1_Geardoor_L ***
+ObjectTemplate.create LandingGear Do335A-1_Geardoor_L
+ObjectTemplate.geometry Do335A-1_Geardoor_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Geardoor_Linkage
+ObjectTemplate.setPosition -0.076/-0.306/0.032
+ObjectTemplate.setRotation 0/0/49.5
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-85
+ObjectTemplate.setMaxSpeed 0/0/64
+ObjectTemplate.setAcceleration 0/0/-9999
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+rem *** Do335_Geardoor_Linkage ***
+ObjectTemplate.create LandingGear Do335_Geardoor_Linkage
+ObjectTemplate.geometry Do335_Geardoor_Linkage_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/115
+ObjectTemplate.setMaxSpeed 0/0/87
+ObjectTemplate.setAcceleration 0/0/9999
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335A-1_Gear_Right ***
+ObjectTemplate.create LandingGear Do335A-1_Gear_Right
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry Do335A-1_Gear_Right_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Wheel_Back
+ObjectTemplate.setPosition -0.132/-1.894/0
+ObjectTemplate.addTemplate Do335_Linkage_Right
+ObjectTemplate.setPosition -0.012/-0.738/0
+ObjectTemplate.setRotation 0/0/50
+rem -------------------------------------
+ObjectTemplate.setMinRotation -5/0/-82
+ObjectTemplate.setMaxSpeed 32/0/32
+ObjectTemplate.setAcceleration -9999/0/-9999
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+rem *** Do335_Linkage_Right ***
+ObjectTemplate.create LandingGear Do335_Linkage_Right
+ObjectTemplate.geometry Do335_Gear_Back_Linkage_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/120
+ObjectTemplate.setMaxSpeed 0/0/47
+ObjectTemplate.setAcceleration 0/0/9999
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335A-1_Geardoor_R ***
+ObjectTemplate.create LandingGear Do335A-1_Geardoor_R
+ObjectTemplate.geometry Do335A-1_Geardoor_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Geardoor_Linkage
+ObjectTemplate.setPosition 0.076/-0.306/0.032
+ObjectTemplate.setRotation 180/0/49.5
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/85
+ObjectTemplate.setMaxSpeed 0/0/64
+ObjectTemplate.setAcceleration 0/0/9999
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335A-1_Flap_Left_Movement ***
+ObjectTemplate.create LandingGear Do335A-1_Flap_Left_Movement
+ObjectTemplate.geometry Do335A-1_Flap_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/32/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+ObjectTemplate.setGearUpEngineInput 0.8
+
+
+rem *** Do335A-1_Flap_Right_Movement ***
+ObjectTemplate.create LandingGear Do335A-1_Flap_Right_Movement
+ObjectTemplate.geometry Do335A-1_Flap_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/32/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.setGearDownHeight 32
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.8
+ObjectTemplate.setGearUpEngineInput 0.9
+
+
+rem *** lodDo335A-1_Propeller_B ***
+ObjectTemplate.create LodObject lodDo335A-1_Propeller_B
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335A-1_Propeller_B_Static
+ObjectTemplate.addTemplate Do335A-1_Propeller_B_Blurred
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Propeller_Selector
+
+rem *** Do335A-1_Propeller_B_Static ***
+ObjectTemplate.create SimpleObject Do335A-1_Propeller_B_Static
+ObjectTemplate.geometry Do335A-1_Propeller_B
+
+rem *** Do335A-1_Propeller_B_Blurred ***
+ObjectTemplate.create SimpleObject Do335A-1_Propeller_B_Blurred
+ObjectTemplate.geometry Do335A-1_Propeller_B_Bl
+
+
+rem *** Do335_Stick_Pitch ***
+ObjectTemplate.create RotationalBundle Do335_Stick_Pitch
+rem ---------------------------------------------
+ObjectTemplate.addTemplate lodDo335_Stick_Holder
+ObjectTemplate.addTemplate Do335_Stick_Roll
+ObjectTemplate.setPosition 0/0.356/0
+rem ---------------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/110/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** lodDo335_Stick_Holder ***
+ObjectTemplate.create LodObject lodDo335_Stick_Holder
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_High_Stick_Holder
+ObjectTemplate.addTemplate Do335_Low_Stick_Holder
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Cockpit_Selector
+
+rem *** Do335_High_Stick_Holder ***
+ObjectTemplate.create SimpleObject Do335_High_Stick_Holder
+ObjectTemplate.geometry Do335_Stick_Holder_M1
+
+rem *** Do335_Low_Stick_Holder ***
+ObjectTemplate.create SimpleObject Do335_Low_Stick_Holder
+
+rem *** Do335_Stick_Roll ***
+ObjectTemplate.create RotationalBundle Do335_Stick_Roll
+rem ---------------------------------------------
+ObjectTemplate.addTemplate lodDo335_Stick
+rem ---------------------------------------------
+ObjectTemplate.setMinRotation 0/0/-55
+ObjectTemplate.setMaxRotation 0/0/55
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/-100
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+
+rem *** lodDo335_Stick ***
+ObjectTemplate.create LodObject lodDo335_Stick
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Stick_High
+ObjectTemplate.addTemplate Do335_Stick_Low
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Cockpit_Selector
+
+rem *** Do335_Stick_High ***
+ObjectTemplate.create SimpleObject Do335_Stick_High
+ObjectTemplate.geometry Do335_Stick_M1
+
+rem *** Do335_Stick_Low ***
+ObjectTemplate.create SimpleObject Do335_Stick_Low
+
+
+rem *** Do335_Hardpoints_M1 ***
+ObjectTemplate.create SimpleObject Do335_Hardpoints_M1
+ObjectTemplate.geometry Do335_Hardpoints_M1
+
+
+rem *** Do335A-1_Simple ***
+ObjectTemplate.create SimpleObject Do335A-1_Simple
+ObjectTemplate.geometry Do335A-1_Fuselage_L1
+
+
+rem *** Do335A-1_Fuselage_Wreck ***
+ObjectTemplate.create SimpleObject Do335A-1_Fuselage_Wreck
+ObjectTemplate.geometry Do335A-1_Fuselage_Wreck_M1
+
+rem *** e_ScrapMetal_Do335A-1 ***
+ObjectTemplate.create EffectBundle e_ScrapMetal_Do335A-1
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_1
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_2
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_3
+ObjectTemplate.addTemplate Em_ScrapMetal_Do335A-1_Wing_Wreck
+ObjectTemplate.setPosition 5.032/0.249/-1.346
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+rem *** Em_ScrapMetal_Do335A-1_Wing_Wreck ***
+ObjectTemplate.create Emitter Em_ScrapMetal_Do335A-1_Wing_Wreck
+ObjectTemplate.template Do335A-1_Wing_Wreck
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/1/5/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Do335A-1_Wing_Wreck ***
+ObjectTemplate.create Bundle Do335A-1_Wing_Wreck
+ObjectTemplate.geometry Do335A-1_Wing_Wreck_M1
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 6
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.mass 1200
+ObjectTemplate.destroyed 1
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.sinkInToLandAfterDeathSpeed 0.1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ScrapMetalSmoke
+ObjectTemplate.setPosition 0/0.7/-1.7
+rem -------------------------------------
+
+
+rem *** Do335_LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Do335_LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+
+
+rem *** Do335B-2 ***
+ObjectTemplate.create PlayerControlObject Do335B-2
+ObjectTemplate.setNetworkableInfo Do335_Body_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.CullRadiusScale 3
+ObjectTemplate.drag 0.05
+ObjectTemplate.mass 9600
+ObjectTemplate.inertiaModifier 0.85/1.0/0.9
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 23
+ObjectTemplate.criticalDamage 60
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 150 em_b17Damage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 150 em_PlaneDamage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_b17Damage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 0/0.77/-3.34
+ObjectTemplate.addArmorEffect 100 em_b17Damage 0/0.2/3.08
+ObjectTemplate.addArmorEffect 100 em_PlaneDamage 0/0.2/3.08
+ObjectTemplate.addArmorEffect 60 e_StukaFire 0/0.2/3.08
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Do335B-2 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Do335
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335B-2
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/-0.5/-1 0/0/0
+ObjectTemplate.GUIIndex 32
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Do335B-2.tga"
+ObjectTemplate.setVehicleIconPos 88/85
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmMG151-20.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_30mmMK103.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTFighter
+ObjectTemplate.setToolTipType  TTFighter
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+
+
+rem *** lodDo335B-2 ***
+ObjectTemplate.create LodObject lodDo335B-2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335B-2_Complex
+ObjectTemplate.addTemplate Do335B-2_Simple
+ObjectTemplate.addTemplate Do335B-2_Fuselage_Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_LodSelector
+
+
+rem *** Do335B-2_Complex ***
+ObjectTemplate.create Bundle Do335B-2_Complex
+ObjectTemplate.geometry Do335B-2_Fuselage_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335B-2_Cockpit
+ObjectTemplate.addTemplate Do335_Entry
+ObjectTemplate.setPosition 0/0/-0.499
+
+ObjectTemplate.addTemplate Do335_Seat
+ObjectTemplate.setPosition 0/0.6/0.47
+
+ObjectTemplate.addTemplate Do335_Camera
+ObjectTemplate.setPosition 0.052/1.161/0.5
+ObjectTemplate.addTemplate lodDo335_AirReflexSight
+ObjectTemplate.setPosition 0.052/1.161/0.5
+
+ObjectTemplate.addTemplate Do335B-2_Engine_Front
+ObjectTemplate.setPosition 0/0.27/4.279
+ObjectTemplate.addTemplate Do335B-2_Engine_Back
+ObjectTemplate.setPosition 0/0.926/-7.816
+
+ObjectTemplate.addTemplate Do335_Stick_Pitch
+ObjectTemplate.setPosition 0/0.396/0.921
+ObjectTemplate.setRotation 0/20/0
+
+ObjectTemplate.addTemplate Do335_Body_Wing
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Do335_Flap_Left
+ObjectTemplate.setPosition -1.931/0/-2.291
+ObjectTemplate.addTemplate Do335_Flap_Right
+ObjectTemplate.setPosition 1.931/0/-2.291
+
+ObjectTemplate.addTemplate Do335B-2_Aileron_Left
+ObjectTemplate.setPosition -4.882/0.251/-2.286
+ObjectTemplate.setRotation 0/0/-5.5
+ObjectTemplate.addTemplate Do335B-2_Aileron_Right
+ObjectTemplate.setPosition 4.887/0.251/-2.286
+ObjectTemplate.setRotation 0/0/5.5
+ObjectTemplate.addTemplate Do335B-2_Rudders
+ObjectTemplate.setPosition 0/0.734/-7.236
+ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate Do335B-2_Elevator
+ObjectTemplate.setPosition 0/0.95/-7.178
+
+ObjectTemplate.addTemplate Do335_20mm_Nose
+ObjectTemplate.addTemplate Do335_MK103_Guns
+rem -------------------------------------
+
+rem *** lodDo335B-2_Cockpit ***
+ObjectTemplate.create LodObject lodDo335B-2_Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335B-2_Cockpit_M1
+ObjectTemplate.addTemplate Do335_Cockpit_L1
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Cockpit_Selector
+
+rem *** Do335B-2_Cockpit_M1 ***
+ObjectTemplate.create SimpleObject Do335B-2_Cockpit_M1
+ObjectTemplate.geometry Do335B-2_Cockpit_M1
+
+
+rem *** lodDo335B-2_Propeller_F ***
+ObjectTemplate.create LodObject lodDo335B-2_Propeller_F
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335B-2_Propeller_F_Static
+ObjectTemplate.addTemplate Do335B-2_Propeller_F_Blurred
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Propeller_Selector
+
+rem *** Do335B-2_Propeller_F_Static ***
+ObjectTemplate.create SimpleObject Do335B-2_Propeller_F_Static
+ObjectTemplate.geometry Do335B-2_Propeller_F
+
+rem *** Do335B-2_Propeller_F_Blurred ***
+ObjectTemplate.create SimpleObject Do335B-2_Propeller_F_Blurred
+ObjectTemplate.geometry Do335B-2_Propeller_F_Bl
+
+
+rem *** Do335B-2_Gear_Front ***
+ObjectTemplate.create LandingGear Do335B-2_Gear_Front
+ObjectTemplate.geometry Do335B-2_Gear_Front_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335B-2_Gear_Front_Fork
+ObjectTemplate.setRotation 0/-23/0
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/118/0
+ObjectTemplate.setMaxSpeed 0/64/0
+ObjectTemplate.setAcceleration 0/80/0
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+rem *** Do335B-2_Gear_Front_Fork ***
+ObjectTemplate.create RotationalBundle Do335B-2_Gear_Front_Fork
+ObjectTemplate.geometry Do335B-2_Gear_Front_Fork_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335B-2_Wheel_Front
+ObjectTemplate.setPosition 0/-1.761/-0.049
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 150/0/0
+ObjectTemplate.setAcceleration 150/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** Do335B-2_Geardoor_FL ***
+ObjectTemplate.create LandingGear Do335B-2_Geardoor_FL
+ObjectTemplate.geometry Do335B-2_Geardoor_FL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/0/75
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/80
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335B-2_Geardoor_FR ***
+ObjectTemplate.create LandingGear Do335B-2_Geardoor_FR
+ObjectTemplate.geometry Do335B-2_Geardoor_FR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMinRotation 0/0/-75
+ObjectTemplate.setMaxSpeed 0/0/32
+ObjectTemplate.setAcceleration 0/0/-80
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335B-2_Gear_Left ***
+ObjectTemplate.create LandingGear Do335B-2_Gear_Left
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry Do335B-2_Gear_Left_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Wheel_Back
+ObjectTemplate.setPosition 0.132/-1.894/0.002
+ObjectTemplate.addTemplate Do335_Linkage_Left
+ObjectTemplate.setPosition 0.013/-0.735/0
+ObjectTemplate.setRotation 0/0/-50
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 5/0/82
+ObjectTemplate.setMaxSpeed 32/0/32
+ObjectTemplate.setAcceleration 9999/0/9999
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335B-2_Geardoor_L ***
+ObjectTemplate.create LandingGear Do335B-2_Geardoor_L
+ObjectTemplate.geometry Do335B-2_Geardoor_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Geardoor_Linkage
+ObjectTemplate.setPosition -0.076/-0.306/0.032
+ObjectTemplate.setRotation 0/0/49.5
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-85
+ObjectTemplate.setMaxSpeed 0/0/64
+ObjectTemplate.setAcceleration 0/0/-9999
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335B-2_Gear_Right ***
+ObjectTemplate.create LandingGear Do335B-2_Gear_Right
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry Do335B-2_Gear_Right_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Wheel_Back
+ObjectTemplate.setPosition -0.132/-1.894/0
+ObjectTemplate.addTemplate Do335_Linkage_Right
+ObjectTemplate.setPosition -0.012/-0.738/0
+ObjectTemplate.setRotation 0/0/50
+rem -------------------------------------
+ObjectTemplate.setMinRotation -5/0/-82
+ObjectTemplate.setMaxSpeed 32/0/32
+ObjectTemplate.setAcceleration -9999/0/-9999
+ObjectTemplate.setGearDownHeight 20
+ObjectTemplate.setGearUpHeight 5
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335B-2_Geardoor_R ***
+ObjectTemplate.create LandingGear Do335B-2_Geardoor_R
+ObjectTemplate.geometry Do335B-2_Geardoor_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335_Geardoor_Linkage
+ObjectTemplate.setPosition 0.076/-0.306/0.032
+ObjectTemplate.setRotation 180/0/49.5
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/0/85
+ObjectTemplate.setMaxSpeed 0/0/64
+ObjectTemplate.setAcceleration 0/0/9999
+ObjectTemplate.setGearDownHeight 35
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.45
+
+
+rem *** Do335B-2_Flap_Left_Movement ***
+ObjectTemplate.create LandingGear Do335B-2_Flap_Left_Movement
+ObjectTemplate.geometry Do335B-2_Flap_L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/32/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.55
+ObjectTemplate.setGearUpEngineInput 0.8
+
+
+rem *** Do335B-2_Flap_Right_Movement ***
+ObjectTemplate.create LandingGear Do335B-2_Flap_Right_Movement
+ObjectTemplate.geometry Do335B-2_Flap_R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setMaxRotation 0/32/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/200/0
+ObjectTemplate.setGearDownHeight 32
+ObjectTemplate.setGearUpHeight 30
+ObjectTemplate.setGearDownEngineInput 0.8
+ObjectTemplate.setGearUpEngineInput 0.9
+
+
+rem *** lodDo335B-2_Propeller_B ***
+ObjectTemplate.create LodObject lodDo335B-2_Propeller_B
+rem -------------------------------------
+ObjectTemplate.addTemplate Do335B-2_Propeller_B_Static
+ObjectTemplate.addTemplate Do335B-2_Propeller_B_Blurred
+rem -------------------------------------
+ObjectTemplate.lodSelector Do335_Propeller_Selector
+
+rem *** Do335B-2_Propeller_B_Static ***
+ObjectTemplate.create SimpleObject Do335B-2_Propeller_B_Static
+ObjectTemplate.geometry Do335B-2_Propeller_B
+
+rem *** Do335B-2_Propeller_B_Blurred ***
+ObjectTemplate.create SimpleObject Do335B-2_Propeller_B_Blurred
+ObjectTemplate.geometry Do335B-2_Propeller_B_Bl
+
+
+rem *** Do335B-2_Simple ***
+ObjectTemplate.create SimpleObject Do335B-2_Simple
+ObjectTemplate.geometry Do335B-2_Fuselage_L1
+
+
+rem *** Do335B-2_Fuselage_Wreck ***
+ObjectTemplate.create SimpleObject Do335B-2_Fuselage_Wreck
+ObjectTemplate.geometry Do335B-2_Fuselage_Wreck_M1
+
+rem *** e_ScrapMetal_Do335B-2 ***
+ObjectTemplate.create EffectBundle e_ScrapMetal_Do335B-2
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_1
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_2
+ObjectTemplate.addTemplate Em_ScrapMetal_Plane_3
+ObjectTemplate.addTemplate Em_ScrapMetal_Do335B-2_Wing_Wreck
+ObjectTemplate.setPosition 5.032/0.249/-1.346
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+rem *** Em_ScrapMetal_Do335B-2_Wing_Wreck ***
+ObjectTemplate.create Emitter Em_ScrapMetal_Do335B-2_Wing_Wreck
+ObjectTemplate.template Do335B-2_Wing_Wreck
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/1/5/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/5/-5/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Do335B-2_Wing_Wreck ***
+ObjectTemplate.create Bundle Do335B-2_Wing_Wreck
+ObjectTemplate.geometry Do335B-2_Wing_Wreck_M1
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 6
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.mass 1200
+ObjectTemplate.destroyed 1
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.sinkInToLandAfterDeathSpeed 0.1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_ScrapMetalSmoke
+ObjectTemplate.setPosition 0/0.7/-1.7
+rem -------------------------------------
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Do335
+rem sauce = Physics.con
+rem ============================================================================
+rem *** Do335A-1_Engine_Front ***
+ObjectTemplate.create Engine Do335A-1_Engine_Front
+ObjectTemplate.setNetworkableInfo Do335_Engine_Info
+ObjectTemplate.loadSoundScript ../Engines/Sounds/Multi_DB605Engine1.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335A-1_Propeller_F
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setPosition 0/0.005/0
+ObjectTemplate.addTemplate Do335A-1_Gear_Front
+ObjectTemplate.setPosition 0/-0.496/-2.19
+ObjectTemplate.addTemplate Do335A-1_Geardoor_FL
+ObjectTemplate.setPosition -0.364/-0.58/-2.952
+ObjectTemplate.addTemplate Do335A-1_Geardoor_FR
+ObjectTemplate.setPosition 0.376/-0.578/-2.952
+ObjectTemplate.addTemplate Do335A-1_Gear_Left
+ObjectTemplate.setPosition -2.882/-0.207/-5.431
+ObjectTemplate.addTemplate Do335A-1_Geardoor_L
+ObjectTemplate.setPosition -0.6/-0.582/-5.616
+ObjectTemplate.addTemplate Do335A-1_Gear_Right
+ObjectTemplate.setPosition 2.887/-0.204/-5.43
+ObjectTemplate.addTemplate Do335A-1_Geardoor_R
+ObjectTemplate.setPosition 0.606/-0.582/-5.616
+
+ObjectTemplate.addTemplate Do335A-1_Flap_Left_Movement
+ObjectTemplate.setPosition -1.814/-0.3/-6.41
+ObjectTemplate.setRotation 0/0/-4
+ObjectTemplate.addTemplate Do335A-1_Flap_Right_Movement
+ObjectTemplate.setPosition 1.82/-0.3/-6.41
+ObjectTemplate.setRotation 0/0/4
+
+ObjectTemplate.addTemplate PlaneAltimeter
+ObjectTemplate.setPosition 0.052/0.891/3.221
+ObjectTemplate.addTemplate AirSight_revi16D
+ObjectTemplate.setPosition 0.052/0.891/3.221
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-1000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/800
+ObjectTemplate.setAcceleration 100/0/900
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 2.75
+ObjectTemplate.setGearUp 0.1
+ObjectTemplate.setGearDown 0.1
+ObjectTemplate.setNoPropellerEffectAtSpeed 90
+
+rem *** Do335A-1_Engine_Back ***
+ObjectTemplate.create Engine Do335A-1_Engine_Back
+ObjectTemplate.setNetworkableInfo Do335_Engine_Info
+ObjectTemplate.loadSoundScript ../Engines/Sounds/Multi_DB605Engine2.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335A-1_Propeller_B
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-1000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/800
+ObjectTemplate.setAcceleration 100/0/900
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 2.75
+ObjectTemplate.setNoPropellerEffectAtSpeed 90
+
+
+rem *** Do335_Body_Wing ***
+ObjectTemplate.create Wing Do335_Body_Wing
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 5
+
+rem *** Do335_Flap_Left ***
+ObjectTemplate.create Wing Do335_Flap_Left
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.setMinRotation 0/-1/0
+ObjectTemplate.setMaxRotation 0/1/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/30/0
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset 5/0/3.25
+ObjectTemplate.setFlapLift 3
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** Do335_Flap_Right ***
+ObjectTemplate.create Wing Do335_Flap_Right
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.setMinRotation 0/-1/0
+ObjectTemplate.setMaxRotation 0/1/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/30/0
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset -5/0/3.25
+ObjectTemplate.setFlapLift 3
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+rem *** Do335A-1_Aileron_Left ***
+ObjectTemplate.create Wing Do335A-1_Aileron_Left
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335A-1_Aileron_L_M1
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/14/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/-28/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset 0.5/0/1
+ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** Do335A-1_Aileron_Right ***
+ObjectTemplate.create Wing Do335A-1_Aileron_Right
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335A-1_Aileron_R_M1
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/14/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/28/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset -0.5/0/1
+ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** Do335A-1_Rudders ***
+ObjectTemplate.create Wing Do335A-1_Rudders
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335A-1_Rudders_M1
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/14/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/28/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.0
+
+rem *** Do335A-1_Elevator ***
+ObjectTemplate.create Wing Do335A-1_Elevator
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335A-1_Elevator_M1
+ObjectTemplate.setMinRotation 0/-13/0
+ObjectTemplate.setMaxRotation 0/13/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.9
+ObjectTemplate.setFlapLift 1
+
+
+rem *** Do335A-1_Wheel_Front ***
+ObjectTemplate.create Spring Do335A-1_Wheel_Front
+ObjectTemplate.geometry Do335A-1_Wheel_Front_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+rem *** Do335_Wheel_Back ***
+ObjectTemplate.create Spring Do335_Wheel_Back
+ObjectTemplate.geometry Do335_Wheel_Back_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** Do335B-2_Engine_Front ***
+ObjectTemplate.create Engine Do335B-2_Engine_Front
+ObjectTemplate.setNetworkableInfo Do335_Engine_Info
+ObjectTemplate.loadSoundScript ../Engines/Sounds/Multi_DB605Engine1.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335B-2_Propeller_F
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setPosition 0/0.005/0
+ObjectTemplate.addTemplate Do335B-2_Gear_Front
+ObjectTemplate.setPosition 0/-0.496/-2.19
+ObjectTemplate.addTemplate Do335B-2_Geardoor_FL
+ObjectTemplate.setPosition -0.364/-0.58/-2.952
+ObjectTemplate.addTemplate Do335B-2_Geardoor_FR
+ObjectTemplate.setPosition 0.376/-0.578/-2.952
+ObjectTemplate.addTemplate Do335B-2_Gear_Left
+ObjectTemplate.setPosition -2.882/-0.207/-5.431
+ObjectTemplate.addTemplate Do335B-2_Geardoor_L
+ObjectTemplate.setPosition -0.6/-0.582/-5.616
+ObjectTemplate.addTemplate Do335B-2_Gear_Right
+ObjectTemplate.setPosition 2.887/-0.204/-5.43
+ObjectTemplate.addTemplate Do335B-2_Geardoor_R
+ObjectTemplate.setPosition 0.606/-0.582/-5.616
+
+ObjectTemplate.addTemplate Do335B-2_Flap_Left_Movement
+ObjectTemplate.setPosition -1.814/-0.3/-6.41
+ObjectTemplate.setRotation 0/0/-4
+ObjectTemplate.addTemplate Do335B-2_Flap_Right_Movement
+ObjectTemplate.setPosition 1.82/-0.3/-6.41
+ObjectTemplate.setRotation 0/0/4
+
+ObjectTemplate.addTemplate PlaneAltimeter
+ObjectTemplate.setPosition 0.052/0.891/3.221
+ObjectTemplate.addTemplate AirSight_revi16D
+ObjectTemplate.setPosition 0.052/0.891/3.221
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-1000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/800
+ObjectTemplate.setAcceleration 100/0/900
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 2.75
+ObjectTemplate.setGearUp 0.1
+ObjectTemplate.setGearDown 0.1
+ObjectTemplate.setNoPropellerEffectAtSpeed 90
+
+rem *** Do335B-2_Engine_Back ***
+ObjectTemplate.create Engine Do335B-2_Engine_Back
+ObjectTemplate.setNetworkableInfo Do335_Engine_Info
+ObjectTemplate.loadSoundScript ../Engines/Sounds/Multi_DB605Engine2.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDo335B-2_Propeller_B
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-1000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/800
+ObjectTemplate.setAcceleration 100/0/900
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 15
+ObjectTemplate.setDifferential 2.75
+ObjectTemplate.setNoPropellerEffectAtSpeed 90
+
+
+rem *** Do335B-2_Aileron_Left ***
+ObjectTemplate.create Wing Do335B-2_Aileron_Left
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335B-2_Aileron_L_M1
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/14/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/-28/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset 0.5/0/1
+ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** Do335B-2_Aileron_Right ***
+ObjectTemplate.create Wing Do335B-2_Aileron_Right
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335B-2_Aileron_R_M1
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/14/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/28/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset -0.5/0/1
+ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setFlapLift 1.5
+
+rem *** Do335B-2_Rudders ***
+ObjectTemplate.create Wing Do335B-2_Rudders
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335B-2_Rudders_M1
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/14/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/28/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/-0.5/0
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 1.5
+
+rem *** Do335B-2_Elevator ***
+ObjectTemplate.create Wing Do335B-2_Elevator
+ObjectTemplate.setNetworkableInfo Do335_Wing_Info
+ObjectTemplate.geometry Do335B-2_Elevator_M1
+ObjectTemplate.setMinRotation 0/-13/0
+ObjectTemplate.setMaxRotation 0/13/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.9
+ObjectTemplate.setFlapLift 1
+
+
+rem *** Do335B-2_Wheel_Front ***
+ObjectTemplate.create Spring Do335B-2_Wheel_Front
+ObjectTemplate.geometry Do335B-2_Wheel_Front_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Do335
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** Do335_20mm_Nose ***
+ObjectTemplate.create FireArms Do335_20mm_Nose
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/Mono_20mm700RPMHV.ssc
+ObjectTemplate.aiTemplate Do335MachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzz20mm
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x82_Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate APTracer_20x82_Projectile CRD_NONE/2/0/0
+ObjectTemplate.magSize 200
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 800
+ObjectTemplate.roundOfFire 11.6
+ObjectTemplate.setMinDev 1.00
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsBigShake
+ObjectTemplate.addFireArmsPosition -0.175/0.834/3.144 0/0/0
+ObjectTemplate.addFireArmsPosition 0.175/0.834/3.144 0/0/0
+ObjectTemplate.AmmoType	8
+
+rem *** Do335_MK103_Motor_Cannon ***
+ObjectTemplate.create FireArms Do335_MK103_Motor_Cannon
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/30mm400RPM.ssc
+ObjectTemplate.aiTemplate Do335Cannon
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzz30mm
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_30x184_Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate APTracer_30x184_Projectile CRD_NONE/2/0/0
+ObjectTemplate.magSize 70
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 920
+ObjectTemplate.roundOfFire 6.667
+ObjectTemplate.setMinDev 1.00
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMegaShake
+ObjectTemplate.addFireArmsPosition 0/0.27/4.884 0/0/0
+ObjectTemplate.AmmoType	8
+
+rem *** Do335_Bomb_Rack_500 ***
+ObjectTemplate.create FireArms Do335_Bomb_Rack_500
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.projectileTemplate SC500XWaterSkipBomb
+ObjectTemplate.aiTemplate Do335Bombs
+ObjectTemplate.projectilePosition 0/-2.0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.01
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition 0/0/-1.05 0/0/0
+ObjectTemplate.AmmoType	7
+
+
+rem *** Do335_Bomb_Rack_250 ***
+ObjectTemplate.create FireArms Do335_Bomb_Rack_250
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate SC250XWaterSkipBomb
+ObjectTemplate.visibleDummyProjectileTemplate Do335A-1_BombDummy
+ObjectTemplate.aiTemplate Do335Bombs
+ObjectTemplate.projectilePosition 0/-2.0/0
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 15
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition 0.2/0/-1.05 0/0/0
+ObjectTemplate.addFireArmsPosition -0.2/0/-1.05 0/0/0
+ObjectTemplate.addFireArmsPosition -3.535/-0.252/-0.581 0/0/0
+ObjectTemplate.addFireArmsPosition 3.535/-0.252/-0.581 0/0/0
+ObjectTemplate.AmmoType	7
+
+rem *** Do335A-1_BombDummy ***
+ObjectTemplate.create SimpleObject Do335A-1_BombDummy
+ObjectTemplate.geometry bomb_SC250X_m1
+
+
+rem *** Do335_MK103_Guns ***
+ObjectTemplate.create FireArms Do335_MK103_Guns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/30mm400RPM.ssc
+ObjectTemplate.aiTemplate Do335CannonAlt
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_Muzz30mm
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_30x184_Projectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate APTracer_30x184_Projectile CRD_NONE/2/0/0
+ObjectTemplate.magSize 210
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 920
+ObjectTemplate.roundOfFire 6.667
+ObjectTemplate.setMinDev 1.00
+ObjectTemplate.setAsynchronyFire 0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMegaShake
+ObjectTemplate.addFireArmsPosition 0/0.27/4.884 0/0/0
+ObjectTemplate.addFireArmsPosition 2.005/0.103/2.119 0/0/0
+ObjectTemplate.addFireArmsPosition -2.005/0.103/2.119 0/0/0
+ObjectTemplate.AmmoType	8
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Fa223
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster Flettner
+
+GeometryTemplate.create StandardMesh Fa223_fus_m1
+GeometryTemplate.file Fa223_fus_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh Fa223_prop_m1
+GeometryTemplate.file Fa223_prop_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fa223_propblr_m1
+GeometryTemplate.file Fa223_propblr_m1
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Fa223_Whel_F_m1
+GeometryTemplate.file Fa223_Whel_F_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fa223_Whel_R_m1
+GeometryTemplate.file Fa223_Whel_R_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh fa223_LOD_m1
+GeometryTemplate.file fa223_LOD_m1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Fa223_Wreck_m1
+GeometryTemplate.file Fa223_Wreck_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Fa223Nebelwerfer_Launcher_m1
+GeometryTemplate.file Nebelwerfer_Launcher
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+renderer.endGlobalCluster
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Fa223
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo Fa223_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Fa223_body_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Fa223_MG_Info
+NetworkableInfo.setPredictionMode PMLinear
+
+
+
+
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Fa223
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = GER
+
+rem *** Fa223
+rem *** Fa223_Nebelwerfer
+
+ObjectTemplate.create PlayerControlObject Fa223
+include ../Fa223/Fa223.inc
+
+rem *** lodFa223 ***
+ObjectTemplate.create LodObject lodFa223
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Complex
+ObjectTemplate.addTemplate Fa223Simple
+ObjectTemplate.addTemplate Fa223Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Fa223LodSelector
+
+rem *** Fa223Complex ***
+ObjectTemplate.create Bundle Fa223Complex
+ObjectTemplate.geometry Fa223_fus_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Camera
+ObjectTemplate.setPosition -0.46/1.16/2.83
+ObjectTemplate.addTemplate Fa223_MeterEngine
+ObjectTemplate.setPosition -0.46/1.16/2.83
+
+ObjectTemplate.addTemplate Fa223Seat
+ObjectTemplate.setPosition -0.4677/0.6563/2.8722
+
+ObjectTemplate.addTemplate Fa223DummyEngine1Rack
+ObjectTemplate.setPosition -7.5/3.4579/-0.1071
+ObjectTemplate.addTemplate Fa223DummyEngine2Rack
+ObjectTemplate.setPosition 7.5/3.4579/-0.1071
+
+ObjectTemplate.addTemplate Fa223EngineRack1
+ObjectTemplate.setPosition 0/5/7.5
+ObjectTemplate.addTemplate Fa223EngineRack2
+ObjectTemplate.setPosition 0/5/-7.5
+ObjectTemplate.addTemplate Fa223EngineRack3
+ObjectTemplate.setPosition 0/5/0
+ObjectTemplate.addTemplate Fa223EngineRack4
+ObjectTemplate.setPosition 0/-1/0
+
+ObjectTemplate.addTemplate Fa223WheelF
+ObjectTemplate.setPosition 0/-1.223/2.6939
+
+ObjectTemplate.addTemplate Fa223WheelR
+ObjectTemplate.setPosition 2.9227/-1.4895/-0.3675
+ObjectTemplate.addTemplate Fa223WheelR
+ObjectTemplate.setPosition -2.9227/-1.4895/-0.3675
+
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition -3/-1.8/-3
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition 3/-1.8/-3
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition -3/-0.84/-4.5
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition 3/-0.84/-4.5
+
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.setPosition 0/0/-3
+
+ObjectTemplate.addTemplate SupplyboxGun_Prm
+ObjectTemplate.setPosition 0/-1.2/0
+
+ObjectTemplate.addTemplate Fa223_Gunner_PCO1
+ObjectTemplate.setPosition 0/0.45/4.455
+
+ObjectTemplate.addTemplate Fa223_Gunner_PCO2
+ObjectTemplate.setPosition 0.85/0.8/1.65
+ObjectTemplate.setRotation 90/0/0
+
+rem ObjectTemplate.addTemplate Fa223_Passenger_PCO2
+rem ObjectTemplate.setPosition -0.45/1.05/1.55
+rem ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate Fa223_Passenger_PCO3
+ObjectTemplate.setPosition 0.45/1.05/0.8
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_PCO4
+ObjectTemplate.setPosition -0.45/1.05/1.05
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_PCO5
+ObjectTemplate.setPosition 0.45/1.05/0.3
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_PCO6
+ObjectTemplate.setPosition -0.45/1.05/0.55
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** Fa223_CameraRot ***
+ObjectTemplate.create RotationalBundle Fa223_CameraRot
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.setMinRotation -90/0/0
+ObjectTemplate.setMaxRotation 90/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToYaw c_PIFire
+ObjectTemplate.AddTemplate Fa223Camera
+ObjectTemplate.setRotation 0/0/0
+
+rem *** Fa223Camera ***
+ObjectTemplate.create Camera Fa223Camera
+ObjectTemplate.setMinRotation -70/-60/0
+ObjectTemplate.setMaxRotation 70/1/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/0/3.1
+
+
+rem *** Fa223Entry ***
+ObjectTemplate.create EntryPoint Fa223Entry
+ObjectTemplate.setEntryRadius 8
+
+rem *** Fa223Seat ***
+ObjectTemplate.create SeatObject Fa223Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+
+rem *** Fa223DummyEngine1Rack ***
+ObjectTemplate.create RotationalBundle Fa223DummyEngine1Rack
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223DummyEngine1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -2/-2/-2
+ObjectTemplate.setMaxRotation 2/2/2
+ObjectTemplate.setMaxSpeed 150/150/-150
+ObjectTemplate.setAcceleration 150/150/-150
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Fa223DummyEngine2Rack ***
+ObjectTemplate.create RotationalBundle Fa223DummyEngine2Rack
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223DummyEngine2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -2/-2/-2
+ObjectTemplate.setMaxRotation 2/2/2
+ObjectTemplate.setMaxSpeed 150/150/-150
+ObjectTemplate.setAcceleration 150/150/-150
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** lodFa223Propeller ***
+ObjectTemplate.create LodObject lodFa223Propeller
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223PropellerStatic
+ObjectTemplate.addTemplate Fa223PropellerBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector Fa223PropSelector
+
+rem *** Fa223PropellerStatic ***
+ObjectTemplate.create Bundle Fa223PropellerStatic
+ObjectTemplate.geometry Fa223_prop_m1
+
+rem *** Fa223PropellerBlurred ***
+ObjectTemplate.create Bundle Fa223PropellerBlurred
+ObjectTemplate.geometry Fa223_propblr_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+LodSelectorTemplate.create CompareSelector Fa223PropSelector
+LodSelectorTemplate.addLodComparison 0.01
+
+
+rem *** Fa223EngineRack1 ***
+ObjectTemplate.create RotationalBundle Fa223EngineRack1
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223HoverEngine1
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/-45
+ObjectTemplate.setMaxRotation 0/30/45
+ObjectTemplate.setMaxSpeed 0/100/1000
+ObjectTemplate.setAcceleration 0/1000/-1000
+ObjectTemplate.RememberExcessInput 0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Fa223EngineRack2 ***
+ObjectTemplate.create RotationalBundle Fa223EngineRack2
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223HoverEngine2
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/-45
+ObjectTemplate.setMaxRotation 0/30/45
+ObjectTemplate.setMaxSpeed 0/100/1000
+ObjectTemplate.setAcceleration 0/1000/1000
+ObjectTemplate.RememberExcessInput 0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Fa223EngineRack3 ***
+ObjectTemplate.create RotationalBundle Fa223EngineRack3
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223HoverEngine3
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/-45
+ObjectTemplate.setMaxRotation 0/30/45
+ObjectTemplate.setMaxSpeed 0/100/1000
+ObjectTemplate.setAcceleration 0/1000/-1000
+ObjectTemplate.RememberExcessInput 0
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Fa223EngineRack4 ***
+ObjectTemplate.create RotationalBundle Fa223EngineRack4
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223HoverEngine4
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/-90/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-30/-45
+ObjectTemplate.setMaxRotation 0/30/45
+ObjectTemplate.setMaxSpeed 0/100/1000
+ObjectTemplate.setAcceleration 0/-1000/1000
+ObjectTemplate.RememberExcessInput 0
+ObjectTemplate.setInputToRoll c_PIRoll
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** Fa223_Gunner_PCO1 ***
+ObjectTemplate.create PlayerControlObject Fa223_Gunner_PCO1
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.aiTemplate Fa223_Gunner_PCO1R
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223_noseGunnerSeat
+ObjectTemplate.setPosition 0.15/0.6/-0.555
+rem ObjectTemplate.setPosition 0.15/-0.4/-0.555
+ObjectTemplate.addTemplate Fa223_Gunner_MG81_X
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/0 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 35/84
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmMG81.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+rem *** Fa223_noseGunnerSeat ***
+ObjectTemplate.create SeatObject Fa223_noseGunnerSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatAnimationUpperBody Ub_Fa223NoseGunner
+ObjectTemplate.seatAnimationLowerBody Lb_Fa223NoseGunner
+
+rem *** Fa223_Gunner_MG81_X ***
+ObjectTemplate.create RotationalBundle Fa223_Gunner_MG81_X
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223_Gunner_MG81_Y
+rem -------------------------------------
+ObjectTemplate.setMinRotation -60/0/0
+ObjectTemplate.setMaxRotation 60/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** Fa223_Gunner_MG81_Y ***
+ObjectTemplate.create RotationalBundle Fa223_Gunner_MG81_Y
+ObjectTemplate.setNetworkableInfo Fa223_MG_Info
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223_Gunner_MG81_Bundle
+ObjectTemplate.setPosition 0/-0.1/-0.2
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/45/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Fa223_Gunner_MG81_Bundle ***
+ObjectTemplate.create Bundle Fa223_Gunner_MG81_Bundle
+rem -------------------------------------
+ObjectTemplate.addTemplate MG81Z
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Fa223_Gunner_Camera 
+ObjectTemplate.setPosition 0/0.2/-0.4
+rem -------------------------------------
+
+rem *** Fa223_Gunner_Camera  ***
+ObjectTemplate.create Camera Fa223_Gunner_Camera 
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+
+rem *** Fa223_Gunner_PCO2 ***
+ObjectTemplate.create PlayerControlObject Fa223_Gunner_PCO2
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.aiTemplate Fa223_Gunner_PCO2R
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223_Gunner_Seat
+ObjectTemplate.setPosition -0.1/0/-0.9
+rem ObjectTemplate.setPosition -0.1/-1/-0.9
+ObjectTemplate.addTemplate Fa223_Gunner_MG81_X
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/0 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 46/73
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmMG81.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+rem *** Fa223_Gunner_Seat ***
+ObjectTemplate.create SeatObject Fa223_Gunner_Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+rem ObjectTemplate.seatAnimationUpperBody Ub_LowTripodGunner
+ObjectTemplate.seatAnimationLowerBody Lb_CrouchTripodGunner
+
+
+rem *** Fa223_Passenger_PCO2 ***
+ObjectTemplate.create PlayerControlObject Fa223_Passenger_PCO2
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.aiTemplate Fa223_Passenger1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223_Passenger_Camera
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_Seat
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 54/75
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+rem *** Fa223_Passenger_Camera ***
+ObjectTemplate.create Camera Fa223_Passenger_Camera
+ObjectTemplate.setMinRotation -80/-80/-80
+ObjectTemplate.setMaxRotation 80/80/80
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 150/150/150
+ObjectTemplate.setAcceleration 100000/100000/100000
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Fa223PassSeat ***
+ObjectTemplate.create SeatObject Fa223_Passenger_Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInM3a1
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInM3a1
+
+rem *** Fa223_Passenger_PCO3 ***
+ObjectTemplate.create PlayerControlObject Fa223_Passenger_PCO3
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.aiTemplate Fa223_Passenger2
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223_Passenger_Camera
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_Seat
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 54/69
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+rem *** Fa223_Passenger_PCO4 ***
+ObjectTemplate.create PlayerControlObject Fa223_Passenger_PCO4
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.aiTemplate Fa223_Passenger3
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223_Passenger_Camera
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_Seat
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 57/73
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+rem *** Fa223_Passenger_PCO5 ***
+ObjectTemplate.create PlayerControlObject Fa223_Passenger_PCO5
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.aiTemplate Fa223_Passenger4
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223_Passenger_Camera
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_Seat
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 57/68
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+rem *** Fa223_Passenger_PCO6 ***
+ObjectTemplate.create PlayerControlObject Fa223_Passenger_PCO6
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.aiTemplate Fa223_Passenger5
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223_Passenger_Camera
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_Seat
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0/0 0/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 61/71
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAPC
+ObjectTemplate.setToolTipType  TTAPC
+ObjectTemplate.hasRestrictedExit 0
+
+
+rem *** Fa223Simple ***
+ObjectTemplate.create SimpleObject Fa223Simple
+ObjectTemplate.geometry fa223_LOD_m1
+
+rem *** Fa223Wreck ***
+ObjectTemplate.create SimpleObject Fa223Wreck
+ObjectTemplate.geometry Fa223_Wreck_m1
+
+rem *** Fa223LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Fa223LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 200
+
+
+
+
+ObjectTemplate.create PlayerControlObject Fa223_Nebelwerfer
+ObjectTemplate.setNetworkableInfo Fa223_body_info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.CullRadiusScale 5
+ObjectTemplate.drag 0.8
+ObjectTemplate.mass 3000
+ObjectTemplate.inertiaModifier 1/1/1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 22
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 100
+ObjectTemplate.hpLostWhileDamageFromWater 2
+ObjectTemplate.addArmorEffect 130 em_PlaneDamage 0/0.6/-2.2
+ObjectTemplate.addArmorEffect 50 e_StukaFire 0/0.6/-2.2
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/-2.2/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.aiTemplate Fa223
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFa223_Nebelwerfer
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2/0/4 0/0/0
+ObjectTemplate.GUIIndex 108
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_Fa223.tga"
+ObjectTemplate.setVehicleIconPos 43/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_150mmNebelwerfer41.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDivebomber
+ObjectTemplate.setToolTipType  TTDivebomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Flettner.tga"
+
+rem *** lodFa223_Nebelwerfer ***
+ObjectTemplate.create LodObject lodFa223_Nebelwerfer
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223_Nebelwerfer_Complex
+ObjectTemplate.addTemplate Fa223Simple
+ObjectTemplate.addTemplate Fa223Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Fa223LodSelector
+
+rem *** Fa223_Nebelwerfer_Complex ***
+ObjectTemplate.create Bundle Fa223_Nebelwerfer_Complex
+ObjectTemplate.geometry Fa223_fus_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223_NebelwerferGunBarrel
+
+ObjectTemplate.addTemplate Fa223Nebelwerfer_Launcher
+ObjectTemplate.setPosition 1.5/-0.75/-0.5
+ObjectTemplate.addTemplate Fa223Nebelwerfer_Launcher
+ObjectTemplate.setPosition -1.5/-0.75/-0.5
+
+ObjectTemplate.addTemplate Fa223Camera
+ObjectTemplate.setPosition -0.46/1.16/2.83
+ObjectTemplate.addTemplate Fa223_MeterEngine
+ObjectTemplate.setPosition -0.46/1.16/2.83
+
+ObjectTemplate.addTemplate Fa223Seat
+ObjectTemplate.setPosition -0.4677/0.6563/2.8722
+
+ObjectTemplate.addTemplate Fa223DummyEngine1Rack
+ObjectTemplate.setPosition -7.5/3.4579/-0.1071
+ObjectTemplate.addTemplate Fa223DummyEngine2Rack
+ObjectTemplate.setPosition 7.5/3.4579/-0.1071
+
+ObjectTemplate.addTemplate Fa223EngineRack1
+ObjectTemplate.setPosition 0/5/7.5
+ObjectTemplate.addTemplate Fa223EngineRack2
+ObjectTemplate.setPosition 0/5/-7.5
+ObjectTemplate.addTemplate Fa223EngineRack3
+ObjectTemplate.setPosition 0/5/0
+ObjectTemplate.addTemplate Fa223EngineRack4
+ObjectTemplate.setPosition 0/-1/0
+
+ObjectTemplate.addTemplate Fa223WheelF
+ObjectTemplate.setPosition 0/-1.223/2.6939
+
+ObjectTemplate.addTemplate Fa223WheelR
+ObjectTemplate.setPosition 2.9227/-1.4895/-0.3675
+ObjectTemplate.addTemplate Fa223WheelR
+ObjectTemplate.setPosition -2.9227/-1.4895/-0.3675
+
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition -3/-1.8/-3
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition 3/-1.8/-3
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition -3/-0.84/-4.5
+ObjectTemplate.addTemplate Fa223WheelR_invisible
+ObjectTemplate.setPosition 3/-0.84/-4.5
+
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.addTemplate Fa223Entry
+ObjectTemplate.setPosition 0/0/-3
+
+ObjectTemplate.addTemplate Fa223_Gunner_PCO1
+ObjectTemplate.setPosition 0/0.45/4.455
+
+ObjectTemplate.addTemplate Fa223_Gunner_PCO2
+ObjectTemplate.setPosition 0.85/0.8/1.65
+ObjectTemplate.setRotation 90/0/0
+
+rem ObjectTemplate.addTemplate Fa223_Passenger_PCO2
+rem ObjectTemplate.setPosition -0.45/1.05/1.55
+rem ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.addTemplate Fa223_Passenger_PCO3
+ObjectTemplate.setPosition 0.45/1.05/0.8
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_PCO4
+ObjectTemplate.setPosition -0.45/1.05/1.05
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_PCO5
+ObjectTemplate.setPosition 0.45/1.05/0.3
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Fa223_Passenger_PCO6
+ObjectTemplate.setPosition -0.45/1.05/0.55
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+
+rem *** Fa223Nebelwerfer_Launcher ***
+ObjectTemplate.create SimpleObject Fa223Nebelwerfer_Launcher
+ObjectTemplate.geometry Fa223Nebelwerfer_Launcher_m1
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Fa223
+rem sauce = Physics.con
+rem ============================================================================
+rem *** Fa223DummyEngine1 ***
+ObjectTemplate.create Engine Fa223DummyEngine1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo Fa223_engine_info
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFa223Propeller
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/150
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/500
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 0.001
+ObjectTemplate.setDifferential 0
+ObjectTemplate.setNoPropellerEffectAtSpeed 1
+
+rem *** Fa223DummyEngine2 ***
+ObjectTemplate.create Engine Fa223DummyEngine2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setNetworkableInfo Fa223_engine_info
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFa223Propeller
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/150
+ObjectTemplate.setMaxRotation 0/0/150
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/500
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 0.001
+ObjectTemplate.setDifferential 0
+ObjectTemplate.setNoPropellerEffectAtSpeed 1
+
+rem *** Fa223_MeterEngine ***
+ObjectTemplate.create Engine Fa223_MeterEngine
+ObjectTemplate.setNetworkableInfo Fa223_engine_info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Fa223DummyProp_m1
+ObjectTemplate.addTemplate AirSight_revi16A
+ObjectTemplate.addTemplate AirSight_revi16A
+ObjectTemplate.setPosition 0/0/3.1
+ObjectTemplate.addTemplate PlaneAltimeter
+ObjectTemplate.setPosition 0/0/3.1
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-1
+ObjectTemplate.setMaxRotation 0/0/1
+ObjectTemplate.setMaxSpeed 0/0/5500
+ObjectTemplate.setAcceleration 0/0/5500000
+ObjectTemplate.setInputToRoll c_PIYaw
+rem ObjectTemplate.setInputToRoll c_PIAltFire
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 10.5
+ObjectTemplate.setDifferential 10.5
+
+ObjectTemplate.create SimpleObject Fa223DummyProp_m1
+ObjectTemplate.geometry 
+
+
+
+rem *** Fa223HoverEngine1 ***
+ObjectTemplate.create Engine Fa223HoverEngine1
+ObjectTemplate.setNetworkableInfo Fa223_engine_info
+ObjectTemplate.setMinRotation 0/0/40
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/750
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 0
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 12
+ObjectTemplate.setDifferential 3.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 30
+
+rem *** Fa223HoverEngine2 ***
+ObjectTemplate.create Engine Fa223HoverEngine2
+ObjectTemplate.setNetworkableInfo Fa223_engine_info
+ObjectTemplate.setMinRotation 0/0/40
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/750
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 0
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 12
+ObjectTemplate.setDifferential 3.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 30
+
+rem *** Fa223HoverEngine3 ***
+ObjectTemplate.create Engine Fa223HoverEngine3
+ObjectTemplate.setNetworkableInfo Fa223_engine_info
+ObjectTemplate.setMinRotation 0/0/40
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/750
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 0
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 12
+ObjectTemplate.setDifferential 3.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 30
+
+rem *** Fa223HoverEngine4 ***
+ObjectTemplate.create Engine Fa223HoverEngine4
+ObjectTemplate.setNetworkableInfo Fa223_engine_info
+ObjectTemplate.loadSoundScript ../Fa223/Sounds/Fa223Engine.ssc
+ObjectTemplate.setMinRotation 0/0/40
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/750
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 0
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 12
+ObjectTemplate.setDifferential 3.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 30
+
+rem *** Fa223WheelF ***
+ObjectTemplate.create Spring Fa223WheelF
+ObjectTemplate.geometry Fa223_Whel_F_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 50
+ObjectTemplate.setDamping 5
+
+rem *** Fa223WheelR ***
+ObjectTemplate.create Spring Fa223WheelR
+ObjectTemplate.geometry Fa223_Whel_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 8
+
+rem *** Fa223WheelR_invisible ***
+ObjectTemplate.create Spring Fa223WheelR_invisible
+ObjectTemplate.geometry Fa223_Whel_R_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFDummyGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 8
+ObjectTemplate.createInvisible 1
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Fa223
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** Fa223_NebelwerferGunBarrel ***
+ObjectTemplate.create FireArms Fa223_NebelwerferGunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate NebelwerferMainGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_RS82rocketFumeBack
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Rocket_150mm_Nbw41_HE_Projectile
+ObjectTemplate.projectilePosition 0/0/5
+ObjectTemplate.setMinDev 1.3
+ObjectTemplate.magSize 12
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 100
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 12
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.addFireArmsPosition -1.77/-0.75/0.5
+ObjectTemplate.addFireArmsPosition 1.77/0-0.75/0.5
+ObjectTemplate.addFireArmsPosition -1.635/-0.5162/0.5
+ObjectTemplate.addFireArmsPosition 1.635/-0.5162/0.5
+ObjectTemplate.addFireArmsPosition -1.365/-0.5162/0.5
+ObjectTemplate.addFireArmsPosition 1.365/-0.5162/0.5
+ObjectTemplate.addFireArmsPosition -1.23/-0.75/0.5
+ObjectTemplate.addFireArmsPosition 1.23/0-0.75/0.5
+ObjectTemplate.addFireArmsPosition -1.365/-0.9838/0.5
+ObjectTemplate.addFireArmsPosition 1.365/-0.9838/0.5
+ObjectTemplate.addFireArmsPosition -1.635/-0.9838/0.5
+ObjectTemplate.addFireArmsPosition 1.635/-0.9838/0.5
+ObjectTemplate.AmmoType	7
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Fa223SP
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = GER
+
+rem *** Fa223_SP64
+rem *** Fa223_SP65
+rem *** Fa223_SP70
+rem *** Fa223_SP71
+rem *** Fa223_SP75
+
+rem *** Fa223_SP76
+rem *** Fa223_SP77
+rem *** Fa223_SP78
+rem *** Fa223_SP82
+rem *** Fa223_SP83
+
+ObjectTemplate.create PlayerControlObject Fa223_SP64
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_64
+
+ObjectTemplate.create PlayerControlObject Fa223_SP65
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_65
+
+ObjectTemplate.create PlayerControlObject Fa223_SP70
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_70
+
+ObjectTemplate.create PlayerControlObject Fa223_SP71
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_71
+
+ObjectTemplate.create PlayerControlObject Fa223_SP75
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_75
+
+ObjectTemplate.create PlayerControlObject Fa223_SP76
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_76
+
+ObjectTemplate.create PlayerControlObject Fa223_SP77
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_77
+
+ObjectTemplate.create PlayerControlObject Fa223_SP78
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_78
+
+ObjectTemplate.create PlayerControlObject Fa223_SP82
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_82
+
+ObjectTemplate.create PlayerControlObject Fa223_SP83
+include ../Fa223/Fa223.inc
+ObjectTemplate.addTemplate Fa223_SoldierSpawn_83
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_64
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 64
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_65
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 65
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_70
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 70
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_71
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 71
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_75
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 75
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_76
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 76
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_77
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 77
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_78
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 78
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_82
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 82
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint Fa223_SoldierSpawn_83
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 83
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = Flettner
 rem sauce = Geometries.con
 rem ============================================================================
@@ -12008,6 +14885,7 @@ ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner
 rem -------------------------------------
@@ -12058,17 +14936,14 @@ ObjectTemplate.addTemplate FlettnerEntry
 ObjectTemplate.setPosition 0/0/-3
 
 ObjectTemplate.addTemplate Flettner_HoveringEngineBundle
-ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.setPosition 0/2/3
+ObjectTemplate.addTemplate Flettner_HoveringEngineBundle2
+ObjectTemplate.setPosition 0/2/-3
+ObjectTemplate.addTemplate Flettner_HoverRollEngineBundle
+ObjectTemplate.setPosition 0/2/0
 
 ObjectTemplate.addTemplate Flettner_MeterEngine
 ObjectTemplate.setPosition 0/0/0
-
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/3.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/-5
-ObjectTemplate.setRotation -90/0/0
 
 ObjectTemplate.addTemplate Flettner_RightRotor
 ObjectTemplate.setPosition 0.285/0.12/-0.011
@@ -12190,12 +15065,49 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Flettner_HoverEngine
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.setRotation 0/270/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/-30
+ObjectTemplate.setMaxRotation 0/20/30
+ObjectTemplate.setMaxSpeed 0/100/100
+ObjectTemplate.setAcceleration 0/1000/-1000
+ObjectTemplate.RememberExcessInput 0
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Flettner_HoveringEngineBundle2 ***
+ObjectTemplate.create RotationalBundle Flettner_HoveringEngineBundle2
+ObjectTemplate.setNetworkableInfo FlettnerBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
 ObjectTemplate.addTemplate Flettner_Engine
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.setRotation 0/270/0
 rem -------------------------------------
-ObjectTemplate.setMinRotation 0/-20/-15
-ObjectTemplate.setMaxRotation 0/20/15
+ObjectTemplate.setMinRotation 0/-20/-30
+ObjectTemplate.setMaxRotation 0/20/30
+ObjectTemplate.setMaxSpeed 0/100/100
+ObjectTemplate.setAcceleration 0/1000/1000
+ObjectTemplate.RememberExcessInput 0
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Flettner_HoverRollEngineBundle ***
+ObjectTemplate.create RotationalBundle Flettner_HoverRollEngineBundle
+ObjectTemplate.setNetworkableInfo FlettnerBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Flettner_HoverRollEngine
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/270/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-20/-20
+ObjectTemplate.setMaxRotation 0/20/20
 ObjectTemplate.setMaxSpeed 0/100/100
 ObjectTemplate.setAcceleration 0/1000/-500
 ObjectTemplate.RememberExcessInput 0
@@ -12283,6 +15195,7 @@ ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_MG81
 rem -------------------------------------
@@ -12420,6 +15333,7 @@ ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_Giesskanne
 rem -------------------------------------
@@ -12470,18 +15384,14 @@ ObjectTemplate.addTemplate FlettnerEntry
 ObjectTemplate.setPosition 0/0/-3
 
 ObjectTemplate.addTemplate Flettner_HoveringEngineBundle
-ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.setPosition 0/2/3
+ObjectTemplate.addTemplate Flettner_HoveringEngineBundle2
+ObjectTemplate.setPosition 0/2/-3
+ObjectTemplate.addTemplate Flettner_HoverRollEngineBundle
+ObjectTemplate.setPosition 0/2/0
 
 ObjectTemplate.addTemplate Flettner_MeterEngine
 ObjectTemplate.setPosition 0/0/0
-
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/3.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/-5
-ObjectTemplate.setRotation -90/0/0
-
 
 ObjectTemplate.addTemplate Flettner_RightRotor
 ObjectTemplate.setPosition 0.285/0.12/-0.011
@@ -12554,6 +15464,7 @@ ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_AT
 rem -------------------------------------
@@ -12604,18 +15515,14 @@ ObjectTemplate.addTemplate FlettnerEntry
 ObjectTemplate.setPosition 0/0/-3
 
 ObjectTemplate.addTemplate Flettner_HoveringEngineBundle
-ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.setPosition 0/2/3
+ObjectTemplate.addTemplate Flettner_HoveringEngineBundle2
+ObjectTemplate.setPosition 0/2/-3
+ObjectTemplate.addTemplate Flettner_HoverRollEngineBundle
+ObjectTemplate.setPosition 0/2/0
 
 ObjectTemplate.addTemplate Flettner_MeterEngine
 ObjectTemplate.setPosition 0/0/0
-
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/3.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/-5
-ObjectTemplate.setRotation -90/0/0
-
 
 ObjectTemplate.addTemplate Flettner_RightRotor
 ObjectTemplate.setPosition 0.285/0.12/-0.011
@@ -12689,6 +15596,7 @@ ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_SG44
 rem -------------------------------------
@@ -12737,18 +15645,14 @@ ObjectTemplate.addTemplate FlettnerEntry
 ObjectTemplate.setPosition 0/0/-3
 
 ObjectTemplate.addTemplate Flettner_HoveringEngineBundle
-ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.setPosition 0/2/3
+ObjectTemplate.addTemplate Flettner_HoveringEngineBundle2
+ObjectTemplate.setPosition 0/2/-3
+ObjectTemplate.addTemplate Flettner_HoverRollEngineBundle
+ObjectTemplate.setPosition 0/2/0
 
-ObjectTemplate.addTemplate Flettner_MeterEngine_NoSight
+ObjectTemplate.addTemplate Flettner_MeterEngine
 ObjectTemplate.setPosition 0/0/0
-
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/3.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/-5
-ObjectTemplate.setRotation -90/0/0
-
 
 ObjectTemplate.addTemplate Flettner_RightRotor
 ObjectTemplate.setPosition 0.285/0.12/-0.011
@@ -12796,6 +15700,7 @@ ObjectTemplate.geometry Flettner_NoseNoGun_m1
 rem *** Flettner_SG44_Left_PCO2 ***
 ObjectTemplate.create PlayerControlObject Flettner_SG44_Left_PCO2
 ObjectTemplate.setNetworkableInfo FlettnerBodyInfo
+ObjectTemplate.aiTemplate Flettner_PCO2
 rem -------------------------------------
 ObjectTemplate.addTemplate Flettner_SG44_SoldierPos
 ObjectTemplate.setPosition -0.9/-1.7/-0.7
@@ -12816,6 +15721,7 @@ ObjectTemplate.setToolTipType  TTDiveBomber
 rem *** Flettner_SG44_Right_PCO3 ***
 ObjectTemplate.create PlayerControlObject Flettner_SG44_Right_PCO3
 ObjectTemplate.setNetworkableInfo FlettnerBodyInfo
+ObjectTemplate.aiTemplate Flettner_PCO3
 rem -------------------------------------
 ObjectTemplate.addTemplate Flettner_SG44_SoldierPos
 ObjectTemplate.setPosition 0.9/-1.7/-0.7
@@ -12909,6 +15815,7 @@ ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_MG42
 rem -------------------------------------
@@ -12957,18 +15864,14 @@ ObjectTemplate.addTemplate FlettnerEntry
 ObjectTemplate.setPosition 0/0/-3
 
 ObjectTemplate.addTemplate Flettner_HoveringEngineBundle
-ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.setPosition 0/2/3
+ObjectTemplate.addTemplate Flettner_HoveringEngineBundle2
+ObjectTemplate.setPosition 0/2/-3
+ObjectTemplate.addTemplate Flettner_HoverRollEngineBundle
+ObjectTemplate.setPosition 0/2/0
 
-ObjectTemplate.addTemplate Flettner_MeterEngine_NoSight
+ObjectTemplate.addTemplate Flettner_MeterEngine
 ObjectTemplate.setPosition 0/0/0
-
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/3.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/-5
-ObjectTemplate.setRotation -90/0/0
-
 
 ObjectTemplate.addTemplate Flettner_RightRotor
 ObjectTemplate.setPosition 0.285/0.12/-0.011
@@ -13016,6 +15919,7 @@ ObjectTemplate.geometry Flettner_NoseNoGun_m1
 rem *** Flettner_MG42_Left_PCO2 ***
 ObjectTemplate.create PlayerControlObject Flettner_MG42_Left_PCO2
 ObjectTemplate.setNetworkableInfo FlettnerBodyInfo
+ObjectTemplate.aiTemplate Flettner_PCO2
 rem -------------------------------------
 ObjectTemplate.addTemplate Flettner_MG42_SoldierPos
 ObjectTemplate.setPosition -0.9/-1.7/-0.7
@@ -13036,6 +15940,7 @@ ObjectTemplate.setToolTipType  TTDiveBomber
 rem *** Flettner_MG42_Right_PCO3 ***
 ObjectTemplate.create PlayerControlObject Flettner_MG42_Right_PCO3
 ObjectTemplate.setNetworkableInfo FlettnerBodyInfo
+ObjectTemplate.aiTemplate Flettner_PCO3
 rem -------------------------------------
 ObjectTemplate.addTemplate Flettner_MG42_SoldierPos
 ObjectTemplate.setPosition 0.9/-1.7/-0.7
@@ -13105,16 +16010,16 @@ rem *** Flettner_Engine ***
 ObjectTemplate.create Engine Flettner_Engine
 ObjectTemplate.setNetworkableInfo FlettnerEngineInfo
 rem -------------------------------------
-ObjectTemplate.setMinRotation 0/0/-200
-ObjectTemplate.setMaxRotation 0/0/200
-ObjectTemplate.setMaxSpeed 0/0/200
-ObjectTemplate.setAcceleration 0/0/200
+ObjectTemplate.setMinRotation 0/0/40
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/750
+ObjectTemplate.setAutomaticReset 0
 ObjectTemplate.setInputToRoll c_PIThrottle
-ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 13
-ObjectTemplate.setDifferential 5.5
-ObjectTemplate.setNoPropellerEffectAtSpeed 60
+ObjectTemplate.setTorque 16
+ObjectTemplate.setDifferential 4
+ObjectTemplate.setNoPropellerEffectAtSpeed 30
 
 
 rem *** Flettner_MeterEngine ***
@@ -13178,10 +16083,26 @@ ObjectTemplate.setAcceleration 0/0/750
 ObjectTemplate.setAutomaticReset 0
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 20
-ObjectTemplate.setDifferential 12
-
+ObjectTemplate.setTorque 16
+ObjectTemplate.setDifferential 4
 ObjectTemplate.setNoPropellerEffectAtSpeed 30
+
+rem *** Flettner_HoverRollEngine ***
+ObjectTemplate.create Engine Flettner_HoverRollEngine
+ObjectTemplate.setNetworkableInfo FlettnerEngineInfo
+ObjectTemplate.loadSoundScript ../Flettner/Sounds/FlettnerEngine.ssc
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/40
+ObjectTemplate.setMaxRotation 0/0/100
+ObjectTemplate.setMaxSpeed 0/0/100
+ObjectTemplate.setAcceleration 0/0/750
+ObjectTemplate.setAutomaticReset 0
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 16
+ObjectTemplate.setDifferential 4
+ObjectTemplate.setNoPropellerEffectAtSpeed 30
+
 
 rem *** Flettner_TailEngine ***
 ObjectTemplate.create Engine Flettner_TailEngine
@@ -13202,6 +16123,7 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 2
 
 rem *** Flettner_LeftRotor ***
 ObjectTemplate.create Engine Flettner_LeftRotor
+ObjectTemplate.setNetworkableInfo FlettnerEngineInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_Rotary
 ObjectTemplate.setPosition 0/0/0
@@ -13222,6 +16144,7 @@ ObjectTemplate.setDifferential 0
 ObjectTemplate.setNoPropellerEffectAtSpeed 1
 
 ObjectTemplate.create Engine Flettner_RightRotor
+ObjectTemplate.setNetworkableInfo FlettnerEngineInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_Rotary
 ObjectTemplate.setPosition 0/0/0
@@ -13567,6 +16490,162 @@ ObjectTemplate.recoilSize 2
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsMediumShake
 
+rem ===== EOF =====
+rem ============================================================================
+rem folder = fw190
+rem sauce = Geometries.con
+rem ============================================================================
+renderer.beginGlobalCluster FW190
+GeometryTemplate.create StandardMesh FW190_Fus_m1
+GeometryTemplate.file FW190_Fus_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh FW190_can_m1
+GeometryTemplate.file FW190_can_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh FW190_aileron_left_M1
+GeometryTemplate.file FW190_aileron_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 110
+GeometryTemplate.setLodDistance 4 120
+GeometryTemplate.setLodDistance 5 130
+
+GeometryTemplate.create StandardMesh FW190_aileron_right_M1
+GeometryTemplate.file FW190_aileron_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 50
+GeometryTemplate.setLodDistance 2 100
+GeometryTemplate.setLodDistance 3 110
+GeometryTemplate.setLodDistance 4 120
+GeometryTemplate.setLodDistance 5 130
+
+
+GeometryTemplate.create StandardMesh FW190_gear_left_M1
+GeometryTemplate.file FW190_gear_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh FW190_gear_right_M1
+GeometryTemplate.file FW190_gear_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh FW190_Wheel_left_M1
+GeometryTemplate.file FW190_Wheel_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh FW190_wheel_right_M1
+GeometryTemplate.file FW190_wheel_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh FW190_rudder_M1
+GeometryTemplate.file FW190_rudder_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 80
+GeometryTemplate.setLodDistance 4 90
+GeometryTemplate.setLodDistance 5 100
+
+
+
+GeometryTemplate.create StandardMesh FW190_elevator_left_M1
+GeometryTemplate.file FW190_elevator_left_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh FW190_elevator_right_M1
+GeometryTemplate.file FW190_elevator_right_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh FW190_wheel_tail_m1
+GeometryTemplate.file FW190_wheel_tail_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 20
+GeometryTemplate.setLodDistance 2 60
+GeometryTemplate.setLodDistance 3 100
+
+GeometryTemplate.create StandardMesh FW190_prop_m1
+GeometryTemplate.file FW190_prop_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh FW190_prp2
+GeometryTemplate.file bf109_blurprp_m1
+GeometryTemplate.alphaLodDistance 750
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh fw190_fus_L1
+GeometryTemplate.file fw190_fus_L1
+
+GeometryTemplate.create StandardMesh 1P_fw190_M1
+GeometryTemplate.file 1P_fw190_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh fw190_stick
+GeometryTemplate.file bf110_Joystick
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Wreck_FW190_m1
+GeometryTemplate.file Wreck_FW190_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 200
+GeometryTemplate.setLodDistance 2 250
+GeometryTemplate.setLodDistance 3 300
+GeometryTemplate.setLodDistance 4 400
+GeometryTemplate.setLodDistance 5 500
 rem ===== EOF =====
 rem ============================================================================
 rem folder = fw190
@@ -13934,7 +17013,7 @@ ObjectTemplate.setAutomaticReset 1
 
 rem *** FW190Simple ***
 ObjectTemplate.create SimpleObject FW190Simple
-ObjectTemplate.geometry FW190_fus_m1
+ObjectTemplate.geometry fw190_fus_L1
 
 
 rem *** FW190Wreck ***
@@ -15861,7 +18940,7 @@ ObjectTemplate.setAutomaticReset 1
 
 rem *** FW190GSimple ***
 ObjectTemplate.create SimpleObject FW190GSimple
-ObjectTemplate.geometry FW190G_fus_m1
+ObjectTemplate.geometry fw190_fus_L1
 
 
 rem *** FW190GWreck ***
@@ -16032,8 +19111,8 @@ ObjectTemplate.setAcceleration 30/0/500
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 28.52
-ObjectTemplate.setDifferential 4.9
+ObjectTemplate.setTorque 32.4
+ObjectTemplate.setDifferential 5.4
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
 ObjectTemplate.setNoPropellerEffectAtSpeed 65
@@ -16051,8 +19130,8 @@ ObjectTemplate.setNetworkableInfo FW190GInfo
 ObjectTemplate.geometry FW190G_aileron_right_M1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/12.35/0
-ObjectTemplate.setAcceleration 0/24.7/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/26/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5
@@ -16067,8 +19146,8 @@ ObjectTemplate.setNetworkableInfo FW190GInfo
 ObjectTemplate.geometry FW190G_aileron_left_M1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/12.35/0
-ObjectTemplate.setAcceleration 0/-24.7/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 0.5
@@ -16083,8 +19162,8 @@ ObjectTemplate.setNetworkableInfo FW190GInfo
 ObjectTemplate.geometry FW190G_elevator_Right_M1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/11.4/0
-ObjectTemplate.setAcceleration 0/-22.8/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset -0.5/0/-0.1
@@ -16101,8 +19180,8 @@ ObjectTemplate.setNetworkableInfo FW190GInfo
 ObjectTemplate.geometry FW190G_elevator_Left_M1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/11.4/0
-ObjectTemplate.setAcceleration 0/-22.8/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0.5/0/-0.1
@@ -16119,13 +19198,14 @@ ObjectTemplate.setNetworkableInfo FW190GInfo
 ObjectTemplate.geometry FW190G_rudder_M1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/12.35/0
-ObjectTemplate.setAcceleration 0/24.7/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/26/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
 ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 1.0
+ObjectTemplate.setFlapLift 1.25
+rem ObjectTemplate.setFlapLift 1.0
 
 rem ----- FW190GWheelBackSpring -----
 ObjectTemplate.create Spring FW190GWheelBackSpring
@@ -16563,8 +19643,6 @@ ObjectTemplate.addTemplate Go-229Seat
 ObjectTemplate.setPosition 0/-0.1/1.6
 ObjectTemplate.addTemplate Go-229Entry
 ObjectTemplate.setPosition 0/0/2
-ObjectTemplate.addTemplate Go-229MainWing
-
 
 ObjectTemplate.addTemplate Go-229FlapRight
 ObjectTemplate.setPosition 1/0/0
@@ -17119,6 +20197,7 @@ ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
 ObjectTemplate.setNoPropellerEffectAtSpeed 100
 
+
 rem *** Go-229BodyWingVertical***
 ObjectTemplate.create Wing Go-229BodyWingVertical
 ObjectTemplate.setAutomaticReset 1
@@ -17126,21 +20205,15 @@ ObjectTemplate.setPositionOffset 0/0/-0.1
 ObjectTemplate.setWingLift 1
 ObjectTemplate.setFlapLift 0
 
-ObjectTemplate.create Wing Go-229MainWing
-ObjectTemplate.setWingLift 5
-
-ObjectTemplate.create Wing Go-229LatStabiliser
-ObjectTemplate.setWingLift 1
-
 ObjectTemplate.create Wing Go-229FlapRight
 ObjectTemplate.setNetworkableInfo Go-229WingInfo
 ObjectTemplate.setMinRotation 0/-2/0
 ObjectTemplate.setMaxRotation 0/2/0
 ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/30/0
-ObjectTemplate.setPitchOffset -0.7
-rem ObjectTemplate.setPitchOffset -0.5
-ObjectTemplate.setFlapLift 3
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset -1/0/1.0
+ObjectTemplate.setFlapLift 1
 ObjectTemplate.setRegulateToLift 4.91
 objectTemplate.setWingToRegulatorRatio 1
 
@@ -17148,12 +20221,11 @@ ObjectTemplate.create Wing Go-229FlapLeft
 ObjectTemplate.setNetworkableInfo Go-229WingInfo
 ObjectTemplate.setMinRotation 0/-2/0
 ObjectTemplate.setMaxRotation 0/2/0
-ObjectTemplate.setPivotPosition 0/0/0
 ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/30/0
-ObjectTemplate.setPitchOffset -0.7
-rem ObjectTemplate.setPitchOffset -0.5
-ObjectTemplate.setFlapLift 3
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset 1/0/1.0
+ObjectTemplate.setFlapLift 1
 ObjectTemplate.setRegulateToLift 4.91
 objectTemplate.setWingToRegulatorRatio 1
 
@@ -17187,6 +20259,9 @@ ObjectTemplate.setPitchOffset 0.1
 ObjectTemplate.setWingLift 1.8
 ObjectTemplate.setFlapLift 1.8
 
+
+rem NOTE:Too strong elevator's setWingLift causes flutter at high speeds
+rem changed 2.5 -> 0.5
 rem *** Go-229Elevator ***
 ObjectTemplate.create Wing Go-229Elevator
 ObjectTemplate.setNetworkableInfo Go-229WingInfo
@@ -17197,8 +20272,9 @@ ObjectTemplate.setAcceleration 0/-26/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.rememberExcessInput 1
-ObjectTemplate.setWingLift 2.5
+ObjectTemplate.setWingLift 0.5
 ObjectTemplate.setFlapLift 1.5
+
 
 rem *** Go-229RudderLeft ***
 ObjectTemplate.create Wing Go-229RudderLeft
@@ -17406,7 +20482,6 @@ ObjectTemplate.addTemplate Go-229Seat
 ObjectTemplate.setPosition 0/-0.1/1.6
 ObjectTemplate.addTemplate Go-229Entry
 ObjectTemplate.setPosition 0/0/2
-ObjectTemplate.addTemplate Go-229MainWing
 
 ObjectTemplate.addTemplate Go-229FlapRight
 ObjectTemplate.setPosition 1/0/0
@@ -22450,7 +25525,7 @@ ObjectTemplate.setPrimaryAmmoBar ABAmmoBarOnly
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_7,92mmMG81.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBar
 ObjectTemplate.setCrossHairType CHTIcon
-ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleCategory VCAir
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.hasMobilePhysics 1
@@ -37157,7 +40232,7 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.11
 ObjectTemplate.mass 35000
-ObjectTemplate.inertiaModifier 0.6/0.2/6
+ObjectTemplate.inertiaModifier 0.6/0.6/0.6
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -37256,16 +40331,14 @@ ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate Ju88A_PilotSeat
 ObjectTemplate.setPosition 0/0.6/3.05
 rem -----------------------------------------------------
-ObjectTemplate.addTemplate Ju88G-7_Body_Wing
-
 ObjectTemplate.addTemplate Ju88G-7_FlapLeftOuter
 ObjectTemplate.setPosition -8.482/0.515/-1.058
 ObjectTemplate.addTemplate Ju88G-7_FlapRightOuter
 ObjectTemplate.setPosition 8.484/0.515/-1.061
 
-ObjectTemplate.addTemplate Ju88G-7_FlapLeftMiddle
+ObjectTemplate.addTemplate Ju88G-7_FlapLeftMiddleDummy
 ObjectTemplate.setPosition -4.757/0.202/-1.333
-ObjectTemplate.addTemplate Ju88G-7_FlapRightMiddle
+ObjectTemplate.addTemplate Ju88G-7_FlapRightMiddleDummy
 ObjectTemplate.setPosition 4.759/0.202/-1.329
 
 ObjectTemplate.addTemplate Ju88G-7_FlapLeftInner
@@ -37273,17 +40346,15 @@ ObjectTemplate.setPosition -1.610/-0.103/-1.526
 ObjectTemplate.addTemplate Ju88G-7_FlapRightInner
 ObjectTemplate.setPosition 1.545/-0.103/-1.518
 
-ObjectTemplate.addTemplate Ju88G-7_FlapTailLeft
-ObjectTemplate.setPosition -2.308/0.657/-10.204
-ObjectTemplate.setRotation 0/0/0
-ObjectTemplate.addTemplate Ju88G-7_FlapTailRight
-ObjectTemplate.setPosition 2.309/0.662/-10.199
+ObjectTemplate.addTemplate Ju88G-7_FlapTail
+ObjectTemplate.setPosition 0/0.657/-10.204
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate Ju88G-7BodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 ObjectTemplate.addTemplate Ju88G-7_Rudder
 ObjectTemplate.setPosition 0.0/1.565/-11.456
+
 ObjectTemplate.setRotation 0/0/-89.999
 ObjectTemplate.addTemplate Ju88G-7_EngineLeft
 ObjectTemplate.setPosition -2.984/-0.127/0
@@ -37531,12 +40602,6 @@ ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.7
 ObjectTemplate.setNoPropellerEffectAtSpeed 80
 
-rem *** Ju88G-7_Body_Wing ***
-ObjectTemplate.create Wing Ju88G-7_Body_Wing
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 5
-
 
 rem *** Ju88G-7_FlapLeftInner ***
 ObjectTemplate.create Wing Ju88G-7_FlapLeftInner
@@ -37544,13 +40609,9 @@ ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
 ObjectTemplate.setMinRotation 0/-2/0
 ObjectTemplate.setMaxRotation 0/2/0
 ObjectTemplate.setMaxSpeed 0/3/0
-rem ObjectTemplate.setMaxSpeed 0/3/0
 ObjectTemplate.setAcceleration 0/3/0
-rem ObjectTemplate.setMaxSpeed 0/30/0
-rem ObjectTemplate.setAcceleration 0/30/0
-rem ObjectTemplate.setPitchOffset 1
-ObjectTemplate.setPitchOffset 0.5
-ObjectTemplate.setPositionOffset 1.610/0.103/1.418
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset 1.610/0.103/0.0
 ObjectTemplate.setFlapLift 3.0
 ObjectTemplate.setRegulateToLift 4.91
 ObjectTemplate.setWingToRegulatorRatio 1.0
@@ -37561,49 +40622,15 @@ ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
 ObjectTemplate.setMinRotation 0/-2/0
 ObjectTemplate.setMaxRotation 0/2/0
 ObjectTemplate.setMaxSpeed 0/3/0
-rem ObjectTemplate.setMaxSpeed 0/3/0
 ObjectTemplate.setAcceleration 0/3/0
-rem ObjectTemplate.setMaxSpeed 0/30/0
-rem ObjectTemplate.setAcceleration 0/30/0
-rem ObjectTemplate.setPitchOffset 1
-ObjectTemplate.setPitchOffset 0.5
-ObjectTemplate.setPositionOffset -1.610/0.103/1.418
+ObjectTemplate.setPitchOffset 0
+ObjectTemplate.setPositionOffset -1.610/0.103/0.0
 ObjectTemplate.setFlapLift 3.0
 ObjectTemplate.setRegulateToLift 4.91
 ObjectTemplate.setWingToRegulatorRatio 1.0
 
-
-beginrem
-rem *** Ju88G-7_FlapLeftInner ***
-ObjectTemplate.create Wing Ju88G-7_FlapLeftInner
-ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
-ObjectTemplate.setMinRotation 0/-30/0
-ObjectTemplate.setMaxRotation 0/30/0
-ObjectTemplate.setMaxSpeed 0/3/0
-ObjectTemplate.setAcceleration 0/120/0
-ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setPositionOffset 0/0/1.5
-ObjectTemplate.setFlapLift 1.0
-ObjectTemplate.setRegulateToLift 4.91
-ObjectTemplate.setWingToRegulatorRatio 3.0
-
-rem *** Ju88G-7_FlapRightInner ***
-ObjectTemplate.create Wing Ju88G-7_FlapRightInner
-ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
-ObjectTemplate.setMinRotation 0/-30/0
-ObjectTemplate.setMaxRotation 0/30/0
-ObjectTemplate.setMaxSpeed 0/3/0
-ObjectTemplate.setAcceleration 0/120/0
-ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setPositionOffset 0/0/1.5
-ObjectTemplate.setFlapLift 1.0
-ObjectTemplate.setRegulateToLift 4.91
-ObjectTemplate.setWingToRegulatorRatio 3.0
-endrem
-
-rem *** Ju88G-7_FlapLeftMiddle ***
-ObjectTemplate.create Wing Ju88G-7_FlapLeftMiddle
-ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
+rem *** Ju88G-7_FlapLeftMiddleDummy ***
+ObjectTemplate.create RotationalBundle Ju88G-7_FlapLeftMiddleDummy
 ObjectTemplate.geometry Ju88A_FlapLeftMiddle_M1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
@@ -37611,19 +40638,9 @@ ObjectTemplate.setMaxSpeed 0/12/0
 ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPitchOffset 0.625
-rem ObjectTemplate.setPitchOffset 0.75
-rem ObjectTemplate.setPitchOffset 1
-rem ObjectTemplate.setPitchOffset 0.5
-rem ObjectTemplate.setPitchOffset 0
-rem ObjectTemplate.setWingLift 0
-ObjectTemplate.setWingLift 1.5
-rem ObjectTemplate.setWingLift 4.8
-ObjectTemplate.setFlapLift 2.2
 
-rem *** Ju88G-7_FlapRightMiddle ***
-ObjectTemplate.create Wing Ju88G-7_FlapRightMiddle
-ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
+rem *** Ju88G-7_FlapRightMiddleDummy ***
+ObjectTemplate.create RotationalBundle Ju88G-7_FlapRightMiddleDummy
 ObjectTemplate.geometry Ju88A_FlapRightMiddle_M1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
@@ -37631,15 +40648,7 @@ ObjectTemplate.setMaxSpeed 0/12/0
 ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPitchOffset 0.625
-rem ObjectTemplate.setPitchOffset 0.75
-rem ObjectTemplate.setPitchOffset 1
-rem ObjectTemplate.setPitchOffset 0.5
-rem ObjectTemplate.setPitchOffset 0
-rem ObjectTemplate.setWingLift 0
-ObjectTemplate.setWingLift 1.5
-rem ObjectTemplate.setWingLift 4.8
-ObjectTemplate.setFlapLift 2.2
+
 
 rem *** Ju88G-7_FlapLeftOuter ***
 ObjectTemplate.create Wing Ju88G-7_FlapLeftOuter
@@ -37652,9 +40661,8 @@ ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 1
-rem ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setWingLift 4.8
-ObjectTemplate.setFlapLift 2.2
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 1.0
 
 rem *** Ju88G-7_FlapRightOuter ***
 ObjectTemplate.create Wing Ju88G-7_FlapRightOuter
@@ -37667,39 +40675,38 @@ ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPitchOffset 1
-rem ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setWingLift 4.8
-ObjectTemplate.setFlapLift 2.2
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 1.0
 
-rem *** Ju88G-7_FlapTailLeft ***
-ObjectTemplate.create Wing Ju88G-7_FlapTailLeft
+
+rem NOTE:Too strong elevator's setWingLift causes flutter at high speeds
+rem changed 1.5x2 -> 2.0
+rem *** Ju88G-7_FlapTail ***
+ObjectTemplate.create Wing Ju88G-7_FlapTail
 ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
+ObjectTemplate.setMinRotation 0/-11/0
+ObjectTemplate.setMaxRotation 0/11/0
+ObjectTemplate.setMaxSpeed 0/11/0
+ObjectTemplate.setAcceleration 0/-22/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 1.5
+rem ---------------------------------------------------
+ObjectTemplate.addTemplate Ju88A_FlapTailLeft_M1
+ObjectTemplate.setPosition -2.308/0/0
+ObjectTemplate.addTemplate Ju88A_FlapTailRight_M1
+ObjectTemplate.setPosition 2.309/0/0
+rem ---------------------------------------------------
+
+ObjectTemplate.create SimpleObject Ju88A_FlapTailLeft_M1
 ObjectTemplate.geometry Ju88A_FlapTailLeft_M1
-ObjectTemplate.setMinRotation 0/-11/0
-ObjectTemplate.setMaxRotation 0/11/0
-ObjectTemplate.setMaxSpeed 0/11/0
-ObjectTemplate.setAcceleration 0/-22/0
-ObjectTemplate.setInputToPitch c_PIPitch
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0.5/0/0
-ObjectTemplate.rememberExcessInput 1
-ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 1.2
 
-rem *** Ju88G-7_FlapTailRight ***
-ObjectTemplate.create Wing Ju88G-7_FlapTailRight
-ObjectTemplate.setNetworkableInfo Ju88G-7_WingInfo
+ObjectTemplate.create SimpleObject Ju88A_FlapTailRight_M1
 ObjectTemplate.geometry Ju88A_FlapTailRight_M1
-ObjectTemplate.setMinRotation 0/-11/0
-ObjectTemplate.setMaxRotation 0/11/0
-ObjectTemplate.setMaxSpeed 0/11/0
-ObjectTemplate.setAcceleration 0/-22/0
-ObjectTemplate.setInputToPitch c_PIPitch
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset -0.5/0/0
-ObjectTemplate.rememberExcessInput 1
-ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 1.2
+
 
 rem *** Ju88G-7_Rudder ***
 ObjectTemplate.create Wing Ju88G-7_Rudder
@@ -38141,7 +41148,7 @@ ObjectTemplate.geometry wreck_komet_M1
 rem *** kometLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 kometLodSelector
 LodSelectorTemplate.hasDestroyedLod 1
-LodSelectorTemplate.addLodDistance 150
+LodSelectorTemplate.addLodDistance 200
 
 rem ===== EOF =====
 rem ============================================================================
@@ -39305,7 +42312,7 @@ ObjectTemplate.CullRadiusScale 3
 ObjectTemplate.drag 0.0535
 rem ObjectTemplate.drag 0.090
 ObjectTemplate.mass 2000
-ObjectTemplate.inertiaModifier 0.6/0.6/0.6
+ObjectTemplate.inertiaModifier 0.99/0.99/1.21
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.explosionRadius 8
@@ -39843,15 +42850,15 @@ rem ----- me262-bRudder -----
 ObjectTemplate.create Wing me262-bRudder
 ObjectTemplate.setNetworkableInfo me262-b_wing_info
 ObjectTemplate.geometry me262-b_rudder_m1
-ObjectTemplate.setMinRotation 0/-10/0
-ObjectTemplate.setMaxRotation 0/10/0
-ObjectTemplate.setMaxSpeed 0/20/0
-ObjectTemplate.setAcceleration 0/20/0
+ObjectTemplate.setMinRotation 0/-13/0
+ObjectTemplate.setMaxRotation 0/13/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/26/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
 ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 1.5
+ObjectTemplate.setFlapLift 1.0
 
 rem ----- me262-bBodyWingVertical -----
 ObjectTemplate.create Wing me262-bBodyWingVertical
@@ -39886,10 +42893,10 @@ rem ----- me262-bElevatorRight -----
 ObjectTemplate.create Wing me262-bElevatorRight
 ObjectTemplate.setNetworkableInfo me262-b_wing_info
 ObjectTemplate.geometry me262-b_elevator_right_m1
-ObjectTemplate.setMinRotation 0/-11/0
-ObjectTemplate.setMaxRotation 0/11/0
-ObjectTemplate.setMaxSpeed 0/11/0
-ObjectTemplate.setAcceleration 0/-22/0
+ObjectTemplate.setMinRotation 0/-12/0
+ObjectTemplate.setMaxRotation 0/12/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0.5/0/0
@@ -39897,17 +42904,17 @@ ObjectTemplate.rememberExcessInput 1
 ObjectTemplate.setWingLift 0.5
 rem *** PITCH
 ObjectTemplate.setFlapLift 0.6
-rem ObjectTemplate.setFlapLift 1.2
+rem ObjectTemplate.setFlapLift 0.75
 
 rem ----- me262-bAileronLeft -----
 ObjectTemplate.create Wing me262-bAileronLeft
 ObjectTemplate.setNetworkableInfo me262-b_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
 ObjectTemplate.geometry me262-b_aileron_left_m1
-ObjectTemplate.setMinRotation 0/-12/0
-ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/12/0
-ObjectTemplate.setAcceleration 0/-24/0
+ObjectTemplate.setMinRotation 0/-16/0
+ObjectTemplate.setMaxRotation 0/16/0
+ObjectTemplate.setMaxSpeed 0/16/0
+ObjectTemplate.setAcceleration 0/-32/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset 0.5
@@ -39922,10 +42929,10 @@ ObjectTemplate.create Wing me262-bAileronRight
 ObjectTemplate.setNetworkableInfo me262-b_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
 ObjectTemplate.geometry me262-b_aileron_right_m1
-ObjectTemplate.setMinRotation 0/-12/0
-ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/12/0
-ObjectTemplate.setAcceleration 0/24/0
+ObjectTemplate.setMinRotation 0/-16/0
+ObjectTemplate.setMaxRotation 0/16/0
+ObjectTemplate.setMaxSpeed 0/16/0
+ObjectTemplate.setAcceleration 0/32/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset 0.5
@@ -40599,7 +43606,8 @@ ObjectTemplate.setAcceleration 20/0/500
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 20
+ObjectTemplate.setTorque 17.5
+rem ObjectTemplate.setTorque 20
 ObjectTemplate.setDifferential 6
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
@@ -40632,7 +43640,8 @@ ObjectTemplate.setAcceleration 20/0/500
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 20
+ObjectTemplate.setTorque 17.5
+rem ObjectTemplate.setTorque 20
 ObjectTemplate.setDifferential 6
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
@@ -40646,8 +43655,8 @@ ObjectTemplate.setNetworkableInfo me262a1au4_wing_info
 ObjectTemplate.geometry me262_rudder_m1
 ObjectTemplate.setMinRotation 0/-13/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/11.7/0
-ObjectTemplate.setAcceleration 0/22.4/0
+ObjectTemplate.setMaxSpeed 0/13/0
+ObjectTemplate.setAcceleration 0/26/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
@@ -40672,8 +43681,8 @@ ObjectTemplate.setNetworkableInfo me262a1au4_wing_info
 ObjectTemplate.geometry me262_elevator_left_m1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/10.8/0
-ObjectTemplate.setAcceleration 0/-21.6/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0.5/0/0
@@ -40689,8 +43698,8 @@ ObjectTemplate.setNetworkableInfo me262a1au4_wing_info
 ObjectTemplate.geometry me262_elevator_right_m1
 ObjectTemplate.setMinRotation 0/-12/0
 ObjectTemplate.setMaxRotation 0/12/0
-ObjectTemplate.setMaxSpeed 0/10.8/0
-ObjectTemplate.setAcceleration 0/-21.6/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIPitch
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0.5/0/0
@@ -40707,8 +43716,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
 ObjectTemplate.geometry me262_aileron_left_m1
 ObjectTemplate.setMinRotation 0/-16/0
 ObjectTemplate.setMaxRotation 0/16/0
-ObjectTemplate.setMaxSpeed 0/14.4/0
-ObjectTemplate.setAcceleration 0/-28.8/0
+ObjectTemplate.setMaxSpeed 0/16/0
+ObjectTemplate.setAcceleration 0/-32/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset 0.5
@@ -40725,8 +43734,8 @@ ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
 ObjectTemplate.geometry me262_aileron_right_m1
 ObjectTemplate.setMinRotation 0/-16/0
 ObjectTemplate.setMaxRotation 0/16/0
-ObjectTemplate.setMaxSpeed 0/14.4/0
-ObjectTemplate.setAcceleration 0/28.8/0
+ObjectTemplate.setMaxSpeed 0/16/0
+ObjectTemplate.setAcceleration 0/32/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
 rem ObjectTemplate.setPitchOffset 0.5
@@ -41123,7 +44132,7 @@ ObjectTemplate.create PlayerControlObject Me321_PCO1
 ObjectTemplate.setNetworkableInfo Me321BodyInfo
 ObjectTemplate.aiTemplate Me323PCO1Ai
 rem -------------------------------------
-ObjectTemplate.addTemplate Me321DoorCamera
+ObjectTemplate.addTemplate Me321DoorCamRotation
 ObjectTemplate.setPosition 0/2.5/0.5
 ObjectTemplate.setRotation 0/0/0
 
@@ -41174,8 +44183,8 @@ ObjectTemplate.setRotation 30/0/90
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 0/90/0
-ObjectTemplate.setMaxSpeed 0/50/0
-ObjectTemplate.setAcceleration 0/50/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/-45/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 rem *** Me321_RotationDoorR ***
@@ -41190,8 +44199,8 @@ ObjectTemplate.setRotation 30/0/90
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-90/0
 ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/50/0
-ObjectTemplate.setAcceleration 0/-50/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/45/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 rem *** Me321DoorMG15Rotation ***
@@ -41202,7 +44211,21 @@ ObjectTemplate.addTemplate MG15_Air_NoShake
 ObjectTemplate.setPosition 0/-0.1/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation -30/-30/0
-ObjectTemplate.setMaxRotation 30/20/0
+ObjectTemplate.setMaxRotation 30/30/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Me321DoorCamRotation ***
+ObjectTemplate.create RotationalBundle Me321DoorCamRotation
+ObjectTemplate.setNetworkableInfo Me323MG131Info
+rem -------------------------------------
+ObjectTemplate.addTemplate Me323DoorCamera
+ObjectTemplate.addTemplate LandingShip_RampIndicator
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/-30/0
+ObjectTemplate.setMaxRotation 30/30/0
 ObjectTemplate.setMaxSpeed 90/90/0
 ObjectTemplate.setAcceleration 5000/5000/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
@@ -41210,13 +44233,6 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** Me321DoorCamera ***
 ObjectTemplate.create Camera Me321DoorCamera
-ObjectTemplate.setMinRotation -30/-30/0
-ObjectTemplate.setMaxRotation 30/20/0
-ObjectTemplate.setMaxSpeed 90/90/0
-ObjectTemplate.setAcceleration 5000/5000/0
-ObjectTemplate.setInputToYaw c_PIMouseLookX
-ObjectTemplate.setInputToPitch c_PIMouseLookY
-
 
 rem *** Me321_PCO2 ***
 ObjectTemplate.create PlayerControlObject Me321_PCO2
@@ -41336,8 +44352,8 @@ ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate Me321SmallEntry
 ObjectTemplate.setPosition 0/0/1
-ObjectTemplate.addTemplate Me323_SideMG131Seat
-ObjectTemplate.setPosition 0/0/-0.5
+rem ObjectTemplate.addTemplate Me323_SideMG131Seat
+rem ObjectTemplate.setPosition 0/0/-0.5
 
 ObjectTemplate.addTemplate Me321SmallEntry
 ObjectTemplate.setPosition -4.7/0.23/-1.5
@@ -41373,8 +44389,8 @@ ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate Me321SmallEntry
 ObjectTemplate.setPosition 0/0/1
-ObjectTemplate.addTemplate Me321_SideMG15Seat
-ObjectTemplate.setPosition 0/0/-0.5
+rem ObjectTemplate.addTemplate Me321_SideMG15Seat
+rem ObjectTemplate.setPosition 0/0/-0.5
 
 ObjectTemplate.addTemplate Me321SmallEntry
 ObjectTemplate.setPosition 4.7/0.23/-1.5
@@ -41407,7 +44423,7 @@ rem -------------------------------------
 ObjectTemplate.addTemplate MG15_Air
 ObjectTemplate.setPosition 0/-0.1/0
 ObjectTemplate.addTemplate Me321_SteCamera
-ObjectTemplate.setPosition 0/0.06/-0.2
+ObjectTemplate.setPosition 0/0.06/0.3
 rem -------------------------------------
 ObjectTemplate.setMinRotation -50/-5/0
 ObjectTemplate.setMaxRotation 50/35/0
@@ -42438,8 +45454,8 @@ ObjectTemplate.setRotation 30/0/90
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 0/90/0
-ObjectTemplate.setMaxSpeed 0/50/0
-ObjectTemplate.setAcceleration 0/50/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/-45/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 rem *** Me323_RotationDoorR ***
@@ -42454,8 +45470,8 @@ ObjectTemplate.setRotation 30/0/90
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-90/0
 ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/50/0
-ObjectTemplate.setAcceleration 0/-50/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/45/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 rem *** Me323DoorCamRotation ***
@@ -42466,6 +45482,7 @@ ObjectTemplate.addTemplate Me323DoorCamera
 ObjectTemplate.addTemplate AirSight_revi16A
 ObjectTemplate.addTemplate AirSight_revi16A
 ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate LandingShip_RampIndicator
 rem -------------------------------------
 ObjectTemplate.setMinRotation -30/-30/0
 ObjectTemplate.setMaxRotation 30/30/0
@@ -42500,8 +45517,8 @@ ObjectTemplate.setRotation 0/0/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 0/90/0
-ObjectTemplate.setMaxSpeed 0/50/0
-ObjectTemplate.setAcceleration 0/50/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/-45/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 rem *** Me323_RotationRamp2 ***
@@ -42514,8 +45531,8 @@ ObjectTemplate.setRotation 0/-27/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-180/0
 ObjectTemplate.setMaxRotation 0/0/0
-ObjectTemplate.setMaxSpeed 0/100/0
-ObjectTemplate.setAcceleration 0/-100/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/90/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 rem *** Me323_RotationRamp3 ***
@@ -42527,8 +45544,8 @@ rem -------------------------------------
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 0/117/0
-ObjectTemplate.setMaxSpeed 0/65/0
-ObjectTemplate.setAcceleration 0/65/0
+ObjectTemplate.setMaxSpeed 0/58.5/0
+ObjectTemplate.setAcceleration 0/-58.5/0
 ObjectTemplate.setInputToPitch c_PIPitch
 
 
@@ -42669,8 +45686,8 @@ ObjectTemplate.setPosition 2.75/0/0.05
 
 ObjectTemplate.addTemplate Me323_EntrySmall
 ObjectTemplate.setPosition 0/0/1
-ObjectTemplate.addTemplate Me323_SideMG131Seat
-ObjectTemplate.setPosition 0/0/-0.5
+rem ObjectTemplate.addTemplate Me323_SideMG131Seat
+rem ObjectTemplate.setPosition 0/0/-0.5
 
 ObjectTemplate.addTemplate Me323_EntrySmall
 ObjectTemplate.setPosition 5.3/2.73/-1.5
@@ -42702,8 +45719,8 @@ ObjectTemplate.setPosition -2.68/0/0.05
 
 ObjectTemplate.addTemplate Me323_EntrySmall
 ObjectTemplate.setPosition 0/0/1
-ObjectTemplate.addTemplate Me323_SideMG131Seat
-ObjectTemplate.setPosition 0/0/-0.5
+rem ObjectTemplate.addTemplate Me323_SideMG131Seat
+rem ObjectTemplate.setPosition 0/0/-0.5
 
 ObjectTemplate.addTemplate Me323_EntrySmall
 ObjectTemplate.setPosition -5.1/2.73/-1.6

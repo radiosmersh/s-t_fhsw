@@ -2,6 +2,1658 @@ rem *** S&T Changes ***
 rem engine sounds
 
 rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh AdvancedPost_m1
+GeometryTemplate.file SpawnTent_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh AdvancedPost_Smallflag_jp_m1
+GeometryTemplate.setSkin animations/flag.skn
+GeometryTemplate.file flagjp_m1
+GeometryTemplate.Scale 0.2/0.2/0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+
+GeometryTemplate.create StandardMesh AdvancedPost_Smallflagbase_m1
+GeometryTemplate.file flagbase_m1
+GeometryTemplate.Scale 0.2/0.2/0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo AdvancedPost_SP_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem AdvancedPost
+
+*** AdvancedPost_SPT66
+*** AdvancedPost_SPT67
+*** AdvancedPost_SPT68
+*** AdvancedPost_SPT69
+*** AdvancedPost_SPT72
+*** AdvancedPost_SPT73
+*** AdvancedPost_SPT74
+*** AdvancedPost_SPT79
+*** AdvancedPost_SPT80
+*** AdvancedPost_SPT81
+*** AdvancedPost_SPT84
+
+rem *** AXIS
+*** AdvancedPost_SPT64
+*** AdvancedPost_SPT65
+*** AdvancedPost_SPT70
+*** AdvancedPost_SPT71
+*** AdvancedPost_SPT75
+*** AdvancedPost_SPT76
+*** AdvancedPost_SPT77
+*** AdvancedPost_SPT78
+*** AdvancedPost_SPT82
+*** AdvancedPost_SPT83
+
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT66
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_66
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT67
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_67
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT68
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_68
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT69
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_69
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT72
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_72
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT73
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_73
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT74
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_74
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT79
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_79
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT80
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_80
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT81
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_81
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT84
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_84
+ObjectTemplate.setPosition 0/1/0
+
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT64
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_64
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT65
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_65
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT70
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_70
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT71
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_71
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT75
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_75
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT76
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_76
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT77
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_77
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT78
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_78
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT82
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_82
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT83
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_83
+ObjectTemplate.setPosition 0/1/0
+
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_66
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_67
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_68
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 68
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_69
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 69
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_72
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 72
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_73
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 73
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_74
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 74
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_79
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 79
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_80
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 80
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_81
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 81
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_84
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 84
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_64
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 64
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_65
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 65
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_70
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 70
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_71
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 71
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_75
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 75
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_76
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 76
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_77
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 77
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_78
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 78
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_82
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 82
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_83
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 83
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** AdvancedPostEntry ***
+ObjectTemplate.create EntryPoint AdvancedPostEntry
+ObjectTemplate.setEntryRadius 2
+
+rem *** AdvancedPost_Camera ***
+ObjectTemplate.create Camera AdvancedPost_Camera
+ObjectTemplate.setMinRotation -60/-20/0
+ObjectTemplate.setMaxRotation 60/20/0
+ObjectTemplate.setMaxSpeed 30/30/0
+ObjectTemplate.setAcceleration 500/500/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** AdvancedPost_FlagbaseAllied ***
+ObjectTemplate.create Bundle AdvancedPost_FlagbaseAllied
+ObjectTemplate.geometry AdvancedPost_Smallflagbase_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate AnimatedUsFlag
+ObjectTemplate.setPosition 0/1.674/0
+rem -------------------------------------
+
+rem *** AdvancedPost_FlagbaseAxis ***
+ObjectTemplate.create Bundle AdvancedPost_FlagbaseAxis
+ObjectTemplate.geometry AdvancedPost_Smallflagbase_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate AnimatedJapFlag
+ObjectTemplate.setPosition 0/1.674/0
+rem -------------------------------------
+
+rem *** AdvancedPost_PCO1 ***
+ObjectTemplate.create PlayerControlObject AdvancedPost_PCO1
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPostEntry
+ObjectTemplate.addTemplate AdvancedPost_Camera
+ObjectTemplate.setPosition 0/0.7/1
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_SpawnTent.tga"
+ObjectTemplate.setVehicleIconPos 52/69
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** AdvancedPost_PCO2 ***
+ObjectTemplate.create PlayerControlObject AdvancedPost_PCO2
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPostEntry
+ObjectTemplate.addTemplate AdvancedPost_Camera
+ObjectTemplate.setPosition 0/0.7/1
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_SpawnTent.tga"
+ObjectTemplate.setVehicleIconPos 52/74
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.hasRestrictedExit 1
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** ALLIED
+rem *** AdvancedPostFireArms_SPT66
+rem *** AdvancedPostFireArms_SPT67
+rem *** AdvancedPostFireArms_SPT68
+rem *** AdvancedPostFireArms_SPT69
+rem *** AdvancedPostFireArms_SPT72
+rem *** AdvancedPostFireArms_SPT73
+rem *** AdvancedPostFireArms_SPT74
+rem *** AdvancedPostFireArms_SPT79
+rem *** AdvancedPostFireArms_SPT80
+rem *** AdvancedPostFireArms_SPT81
+rem *** AdvancedPostFireArms_SPT84
+
+rem *** AXIS
+rem *** AdvancedPostFireArms_SPT64
+rem *** AdvancedPostFireArms_SPT65
+rem *** AdvancedPostFireArms_SPT70
+rem *** AdvancedPostFireArms_SPT71
+rem *** AdvancedPostFireArms_SPT75
+rem *** AdvancedPostFireArms_SPT76
+rem *** AdvancedPostFireArms_SPT77
+rem *** AdvancedPostFireArms_SPT78
+rem *** AdvancedPostFireArms_SPT82
+rem *** AdvancedPostFireArms_SPT83
+
+
+rem *** AdvancedPostFireArms_SPT64 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT64
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT64Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT64Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT64Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT64Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT64Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT64
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT64
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT65 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT65
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT65Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT65Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT65Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT65Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT65Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT65
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT65
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT66 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT66
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT66Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT66Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT66Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT66Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT66Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT66
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT66
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT67 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT67
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT67Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT67Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT67Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT67Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT67Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT67
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT67
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT68 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT68
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT68Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT68Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT68Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT68Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT68Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT68
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT68
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT69 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT69
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT69Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT69Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT69Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT69Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT69Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT69
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT69
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT70 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT70
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT70Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT70Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT70Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT70Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT70Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT70
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT70
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT71 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT71
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT71Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT71Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT71Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT71Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT71Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT71
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT71
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT72 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT72
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT72Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT72Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT72Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT72Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT72Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT72
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT72
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT73 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT73
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT73Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT73Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT73Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT73Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT73Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT73
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT73
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT74 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT74
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT74Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT74Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT74Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT74Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT74Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT74
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT74
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT75 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT75
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT75Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT75Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT75Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT75Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT75Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT75
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT75
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT76 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT76
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT76Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT76Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT76Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT76Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT76Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT76
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT76
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT77 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT77
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT77Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT77Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT77Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT77Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT77Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT77
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT77
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT78 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT78
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT78Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT78Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT78Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT78Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT78Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT78
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT78
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT79 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT79
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT79Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT79Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT79Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 2
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT79Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT79Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT79
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT79
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT80 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT80
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT80Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT80Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT80Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT80Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT80Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT80
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT80
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT81 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT81
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT81Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT81Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT81Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT81Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT81Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT81
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT81
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT82 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT82
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT82Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT82Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT82Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT82Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT82Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT82
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT82
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT83 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT83
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT83Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT83Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT83Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT83Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT83Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT83
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT83
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT84 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT84
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT84Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+rem ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT84Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Satchel
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT84Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 1 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT84Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT84Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT84
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT84
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = APCR_SupplyObject
 rem sauce = Geometries.con
 rem ============================================================================
@@ -91,6 +1743,118 @@ rem ------------------------------------
 ObjectTemplate.setHealth 0 0 0
 ObjectTemplate.addAmmoType 15 1 1000 0
 ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = ArtyLevelGauge
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh 1p_levelguage_case_m1
+GeometryTemplate.file 1p_levelguage_case_m1
+
+GeometryTemplate.create StandardMesh 1p_levelguage_bubble_m1
+GeometryTemplate.file 1p_levelguage_bubble_m1
+GeometryTemplate.Scale 0.5/1/0.5
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = ArtyLevelGauge
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+ObjectTemplate.create Bundle ArtyLevelGauge_Bundle
+ObjectTemplate.addTemplate lod_ArtyLevelGauge_Case
+ObjectTemplate.addTemplate ArtyLevelGauge_Bubble_Spawner
+ObjectTemplate.setPosition 0/-0.48/0
+ObjectTemplate.addTemplate ArtyLevelGauge_RepairSupplyDepot
+ObjectTemplate.setPosition 0/-0.48/0
+
+ObjectTemplate.create LodObject lod_ArtyLevelGauge_Case
+ObjectTemplate.addTemplate ArtyLevelGauge_CaseInternal
+ObjectTemplate.addTemplate ArtyLevelGauge_CaseExternal
+ObjectTemplate.lodselector ArtyLevelGauge_CaseSelector
+
+ObjectTemplate.create SimpleObject ArtyLevelGauge_CaseExternal
+ObjectTemplate.geometry 
+ObjectTemplate.create SimpleObject ArtyLevelGauge_CaseInternal
+ObjectTemplate.geometry 1p_levelguage_case_m1
+
+LodSelectorTemplate.create DistanceSelector ArtyLevelGauge_CaseSelector
+LodSelectorTemplate.addLodDistance 0.1
+
+
+ObjectTemplate.create SupplyDepot ArtyLevelGauge_RepairSupplyDepot
+ObjectTemplate.radius 1
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.addVehicleType ArtyLevelGauge_Bubble_PCO -1 10000 0
+ObjectTemplate.setHealth -1 -1000 0
+
+ObjectTemplate.create ObjectSpawner ArtyLevelGauge_Bubble_Spawner
+ObjectTemplate.setObjectTemplate 1 ArtyLevelGauge_Bubble_PCO
+ObjectTemplate.setObjectTemplate 2 ArtyLevelGauge_Bubble_PCO
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0.175/0
+ObjectTemplate.DamageWhenLost 1000000
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+
+ObjectTemplate.create PlayerControlObject ArtyLevelGauge_Bubble_PCO
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 101
+ObjectTemplate.hpLostWhilecriticalDamage 1
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry 1p_levelguage_bubble_m1
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+rem ObjectTemplate.addTemplate lod_ArtyLevelGauge_Bubble
+rem ----------------------------------
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+ObjectTemplate.create LodObject lod_ArtyLevelGauge_Bubble
+ObjectTemplate.addTemplate ArtyLevelGauge_BubbleInternal
+ObjectTemplate.addTemplate ArtyLevelGauge_BubbleExternal
+ObjectTemplate.lodselector ArtyLevelGauge_BubbleSelector
+
+ObjectTemplate.create SimpleObject ArtyLevelGauge_BubbleExternal
+ObjectTemplate.geometry 
+ObjectTemplate.create SimpleObject ArtyLevelGauge_BubbleInternal
+ObjectTemplate.geometry lod_ArtyLevelGauge_Bubble
+
+LodSelectorTemplate.create DistanceSelector ArtyLevelGauge_BubbleSelector
+LodSelectorTemplate.addLodDistance 0.3
 
 rem ===== EOF =====
 rem ============================================================================
@@ -197,7 +1961,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_K98
@@ -360,7 +2124,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Nagant
@@ -512,7 +2276,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Wz29
@@ -664,7 +2428,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Wz35
@@ -819,7 +2583,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Arisaka
@@ -981,7 +2745,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_MP18
@@ -1137,7 +2901,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_MP40
@@ -1289,7 +3053,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Mors
@@ -1436,7 +3200,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_PPSh
@@ -1595,7 +3359,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Type100
@@ -1752,7 +3516,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_P08
@@ -1907,7 +3671,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_SG44
@@ -2060,7 +3824,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_MG42
@@ -2210,7 +3974,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Mas36
@@ -2360,7 +4124,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_Mas38
@@ -2515,7 +4279,7 @@ ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
 ObjectTemplate.addArmorEffect 50 e_HorseDie 0/1/0
 ObjectTemplate.addArmorEffect 0 e_HorseDie 0/1/0
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.dontClearTeamOnExit 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodCavalry_AS44
@@ -2649,6 +4413,7 @@ ObjectTemplate.create FireArms Cavalry_K98_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/K98/Sounds/k98.ssc
+ObjectTemplate.aiTemplate Cavalry_Rifle_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzRifle
 ObjectTemplate.setPosition 0/0.05/0.84
@@ -2687,6 +4452,7 @@ ObjectTemplate.create FireArms Cavalry_Nagant_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/NagantCarbine/Sounds/NagantCarbine.ssc
+ObjectTemplate.aiTemplate Cavalry_Rifle_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzRifle
 ObjectTemplate.setPosition 0/0.05/0.77
@@ -2728,6 +4494,7 @@ ObjectTemplate.create FireArms Cavalry_Wz29_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/Wz29/Sounds/Wz29.ssc
+ObjectTemplate.aiTemplate Cavalry_Rifle_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzRifle
 ObjectTemplate.setPosition 0/0.05/0.84
@@ -2766,6 +4533,7 @@ ObjectTemplate.create FireArms Cavalry_Wz35_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/m35/Sounds/M35.ssc
+ObjectTemplate.aiTemplate Cavalry_ATR_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_Muzz30mmWC
 ObjectTemplate.setPosition 0/0.06/1.375
@@ -2808,6 +4576,7 @@ ObjectTemplate.create FireArms Cavalry_Arisaka_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/Arisaka/Sounds/Arisaka65.ssc
+ObjectTemplate.aiTemplate Cavalry_Rifle_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzRifle
 ObjectTemplate.setPosition 0/0.038/0.782
@@ -2844,6 +4613,7 @@ ObjectTemplate.create FireArms Cavalry_MP18_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/Mp18/Sounds/Mp18.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.058/0.3
@@ -2883,6 +4653,7 @@ ObjectTemplate.create FireArms Cavalry_MP40_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/Mp40/Sounds/mp40.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.023/0.43
@@ -2922,6 +4693,7 @@ ObjectTemplate.create FireArms Cavalry_Mors_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/mors/Sounds/mors.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.023/0.55
@@ -2961,6 +4733,7 @@ ObjectTemplate.create FireArms Cavalry_PPSh_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/ppsh/Sounds/ppsh.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.063/0.43
@@ -3000,6 +4773,7 @@ ObjectTemplate.create FireArms Cavalry_Type100_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/Type100SMG_LotRS/Sounds/Type100SMG.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.057/0.377
@@ -3015,7 +4789,7 @@ ObjectTemplate.setPosition -0.1377/-0.3227/-0.5414
 rem -------------------------------------
 ObjectTemplate.projectileTemplate 8x22mmProjectile
 ObjectTemplate.projectilePosition 0/0/1
-ObjectTemplate.magSize 32
+ObjectTemplate.magSize 30
 ObjectTemplate.numOfMag -1
 ObjectTemplate.velocity 334
 ObjectTemplate.autoReload 1
@@ -3039,6 +4813,7 @@ ObjectTemplate.create FireArms Cavalry_P08_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/P08/Sounds/P08.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzHandGun
 ObjectTemplate.setPosition 0.005/0.03/0.165
@@ -3079,6 +4854,7 @@ ObjectTemplate.create FireArms Cavalry_SG44_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/SG44/Sounds/SG44.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSG44
 ObjectTemplate.setPosition 0/0.055/0.5
@@ -3117,6 +4893,7 @@ ObjectTemplate.create FireArms Cavalry_MG42_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/MG42/Sounds/MG42.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzHandheldMG
 ObjectTemplate.setPosition 0/0.08/0.65
@@ -3156,6 +4933,7 @@ ObjectTemplate.create FireArms Cavalry_Mas36_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/Mas36/Sounds/Mas36.ssc
+ObjectTemplate.aiTemplate Cavalry_Rifle_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzRifle
 ObjectTemplate.setPosition 0/0.05/0.84
@@ -3193,6 +4971,7 @@ ObjectTemplate.create FireArms Cavalry_Mas38_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/Mas38/Sounds/Mas38.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.0/0.33
@@ -3230,6 +5009,7 @@ ObjectTemplate.create FireArms Cavalry_AS44_GunBarrel
 ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem ObjectTemplate.setNetworkableInfo TankFireArmInfo
 ObjectTemplate.loadSoundScript ../../../Handweapons/AS44/Sounds/AS44.ssc
+ObjectTemplate.aiTemplate Cavalry_SMG_AI
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSG44
 ObjectTemplate.setPosition 0/0.08/0.25
@@ -3319,7 +5099,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3367,7 +5147,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3417,7 +5197,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3467,7 +5247,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3517,7 +5297,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3567,7 +5347,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3617,7 +5397,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3667,7 +5447,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3717,7 +5497,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3767,7 +5547,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3817,7 +5597,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3867,7 +5647,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3917,7 +5697,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -3967,7 +5747,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -4017,7 +5797,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -4067,7 +5847,7 @@ ObjectTemplate.hpLostWhileCriticalDamage -1
 ObjectTemplate.explosionForceMod 0
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 10
-ObjectTemplate.aiTemplate Horse
+ObjectTemplate.aiTemplate Cavalry
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.destroyOnExit 1
 ObjectTemplate.dontClearTeamOnExit 1
@@ -4240,6 +6020,9 @@ rem ============================================================================
 GeometryTemplate.create StandardMesh Projectile_105mm_BBox_m1
 GeometryTemplate.file Projectile_105mm_BBox_m1
 
+GeometryTemplate.create StandardMesh Projectile_75mmKlw_BBox_m1
+GeometryTemplate.file Projectile_75mmKlw_BBox_m1
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Common_TankGun
@@ -4314,6 +6097,7 @@ rem 75mmL24HEAT_Hl-C_DP_Projectile
 rem 75mmL24HEAT_Hl-Klw_DP_Projectile
 rem 75mmL25_Projectile
 rem 75mmL28,5_Projectile
+rem 75mmL31_Projectile
 rem 75mmL31HEAT_Projectile
 rem 75mmL36_Projectile
 rem 75mmL37,5_Projectile
@@ -4339,10 +6123,13 @@ rem 76,2mmL41,5_Projectile
 rem 76,2mmL41,9APCR_Projectile
 rem 76,2mmL52_Projectile
 rem 76,2mmL52APCR_Projectile
+rem 76,2mmL55_Projectile
 rem 76,2mmL58,3_17pdr_Projectile
 rem 76,2mmL58,3APDS_17pdr_Projectile
 rem 77mmL50_Projectile
 rem 77mmL50APDS_Projectile
+rem 84mmL66_Projectile
+rem 84mmL66APDS_Projectile
 rem 85mmL51,6_Projectile
 rem 85mmL51,6APCR_Projectile
 rem 85mmL64,1_Projectile
@@ -4357,6 +6144,7 @@ rem 90mmL65_Projectile
 rem 90mmL65APCR_Projectile
 rem 90mmL72,5_Projectile
 rem 90mmL72,5HVAP_Projectile
+rem 90mmL50_Projectile
 rem 94mmL65_Projectile
 rem 95mmL18,65HEAT_Projectile
 rem 95mmL41_Projectile
@@ -4364,6 +6152,7 @@ rem 100mmL56_Projectile
 rem 105mmPAW1000HEAT_Projectile
 rem 105mmL22,5HEAT_Projectile
 rem 105mmL28HEAT_Projectile
+rem 105mmL52_Projectile
 rem 105mmL65_Projectile
 rem 105mmL65A_Projectile
 rem 105mmL65A_HVAP_Projectile
@@ -4389,6 +6178,7 @@ rem 150mmL23,5HEAT_Projectile
 rem 152mmL23_Projectile
 rem 152mmL28,8_Projectile
 rem 152mmL47,2_Projectile
+rem 155mmL38,2_AntiConcreteProjectile
 
 rem *** ChangeAmmo_FakeProjectile ***
 ObjectTemplate.create Projectile ChangeAmmo_FakeProjectile
@@ -4473,7 +6263,6 @@ ObjectTemplate.noFFSound 1
 rem *** Tankgun_Projectile_Tracer ***
 ObjectTemplate.create Projectile Tankgun_Projectile_Tracer
 ObjectTemplate.createNotInGrid 1
-ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
 ObjectTemplate.geometry Projectile_105mm_BBox_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
@@ -5755,7 +7544,7 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/10/0/0
 ObjectTemplate.gravityModifier 1.0
 ObjectTemplate.damageType 1
-ObjectTemplate.material 795
+ObjectTemplate.material 221
 ObjectTemplate.material2 200
 ObjectTemplate.radius 18.14
 ObjectTemplate.ForceOnExplosion 0
@@ -5831,7 +7620,7 @@ rem *** 75mmL24HEAT_Hl-C_DP_Projectile ***
 ObjectTemplate.create Projectile 75mmL24HEAT_Hl-Klw_DP_Projectile
 ObjectTemplate.createNotInGrid 1
 ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
-ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.geometry Projectile_75mmKlw_BBox_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -5857,7 +7646,7 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/10/0/0
 ObjectTemplate.damageType 1
-ObjectTemplate.material 728
+ObjectTemplate.material 795
 ObjectTemplate.material2 200
 ObjectTemplate.radius 18.14
 ObjectTemplate.ForceOnExplosion 0
@@ -5883,6 +7672,29 @@ ObjectTemplate.damageType 1
 ObjectTemplate.material 759
 ObjectTemplate.material2 200
 ObjectTemplate.radius 17.52
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 1600
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
+
+rem *** 75mmL31_Projectile ***
+ObjectTemplate.create Projectile 75mmL31_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 759
+ObjectTemplate.material2 200
+ObjectTemplate.radius 17.87
 ObjectTemplate.ForceOnExplosion 0
 ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.minDamage 0.001
@@ -6485,6 +8297,29 @@ ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_bulletsmoke_green
 
+rem *** 76,2mmL55_Projectile ***
+ObjectTemplate.create Projectile 76,2mmL55_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 543
+ObjectTemplate.material2 200
+ObjectTemplate.radius 13.54
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 1800
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
+
 rem *** 76,2mmL58,3_17pdr_Projectile ***
 ObjectTemplate.create Projectile 76,2mmL58,3_17pdr_Projectile
 ObjectTemplate.createNotInGrid 1
@@ -6566,6 +8401,53 @@ ObjectTemplate.timeToLive CRD_NONE/10/0/0
 ObjectTemplate.gravityModifier 1.0
 ObjectTemplate.damageType 1
 ObjectTemplate.material 793
+ObjectTemplate.material2 200
+ObjectTemplate.radius 6
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 1800
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_bulletsmoke_green
+
+
+rem *** 84mmL66_Projectile ***
+ObjectTemplate.create Projectile 84mmL66_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 661
+ObjectTemplate.material2 200
+ObjectTemplate.radius 12.31
+ObjectTemplate.ForceOnExplosion 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 1800
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
+
+rem *** 84mmL66APDS_Projectile ***
+ObjectTemplate.create Projectile 84mmL66APDS_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 662
 ObjectTemplate.material2 200
 ObjectTemplate.radius 6
 ObjectTemplate.ForceOnExplosion 0
@@ -6892,6 +8774,30 @@ ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_bulletsmoke_green
 
+rem *** 94mmL50_Projectile ***
+ObjectTemplate.create Projectile 94mmL50_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 666
+ObjectTemplate.material2 206
+ObjectTemplate.radius 17.42
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
+ObjectTemplate.addTemplate PenetrateExplosion9cmInvisSpawner
+ObjectTemplate.setPosition 0/0/0.5
+
 rem *** 94mmL65_Projectile ***
 ObjectTemplate.create Projectile 94mmL65_Projectile
 ObjectTemplate.createNotInGrid 1
@@ -6913,7 +8819,7 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
-ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.addTemplate PenetrateExplosion9cmInvisSpawner
 ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 95mmL18,65HEAT_Projectile ***
@@ -6937,7 +8843,7 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
-ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.addTemplate PenetrateExplosion9cmInvisSpawner
 ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 95mmL41_Projectile ***
@@ -6961,7 +8867,7 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
-ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.addTemplate PenetrateExplosion9cmInvisSpawner
 ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 100mmL56_Projectile ***
@@ -6985,14 +8891,14 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
-ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.addTemplate PenetrateExplosion10cmInvisSpawner
 ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmPAW1000HEAT_Projectile ***
 ObjectTemplate.create Projectile 105mmPAW1000HEAT_Projectile
 ObjectTemplate.createNotInGrid 1
 ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
-ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.geometry Projectile_75mmKlw_BBox_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -7007,7 +8913,7 @@ ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
-ObjectTemplate.addTemplate PenetrateExplosion9cmSpawner
+ObjectTemplate.addTemplate PenetrateExplosion9cmInvisSpawner
 ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL22,5HEAT_Projectile ***
@@ -7031,7 +8937,7 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
-ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
+ObjectTemplate.addTemplate PenetrateExplosion10cmInvisSpawner
 ObjectTemplate.setPosition 0/0/0.5
 
 rem *** 105mmL28HEAT_Projectile ***
@@ -7055,6 +8961,30 @@ ObjectTemplate.distToMinDamage 2000
 ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion10cmInvisSpawner
+ObjectTemplate.setPosition 0/0/0.5
+
+rem *** 105mmL52_Projectile ***
+ObjectTemplate.create Projectile 105mmL52_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 658
+ObjectTemplate.material2 206
+ObjectTemplate.radius 17.94
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
 ObjectTemplate.addTemplate PenetrateExplosion10cmSpawner
 ObjectTemplate.setPosition 0/0/0.5
 
@@ -7552,7 +9482,7 @@ rem *** 150mmL12HEAT_Klw_Projectile ***
 ObjectTemplate.create Projectile 150mmL12HEAT_Klw_Projectile
 ObjectTemplate.createNotInGrid 1
 ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
-ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.geometry Projectile_75mmKlw_BBox_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -7670,6 +9600,38 @@ ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 9999
 ObjectTemplate.addTemplate PenetrateExplosion15cmSpawner
 ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
+
+rem *** 155mmL38,2_AntiConcreteProjectile ***
+ObjectTemplate.create Projectile 155mmL38,2_AntiConcreteProjectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileLarge.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 663
+ObjectTemplate.material2 605
+ObjectTemplate.radius 27.89
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 3000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 9999
+ObjectTemplate.addTemplate PenetrateExplosion15cmAntiConcreteSpawner
+ObjectTemplate.setPosition 0/0/0.05
+ObjectTemplate.setRotation 0/90/0
+ObjectTemplate.addTemplate PenetrateExplosion15cmAntiConcreteSpawner
+ObjectTemplate.setPosition 0/0/5
+ObjectTemplate.setRotation 0/90/0
+ObjectTemplate.addTemplate PenetrateExplosion15cmAntiConcreteSpawner
+ObjectTemplate.setPosition 0/0/10
+ObjectTemplate.setRotation 0/90/0
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_normal
 
@@ -7995,7 +9957,7 @@ ObjectTemplate.reloadtime 5
 ObjectTemplate.roundOfFire 0.139
 ObjectTemplate.recoilSpeed 10.0
 ObjectTemplate.recoilSize 50
-ObjectTemplate.setMinDev 0.75
+ObjectTemplate.setMinDev 0.6
 ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
 
 rem *** DefgunGunBarrel_PenetrateExploder ***
@@ -8009,7 +9971,7 @@ ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 350
 ObjectTemplate.reloadtime 5
 ObjectTemplate.roundOfFire 0.139
-ObjectTemplate.setMinDev 0.75
+ObjectTemplate.setMinDev 0.6
 ObjectTemplate.AmmoType	4
 
 rem *** DefgunGunLowVelBarrel ***
@@ -8031,7 +9993,7 @@ ObjectTemplate.reloadtime 5
 ObjectTemplate.roundOfFire 0.139
 ObjectTemplate.recoilSpeed 10.0
 ObjectTemplate.recoilSize 50
-ObjectTemplate.setMinDev 0.75
+ObjectTemplate.setMinDev 0.6
 ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
 
 rem ===== EOF =====
@@ -9032,6 +10994,920 @@ ObjectTemplate.velocity 0
 ObjectTemplate.fireingForce 350
 rem ObjectTemplate.fireingForce 175
 ObjectTemplate.setInputFire c_PIAltFire
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Horse_x4
+rem sauce = Geometries.con
+rem ============================================================================
+
+GeometryTemplate.create StandardMesh horse_x4_hull_m1
+GeometryTemplate.file horse_x4_hull_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Horse_x4
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo Horse_x4_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Horse_x4_EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Horse_x4_SteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Horse_x4_CameraShakeInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Horse_x4_HookInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Horse_x4
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem *** Horse_x4 ***
+ObjectTemplate.create PlayerControlObject Horse_x4
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo Horse_x4_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 2000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 80
+ObjectTemplate.maxhitpoints 80
+ObjectTemplate.material 42
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 0 e_HorseDie 0.5/1/1.5
+ObjectTemplate.addArmorEffect 0 e_HorseDie -0.5/1/-1.5
+ObjectTemplate.damageFromWater 0
+ObjectTemplate.aiTemplate Horse
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHorse_x4
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1/1/-1.5 0/0/0
+ObjectTemplate.GUIIndex 26
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 1.8 1.0 5
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Horse.tga"
+ObjectTemplate.setVehicleIconPos 50/62
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Vehicle/icon_Type38FieldGun.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_ArtyConnect.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.hasRestrictedExit 1
+ObjectTemplate.setMinimapIcon ""
+
+rem *** lodHorse_x4 ***
+ObjectTemplate.create LodObject lodHorse_x4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_Complex
+ObjectTemplate.addTemplate Horse_x4_Simple
+ObjectTemplate.addTemplate Horse_x4_Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Horse_x4_LodSelector
+
+
+rem *** Horse_x4_Complex ***
+ObjectTemplate.create Bundle Horse_x4_Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.geometry horse_x4_hull_m1
+ObjectTemplate.CreateInvisible 1
+rem -------------------------------------
+rem ObjectTemplate.addTemplate Horse_x4_Steering
+rem ObjectTemplate.setPosition 0/-0.3/2.2
+
+ObjectTemplate.addTemplate Horse_x4_Engine
+
+ObjectTemplate.addTemplate Horse_x4_HorseBody
+ObjectTemplate.setPosition -0.5/-0.3/-1.5
+
+ObjectTemplate.addTemplate Horse_x4_HorseBody2
+ObjectTemplate.setPosition 0.5/-0.3/-1.5
+
+ObjectTemplate.addTemplate Horse_x4_FrontHorse
+ObjectTemplate.setPosition 0/-0.3/1.5
+rem -------------------------------------
+
+rem *** Horse_x4_FrontHorse ***
+ObjectTemplate.create RotationalBundle Horse_x4_FrontHorse
+ObjectTemplate.setNetworkableInfo Horse_x4_SteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem ------------------------------------------
+ObjectTemplate.addTemplate Horse_x4_HorseBody2
+ObjectTemplate.setPosition -0.5/0/0
+ObjectTemplate.addTemplate Horse_x4_HorseBody2
+ObjectTemplate.setPosition 0.5/0/0
+rem ------------------------------------------
+ObjectTemplate.setMinRotation -10/0/0
+ObjectTemplate.setMaxRotation 10/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 10/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** Horse_x4_HorseBody ***
+ObjectTemplate.create Bundle Horse_x4_HorseBody
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry Horse_Hull_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate horse_harness
+ObjectTemplate.setPosition 0/-0.3/0
+
+ObjectTemplate.addTemplate Horse_x4_Entry
+ObjectTemplate.setPosition 0/0/1
+
+ObjectTemplate.addTemplate Horse_x4_CameraShake
+ObjectTemplate.setPosition 0/1.85/-0.5
+
+ObjectTemplate.addTemplate Horse_x4_attachLeftHand
+ObjectTemplate.setPosition -0.05/1.5/0.4
+ObjectTemplate.setRotation 0/-45/0
+ObjectTemplate.addTemplate Horse_x4_attachRightHand
+ObjectTemplate.setPosition 0.05/1.5/0.4
+ObjectTemplate.setRotation 0/-45/0
+
+ObjectTemplate.addTemplate Horse_x4_attachLeftFoot
+ObjectTemplate.setPosition -0.3/0.65/0.187
+ObjectTemplate.addTemplate Horse_x4_attachRightFoot
+ObjectTemplate.setPosition 0.3/0.65/0.187
+ObjectTemplate.setRotation -110.068/-5.98/-69.78
+
+ObjectTemplate.addTemplate Horse_x4_Seat
+ObjectTemplate.setPosition 0/1.55/0.15
+
+ObjectTemplate.addTemplate Horse_x4_leg_FL
+ObjectTemplate.setPosition -0.1942/0.8776/0.63
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Horse_x4_leg_FR
+ObjectTemplate.setPosition 0.1733/0.8776/0.63
+ObjectTemplate.setRotation 0/5/0
+
+ObjectTemplate.addTemplate Horse_x4_leg_BL
+ObjectTemplate.setPosition -0.1417/0.8776/-0.63
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Horse_x4_leg_BR
+ObjectTemplate.setPosition 0.1733/0.8776/-0.63
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+
+rem *** Horse_x4_HorseBody2 ***
+ObjectTemplate.create Bundle Horse_x4_HorseBody2
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry Horse_Hull_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate horse_harness
+ObjectTemplate.setPosition 0/-0.3/0
+
+ObjectTemplate.addTemplate Horse_x4_Entry
+ObjectTemplate.setPosition 0/0/1
+
+ObjectTemplate.addTemplate Horse_x4_leg_FL
+ObjectTemplate.setPosition -0.1942/0.8776/0.63
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Horse_x4_leg_FR
+ObjectTemplate.setPosition 0.1733/0.8776/0.63
+ObjectTemplate.setRotation 0/5/0
+
+ObjectTemplate.addTemplate Horse_x4_leg_BL
+ObjectTemplate.setPosition -0.1417/0.8776/-0.63
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Horse_x4_leg_BR
+ObjectTemplate.setPosition 0.1733/0.8776/-0.63
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+
+rem *** Horse_x4_CameraShake ***
+ObjectTemplate.create rotationalbundle Horse_x4_CameraShake
+ObjectTemplate.setNetworkableInfo Horse_x4_CameraShakeInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_CameraShake2
+ObjectTemplate.setPosition 0/0/0.01
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/1000/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** Horse_CameraShake2 ***
+ObjectTemplate.create rotationalbundle Horse_CameraShake2
+ObjectTemplate.setNetworkableInfo Horse_x4_CameraShakeInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_Camera
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 0/1000/0
+ObjectTemplate.setAcceleration 0/-1000/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** Horse_x4_Camera ***
+ObjectTemplate.create Camera Horse_x4_Camera
+ObjectTemplate.setMinRotation -110/-40/0
+ObjectTemplate.setMaxRotation 110/10/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Horse_x4_Seat ***
+ObjectTemplate.create SeatObject Horse_x4_Seat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInHanomag
+
+rem *** Horse_x4_Entry ***
+ObjectTemplate.create EntryPoint Horse_x4_Entry
+ObjectTemplate.setEntryRadius 2.3
+
+rem *** Horse_x4_Engine ***
+ObjectTemplate.create RotationalBundle Horse_x4_Steering
+ObjectTemplate.setNetworkableInfo Horse_x4_SteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_RollSpring
+ObjectTemplate.setPosition 0.7/0/0
+ObjectTemplate.addTemplate Horse_x4_RollSpring
+ObjectTemplate.setPosition -0.7/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Horse_x4_harness ***
+ObjectTemplate.create SimpleObject Horse_x4_harness
+ObjectTemplate.geometry Horse_harness_m1
+
+rem *** Horse_x4_attachRightHand ***
+ObjectTemplate.create AnimatedBundle Horse_x4_attachRightHand
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0/0/0 96.633/-37.887/-59.629
+
+rem *** Horse_x4_attachLeftHand ***
+ObjectTemplate.create AnimatedBundle Horse_x4_attachLeftHand
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0/0/0 76.515/40.205/-38.802
+
+rem *** Horse_x4_attachRightFoot ***
+ObjectTemplate.create AnimatedBundle Horse_x4_attachRightFoot
+ObjectTemplate.addSkeletonIK Bip01_R_Foot 0/0/0 0/0/0
+
+rem *** Horse_x4_attachLeftFoot ***
+ObjectTemplate.create AnimatedBundle Horse_x4_attachLeftFoot
+ObjectTemplate.addSkeletonIK Bip01_L_Foot 0/0/0 0/0/0
+
+
+rem *** Horse_x4_Simple ***
+ObjectTemplate.create Bundle Horse_x4_Simple
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_SimpleObj
+ObjectTemplate.setPosition -0.5/0/1.5
+ObjectTemplate.addTemplate Horse_x4_SimpleObj
+ObjectTemplate.setPosition 0.5/0/1.5
+ObjectTemplate.addTemplate Horse_x4_SimpleObj
+ObjectTemplate.setPosition -0.5/0/-1.5
+ObjectTemplate.addTemplate Horse_x4_SimpleObj
+ObjectTemplate.setPosition 0.5/0/-1.5
+rem -------------------------------------
+
+rem *** Horse_x4_SimpleObj ***
+ObjectTemplate.create SimpleObject Horse_x4_SimpleObj
+ObjectTemplate.geometry Horse_Hull_l1
+
+
+rem *** Horse_x4_Wreck ***
+ObjectTemplate.create Bundle Horse_x4_Wreck
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_WreckObj
+ObjectTemplate.setPosition -0.5/0/1.5
+ObjectTemplate.setRotation -50/0/90
+ObjectTemplate.addTemplate Horse_x4_WreckObj
+ObjectTemplate.setPosition 0.5/0/1.5
+ObjectTemplate.setRotation 25/0/90
+ObjectTemplate.addTemplate Horse_x4_WreckObj
+ObjectTemplate.setPosition -0.5/0/-1.5
+ObjectTemplate.setRotation -55/0/-90
+ObjectTemplate.addTemplate Horse_x4_WreckObj
+ObjectTemplate.setPosition 0.5/0/-1.5
+ObjectTemplate.setRotation -10/0/90
+rem -------------------------------------
+
+rem *** Horse_x4_WreckObj ***
+ObjectTemplate.create SimpleObject Horse_x4_WreckObj
+ObjectTemplate.geometry Wreck_Horse_m1
+
+rem *** Horse_x4_LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Horse_x4_LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 135
+
+rem ===============================================
+rem             flont left leg
+rem ===============================================
+
+rem 0/450/0 -> 0/250/0
+rem 650/0/0 -> 350/0/0
+
+rem *** Horse_x4_leg_FL ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL1_rot0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** Horse_x4_leg_FL1_rot0 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL1_rot0
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL1_rot1
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/-1000/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** Horse_x4_leg_FL1_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL1_rot1
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL1_rot2
+ObjectTemplate.setRotation 0/15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FL1_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL1_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL1_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FL1_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL1_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL1_rot4
+ObjectTemplate.setRotation 0/15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FL1_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL1_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+ObjectTemplate.geometry Horse_leg_FL1_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL2_rot0a
+ObjectTemplate.setPosition 0/-0.4935/0.42
+ObjectTemplate.setRotation 0/-10/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FL2_rot0a ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL2_rot0a
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL2_rot0b
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Horse_x4_leg_FL2_rot0b ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL2_rot0b
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL2_rot1
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/-500/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Horse_x4_leg_FL2_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL2_rot1
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL2_rot2
+ObjectTemplate.setRotation 0/-15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FL2_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL2_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL2_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FL2_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL2_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FL2_rot4
+ObjectTemplate.setRotation 0/-15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FL2_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FL2_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+ObjectTemplate.geometry Horse_leg_FL2_m1
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+
+rem ===============================================
+rem             flont right leg
+rem ===============================================
+
+rem *** Horse_x4_leg_FR ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR1_rot0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/-1000/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Horse_x4_leg_FR1_rot0 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR1_rot0
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR1_rot1
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+
+rem *** Horse_x4_leg_FR1_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR1_rot1
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR1_rot2
+ObjectTemplate.setRotation 0/-15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FR1_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR1_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR1_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FR1_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR1_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR1_rot4
+ObjectTemplate.setRotation 0/-15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FR1_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR1_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+ObjectTemplate.geometry Horse_leg_FR1_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR2_rot0a
+ObjectTemplate.setPosition 0.0525/-0.651/0.1575
+ObjectTemplate.setRotation 0/-10/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FR2_rot0a ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR2_rot0a
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR2_rot0b
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/500/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Horse_x4_leg_FR2_rot0b ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR2_rot0b
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR2_rot1
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/250/0
+ObjectTemplate.setAcceleration 0/-500/0
+ObjectTemplate.setInputToPitch c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Horse_x4_leg_FR2_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR2_rot1
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR2_rot2
+ObjectTemplate.setRotation 0/15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FR2_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR2_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR2_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FR2_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR2_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_FR2_rot4
+ObjectTemplate.setRotation 0/15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_FR2_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_FR2_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+ObjectTemplate.geometry Horse_leg_FR2_m1
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+
+rem ===============================================
+rem             back left leg
+rem ===============================================
+
+rem *** Horse_x4_leg_BL ***
+ObjectTemplate.create bundle Horse_x4_leg_BL
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL_rot1
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** Horse_x4_leg_BL_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL_rot1
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL1_rot2
+ObjectTemplate.setRotation 0/15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL1_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL1_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL1_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL1_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL1_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL1_rot4
+ObjectTemplate.setRotation 0/-15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL1_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL1_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL2_rot1
+ObjectTemplate.setPosition 0.2415/-0.5775/-0.0525
+ObjectTemplate.addTemplate Horse_x4_leg_BL1_vis
+ObjectTemplate.setRotation -90/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL1_vis ***
+ObjectTemplate.create SimpleObject Horse_x4_leg_BL1_vis
+ObjectTemplate.geometry Horse_leg_BL1_m1
+
+rem *** Horse_x4_leg_BL2_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL2_rot1
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL2_rot2
+ObjectTemplate.setRotation 0/-10/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL2_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL2_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL2_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL2_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL2_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL2_rot4
+ObjectTemplate.setRotation 0/10/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL2_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BL2_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BL2_vis
+ObjectTemplate.setRotation -90/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BL2_vis ***
+ObjectTemplate.create SimpleObject Horse_x4_leg_BL2_vis
+ObjectTemplate.geometry Horse_leg_BL2_m1
+
+rem ===============================================
+rem             back right leg
+rem ===============================================
+
+rem *** Horse_x4_leg_BR ***
+ObjectTemplate.create bundle Horse_x4_leg_BR
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR_rot1
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+rem *** Horse_x4_leg_BR_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR_rot1
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR1_rot2
+ObjectTemplate.setRotation 0/-15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR1_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR1_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR1_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR1_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR1_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR1_rot4
+ObjectTemplate.setRotation 0/15/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR1_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR1_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR2_rot1
+ObjectTemplate.setPosition 0.105/-0.63/0.0315
+ObjectTemplate.addTemplate Horse_x4_leg_BR1_vis
+ObjectTemplate.setRotation -90/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR1_vis ***
+ObjectTemplate.create SimpleObject Horse_x4_leg_BR1_vis
+ObjectTemplate.geometry Horse_leg_BR1_m1
+
+rem *** Horse_x4_leg_BR2_rot1 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR2_rot1
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR2_rot2
+ObjectTemplate.setRotation 0/10/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR2_rot2 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR2_rot2
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR2_rot3
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR2_rot3 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR2_rot3
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR2_rot4
+ObjectTemplate.setRotation 0/-10/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration -1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR2_rot4 ***
+ObjectTemplate.create rotationalbundle Horse_x4_leg_BR2_rot4
+ObjectTemplate.setNetworkableInfo Horse_x4_LegInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_leg_BR2_vis
+ObjectTemplate.setRotation -90/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 350/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIThrottle
+
+rem *** Horse_x4_leg_BR1_vis ***
+ObjectTemplate.create SimpleObject Horse_x4_leg_BR2_vis
+ObjectTemplate.geometry Horse_leg_BR2_m1
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = Horse_x4
+rem sauce = Physics.con
+rem ============================================================================
+
+rem *** Horse_x4_Engine ***
+ObjectTemplate.create Engine Horse_x4_Engine
+ObjectTemplate.setNetworkableInfo Horse_x4_EngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../Horse_x4/Sounds/Horse_x4_Engine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Horse_x4_EngineSpring
+ObjectTemplate.setPosition -0.7/-0.2/2.2
+ObjectTemplate.addTemplate Horse_x4_EngineSpring
+ObjectTemplate.setPosition 0.7/-0.2/2.2
+
+ObjectTemplate.addTemplate Horse_x4_EngineSpring
+ObjectTemplate.setPosition -0.7/-0.2/-2.2
+ObjectTemplate.addTemplate Horse_x4_EngineSpring
+ObjectTemplate.setPosition 0.7/-0.2/-2.2
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 2/0/10
+ObjectTemplate.setAcceleration 40/0/60
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+rem ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 30
+ObjectTemplate.setDifferential 1.7
+rem ObjectTemplate.setDifferential 1.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+
+rem *** Horse_x4_RollSpring ***
+ObjectTemplate.create Spring Horse_x4_RollSpring
+ObjectTemplate.geometry Horse_wheel_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+ObjectTemplate.createInvisible 1
+
+rem *** Horse_x4_EngineSpring ***
+ObjectTemplate.create Spring Horse_x4_EngineSpring
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Horse_wheel_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+ObjectTemplate.createInvisible 1
 
 rem ===== EOF =====
 rem ============================================================================
@@ -11551,7 +14427,7 @@ rem *** MonsterWaveEngine ***
 ObjectTemplate.create Engine MonsterWaveEngine
 ObjectTemplate.setNetworkableInfo MonsterWaveEngineInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../Engines/Sounds/WillyEngine.ssc
+ObjectTemplate.loadSoundScript ../MonsterWave/Sounds/MonsterWaveEngine.ssc
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -12285,7 +15161,7 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CreateInvisible 1
 rem -------------------------------------
-ObjectTemplate.addTemplate Mortar_tow
+ObjectTemplate.addTemplate Mortar_tow_Bunker
 ObjectTemplate.setPosition 0/0/-0.8
 
 ObjectTemplate.addTemplate Mortar_Entry
@@ -12293,8 +15169,6 @@ ObjectTemplate.setPosition 0/0.6/0
 
 ObjectTemplate.addTemplate MortarSeat
 ObjectTemplate.setPosition 0.2/-0.5/-1.17
-
-ObjectTemplate.addTemplate ArtilleryRangeFindBunker_ADDPCO
 rem ------------------------------------- 
 ObjectTemplate.setMaxSpeed 5/0/0
 ObjectTemplate.setAcceleration 100/0/0
@@ -12317,7 +15191,7 @@ ObjectTemplate.addTemplate Mortar_Bipod_rot
 ObjectTemplate.setPosition 0/0/0.06
 ObjectTemplate.setRotation 0/-21.5/0
 
-ObjectTemplate.addTemplate Mortar_gunbase
+ObjectTemplate.addTemplate Mortar_gunbase_Bunker
 ObjectTemplate.setPosition 0/0/-0.8
 ObjectTemplate.setRotation 0/-45/0
 
@@ -12334,6 +15208,25 @@ ObjectTemplate.setAutomaticYawStabilization 1
 rem *** Mortar_Bunker_Pad_visible ***
 ObjectTemplate.create SimpleObject Mortar_Bunker_Pad_visible
 ObjectTemplate.geometry SAMortar_Pad_M1
+
+rem *** Mortar_gunbase_Bunker ***
+ObjectTemplate.create RotationalBundle Mortar_gunbase_Bunker
+ObjectTemplate.setNetworkableInfo MortarGunInfo
+ObjectTemplate.loadSoundScript ../Mortar/Sounds/MortarTurret.ssc
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate MortarFirearm_Bunker
+
+ObjectTemplate.addTemplate Mortar_Rotate
+ObjectTemplate.setPosition 0/-0.1573/0.8117
+ObjectTemplate.setRotation -180/-23.5/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-41/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/10.0/0
+ObjectTemplate.setAcceleration 0/25/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem ===== EOF =====
 rem ============================================================================
@@ -12366,6 +15259,26 @@ ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 0
 ObjectTemplate.setMinDev 0.75
 
+ObjectTemplate.create FireArms MortarFirearm_Bunker
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript ../Mortar/Sounds/Mortar.ssc
+ObjectTemplate.aiTemplate MortarMainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate MortarBarrel
+ObjectTemplate.addTemplate e_MuzzMortar
+ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Arty8,1cmMortarProjectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 1000
+rem ObjectTemplate.magSize 30
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 100
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.2
+ObjectTemplate.roundOfFire 0.4
+ObjectTemplate.setMinDev 0.75
 
 rem ===== EOF =====
 rem ============================================================================
@@ -16202,6 +19115,7 @@ rem *** PenetrateExplosion10cmHESHSpawner
 rem *** PenetrateExplosion12cmSpawner
 rem *** PenetrateExplosion13cmSpawner
 rem *** PenetrateExplosion15cmSpawner
+rem *** PenetrateExplosion15cmAntiConcreteSpawner
 rem *** PenetrateExplosion20cmSpawner
 rem *** PenetrateExplosion20cmNoSoundSpawner
 rem *** PenetrateExplosion28cmSpawner
@@ -16884,6 +19798,65 @@ ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
 
+rem *** PenetrateExplosion9cmInvisSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion9cmInvisSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion9cmInvis
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion9cmInvis
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion9cmInvis ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion9cmInvis
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 10
+ObjectTemplate.explosionDamage 4
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
 rem *** PenetrateExplosion10cmSpawner *** 
 ObjectTemplate.create ObjectSpawner PenetrateExplosion10cmSpawner
 ObjectTemplate.setObjectTemplate 1 PenetrateExplosion10cm
@@ -16926,6 +19899,65 @@ ObjectTemplate.explosionForceMod 3
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileDst.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion10cmInvisSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion10cmInvisSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion10cmInvis
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion10cmInvis
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion10cmInvis ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion10cmInvis
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 14
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -17165,6 +20197,66 @@ ObjectTemplate.explosionForceMod 3
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileDamageFromWater 7
 ObjectTemplate.addArmorEffect 0 e_ExploMega 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry PenetrateExplosion_m1
+ObjectTemplate.gravityModifier 0.75
+rem ----------------------------------
+ObjectTemplate.addTemplate PenetrateExplosion_Engine
+ObjectTemplate.loadSoundScript ../../Common/Sounds/ProjectileLarge.ssc
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem *** PenetrateExplosion15cmAntiConcreteSpawner *** 
+ObjectTemplate.create ObjectSpawner PenetrateExplosion15cmAntiConcreteSpawner
+ObjectTemplate.setObjectTemplate 1 PenetrateExplosion15cmAntiConcrete
+ObjectTemplate.setObjectTemplate 2 PenetrateExplosion15cmAntiConcrete
+ObjectTemplate.holdObject 1
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.minSpawnDelay 999
+ObjectTemplate.maxSpawnDelay 999
+ObjectTemplate.TimeToLive 10
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1 
+ObjectTemplate.damageWhenLost 10
+
+rem *** PenetrateExplosion15cmAntiConcrete ***
+ObjectTemplate.create PlayerControlObject PenetrateExplosion15cmAntiConcrete
+rem ===== IS_MOTHER_PCO = FALSE
+ObjectTemplate.setNetworkableInfo PenetrateExplosion_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 9999
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 15
+ObjectTemplate.explosionDamage 4.1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.0
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 1
+ObjectTemplate.maxhitpoints 1
+ObjectTemplate.material 810
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.explosionForceMod 3
+ObjectTemplate.hpLostWhileUpSideDown 0
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 0 e_ExploLarge 0/0/0
 ObjectTemplate.timetoliveafterdeath 0
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 1
@@ -19536,6 +22628,379 @@ ObjectTemplate.setInputFire c_PIAltFire
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = rangefinder_vehicle
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh rangefinder_vehicle_m1
+GeometryTemplate.file bullet_m1
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = rangefinder_vehicle
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo rangefinder_vehicle_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo rangefinder_vehicle_DummyEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = rangefinder_vehicle
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem *** rangefinder_vehicle_ObjSpawner ***
+ObjectTemplate.create ObjectSpawner rangefinder_vehicle_ObjSpawner
+ObjectTemplate.setObjectTemplate 1 rangefinder_vehicle
+ObjectTemplate.setObjectTemplate 2 rangefinder_vehicle
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 1
+ObjectTemplate.maxSpawnDelay 1
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+
+ObjectTemplate.create PlayerControlObject rangefinder_vehicle
+ObjectTemplate.setNetworkableInfo rangefinder_vehicle_BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 4
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 0
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.drag 2
+ObjectTemplate.mass 15000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 0.5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 815
+ObjectTemplate.criticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.explosionForceMod 0
+ObjectTemplate.hpLostWhileUpSideDown 7
+ObjectTemplate.hpLostWhileDamageFromWater 7
+ObjectTemplate.addArmorEffect 99 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 99 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 98 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 98 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 97 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 97 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 96 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 96 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 95 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 95 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 94 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 94 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 93 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 93 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 92 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 92 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 91 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 91 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 90 e_rangefinder_num_9 -0.005/0/0
+ObjectTemplate.addArmorEffect 90 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 89 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 89 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 88 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 88 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 87 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 87 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 86 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 86 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 85 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 85 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 84 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 84 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 83 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 83 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 82 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 82 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 81 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 81 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 80 e_rangefinder_num_8 -0.005/0/0
+ObjectTemplate.addArmorEffect 80 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 79 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 79 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 78 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 78 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 77 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 77 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 76 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 76 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 75 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 75 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 74 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 74 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 73 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 73 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 72 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 72 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 71 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 71 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 70 e_rangefinder_num_7 -0.005/0/0
+ObjectTemplate.addArmorEffect 70 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 69 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 69 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 68 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 68 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 67 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 67 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 66 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 66 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 65 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 65 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 64 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 64 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 63 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 63 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 62 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 62 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 61 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 61 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 60 e_rangefinder_num_6 -0.005/0/0
+ObjectTemplate.addArmorEffect 60 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 59 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 59 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 58 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 58 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 57 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 57 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 56 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 56 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 55 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 55 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 54 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 54 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 53 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 53 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 52 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 52 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 51 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 51 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 50 e_rangefinder_num_5 -0.005/0/0
+ObjectTemplate.addArmorEffect 50 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 49 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 49 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 48 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 48 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 47 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 47 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 46 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 46 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 45 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 45 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 44 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 44 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 43 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 43 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 42 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 42 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 41 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 41 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 40 e_rangefinder_num_4 -0.005/0/0
+ObjectTemplate.addArmorEffect 40 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 39 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 39 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 38 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 38 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 37 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 37 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 36 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 36 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 35 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 35 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 34 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 34 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 33 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 33 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 32 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 32 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 31 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 31 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 30 e_rangefinder_num_3 -0.005/0/0
+ObjectTemplate.addArmorEffect 30 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 29 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 29 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 28 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 28 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 27 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 27 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 26 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 26 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 25 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 25 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 24 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 24 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 23 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 23 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 22 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 22 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 21 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 21 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 20 e_rangefinder_num_2 -0.005/0/0
+ObjectTemplate.addArmorEffect 20 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 19 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 19 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 18 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 18 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 17 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 17 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 16 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 16 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 15 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 15 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 14 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 14 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 13 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 13 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 12 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 12 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 11 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 11 e_rangefinder_num_1 0/0/0
+ObjectTemplate.addArmorEffect 10 e_rangefinder_num_1 -0.005/0/0
+ObjectTemplate.addArmorEffect 10 e_rangefinder_num_0 0/0/0
+ObjectTemplate.addArmorEffect 9 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 9 e_rangefinder_num_9 0/0/0
+ObjectTemplate.addArmorEffect 8 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 8 e_rangefinder_num_8 0/0/0
+ObjectTemplate.addArmorEffect 7 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 7 e_rangefinder_num_7 0/0/0
+ObjectTemplate.addArmorEffect 6 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 6 e_rangefinder_num_6 0/0/0
+ObjectTemplate.addArmorEffect 5 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 5 e_rangefinder_num_5 0/0/0
+ObjectTemplate.addArmorEffect 4 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 4 e_rangefinder_num_4 0/0/0
+ObjectTemplate.addArmorEffect 3 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 3 e_rangefinder_num_3 0/0/0
+ObjectTemplate.addArmorEffect 2 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 2 e_rangefinder_num_2 0/0/0
+ObjectTemplate.addArmorEffect 1 e_rangefinder_num_0 -0.005/0/0
+ObjectTemplate.addArmorEffect 1 e_rangefinder_num_1 0/0/0
+ObjectTemplate.timetoliveafterdeath 0
+ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.CreateInvisible 1
+rem ----------------------------------
+ObjectTemplate.addTemplate rangefinder_vehicle_DummyEngine
+rem ----------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/-0.5 0/0/0
+ObjectTemplate.submarineData 1 0.03 10.0 1.5 1.8 1.0 5
+ObjectTemplate.GUIIndex 79
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTAAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon ""
+
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = rangefinder_vehicle
+rem sauce = Physics.con
+rem ============================================================================
+ObjectTemplate.create Engine rangefinder_vehicle_DummyEngine
+ObjectTemplate.setNetworkableInfo rangefinder_vehicle_DummyEngineInfo
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 3/0/8
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setInputToPitch c_PINone
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.03
+ObjectTemplate.setDifferential 0.6
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = rangefinder_vehicle
+rem sauce = Weapons.con
+rem ============================================================================
+ObjectTemplate.create FireArms Rangefinder_Laser_FireArms
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Rangefinder_Laser_Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 9999
+ObjectTemplate.velocity 10000
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.reloadtime 0.1
+
+ObjectTemplate.create Projectile Rangefinder_Laser_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/2/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 749
+ObjectTemplate.material2 652
+ObjectTemplate.radius 1000
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.CreateInvisible 1
+
+
+ObjectTemplate.create FireArms Rangefinder_Repair_FireArms
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Rangefinder_Repair_Projectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 9999
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.FireDelay 1
+
+ObjectTemplate.create Projectile Rangefinder_Repair_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.gravityModifier 0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 749
+ObjectTemplate.material2 -1
+ObjectTemplate.radius 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.CreateInvisible 1
+ObjectTemplate.addTemplate Rangefinder_Repair_SupplyDepot
+
+ObjectTemplate.create SupplyDepot Rangefinder_Repair_SupplyDepot
+ObjectTemplate.radius 5
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+rem ------------------------------------
+ObjectTemplate.addVehicleType rangefinder_vehicle -1 10000 0
+rem ------------------------------------
+ObjectTemplate.setHealth -1 -1000 0
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = Rat_Factory
 rem sauce = Effects.con
 rem ============================================================================
@@ -20197,10 +23662,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20258,10 +23723,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20319,10 +23784,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20381,10 +23846,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20443,10 +23908,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20504,10 +23969,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20565,10 +24030,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20626,10 +24091,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20687,10 +24152,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20748,10 +24213,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20809,10 +24274,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20870,10 +24335,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20931,10 +24396,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -20992,10 +24457,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -21053,10 +24518,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -21114,10 +24579,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -21175,10 +24640,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -21236,10 +24701,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -21297,10 +24762,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -21358,10 +24823,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -21419,10 +24884,10 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.exitTimer 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
 ObjectTemplate.material 802
-ObjectTemplate.criticalDamage 310
+ObjectTemplate.criticalDamage 1210
 ObjectTemplate.hpLostWhileUpSideDown 0
 ObjectTemplate.hpLostWhileCriticalDamage 10
 ObjectTemplate.explosionForceMod 0
@@ -23097,7 +26562,7 @@ rem *** WildWillyEngine ***
 ObjectTemplate.create Engine WildWillyEngine
 ObjectTemplate.setNetworkableInfo WildWillyEngineInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../Engines/Sounds/WillyEngine.ssc
+ObjectTemplate.loadSoundScript ../WildWilly/Sounds/WildWillyEngine.ssc
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1

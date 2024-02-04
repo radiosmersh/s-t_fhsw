@@ -44,15 +44,17 @@ ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedUSFlag
 
 game.setTeamSkin 1 ItalianSoldier
-game.setKit 1 0 1Italian_Officer_DesertB38Smoke2R
-game.setKit 1 1 2Italian_Assault_DesertC91Red
+game.setKit 1 0 1Italian_Officer_B38Smoke2R
+game.setKit 1 1 2Italian_Assault_C91_36M
 rem game.setKit 1 2 3Italian_AT_DesertS18-100NoHE
-game.setKit 1 2 3Italian_AT_DesertS18-1000NoHE
-game.setKit 1 3 4Italian_AT_DesertGeballteLadung
+rem game.setKit 1 2 3Italian_AT_DesertS18-1000NoHE
+game.setKit 1 2 3Italian_AT_DesertS18-1000
+rem game.setKit 1 3 4Italian_AT_GeballteLadung
+game.setKit 1 3 4Italian_TankhunterB38
 game.setKit 1 4 5Italian_Engineer_DesertC38
 
 game.setTeamSkin 2 USSoldier
-game.setKit 2 0 1Us_OfficerThompsonSmoke2R
+game.setKit 2 0 1Us_OfficerThompsonSmoke2RD
 game.setKit 2 1 2Us_AssaultGarandCS
 game.setKit 2 2 3Us_ATBazookaCS
 game.setKit 2 3 4US_SupportBarCS

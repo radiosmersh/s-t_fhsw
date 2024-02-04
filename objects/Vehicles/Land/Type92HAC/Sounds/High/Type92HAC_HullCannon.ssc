@@ -9,7 +9,7 @@ volume 0
 ### Reload ###
 ##############
 newPatch
-load @ROOT/Sound/@RTD/25mm_rel.wav
+load @ROOT/Sound/@RTD/13mm_rel.wav
 dopplerOff
 priority -2
 *** Time Delay ***
@@ -17,8 +17,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param 1.6
-	param 1.6
+	param 1.5
+	param 1.5
 	param 0
 	param 1
 endEffect

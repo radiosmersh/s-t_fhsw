@@ -8,12 +8,12 @@ renderer.specularColor .3/.3/.3
 renderer.animatedMeshAmbientColor 0.3
 renderer.vertexFogEnable 1
 renderer.fogColorVec 0.839220/0.745100/0.580390
-
 textureManager.alternativePath Texture/levels/Supercharge
 textureManager.alternativePath bf1942/levels/supercharge-1942/customtextures
 rem textureManager.alternativePath texture/Africa
 textureManager.alternativePath texture/ENVIROMENT_DESERT_ALTERNATIVE
 textureManager.alternativePath texture/GENERAL_BRIT_AFRICA
+textureManager.alternativePath Texture/GENERAL_US_DESERT
 textureManager.alternativePath texture/SPECIAL_GER_AFRICA_1943_FALL
 textureManager.alternativePath texture/GENERAL_GER_AFRICA
 

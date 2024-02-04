@@ -24,15 +24,18 @@ textureManager.alternativePath Texture/Special_skys/pavlov
 
 rem Game.setViewDistance 150
 rem Game.setViewDistance 250
-Game.setViewDistance 200
+rem Game.setViewDistance 200
+Game.setViewDistance 250
 
 Game.spawnPlayers 1
 rem renderer.fogstart -250
 rem renderer.fogend 250
 rem renderer.fogstart -200
 rem renderer.fogend 200
-renderer.fogstart -180
-renderer.fogend 180
+rem renderer.fogstart -180
+rem renderer.fogend 180
+renderer.fogstart 0
+renderer.fogend 250
 
 game.setTeamSkin 1 HungarianSoldier
 game.setKit 1 0 1Hun_Officer39MSmoke3R
@@ -91,4 +94,3 @@ run Init/SkyAndSun
 run Init/Terrain
 run Sounds/Environment
 run objects/objects
-

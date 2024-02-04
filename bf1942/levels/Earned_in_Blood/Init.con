@@ -34,7 +34,7 @@ renderer.fogend 250
 game.setTeamSkin 1 GermanSoldier
 game.setKit 1 0 1German_Officer_WinterMp40Smoke2RMarker
 game.setKit 1 1 2German_AssaultG43WNWinter
-game.setKit 1 2 3German_AT_WinterPanzerfaust100
+game.setKit 1 2 3German_AT_WinterRandomPzf4
 game.setKit 1 3 4German_Tankhunter_WinterMp40
 game.setKit 1 4 5German_TankCommander_WinterWalterP38SignalSmoke
 

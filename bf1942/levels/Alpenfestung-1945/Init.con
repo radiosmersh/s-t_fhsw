@@ -13,12 +13,14 @@ rem *
 rem * Use the non push in game map for coop mode
 rem * 
 
+beginrem
 Var v_is_coop
 run ../../game/is_coop.con
 
 if v_is_coop == True
 	textureManager.alternativePath ..\..\bf1942\levels\Alpenfestung-1945\NonPush
 endIf
+endrem
 
 textureManager.alternativePath Texture\SPECIAL_UK_P51_RAF
 textureManager.alternativePath bf1942/levels/Alpenfestung-1945/Textures
@@ -39,7 +41,7 @@ renderer.fogstart 325
 renderer.fogend 508
 
 game.setTeamSkin 1 GermanSoldier
-game.setKit 1 0 1German_OfficerMP40_II
+game.setKit 1 0 1German_OfficerMp40-II
 rem game.setKit 1 0 1German_OfficerMp40Smoke2R
 game.setKit 1 1 2German_AssaultSg44
 rem game.setKit 1 2 3German_ATPanzerfaust30

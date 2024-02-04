@@ -33,13 +33,6 @@ ObjectTemplate.team 2
 ObjectTemplate.networkableInfo FlagBodyInfo
 ObjectTemplate.radius 5
 ObjectTemplate.TimeToReSpawn 10
-ObjectTemplate.addTemplate AnimatedGeFlag
-
-ObjectTemplate.create Flag RedFlag
-ObjectTemplate.team 2
-ObjectTemplate.networkableInfo FlagBodyInfo
-ObjectTemplate.radius 5
-ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedSoFlag
 
 game.setTeamSkin 1 GermanSoldier
