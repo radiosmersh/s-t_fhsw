@@ -108,6 +108,10 @@ beginEffect
 	param -1	
 endEffect
 
+######################
+### Shell Far Dist ###
+######################
+#include DistantShipFireCA.ssc
 
 ##################
 ### after fire ###

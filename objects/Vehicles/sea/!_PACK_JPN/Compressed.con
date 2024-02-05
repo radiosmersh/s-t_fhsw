@@ -11541,7 +11541,7 @@ rem ============================================================================
 rem *** Agano152GunBarrel_Dummy_Prm ***
 ObjectTemplate.create FireArms Agano152GunBarrel_Dummy_Prm
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 ObjectTemplate.geometry Agano_152mm_type41_gun_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -11641,7 +11641,7 @@ ObjectTemplate.setMinDev 1
 rem *** Agano152GunBarrel_Dummy_Alt ***
 ObjectTemplate.create FireArms Agano152GunBarrel_Dummy_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 ObjectTemplate.geometry Agano_152mm_type41_gun_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -13693,59 +13693,25 @@ ObjectTemplate.exitSpeedMod 0
 
 
 
-rem *** FubukiHullWing ***
-ObjectTemplate.create Wing FubukiHullWing
-ObjectTemplate.setNetworkableInfo FubukiDestroyerRudderInfo
-ObjectTemplate.setMinRotation 0/-25/0
-ObjectTemplate.setMaxRotation 0/25/0
-ObjectTemplate.setMaxSpeed 0/15/0
-ObjectTemplate.setAcceleration 0/-10/0
-ObjectTemplate.setInputToPitch c_PIYaw
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 0
-ObjectTemplate.setFlapLift 2
-
-
-rem *** Fubukirudder ***
-ObjectTemplate.create Wing Fubukirudder
-ObjectTemplate.setNetworkableInfo FubukiDestroyerRudderInfo
-ObjectTemplate.setMinRotation 0/-25/0
-ObjectTemplate.setMaxRotation 0/25/0
-ObjectTemplate.setMaxSpeed 0/15/0
-ObjectTemplate.setAcceleration 0/10/0
-ObjectTemplate.setInputToPitch c_PIYaw
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 0
-ObjectTemplate.setFlapLift 2
-
-
-rem *** FubukiFloater ***
-ObjectTemplate.create FloatingBundle FubukiFloater
-ObjectTemplate.setHullHeight 10
-ObjectTemplate.setFloatMaxLift 2
-ObjectTemplate.setFloatMinLift 2
-ObjectTemplate.setDragModifier 8000
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Fubuki
-rem sauce = Weapons.con
-rem ============================================================================
-
-rem *** FubukiGun_Dummy ***
-ObjectTemplate.create FireArms FubukiGun_Dummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
-ObjectTemplate.geometry Fubuki_cannon_pipe_M1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition 0.4/0/4.6
-ObjectTemplate.setRotation -179.999/0/0
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition -0.4/0/4.6
-ObjectTemplate.setRotation -179.999/0/0
+rem *** Daihatsu-Ha-Go_SPT65 ***
+ObjectTemplate.create PlayerControlObject Daihatsu-Ha-Go_SPT65
+ObjectTemplate.setNetworkableInfo DaihatsuBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 0.42
+ObjectTemplate.mass 500000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 137
+ObjectTemplate.criticalDamage 30
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.addArmorEffect 80 em_DaiHatsuDamage 0/0/0
+ObjectTemplate.aiTemplate Daihatsu
 rem -------------------------------------
 ObjectTemplate.addTemplate lodDaihatsu-Ha-Go
 ObjectTemplate.addTemplate Daihatsu-Ha-Go_Floater
@@ -15918,268 +15884,10 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = JPN
 
-rem *** HamakazeGun_Dummy ***
-ObjectTemplate.create FireArms HamakazeGun_Dummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
-ObjectTemplate.geometry Hamakaze_Gunbarrel_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition 0.4/0/5.1
-ObjectTemplate.setRotation -179.999/0/0
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition -0.4/0/5.1
-ObjectTemplate.setRotation -179.999/0/0
-rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-ObjectTemplate.projectilePosition 0/1/1
-ObjectTemplate.magSize -1
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 460
-ObjectTemplate.roundOfFire 0.166
-rem ObjectTemplate.fireingForce 2
-ObjectTemplate.recoilSpeed 5
-ObjectTemplate.recoilSize 20
-ObjectTemplate.addFireArmsPosition 0.4/0/5.9 0/0/0
-ObjectTemplate.addFireArmsPosition -0.4/0/5.9 0/0/0
-ObjectTemplate.setMinDev 1.6
-ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
-
-rem *** HamakazeGun_AA ***
-ObjectTemplate.create FireArms HamakazeGun_AA
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.aiTemplate HamakazeGunAI
-rem -------------------------------------
-ObjectTemplate.projectileTemplate Ship12,7cmL40AAProjectile
-ObjectTemplate.projectilePosition 0/26/1
-ObjectTemplate.magSize -1
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 460
-ObjectTemplate.roundOfFire 0.166
-ObjectTemplate.addFireArmsPosition 0.4/0/5.9 0/0/0
-ObjectTemplate.addFireArmsPosition -0.4/0/5.9 0/0/0
-ObjectTemplate.setMinDev 2.5
-
-rem *** HamakazeGun_APHE ***
-ObjectTemplate.create FireArms HamakazeGun_APHE
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.aiTemplate HamakazeGunAI
-rem -------------------------------------
-ObjectTemplate.projectileTemplate Ship12,7cmL50Projectile
-ObjectTemplate.projectilePosition 0/26/1
-ObjectTemplate.magSize -1
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 460
-ObjectTemplate.roundOfFire 0.166
-ObjectTemplate.addFireArmsPosition 0.4/0/5.9 0/0/0
-ObjectTemplate.addFireArmsPosition -0.4/0/5.9 0/0/0
-ObjectTemplate.setMinDev 1.25
-
-rem *** HamakazeTorpedorampe***
-ObjectTemplate.create FireArms HamakazeTorpedorampe
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.aiTemplate HamakazeTorpedoAi
-ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
-ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
-ObjectTemplate.loadSoundScript ../Hamakaze/Sounds/TPfire.ssc
-ObjectTemplate.projectileTemplate 61cmType93Torpedo
-ObjectTemplate.projectilePosition 0/0/6.1
-ObjectTemplate.magSize 4
-ObjectTemplate.numOfMag 2
-ObjectTemplate.velocity 35
-ObjectTemplate.roundOfFire 0.5
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 10
-ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
-ObjectTemplate.AmmoType	14
-ObjectTemplate.setMinDev 0.512
-
-rem *** HamakazeTorpedorampeAlt ***
-ObjectTemplate.create FireArms HamakazeTorpedorampeAlt
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.aiTemplate HamakazeTorpedoAi
-ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
-ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
-ObjectTemplate.loadSoundScript ../Hamakaze/Sounds/TPfire.ssc
-ObjectTemplate.projectileTemplate 61cmType93Torpedo
-ObjectTemplate.projectilePosition 0/0/6.1
-ObjectTemplate.magSize 4
-ObjectTemplate.numOfMag 2
-ObjectTemplate.velocity 35
-ObjectTemplate.roundOfFire 0.5
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 10
-ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
-ObjectTemplate.AmmoType	14
-ObjectTemplate.setMinDev 0.512
-ObjectTemplate.setInputFire c_PIAltFire
-
-rem *** HamakazeTorpedorampe_HullDamage ***
-ObjectTemplate.create FireArms HamakazeTorpedorampe_HullDamage
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.aiTemplate HamakazeTorpedoAi
-ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
-ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
-ObjectTemplate.loadSoundScript ../Hamakaze/Sounds/TPfire.ssc
-ObjectTemplate.projectileTemplate 61cmType93TorpedoHullDamage
-ObjectTemplate.projectilePosition 0/0/18.1
-ObjectTemplate.magSize 4
-ObjectTemplate.numOfMag 2
-ObjectTemplate.velocity 35
-ObjectTemplate.roundOfFire 0.5
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 10
-ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
-ObjectTemplate.AmmoType	14
-ObjectTemplate.setMinDev 0.512
-
-rem *** HamakazeTorpedorampeAlt_HullDamage ***
-ObjectTemplate.create FireArms HamakazeTorpedorampeAlt_HullDamage
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.setAsynchronyFire 1
-ObjectTemplate.aiTemplate HamakazeTorpedoAi
-ObjectTemplate.visibleBarrelTemplate  e_MuzzTP
-ObjectTemplate.loadSoundScript ../Common/Sounds/TPfire.ssc
-ObjectTemplate.loadSoundScript ../Hamakaze/Sounds/TPfire.ssc
-ObjectTemplate.projectileTemplate 61cmType93TorpedoHullDamage
-ObjectTemplate.projectilePosition 0/0/18.1
-ObjectTemplate.magSize 4
-ObjectTemplate.numOfMag 2
-ObjectTemplate.velocity 35
-ObjectTemplate.roundOfFire 0.5
-ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 10
-ObjectTemplate.addFireArmsPosition -1.1025/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition -0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 0.3675/0.62/3 0/0/0
-ObjectTemplate.addFireArmsPosition 1.1025/0.62/3 0/0/0
-ObjectTemplate.AmmoType	14
-ObjectTemplate.setMinDev 0.512
-ObjectTemplate.setInputFire c_PIAltFire
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Hatsuzuki
-rem sauce = Geometries.con
-rem ============================================================================
-GeometryTemplate.create StandardMesh Hatsuzuki_M1
-GeometryTemplate.file Hatsuzuki_hull_mod_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 300
-GeometryTemplate.setLodDistance 5 500
-
-GeometryTemplate.create StandardMesh Hatsuzuki_L1
-GeometryTemplate.file Hatsuzuki_L1
-GeometryTemplate.setLodDistance 0 700
-GeometryTemplate.setLodDistance 1 1000
-GeometryTemplate.setLodDistance 2 1300
-GeometryTemplate.setLodDistance 3 1600
-GeometryTemplate.setLodDistance 4 1900
-GeometryTemplate.setLodDistance 5 2100
-
-renderer.beginGlobalCluster Hatsuzuki
-
-GeometryTemplate.create StandardMesh Hatsuzuki_cannon_pipe_M1
-GeometryTemplate.file Hatsuzuki_cannon_pipe_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-GeometryTemplate.create StandardMesh Hatsuzuki_cannon_M1
-GeometryTemplate.file Hatsuzuki_turret_mod_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-GeometryTemplate.create StandardMesh Hatsuzuki_propeller_M1
-GeometryTemplate.file Hatsuzuki_propeller_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 10
-GeometryTemplate.setLodDistance 2 20
-GeometryTemplate.setLodDistance 3 50
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 150
-
-GeometryTemplate.create StandardMesh Hatsuzuki_Radar_m1
-GeometryTemplate.file Hatsuzuki_Radar_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 50
-GeometryTemplate.setLodDistance 2 75
-GeometryTemplate.setLodDistance 3 100
-GeometryTemplate.setLodDistance 4 150
-GeometryTemplate.setLodDistance 5 250
-
-GeometryTemplate.create StandardMesh Hatsuzuki_rudder_M1
-GeometryTemplate.file Hatsuzuki_rudder_M1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 25
-GeometryTemplate.setLodDistance 2 50
-GeometryTemplate.setLodDistance 3 75
-GeometryTemplate.setLodDistance 4 100
-GeometryTemplate.setLodDistance 5 200
-
-GeometryTemplate.create StandardMesh Hatsuzuki_Torpedo_Ramp_M1
-GeometryTemplate.file Hatsuzuki_torpedo_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 20
-GeometryTemplate.setLodDistance 2 60
-GeometryTemplate.setLodDistance 3 100
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Hatsuzuki
-rem sauce = Network.con
-rem ============================================================================
-NetworkableInfo.createNewInfo HatsuzukiBodyInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo HatsuzukiCannonInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo HatsuzukiGunSelectorInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo HatsuzukiTurretInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo HatsuzukiRudderInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-NetworkableInfo.createNewInfo HatsuzukiEngineInfo
-NetworkableInfo.setPredictionMode PMLinear
-
-
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Hatsuzuki
-rem sauce = Objects.con
-rem ============================================================================
-rem ===== COMPRESS = JPN
-
-rem *** Hatsuzuki
-rem *** HatsuzukiMid1942
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
 
 rem *** Fubuki ***
 ObjectTemplate.create PlayerControlObject Fubuki
@@ -17114,7 +16822,7 @@ rem ============================================================================
 rem *** FubukiGun_Dummy ***
 ObjectTemplate.create FireArms FubukiGun_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Fubuki_cannon_pipe_M1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -18985,7 +18693,7 @@ rem ============================================================================
 rem *** HamakazeGun_Dummy ***
 ObjectTemplate.create FireArms HamakazeGun_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Hamakaze_Gunbarrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -27194,16 +26902,9 @@ rem *** junyoCamera ***
 ObjectTemplate.create Camera junyoCamera
 
 
-rem ===== EOF =====
-rem ============================================================================
-rem folder = Kii
-rem sauce = Weapons.con
-rem ============================================================================
-rem *** Kii_155_GunBarrel ***
-ObjectTemplate.create FireArms Kii_155_GunBarrelDummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.geometry Kii_155mm_gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
+rem *** DirectorAxis ***
+ObjectTemplate.create FireArms junyo_point
+ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
 rem -------------------------------------
 ObjectTemplate.projectileTemplate junyo_pointProjectile
@@ -27216,11 +26917,9 @@ ObjectTemplate.reloadtime 10
 ObjectTemplate.roundOfFire 0.25
 ObjectTemplate.AmmoType	18
 
-rem *** Kii_155_GunBarrelAlt ***
-ObjectTemplate.create FireArms Kii_155_GunBarrelAltDummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.geometry Kii_155mm_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
+rem *** DirectorAxis_Alt ***
+ObjectTemplate.create FireArms junyo_point_Alt
+ObjectTemplate.setNetworkableInfo TankFireArmInfo_ForceID
 rem -------------------------------------
 rem -------------------------------------
 ObjectTemplate.projectileTemplate junyo_point_AltProjectile
@@ -27234,19 +26933,26 @@ ObjectTemplate.roundOfFire 0.25
 ObjectTemplate.AmmoType	18
 ObjectTemplate.setInputFire c_PIAltFire
 
-
-rem *** Kii_510_GunBarrelDummy ***
-ObjectTemplate.create FireArms Kii_510_GunBarrelDummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/410mmfire_Rel30Twin.ssc
-ObjectTemplate.geometry Kii_510_gunbarrel_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzBBGun
-ObjectTemplate.setPosition -2/0/17.1
-ObjectTemplate.setRotation -180/0/0
-ObjectTemplate.addTemplate e_MuzzBBGun
-ObjectTemplate.setPosition 2/0/17.1
-ObjectTemplate.setRotation -180/0/0
+rem *** DirectorAxisProjectile ***
+ObjectTemplate.create Projectile junyo_pointProjectile
+ObjectTemplate.geometry Prjtle_landmine
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitPoints 100
+ObjectTemplate.maxHitPoints 100
+ObjectTemplate.explosionDamage 0
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.radius 0
+ObjectTemplate.material 230
+ObjectTemplate.noFFSound 1
+ObjectTemplate.invisible 1
 rem -------------------------------------
 ObjectTemplate.addTemplate junyo_point_SpawnerObj_Spawner
 
@@ -31145,7 +30851,7 @@ rem *** Kii_155_GunBarrel ***
 ObjectTemplate.create FireArms Kii_155_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Kii_155mm_gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -31182,7 +30888,7 @@ rem *** Kii_155_GunBarrelAlt ***
 ObjectTemplate.create FireArms Kii_155_GunBarrelAltDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Kii_155mm_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -31226,7 +30932,7 @@ ObjectTemplate.setInputFire c_PIAltFire
 rem *** Kii_510_GunBarrelDummy ***
 ObjectTemplate.create FireArms Kii_510_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/356mmfire_Rel30Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/410mmfire_Rel30Twin.ssc
 ObjectTemplate.geometry Kii_510_gunbarrel_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzBBGun
@@ -31738,16 +31444,7 @@ rem ============================================================================
 rem folder = KiiAdd
 rem sauce = Objects.con
 rem ============================================================================
-rem *** Mogami203CannonBarrel_Dummy ***
-ObjectTemplate.create FireArms Mogami203CannonBarrel_Dummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.aiTemplate MogamiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/20,3cm3rdYearfire_Rel14Twin.ssc
-ObjectTemplate.geometry Mogami_20,3cm3rdYear_Cannon_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzMBGun
-ObjectTemplate.setPosition -0.85/0/9
-ObjectTemplate.setRotation -180/0/0
+rem ===== COMPRESS = JPN
 
 rem *** KiiAdd25mm1LR2LR
 rem *** OwariAdd25mm1LR2LR
@@ -31887,12 +31584,10 @@ ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
 ObjectTemplate.setMinimapIcon ""
 
-rem *** Mogami203CannonBarrel_Dummy_Alt ***
-ObjectTemplate.create FireArms Mogami203CannonBarrel_Dummy_Alt
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.aiTemplate MogamiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/20,3cm3rdYearfire_Rel14Twin.ssc
-ObjectTemplate.geometry Mogami_20,3cm3rdYear_Cannon_m1
+rem *** KiiAdd25mm2Left_PCO3 ***
+ObjectTemplate.create PlayerControlObject KiiAdd25mm2Left_PCO3
+ObjectTemplate.setNetworkableInfo KiiAdd25mm_BodyInfo
+ObjectTemplate.aiTemplate 25mmTripleAA
 rem -------------------------------------
 ObjectTemplate.addTemplate Yamato_25AA_FCS_X_360_wCam
 
@@ -34719,7 +34414,7 @@ rem *** Mogami203CannonBarrel_Dummy ***
 ObjectTemplate.create FireArms Mogami203CannonBarrel_Dummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate MogamiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/203mmfire_Rel14Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/20,3cm3rdYearfire_Rel14Twin.ssc
 ObjectTemplate.geometry Mogami_20,3cm3rdYear_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzMBGun
@@ -34829,7 +34524,7 @@ rem *** Mogami203CannonBarrel_Dummy_Alt ***
 ObjectTemplate.create FireArms Mogami203CannonBarrel_Dummy_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
 ObjectTemplate.aiTemplate MogamiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/203mmfire_Rel14Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/20,3cm3rdYearfire_Rel14Twin.ssc
 ObjectTemplate.geometry Mogami_20,3cm3rdYear_Cannon_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzMBGun
@@ -37749,15 +37444,16 @@ ObjectTemplate.addTemplate AnimatedJapFlag
 ObjectTemplate.setPosition 0/15.079/-134.174
 ObjectTemplate.setRotation 105.376/3.419/-12.549
 
-rem *** Oyodo_155_GunBarrelW ***
-ObjectTemplate.create FireArms Oyodo_155_GunBarrelDummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.geometry Oyodo1943_155mm_3YT_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition 1.6/0/10.5
-ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate e_WaterFrontBigB
+ObjectTemplate.setPosition 0/-1/128
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-1/133
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvall
+ObjectTemplate.setPosition 0/-1/-125
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/-1/-119.999
 
 
 ObjectTemplate.addTemplate ShipLadder05m
@@ -37788,15 +37484,12 @@ ObjectTemplate.addTemplate ShipLadder02
 ObjectTemplate.setPosition 14/13.5/-19.78
 ObjectTemplate.setRotation -160/0/0
 
-rem *** Oyodo_155_GunBarrelDummy_Alt ***
-ObjectTemplate.create FireArms Oyodo_155_GunBarrelDummy_Alt
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.geometry Oyodo1943_155mm_3YT_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition 1.6/0/10.5
-ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.addTemplate ShipLadder01
+ObjectTemplate.setPosition -6.85/16.05/-27
+ObjectTemplate.setRotation 90/10/0
+ObjectTemplate.addTemplate ShipLadder01
+ObjectTemplate.setPosition 6.85/16.05/-27
+ObjectTemplate.setRotation -90/10/0
 
 ObjectTemplate.addTemplate ShipLadder03
 ObjectTemplate.setPosition -4.85/18.6/-28
@@ -40159,7 +39852,7 @@ rem *** Oyodo_155_GunBarrelW ***
 ObjectTemplate.create FireArms Oyodo_155_GunBarrelDummy
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Oyodo1943_155mm_3YT_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -40233,7 +39926,7 @@ rem *** Oyodo_155_GunBarrelDummy_Alt ***
 ObjectTemplate.create FireArms Oyodo_155_GunBarrelDummy_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.geometry Oyodo1943_155mm_3YT_Gunbarrel_m1
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel10Triple.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition 1.6/0/10.5
@@ -42577,37 +42270,10 @@ ObjectTemplate.setPosition -0.7/0.1/6.7
 ObjectTemplate.addTemplate 25mm3AAL_Alt
 ObjectTemplate.setPosition -0.7/0.1/10.7
 
-rem *** SirayukiGun_FS1 ***
-ObjectTemplate.create FireArms SirayukiGun_FS1
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
-ObjectTemplate.geometry Sirayuki_barrel_L_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition -0.4/0/4.6
-ObjectTemplate.setRotation -179.999/0/0
-rem -------------------------------------
-ObjectTemplate.projectileTemplate Ship12,7cmL50Projectile
-ObjectTemplate.projectilePosition 0/1.0/1
-ObjectTemplate.magSize -1
-ObjectTemplate.numOfMag 999
-ObjectTemplate.velocity 220
-ObjectTemplate.roundOfFire 0.166
-ObjectTemplate.recoilSpeed 10
-ObjectTemplate.recoilSize 30
-ObjectTemplate.addFireArmsPosition -0.4/0/5.9 0/0/0
-ObjectTemplate.setMinDev 1.6
-ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
+ObjectTemplate.addTemplate 5inchL40T89Open_360_AA_X2
+ObjectTemplate.setPosition 0.2/0/17.5
 
-rem *** SirayukiGun_FS2 ***
-ObjectTemplate.create FireArms SirayukiGun_FS2
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
-ObjectTemplate.geometry Sirayuki_barrel_R_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition 0.4/0/4.6
-ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate BattleshipRadar
 rem -------------------------------------
 rem ObjectTemplate.CanBeRepaiedAsDestroyed c_True
 ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
@@ -42628,23 +42294,23 @@ ObjectTemplate.setMinimapIconSize 64
 ObjectTemplate.sonarPos 1
 ObjectTemplate.setHasTurretIcon 1
 
-rem *** SirayukiGun_FS3 ***
-ObjectTemplate.create FireArms SirayukiGun_FS3
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
-ObjectTemplate.geometry Sirayuki_barrel_L_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzSBGun
-ObjectTemplate.setPosition -0.4/0/4.6
-ObjectTemplate.setRotation -179.999/0/0
+
+rem *** ShokakuAABattery3 ***
+ObjectTemplate.create PlayerControlObject ShokakuAABattery3
+ObjectTemplate.aiTemplate ShokakuAA4
+ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate 5inchL40T89Open_360_AA_X
 
-rem *** SirayukiGun_FS4 ***
-ObjectTemplate.create FireArms SirayukiGun_FS4
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
-ObjectTemplate.geometry Sirayuki_barrel_R_m1
+ObjectTemplate.addTemplate 25mm3AAL_Alt
+ObjectTemplate.setPosition -0.2/2/-7.7
+ObjectTemplate.addTemplate 25mm3AAL_Alt
+ObjectTemplate.setPosition -0.2/2/-11.7
+
+ObjectTemplate.addTemplate 5inchL40T89Open_360_AA_X2
+ObjectTemplate.setPosition -0.2/0/-20.1
+
+ObjectTemplate.addTemplate BattleshipRadar
 rem -------------------------------------
 rem ObjectTemplate.CanBeRepaiedAsDestroyed c_True
 ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
@@ -44613,12 +44279,12 @@ rem ============================================================================
 rem folder = Sirayuki
 rem sauce = Weapons.con
 rem ============================================================================
-rem *** Tsurumi_Gun_GunBarrel ***
-ObjectTemplate.create FireArms Tsurumi_Gun_Barrel
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.loadSoundScript ../Common/Sounds/140mm3rdYearType_Rel7,5.ssc
-ObjectTemplate.aiTemplate Tsurumi_GunGunAI
-ObjectTemplate.geometry Tsurumi_deckgun_gunbarrel_m1
+
+rem *** SirayukiGun_FS1 ***
+ObjectTemplate.create FireArms SirayukiGun_FS1
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
+ObjectTemplate.geometry Sirayuki_barrel_L_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
 ObjectTemplate.setPosition -0.4/0/4.6
@@ -44639,7 +44305,7 @@ ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
 rem *** SirayukiGun_FS2 ***
 ObjectTemplate.create FireArms SirayukiGun_FS2
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Sirayuki_barrel_R_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -44662,7 +44328,7 @@ ObjectTemplate.FireDelay 0.2
 rem *** SirayukiGun_FS3 ***
 ObjectTemplate.create FireArms SirayukiGun_FS3
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Sirayuki_barrel_L_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -44684,7 +44350,7 @@ ObjectTemplate.FireDelay 0.08
 rem *** SirayukiGun_FS4 ***
 ObjectTemplate.create FireArms SirayukiGun_FS4
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.loadSoundScript ../Common/Sounds/127mmfire_Rel6Twin.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/5inchL50_Rel6Twin.ssc
 ObjectTemplate.geometry Sirayuki_barrel_R_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_MuzzSBGun
@@ -48012,7 +47678,7 @@ rem ============================================================================
 rem *** Tsurumi_Gun_GunBarrel ***
 ObjectTemplate.create FireArms Tsurumi_Gun_Barrel
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-ObjectTemplate.loadSoundScript ../Common/Sounds/150mmfire_Rel7,5.ssc
+ObjectTemplate.loadSoundScript ../Common/Sounds/140mm3rdYearType_Rel7,5.ssc
 ObjectTemplate.aiTemplate Tsurumi_GunGunAI
 ObjectTemplate.geometry Tsurumi_deckgun_gunbarrel_m1
 rem -------------------------------------
@@ -48673,24 +48339,14 @@ rem ============================================================================
 rem folder = Type38
 rem sauce = Weapons.con
 rem ============================================================================
-rem *** Yahagi152CannonBarrel_Dummy ***
-ObjectTemplate.create FireArms Yahagi152CannonBarrel_Dummy
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.aiTemplate YahagiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
-ObjectTemplate.geometry Yahagi_152mm_type41_gun_Cannon_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzMBGun
-ObjectTemplate.setPosition -0.85/0/9
-ObjectTemplate.setRotation -180/0/0
-
-ObjectTemplate.addTemplate e_MuzzMBGun
-ObjectTemplate.setPosition 0.85/0/9
-ObjectTemplate.setRotation -180/0/0
-rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
-ObjectTemplate.projectilePosition 0/1/1
+rem *** Type38_TorpedoLauncher ***
+ObjectTemplate.create FireArms Type38_TorpedoLauncher
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.aiTemplate Type38_TorpedoAI
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate 61cmType90Torpedo
+ObjectTemplate.projectilePosition 0/-1.5/3.55
+ObjectTemplate.visibleDummyProjectileTemplate Type38_BoatTorpedoDummy
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 2
 ObjectTemplate.velocity 30
@@ -48748,16 +48404,9 @@ ObjectTemplate.autoReload 1
 ObjectTemplate.AmmoType	4
 ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
 
-rem *** Yahagi152CannonBarrel_Dummy_Alt ***
-ObjectTemplate.create FireArms Yahagi152CannonBarrel_Dummy_Alt
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo_ForceID
-ObjectTemplate.aiTemplate YahagiGunAI
-ObjectTemplate.loadSoundScript ../Common/Sounds/6,1inchL60fire_Rel10Triple.ssc
-ObjectTemplate.geometry Yahagi_152mm_type41_gun_Cannon_m1
-rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzMBGun
-ObjectTemplate.setPosition -0.85/0/9
-ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.velocity 1000
+ObjectTemplate.setFireDev 0.7 0.3 0.048
+ObjectTemplate.setMinDev 0.5
 
 ObjectTemplate.fireInCameraDof 1
 objectTemplate.heatAddWhenFire 0.01
