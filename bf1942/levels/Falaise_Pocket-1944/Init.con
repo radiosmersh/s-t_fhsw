@@ -1,8 +1,8 @@
 rem *********************************************
 rem Created by Battlecraft 1942.  Copyright (c)2003 Digital Illusions CE
 rem Map Created and designed by GI_JOEJK for Forgotten Hope Mod
-rem ©2004 GI_JOEJK  email: gboy_3d@yahoo.com
-rem ©2004 Forgotten Hope mod  http://www.FHmod.com
+rem 2004 GI_JOEJK  email: gboy_3d@yahoo.com
+rem 2004 Forgotten Hope mod  http://www.FHmod.com
 rem *********************************************
 ShaderManager.setTextureParam envmap bf1942\levels\Falaise_Pocket\Textures\ENVMAP_G_.rcm
 renderer.vertexFogEnable 1

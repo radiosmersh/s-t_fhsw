@@ -44,8 +44,8 @@ game.setKit 1 4 5German_TankCommander_WinterWalterP38SignalSmoke
 game.setTeamSkin 2 RussianSoldier
 game.setKit 2 0 1Rus_OfficerPPSh41Smoke2R
 game.setKit 2 1 2Rus_AssaultSVT40
-game.setKit 2 2 3Rus_TankhunterRandomPPShNagantMolotov
-game.setKit 2 3 4Rus_TankhunterRandomPPShNagantSocks
+game.setKit 2 2 3Rus_AssaultNagantMolotov
+game.setKit 2 3 4Rus_TankhunterNagantSocks
 game.setKit 2 4 5Rus_TankCommanderTT33Smoke
 
 shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2

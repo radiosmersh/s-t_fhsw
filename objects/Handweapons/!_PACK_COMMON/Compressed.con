@@ -943,6 +943,91 @@ ObjectTemplate.addTemplate 89AR_FSSimple
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = AKT40
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh AKT40
+GeometryTemplate.file AKT-40_Base_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AKT40Simple
+GeometryTemplate.file AKT40_Lod_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AKT40
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem *** AKT40
+rem Semi-auto
+
+rem *** AKT40Bay
+rem Full-auto
+
+rem *** AKT40
+ObjectTemplate.create HandFireArms AKT40
+include ../AKT40/AKT40.inc
+objectTemplate.aiTemplate SVT40AI
+ObjectTemplate.numOfMag 5
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.fireOnce 1
+ObjectTemplate.soldierZoomFov 0.7
+ObjectTemplate.soldierZoomPosition -0.08/0.01/-0.05
+ObjectTemplate.itemIndex 3
+
+
+
+
+rem *** AKT40Bay
+ObjectTemplate.create HandFireArms AKT40Bay
+include ../AKT40/AKT40.inc
+objectTemplate.aiTemplate SVT40_ID1AI
+ObjectTemplate.numOfMag 5
+ObjectTemplate.roundOfFire 11.666
+ObjectTemplate.fireOnce 0
+ObjectTemplate.itemIndex 1
+ObjectTemplate.setWeaponLink 3
+ObjectTemplate.addTemplate BayonetSKT40
+ObjectTemplate.addTemplate SKT40_Bayonet_model
+
+
+rem ** SimpleObjects
+
+ObjectTemplate.create SimpleObject AKT40Simple
+ObjectTemplate.geometry AKT40Simple
+
+ObjectTemplate.create AnimatedBundle AKT40Complex
+ObjectTemplate.geometry AKT40
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/SVT40.ske
+ObjectTemplate.addTemplate SVT40trigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate SVT40Reload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate SVT40Plupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate AVT40Magasin
+ObjectTemplate.bindToSkeletonPart Mag
+
+ObjectTemplate.create LodObject AKT40Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate AKT40Complex
+ObjectTemplate.addTemplate AKT40Simple
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = AmmoPack88x571R
 rem sauce = Geometries.con
 rem ============================================================================
@@ -3406,11 +3491,11 @@ ObjectTemplate.addTemplate AS44Simple
 
 rem ===== EOF =====
 rem ============================================================================
-rem folder = Auto5_BF1918
+rem folder = Auto5
 rem sauce = Geometries.con
 rem ============================================================================
 GeometryTemplate.create StandardMesh Auto5
-GeometryTemplate.file Auto5_bf1
+GeometryTemplate.file Auto5_m1
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 3
@@ -3420,13 +3505,13 @@ GeometryTemplate.setLodDistance 4 10
 GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh Shad_Auto5
-GeometryTemplate.file Shad_Auto5_bf1
+GeometryTemplate.file Auto5_LOD_m1
 GeometryTemplate.hasDynamicShadow 0
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 300
 rem ===== EOF =====
 rem ============================================================================
-rem folder = Auto5_BF1918
+rem folder = Auto5
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
@@ -3439,9 +3524,9 @@ ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 5
 ObjectTemplate.numOfMag 9
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 5.5
+ObjectTemplate.reloadtime 5.0
 rem ObjectTemplate.reloadtime 7
-ObjectTemplate.roundOfFire 5
+ObjectTemplate.roundOfFire 5.75
 rem ObjectTemplate.roundOfFire 1.5
 ObjectTemplate.fireOnce 1
 objectTemplate.aiTemplate WinchesterAI
@@ -3483,10 +3568,14 @@ ObjectTemplate.addFireArmsPosition 0/0/0 1/0.22/0
 ObjectTemplate.addFireArmsPosition 0/0/0 -0.8/-1.2/0
 ObjectTemplate.addFireArmsPosition 0/0/0 0.1/-0.2/0
 
-ObjectTemplate.soldierZoomFov 0.6
-rem ObjectTemplate.soldierZoomFov 0.8
-ObjectTemplate.soldierZoomPosition -0.0015/-0.045/0
-ObjectTemplate.soldierCameraPosition -0.0015/-0.045/0
+rem ObjectTemplate.soldierZoomPosition -0.11/-0.04/0.06
+rem ObjectTemplate.soldierCameraPosition -0.09/-0.06/0.00
+
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.04/0/0
+ObjectTemplate.soldierCameraPosition -0.03/0.02/-0.07
+ObjectTemplate.soldierCameraPosition -0.03/-0.02/-0.07
+
 ObjectTemplate.addRootSpeed 0
 ObjectTemplate.AmmoType	1
 ObjectTemplate.setBlastAmmoCount 1
@@ -3522,7 +3611,7 @@ endrem
 rem *** Deviation End ***
 
 ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../Auto5_BF1918/Sounds/Auto5.ssc
+ObjectTemplate.loadSoundScript ../Auto5/Sounds/Auto5.ssc
 ObjectTemplate.createSkeleton animations/Auto5.ske
 ObjectTemplate.useSkeletonPartAsMain Auto5
 ObjectTemplate.addTemplate Auto5Lod
@@ -3534,9 +3623,9 @@ rem ObjectTemplate.addTemplate e_MuzzShotgun
 ObjectTemplate.setPosition 0/0.05/0.545
 ObjectTemplate.setRotation 0/0/0
 
-rem ObjectTemplate.addTemplate e_shell_Shotgun
-rem ObjectTemplate.setPosition 0/0.13/0.03
-rem ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_shell_Shotgun
+ObjectTemplate.setPosition 0.05/0.05/-0.12
+ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.create SimpleObject Auto5Simple
 ObjectTemplate.geometry Auto5
@@ -3550,6 +3639,103 @@ ObjectTemplate.create LodObject Auto5Lod
 ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate Auto5Complex
 ObjectTemplate.addTemplate Auto5Simple
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AVT40
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh AVT40
+GeometryTemplate.file AVT-40_Base_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AVT40Magasin
+GeometryTemplate.file AVT40_Mag15_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh AVT40Simple
+GeometryTemplate.file AVT40_Lod_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AVT40
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem *** AVT40
+rem Semi-auto
+
+rem *** AVT40Bay
+rem Full-auto
+
+rem AVT40
+ObjectTemplate.create HandFireArms AVT40
+include ../AVT40/AVT40.inc
+objectTemplate.aiTemplate SVT40AI
+ObjectTemplate.numOfMag 5
+ObjectTemplate.itemIndex 3
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.fireOnce 1
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.soldierZoomFov 0.7
+ObjectTemplate.soldierZoomPosition -0.08/0.01/-0.05
+
+
+
+
+rem AVT40Bay
+ObjectTemplate.create HandFireArms AVT40Bay
+include ../AVT40/AVT40.inc
+objectTemplate.aiTemplate SVT40_ID1AI
+ObjectTemplate.numOfMag 5
+ObjectTemplate.itemIndex 1
+ObjectTemplate.roundOfFire 11.666
+ObjectTemplate.fireOnce 0
+ObjectTemplate.setWeaponLink 3
+ObjectTemplate.addTemplate SVT40bayonet_m1
+ObjectTemplate.addTemplate BayonetSVT40
+
+
+rem ** SimpleObjects
+
+ObjectTemplate.create SimpleObject AVT40Simple
+ObjectTemplate.geometry AVT40Simple
+
+ObjectTemplate.create SimpleObject AVT40Magasin
+ObjectTemplate.geometry AVT40Magasin
+
+ObjectTemplate.create AnimatedBundle AVT40Complex
+ObjectTemplate.geometry AVT40
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/SVT40.ske
+ObjectTemplate.addTemplate SVT40trigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate SVT40Reload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate SVT40Plupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate AVT40Magasin
+ObjectTemplate.bindToSkeletonPart Mag
+
+ObjectTemplate.create LodObject AVT40Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate AVT40Complex
+ObjectTemplate.addTemplate AVT40Simple
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Bar1918
@@ -4335,7 +4521,7 @@ GeometryTemplate.setLodDistance 4 30
 GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh SVT40_bay_m1
-GeometryTemplate.file SVT40_bay_m1
+GeometryTemplate.file SVT-40_Bayonet_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 3
 GeometryTemplate.setLodDistance 2 10
@@ -4398,8 +4584,10 @@ rem *** BayonetMas36
 rem *** Bayonet35M
 rem *** BayonetWz29
 rem *** BayonetSVT40
+rem *** BayonetSKT40
 rem *** BayonetLebel
 rem *** Bayonet89AR
+rem *** BayonetPPD40_202
 
 rem written to enable counting with program
 beginrem
@@ -4418,8 +4606,10 @@ ObjectTemplate.create HandFireArms BayonetMas36
 ObjectTemplate.create HandFireArms Bayonet35M
 ObjectTemplate.create HandFireArms BayonetWz29
 ObjectTemplate.create HandFireArms BayonetSVT40
+ObjectTemplate.create HandFireArms BayonetSKT40
 ObjectTemplate.create HandFireArms BayonetLebel
 ObjectTemplate.create HandFireArms Bayonet89AR
+ObjectTemplate.create HandFireArms BayonetPPD40_202
 endrem
 
 rem *** Type30bayonet_m1 ***
@@ -4947,6 +5137,38 @@ ObjectTemplate.addFireArmsPosition -0.35/0.4/0.05 0/0/0
 
 
 rem **********************************************************
+rem ********** BayonetSKT40
+rem **********************************************************
+ObjectTemplate.create FireArms BayonetSKT40
+ObjectTemplate.itemIndex 4
+ObjectTemplate.projectileTemplate Melee_Bayonet_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.fireOnce 0
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.fireDelay 0.1
+ObjectTemplate.roundOfFire 1.51
+rem ObjectTemplate.roundOfFire 1.5
+ObjectTemplate.GUIIndex 83
+ObjectTemplate.velocity 99
+rem ObjectTemplate.velocity 129
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../Bayonet/Sounds/BayonetSKT40.ssc
+ObjectTemplate.soldierCameraPosition 0/-0.045/0
+ObjectTemplate.aiTemplate ai_BajonetRifle
+
+ObjectTemplate.addFireArmsPosition 0.35/0.4/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition 0.15/-0.2/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition -0.15/-0.2/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition -0.35/0.4/0.05 0/0/0
+
+
+rem **********************************************************
 rem ********** BayonetLebel
 rem **********************************************************
 ObjectTemplate.create FireArms BayonetLebel
@@ -4999,6 +5221,38 @@ ObjectTemplate.velocity 120
 rem ObjectTemplate.velocity 150
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../Bayonet/Sounds/BayonetType5.ssc
+ObjectTemplate.soldierCameraPosition 0/-0.045/0
+ObjectTemplate.aiTemplate ai_BajonetRifle
+
+ObjectTemplate.addFireArmsPosition 0.35/0.4/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition 0.15/-0.2/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition -0.15/-0.2/0.05 0/0/0
+ObjectTemplate.addFireArmsPosition -0.35/0.4/0.05 0/0/0
+
+
+rem **********************************************************
+rem ********** BayonetPPD40_202
+rem **********************************************************
+ObjectTemplate.create FireArms BayonetPPD40_202
+ObjectTemplate.itemIndex 4
+ObjectTemplate.projectileTemplate Melee_Bayonet_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 1
+ObjectTemplate.fireOnce 0
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.fireDelay 0.1
+ObjectTemplate.roundOfFire 1.51
+rem ObjectTemplate.roundOfFire 1.5
+ObjectTemplate.GUIIndex 83
+ObjectTemplate.velocity 86
+rem ObjectTemplate.velocity 116
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../Bayonet/Sounds/BayonetPPD40_202.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.045/0
 ObjectTemplate.aiTemplate ai_BajonetRifle
 
@@ -5651,7 +5905,7 @@ ObjectTemplate.hasCollisionEffect 0
 ObjectTemplate.create SimpleObject BinocularsSimple
 ObjectTemplate.geometry Shad_Binoculars
 
-ObjectTemplate.create AnimatedBundle  BinocularsComplex
+ObjectTemplate.create AnimatedBundle BinocularsComplex
 ObjectTemplate.geometry Binoculars
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.createSkeleton animations/Binoculars.ske
@@ -22343,6 +22597,9 @@ GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.create StandardMesh 1p_M18_57mm_RLR_Sight_m1
 GeometryTemplate.file 1p_M18_57mm_RLR_Sight_m1
 
+GeometryTemplate.create StandardMesh 1p_M18_57mm_RLR_Sight_Vehicle_m1
+GeometryTemplate.file 1p_M18_57mm_RLR_Sight_Vehicle_m1
+
 GeometryTemplate.create StandardMesh M18_57mm_RLR_Sight_ext_m1
 GeometryTemplate.file M18_57mm_RLR_Sight_ext_m1
 
@@ -30710,11 +30967,183 @@ ObjectTemplate.addTemplate PiatSimple
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = PPD34
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh PPD-34_m1
+GeometryTemplate.file PPD-34_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh PPD34-25_L1
+GeometryTemplate.file PPD34-25_L1
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh PPD-34_25Mag_m1
+GeometryTemplate.file PPD-34_25Mag_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = PPD34
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+rem *** PPD34
+
+ObjectTemplate.create HandFireArms PPD34
+include ../PPD34/PPD34.inc
+ObjectTemplate.numOfMag 6
+
+rem ** Objects
+ObjectTemplate.create Bundle PPD34MagHolder
+ObjectTemplate.addTemplate PPD34Mag
+rem ObjectTemplate.setPosition -0.004/0.002/-0.008
+ObjectTemplate.create SimpleObject PPD34Mag
+ObjectTemplate.geometry PPD-34_25Mag_m1
+
+ObjectTemplate.create SimpleObject PPD34Simple
+ObjectTemplate.geometry PPD34-25_L1
+
+ObjectTemplate.create AnimatedBundle PPD34Complex
+ObjectTemplate.geometry PPD-34_m1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/PPD.ske
+ObjectTemplate.addTemplate PPD34MagHolder
+ObjectTemplate.bindToSkeletonPart Mag
+
+ObjectTemplate.create LodObject PPD34Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate PPD34Complex
+ObjectTemplate.addTemplate PPD34Simple
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = PPD38
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh PPD-34-38_m1
+GeometryTemplate.file PPD-34-38_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh PPD38-71_L1
+GeometryTemplate.file PPD3438-71_L1
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh PPD38-73_L1
+GeometryTemplate.file PPD3438-73_L1
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh PPD-38_71Mag_m1
+GeometryTemplate.file PPD-38_71Mag_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh PPD-38_73Mag_m1
+GeometryTemplate.file PPD-38_73Mag_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = PPD38
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+rem *** PPD38_71
+rem *** PPD38_73
+
+ObjectTemplate.create HandFireArms PPD38_71
+include ../PPD38/PPD38_71.inc
+ObjectTemplate.numOfMag 3
+
+ObjectTemplate.create HandFireArms PPD38_73
+include ../PPD38/PPD38_73.inc
+ObjectTemplate.numOfMag 3
+
+
+rem ** Objects
+ObjectTemplate.create Bundle PPD38_71MagHolder
+ObjectTemplate.addTemplate PPD38_71Mag
+rem ObjectTemplate.setPosition -0.004/0.002/-0.008
+ObjectTemplate.create SimpleObject PPD38_71Mag
+ObjectTemplate.geometry PPD-38_71Mag_m1
+
+ObjectTemplate.create SimpleObject PPD38_71Simple
+ObjectTemplate.geometry PPD38-71_L1
+
+ObjectTemplate.create AnimatedBundle PPD38_71Complex
+ObjectTemplate.geometry PPD-34-38_m1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/PPD.ske
+ObjectTemplate.addTemplate PPD38_71MagHolder
+ObjectTemplate.bindToSkeletonPart Mag
+
+ObjectTemplate.create LodObject PPD38_71LOD
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate PPD38_71Complex
+ObjectTemplate.addTemplate PPD38_71Simple
+
+
+rem ** Objects
+ObjectTemplate.create Bundle PPD38_73MagHolder
+ObjectTemplate.addTemplate PPD38_73Mag
+rem ObjectTemplate.setPosition -0.004/0.002/-0.008
+ObjectTemplate.create SimpleObject PPD38_73Mag
+ObjectTemplate.geometry PPD-38_73Mag_m1
+
+ObjectTemplate.create SimpleObject PPD38_73Simple
+ObjectTemplate.geometry PPD38-73_L1
+
+ObjectTemplate.create AnimatedBundle PPD38_73Complex
+ObjectTemplate.geometry PPD-34-38_m1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/PPD.ske
+ObjectTemplate.addTemplate PPD38_73MagHolder
+ObjectTemplate.bindToSkeletonPart Mag
+
+ObjectTemplate.create LodObject PPD38_73LOD
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate PPD38_73Complex
+ObjectTemplate.addTemplate PPD38_73Simple
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = PPD40
 rem sauce = Geometries.con
 rem ============================================================================
 GeometryTemplate.create StandardMesh PPD40
-GeometryTemplate.file ppd40_m1
+GeometryTemplate.file PPD-40_m1
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 3
@@ -30724,28 +31153,13 @@ GeometryTemplate.setLodDistance 4 30
 GeometryTemplate.setLodDistance 5 100
 
 GeometryTemplate.create StandardMesh Shad_PPD40_71
-GeometryTemplate.file ppd40_71_l1
-GeometryTemplate.hasDynamicShadow 0
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 300
-
-GeometryTemplate.create StandardMesh Shad_PPD40_25
-GeometryTemplate.file ppd40_25_l1
+GeometryTemplate.file PPD40-71_L1
 GeometryTemplate.hasDynamicShadow 0
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 300
 
 GeometryTemplate.create StandardMesh PPD40_71Mag
-GeometryTemplate.file ppd40_71mag_m1
-GeometryTemplate.setLodDistance 0 0
-GeometryTemplate.setLodDistance 1 3
-GeometryTemplate.setLodDistance 2 10
-GeometryTemplate.setLodDistance 3 20
-GeometryTemplate.setLodDistance 4 50
-GeometryTemplate.setLodDistance 5 100
-
-GeometryTemplate.create StandardMesh PPD40_25Mag
-GeometryTemplate.file ppd40_25mag_m1
+GeometryTemplate.file PPD-40_71Mag_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 3
 GeometryTemplate.setLodDistance 2 10
@@ -30760,75 +31174,25 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
 rem *** PPD40_71
+
 rem *** PPD40_25
+rem in fact PPD34. Retained for compatibility.
+
 
 ObjectTemplate.create HandFireArms PPD40_71
-ObjectTemplate.itemIndex 3
-ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.projectileTemplate 7,62x25mmRProjectile
-ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.magSize 71
+include ../PPD40/PPD40.inc
 ObjectTemplate.numOfMag 3
-ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4.3
-ObjectTemplate.roundOfFire 13.333
-ObjectTemplate.GUIIndex 7
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 46
-ObjectTemplate.setAmomBarPosX 4
-ObjectTemplate.setAmomBarPosY -11
-ObjectTemplate.setAmomBarTextPosX 8
-ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
-objectTemplate.aiTemplate PPD40AI
-ObjectTemplate.zoomFov 0.7
-ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.7
-ObjectTemplate.soldierZoomPosition -0.10/0.03/0.02
-ObjectTemplate.soldierCameraPosition -0.08/-0.01/0.00
-ObjectTemplate.addRootSpeed 0
-ObjectTemplate.AmmoType	1
 
-Rem *** Deviation Begin *****
 
-ObjectTemplate.velocity 490
-ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
-ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.1/0
-ObjectTemplate.setHasRecoilForce 1
-ObjectTemplate.setGoBackOnRecoil 0
+ObjectTemplate.create HandFireArms PPD40_25
+include ../PPD34/PPD34.inc
+ObjectTemplate.numOfMag 6
 
-ObjectTemplate.setFireDev 10 1.5 0.4
-ObjectTemplate.setDevMod 1.2 1 1.2
-ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4 0.5 0.5 0.3
-ObjectTemplate.setSpeedDev 4 0.35 1 0.2
-ObjectTemplate.setMiscDev 18 8 0.35
-
-Rem *** Deviation  End *****
-
-ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../PPD40/Sounds/PPD40.ssc
-
-ObjectTemplate.createSkeleton animations/PPSh.ske
-ObjectTemplate.useSkeletonPartAsMain PPD40
-ObjectTemplate.addTemplate PPD40_71Lod
-
-ObjectTemplate.addTemplate e_MuzzThomp
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.05/0.43
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate e_Shell9mm
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.02/0.43
-ObjectTemplate.setRotation 0/0/0
 
 rem ** Objects
+ObjectTemplate.create Bundle PPD40_71MagHolder
+ObjectTemplate.addTemplate PPD40_71Mag
+rem ObjectTemplate.setPosition -0.004/0.002/-0.008
 ObjectTemplate.create SimpleObject PPD40_71Mag
 ObjectTemplate.geometry PPD40_71Mag
 
@@ -30838,8 +31202,8 @@ ObjectTemplate.geometry Shad_PPD40_71
 ObjectTemplate.create AnimatedBundle PPD40_71Complex
 ObjectTemplate.geometry PPD40
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.createSkeleton animations/PPSh.ske
-ObjectTemplate.addTemplate PPD40_71Mag
+ObjectTemplate.createSkeleton animations/PPD.ske
+ObjectTemplate.addTemplate PPD40_71MagHolder
 ObjectTemplate.bindToSkeletonPart Mag
 
 ObjectTemplate.create LodObject PPD40_71Lod
@@ -30847,91 +31211,81 @@ ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate PPD40_71Complex
 ObjectTemplate.addTemplate PPD40_71Simple
 
+rem ===== EOF =====
+rem ============================================================================
+rem folder = PPD40_202
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh PPD-40_Mod202_m1
+GeometryTemplate.file PPD-40_Mod202_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
 
-ObjectTemplate.create HandFireArms PPD40_25
-ObjectTemplate.itemIndex 3
-ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.projectileTemplate 7,62x25mmRProjectile
-ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.magSize 25
-ObjectTemplate.numOfMag 6
-ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4.3
-ObjectTemplate.roundOfFire 13.333
-ObjectTemplate.GUIIndex 7
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 46
-ObjectTemplate.setAmomBarPosX 4
-ObjectTemplate.setAmomBarPosY -11
-ObjectTemplate.setAmomBarTextPosX 8
-ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
+GeometryTemplate.create StandardMesh PPD40-71Bay_L1
+GeometryTemplate.file PPD40-71Bay_L1
+GeometryTemplate.hasDynamicShadow 0
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh PPD_Mod202_Bayonet_m1
+GeometryTemplate.file PPD_Mod202_Bayonet_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = PPD40_202
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+rem *** PPD40_202
+rem *** PPD40_202Bay
+
+ObjectTemplate.create HandFireArms PPD40_202
+include ../PPD40_202/PPD40_202.inc
 objectTemplate.aiTemplate PPD40AI
+ObjectTemplate.itemIndex 3
+ObjectTemplate.numOfMag 3
 ObjectTemplate.zoomFov 0.7
-ObjectTemplate.altFireOnce 1
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.10/0.03/0.02
-ObjectTemplate.soldierCameraPosition -0.08/-0.01/0.00
-ObjectTemplate.addRootSpeed 0
-ObjectTemplate.AmmoType	1
 
-Rem *** Deviation Begin *****
-
-ObjectTemplate.velocity 490
-ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
-ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.1/0
-ObjectTemplate.setHasRecoilForce 1
-ObjectTemplate.setGoBackOnRecoil 0
-
-ObjectTemplate.setFireDev 10 1.5 0.4
-ObjectTemplate.setDevMod 1.2 1 1.2
-ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4 0.5 0.5 0.3
-ObjectTemplate.setSpeedDev 4 0.35 1 0.2
-ObjectTemplate.setMiscDev 18 8 0.35
-
-Rem *** Deviation  End *****
-
-ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../PPD40/Sounds/PPD40.ssc
-
-ObjectTemplate.createSkeleton animations/PPSh.ske
-ObjectTemplate.useSkeletonPartAsMain PPD40
-ObjectTemplate.addTemplate PPD40_25Lod
-
-ObjectTemplate.addTemplate e_MuzzThomp
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.05/0.43
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate e_Shell9mm
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.02/0.43
-ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.create HandFireArms PPD40_202Bay
+include ../PPD40_202/PPD40_202.inc
+objectTemplate.aiTemplate PPD40_ID1AI
+ObjectTemplate.itemIndex 1
+ObjectTemplate.numOfMag 3
+ObjectTemplate.setWeaponLink 3
+ObjectTemplate.addTemplate BayonetPPD40_202
 
 rem ** Objects
-ObjectTemplate.create SimpleObject PPD40_25Mag
-ObjectTemplate.geometry PPD40_25Mag
+ObjectTemplate.create SimpleObject PPD40_202BayModel
+ObjectTemplate.geometry PPD_Mod202_Bayonet_m1
 
-ObjectTemplate.create SimpleObject PPD40_25Simple
-ObjectTemplate.geometry Shad_PPD40_25
+ObjectTemplate.create SimpleObject PPD40_202Simple
+ObjectTemplate.geometry PPD40-71Bay_L1
 
-ObjectTemplate.create AnimatedBundle PPD40_25Complex
+ObjectTemplate.create AnimatedBundle PPD40_202Complex
 ObjectTemplate.geometry PPD40
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.createSkeleton animations/PPSh.ske
-ObjectTemplate.addTemplate PPD40_25Mag
+ObjectTemplate.createSkeleton animations/PPD.ske
+ObjectTemplate.addTemplate PPD40_71MagHolder
 ObjectTemplate.bindToSkeletonPart Mag
+ObjectTemplate.addTemplate PPD40_202BayModel
 
-ObjectTemplate.create LodObject PPD40_25Lod
+ObjectTemplate.create LodObject PPD40_202Lod
 ObjectTemplate.lodselector HandWeaponLodSelector
-ObjectTemplate.addTemplate PPD40_25Complex
-ObjectTemplate.addTemplate PPD40_25Simple
+ObjectTemplate.addTemplate PPD40_202Complex
+ObjectTemplate.addTemplate PPD40_202Simple
 
 rem ===== EOF =====
 rem ============================================================================
@@ -37994,7 +38348,13 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../Winchester/Sounds/Winchester.ssc
 ObjectTemplate.GUIIndex 3
 ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoIcon "Ammo/icon_shotgun.tga"
+ObjectTemplate.setAmmoBar "Ingame/magbar_shotgun_empty_32x64.dds"
+ObjectTemplate.setAmmoBarFill "Ingame/magbar_shotgun_full_32x64.dds"
+ObjectTemplate.setAmmoBarSize 36
+ObjectTemplate.setAmmoBarPosX 6
+ObjectTemplate.setAmmoBarPosY -17
+ObjectTemplate.setAmmoBarTextPosX 5
+ObjectTemplate.setAmmoBarTextPosY 10
 ObjectTemplate.setCrossHairType CHTCrossHair
 
 
@@ -38173,141 +38533,31 @@ rem folder = RandomPPD
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
-rem *** RandomPPD1
-rem *** RandomPPD2
+rem *** RandomPPD1 PPD40
+rem *** RandomPPD2 PPD34
+rem *** RandomPPD3 PPD3438_71
+rem *** RandomPPD4 PPD3438_73
+rem *** RandomPPD5 PPD34
 
 ObjectTemplate.create HandFireArms RandomPPD1
-ObjectTemplate.itemIndex 3
-ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.projectileTemplate 7,62x25mmRProjectile
-ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.magSize 71
+include ../PPD40/PPD40.inc
 ObjectTemplate.numOfMag 3
-ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4.3
-ObjectTemplate.roundOfFire 13.333
-ObjectTemplate.GUIIndex 7
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 46
-ObjectTemplate.setAmomBarPosX 4
-ObjectTemplate.setAmomBarPosY -11
-ObjectTemplate.setAmomBarTextPosX 8
-ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
-objectTemplate.aiTemplate PPD40AI
-ObjectTemplate.zoomFov 0.7
-ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.7
-ObjectTemplate.soldierZoomPosition -0.10/0.03/0.02
-ObjectTemplate.soldierCameraPosition -0.08/-0.01/0.00
-ObjectTemplate.addRootSpeed 0
-ObjectTemplate.AmmoType	1
-
-Rem *** Deviation Begin *****
-
-ObjectTemplate.velocity 490
-ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
-ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.1/0
-ObjectTemplate.setHasRecoilForce 1
-ObjectTemplate.setGoBackOnRecoil 0
-
-ObjectTemplate.setFireDev 10 1.5 0.4
-ObjectTemplate.setDevMod 1.2 1 1.2
-ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4 0.5 0.5 0.3
-ObjectTemplate.setSpeedDev 4 0.35 1 0.2
-ObjectTemplate.setMiscDev 18 8 0.35
-
-Rem *** Deviation  End *****
-
-ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../RandomPPD/Sounds/PPD40.ssc
-
-ObjectTemplate.createSkeleton animations/PPSh.ske
-ObjectTemplate.useSkeletonPartAsMain PPD40
-ObjectTemplate.addTemplate PPD40_71Lod
-
-ObjectTemplate.addTemplate e_MuzzThomp
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.05/0.43
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate e_Shell9mm
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.02/0.43
-ObjectTemplate.setRotation 0/0/0
-
 
 ObjectTemplate.create HandFireArms RandomPPD2
-ObjectTemplate.itemIndex 3
-ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.projectileTemplate 7,62x25mmRProjectile
-ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.magSize 25
+include ../PPD34/PPD34.inc
 ObjectTemplate.numOfMag 6
-ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 4.3
-ObjectTemplate.roundOfFire 13.333
-ObjectTemplate.GUIIndex 7
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/Magbar_SMG_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/Magbar_SMG_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 46
-ObjectTemplate.setAmomBarPosX 4
-ObjectTemplate.setAmomBarPosY -11
-ObjectTemplate.setAmomBarTextPosX 8
-ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
-objectTemplate.aiTemplate PPD40AI
-ObjectTemplate.zoomFov 0.7
-ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.7
-ObjectTemplate.soldierZoomPosition -0.10/0.03/0.02
-ObjectTemplate.soldierCameraPosition -0.08/-0.01/0.00
-ObjectTemplate.addRootSpeed 0
-ObjectTemplate.AmmoType	1
 
-Rem *** Deviation Begin *****
+ObjectTemplate.create HandFireArms RandomPPD3
+include ../PPD38/PPD38_71.inc
+ObjectTemplate.numOfMag 3
 
-ObjectTemplate.velocity 490
-ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
-ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.1/0
-ObjectTemplate.setHasRecoilForce 1
-ObjectTemplate.setGoBackOnRecoil 0
+ObjectTemplate.create HandFireArms RandomPPD4
+include ../PPD38/PPD38_73.inc
+ObjectTemplate.numOfMag 3
 
-ObjectTemplate.setFireDev 10 1.5 0.4
-ObjectTemplate.setDevMod 1.2 1 1.2
-ObjectTemplate.setMinDev 0.8
-ObjectTemplate.setTurnDev 4 0.5 0.5 0.3
-ObjectTemplate.setSpeedDev 4 0.35 1 0.2
-ObjectTemplate.setMiscDev 18 8 0.35
-
-Rem *** Deviation  End *****
-
-ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../RandomPPD/Sounds/PPD40.ssc
-
-ObjectTemplate.createSkeleton animations/PPSh.ske
-ObjectTemplate.useSkeletonPartAsMain PPD40
-ObjectTemplate.addTemplate PPD40_25Lod
-
-ObjectTemplate.addTemplate e_MuzzThomp
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.05/0.43
-ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate e_Shell9mm
-ObjectTemplate.setInputId -1
-ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.02/0.43
-ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.create HandFireArms RandomPPD5
+include ../PPD34/PPD34.inc
+ObjectTemplate.numOfMag 6
 
 rem ===== EOF =====
 rem ============================================================================
@@ -42257,6 +42507,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -42482,6 +42733,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -42664,6 +42916,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -42848,6 +43101,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -43032,6 +43286,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -43216,6 +43471,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -43400,6 +43656,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -43584,6 +43841,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -43768,6 +44026,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -43952,6 +44211,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -44135,6 +44395,7 @@ ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
 ObjectTemplate.fireDelay 0.5
+objectTemplate.aiTemplate Satchel_ID4AI
 ObjectTemplate.soldierCameraPosition 0.02/-0.03/0.25
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
@@ -44591,6 +44852,97 @@ ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate Sg44-ZFComplex
 ObjectTemplate.addTemplate Sg44-ZFSimple
 
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = SKT40
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh SKT40
+GeometryTemplate.file SKT-40_Base_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh SKT40Simple
+GeometryTemplate.file SKT40_Lod_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+GeometryTemplate.create StandardMesh SKT40_Bayonet_m1
+GeometryTemplate.file SKT-40_Bayonet_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = SKT40
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem *** SKT40
+rem *** SKT40Bay
+
+
+rem *** SKT40
+ObjectTemplate.create HandFireArms SKT40
+include ../SKT40/SKT40.inc
+ObjectTemplate.numOfMag 5
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.soldierZoomFov 0.7
+ObjectTemplate.soldierZoomPosition -0.08/0.01/-0.05
+ObjectTemplate.itemIndex 3
+
+
+
+
+rem *** SKT40Bay
+ObjectTemplate.create HandFireArms SKT40Bay
+include ../SKT40/SKT40.inc
+ObjectTemplate.numOfMag 5
+ObjectTemplate.itemIndex 1
+ObjectTemplate.setWeaponLink 3
+ObjectTemplate.addTemplate SKT40_Bayonet_model
+ObjectTemplate.addTemplate BayonetSKT40
+
+
+
+rem ** SimpleObjects
+
+ObjectTemplate.create SimpleObject SKT40Simple
+ObjectTemplate.geometry SKT40Simple
+
+ObjectTemplate.create AnimatedBundle SKT40Complex
+ObjectTemplate.geometry SKT40
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/SVT40.ske
+ObjectTemplate.addTemplate SVT40trigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate SVT40Reload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate SVT40Plupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate SVT40Magasin
+ObjectTemplate.bindToSkeletonPart Mag
+
+ObjectTemplate.create LodObject SKT40Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate SKT40Complex
+ObjectTemplate.addTemplate SKT40Simple
+
+ObjectTemplate.create SimpleObject SKT40_Bayonet_model
+ObjectTemplate.geometry SKT40_Bayonet_m1
 
 rem ===== EOF =====
 rem ============================================================================
@@ -48675,7 +49027,7 @@ ObjectTemplate.setSightIcon "scope_blank.tga"
 ObjectTemplate.setSniperSight 0
 ObjectTemplate.setCrossHairType CHTNone
 
-ObjectTemplate.createSkeleton animations/SVT40.ske
+ObjectTemplate.createSkeleton animations/Type5.ske
 ObjectTemplate.useSkeletonPartAsMain SVT40Sniper
 ObjectTemplate.addTemplate SVT40SniperLod
 
@@ -48722,9 +49074,9 @@ ObjectTemplate.bindToSkeletonPart trigger
 ObjectTemplate.addTemplate SVT40Reload
 ObjectTemplate.bindToSkeletonPart reload
 ObjectTemplate.addTemplate SVT40Plupp
-ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.bindToSkeletonPart Plupp
 ObjectTemplate.addTemplate SVT40Magasin
-ObjectTemplate.bindToSkeletonPart mag
+ObjectTemplate.bindToSkeletonPart Mag
 
 
 ObjectTemplate.create LodObject SVT40Lod
@@ -48830,7 +49182,7 @@ ObjectTemplate.geometry SVT40
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.createSkeleton animations/SVT40.ske
 ObjectTemplate.addTemplate SVT40bayonet_m1
-ObjectTemplate.setPosition 0/0.007/0.9197
+rem ObjectTemplate.setPosition 0/0.007/0.9197
 ObjectTemplate.addTemplate SVT40trigger
 ObjectTemplate.bindToSkeletonPart trigger
 ObjectTemplate.addTemplate SVT40Reload
@@ -52628,7 +52980,13 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../Winchester/Sounds/Winchester.ssc
 ObjectTemplate.GUIIndex 3
 ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoIcon "Ammo/icon_shotgun.tga"
+ObjectTemplate.setAmmoBar "Ingame/magbar_shotgun_empty_32x64.dds"
+ObjectTemplate.setAmmoBarFill "Ingame/magbar_shotgun_full_32x64.dds"
+ObjectTemplate.setAmmoBarSize 36
+ObjectTemplate.setAmmoBarPosX 6
+ObjectTemplate.setAmmoBarPosY -17
+ObjectTemplate.setAmmoBarTextPosX 5
+ObjectTemplate.setAmmoBarTextPosY 10
 ObjectTemplate.setCrossHairType CHTCrossHair
 
 

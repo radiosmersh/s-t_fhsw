@@ -51,20 +51,20 @@ ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedSoFlag
 
 game.setTeamSkin 1 JapaneseSoldier
-game.setKit 1 0 1Jap_OfficerArisakaSmoke3RD
-game.setKit 1 1 2Jap_AssaultArisakaMolotov
+game.setKit 1 0 1Jap_Officer100SMGSmoke3RD
+game.setKit 1 1 2Jap_AssaultType5Molotov
 game.setKit 1 2 3Jap_AntiTankHEAT
 game.setKit 1 3 Cavalry_4Jap_AntiTankMolotov
 rem game.setKit 1 3 4Jap_AssaultArisaka38
 game.setKit 1 4 5Jap_TankCommanderNambuD
 
 game.setTeamSkin 2 RussianSoldier
-game.setKit 2 0 1Rus_OfficerPPSh
-game.setKit 2 1 2Rus_AssaultSVT40
+game.setKit 2 0 1Rus_CloseQuartersPPD40_202BayBino
+game.setKit 2 1 2Rus_AssaultAVT40
 rem game.setKit 2 2 3Rus_TankhunterNagantRPG43
 game.setKit 2 2 Cavalry_3Rus_TankhunterNagantRPG43
 game.setKit 2 3 4Rus_SupportBren
-game.setKit 2 4 5Rus_EngineerNagant
+game.setKit 2 4 5Rus_EngineerSKT40
 
 water.specularEnable 1
 water.texLayer1 texture/water01

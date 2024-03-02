@@ -65,7 +65,7 @@ endrem
 
 game.setTeamSkin 2 RussianSoldier
 game.setKit 2 0 1Rus_OfficerPPS43Smoke2R
-game.setKit 2 1 2Rus_AssaultSVT40
+game.setKit 2 1 2Rus_AssaultAVT40
 game.setKit 2 2 3Rus_TankhunterNagantRPG43
 game.setKit 2 3 4Rus_SupportDP1928
 game.setKit 2 4 5Rus_TankCommanderTT33Smoke2R

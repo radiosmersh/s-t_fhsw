@@ -17,10 +17,10 @@ ShaderManager.setTextureParam envmap Texture\Karelia\ENVMAP_G_.rcm
 renderer.vertexFogEnable 1
 rem renderer.fogColorVec 0.50/0.48/0.52
 renderer.fogColorVec 0.770000/0.766000/0.750000
-Game.setViewDistance 180
+Game.setViewDistance 160
 Game.spawnPlayers 1
 renderer.fogstart -5
-renderer.fogend 220
+renderer.fogend 180
 TreeRenderer.billboardlightscale 0.3
 
 rem 
@@ -41,12 +41,11 @@ ObjectTemplate.TimeToReSpawn 10
 ObjectTemplate.addTemplate AnimatedSoFlag
 
 game.setTeamSkin 1 FinishSoldier
-game.setKit 1 0 1Fin_OfficerMP40Smoke2R
+game.setKit 1 0 1Fin_OfficerrandomSuomiSmoke3R
 game.setKit 1 1 2Fin_AssaultNagant
 game.setKit 1 2 3Fin_ATPanzerfaust30
-game.setKit 1 3 4Fin_AssaultNagantMolotov
-game.setKit 1 4 5Fin_EngineerNagant
-
+game.setKit 1 3 4Fin_ATKasapanos2kgSuomi
+game.setKit 1 4 5Fin_EngineerNagantKasapanos
 
 game.setTeamSkin 2 RussianSoldier
 game.setKit 2 0 1Rus_OfficerPPSh
@@ -54,7 +53,6 @@ game.setKit 2 1 2Rus_AssaultNagant
 game.setKit 2 2 3Rus_TankhunterNagantRPG43
 game.setKit 2 3 4Rus_TankCommanderTT33
 game.setKit 2 4 5Rus_EngineerNagant
-
 
 rem
 rem *** Shader Default Color ***

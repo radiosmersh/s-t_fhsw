@@ -8,7 +8,6 @@ renderer.specularColor .3/.3/.3
 renderer.vertexFogEnable 1 
 renderer.fogColorVec 0.68/0.62/0.55
 renderer.animatedMeshAmbientColor 0.15
-
 textureManager.alternativePath bf1942\levels\Berlin-1945\Texture
 textureManager.alternativePath Texture/levels/Berlin
 textureManager.alternativePath Texture/ENVIROMENT_BUILDINGS_ALTERNATIVE
@@ -51,10 +50,10 @@ game.setKit 1 4 5German_EngineerVolkssturmRandom
 
 game.setTeamSkin 2 RussianSoldier
 game.setKit 2 0 1Rus_OfficerPPShSmoke2R
-game.setKit 2 1 2Rus_AssaultSVT40
+game.setKit 2 1 2Rus_AssaultAVT40
 game.setKit 2 2 3Rus_ATCapturedPanzerfaust100
 game.setKit 2 3 4Rus_TankhunterNagantMolotov
-game.setKit 2 4 5Rus_EngineerNagant
+game.setKit 2 4 5Rus_EngineerSKT40
 
 
 rem *** Active Combat Area ***

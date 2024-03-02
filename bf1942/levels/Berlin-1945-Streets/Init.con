@@ -44,12 +44,12 @@ game.setKit 1 3 4German_TankCommanderVolkssturmRandom
 game.setKit 1 4 5German_EngineerHHVolkssturmRandom
 
 game.setTeamSkin 2 RussianSoldier
-game.setKit 2 0 1Rus_CloseQuartersPPs43noG
-game.setKit 2 1 2Rus_AssaultSVT40
+game.setKit 2 0 1Rus_CloseQuartersPPs43
+game.setKit 2 1 2Rus_AssaultAVT40
 rem game.setKit 2 2 3Rus_ATCapturedPanzerfaust60
 game.setKit 2 2 3Rus_ATCapturedPanzerfaust60_bay
 game.setKit 2 3 4Rus_SupportDP1928
-game.setKit 2 4 5Rus_EngineerNagant
+game.setKit 2 4 5Rus_EngineerSKT40
 game.setActiveCombatArea 0 0 2048 2048
 
 shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2

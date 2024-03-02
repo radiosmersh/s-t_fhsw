@@ -45,11 +45,12 @@ game.setKit 1 3 4SNLF_SupportType96
 game.setKit 1 4 5SNLF_EngineerExpack
 
 game.setTeamSkin 2 USSoldier
-rem game.setKit 2 0 1USMC_EarlyOfficerSpringfieldSmoke3R
-game.setKit 2 0 1USMC_EarlyOfficerSpringfieldSmoke3RD
-game.setKit 2 1 2USMC_EarlyAssaultSpringfield
+game.setKit 2 0 1USMC_OfficerTommygunSmoke2RD
+rem game.setKit 2 0 1USMC_EarlyOfficerSpringfieldSmoke3RD
+game.setKit 2 1 2USMC_EarlyAssaultSpringfieldGrenade
 game.setKit 2 2 3USMC_EarlyAntiTankLandmine
-game.setKit 2 3 4USMC_EarlyGrenadierSpringfield
+game.setKit 2 3 4USMC_EarlySupportBAR
+rem game.setKit 2 3 4USMC_EarlyGrenadierSpringfield
 game.setKit 2 4 5USMC_EarlyEngineerSpringfield
 
 shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2

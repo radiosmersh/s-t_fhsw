@@ -52591,6 +52591,7 @@ ObjectTemplate.addTemplate ki43iibSeat
 ObjectTemplate.setPosition 0/0.15/0.3
 ObjectTemplate.addTemplate ki43iibEngine
 ObjectTemplate.setPosition 0/0/2.516
+
 ObjectTemplate.addTemplate ki43iibBodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 
@@ -52913,9 +52914,7 @@ ObjectTemplate.setMaxSpeed 0/24/0
 ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
-rem ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPositionOffset -0.45/0/0
+ObjectTemplate.setPositionOffset 0/0/0
 ObjectTemplate.setWingLift 0.7
 ObjectTemplate.setFlapLift 2.8
 
