@@ -2468,7 +2468,7 @@ ObjectTemplate.addTemplate lodAMX50Cockpit
 ObjectTemplate.addTemplate AMX50GunBarrel
 ObjectTemplate.setPosition 0/-0.0726/2.1477
 ObjectTemplate.addTemplate Coaxial_MG151
-ObjectTemplate.setPosition 0.4127/-0.0127/-0.1557
+ObjectTemplate.setPosition 0.41/-0.155/-0.014
 ObjectTemplate.addTemplate AMX50_Reticule_Camera
 ObjectTemplate.setPosition -0.5731/0.5605/0.7892
 
@@ -4736,7 +4736,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_AC47_SplashObj ***
 ObjectTemplate.create PlayerControlObject Bunker_AC47_SplashObj
 ObjectTemplate.setNetworkableInfo Bunker_AC47_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry Bunker_AC47_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -4999,7 +4999,7 @@ ObjectTemplate.create RotationalBundle Bunker_Maginot135_Retracter3
 ObjectTemplate.setNetworkableInfo Bunker_Maginot135_RetractInfo
 ObjectTemplate.loadSoundScript ../Bunker_Maginot135/Sounds/Bunker_Maginot135_Retract.ssc
 rem -------------------------------------
-ObjectTemplate.addTemplate Bunker_Maginot135_Turret
+ObjectTemplate.addTemplate Bunker_Maginot135_TurretAD
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-90/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -5007,6 +5007,16 @@ ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/-15/0
 ObjectTemplate.setInputToPitch c_PIThrottle
 
+rem *** Bunker_Maginot135_TurretAD ***
+ObjectTemplate.create RotationalBundle Bunker_Maginot135_TurretAD
+ObjectTemplate.setNetworkableInfo Bunker_Maginot135_TurretInfo
+ObjectTemplate.loadSoundScript ../Bunker_Maginot135/Sounds/Bunker_Maginot135_Turret.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Bunker_Maginot135_Turret
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 40/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 
 rem *** Bunker_Maginot135_Turret ***
 ObjectTemplate.create RotationalBundle Bunker_Maginot135_Turret
@@ -5021,8 +5031,8 @@ ObjectTemplate.setPosition 0/1.7/2.6
 ObjectTemplate.addTemplate Bunker_Maginot135_Gunbase
 ObjectTemplate.setPosition 0/1.65/2.4
 rem -------------------------------------
-ObjectTemplate.setMaxSpeed 20/0/0
-ObjectTemplate.setAcceleration 10/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 40/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 
@@ -5061,9 +5071,9 @@ ObjectTemplate.addTemplate lodBunker_Maginot135Cockpit
 ObjectTemplate.setPosition 0/0/-0.4
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-45/0
-ObjectTemplate.setMaxRotation 0/-2/0
-ObjectTemplate.setMaxSpeed 0/20/0
-ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/40/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
@@ -5101,9 +5111,9 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Bunker_Maginot135_Barrel
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-45/0
-ObjectTemplate.setMaxRotation 0/-2/0
-ObjectTemplate.setMaxSpeed 0/20/0
-ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/40/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
@@ -5136,7 +5146,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_Maginot135_HatchObj ***
 ObjectTemplate.create PlayerControlObject Bunker_Maginot135_HatchObj
 ObjectTemplate.setNetworkableInfo Bunker_Maginot135_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry SW_bunk_door_hatch_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -5615,7 +5625,7 @@ ObjectTemplate.create RotationalBundle Bunker_Maginot25_Retracter3
 ObjectTemplate.setNetworkableInfo Bunker_Maginot25_RetractInfo
 ObjectTemplate.loadSoundScript ../Bunker_Maginot25/Sounds/Bunker_Maginot25_Retract.ssc
 rem -------------------------------------
-ObjectTemplate.addTemplate Bunker_Maginot25_Turret
+ObjectTemplate.addTemplate Bunker_Maginot25_TurretAD
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-90/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -5623,6 +5633,16 @@ ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/-20/0
 ObjectTemplate.setInputToPitch c_PIThrottle
 
+rem *** Bunker_Maginot25_TurretAD ***
+ObjectTemplate.create RotationalBundle Bunker_Maginot25_TurretAD
+ObjectTemplate.setNetworkableInfo Bunker_Maginot25_TurretInfo
+ObjectTemplate.loadSoundScript ../Bunker_Maginot25/Sounds/Bunker_Maginot25_Turret.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Bunker_Maginot25_Turret
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 30/0/0
+ObjectTemplate.setAcceleration 60/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 
 rem *** Bunker_Maginot25_Turret ***
 ObjectTemplate.create RotationalBundle Bunker_Maginot25_Turret
@@ -5637,8 +5657,8 @@ ObjectTemplate.setPosition -0.0475/1.8/1.45
 ObjectTemplate.addTemplate Bunker_Maginot25_Gunbase
 ObjectTemplate.setPosition 0/1.73/1.4
 rem -------------------------------------
-ObjectTemplate.setMaxSpeed 30/0/0
-ObjectTemplate.setAcceleration 20/0/0
+ObjectTemplate.setMaxSpeed 15/0/0
+ObjectTemplate.setAcceleration 60/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 
@@ -5678,8 +5698,8 @@ ObjectTemplate.setPosition 0/0/-0.2
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-20/0
 ObjectTemplate.setMaxRotation 0/10/0
-ObjectTemplate.setMaxSpeed 0/30/0
-ObjectTemplate.setAcceleration 0/20/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/60/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
@@ -5721,8 +5741,8 @@ ObjectTemplate.setPosition 0/0/0.2
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-20/0
 ObjectTemplate.setMaxRotation 0/10/0
-ObjectTemplate.setMaxSpeed 0/30/0
-ObjectTemplate.setAcceleration 0/20/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/60/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
@@ -5755,7 +5775,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_Maginot25_HatchObj ***
 ObjectTemplate.create PlayerControlObject Bunker_Maginot25_HatchObj
 ObjectTemplate.setNetworkableInfo Bunker_Maginot25_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry SW_bunk_door_hatch_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -6086,7 +6106,7 @@ ObjectTemplate.create RotationalBundle Bunker_Maginot75_Retracter3
 ObjectTemplate.setNetworkableInfo Bunker_Maginot75_RetractInfo
 ObjectTemplate.loadSoundScript ../Bunker_Maginot75/Sounds/Bunker_Maginot75_Retract.ssc
 rem -------------------------------------
-ObjectTemplate.addTemplate Bunker_Maginot75_Turret
+ObjectTemplate.addTemplate Bunker_Maginot75_TurretAD
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-90/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -6094,6 +6114,16 @@ ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/-15/0
 ObjectTemplate.setInputToPitch c_PIThrottle
 
+rem *** Bunker_Maginot75_TurretAD ***
+ObjectTemplate.create RotationalBundle Bunker_Maginot75_TurretAD
+ObjectTemplate.setNetworkableInfo Bunker_Maginot75_TurretInfo
+ObjectTemplate.loadSoundScript ../Bunker_Maginot75/Sounds/Bunker_Maginot75_Turret.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Bunker_Maginot75_Turret
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 40/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 
 rem *** Bunker_Maginot75_Turret ***
 ObjectTemplate.create RotationalBundle Bunker_Maginot75_Turret
@@ -6108,8 +6138,8 @@ ObjectTemplate.setPosition 0/1.7/2.6
 ObjectTemplate.addTemplate Bunker_Maginot75_Gunbase
 ObjectTemplate.setPosition 0/1.75/2.3
 rem -------------------------------------
-ObjectTemplate.setMaxSpeed 20/0/0
-ObjectTemplate.setAcceleration 10/0/0
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 40/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 
@@ -6148,8 +6178,8 @@ ObjectTemplate.setPosition 0/0/-0.4
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-28/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/20/0
-ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/40/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
@@ -6195,8 +6225,8 @@ ObjectTemplate.setRotation 0/15/179.999
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-28/0
 ObjectTemplate.setMaxRotation 0/13/0
-ObjectTemplate.setMaxSpeed 0/20/0
-ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setMaxSpeed 0/10/0
+ObjectTemplate.setAcceleration 0/40/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 rem *** Bunker_Maginot75_GunSelector ***
@@ -6252,7 +6282,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_Maginot75_HatchObj ***
 ObjectTemplate.create PlayerControlObject Bunker_Maginot75_HatchObj
 ObjectTemplate.setNetworkableInfo Bunker_Maginot75_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry SW_bunk_door_hatch_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -6766,7 +6796,7 @@ ObjectTemplate.create RotationalBundle Bunker_MaginotMG_Retracter3
 ObjectTemplate.setNetworkableInfo Bunker_MaginotMG_RetractInfo
 ObjectTemplate.loadSoundScript ../Bunker_MaginotMG/Sounds/Bunker_MaginotMG_Retract.ssc
 rem -------------------------------------
-ObjectTemplate.addTemplate Bunker_MaginotMG_Turret
+ObjectTemplate.addTemplate Bunker_MaginotMG_TurretAD
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-90/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -6774,6 +6804,16 @@ ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/-20/0
 ObjectTemplate.setInputToPitch c_PIThrottle
 
+rem *** Bunker_MaginotMG_TurretAD ***
+ObjectTemplate.create RotationalBundle Bunker_MaginotMG_TurretAD
+ObjectTemplate.setNetworkableInfo Bunker_MaginotMG_TurretInfo
+ObjectTemplate.loadSoundScript ../Bunker_MaginotMG/Sounds/Bunker_MaginotMG_Turret.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Bunker_MaginotMG_Turret
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 40/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 
 rem *** Bunker_MaginotMG_Turret ***
 ObjectTemplate.create RotationalBundle Bunker_MaginotMG_Turret
@@ -6788,8 +6828,8 @@ ObjectTemplate.setPosition -0.0475/1.8/1.45
 ObjectTemplate.addTemplate Bunker_MaginotMG_Gunbase
 ObjectTemplate.setPosition 0/1.725/1.5
 rem -------------------------------------
-ObjectTemplate.setMaxSpeed 30/0/0
-ObjectTemplate.setAcceleration 20/0/0
+ObjectTemplate.setMaxSpeed 15/0/0
+ObjectTemplate.setAcceleration 60/0/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 
 
@@ -6829,8 +6869,8 @@ ObjectTemplate.setPosition 0/0/-0.2
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-20/0
 ObjectTemplate.setMaxRotation 0/10/0
-ObjectTemplate.setMaxSpeed 0/30/0
-ObjectTemplate.setAcceleration 0/20/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/60/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
@@ -6872,8 +6912,8 @@ ObjectTemplate.setPosition -0.2/0/0.1
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-20/0
 ObjectTemplate.setMaxRotation 0/10/0
-ObjectTemplate.setMaxSpeed 0/30/0
-ObjectTemplate.setAcceleration 0/20/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/60/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
@@ -6906,7 +6946,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_MaginotMG_HatchObj ***
 ObjectTemplate.create PlayerControlObject Bunker_MaginotMG_HatchObj
 ObjectTemplate.setNetworkableInfo Bunker_MaginotMG_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry SW_bunk_door_hatch_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -7034,8 +7074,7 @@ rem ============================================================================
 renderer.beginGlobalCluster Bunker_Maginot_ClocheGFM
 
 GeometryTemplate.create StandardMesh 1P_Bunker_Maginot_ClocheGFM_Aim_m1
-GeometryTemplate.file mg34view
-GeometryTemplate.Scale 1.5/1.5/1
+GeometryTemplate.file 1p_ArtyFT_reticule_m1
 
 GeometryTemplate.create StandardMesh 1P_Bunker_Maginot_ClocheJM_Periscope_m1
 GeometryTemplate.file 1p_ArtyFT_reticule_m1
@@ -7122,13 +7161,13 @@ ObjectTemplate.setPosition 0/4/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-2.5 -180/0/0
 ObjectTemplate.GUIIndex 67
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Bunker_Maginot_Cloche_GFM.dds"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Bunker_Maginot_Cloche_GFM_AD.dds"
 ObjectTemplate.setVehicleIconPos 53/86
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,5mmFM_Mle1924-29.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 ObjectTemplate.setHasTurretIcon 1
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTDefGun
 ObjectTemplate.setToolTipType  TTDefGun
@@ -7172,16 +7211,11 @@ ObjectTemplate.loadSoundScript ../Bunker_Maginot_ClocheGFM/Sounds/Bunker_Maginot
 ObjectTemplate.setAttachToListener 1
 rem -------------------------------------
 ObjectTemplate.addTemplate lodBunker_Maginot_ClocheGFM_Turret
-ObjectTemplate.addTemplate Bunker_Maginot_ClocheGFM_CamBase
-ObjectTemplate.setPosition -0.1/2.2/0.7
-ObjectTemplate.addTemplate Bunker_Maginot_ClocheGFM_Gunbase
-ObjectTemplate.setPosition 0.1/2.15/0.8
+ObjectTemplate.addTemplate Bunker_Maginot_ClocheGFM_GunPositionSelect
 rem -------------------------------------
 ObjectTemplate.setMaxSpeed 10/0/0
 ObjectTemplate.setAcceleration 20/0/0
-ObjectTemplate.setInputToYaw c_PIYaw
-
-
+ObjectTemplate.setInputToYaw c_PIThrottle
 
 rem *** lodBunker_Maginot_ClocheGFM_Turret ***
 ObjectTemplate.create LodObject lodBunker_Maginot_ClocheGFM_Turret
@@ -7206,6 +7240,23 @@ LodSelectorTemplate.addLodDistance 20
 LodSelectorTemplate.addLodComparison 0.5
 
 
+rem *** Bunker_Maginot_ClocheGFM_GunPositionSelect ***
+ObjectTemplate.create RotationalBundle Bunker_Maginot_ClocheGFM_GunPositionSelect
+ObjectTemplate.setNetworkableInfo Bunker_Maginot_ClocheGFM_TurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Bunker_Maginot_ClocheGFM_CamBase
+ObjectTemplate.setPosition -0.1/2.2/0.7
+ObjectTemplate.addTemplate Bunker_Maginot_ClocheGFM_Gunbase
+ObjectTemplate.setPosition 0.1/2.15/0.8
+rem -------------------------------------
+ObjectTemplate.setMinRotation -90/0/0
+ObjectTemplate.setMaxRotation 90/0/0
+ObjectTemplate.setMaxSpeed 900000/0/0
+ObjectTemplate.setAcceleration 90000000/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
 
 rem *** Bunker_Maginot_ClocheGFM_CamBase ***
 ObjectTemplate.create RotationalBundle Bunker_Maginot_ClocheGFM_CamBase
@@ -7214,10 +7265,10 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Bunker_Maginot_ClocheGFMCamera
 ObjectTemplate.setPosition 0/0/-0.2
 ObjectTemplate.addTemplate lodBunker_Maginot_ClocheGFMCockpit
-ObjectTemplate.setPosition 0/0/-0.09
+ObjectTemplate.setPosition 0/0/-0.2
 rem -------------------------------------
-ObjectTemplate.setMinRotation -20/-20/0
-ObjectTemplate.setMaxRotation 20/10/0
+ObjectTemplate.setMinRotation -45/-20/0
+ObjectTemplate.setMaxRotation 45/10/0
 ObjectTemplate.setMaxSpeed 30/30/0
 ObjectTemplate.setAcceleration 500/500/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
@@ -7257,8 +7308,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Bunker_FM1924
 ObjectTemplate.setPosition 0/0/0.1
 rem -------------------------------------
-ObjectTemplate.setMinRotation -20/-20/0
-ObjectTemplate.setMaxRotation 20/10/0
+ObjectTemplate.setMinRotation -45/-20/0
+ObjectTemplate.setMaxRotation 45/10/0
 ObjectTemplate.setMaxSpeed 30/30/0
 ObjectTemplate.setAcceleration 500/500/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
@@ -7368,7 +7419,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_Maginot_ClocheGFM_HatchObj ***
 ObjectTemplate.create PlayerControlObject Bunker_Maginot_ClocheGFM_HatchObj
 ObjectTemplate.setNetworkableInfo Bunker_Maginot_ClocheGFM_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry SW_bunk_door_hatch_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -7450,13 +7501,13 @@ ObjectTemplate.setPosition 0/1/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-2.5 -180/0/0
 ObjectTemplate.GUIIndex 67
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Bunker_Maginot_Cloche_GFM.dds"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Bunker_Maginot_Cloche_GFM_AD.dds"
 ObjectTemplate.setVehicleIconPos 53/86
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,5mmFM_Mle1924-29.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 ObjectTemplate.setHasTurretIcon 1
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTDefGun
 ObjectTemplate.setToolTipType  TTDefGun
@@ -7750,7 +7801,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_Maginot_ClocheJM_HatchObj ***
 ObjectTemplate.create PlayerControlObject Bunker_Maginot_ClocheJM_HatchObj
 ObjectTemplate.setNetworkableInfo Bunker_Maginot_ClocheJM_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry SW_bunk_door_hatch_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -8111,7 +8162,7 @@ ObjectTemplate.damageWhenLost 1
 rem *** Bunker_Maginot_ClocheLG_HatchObj ***
 ObjectTemplate.create PlayerControlObject Bunker_Maginot_ClocheLG_HatchObj
 ObjectTemplate.setNetworkableInfo Bunker_Maginot_ClocheLG_BodyInfo
-ObjectTemplate.aiTemplate SW_bunk_door_hatch
+rem ObjectTemplate.aiTemplate SW_bunk_door_hatch
 ObjectTemplate.geometry SW_bunk_door_hatch_thing_m1
 objectTemplate.cullRadiusScale 5
 ObjectTemplate.hasMobilePhysics 0
@@ -10973,7 +11024,7 @@ ObjectTemplate.material 33
 ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Frz155MobileAI
 ObjectTemplate.timetoliveafterdeath 10
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
@@ -12729,7 +12780,7 @@ ObjectTemplate.addArmorEffect 17 e_WillyDamage 0/1.7/0
 ObjectTemplate.addArmorEffect 5 e_WillyFire 0/0.5/0.8
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Frz75erStationary
 ObjectTemplate.TimeToStartFadeAfterDeath 10
 rem -------------------------------------
@@ -12957,7 +13008,7 @@ ObjectTemplate.addArmorEffect 40 e_WillyDamage 0/1.7/0
 ObjectTemplate.addArmorEffect 9 e_WillyFire 0/0.5/0.8
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Frz75erAI
 ObjectTemplate.timetoliveafterdeath 10
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
@@ -15549,7 +15600,7 @@ ObjectTemplate.addArmorEffect 30 e_willyDamage 0/1.7/0.8
 ObjectTemplate.addArmorEffect 5 e_willyFire 0/0.5/0.8
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 15
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.aiTemplate Laffly15t
@@ -16190,7 +16241,7 @@ ObjectTemplate.addArmorEffect 20 e_Lorraine37LDamage 0/0.2/0.5
 ObjectTemplate.addArmorEffect 6 e_Lorraine37LFire 0/0.6/1
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 30
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 0
@@ -16835,7 +16886,7 @@ ObjectTemplate.addArmorEffect 20 e_Lorraine37LDamage 0/0.2/0.5
 ObjectTemplate.addArmorEffect 6 e_Lorraine37LFire 0/0.6/1
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 30
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 0
@@ -17060,7 +17111,7 @@ ObjectTemplate.addArmorEffect 20 e_Lorraine37LDamage 0/0.2/0.5
 ObjectTemplate.addArmorEffect 6 e_Lorraine37LFire 0/0.6/1
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 30
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 0
@@ -17285,7 +17336,7 @@ ObjectTemplate.addArmorEffect 20 e_Lorraine37LDamage 0/0.2/0.5
 ObjectTemplate.addArmorEffect 6 e_Lorraine37LFire 0/0.6/1
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.timetoliveafterdeath 30
 ObjectTemplate.fadeAtTimeToLiveAfterDeath 0
 ObjectTemplate.damageFromWater 0
@@ -18594,7 +18645,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 87
 ObjectTemplate.maxhitpoints 87
 ObjectTemplate.material 33
-ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
+rem ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.aiTemplate SA37
@@ -18963,7 +19014,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 87
 ObjectTemplate.maxhitpoints 87
 ObjectTemplate.material 33
-ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
+rem ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.aiTemplate SA37
@@ -20408,13 +20459,13 @@ ObjectTemplate.addTemplate SW_bunk_set_cloche_m1
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/-2.5 -180/0/0
 ObjectTemplate.GUIIndex 67
-ObjectTemplate.setVehicleIcon "Vehicle/icon_Bunker_Maginot_Cloche_GFM.dds"
+ObjectTemplate.setVehicleIcon "Vehicle/icon_Bunker_Maginot_Cloche_GFM_AD.dds"
 ObjectTemplate.setVehicleIconPos 53/86
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,5mmFM_Mle1924-29.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 ObjectTemplate.setHasTurretIcon 1
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTDefGun
 ObjectTemplate.setToolTipType  TTDefGun
@@ -20527,7 +20578,6 @@ rem ============================================================================
 rem ===== COMPRESS = FRE
 
 rem *** Turret_Maginot_ClocheLG
-rem *** Turret_Maginot_ClocheLGlow
 
 rem *** Turret_Maginot_ClocheLG ***
 ObjectTemplate.create PlayerControlObject Turret_Maginot_ClocheLG

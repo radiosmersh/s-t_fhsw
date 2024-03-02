@@ -33039,8 +33039,11 @@ ObjectTemplate.addTemplate F1M2AileronLU
 ObjectTemplate.setPosition -4/1.5/-0.92
 ObjectTemplate.setRotation 8.5/0/-5
 
+ObjectTemplate.addTemplate F1M2ElevatorVisible
+ObjectTemplate.setPosition 0/0.14/-6.0
 ObjectTemplate.addTemplate F1M2Elevator
 ObjectTemplate.setPosition 0/0.14/-6.0
+ObjectTemplate.setRotation 0/3/0
 ObjectTemplate.addTemplate F1M2Rudder
 ObjectTemplate.setPosition 0/1/-5.94
 ObjectTemplate.setRotation 0/0/-89.999
@@ -33707,7 +33710,6 @@ ObjectTemplate.setAutomaticReset 1
 rem *** F1M2Elevator ***
 ObjectTemplate.create Wing F1M2Elevator
 ObjectTemplate.setNetworkableInfo F1M2WingInfo
-ObjectTemplate.geometry F1M2_elevator_M1
 ObjectTemplate.setMinRotation 0/-14/0
 ObjectTemplate.setMaxRotation 0/14/0
 ObjectTemplate.setMaxSpeed 0/14/0
@@ -33719,6 +33721,18 @@ ObjectTemplate.rememberExcessInput 1
 ObjectTemplate.setWingLift 1.2
 ObjectTemplate.setFlapLift 2.09
 rem ObjectTemplate.setFlapLift 1.9
+
+rem *** F1M2ElevatorVisible ***
+ObjectTemplate.create Wing F1M2ElevatorVisible
+ObjectTemplate.setNetworkableInfo F1M2WingInfo
+ObjectTemplate.geometry F1M2_elevator_M1
+ObjectTemplate.setMinRotation 0/-14/0
+ObjectTemplate.setMaxRotation 0/14/0
+ObjectTemplate.setMaxSpeed 0/14/0
+ObjectTemplate.setAcceleration 0/-28/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
 
 rem *** F1M2Rudder***
 ObjectTemplate.create Wing F1M2Rudder
@@ -33931,9 +33945,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCAir
 ObjectTemplate.setVehicleType  VTDiveBomber
 ObjectTemplate.setToolTipType  TTDiveBomber
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_ammoplane_16x16.tga"
-ObjectTemplate.setMinimapIconSize 32
-
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_f1m2_16x16.tga"
 
 rem *** lodF1M2-Supply ***
 ObjectTemplate.create LodObject lodF1M2-Supply
@@ -33993,8 +34005,11 @@ ObjectTemplate.addTemplate F1M2AileronLU
 ObjectTemplate.setPosition -4/1.5/-0.92
 ObjectTemplate.setRotation 8.5/0/-5
 
+ObjectTemplate.addTemplate F1M2ElevatorVisible
+ObjectTemplate.setPosition 0/0.14/-6.0
 ObjectTemplate.addTemplate F1M2Elevator
 ObjectTemplate.setPosition 0/0.14/-6.0
+ObjectTemplate.setRotation 0/3/0
 ObjectTemplate.addTemplate F1M2Rudder
 ObjectTemplate.setPosition 0/1/-5.94
 ObjectTemplate.setRotation 0/0/-89.999
@@ -34030,6 +34045,7 @@ ObjectTemplate.TimeToLive 10
 ObjectTemplate.Distance 0
 ObjectTemplate.spawnOffset 0/0/0
 ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
 ObjectTemplate.MaxNrOfObjectSpawned 1
 ObjectTemplate.damageWhenLost 100
 
@@ -34067,7 +34083,8 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTAAGun
 ObjectTemplate.setToolTipType  TTAAGun
-ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_ammoplane_16x16.tga"
+ObjectTemplate.setMinimapIconSize 32
 
 rem *** F1M2-SupplyDepot ***
 ObjectTemplate.create SupplyDepot F1M2-SupplyDepot
@@ -37316,6 +37333,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M1_TailGunner_Base ***
 ObjectTemplate.create RotationalBundle G4M1_TailGunner_Base
@@ -37367,6 +37385,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M1_Turret_Ventral ***
 ObjectTemplate.create RotationalBundle G4M1_Turret_Ventral
@@ -37435,6 +37454,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem **********************************************
 rem *            G4M1_LeftGunner                 *
@@ -37469,6 +37489,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M1_SideGunner_Base ***
 ObjectTemplate.create RotationalBundle G4M1_SideGunner_Base
@@ -37522,6 +37543,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem ************************************************************************
 
@@ -38938,6 +38960,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M2_TailGunner_Base ***
 ObjectTemplate.create RotationalBundle G4M2_TailGunner_Base
@@ -39012,6 +39035,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M2_Turret_Ventral***
 ObjectTemplate.create RotationalBundle G4M2_Turret_Ventral
@@ -39125,6 +39149,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem **********************************************
 rem *            G4M2_LeftGunner                 *
@@ -39159,6 +39184,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M2_SideGunner_Base ***
 ObjectTemplate.create RotationalBundle G4M2_SideGunner_Base
@@ -39212,6 +39238,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M2_NoseGunner_Rot1 ***
 ObjectTemplate.create RotationalBundle G4M2_NoseGunner_Rot1
@@ -40837,6 +40864,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M2E_TailGunner_Base ***
 ObjectTemplate.create RotationalBundle G4M2E_TailGunner_Base
@@ -40916,6 +40944,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** G4M2E_Turret_Ventral***
@@ -40990,6 +41019,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem **********************************************
@@ -41031,6 +41061,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** G4M2E_SideGunner_Base ***
 ObjectTemplate.create RotationalBundle G4M2E_SideGunner_Base
@@ -42236,6 +42267,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** H8K2_Turret_X ***
 ObjectTemplate.create RotationalBundle H8K2_Turret_X
@@ -42333,6 +42365,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** lodH8K2Tail_Gunner***
 ObjectTemplate.create LodObject lodH8K2TailGunner
@@ -42435,6 +42468,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** lodH8K2Right***
@@ -42529,6 +42563,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** lodH8K2Left***
 ObjectTemplate.create LodObject lodH8K2Left
@@ -42604,6 +42639,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** H8K2_NoseGunner_Y ***
 ObjectTemplate.create RotationalBundle H8K2_NoseGunner_Y
@@ -46269,7 +46305,7 @@ ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Plane 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
-ObjectTemplate.aiTemplate KI100
+ObjectTemplate.aiTemplate KI84
 rem -------------------------------------
 ObjectTemplate.addTemplate lodKI100
 rem -------------------------------------
@@ -52088,14 +52124,13 @@ ObjectTemplate.addTemplate ki43iib_Can
 ObjectTemplate.addTemplate lodki43iibCockpit
 ObjectTemplate.addTemplate ki43iibCamera
 ObjectTemplate.setPosition 0/0.8/0.1
-rem ObjectTemplate.setPosition 0/0.8/0.3
 ObjectTemplate.addTemplate ki43iibEntry
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ki43iibSeat
 ObjectTemplate.setPosition 0/0.15/0.3
 ObjectTemplate.addTemplate ki43iibEngine
 ObjectTemplate.setPosition 0/0/2.516
-rem ObjectTemplate.setPosition 0/0/3.3648
+
 ObjectTemplate.addTemplate ki43iibBodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 
@@ -52112,8 +52147,13 @@ ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.addTemplate ki43iib_Aileron_L
 ObjectTemplate.setPosition -4.936/0.05/0.542
+ObjectTemplate.addTemplate ki43iib_Aileron_L_Visible
+ObjectTemplate.setPosition -4.936/0.05/0.542
 ObjectTemplate.setRotation 11.5/0/-6.7
+
 ObjectTemplate.addTemplate ki43iib_Aileron_R
+ObjectTemplate.setPosition 4.936/0.05/0.542
+ObjectTemplate.addTemplate ki43iib_Aileron_R_Visible
 ObjectTemplate.setPosition 4.936/0.05/0.542
 ObjectTemplate.setRotation -11.5/0/6.7
 
@@ -52418,19 +52458,17 @@ ObjectTemplate.addTemplate ki43iib_Can
 ObjectTemplate.addTemplate lodki43iibCockpit
 ObjectTemplate.addTemplate ki43iibCamera
 ObjectTemplate.setPosition 0/0.8/0.1
-rem ObjectTemplate.setPosition 0/0.8/0.3
 ObjectTemplate.addTemplate ki43iibEntry
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ki43iibSeat
 ObjectTemplate.setPosition 0/0.15/0.3
 ObjectTemplate.addTemplate ki43iibEngine
 ObjectTemplate.setPosition 0/0/2.516
+
 ObjectTemplate.addTemplate ki43iibBodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate ki43iib_rack
-
-ObjectTemplate.addTemplate ki43iib_bomber_Elevator
+ObjectTemplate.addTemplate ki43iib_Elevator
 ObjectTemplate.setPosition 0/0.135/-4.62
 ObjectTemplate.addTemplate ki43iibRudder
 ObjectTemplate.setPosition 0/-0.01/-4.77
@@ -52441,12 +52479,19 @@ ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ki43iib_Flap_R
 ObjectTemplate.setPosition 0/0/0
 
-ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_L
+ObjectTemplate.addTemplate ki43iib_Aileron_L
+ObjectTemplate.setPosition -4.936/0.05/0.542
+ObjectTemplate.addTemplate ki43iib_Aileron_L_Visible
 ObjectTemplate.setPosition -4.936/0.05/0.542
 ObjectTemplate.setRotation 11.5/0/-6.7
-ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_R
+
+ObjectTemplate.addTemplate ki43iib_Aileron_R
+ObjectTemplate.setPosition 4.936/0.05/0.542
+ObjectTemplate.addTemplate ki43iib_Aileron_R_Visible
 ObjectTemplate.setPosition 4.936/0.05/0.542
 ObjectTemplate.setRotation -11.5/0/6.7
+
+ObjectTemplate.addTemplate ki43iib_rack
 
 ObjectTemplate.addTemplate ki43iibGuns
 ObjectTemplate.addTemplate ki43iibBombRack
@@ -52540,7 +52585,6 @@ ObjectTemplate.addTemplate ki43iib_Can
 ObjectTemplate.addTemplate lodki43iibCockpit
 ObjectTemplate.addTemplate ki43iibCamera
 ObjectTemplate.setPosition 0/0.8/0.1
-rem ObjectTemplate.setPosition 0/0.8/0.3
 ObjectTemplate.addTemplate ki43iibEntry
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ki43iibSeat
@@ -52550,10 +52594,7 @@ ObjectTemplate.setPosition 0/0/2.516
 ObjectTemplate.addTemplate ki43iibBodyWingVertical
 ObjectTemplate.setRotation 0/0/-89.999
 
-ObjectTemplate.addTemplate ki43iib_rack
-
-
-ObjectTemplate.addTemplate ki43iib_bomber_Elevator
+ObjectTemplate.addTemplate ki43iib_Elevator
 ObjectTemplate.setPosition 0/0.135/-4.62
 ObjectTemplate.addTemplate ki43iibRudder
 ObjectTemplate.setPosition 0/-0.01/-4.77
@@ -52564,12 +52605,18 @@ ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate ki43iib_Flap_R
 ObjectTemplate.setPosition 0/0/0
 
-ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_L
+ObjectTemplate.addTemplate ki43iib_Aileron_L
+ObjectTemplate.setPosition -4.936/0.05/0.542
+ObjectTemplate.addTemplate ki43iib_Aileron_L_Visible
 ObjectTemplate.setPosition -4.936/0.05/0.542
 ObjectTemplate.setRotation 11.5/0/-6.7
-ObjectTemplate.addTemplate ki43iib_Bomber_Aileron_R
+
+ObjectTemplate.addTemplate ki43iib_Aileron_R
+ObjectTemplate.setPosition 4.936/0.05/0.542
+ObjectTemplate.addTemplate ki43iib_Aileron_R_Visible
 ObjectTemplate.setPosition 4.936/0.05/0.542
 ObjectTemplate.setRotation -11.5/0/6.7
+
 
 ObjectTemplate.addTemplate ki43iibGuns
 ObjectTemplate.addTemplate ki43iib_DummyCounter
@@ -52766,14 +52813,11 @@ ObjectTemplate.setDamping 12
 ObjectTemplate.invisible 1
 
 
-
-
 rem *** ki43iibBodyWingVertical ***
 ObjectTemplate.create Wing ki43iibBodyWingVertical
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/0/-0.1
 ObjectTemplate.setWingLift 1
-rem ObjectTemplate.setWingLift 1.5
 ObjectTemplate.setFlapLift 1.2
 
 rem *** ki43iib_Elevator ***
@@ -52789,26 +52833,7 @@ ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/0/0
 ObjectTemplate.setWingLift 1
 ObjectTemplate.setFlapLift 2.5
-rem ObjectTemplate.setWingLift 1.2
-rem ObjectTemplate.setFlapLift 2.1
 ObjectTemplate.rememberExcessInput 1
-
-rem *** ki43iib_Bomber_Elevator ***
-ObjectTemplate.create Wing ki43iib_Bomber_Elevator
-ObjectTemplate.setNetworkableInfo ki43iib_wing_info
-ObjectTemplate.geometry ki43iib_Elevator_m1
-ObjectTemplate.setMinRotation 0/-11.25/0
-ObjectTemplate.setMaxRotation 0/11.25/0
-ObjectTemplate.setMaxSpeed 0/22.5/0
-ObjectTemplate.setAcceleration 0/-100/0
-rem ObjectTemplate.setAcceleration 0/-22.5/0
-ObjectTemplate.setInputToPitch c_PIPitch
-ObjectTemplate.setAutomaticReset 1
-ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 1.2
-ObjectTemplate.setFlapLift 2
-ObjectTemplate.rememberExcessInput 1
-
 
 rem *** ki43iibRudder ***
 ObjectTemplate.create Wing ki43iibRudder
@@ -52832,9 +52857,9 @@ ObjectTemplate.setMaxRotation 0/2/0
 ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/30/0
 ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setPositionOffset 0/0/-1
-rem ObjectTemplate.setPositionOffset 0/0/0 UP
-rem ObjectTemplate.setPositionOffset 3/0/0.5
+ObjectTemplate.setPositionOffset 0/0/1
+rem ObjectTemplate.setPositionOffset 0/0/0 DN
+rem ObjectTemplate.setPositionOffset 0/0/-1 DN
 ObjectTemplate.setFlapLift 1
 ObjectTemplate.setRegulateToLift 6
 ObjectTemplate.setWingToRegulatorRatio 1
@@ -52847,17 +52872,29 @@ ObjectTemplate.setMaxRotation 0/2/0
 ObjectTemplate.setMaxSpeed 0/30/0
 ObjectTemplate.setAcceleration 0/30/0
 ObjectTemplate.setPitchOffset 0
-ObjectTemplate.setPositionOffset 0/0/-1
-rem ObjectTemplate.setPositionOffset 0/0/0 UP
-rem ObjectTemplate.setPositionOffset -3/0/0.5
+ObjectTemplate.setPositionOffset 0/0/1
+rem ObjectTemplate.setPositionOffset 0/0/0 DN
+rem ObjectTemplate.setPositionOffset 0/0/-1 DN
 ObjectTemplate.setFlapLift 1
 ObjectTemplate.setRegulateToLift 6
 ObjectTemplate.setWingToRegulatorRatio 1
+
 
 rem *** ki43iib_Aileron_L ***
 ObjectTemplate.create Wing ki43iib_Aileron_L
 ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+ObjectTemplate.setMinRotation 0/-18/0
+ObjectTemplate.setMaxRotation 0/18/0
+ObjectTemplate.setMaxSpeed 0/24/0
+ObjectTemplate.setAcceleration 0/-24/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0.7
+ObjectTemplate.setFlapLift 2.8
+
+ObjectTemplate.create RotationalBundle ki43iib_Aileron_L_Visible
 ObjectTemplate.geometry ki43iib_Aileron_L_m1
 ObjectTemplate.setMinRotation 0/-18/0
 ObjectTemplate.setMaxRotation 0/18/0
@@ -52865,17 +52902,11 @@ ObjectTemplate.setMaxSpeed 0/24/0
 ObjectTemplate.setAcceleration 0/-24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
-rem ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPositionOffset 0.45/0/0
-ObjectTemplate.setWingLift 0.7
-ObjectTemplate.setFlapLift 2.8
 
 rem *** ki43iib_Aileron_R ***
 ObjectTemplate.create Wing ki43iib_Aileron_R
 ObjectTemplate.setNetworkableInfo ki43iib_wing_info
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
-ObjectTemplate.geometry ki43iib_Aileron_R_m1
 ObjectTemplate.setMinRotation 0/-18/0
 ObjectTemplate.setMaxRotation 0/18/0
 ObjectTemplate.setMaxSpeed 0/24/0
@@ -52888,46 +52919,14 @@ ObjectTemplate.setPositionOffset -0.45/0/0
 ObjectTemplate.setWingLift 0.7
 ObjectTemplate.setFlapLift 2.8
 
-
-rem *** ki43iib_Bomber_Aileron_L ***
-ObjectTemplate.create Wing ki43iib_Bomber_Aileron_L
-ObjectTemplate.setNetworkableInfo ki43iib_wing_info
-ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
-ObjectTemplate.geometry ki43iib_Aileron_L_m1
-ObjectTemplate.setMinRotation 0/-10.8/0
-ObjectTemplate.setMaxRotation 0/10.8/0
-ObjectTemplate.setMaxSpeed 0/100/0
-rem ObjectTemplate.setMaxSpeed 0/10.8/0
-ObjectTemplate.setAcceleration 0/-100/0
-rem ObjectTemplate.setAcceleration 0/-22.6/0
-ObjectTemplate.setInputToPitch c_PIRoll
-ObjectTemplate.setAutomaticReset 1
-rem ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPitchOffset -0.5
-ObjectTemplate.setPositionOffset 0.45/0/0
-ObjectTemplate.setWingLift 0.7
-rem ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 2.2
-
-rem *** ki43iib_Bomber_Aileron_R ***
-ObjectTemplate.create Wing ki43iib_Bomber_Aileron_R
-ObjectTemplate.setNetworkableInfo ki43iib_wing_info
-ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+ObjectTemplate.create RotationalBundle ki43iib_Aileron_R_Visible
 ObjectTemplate.geometry ki43iib_Aileron_R_m1
-ObjectTemplate.setMinRotation 0/-10.8/0
-ObjectTemplate.setMaxRotation 0/10.8/0
-ObjectTemplate.setMaxSpeed 0/100/0
-rem ObjectTemplate.setMaxSpeed 0/10.8/0
-ObjectTemplate.setAcceleration 0/100/0
-rem ObjectTemplate.setAcceleration 0/22.6/0
+ObjectTemplate.setMinRotation 0/-18/0
+ObjectTemplate.setMaxRotation 0/18/0
+ObjectTemplate.setMaxSpeed 0/24/0
+ObjectTemplate.setAcceleration 0/24/0
 ObjectTemplate.setInputToPitch c_PIRoll
 ObjectTemplate.setAutomaticReset 1
-rem ObjectTemplate.setPitchOffset -0.25
-ObjectTemplate.setPitchOffset -0.5
-ObjectTemplate.setPositionOffset -0.45/0/0
-ObjectTemplate.setWingLift 0.7
-rem ObjectTemplate.setWingLift 1.5
-ObjectTemplate.setFlapLift 2.2
 
 rem ===== EOF =====
 rem ============================================================================
@@ -61346,6 +61345,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki67_TailGunner_Base ***
 ObjectTemplate.create RotationalBundle Ki67_TailGunner_Base
@@ -61423,6 +61423,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Ki67_Turret_Ventral***
@@ -61524,6 +61525,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki67_RightGunner_Base ***
 ObjectTemplate.create RotationalBundle Ki67_RightGunner_Base
@@ -61584,6 +61586,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki67_LeftGunner_Base ***
 ObjectTemplate.create RotationalBundle Ki67_LeftGunner_Base
@@ -61647,6 +61650,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki67_NoseGunner_Base ***
 ObjectTemplate.create RotationalBundle Ki67_NoseGunner_Base
@@ -65344,6 +65348,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki-67_SRLGA_TurretGunner_PCO2 ***
 ObjectTemplate.create PlayerControlObject Ki-67_SRLGA_TurretGunner_PCO2
@@ -65374,6 +65379,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki-67_SRLGA_RightGunner_PCO3 ***
 ObjectTemplate.create PlayerControlObject Ki-67_SRLGA_RightGunner_PCO3
@@ -65404,6 +65410,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki-67_SRLGA_SideGunner_Base ***
 ObjectTemplate.create RotationalBundle Ki-67_SRLGA_SideGunner_Base
@@ -65452,6 +65459,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ki-67_SRLGA_BottomGunner_PCO5 ***
 ObjectTemplate.create PlayerControlObject Ki-67_SRLGA_BottomGunner_PCO5
@@ -75816,7 +75824,7 @@ ObjectTemplate.addArmorEffect 50 em_PlaneDamage -0.001/0.052/-2.2
 ObjectTemplate.addArmorEffect 40 e_Bf109Fire -0.001/0.052/-2.2
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate Shusui
 rem -------------------------------------

@@ -2048,6 +2048,308 @@ ObjectTemplate.setRotation 180/0/0
 
 ObjectTemplate.addTemplate ar234_cockpit_m1
 ObjectTemplate.setPosition -0.001/-0.401/3.725
+
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine1
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine1
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine2
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine2
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine3
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine3
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine4
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine4
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine5
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine5
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine6
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine6
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine7
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine7
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine8
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine8
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine9
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine9
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine10
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine10
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine11
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine11
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine12
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine12
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine13
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine13
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine14
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine14
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine15
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine15
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine16
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine16
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine17
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine17
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine18
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine18
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine19
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine19
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine20
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine20
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine21
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine21
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine22
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine22
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine23
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine23
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine24
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine24
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine25
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine25
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine26
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine26
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine27
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine27
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine28
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine28
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine29
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine29
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine30
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine30
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine31
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine31
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine32
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine32
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine33
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine33
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine34
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine34
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine35
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine35
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine36
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine36
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine37
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine37
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine38
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine38
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine39
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine39
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine40
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine40
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine41
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine41
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine42
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine42
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine43
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine43
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine44
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine44
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine45
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine45
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine46
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine46
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine47
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine47
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine48
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine48
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine49
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine49
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine50
+ObjectTemplate.setPosition -2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ar234B-2N_RockerEngine50
+ObjectTemplate.setPosition 2.2083/0.0344/-2.5954
+ObjectTemplate.setRotation 180/0/0
+
 rem -------------------------------------
 
 rem *** lodAr234B-2NCockpit ***
@@ -2355,11 +2657,761 @@ rem --------------------------------------------
 ObjectTemplate.setInputFire c_PIAltFire 
 ObjectTemplate.projectileTemplate kometFumes 
 ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.magSize 100
+ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1 
-ObjectTemplate.roundOfFire 12
 ObjectTemplate.fireingForce 37
-ObjectTemplate.AmmoType	10
+ObjectTemplate.AmmoType	99
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine1
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.08
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine2
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.17
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine3
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.25
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine4
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.33
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine5
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.42
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine6
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.5
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine7
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.58
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine8
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.67
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine9
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.75
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine10
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.83
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine11
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.92
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine12
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine13
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.08
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine14
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.17
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine15
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.25
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine16
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.33
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine17
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.42
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine18
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.5
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine19
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.58
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine20
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.67
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine21
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.75
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine22
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.83
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine23
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.92
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine24
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine25
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.08
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine26
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.17
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine27
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.25
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine28
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.33
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine29
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.42
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine30
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.5
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine31
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.58
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine32
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.67
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine33
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.75
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine34
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.83
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine35
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.92
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine36
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine37
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.08
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine38
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.17
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine39
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.25
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine40
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.33
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine41
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.42
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine42
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.5
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine43
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.58
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine44
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.67
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine45
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.75
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine46
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.83
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine47
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.92
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine48
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 4
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine49
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 4.08
+
+ObjectTemplate.create FireArms Ar234B-2N_RockerEngine50
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 37
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 4.17
+
 
 rem ===== EOF =====
 rem ============================================================================
@@ -3154,7 +4206,8 @@ ObjectTemplate.setAcceleration 10/0/600
 ObjectTemplate.setInputToRoll c_PIThrottle
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 20
+ObjectTemplate.setTorque 22
+rem ObjectTemplate.setTorque 20
 ObjectTemplate.setDifferential 5
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.3
@@ -3185,7 +4238,7 @@ ObjectTemplate.setFlapLift 1.1
 
 rem *** Bf109Flaps4Visible ***
 ObjectTemplate.create RotationalBundle Bf109Flaps4Visible
-ObjectTemplate.geometry Bf109-k_Flap_right_outer_M1
+ObjectTemplate.geometry BF109_Flap_right_outer_M1
 rem ---------------------------------------------
 ObjectTemplate.setMinRotation 0/-14.5/0
 ObjectTemplate.setMaxRotation 0/14/0
@@ -13211,7 +14264,8 @@ rem *** Do335_Body_Wing ***
 ObjectTemplate.create Wing Do335_Body_Wing
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/0/0
-ObjectTemplate.setWingLift 5
+ObjectTemplate.setWingLift 2
+rem ObjectTemplate.setWingLift 5
 
 rem *** Do335_Flap_Left ***
 ObjectTemplate.create Wing Do335_Flap_Left
@@ -13442,8 +14496,8 @@ ObjectTemplate.setAcceleration 0/28/0
 ObjectTemplate.setInputToPitch c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setPositionOffset 0/-0.5/0
-ObjectTemplate.setWingLift 2
-ObjectTemplate.setFlapLift 1.5
+ObjectTemplate.setWingLift 1
+ObjectTemplate.setFlapLift 0.5
 
 rem *** Do335B-2_Elevator ***
 ObjectTemplate.create Wing Do335B-2_Elevator
@@ -14884,7 +15938,7 @@ ObjectTemplate.addArmorEffect 50 e_AA-GunDamage 0/0/-0.099
 ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner
@@ -14959,7 +16013,6 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate FlettnerRudder
 ObjectTemplate.setPosition 0/0/-5
 ObjectTemplate.setRotation 0/0/-90
-
 rem -------------------------------------
 ObjectTemplate.addTemplate FlettnerInvisibleWheel
 ObjectTemplate.setPosition 1.3/-2.1/2.5
@@ -15194,7 +16247,7 @@ ObjectTemplate.addArmorEffect 50 e_AA-GunDamage 0/0/-0.099
 ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_MG81
@@ -15246,18 +16299,14 @@ ObjectTemplate.addTemplate FlettnerEntry
 ObjectTemplate.setPosition 0/0/-3
 
 ObjectTemplate.addTemplate Flettner_HoveringEngineBundle
-ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.setPosition 0/2/3
+ObjectTemplate.addTemplate Flettner_HoveringEngineBundle2
+ObjectTemplate.setPosition 0/2/-3
+ObjectTemplate.addTemplate Flettner_HoverRollEngineBundle
+ObjectTemplate.setPosition 0/2/0
 
 ObjectTemplate.addTemplate Flettner_MeterEngine
 ObjectTemplate.setPosition 0/0/0
-
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/3.5
-ObjectTemplate.setRotation 90/0/0
-ObjectTemplate.addTemplate Flettner_TailEngine
-ObjectTemplate.setPosition 0/0/-5
-ObjectTemplate.setRotation -90/0/0
-
 
 ObjectTemplate.addTemplate Flettner_RightRotor
 ObjectTemplate.setPosition 0.285/0.12/-0.011
@@ -15273,7 +16322,6 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate FlettnerRudder
 ObjectTemplate.setPosition 0/0/-5
 ObjectTemplate.setRotation 0/0/-90
-
 rem -------------------------------------
 ObjectTemplate.addTemplate FlettnerInvisibleWheel
 ObjectTemplate.setPosition 1.3/-2.1/2.5
@@ -15291,7 +16339,6 @@ ObjectTemplate.setPosition -1.02/-2.3/-0.648
 ObjectTemplate.addTemplate FlettnerWeapon_MG81
 ObjectTemplate.addTemplate FlettnerAltWeapon_GrenHolder
 ObjectTemplate.setRotation 0/0/-179.999
-ObjectTemplate.addTemplate FlettnerWeapon_MG812
 rem ObjectTemplate.addTemplate Air_Spotter
 rem -------------------------------------
 
@@ -15332,7 +16379,7 @@ ObjectTemplate.addArmorEffect 50 e_AA-GunDamage 0/0/-0.099
 ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_Giesskanne
@@ -15463,7 +16510,7 @@ ObjectTemplate.addArmorEffect 50 e_AA-GunDamage 0/0/-0.099
 ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_AT
@@ -15595,7 +16642,7 @@ ObjectTemplate.addArmorEffect 50 e_AA-GunDamage 0/0/-0.099
 ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_SG44
@@ -15814,7 +16861,7 @@ ObjectTemplate.addArmorEffect 50 e_AA-GunDamage 0/0/-0.099
 ObjectTemplate.addArmorEffect 15 e_KettenKradFire 0/0.65/0.15
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Flettner 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.aiTemplate Flettner
 rem -------------------------------------
 ObjectTemplate.addTemplate lodFlettner_MG42
@@ -16258,30 +17305,16 @@ rem -------------------------------------
 ObjectTemplate.projectileTemplate 7,92x57mmProjectile
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.setTracerTemplate Tracer_7,92x57mmProjectile CRD_UNIFORM/2/4/0
-ObjectTemplate.magSize 900
+ObjectTemplate.magSize 1800
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 705
-ObjectTemplate.roundOfFire 15
+ObjectTemplate.roundOfFire 12.5
 ObjectTemplate.setMinDev 1.5
 ObjectTemplate.AmmoType	8
+ObjectTemplate.addFireArmsPosition 0/-1.35/2.85 0/0/0
 ObjectTemplate.addFireArmsPosition 0/-1.35/2.85 0/0/0
 ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsLightShake
 
-ObjectTemplate.create FireArms FlettnerWeapon_MG812
-ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
-ObjectTemplate.aiTemplate BF109MachineGun
-rem -------------------------------------
-ObjectTemplate.projectileTemplate 7,92x57mmProjectile
-ObjectTemplate.projectilePosition 0/0/1
-ObjectTemplate.setTracerTemplate Tracer_7,92x57mmProjectile CRD_UNIFORM/2/4/0
-ObjectTemplate.magSize 600
-ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 705
-ObjectTemplate.roundOfFire 10
-ObjectTemplate.setMinDev 1.5
-ObjectTemplate.AmmoType	8
-ObjectTemplate.addFireArmsPosition 0/-1.35/2.85 0/0/0
-ObjectTemplate.setFireCameraShakeAnimationState FirePlaneGunsLightShake
 
 ObjectTemplate.create FireArms FlettnerWeapon_Giesskanne
 ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
@@ -17492,7 +18525,7 @@ ObjectTemplate.addArmorEffect 70 em_PlaneDamage 0/0.103/1.91
 ObjectTemplate.addArmorEffect 50 e_Bf109Fire 0/0.6/2.11
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate FW190
 rem -------------------------------------
@@ -21455,6 +22488,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** he111RearBrowningBase***
 ObjectTemplate.create RotationalBundle he111RearBrowningBase
@@ -21557,6 +22591,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** he111_FrontMGCameraRotation ***
 ObjectTemplate.create RotationalBundle he111_FrontMGCameraRotation
@@ -21645,6 +22680,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** he111_BackMGBase ***
 ObjectTemplate.create RotationalBundle he111_BackMGBase
@@ -22489,6 +23525,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-11_NoseMGBase ***
 ObjectTemplate.create RotationalBundle He111H-11_NoseMGBase
@@ -22559,6 +23596,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** He111H-11RearPart ***
@@ -22641,6 +23679,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-11_VentralMGBase ***
 ObjectTemplate.create RotationalBundle He111H-11_VentralMGBase
@@ -22711,6 +23750,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-11_LeftMGBase ***
 ObjectTemplate.create RotationalBundle He111H-11_LeftMGBase
@@ -22780,6 +23820,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-11_RightMGBase ***
 ObjectTemplate.create RotationalBundle He111H-11_RightMGBase
@@ -23694,6 +24735,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-3_NoseMGBase ***
 ObjectTemplate.create RotationalBundle He111H-3_NoseMGBase
@@ -23791,6 +24833,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-3DorsalMGBase ***
 ObjectTemplate.create RotationalBundle He111H-3DorsalMGBase
@@ -23856,6 +24899,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-3_VentralMGBase ***
 ObjectTemplate.create RotationalBundle He111H-3_VentralMGBase
@@ -23920,6 +24964,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-3_LeftMGBase ***
 ObjectTemplate.create RotationalBundle He111H-3_LeftMGBase
@@ -23983,6 +25028,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-3_RightMGBase ***
 ObjectTemplate.create RotationalBundle He111H-3_RightMGBase
@@ -24446,6 +25492,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-6_NoseMGBase ***
 ObjectTemplate.create RotationalBundle He111H-6_NoseMGBase
@@ -24545,6 +25592,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-6DorsalMGBase ***
 ObjectTemplate.create RotationalBundle He111H-6DorsalMGBase
@@ -24613,6 +25661,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-6_VentralMGBase ***
 ObjectTemplate.create RotationalBundle He111H-6_VentralMGBase
@@ -24679,6 +25728,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-6_LeftMGBase ***
 ObjectTemplate.create RotationalBundle He111H-6_LeftMGBase
@@ -24744,6 +25794,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111H-6_RightMGBase ***
 ObjectTemplate.create RotationalBundle He111H-6_RightMGBase
@@ -25532,6 +26583,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.setPcoId 0
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** He111ZComplexPCO0 ***
@@ -26152,6 +27204,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** He111Z_Entry_PCO2 ***
 ObjectTemplate.create EntryPoint He111Z_Entry_PCO2
@@ -33200,6 +34253,7 @@ ObjectTemplate.setToolTipType  TTDiveBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ju52BrowningBase ***
 ObjectTemplate.create RotationalBundle Ju52BrowningBase
@@ -38840,6 +39894,7 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ju88A_Turret_Nose ***
 ObjectTemplate.create RotationalBundle Ju88A_NoseGunner_WeaponBase
@@ -38919,6 +39974,7 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ju88A_RearGunner_WeaponBase ***
 ObjectTemplate.create Bundle Ju88A_RearGunner_WeaponBase
@@ -39029,6 +40085,7 @@ ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Ju88A_BellyGunner_WeaponBase ***
@@ -40473,6 +41530,7 @@ rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
 ObjectTemplate.sonarPos 1
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Ju88G-7_RearGunner_WeaponBase ***
 ObjectTemplate.create Bundle Ju88G-7_RearGunner_WeaponBase
@@ -40885,7 +41943,7 @@ ObjectTemplate.addArmorEffect 50 em_PlaneDamage -0.001/0.052/-2.2
 ObjectTemplate.addArmorEffect 40 e_Bf109Fire -0.001/0.052/-2.2
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_Plane 0/0/0
-ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
 ObjectTemplate.damageFromWater 1
 ObjectTemplate.aiTemplate komet
 rem -------------------------------------
@@ -43180,6 +44238,157 @@ ObjectTemplate.setRotation 0/0/1
 ObjectTemplate.addTemplate me262-C_RocketEngine
 ObjectTemplate.setPosition 0/0/-6
 ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.addTemplate me262-C_RocketEngine1
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine2
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine3
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine4
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine5
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine6
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine7
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine8
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine9
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine10
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine11
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine12
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine13
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine14
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine15
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine16
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine17
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine18
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine19
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine20
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine21
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine22
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine23
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine24
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine25
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine26
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine27
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine28
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine29
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine30
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine31
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine32
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine33
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine34
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine35
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine36
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine37
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine38
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine39
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine40
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine41
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine42
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine43
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine44
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine45
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine46
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine47
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine48
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine49
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate me262-C_RocketEngine50
+ObjectTemplate.setPosition 0/0/-6
+ObjectTemplate.setRotation 180/0/0
 rem -------------------------------------
 
 rem ===== EOF =====
@@ -43188,10 +44397,9 @@ rem folder = me262-c
 rem sauce = Weapons.con
 rem ============================================================================
 
-
 rem *** me262-C_RocketEngine *** 
 ObjectTemplate.create FireArms me262-C_RocketEngine
-ObjectTemplate.setNetworkableInfo kometEngineInfo 
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID 
 ObjectTemplate.loadSoundScript ../me262-c/Sounds/me262-C_RocketEngine.ssc 
 rem --------------------------------------------
 ObjectTemplate.addTemplate e_KometFume
@@ -43203,11 +44411,761 @@ rem --------------------------------------------
 ObjectTemplate.setInputFire c_PIAltFire 
 ObjectTemplate.projectileTemplate kometFumes 
 ObjectTemplate.projectilePosition 0/0/0
-ObjectTemplate.magSize 100
+ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1 
-ObjectTemplate.roundOfFire 12 
 ObjectTemplate.fireingForce 75
-ObjectTemplate.AmmoType	10
+ObjectTemplate.AmmoType	99
+
+ObjectTemplate.create FireArms me262-C_RocketEngine1
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.08
+
+ObjectTemplate.create FireArms me262-C_RocketEngine2
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.17
+
+ObjectTemplate.create FireArms me262-C_RocketEngine3
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.25
+
+ObjectTemplate.create FireArms me262-C_RocketEngine4
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.33
+
+ObjectTemplate.create FireArms me262-C_RocketEngine5
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.42
+
+ObjectTemplate.create FireArms me262-C_RocketEngine6
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.5
+
+ObjectTemplate.create FireArms me262-C_RocketEngine7
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.58
+
+ObjectTemplate.create FireArms me262-C_RocketEngine8
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.67
+
+ObjectTemplate.create FireArms me262-C_RocketEngine9
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.75
+
+ObjectTemplate.create FireArms me262-C_RocketEngine10
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.83
+
+ObjectTemplate.create FireArms me262-C_RocketEngine11
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 0.92
+
+ObjectTemplate.create FireArms me262-C_RocketEngine12
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1
+
+ObjectTemplate.create FireArms me262-C_RocketEngine13
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.08
+
+ObjectTemplate.create FireArms me262-C_RocketEngine14
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.17
+
+ObjectTemplate.create FireArms me262-C_RocketEngine15
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.25
+
+ObjectTemplate.create FireArms me262-C_RocketEngine16
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.33
+
+ObjectTemplate.create FireArms me262-C_RocketEngine17
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.42
+
+ObjectTemplate.create FireArms me262-C_RocketEngine18
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.5
+
+ObjectTemplate.create FireArms me262-C_RocketEngine19
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.58
+
+ObjectTemplate.create FireArms me262-C_RocketEngine20
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.67
+
+ObjectTemplate.create FireArms me262-C_RocketEngine21
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.75
+
+ObjectTemplate.create FireArms me262-C_RocketEngine22
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.83
+
+ObjectTemplate.create FireArms me262-C_RocketEngine23
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 1.92
+
+ObjectTemplate.create FireArms me262-C_RocketEngine24
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2
+
+ObjectTemplate.create FireArms me262-C_RocketEngine25
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.08
+
+ObjectTemplate.create FireArms me262-C_RocketEngine26
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.17
+
+ObjectTemplate.create FireArms me262-C_RocketEngine27
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.25
+
+ObjectTemplate.create FireArms me262-C_RocketEngine28
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.33
+
+ObjectTemplate.create FireArms me262-C_RocketEngine29
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.42
+
+ObjectTemplate.create FireArms me262-C_RocketEngine30
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.5
+
+ObjectTemplate.create FireArms me262-C_RocketEngine31
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.58
+
+ObjectTemplate.create FireArms me262-C_RocketEngine32
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.67
+
+ObjectTemplate.create FireArms me262-C_RocketEngine33
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.75
+
+ObjectTemplate.create FireArms me262-C_RocketEngine34
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.83
+
+ObjectTemplate.create FireArms me262-C_RocketEngine35
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 2.92
+
+ObjectTemplate.create FireArms me262-C_RocketEngine36
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3
+
+ObjectTemplate.create FireArms me262-C_RocketEngine37
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.08
+
+ObjectTemplate.create FireArms me262-C_RocketEngine38
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.17
+
+ObjectTemplate.create FireArms me262-C_RocketEngine39
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.25
+
+ObjectTemplate.create FireArms me262-C_RocketEngine40
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.33
+
+ObjectTemplate.create FireArms me262-C_RocketEngine41
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.42
+
+ObjectTemplate.create FireArms me262-C_RocketEngine42
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.5
+
+ObjectTemplate.create FireArms me262-C_RocketEngine43
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.58
+
+ObjectTemplate.create FireArms me262-C_RocketEngine44
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.67
+
+ObjectTemplate.create FireArms me262-C_RocketEngine45
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.75
+
+ObjectTemplate.create FireArms me262-C_RocketEngine46
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.83
+
+ObjectTemplate.create FireArms me262-C_RocketEngine47
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 3.92
+
+ObjectTemplate.create FireArms me262-C_RocketEngine48
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 4
+
+ObjectTemplate.create FireArms me262-C_RocketEngine49
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 4.08
+
+ObjectTemplate.create FireArms me262-C_RocketEngine50
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo_ForceID
+ObjectTemplate.addTemplate e_KometFume
+ObjectTemplate.setInputId -1 
+ObjectTemplate.startoneffects 0 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.projectileTemplate kometFumes
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.fireingForce 75
+ObjectTemplate.AmmoType	99
+ObjectTemplate.FireDelay 4.17
+
 
 rem ===== EOF =====
 rem ============================================================================
@@ -44170,6 +46128,7 @@ ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me321_RotationDoorL ***
 ObjectTemplate.create RotationalBundle Me321_RotationDoorL
@@ -44267,6 +46226,7 @@ ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Me321_PCO3 ***
@@ -44302,6 +46262,7 @@ ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Me321_MG15X ***
@@ -44378,6 +46339,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me321_PCO5 ***
 ObjectTemplate.create PlayerControlObject Me321_PCO5
@@ -44415,6 +46377,7 @@ ObjectTemplate.setToolTipType  TTBomber
 rem ---------------- Scope 1.43x ---------------------
 rem ObjectTemplate.vehicleFov 0.7
 rem --------------------------------------------------
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me321_SideMG15Rotation ***
 ObjectTemplate.create RotationalBundle Me321_SideMG15Rotation
@@ -45441,6 +47404,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me323_RotationDoorL ***
 ObjectTemplate.create RotationalBundle Me323_RotationDoorL
@@ -45585,6 +47549,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Me323_PCO3 ***
@@ -45618,6 +47583,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Me323_EDL151X ***
@@ -45706,6 +47672,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me323_PCO5 ***
 ObjectTemplate.create PlayerControlObject Me323_PCO5
@@ -45739,6 +47706,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me323_SideMG131Rotation ***
 ObjectTemplate.create RotationalBundle Me323_SideMG131Rotation
@@ -46788,6 +48756,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me323E2WT_front151X ***
 ObjectTemplate.create RotationalBundle Me323E2WT_front151X
@@ -46881,6 +48850,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Me323E2WT_PCO3 ***
@@ -46920,6 +48890,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Me323E2WT_EDL151X ***
@@ -47046,6 +49017,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** Me323E2WT_PCO5 ***
 ObjectTemplate.create PlayerControlObject Me323E2WT_PCO5
@@ -47088,6 +49060,7 @@ rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTBomber
 ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setHasTurretIcon 1
 
 
 rem *** Me323E2WT_SideMG151Rotation ***
