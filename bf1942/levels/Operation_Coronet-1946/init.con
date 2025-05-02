@@ -54,7 +54,8 @@ game.setKit 1 4 5Jap_OfficerMilitia
 
 game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1Us_ClosequartersThompsonSmoke2R
-game.setKit 2 1 2Us_AssaultGarand
+rem game.setKit 2 1 2Us_AssaultGarand
+game.setKit 2 1 2Us_AssaultT20E2
 game.setKit 2 2 3Us_OfficerThompson
 game.setKit 2 3 4Us_TankhunterThompson
 game.setKit 2 4 5US_TankCommanderColt

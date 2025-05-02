@@ -58,7 +58,8 @@ game.setKit 1 4 5Jap_TankCommanderNambuSmoke3RD
 game.setTeamSkin 2 USSoldier
 rem game.setKit 2 0 1US_OfficerthompsonSmoke2R
 game.setKit 2 0 1Us_OfficerThompsonSmoke2RD44
-game.setKit 2 1 2US_AssaultGarand
+rem game.setKit 2 1 2US_AssaultGarand
+game.setKit 2 1 2Us_AssaultT20E2
 game.setKit 2 2 3Us_ATBazookaM1Carbine
 game.setKit 2 3 4US_TankhunterGarandSatchel
 rem game.setKit 2 4 5US_TankCommanderColtSmoke3R
