@@ -2780,7 +2780,7 @@ ObjectTemplate.addTemplate Arisaka38Lod
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.038/1.082
+ObjectTemplate.setPosition 0/0.038/0.982
 
 
 rem -----------------------------------------------------
@@ -2888,7 +2888,7 @@ ObjectTemplate.addTemplate T97SniperLod
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.038/1.082
+ObjectTemplate.setPosition 0/0.038/0.982
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -3118,7 +3118,7 @@ ObjectTemplate.addTemplate BayonetArisaka38
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.038/1.082
+ObjectTemplate.setPosition 0/0.038/0.982
 
 rem -----------------------------------------------------
 rem ** Objects ArisakaBay
@@ -3128,7 +3128,7 @@ rem ------------------------------------------------------
 ObjectTemplate.create Bundle Arisaka38BayGUNBODY
 ObjectTemplate.geometry Arisaka38
 ObjectTemplate.addTemplate Type30bayonet_m1
-ObjectTemplate.setPosition 0/0.0288/0.96
+ObjectTemplate.setPosition 0/0.0288/0.91
 
 ObjectTemplate.create AnimatedBundle Arisaka38BayComplex
 ObjectTemplate.geometry 
@@ -3211,7 +3211,7 @@ rem folder = AS44
 rem sauce = Geometries.con
 rem ============================================================================
 GeometryTemplate.create StandardMesh AS44
-GeometryTemplate.file AS44_base_m1
+GeometryTemplate.file AS44_base_fold_m1
 GeometryTemplate.hasDynamicShadow 1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 3
@@ -3236,7 +3236,7 @@ GeometryTemplate.setLodDistance 1 3
 GeometryTemplate.setLodDistance 2 30
 
 GeometryTemplate.create StandardMesh AS44Simple
-GeometryTemplate.file AS44_shad_m1
+GeometryTemplate.file AS44_shad_fold_m1
 GeometryTemplate.hasDynamicShadow 0
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 300
@@ -6086,10 +6086,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.04/0.525
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.04/0.08
+ObjectTemplate.setPosition 0/0/0.08
 ObjectTemplate.setRotation 0/0/0
 
 rem ** SimpleObjects
@@ -6193,10 +6193,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.04/0.525
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.04/0.08
+ObjectTemplate.setPosition 0/0/0.08
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -10584,10 +10584,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.03/0.70
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.04/0.18
+ObjectTemplate.setPosition 0/0/0.18
 ObjectTemplate.setRotation 0/0/0
 
 rem *** Objects ***
@@ -10684,10 +10684,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.03/0.70
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.04/0.18
+ObjectTemplate.setPosition 0/0/0.18
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -12546,7 +12546,7 @@ ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.damageType 1
 ObjectTemplate.material 207
 ObjectTemplate.material2 207
-ObjectTemplate.radius 10
+ObjectTemplate.radius 14
 ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
@@ -12578,7 +12578,33 @@ GeometryTemplate.setLodDistance 3 20
 GeometryTemplate.setLodDistance 4 30
 GeometryTemplate.setLodDistance 5 100
 
+GeometryTemplate.create StandardMesh Garand_grenade_M9A1_m1
+GeometryTemplate.file RifleGrenade_M9A1_m1
+GeometryTemplate.scale 1.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
 
+GeometryTemplate.create StandardMesh GarandRGL_LOD_m1
+GeometryTemplate.file GarandRGL_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh GarandEnerga_LOD_m1
+GeometryTemplate.file GarandEnerga_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
 
 rem ===== EOF =====
 rem ============================================================================
@@ -12586,17 +12612,25 @@ rem folder = GarandGrenade
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
+
+rem GarandGrenade
+rem ID:5
+rem GarandGrenade_HEAT
+rem ID:6
+rem GarandGrenade_HEAT_Energa
+rem ID:6
+
 ObjectTemplate.create HandFireArms GarandGrenade
 ObjectTemplate.itemIndex 5
 ObjectTemplate.networkableInfo HandFireArmsInfo
-ObjectTemplate.visibleDummyProjectileTemplate GarandGrenaderound
 ObjectTemplate.projectileTemplate GarandGrenadeProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
-ObjectTemplate.reloadtime 5
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
 ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
 objectTemplate.aiTemplate GarandGrenadeAI
@@ -12609,8 +12643,7 @@ ObjectTemplate.addRootSpeed 0
 ObjectTemplate.AmmoType	2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
-ObjectTemplate.ejectClipTime 0.6
-ObjectTemplate.FireDelay 1.5
+ObjectTemplate.FireDelay 0.8
 
 ObjectTemplate.altFireOnce 1
 
@@ -12633,21 +12666,14 @@ Rem *** Deviation  End *****
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../GarandGrenade/Sounds/GarandGrenade.ssc
 ObjectTemplate.GUIIndex 18
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/magbar_Garand_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/magbar_Garand_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 20
-ObjectTemplate.setAmomBarPosX 6
-ObjectTemplate.setAmomBarPosY -17
-ObjectTemplate.setAmomBarTextPosX 5
-ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_SpringfieldGrenade.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_M1Garand.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
 
-ObjectTemplate.createSkeleton animations/M1Garand.ske
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
 ObjectTemplate.useSkeletonPartAsMain GarandGrenade
 ObjectTemplate.addTemplate GarandGrenadeLod
 
@@ -12664,21 +12690,28 @@ ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.04/0.28
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.create SimpleObject GarandLauncher
-ObjectTemplate.geometry Garand_launcher
-
-ObjectTemplate.create SimpleObject GarandGrenaderound
-ObjectTemplate.geometry Garand_grenade
-
-rem ** SimpleObjects
-
-
-ObjectTemplate.create AnimatedBundle GarandGrenadeComplex
+ObjectTemplate.create Bundle GarandGrenadeGUNBODY
 ObjectTemplate.geometry M1Garand
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.addTemplate GarandLauncher
 ObjectTemplate.setPosition 0.0/0.0/0.12
-ObjectTemplate.createSkeleton animations/M1Garand.ske
+
+ObjectTemplate.create SimpleObject GarandLauncher
+ObjectTemplate.geometry Garand_launcher
+
+ObjectTemplate.create Bundle GarandGrenaderound
+ObjectTemplate.addTemplate GarandGrenaderoundVisible
+ObjectTemplate.setPosition 0/0/0.05
+
+ObjectTemplate.create SimpleObject GarandGrenaderoundVisible
+ObjectTemplate.geometry Garand_grenade
+
+rem ** SimpleObjects
+ObjectTemplate.create AnimatedBundle GarandGrenadeComplex
+ObjectTemplate.geometry 
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.addTemplate GarandGrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
 ObjectTemplate.addTemplate M1Garandtrigger
 ObjectTemplate.bindToSkeletonPart trigger
 ObjectTemplate.addTemplate M1GarandReload
@@ -12689,13 +12722,18 @@ ObjectTemplate.addTemplate M1GarandMagasin
 ObjectTemplate.bindToSkeletonPart mag
 ObjectTemplate.addTemplate M1GarandClip
 ObjectTemplate.bindToSkeletonPart clip
-
+ObjectTemplate.addTemplate K98_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate GarandGrenaderound
+ObjectTemplate.bindToSkeletonPart GRENADE
 
 ObjectTemplate.create LodObject GarandGrenadeLod
 ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate GarandGrenadeComplex
-ObjectTemplate.addTemplate M1GarandSimple
+ObjectTemplate.addTemplate GarandGrenadeSimple
 
+ObjectTemplate.create SimpleObject GarandGrenadeSimple
+ObjectTemplate.geometry GarandRGL_LOD_m1
 
 ObjectTemplate.create Projectile GarandGrenadeProjectile
 ObjectTemplate.geometry Garand_grenade
@@ -12713,6 +12751,232 @@ ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
 
+ObjectTemplate.create HandFireArms GarandGrenade_HEAT
+ObjectTemplate.itemIndex 6
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate GarandATGrenade_M9A1_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 6
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.addFireArmsPosition 0.001/0.0472/0.884 0/0/0
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.1/0/0
+ObjectTemplate.soldierCameraPosition -0.06/-0.04/-0.07
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.altFireOnce 1
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.75/3.5/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../GarandGrenade/Sounds/GarandGrenade.ssc
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_HEAT_M9A1RGL.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_M1Garand.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.useSkeletonPartAsMain GarandGrenade
+ObjectTemplate.addTemplate GarandGrenade_HEATLod
+
+
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.06/0.725
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create Bundle GarandGrenade_HEATround
+ObjectTemplate.addTemplate GarandGrenade_HEATroundVisible
+ObjectTemplate.setPosition 0/0/0.05
+
+ObjectTemplate.create SimpleObject GarandGrenade_HEATroundVisible
+ObjectTemplate.geometry Garand_grenade_M9A1_m1
+
+rem ** SimpleObjects
+ObjectTemplate.create AnimatedBundle GarandGrenade_HEATComplex
+ObjectTemplate.geometry 
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.addTemplate GarandGrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate M1Garandtrigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate M1GarandReload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate M1GarandPlupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate M1GarandMagasin
+ObjectTemplate.bindToSkeletonPart mag
+ObjectTemplate.addTemplate M1GarandClip
+ObjectTemplate.bindToSkeletonPart clip
+ObjectTemplate.addTemplate K98_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate GarandGrenade_HEATround
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject GarandGrenade_HEATLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate GarandGrenade_HEATComplex
+ObjectTemplate.addTemplate GarandGrenadeSimple
+
+
+ObjectTemplate.create Projectile GarandATGrenade_M9A1_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry SpringfieldGrenade_grenade
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 444
+ObjectTemplate.material2 201
+ObjectTemplate.radius 3.76
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
+
+
+
+
+
+ObjectTemplate.create HandFireArms GarandGrenade_HEAT_Energa
+ObjectTemplate.itemIndex 6
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate T20E2Grenade_HEAT_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.addFireArmsPosition 0/0.047/0.817 0/0/0
+rem ObjectTemplate.addFireArmsPosition 0.001/0.0472/0.884 0/0/0
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.1/0/0
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/-0.07
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.altFireOnce 1
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.75/3.5/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../GarandGrenade/Sounds/GarandGrenade.ssc
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_Energa_Grenade.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_M1Garand.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.useSkeletonPartAsMain GarandGrenade
+ObjectTemplate.addTemplate GarandGrenade_HEAT_EnergaLod
+
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.06/0.725
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create Bundle GarandGrenade_HEAT_Energa_GUNBODY
+ObjectTemplate.geometry M1Garand
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.addTemplate T20E2_Launcher
+ObjectTemplate.setPosition 0/0/-0.025
+
+ObjectTemplate.create AnimatedBundle GarandGrenade_HEAT_EnergaComplex
+ObjectTemplate.geometry 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.addTemplate GarandGrenade_HEAT_Energa_GUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate M1Garandtrigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate M1GarandReload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate M1GarandPlupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate M1GarandMagasin
+ObjectTemplate.bindToSkeletonPart mag
+ObjectTemplate.addTemplate M1GarandClip
+ObjectTemplate.bindToSkeletonPart clip
+ObjectTemplate.addTemplate K98_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate T20E2Grenade_HEAT_Visible
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject GarandGrenade_HEAT_EnergaLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate GarandGrenade_HEAT_EnergaComplex
+ObjectTemplate.addTemplate GarandGrenade_HEAT_EnergaSimple
+
+ObjectTemplate.create SimpleObject GarandGrenade_HEAT_EnergaSimple
+ObjectTemplate.geometry GarandEnerga_LOD_m1
 
 rem ===== EOF =====
 rem ============================================================================
@@ -14765,7 +15029,7 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.create Bundle HF_35M_rifleBayGUNBODY
 ObjectTemplate.geometry HF_35M_rifle
 ObjectTemplate.addTemplate 35Mbayonet_m1
-ObjectTemplate.setPosition 0/0.015/0.8151
+ObjectTemplate.setPosition 0/0.03/0.84
 
 ObjectTemplate.create AnimatedBundle HF_35M_rifleBayComplex
 ObjectTemplate.geometry 
@@ -14946,7 +15210,7 @@ ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.damageType 1
 ObjectTemplate.material 207
 ObjectTemplate.material2 207
-ObjectTemplate.radius 10
+ObjectTemplate.radius 14
 ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
@@ -15617,7 +15881,8 @@ ObjectTemplate.fireOnce 1
 ObjectTemplate.soldierZoomFov 0.6
 
 ObjectTemplate.soldierZoomPosition -0.098/-0.0612/-0.25
-ObjectTemplate.soldierCameraPosition 0.0/-0.05/0.05
+ObjectTemplate.soldierCameraPosition 0.05/-0.17/0.2
+rem ObjectTemplate.soldierCameraPosition 0.0/-0.05/0.05
 ObjectTemplate.AmmoType	3
 
 ObjectTemplate.loadSoundScript ../HF_44M_AT/Sounds/HF_44M_AT.ssc
@@ -16370,7 +16635,7 @@ ObjectTemplate.geometry Satchel
 rem ObjectTemplate.geometry Landmine
 ObjectTemplate.saveInSeparateFile 1 
 ObjectTemplate.addTemplate HotchkissdeploySpawner
-ObjectTemplate.setPosition 0/0.325/0 
+ObjectTemplate.setPosition 0/-0.225/0 
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
 ObjectTemplate.gravityModifier 3.0
 rem ObjectTemplate.gravityModifier 1 
@@ -16403,7 +16668,8 @@ rem ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 2
 rem ObjectTemplate.TimeToLive 0
 ObjectTemplate.Distance 20 
-ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.spawnOffset 0/0.1/0
+rem ObjectTemplate.spawnOffset 0/0.2/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
@@ -16921,7 +17187,7 @@ ObjectTemplate.setMiscDev 18 8 0.35
 Rem *** Deviation  End *****
 
 ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../K98/Sounds/k98sniper.ssc
+ObjectTemplate.loadSoundScript ../K98/Sounds/K98Sniper.ssc
 
 ObjectTemplate.createSkeleton animations/K98.ske
 ObjectTemplate.useSkeletonPartAsMain K98
@@ -17604,7 +17870,7 @@ ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.damageType 1
 ObjectTemplate.material 207
 ObjectTemplate.material2 207
-ObjectTemplate.radius 10
+ObjectTemplate.radius 14
 ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
@@ -22102,6 +22368,145 @@ ObjectTemplate.addTemplate LebelSimple
 
 rem ===== EOF =====
 rem ============================================================================
+rem folder = LewesBomb
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh LewesBomb_m1
+GeometryTemplate.file LewesBomb_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 5
+GeometryTemplate.setLodDistance 2 60
+
+GeometryTemplate.create StandardMesh LewesBomb_LOD_m1
+GeometryTemplate.file LewesBomb_LOD_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = LewesBomb
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+ObjectTemplate.create HandFireArms LewesBomb
+ObjectTemplate.itemIndex 4
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.projectileTemplate LewesBombProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.ForceOnExplosion 10
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+rem ObjectTemplate.altFireOnce 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 70
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType	2
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon "Ammo/Icon_LewesBomb_64x32.dds"
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setHasMag 0
+
+ObjectTemplate.setFireDev 4 0.5 0.5
+ObjectTemplate.setDevMod 1 1 1
+ObjectTemplate.setMinDev 1.5
+ObjectTemplate.setTurnDev 8 0.75 0.75 0.4
+ObjectTemplate.setSpeedDev 8 0.75 0.75 0.4
+ObjectTemplate.setMiscDev 12 8 0.4
+
+ObjectTemplate.rotationalSpeed 8/0/0
+ObjectTemplate.velocity 20
+ObjectTemplate.minDeviation 0
+ObjectTemplate.maxDeviation 0.08
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.4
+ObjectTemplate.fireDelay 1
+objectTemplate.aiTemplate LewesBombAI
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate LewesBombLod
+
+ObjectTemplate.loadSoundScript ../LewesBomb/Sounds/LewesBomb.ssc
+
+rem
+rem ** SimpleObjects
+rem 
+ObjectTemplate.create SimpleObject LewesBombPigg
+ObjectTemplate.geometry 
+
+ObjectTemplate.create SimpleObject LewesBombSprint
+ObjectTemplate.geometry 
+
+ObjectTemplate.create SimpleObject LewesBombSimple
+ObjectTemplate.geometry LewesBomb_LOD_m1
+
+ObjectTemplate.create AnimatedBundle LewesBombComplex
+ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
+ObjectTemplate.geometry LewesBomb_m1
+ObjectTemplate.addTemplate LewesBombSprint
+ObjectTemplate.bindToSkeletonPart sprint
+ObjectTemplate.addTemplate LewesBombPigg
+ObjectTemplate.bindToSkeletonPart pigg
+
+ObjectTemplate.create LodObject LewesBombLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate LewesBombComplex
+ObjectTemplate.addTemplate LewesBombSimple
+
+
+
+ObjectTemplate.create Projectile LewesBombProjectile
+ObjectTemplate.NetworkableInfo ProjectileInfo
+ObjectTemplate.geometry LewesBomb_m1
+ObjectTemplate.startEffectTemplate e_LewesBombFume
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitPoints 9999
+ObjectTemplate.maxHitPoints 9999
+ObjectTemplate.explosionDamage 0
+rem *** Satchels explodes after 7 seconds.
+ObjectTemplate.timeToLive CRD_NONE/6/8/0
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.radius 15.0
+rem ObjectTemplate.radius 3.0
+ObjectTemplate.ForceOnExplosion 50
+ObjectTemplate.DamageType 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.useMMOnEndEffect 1
+ObjectTemplate.material 70
+ObjectTemplate.material2 608
+ObjectTemplate.damageType 1
+ObjectTemplate.endEffectTemplate e_ExplGranade
+ObjectTemplate.noFFSound 1
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = M18_57mm_RLR
 rem sauce = Geometries.con
 rem ============================================================================
@@ -23149,7 +23554,7 @@ ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setPosition 0/0.05/0.84
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.addTemplate e_shell792mm
 ObjectTemplate.setPosition 0/0.1/0.41
 ObjectTemplate.setRotation 0/0/0
 
@@ -24131,7 +24536,7 @@ ObjectTemplate.setMiscDev 18 8 0.35
 Rem *** Deviation  End *****
 
 ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../Mas36/Sounds/Mas36.ssc
+ObjectTemplate.loadSoundScript ../Mas36/Sounds/Mas36Sniper.ssc
 
 ObjectTemplate.createSkeleton animations/MAS36.ske
 ObjectTemplate.useSkeletonPartAsMain Mas36
@@ -24329,7 +24734,7 @@ rem folder = Mas36Grenade
 rem sauce = Geometries.con
 rem ============================================================================
 GeometryTemplate.create StandardMesh Mas36GrenadeLauncher_M1
-GeometryTemplate.file K98Grenadelauncher_M1
+GeometryTemplate.file MAS36HEAT_Launcher_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 3
 GeometryTemplate.setLodDistance 2 10
@@ -24337,9 +24742,8 @@ GeometryTemplate.setLodDistance 3 20
 GeometryTemplate.setLodDistance 4 30
 GeometryTemplate.setLodDistance 5 100
 
-
 GeometryTemplate.create StandardMesh Mas36Grenaderound_M1
-GeometryTemplate.file K98Grenade_M1
+GeometryTemplate.file MAS36HE_m1
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 30
 GeometryTemplate.setLodDistance 2 50
@@ -24347,15 +24751,14 @@ GeometryTemplate.setLodDistance 3 100
 GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 500
 
-
-
-
-
-
-
-
-
-
+GeometryTemplate.create StandardMesh Mas36GrenadeHEAT_m1
+GeometryTemplate.file MAS36HEAT_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
 
 rem ===== EOF =====
 rem ============================================================================
@@ -24363,6 +24766,15 @@ rem folder = Mas36Grenade
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
+rem Mas36Grenade
+rem ID5 HE
+
+rem Mas36Grenade_HEAT
+rem ID6 Pen:40mm
+
+rem Mas36Grenade_HEAT_M9A1
+rem ID6 Pen:102mm
+
 rem ----------------------------------------------------------
 rem Firearm: Mas36Grenade
 rem ----------------------------------------------------------
@@ -24394,16 +24806,9 @@ ObjectTemplate.addFireArmsPosition -0.01/0.043/1.04 0/0/0
 ObjectTemplate.FireDelay 1.5
 
 objectTemplate.GUIIndex 11
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 20
-ObjectTemplate.setAmomBarPosX 6
-ObjectTemplate.setAmomBarPosY -17
-ObjectTemplate.setAmomBarTextPosX 5
-ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_MAS36HE.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_Mas36.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -24452,7 +24857,7 @@ ObjectTemplate.geometry Shad_Mas36GrenadeLauncher
 ObjectTemplate.create Bundle Mas36GrenadeGUNBODY
 ObjectTemplate.geometry Mas36
 ObjectTemplate.addTemplate Mas36GrenadeLauncher
-ObjectTemplate.setPosition 0/0.01/0
+ObjectTemplate.setPosition 0/0/0
 
 ObjectTemplate.create AnimatedBundle Mas36GrenadeComplex
 ObjectTemplate.geometry 
@@ -24477,7 +24882,7 @@ ObjectTemplate.addTemplate Mas36GrenadeComplex
 ObjectTemplate.addTemplate Mas36Simple
 
 ObjectTemplate.create Projectile Mas36GrenadeProjectile
-ObjectTemplate.geometry K98Grenade_M1
+ObjectTemplate.geometry Mas36Grenaderound_M1
 ObjectTemplate.timeToLive CRD_NONE/6.5/0/0
 ObjectTemplate.timeOnEndEffect 0.5
 ObjectTemplate.hasCollisionPhysics 1
@@ -24491,6 +24896,211 @@ ObjectTemplate.radius 10
 ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
+
+
+rem ----------------------------------------------------------
+rem Firearm: Mas36Grenade_HEAT
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms Mas36Grenade_HEAT
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 6
+ObjectTemplate.projectileTemplate Mas36Grenade_HEATProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 6
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.07/0/0
+ObjectTemplate.soldierCameraPosition -0.02/-0.03/0.01
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.timeToNotAllowChange 0.25
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.addFireArmsPosition -0.01/0.043/1.04 0/0/0
+
+objectTemplate.GUIIndex 11
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_MAS36HEAT.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_Mas36.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.75/3.5/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../Mas36Grenade/Sounds/Mas36Grenade.ssc
+
+ObjectTemplate.createSkeleton animations/MAS36.ske
+ObjectTemplate.useSkeletonPartAsMain Mas36Grenade
+ObjectTemplate.addTemplate Mas36Grenade_HEATLod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.05/1.0
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** Objects ***
+
+ObjectTemplate.create SimpleObject Mas36Grenade_HEATround
+ObjectTemplate.geometry Mas36GrenadeHEAT_m1
+
+ObjectTemplate.create AnimatedBundle Mas36Grenade_HEATComplex
+ObjectTemplate.geometry 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/MAS36.ske
+ObjectTemplate.addTemplate Mas36GrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate mas36_bolt
+ObjectTemplate.bindToSkeletonPart BOLT
+ObjectTemplate.addTemplate mas36_handle
+ObjectTemplate.bindToSkeletonPart HANDLE
+ObjectTemplate.addTemplate Mas36_cart
+ObjectTemplate.bindToSkeletonPart BULLET
+ObjectTemplate.addTemplate Mas36_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate Mas36Grenade_HEATround
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject Mas36Grenade_HEATLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Mas36Grenade_HEATComplex
+ObjectTemplate.addTemplate Mas36Simple
+
+ObjectTemplate.create Projectile Mas36Grenade_HEATProjectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry Mas36GrenadeHEAT_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 449
+ObjectTemplate.material2 201
+ObjectTemplate.radius 3.94
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
+
+
+rem ----------------------------------------------------------
+rem Firearm: Mas36Grenade_HEAT_M9A1
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms Mas36Grenade_HEAT_M9A1
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 6
+ObjectTemplate.projectileTemplate GarandATGrenade_M9A1_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 6
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.07/0/0
+ObjectTemplate.soldierCameraPosition -0.02/-0.03/0.01
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.timeToNotAllowChange 0.25
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.addFireArmsPosition -0.01/0.043/1.04 0/0/0
+
+objectTemplate.GUIIndex 11
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_HEAT_M9A1RGL.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_Mas36.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.75/3.5/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../Mas36Grenade/Sounds/Mas36Grenade.ssc
+
+ObjectTemplate.createSkeleton animations/MAS36.ske
+ObjectTemplate.useSkeletonPartAsMain Mas36Grenade
+ObjectTemplate.addTemplate Mas36Grenade_HEAT_M9A1Lod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.05/1.0
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** Objects ***
+
+ObjectTemplate.create Bundle Mas36Grenade_HEAT_M9A1round
+ObjectTemplate.addTemplate GarandGrenade_HEATroundVisible
+ObjectTemplate.setPosition 0/0/-0.092
+
+ObjectTemplate.create AnimatedBundle Mas36Grenade_HEAT_M9A1Complex
+ObjectTemplate.geometry 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/MAS36.ske
+ObjectTemplate.addTemplate Mas36GrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate mas36_bolt
+ObjectTemplate.bindToSkeletonPart BOLT
+ObjectTemplate.addTemplate mas36_handle
+ObjectTemplate.bindToSkeletonPart HANDLE
+ObjectTemplate.addTemplate Mas36_cart
+ObjectTemplate.bindToSkeletonPart BULLET
+ObjectTemplate.addTemplate Mas36_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate Mas36Grenade_HEAT_M9A1round
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject Mas36Grenade_HEAT_M9A1Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Mas36Grenade_HEAT_M9A1Complex
+ObjectTemplate.addTemplate Mas36Simple
 
 rem ===== EOF =====
 rem ============================================================================
@@ -24822,10 +25432,10 @@ ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.075/0.725
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setPosition 0/0.04/0.23
 ObjectTemplate.setRotation 0/0/0
 
 rem ** SimpleObjects
@@ -24944,10 +25554,10 @@ ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.075/0.725
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setPosition 0/0.04/0.23
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -25222,10 +25832,10 @@ ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.08/0.65
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setPosition 0/0.04/0.23
 ObjectTemplate.setRotation 0/0/0
 
 rem ** SimpleObjects
@@ -25339,10 +25949,10 @@ ObjectTemplate.startoneffects 1
 ObjectTemplate.setPosition 0/0.08/0.65
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setPosition 0/0.04/0.23
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -27456,7 +28066,7 @@ ObjectTemplate.AmmoType	1
 rem ObjectTemplate.autoReload 1
 Rem *** Deviation Begin *****
 
-ObjectTemplate.velocity 500
+ObjectTemplate.velocity 380
 ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
 ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.1/0
 ObjectTemplate.setHasRecoilForce 1
@@ -27488,8 +28098,8 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate e_Shell9mm
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
-ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.setPosition 0/0.06/0.33
+ObjectTemplate.setRotation 0/0/85
 
 
 ObjectTemplate.networkableInfo HandFireArmsInfo
@@ -27747,7 +28357,7 @@ ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.damageType 1
 ObjectTemplate.material 207
 ObjectTemplate.material2 207
-ObjectTemplate.radius 10
+ObjectTemplate.radius 14
 ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
@@ -28293,7 +28903,7 @@ ObjectTemplate.setMiscDev 18 8 0.35
 Rem *** Deviation  End *****
 
 ObjectTemplate.fireInCameraDof 1
-ObjectTemplate.loadSoundScript ../No4/Sounds/no4.ssc
+ObjectTemplate.loadSoundScript ../No4/Sounds/No4Sniper.ssc
 
 ObjectTemplate.createSkeleton animations/No4.ske
 ObjectTemplate.useSkeletonPartAsMain No4
@@ -28655,7 +29265,7 @@ ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.damageType 1
 ObjectTemplate.material 207
 ObjectTemplate.material2 207
-ObjectTemplate.radius 10
+ObjectTemplate.radius 14
 ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
@@ -28946,6 +29556,13 @@ GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 5
 GeometryTemplate.setLodDistance 2 60
 
+GeometryTemplate.create StandardMesh No82gammon_AT_m1
+GeometryTemplate.file No82gammon_AT_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 5
+GeometryTemplate.setLodDistance 2 60
+
 GeometryTemplate.create StandardMesh Shad_No82Gammon
 GeometryTemplate.file No82gammon_m1
 GeometryTemplate.hasDynamicShadow 1
@@ -28958,6 +29575,12 @@ rem folder = No82Gammon
 rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
+
+rem No82Gammon
+rem ID:4
+rem No82GammonFrag
+rem ID:6 Linked to 4
+
 ObjectTemplate.create HandFireArms No82Gammon
 ObjectTemplate.itemIndex 4
 ObjectTemplate.networkableInfo HandFireArmsInfo
@@ -29029,7 +29652,7 @@ ObjectTemplate.geometry Shad_No82Gammon
 
 ObjectTemplate.create AnimatedBundle No82GammonComplex
 ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
-ObjectTemplate.geometry No82Gammon
+ObjectTemplate.geometry No82gammon_AT_m1
 ObjectTemplate.addTemplate No82GammonSprint
 ObjectTemplate.SetPosition -0.265/0.467/-0.004
 ObjectTemplate.bindToSkeletonPart sprint
@@ -29042,37 +29665,369 @@ ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate No82GammonComplex
 ObjectTemplate.addTemplate No82GammonSimple
 
-
-
 ObjectTemplate.create Projectile No82GammonProjectile
-ObjectTemplate.NetworkableInfo ProjectileInfo
+rem ObjectTemplate.networkableInfo ProjectileInfo
+ObjectTemplate.geometry No82gammon_AT_m1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 604
+ObjectTemplate.material2 604
+ObjectTemplate.radius 8
+ObjectTemplate.ForceOnExplosion 10
+
+
+rem *** No82GammonFrag ***
+
+ObjectTemplate.create HandFireArms No82GammonFrag
+ObjectTemplate.itemIndex 6
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.projectileTemplate No82GammonFragProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.ForceOnExplosion 10
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+rem ObjectTemplate.altFireOnce 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.material 70
+ObjectTemplate.hitpoints 10000
+ObjectTemplate.maxhitpoints 10000
+ObjectTemplate.AmmoType	2
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.GUIIndex 13
+ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
+ObjectTemplate.setAmmoIcon "Ammo/Icon_gammon_Frag_64x32.dds"
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setHasMag 0
+ObjectTemplate.setWeaponLink 4
+
+ObjectTemplate.setFireDev 4 0.5 0.5
+ObjectTemplate.setDevMod 1 1 1
+ObjectTemplate.setMinDev 1.5
+ObjectTemplate.setTurnDev 8 0.75 0.75 0.4
+ObjectTemplate.setSpeedDev 8 0.75 0.75 0.4
+ObjectTemplate.setMiscDev 12 8 0.4
+
+ObjectTemplate.rotationalSpeed 8/0/0
+ObjectTemplate.velocity 20
+ObjectTemplate.minDeviation 0
+ObjectTemplate.maxDeviation 0.08
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.hideDuringFireTime 0.4
+ObjectTemplate.fireDelay 1
+objectTemplate.aiTemplate No82GammonAI
+ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.velocityDependentOnHeat 1
+ObjectTemplate.heatAddWhenFire 0.03
+rem ObjectTemplate.coolDownPerSec 0.05
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate No82GammonFragLod
+
+ObjectTemplate.loadSoundScript ../No82Gammon/Sounds/No82Gammon.ssc
+
+ObjectTemplate.create AnimatedBundle No82GammonFragComplex
+ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
+ObjectTemplate.geometry No82Gammon
+ObjectTemplate.addTemplate No82GammonSprint
+ObjectTemplate.SetPosition -0.265/0.467/-0.004
+ObjectTemplate.bindToSkeletonPart sprint
+ObjectTemplate.addTemplate No82GammonPigg
+ObjectTemplate.SetPosition -0.266/0.468/0.145
+ObjectTemplate.bindToSkeletonPart pigg
+
+ObjectTemplate.create LodObject No82GammonFragLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate No82GammonFragComplex
+ObjectTemplate.addTemplate No82GammonSimple
+
+ObjectTemplate.create Projectile No82GammonFragProjectile
+rem ObjectTemplate.networkableInfo ProjectileInfo
 ObjectTemplate.geometry No82Gammon
 ObjectTemplate.timeToLive CRD_NONE/10/0/0
-ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.setHasMobilePhysics 1
-ObjectTemplate.setHasCollisionPhysics 1
-ObjectTemplate.setHasResponsePhysics 1
-ObjectTemplate.setHasPointPhysics 0
-ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.invisibleAtEndEffect 1
-ObjectTemplate.hasArmor 1
-ObjectTemplate.hitPoints 9999
-ObjectTemplate.maxHitPoints 9999
-ObjectTemplate.explosionDamage 0
-rem *** Satchels explodes after 7 seconds.
-ObjectTemplate.timeToLive CRD_NONE/6/8/0
-ObjectTemplate.dieAfterColl 0
-ObjectTemplate.radius 5.0
-rem ObjectTemplate.radius 3.0
-ObjectTemplate.ForceOnExplosion 50
-ObjectTemplate.DamageType 1
-ObjectTemplate.hasOnTimeEffect 1
-ObjectTemplate.useMMOnEndEffect 1
-ObjectTemplate.material 70
-ObjectTemplate.material2 608
 ObjectTemplate.damageType 1
-ObjectTemplate.endEffectTemplate e_ExplGranade
-ObjectTemplate.noFFSound 1
+ObjectTemplate.material 207
+ObjectTemplate.material2 207
+ObjectTemplate.radius 15.0
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = No84M9A1ATGrenade
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+rem ----------------------------------------------------------
+rem Firearm: No84M9A1ATGrenade
+rem ID6 Pen:102mm
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms No84M9A1ATGrenade
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 6
+ObjectTemplate.projectileTemplate GarandATGrenade_M9A1_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 6
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.ForceOnExplosion 2
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.AmmoType	2
+ObjectTemplate.setHasMag 1
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.timeToNotAllowChange 0.25
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.zoomFov 0.7
+
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.soldierZoomFov 0.7
+ObjectTemplate.soldierZoomPosition -0.08/0.01/0.02
+ObjectTemplate.soldierCameraPosition -0.08/-0.03/0.00
+ObjectTemplate.GUIIndex 6
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_HEAT_M9A1RGL.tga"
+
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_No4.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/3.6/3.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/-0.6/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.loadSoundScript ../No68ATGrenade/Sounds/no4.ssc
+ObjectTemplate.createSkeleton animations/No68ATGrenade.ske
+ObjectTemplate.useSkeletonPartAsMain No94EnergaATGrenade
+ObjectTemplate.addTemplate No84M9A1ATGrenadeLod
+
+ObjectTemplate.addTemplate e_Muzz30mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.045/0.745
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** Objects ***
+ObjectTemplate.create Bundle No84M9A1ATGrenade_GrenadePosition
+ObjectTemplate.addTemplate GarandGrenade_HEATroundVisible
+ObjectTemplate.setPosition 0/0/0.013
+
+ObjectTemplate.create AnimatedBundle No84M9A1ATGrenadeComplex
+ObjectTemplate.geometry 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/No68ATGrenade.ske
+ObjectTemplate.addTemplate No94EnergaATGrenadGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate No4Trigger
+ObjectTemplate.bindToSkeletonPart TRIGGER
+ObjectTemplate.addTemplate No4Block
+ObjectTemplate.bindToSkeletonPart BOLT
+ObjectTemplate.addTemplate No4Load
+ObjectTemplate.bindToSkeletonPart HANDLE
+ObjectTemplate.addTemplate No4_cart
+ObjectTemplate.bindToSkeletonPart BULLET
+ObjectTemplate.addTemplate No4_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate No84M9A1ATGrenade_GrenadePosition
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject No84M9A1ATGrenadeLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate No84M9A1ATGrenadeComplex
+ObjectTemplate.addTemplate No94EnergaATGrenadeSimple
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = No94EnergaATGrenade
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh No4No94RGL_LOD_m1
+GeometryTemplate.file No4No94RGL_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = No94EnergaATGrenade
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+rem ----------------------------------------------------------
+rem Firearm: No94EnergaATGrenade
+rem ID6 Pen:200mm
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms No94EnergaATGrenade
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.itemIndex 6
+ObjectTemplate.projectileTemplate No94EnergaATGrenadeProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 6
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.ForceOnExplosion 2
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.AmmoType	2
+ObjectTemplate.setHasMag 1
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.timeToNotAllowChange 0.25
+
+ObjectTemplate.autoReload 1
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.zoomFov 0.7
+
+ObjectTemplate.fireInCameraDof 1
+
+ObjectTemplate.soldierZoomFov 0.7
+ObjectTemplate.soldierZoomPosition -0.08/0.01/0.02
+ObjectTemplate.soldierCameraPosition -0.08/-0.03/0.00
+ObjectTemplate.GUIIndex 6
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_Energa_Grenade.tga"
+
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_No4.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/3.6/3.6/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.2/-0.6/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.loadSoundScript ../No68ATGrenade/Sounds/no4.ssc
+ObjectTemplate.createSkeleton animations/No68ATGrenade.ske
+ObjectTemplate.useSkeletonPartAsMain No94EnergaATGrenade
+ObjectTemplate.addTemplate No94EnergaATGrenadeLod
+
+ObjectTemplate.addTemplate e_Muzz30mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.045/0.745
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** Objects ***
+ObjectTemplate.create Bundle No94EnergaATGrenadGUNBODY
+ObjectTemplate.geometry No4
+ObjectTemplate.addTemplate T20E2_Launcher
+ObjectTemplate.setPosition 0/-0.003/-0.1
+
+ObjectTemplate.create Bundle No94EnergaATGrenade_GrenadePosition
+ObjectTemplate.addTemplate No94EnergaATGrenade_Visible
+ObjectTemplate.setPosition 0/0/-0.05
+
+ObjectTemplate.create SimpleObject No94EnergaATGrenade_Visible
+ObjectTemplate.geometry T20E2_grenade_HEAT_m1
+
+ObjectTemplate.create AnimatedBundle No94EnergaATGrenadeComplex
+ObjectTemplate.geometry 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/No68ATGrenade.ske
+ObjectTemplate.addTemplate No94EnergaATGrenadGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate No4Trigger
+ObjectTemplate.bindToSkeletonPart TRIGGER
+ObjectTemplate.addTemplate No4Block
+ObjectTemplate.bindToSkeletonPart BOLT
+ObjectTemplate.addTemplate No4Load
+ObjectTemplate.bindToSkeletonPart HANDLE
+ObjectTemplate.addTemplate No4_cart
+ObjectTemplate.bindToSkeletonPart BULLET
+ObjectTemplate.addTemplate No4_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate No94EnergaATGrenade_GrenadePosition
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject No94EnergaATGrenadeLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate No94EnergaATGrenadeComplex
+ObjectTemplate.addTemplate No94EnergaATGrenadeSimple
+
+ObjectTemplate.create SimpleObject No94EnergaATGrenadeSimple
+ObjectTemplate.geometry No4No94RGL_LOD_m1
+
+
+rem ** SimpleObjects
+
+ObjectTemplate.create Projectile No94EnergaATGrenadeProjectile
+ObjectTemplate.geometry T20E2_grenade_HEAT_m1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.timeOnEndEffect 0.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 670
+ObjectTemplate.material2 201
+ObjectTemplate.radius 4.09
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
 rem ===== EOF =====
 rem ============================================================================
@@ -30258,7 +31213,8 @@ ObjectTemplate.altFireOnce 1
 
 ObjectTemplate.soldierZoomFov 0.7
 ObjectTemplate.soldierZoomPosition -0.1115/-0.036/-0.15
-ObjectTemplate.soldierCameraPosition 0.0/-0.05/0.05
+ObjectTemplate.soldierCameraPosition 0.05/-0.09/0.15
+rem ObjectTemplate.soldierCameraPosition 0.0/-0.05/0.05
 ObjectTemplate.AmmoType	3
 
 ObjectTemplate.velocity 105
@@ -30714,7 +31670,7 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate e_Shell9mm
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/-0.10/-0.150
+ObjectTemplate.setPosition 0/0.02/0.4
 ObjectTemplate.setRotation 0/0/0
 
 rem ** Objects
@@ -30852,10 +31808,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -30994,10 +31950,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.023/0.64
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.networkableInfo HandFireArmsInfo
@@ -31085,10 +32041,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.023/0.64
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.networkableInfo HandFireArmsInfo
@@ -31201,10 +32157,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -36557,9 +37513,9 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = COMMON
 rem RandomGerSeizedATR1		M35		PzB35(p)
-rem RandomGerSeizedATR2		PTRS		SlBzB784(r)
+rem RandomGerSeizedATR2		PTRS		SlPzB784(r)
 rem RandomGerSeizedATR2_Lay	
-rem RandomGerSeizedATR3		HF_S18-1000AP	SlBzB785(i)
+rem RandomGerSeizedATR3		HF_S18-1000AP	SlPzB785(i)
 rem RandomGerSeizedATR4		Boys		PzB782(e)
 rem RandomGerSeizedATR4_Lay	
 rem RandomGerSeizedATR5		PTRD		PzB783(r)
@@ -36814,7 +37770,7 @@ ObjectTemplate.addRootSpeed 0
 ObjectTemplate.AmmoType	1
 
 Rem *** Deviation Begin *****
-ObjectTemplate.velocity 500
+ObjectTemplate.velocity 380
 ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.4/0.6/0
 ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.1/0
 ObjectTemplate.setHasRecoilForce 1
@@ -36842,10 +37798,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -36922,7 +37878,7 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate e_Shell9mm
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/-0.10/-0.150
+ObjectTemplate.setPosition 0/0.02/0.4
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -37214,7 +38170,7 @@ ObjectTemplate.setRotation 0/0/0
 ObjectTemplate.addTemplate e_Shell9mm
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/-0.10/-0.150
+ObjectTemplate.setPosition 0/0.02/0.4
 ObjectTemplate.setRotation 0/0/0
 
 rem **********************************************************
@@ -38009,10 +38965,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -38079,10 +39035,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -38160,10 +39116,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -38230,10 +39186,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 
@@ -38317,7 +39273,7 @@ ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setPosition 0/0.05/0.87
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.addTemplate e_shell792mm
 ObjectTemplate.setPosition 0/0.1/0.41
 ObjectTemplate.setRotation 0/0/0
 
@@ -38534,7 +39490,7 @@ ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setPosition 0/0.05/0.87
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.addTemplate e_shell792mm
 ObjectTemplate.setPosition 0/0.1/0.41
 ObjectTemplate.setRotation 0/0/0
 
@@ -38597,7 +39553,7 @@ ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setPosition 0/0.05/0.87
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.addTemplate e_shell792mm
 ObjectTemplate.setPosition 0/0.1/0.41
 ObjectTemplate.setRotation 0/0/0
 
@@ -38690,10 +39646,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -41534,7 +42490,7 @@ ObjectTemplate.explosionDamage 0
 rem *** Satchels explodes after 5 seconds.
 ObjectTemplate.timeToLive CRD_NONE/4/6/0
 ObjectTemplate.dieAfterColl 0
-ObjectTemplate.radius 12
+ObjectTemplate.radius 15
 ObjectTemplate.ForceOnExplosion 50
 ObjectTemplate.DamageType 1
 ObjectTemplate.hasOnTimeEffect 1
@@ -42114,6 +43070,7 @@ ObjectTemplate.loadSoundScript ../SatchelAus/Sounds/SatchelAusYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelAusLod
+ObjectTemplate.setWeaponLink 5
 
 
 ObjectTemplate.create SimpleObject SatchelAusSimple
@@ -42192,7 +43149,6 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
 
 ObjectTemplate.loadSoundScript ../SatchelAus/Sounds/SatchelAus.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -42296,7 +43252,7 @@ ObjectTemplate.loadSoundScript ../SatchelBrit/Sounds/SatchelBritYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelBritLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelBritSimple
 ObjectTemplate.geometry Shad_SatchelBrit
@@ -42375,7 +43331,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelBrit/Sounds/SatchelBrit.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -42480,7 +43436,7 @@ ObjectTemplate.loadSoundScript ../SatchelCan/Sounds/SatchelCanYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelCanLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelCanSimple
 ObjectTemplate.geometry Shad_SatchelCan
@@ -42559,7 +43515,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelCan/Sounds/SatchelCan.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -42664,7 +43620,7 @@ ObjectTemplate.loadSoundScript ../SatchelFin/Sounds/SatchelFinYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelFinLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelFinSimple
 ObjectTemplate.geometry Shad_SatchelFin
@@ -42743,7 +43699,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelFin/Sounds/SatchelFin.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -42848,7 +43804,7 @@ ObjectTemplate.loadSoundScript ../SatchelFre/Sounds/SatchelFreYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelFreLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelFreSimple
 ObjectTemplate.geometry Shad_SatchelFre
@@ -42927,7 +43883,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelFre/Sounds/SatchelFre.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -43032,7 +43988,7 @@ ObjectTemplate.loadSoundScript ../SatchelGer/Sounds/SatchelGerYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelGerLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelGerSimple
 ObjectTemplate.geometry Shad_SatchelGer
@@ -43111,7 +44067,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelGer/Sounds/SatchelGer.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -43216,7 +44172,7 @@ ObjectTemplate.loadSoundScript ../SatchelHun/Sounds/SatchelHunYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelHunLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelHunSimple
 ObjectTemplate.geometry Shad_SatchelHun
@@ -43295,7 +44251,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelHun/Sounds/SatchelHun.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -43400,7 +44356,7 @@ ObjectTemplate.loadSoundScript ../SatchelIta/Sounds/SatchelItaYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelItaLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelItaSimple
 ObjectTemplate.geometry Shad_SatchelIta
@@ -43479,7 +44435,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelIta/Sounds/SatchelIta.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -43584,7 +44540,7 @@ ObjectTemplate.loadSoundScript ../SatchelPol/Sounds/SatchelPolYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelPolLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelPolSimple
 ObjectTemplate.geometry Shad_SatchelPol
@@ -43663,7 +44619,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelPol/Sounds/SatchelPol.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -43767,7 +44723,7 @@ ObjectTemplate.loadSoundScript ../SatchelRus/Sounds/SatchelRusYell.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
 ObjectTemplate.useSkeletonPartAsMain base
 ObjectTemplate.addTemplate SatchelRusLod
-
+ObjectTemplate.setWeaponLink 5
 
 ObjectTemplate.create SimpleObject SatchelRusSimple
 ObjectTemplate.geometry Shad_SatchelRus
@@ -43846,7 +44802,7 @@ ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
 ObjectTemplate.AmmoType	2
-ObjectTemplate.setWeaponLink 4
+
 
 ObjectTemplate.loadSoundScript ../SatchelRus/Sounds/SatchelRus.ssc
 ObjectTemplate.createSkeleton animations/Landmine.ske
@@ -47139,6 +48095,15 @@ GeometryTemplate.setLodDistance 3 20
 GeometryTemplate.setLodDistance 4 30
 GeometryTemplate.setLodDistance 5 100
 
+GeometryTemplate.create StandardMesh SpringfieldATGrenade_grenade
+GeometryTemplate.file RifleGrenade_M9_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
 rem ===== EOF =====
 rem ============================================================================
 rem folder = SpringfieldGrenade
@@ -47180,16 +48145,9 @@ ObjectTemplate.FireDelay 1.5
 ObjectTemplate.autoReload 1
 
 ObjectTemplate.GUIIndex 6
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 20
-ObjectTemplate.setAmomBarPosX 6
-ObjectTemplate.setAmomBarPosY -17
-ObjectTemplate.setAmomBarTextPosX 5
-ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTNone
-rem ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_SpringfieldGrenade.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_Springfield.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
 objectTemplate.UseScope 1
@@ -47285,7 +48243,7 @@ rem ----------------------------------------------------------
 ObjectTemplate.create HandFireArms SpringfieldATGrenade
 ObjectTemplate.networkableInfo HandFireArmsInfo
 ObjectTemplate.itemIndex 4
-ObjectTemplate.projectileTemplate SpringfieldATGrenadeProjectile
+ObjectTemplate.projectileTemplate SpringfieldATGrenade_M9_Projectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.magSize 1
@@ -47309,14 +48267,8 @@ ObjectTemplate.changeWeaponWhenNoAmmo 1
 ObjectTemplate.autoReload 1
 
 ObjectTemplate.GUIIndex 6
-ObjectTemplate.setHudAmmoType ATAmmoBar
-ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
-ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
-ObjectTemplate.setAmmoBarSize 20
-ObjectTemplate.setAmomBarPosX 6
-ObjectTemplate.setAmomBarPosY -17
-ObjectTemplate.setAmomBarTextPosX 5
-ObjectTemplate.setAmomBarTextPosY 10
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_HEAT_M9RGL.tga"
 ObjectTemplate.setCrossHairType CHTCrossHair
 ObjectTemplate.setScopeIcon "RifleGrenadeSight_Springfield.tga"
 ObjectTemplate.setSightIcon "scope_blank.tga"
@@ -47343,7 +48295,7 @@ ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript ../SpringfieldGrenade/Sounds/SpringfieldGrenade.ssc
 ObjectTemplate.createSkeleton animations/Springfield03.ske
 ObjectTemplate.useSkeletonPartAsMain SpringfieldGrenade
-ObjectTemplate.addTemplate SpringfieldGrenadeLod
+ObjectTemplate.addTemplate SpringfieldATGrenadeLod
 
 ObjectTemplate.addTemplate e_Muzz30mm
 ObjectTemplate.setInputId -1
@@ -47351,7 +48303,36 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.045/0.745
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.create Projectile SpringfieldATGrenadeProjectile
+ObjectTemplate.create SimpleObject SpringfieldATGrenaderound
+ObjectTemplate.geometry SpringfieldATGrenade_grenade
+
+
+rem *** Objects ***
+ObjectTemplate.create AnimatedBundle SpringfieldATGrenadeComplex
+ObjectTemplate.geometry 
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/Springfield03.ske
+ObjectTemplate.addTemplate SpringfieldGrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate Springfield03Block
+ObjectTemplate.bindToSkeletonPart BOLT
+ObjectTemplate.addTemplate Springfield03Load
+ObjectTemplate.bindToSkeletonPart HANDLE
+ObjectTemplate.addTemplate Springfield03CARTRIDGE
+ObjectTemplate.bindToSkeletonPart BULLET
+ObjectTemplate.addTemplate Springfield03CARTRIDGE
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate SpringfieldATGrenaderound
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject SpringfieldATGrenadeLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate SpringfieldATGrenadeComplex
+ObjectTemplate.addTemplate Springfield03Simple
+
+
+
+ObjectTemplate.create Projectile SpringfieldATGrenade_M9_Projectile
 ObjectTemplate.createNotInGrid 1
 ObjectTemplate.geometry SpringfieldGrenade_grenade
 ObjectTemplate.hasCollisionPhysics 1
@@ -47359,7 +48340,7 @@ ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.timeToLive CRD_NONE/10/0/0
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.damageType 1
-ObjectTemplate.material 444
+ObjectTemplate.material 671
 ObjectTemplate.material2 201
 ObjectTemplate.radius 3.76
 ObjectTemplate.ForceOnExplosion 1
@@ -48439,7 +49420,7 @@ ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setPosition 0/0.05/0.87
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.addTemplate e_shell792mm
 ObjectTemplate.setPosition 0/0.1/0.41
 ObjectTemplate.setRotation 0/0/0
 
@@ -48464,6 +49445,609 @@ ObjectTemplate.create LodObject SVT40BayLod
 ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate SVT40BayComplex
 ObjectTemplate.addTemplate SVT40Simple
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T20E2
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh T20E2_Base_m1
+GeometryTemplate.file T20E2_Base_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T20E2_Base_Fold_m1
+GeometryTemplate.file T20E2_Base_Fold_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T20E2_LOD_m1
+GeometryTemplate.file T20E2_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T20E2_LOD_fold_m1
+GeometryTemplate.file T20E2_LOD_fold_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T20E2
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+rem *** T20E2
+rem *** T20E2Bay
+
+rem ----------------------------------------------------------
+rem Firearm: T20E2
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms T20E2
+include ../T20E2/T20E2.inc
+ObjectTemplate.numOfMag 8
+
+ObjectTemplate.create SimpleObject T20E2Simple
+ObjectTemplate.geometry T20E2_LOD_fold_m1
+
+ObjectTemplate.create Bundle T20E2Magasin
+ObjectTemplate.geometry 
+ObjectTemplate.addTemplate Bar1918Mag
+ObjectTemplate.setPosition 0.016/0/-0.0036
+ObjectTemplate.setRotation -89.797/-1.184/-4.005
+
+ObjectTemplate.create Bundle T20E2Reload
+ObjectTemplate.addTemplate M1GarandReload
+ObjectTemplate.setPosition 0.0152/0/-0.003
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.create SimpleObject T20E2Plupp
+ObjectTemplate.geometry M1GarandPlupp
+
+ObjectTemplate.create SimpleObject T20E2trigger
+ObjectTemplate.geometry M1Garandtrigger
+
+ObjectTemplate.create AnimatedBundle T20E2Complex
+ObjectTemplate.createSkeleton animations/Type5.ske
+ObjectTemplate.geometry T20E2_Base_Fold_m1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.addTemplate T20E2trigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate T20E2Reload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate T20E2Plupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate T20E2Magasin
+ObjectTemplate.bindToSkeletonPart mag
+
+ObjectTemplate.create LodObject T20E2Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate T20E2Complex
+ObjectTemplate.addTemplate T20E2Simple
+
+
+rem ----------------------------------------------------------
+rem Firearm: T20E2Bay with Bayonet
+rem ----------------------------------------------------------
+ObjectTemplate.create HandFireArms T20E2Bay
+ObjectTemplate.itemIndex 1
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate 7,62mmProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 20
+ObjectTemplate.numOfMag 8
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5.0
+ObjectTemplate.roundOfFire 12.5
+rem ObjectTemplate.roundOfFire 4
+objectTemplate.aiTemplate T20E2_ID1AI
+rem ObjectTemplate.zoomFov 0.7
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.fireOnce 0
+ObjectTemplate.altFireOnce 1
+rem ObjectTemplate.soldierZoomFov 0.7 
+rem ObjectTemplate.soldierZoomPosition -0.11/-0.04/0.06
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/-0.07
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.ammoType 1
+ObjectTemplate.autoReload 0
+
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/magbar_BAR_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/magbar_BAR_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 48
+ObjectTemplate.setAmomBarPosX 5
+ObjectTemplate.setAmomBarPosY -11
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+ObjectTemplate.setWeaponLink 3
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 750
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.7/1.4/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 5 1.8 0.2
+ObjectTemplate.setDevMod 1.5 1 0.5
+ObjectTemplate.setMinDev 0.35
+ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
+ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
+ObjectTemplate.setMiscDev 18 8 0.35
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../T20E2/Sounds/T20E2.ssc
+
+ObjectTemplate.createSkeleton animations/Type5.ske
+ObjectTemplate.useSkeletonPartAsMain T20E2
+
+rem *** LodObject must be located as first child to work on handweapons.
+ObjectTemplate.addTemplate T20E2BayLod
+
+ObjectTemplate.addTemplate BayonetM1Garand
+
+ObjectTemplate.addTemplate e_MuzzGun_T-Shaped
+ObjectTemplate.setPosition 0/0.05/0.835
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setPosition 0/0.1/0.41
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create AnimatedBundle T20E2BayComplex
+ObjectTemplate.geometry T20E2_Base_Fold_m1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.addTemplate M1bayonet_m1
+ObjectTemplate.setPosition 0/0.01/0.81
+ObjectTemplate.createSkeleton animations/Type5.ske
+ObjectTemplate.addTemplate T20E2trigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate T20E2Reload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate T20E2Plupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate T20E2Magasin
+ObjectTemplate.bindToSkeletonPart mag
+
+ObjectTemplate.create LodObject T20E2BayLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate T20E2BayComplex
+ObjectTemplate.addTemplate T20E2Simple
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T20E2Grenade
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh T20E2_Launcher_m1
+GeometryTemplate.file T20E2_Launcher_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T20E2_grenade_m1
+GeometryTemplate.file garand_grenade
+GeometryTemplate.scale 1.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T20E2_grenade_HEAT_m1
+GeometryTemplate.file Energa_Grenade_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T20E2Grenade_LOD_m1
+GeometryTemplate.file T20E2Grenade_LOD_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh T20E2Grenade_LOD_fold_m1
+GeometryTemplate.file T20E2Grenade_LOD_fold_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = T20E2Grenade
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem T20E2Grenade
+rem ID:5
+
+rem T20E2Grenade_HEAT
+rem ID:6
+rem Energa pen:200mm
+
+rem T20E2Grenade_HEAT_M9A1
+rem ID:6
+rem M9A1 Pen:102mm
+
+ObjectTemplate.create HandFireArms T20E2Grenade
+ObjectTemplate.itemIndex 5
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate T20E2GrenadeProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 2
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate T20E2GrenadeAI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.addFireArmsPosition 0.001/0.0472/0.884 0/0/0
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.1/0/0
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/-0.07
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+ObjectTemplate.FireDelay 0.8
+
+ObjectTemplate.altFireOnce 1
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.75/3.5/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 5 2.25 0.2
+ObjectTemplate.setDevMod 1.5 1.35 1.25
+ObjectTemplate.setMinDev 1
+ObjectTemplate.setTurnDev 5 0.4 0.4 0.4
+ObjectTemplate.setSpeedDev 8 0.5 0.5 0.5
+ObjectTemplate.setMiscDev 18 8 0.35
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../T20E2Grenade/Sounds/T20E2Grenade.ssc
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/magbar_Garand_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/magbar_Garand_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 20
+ObjectTemplate.setAmomBarPosX 6
+ObjectTemplate.setAmomBarPosY -17
+ObjectTemplate.setAmomBarTextPosX 5
+ObjectTemplate.setAmomBarTextPosY 10
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_M1Garand.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.useSkeletonPartAsMain T20E2
+ObjectTemplate.addTemplate T20E2GrenadeLod
+
+
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.06/0.725
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create SimpleObject T20E2_Launcher
+ObjectTemplate.geometry T20E2_Launcher_m1
+
+ObjectTemplate.create Bundle T20E2Grenaderound
+ObjectTemplate.addTemplate T20E2GrenadeVisible
+ObjectTemplate.setPosition 0/0/0.1
+
+ObjectTemplate.create SimpleObject T20E2GrenadeVisible
+ObjectTemplate.geometry T20E2_grenade_m1
+
+ObjectTemplate.create Bundle T20E2GrenadeGUNBODY
+ObjectTemplate.geometry T20E2_Base_Fold_m1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.addTemplate T20E2_Launcher
+ObjectTemplate.addTemplate Bar1918Mag
+ObjectTemplate.setPosition -0.004/-0.031/0.145
+
+rem ** SimpleObjects
+ObjectTemplate.create AnimatedBundle T20E2GrenadeComplex
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.addTemplate T20E2GrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate M1Garandtrigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate M1GarandReload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate M1GarandPlupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate M1GarandClip
+ObjectTemplate.bindToSkeletonPart clip
+ObjectTemplate.addTemplate K98_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate T20E2Grenaderound
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject T20E2GrenadeLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate T20E2GrenadeComplex
+ObjectTemplate.addTemplate T20E2GrenadeSimple
+
+ObjectTemplate.create SimpleObject T20E2GrenadeSimple
+ObjectTemplate.geometry T20E2Grenade_LOD_fold_m1
+
+ObjectTemplate.create Projectile T20E2GrenadeProjectile
+ObjectTemplate.geometry T20E2_grenade_m1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.timeOnEndEffect 0.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 207
+ObjectTemplate.material2 207
+ObjectTemplate.radius 10
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
+
+
+
+
+ObjectTemplate.create HandFireArms T20E2Grenade_HEAT
+ObjectTemplate.itemIndex 6
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate T20E2Grenade_HEAT_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.addFireArmsPosition 0/0.0485/0.841 0/0/0
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.1/0/0
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/-0.07
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.altFireOnce 1
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.75/3.5/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../T20E2Grenade/Sounds/T20E2Grenade.ssc
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_Energa_Grenade.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_M1Garand.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.useSkeletonPartAsMain T20E2
+ObjectTemplate.addTemplate T20E2Grenade_HEATLod
+
+
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.06/0.725
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create SimpleObject T20E2Grenade_HEAT_Visible
+ObjectTemplate.geometry T20E2_grenade_HEAT_m1
+
+ObjectTemplate.create AnimatedBundle T20E2Grenade_HEATComplex
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.addTemplate T20E2GrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate M1Garandtrigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate M1GarandReload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate M1GarandPlupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate M1GarandClip
+ObjectTemplate.bindToSkeletonPart clip
+ObjectTemplate.addTemplate K98_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate T20E2Grenade_HEAT_Visible
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject T20E2Grenade_HEATLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate T20E2Grenade_HEATComplex
+ObjectTemplate.addTemplate T20E2GrenadeSimple
+
+
+ObjectTemplate.create Projectile T20E2Grenade_HEAT_Projectile
+ObjectTemplate.geometry T20E2_grenade_HEAT_m1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.timeOnEndEffect 0.5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.damageType 1
+ObjectTemplate.material 670
+ObjectTemplate.material2 201
+ObjectTemplate.radius 4.09
+ObjectTemplate.ForceOnExplosion 1
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
+
+
+
+ObjectTemplate.create HandFireArms T20E2Grenade_HEAT_M9A1
+ObjectTemplate.itemIndex 6
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate GarandATGrenade_M9A1_Projectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.fireOnce 1
+objectTemplate.aiTemplate T20E2Grenade_HEAT_AI
+ObjectTemplate.zoomFov 0.7
+ObjectTemplate.addFireArmsPosition 0/0.0485/0.841 0/0/0
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.1/0/0
+ObjectTemplate.soldierCameraPosition -0.01/-0.04/-0.07
+ObjectTemplate.addRootSpeed 0
+ObjectTemplate.AmmoType	2
+ObjectTemplate.cantSelectWhenNoAmmo 1
+ObjectTemplate.changeWeaponWhenNoAmmo 1
+
+ObjectTemplate.altFireOnce 1
+
+Rem *** Deviation Begin *****
+ObjectTemplate.velocity 80
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.75/3.5/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 3.0 1.5 0.05
+ObjectTemplate.setDevMod 1.0 0.8 0.6
+ObjectTemplate.setMinDev 1.0
+ObjectTemplate.setTurnDev 3.0 0.1 0.1 0.1
+ObjectTemplate.setSpeedDev 4.0 0.3 0.25 0.2
+ObjectTemplate.setMiscDev 3.5 3.5 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript ../T20E2Grenade/Sounds/T20E2Grenade.ssc
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATIcon
+ObjectTemplate.setAmmoIcon "Ammo/Icon_HEAT_M9A1RGL.tga"
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setScopeIcon "RifleGrenadeSight_M1Garand.tga"
+ObjectTemplate.setSightIcon "scope_blank.tga"
+objectTemplate.UseScope 1
+
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.useSkeletonPartAsMain T20E2
+ObjectTemplate.addTemplate T20E2Grenade_HEAT_M9A1Lod
+
+ObjectTemplate.addTemplate e_Muzz30mmWC
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.06/0.725
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/0.28
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.create Bundle T20E2Grenade_HEAT_M9A1round
+ObjectTemplate.addTemplate GarandGrenade_HEATroundVisible
+ObjectTemplate.setPosition 0/0/0.1
+
+ObjectTemplate.create AnimatedBundle T20E2Grenade_HEAT_M9A1Complex
+ObjectTemplate.createSkeleton animations/GarandGrenade.ske
+ObjectTemplate.addTemplate T20E2GrenadeGUNBODY
+ObjectTemplate.bindToSkeletonPart GUNBODY
+ObjectTemplate.addTemplate M1Garandtrigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate M1GarandReload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate M1GarandPlupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate M1GarandClip
+ObjectTemplate.bindToSkeletonPart clip
+ObjectTemplate.addTemplate K98_cart
+ObjectTemplate.bindToSkeletonPart CARTRIDGE
+ObjectTemplate.addTemplate T20E2Grenade_HEAT_M9A1round
+ObjectTemplate.bindToSkeletonPart GRENADE
+
+ObjectTemplate.create LodObject T20E2Grenade_HEAT_M9A1Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate T20E2Grenade_HEAT_M9A1Complex
+ObjectTemplate.addTemplate T20E2GrenadeSimple
 
 rem ===== EOF =====
 rem ============================================================================
@@ -50718,7 +52302,7 @@ ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setPosition 0/0.05/0.84
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.addTemplate e_shell792mm
 ObjectTemplate.setPosition 0/0.1/0.41
 ObjectTemplate.setRotation 0/0/0
 
@@ -50826,10 +52410,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.0318/0.583
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.043/0.124
+ObjectTemplate.setPosition 0/-0.05/0.124
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.create SimpleObject Type96LMGSimple
@@ -50938,10 +52522,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.0318/0.583
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.043/0.124
+ObjectTemplate.setPosition 0/-0.05/0.124
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -51044,10 +52628,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.034/0.869
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.043/0.124
+ObjectTemplate.setPosition 0/-0.05/0.124
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.create SimpleObject Type96SSimple
@@ -51141,10 +52725,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.034/0.869
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.043/0.124
+ObjectTemplate.setPosition 0/-0.05/0.124
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -51372,10 +52956,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.04/0.70
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0.02/0.06/0.17
+ObjectTemplate.setPosition 0.02/-0.05/0.17
 ObjectTemplate.setRotation 0/0/0
 
 rem *** Objects ***
@@ -51469,10 +53053,10 @@ ObjectTemplate.startoneffects 0
 ObjectTemplate.setPosition 0/0.04/0.70
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
+ObjectTemplate.addTemplate e_Shell792mm_Down
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0.02/0.06/0.17
+ObjectTemplate.setPosition 0.02/-0.05/0.17
 ObjectTemplate.setRotation 0/0/0
 
 rem ===== EOF =====
@@ -53112,7 +54696,7 @@ ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.damageType 1
 ObjectTemplate.material 207
 ObjectTemplate.material2 207
-ObjectTemplate.radius 10
+ObjectTemplate.radius 14
 ObjectTemplate.ForceOnExplosion 1
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 

@@ -2,6 +2,1679 @@ rem *** S&T Changes ***
 rem engine sounds
 
 rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Geometries.con
+rem ============================================================================
+GeometryTemplate.create StandardMesh AdvancedPost_m1
+GeometryTemplate.file SpawnTent_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 10
+GeometryTemplate.setLodDistance 2 15
+GeometryTemplate.setLodDistance 3 30
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create AnimatedMesh AdvancedPost_Smallflag_jp_m1
+GeometryTemplate.setSkin animations/flag.skn
+GeometryTemplate.file flagjp_m1
+GeometryTemplate.Scale 0.2/0.2/0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 100
+
+GeometryTemplate.create StandardMesh AdvancedPost_Smallflagbase_m1
+GeometryTemplate.file flagbase_m1
+GeometryTemplate.Scale 0.2/0.2/0.2
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Network.con
+rem ============================================================================
+NetworkableInfo.createNewInfo AdvancedPost_SP_BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Objects.con
+rem ============================================================================
+rem ===== COMPRESS = COMMON
+
+rem AdvancedPost
+
+*** AdvancedPost_SPT66
+*** AdvancedPost_SPT67
+*** AdvancedPost_SPT68
+*** AdvancedPost_SPT69
+*** AdvancedPost_SPT72
+*** AdvancedPost_SPT73
+*** AdvancedPost_SPT74
+*** AdvancedPost_SPT79
+*** AdvancedPost_SPT80
+*** AdvancedPost_SPT81
+*** AdvancedPost_SPT84
+
+rem *** AXIS
+*** AdvancedPost_SPT64
+*** AdvancedPost_SPT65
+*** AdvancedPost_SPT70
+*** AdvancedPost_SPT71
+*** AdvancedPost_SPT75
+*** AdvancedPost_SPT76
+*** AdvancedPost_SPT77
+*** AdvancedPost_SPT78
+*** AdvancedPost_SPT82
+*** AdvancedPost_SPT83
+
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT66
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_66
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT67
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_67
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT68
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_68
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT69
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_69
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT72
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_72
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT73
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_73
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT74
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_74
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT79
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_79
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT80
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_80
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT81
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_81
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT84
+include ../AdvancedPostSPT/AdvancedPost_SPTAllied.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_84
+ObjectTemplate.setPosition 0/1/0
+
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT64
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_64
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT65
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_65
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT70
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_70
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT71
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_71
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT75
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_75
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT76
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_76
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT77
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_77
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT78
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_78
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT82
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_82
+ObjectTemplate.setPosition 0/1/0
+
+ObjectTemplate.create PlayerControlObject AdvancedPost_SPT83
+include ../AdvancedPostSPT/AdvancedPost_SPTAxis.inc
+ObjectTemplate.addTemplate AdvancedPost_SoldierSpawn_83
+ObjectTemplate.setPosition 0/1/0
+
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_66
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_67
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 67
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_68
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 68
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_69
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 69
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_72
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 72
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_73
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 73
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_74
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 74
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_79
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 79
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_80
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 80
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_81
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 81
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_84
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 84
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_64
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 64
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_65
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 65
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_70
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 70
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_71
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 71
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_75
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 75
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_76
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 76
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_77
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 77
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_78
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 78
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_82
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 82
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+ObjectTemplate.create SpawnPoint AdvancedPost_SoldierSpawn_83
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 83
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** AdvancedPostEntry ***
+ObjectTemplate.create EntryPoint AdvancedPostEntry
+ObjectTemplate.setEntryRadius 2
+
+rem *** AdvancedPost_Camera ***
+ObjectTemplate.create Camera AdvancedPost_Camera
+ObjectTemplate.setMinRotation -60/-20/0
+ObjectTemplate.setMaxRotation 60/20/0
+ObjectTemplate.setMaxSpeed 30/30/0
+ObjectTemplate.setAcceleration 500/500/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** AdvancedPost_FlagbaseAllied ***
+ObjectTemplate.create Bundle AdvancedPost_FlagbaseAllied
+ObjectTemplate.geometry AdvancedPost_Smallflagbase_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate AnimatedUsFlag
+ObjectTemplate.setPosition 0/1.674/0
+rem -------------------------------------
+
+rem *** AdvancedPost_FlagbaseAxis ***
+ObjectTemplate.create Bundle AdvancedPost_FlagbaseAxis
+ObjectTemplate.geometry AdvancedPost_Smallflagbase_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate AnimatedJapFlag
+ObjectTemplate.setPosition 0/1.674/0
+rem -------------------------------------
+
+rem *** AdvancedPost_PCO1 ***
+ObjectTemplate.create PlayerControlObject AdvancedPost_PCO1
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPostEntry
+ObjectTemplate.addTemplate AdvancedPost_Camera
+ObjectTemplate.setPosition 0/0.7/1
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_SpawnTent.tga"
+ObjectTemplate.setVehicleIconPos 52/69
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** AdvancedPost_PCO2 ***
+ObjectTemplate.create PlayerControlObject AdvancedPost_PCO2
+ObjectTemplate.NameTagOffset 0/-50/0
+ObjectTemplate.setNetworkableInfo HanomagInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPostEntry
+ObjectTemplate.addTemplate AdvancedPost_Camera
+ObjectTemplate.setPosition 0/0.7/1
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/1/0 0/0/0
+ObjectTemplate.GUIIndex 19
+ObjectTemplate.setVehicleIcon "Vehicle/icon_SpawnTent.tga"
+ObjectTemplate.setVehicleIconPos 52/74
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon ""
+ObjectTemplate.hasRestrictedExit 1
+
+rem ===== EOF =====
+rem ============================================================================
+rem folder = AdvancedPostSPT
+rem sauce = Weapons.con
+rem ============================================================================
+rem *** ALLIED
+rem *** AdvancedPostFireArms_SPT66
+rem *** AdvancedPostFireArms_SPT67
+rem *** AdvancedPostFireArms_SPT68
+rem *** AdvancedPostFireArms_SPT69
+rem *** AdvancedPostFireArms_SPT72
+rem *** AdvancedPostFireArms_SPT73
+rem *** AdvancedPostFireArms_SPT74
+rem *** AdvancedPostFireArms_SPT79
+rem *** AdvancedPostFireArms_SPT80
+rem *** AdvancedPostFireArms_SPT81
+rem *** AdvancedPostFireArms_SPT84
+
+rem *** AXIS
+rem *** AdvancedPostFireArms_SPT64
+rem *** AdvancedPostFireArms_SPT65
+rem *** AdvancedPostFireArms_SPT70
+rem *** AdvancedPostFireArms_SPT71
+rem *** AdvancedPostFireArms_SPT75
+rem *** AdvancedPostFireArms_SPT76
+rem *** AdvancedPostFireArms_SPT77
+rem *** AdvancedPostFireArms_SPT78
+rem *** AdvancedPostFireArms_SPT82
+rem *** AdvancedPostFireArms_SPT83
+
+
+rem *** AdvancedPostFireArms_SPT64 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT64
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT64Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT64Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT64Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT64Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT64Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT64
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT64
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT65 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT65
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT65Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT65Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT65Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT65Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT65Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT65
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT65
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT66 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT66
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT66Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT66Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT66Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT66Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT66Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT66
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT66
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT67 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT67
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT67Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT67Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT67Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT67Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT67Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT67
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT67
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT68 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT68
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT68Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT68Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT68Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT68Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT68Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT68
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT68
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT69 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT69
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT69Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT69Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT69Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT69Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT69Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT69
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT69
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT70 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT70
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT70Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT70Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT70Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT70Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT70Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT70
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT70
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT71 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT71
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT71Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT71Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT71Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT71Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT71Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT71
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT71
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+rem *** AdvancedPost_SPT72 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT72
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT72Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT72Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT72Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT72Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT72Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT72
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT72
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT73 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT73
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT73Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT73Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT73Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT73Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT73Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT73
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT73
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT74 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT74
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT74Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT74Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT74Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT74Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT74Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT74
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT74
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT75 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT75
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT75Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT75Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT75Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT75Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT75Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT75
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT75
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT76 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT76
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT76Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT76Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT76Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT76Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT76Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT76
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT76
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT77 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT77
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT77Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT77Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT77Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT77Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT77Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT77
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT77
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT78 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT78
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT78Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT78Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT78Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT78Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT78Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT78
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT78
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT79 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT79
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT79Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT79Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT79Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 2
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT79Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT79Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT79
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT79
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT80 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT80
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT80Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT80Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT80Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT80Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT80Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT80
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT80
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT81 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT81
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT81Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT81Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT81Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT81Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT81Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT81
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT81
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT82 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT82
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT82Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT82Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT82Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT82Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT82Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT82
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT82
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT83 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT83
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT83Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	11
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT83Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT83Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT83Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT83Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT83
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT83
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+
+
+rem *** AdvancedPost_SPT84 ***
+ObjectTemplate.create FireArms AdvancedPostFireArms_SPT84
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+rem -------------------------------------
+ObjectTemplate.projectileTemplate AdvancedPost_SPT84Projectile
+ObjectTemplate.projectilePosition 0/0/-2
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.velocity 1
+ObjectTemplate.reloadtime 120
+ObjectTemplate.autoReload 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	12
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.autoReload 1
+
+ObjectTemplate.create Projectile AdvancedPost_SPT84Projectile
+ObjectTemplate.createNotInGrid 1 
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.saveInSeparateFile 1 
+rem -------------------------------------
+ObjectTemplate.addTemplate AdvancedPost_SPT84Spawner
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
+ObjectTemplate.gravityModifier 3
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.setHasMobilePhysics 1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 0
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.invisible 1
+ObjectTemplate.material 230
+ObjectTemplate.DetonateOnWaterCollision 0 
+ObjectTemplate.dieAfterColl 0
+ObjectTemplate.drag 0.04 
+ObjectTemplate.mass 800 
+
+rem *** AdvancedPost_SPT84Spawner *** 
+ObjectTemplate.create ObjectSpawner AdvancedPost_SPT84Spawner
+ObjectTemplate.setObjectTemplate 1 AdvancedPost_SPT84
+ObjectTemplate.setObjectTemplate 2 AdvancedPost_SPT84
+ObjectTemplate.holdObject 0 
+ObjectTemplate.SpawnDelayAtStart 1
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
+ObjectTemplate.TimeToLive 0
+ObjectTemplate.Distance 20 
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+ObjectTemplate.MaxNrOfObjectSpawned 1
+ObjectTemplate.damageWhenLost 0
+
+rem ===== EOF =====
+rem ============================================================================
 rem folder = APCR_SupplyObject
 rem sauce = Geometries.con
 rem ============================================================================
@@ -2966,8 +4639,8 @@ ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate Cavalry_PPSh_GunBundle
@@ -4349,6 +6022,7 @@ rem 85mmL64,1_Projectile
 rem 85mmL65,8_Projectile
 rem 88mmL56_Projectile
 rem 88mmL56APCR_Projectile
+rem 88-150mmL29.5APHEDS_Projectile
 rem 88mmL71_Projectile
 rem 88mmL71APCR_Projectile
 rem 90mmL50_Projectile
@@ -4363,6 +6037,7 @@ rem 95mmL41_Projectile
 rem 100mmL56_Projectile
 rem 105mmPAW1000HEAT_Projectile
 rem 105mmL22,5HEAT_Projectile
+rem 105mmL24HEAT_Projectile
 rem 105mmL28HEAT_Projectile
 rem 105mmL65_Projectile
 rem 105mmL65A_Projectile
@@ -6712,6 +8387,30 @@ ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_bulletsmoke_green
 
+
+rem *** 188-150mmL29.5APHEDS_Projectile ***
+ObjectTemplate.create Projectile 88-150mmL29.5APHEDS_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 668
+ObjectTemplate.material2 199
+ObjectTemplate.radius 14.97
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
+
+
 rem *** 88mmL71_Projectile ***
 ObjectTemplate.create Projectile 88mmL71_Projectile
 ObjectTemplate.createNotInGrid 1
@@ -7024,6 +8723,78 @@ ObjectTemplate.damageType 1
 ObjectTemplate.material 776
 ObjectTemplate.material2 206
 ObjectTemplate.radius 22.79
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion10cmInvisSpawner
+ObjectTemplate.setPosition 0/0/0.5
+
+rem *** 105mmL24HEAT_Projectile ***
+ObjectTemplate.create Projectile 105mmL24HEAT_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 669
+ObjectTemplate.material2 206
+ObjectTemplate.radius 21.37
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion10cmInvisSpawner
+ObjectTemplate.setPosition 0/0/0.5
+
+rem *** 105mmL24HEAT_Projectile ***
+ObjectTemplate.create Projectile 105mmL24HEAT_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 669
+ObjectTemplate.material2 206
+ObjectTemplate.radius 21.37
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion10cmInvisSpawner
+ObjectTemplate.setPosition 0/0/0.5
+
+rem *** 105mmL24HEAT_Projectile ***
+ObjectTemplate.create Projectile 105mmL24HEAT_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 669
+ObjectTemplate.material2 206
+ObjectTemplate.radius 21.37
 ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.minDamage 0.001
 ObjectTemplate.distToStartLoseDamage 1
@@ -11778,7 +13549,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -12483,7 +14254,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -12887,7 +14658,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -13015,7 +14786,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -13143,7 +14914,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -13235,7 +15006,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -13331,7 +15102,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -13848,7 +15619,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -14274,7 +16045,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -14401,7 +16172,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -14529,7 +16300,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -14621,7 +16392,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -14717,7 +16488,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -15145,7 +16916,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
