@@ -6173,6 +6173,8 @@ ObjectTemplate.setNetworkableInfo Bunker_Maginot75_GunInfo
 rem -------------------------------------
 ObjectTemplate.addTemplate Bunker_Maginot75Camera
 ObjectTemplate.setPosition 0/0/-0.4
+ObjectTemplate.addTemplate Tankgun_AmmoIndicator_HE-AP
+ObjectTemplate.setPosition 0/0/-0.4
 ObjectTemplate.addTemplate lodBunker_Maginot75Cockpit
 ObjectTemplate.setPosition 0/0/-0.4
 rem -------------------------------------
@@ -11020,7 +11022,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 113
 ObjectTemplate.maxhitpoints 113
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -11302,7 +11304,7 @@ rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.Grip c_PGFRollGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -11318,7 +11320,7 @@ rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.Grip c_PGFRollGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -11609,7 +11611,6 @@ ObjectTemplate.workOnVehicles 1
 rem ------------------------------------
 ObjectTemplate.setHealth 0 0 0
 ObjectTemplate.addAmmoType 17 1 100 0
-ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
 
 rem *** French155mmmobile_dummySpawnObjRepairSupplyDepot ***
 ObjectTemplate.create SupplyDepot French155mmmobile_dummySpawnObjRepairSupplyDepot
@@ -11856,6 +11857,7 @@ rem ------------------------------------
 ObjectTemplate.addVehicleType French155mmmobile_towed_dummySpawnObj -1 10000 0
 rem ------------------------------------
 ObjectTemplate.setHealth -1 -1000 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/ATG_liftup.ssc
 
 
 
@@ -12177,7 +12179,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 113
 ObjectTemplate.maxhitpoints 113
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -12775,7 +12777,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 96
 ObjectTemplate.maxhitpoints 96
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 17 e_WillyDamage 0/1.7/0
 ObjectTemplate.addArmorEffect 5 e_WillyFire 0/0.5/0.8
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
@@ -13003,7 +13005,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 96
 ObjectTemplate.maxhitpoints 96
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 40 e_WillyDamage 0/1.7/0
 ObjectTemplate.addArmorEffect 9 e_WillyFire 0/0.5/0.8
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
@@ -13382,7 +13384,7 @@ ObjectTemplate.geometry Frz75er_WheelR_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip 
+ObjectTemplate.Grip c_PGFRollGrip 
 ObjectTemplate.setStrength 0
 ObjectTemplate.setDamping 0
 
@@ -13392,7 +13394,7 @@ ObjectTemplate.geometry Frz75er_WheelL_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip 
+ObjectTemplate.Grip c_PGFRollGrip 
 ObjectTemplate.setStrength 0
 ObjectTemplate.setDamping 0
 
@@ -15934,7 +15936,7 @@ rem *** Laffly15tEngine ***
 ObjectTemplate.create Engine Laffly15tEngine
 ObjectTemplate.setNetworkableInfo Laffly15tEngineInfo
 ObjectTemplate.setAttachToListener 1
-ObjectTemplate.loadSoundScript ../Engines/Sounds/BedfordEngine.ssc
+ObjectTemplate.loadSoundScript ../Laffly15t/Sounds/Laffly15tEngine.ssc
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
@@ -17031,13 +17033,13 @@ ObjectTemplate.AmmoType	17
 rem *** Lorraine37L-Mle1897_SpawnerProjectile ***
 ObjectTemplate.create Projectile Lorraine37L-Mle1897_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Landmine
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate Lorraine37L-Mle1897_GunDeploySpawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -17055,13 +17057,13 @@ rem *** Lorraine37L-Mle1897_GunDeploySpawner ***
 ObjectTemplate.create ObjectSpawner Lorraine37L-Mle1897_GunDeploySpawner
 ObjectTemplate.setObjectTemplate 1 French75mmmobile_towedgun
 ObjectTemplate.setObjectTemplate 2 French75mmmobile_towedgun
-ObjectTemplate.holdObject 0 
-ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.holdObject 0
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.minSpawnDelay 2
 ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 0
 ObjectTemplate.Distance 20 
-ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.spawnOffset 0/1.0/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
@@ -17256,13 +17258,13 @@ ObjectTemplate.AmmoType	17
 rem *** Lorraine37L-Mle1917_SpawnerProjectile ***
 ObjectTemplate.create Projectile Lorraine37L-Mle1917_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Landmine
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate Lorraine37L-Mle1917_GunDeploySpawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -17280,13 +17282,13 @@ rem *** Lorraine37L-Mle1917_GunDeploySpawner ***
 ObjectTemplate.create ObjectSpawner Lorraine37L-Mle1917_GunDeploySpawner
 ObjectTemplate.setObjectTemplate 1 French155mmmobile_towedgun
 ObjectTemplate.setObjectTemplate 2 French155mmmobile_towedgun
-ObjectTemplate.holdObject 0 
-ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.holdObject 0
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.minSpawnDelay 2
 ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 0
 ObjectTemplate.Distance 20 
-ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.spawnOffset 0/1.0/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
@@ -17481,13 +17483,13 @@ ObjectTemplate.AmmoType	17
 rem *** Lorraine37L-SA37_SpawnerProjectile ***
 ObjectTemplate.create Projectile Lorraine37L-SA37_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Landmine
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate Lorraine37L-SA37_GunDeploySpawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -17505,13 +17507,13 @@ rem *** Lorraine37L-SA37_GunDeploySpawner ***
 ObjectTemplate.create ObjectSpawner Lorraine37L-SA37_GunDeploySpawner
 ObjectTemplate.setObjectTemplate 1 SA37mobile_towedgun
 ObjectTemplate.setObjectTemplate 2 SA37mobile_towedgun
-ObjectTemplate.holdObject 0 
-ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.holdObject 0
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.minSpawnDelay 2
 ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 0
 ObjectTemplate.Distance 20 
-ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.spawnOffset 0/1.0/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
@@ -18644,7 +18646,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 87
 ObjectTemplate.maxhitpoints 87
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 rem ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -19013,7 +19015,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 87
 ObjectTemplate.maxhitpoints 87
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 rem ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -19228,7 +19230,7 @@ rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.Grip c_PGFRollGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -19244,7 +19246,7 @@ rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.Grip c_PGFRollGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -19599,7 +19601,6 @@ ObjectTemplate.workOnVehicles 1
 rem ------------------------------------
 ObjectTemplate.setHealth 0 0 0
 ObjectTemplate.addAmmoType 17 1 100 0
-ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
 
 rem *** SA37mobile_dummySpawnObjRepairSupplyDepot ***
 ObjectTemplate.create SupplyDepot SA37mobile_dummySpawnObjRepairSupplyDepot

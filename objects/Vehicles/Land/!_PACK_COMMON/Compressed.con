@@ -513,13 +513,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT64Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT64Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -568,13 +568,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT65Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT65Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -623,13 +623,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT66Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT66Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -678,13 +678,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT67Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT67Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -734,13 +734,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT68Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT68Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -789,13 +789,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT69Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT69Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -846,13 +846,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT70Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT70Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -903,13 +903,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT71Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT71Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -958,13 +958,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT72Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT72Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1014,13 +1014,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT73Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT73Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1071,13 +1071,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT74Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT74Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1128,13 +1128,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT75Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT75Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1185,13 +1185,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT76Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT76Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1242,13 +1242,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT77Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT77Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1299,13 +1299,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT78Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT78Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1355,13 +1355,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT79Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT79Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1411,13 +1411,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT80Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT80Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1467,13 +1467,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT81Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT81Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1524,13 +1524,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT82Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT82Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1581,13 +1581,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT83Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT83Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -1637,13 +1637,13 @@ ObjectTemplate.autoReload 1
 
 ObjectTemplate.create Projectile AdvancedPost_SPT84Projectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate AdvancedPost_SPT84Spawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -4760,8 +4760,8 @@ ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setPosition 0/0.063/0.43
 ObjectTemplate.setRotation 0/0/0
 
-ObjectTemplate.addTemplate e_Shell9mm
-ObjectTemplate.setPosition 0/0.06/0.23
+ObjectTemplate.addTemplate e_Shell_Pistol_Up
+ObjectTemplate.setPosition 0/0.06/0.33
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate Cavalry_PPSh_GunBundle
@@ -6157,6 +6157,7 @@ rem 85mmL64,1_Projectile
 rem 85mmL65,8_Projectile
 rem 88mmL56_Projectile
 rem 88mmL56APCR_Projectile
+rem 88-150mmL29.5APHEDS_Projectile
 rem 88mmL71_Projectile
 rem 88mmL71APCR_Projectile
 rem 90mmL50_Projectile
@@ -6172,6 +6173,7 @@ rem 95mmL41_Projectile
 rem 100mmL56_Projectile
 rem 105mmPAW1000HEAT_Projectile
 rem 105mmL22,5HEAT_Projectile
+rem 105mmL24HEAT_Projectile
 rem 105mmL28HEAT_Projectile
 rem 105mmL52_Projectile
 rem 105mmL65_Projectile
@@ -8615,6 +8617,30 @@ ObjectTemplate.addTemplate e_PanzShootTrail
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.startEffectTemplate e_tanktracer_bulletsmoke_green
 
+
+rem *** 188-150mmL29.5APHEDS_Projectile ***
+ObjectTemplate.create Projectile 88-150mmL29.5APHEDS_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 668
+ObjectTemplate.material2 199
+ObjectTemplate.radius 14.97
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_normal
+
+
 rem *** 88mmL71_Projectile ***
 ObjectTemplate.create Projectile 88mmL71_Projectile
 ObjectTemplate.createNotInGrid 1
@@ -8951,6 +8977,30 @@ ObjectTemplate.damageType 1
 ObjectTemplate.material 776
 ObjectTemplate.material2 206
 ObjectTemplate.radius 22.79
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.minDamage 0.001
+ObjectTemplate.distToStartLoseDamage 1
+ObjectTemplate.distToMinDamage 2000
+ObjectTemplate.addTemplate e_PanzShootTrail
+ObjectTemplate.CullRadiusScale 10
+ObjectTemplate.startEffectTemplate e_tanktracer_pink
+ObjectTemplate.addTemplate PenetrateExplosion10cmInvisSpawner
+ObjectTemplate.setPosition 0/0/0.5
+
+rem *** 105mmL24HEAT_Projectile ***
+ObjectTemplate.create Projectile 105mmL24HEAT_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../Common/Sounds/Projectile.ssc
+ObjectTemplate.geometry Projectile_105mm_BBox_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.gravityModifier 1.0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 669
+ObjectTemplate.material2 206
+ObjectTemplate.radius 21.37
 ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.minDamage 0.001
 ObjectTemplate.distToStartLoseDamage 1
@@ -14675,7 +14725,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -15417,7 +15467,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -15821,7 +15871,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -15949,7 +15999,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -16077,7 +16127,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -16169,7 +16219,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -16265,7 +16315,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -16782,7 +16832,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -17208,7 +17258,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -17335,7 +17385,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -17463,7 +17513,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -17555,7 +17605,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -17651,7 +17701,7 @@ ObjectTemplate.speedMod 2
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0
@@ -18079,7 +18129,7 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.exitTimer 1
 ObjectTemplate.hitpoints 100
 ObjectTemplate.Maxhitpoints 100
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.criticalDamage 10
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileCriticalDamage 0

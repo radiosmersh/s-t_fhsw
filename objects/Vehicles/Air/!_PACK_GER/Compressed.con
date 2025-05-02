@@ -18771,10 +18771,12 @@ ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setEngineType c_ETPlane
 ObjectTemplate.setTorque 35.64
 rem ObjectTemplate.setTorque 32.4
-ObjectTemplate.setDifferential 5.45
+ObjectTemplate.setDifferential 6.45
+rem ObjectTemplate.setDifferential 5.45
 ObjectTemplate.setGearUp 0.7
 ObjectTemplate.setGearDown 0.2
-ObjectTemplate.setNoPropellerEffectAtSpeed 70
+ObjectTemplate.setNoPropellerEffectAtSpeed 75
+rem ObjectTemplate.setNoPropellerEffectAtSpeed 70
 
 
 rem ----- FW190DBodyWingVertical -----
@@ -26932,7 +26934,7 @@ ObjectTemplate.setPivotPosition 0/0/0
 ObjectTemplate.setMinRotation -100/-75/0
 ObjectTemplate.setMaxRotation 100/45/0
 ObjectTemplate.setMaxSpeed 90/90/0
-ObjectTemplate.setAcceleration 5000/-5000/0
+ObjectTemplate.setAcceleration -5000/5000/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 ObjectTemplate.toggleMouseLook 1
@@ -33374,6 +33376,9 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo Hs293Guided_engine_info
 NetworkableInfo.setPredictionMode PMLinear
 
+NetworkableInfo.createNewInfo Hs293GuidedBase_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
 NetworkableInfo.createNewInfo Hs293Guided_body_info
 NetworkableInfo.setPredictionMode PMLinear
 
@@ -33488,6 +33493,8 @@ ObjectTemplate.setPosition 3.8/0/-0.4
 ObjectTemplate.setRotation -9/0/5.5
 ObjectTemplate.addTemplate Hs293GuidedEngine
 ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate Hs293GuidedBaseEngine
+ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate Hs293GuidedEntry
 ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
@@ -33561,10 +33568,33 @@ ObjectTemplate.setTorque 50.0
 rem ObjectTemplate.setTorque 50000.0
 ObjectTemplate.setDifferential 30.0
 ObjectTemplate.setNoPropellerEffectAtSpeed 100
-ObjectTemplate.HeatIncrement 0.003
+ObjectTemplate.HeatIncrement 0.0015
 ObjectTemplate.InverseHeatBar 1
 ObjectTemplate.setHeatBarType B
 
+rem *** Hs293GuidedBaseEngine ***
+ObjectTemplate.create Engine Hs293GuidedBaseEngine
+ObjectTemplate.setNetworkableInfo Hs293GuidedBase_engine_info
+rem -------------------------------------
+ObjectTemplate.addTemplate Hs293GuidedBaseDummyProp_m1
+ObjectTemplate.setPosition 0/0.7/3.2
+ObjectTemplate.setMinRotation -0.3/0/1
+rem ObjectTemplate.setMinRotation -0.3/0/-10
+ObjectTemplate.setMaxRotation 0.3/0/50
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 30/0/50000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 5
+ObjectTemplate.setDifferential 1
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 1000
+
+rem *** Hs293GuidedBaseDummyProp_m1 ***
+ObjectTemplate.create SimpleObject Hs293GuidedBaseDummyProp_m1
+ObjectTemplate.geometry 
 
 rem *** Hs293GuidedFlapLeft ***
 ObjectTemplate.create Wing Hs293GuidedFlapLeft

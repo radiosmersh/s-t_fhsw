@@ -2950,13 +2950,13 @@ ObjectTemplate.AmmoType	17
 rem *** c7p-wz1897_SpawnerProjectile ***
 ObjectTemplate.create Projectile c7p-wz1897_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Landmine
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate c7p-wz1897_GunDeploySpawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -2974,13 +2974,13 @@ rem *** c7p-wz1897_GunDeploySpawner ***
 ObjectTemplate.create ObjectSpawner c7p-wz1897_GunDeploySpawner
 ObjectTemplate.setObjectTemplate 1 wz1897mobile_towedgun
 ObjectTemplate.setObjectTemplate 2 wz1897mobile_towedgun
-ObjectTemplate.holdObject 0 
-ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.holdObject 0
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.minSpawnDelay 2
 ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 0
 ObjectTemplate.Distance 20 
-ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.spawnOffset 0/1.0/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
@@ -3197,13 +3197,13 @@ ObjectTemplate.AmmoType	17
 rem *** c7p-wz1917_SpawnerProjectile ***
 ObjectTemplate.create Projectile c7p-wz1917_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Landmine
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate c7p-wz1917_GunDeploySpawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -3221,13 +3221,13 @@ rem *** c7p-wz1917_GunDeploySpawner ***
 ObjectTemplate.create ObjectSpawner c7p-wz1917_GunDeploySpawner
 ObjectTemplate.setObjectTemplate 1 wz1917mobile_towedgun
 ObjectTemplate.setObjectTemplate 2 wz1917mobile_towedgun
-ObjectTemplate.holdObject 0 
-ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.holdObject 0
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.minSpawnDelay 2
 ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 0
 ObjectTemplate.Distance 20 
-ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.spawnOffset 0/1.0/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
@@ -3444,13 +3444,13 @@ ObjectTemplate.AmmoType	17
 rem *** c7p-wz36_SpawnerProjectile ***
 ObjectTemplate.create Projectile c7p-wz36_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Landmine
+ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate c7p-wz36_GunDeploySpawner
 rem -------------------------------------
 ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 1 
+ObjectTemplate.gravityModifier 3
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
@@ -3468,13 +3468,13 @@ rem *** c7p-wz36_GunDeploySpawner ***
 ObjectTemplate.create ObjectSpawner c7p-wz36_GunDeploySpawner
 ObjectTemplate.setObjectTemplate 1 Wz36mobile_towedgun
 ObjectTemplate.setObjectTemplate 2 Wz36mobile_towedgun
-ObjectTemplate.holdObject 0 
-ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.holdObject 0
+ObjectTemplate.SpawnDelayAtStart 1
 ObjectTemplate.minSpawnDelay 2
 ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 0
 ObjectTemplate.Distance 20 
-ObjectTemplate.spawnOffset 0/0.2/0
+ObjectTemplate.spawnOffset 0/1.0/0
 ObjectTemplate.team 1 
 ObjectTemplate.MaxNrOfObjectSpawned 1 
 ObjectTemplate.damageWhenLost 0
@@ -3518,7 +3518,7 @@ rem ===== COMPRESS = POL
 
 ObjectTemplate.create Projectile RadioPzl37DeployProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Satchel
+ObjectTemplate.geometry Projectile_Invis_Box1m_m1
 ObjectTemplate.saveInSeparateFile 1 
 ObjectTemplate.addTemplate RadioPzl37DeploySpawner
 ObjectTemplate.setPosition 0/3/0 
@@ -3544,10 +3544,10 @@ rem *** RadioPzl37DeploySpawner ***
 ObjectTemplate.create ObjectSpawner RadioPzl37DeploySpawner
 ObjectTemplate.setObjectTemplate 1 RadioPzl37
 ObjectTemplate.setObjectTemplate 2 RadioPzl37
-ObjectTemplate.holdObject 0 
+ObjectTemplate.holdObject 0
 ObjectTemplate.SpawnDelayAtStart 1
-ObjectTemplate.minSpawnDelay 0.5
-ObjectTemplate.maxSpawnDelay 0.5
+ObjectTemplate.minSpawnDelay 2
+ObjectTemplate.maxSpawnDelay 2
 ObjectTemplate.TimeToLive 2.5
 rem ObjectTemplate.TimeToLive 2.5
 ObjectTemplate.Distance 5
@@ -5298,7 +5298,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 96
 ObjectTemplate.maxhitpoints 96
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 17 e_WillyDamage 0/1.7/0
 ObjectTemplate.addArmorEffect 5 e_WillyFire 0/0.5/0.8
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
@@ -5549,7 +5549,7 @@ ObjectTemplate.geometry wz1897Mobile_WheelR_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip 
+ObjectTemplate.Grip c_PGFRollGrip 
 ObjectTemplate.setStrength 0
 ObjectTemplate.setDamping 0
 
@@ -5559,7 +5559,7 @@ ObjectTemplate.geometry wz1897Mobile_WheelL_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip 
+ObjectTemplate.Grip c_PGFRollGrip 
 ObjectTemplate.setStrength 0
 ObjectTemplate.setDamping 0
 
@@ -6404,7 +6404,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 96
 ObjectTemplate.maxhitpoints 96
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 30 e_WillyDamage 0/1.7/0
 ObjectTemplate.addArmorEffect 9 e_WillyFire 0/0.5/0.8
 ObjectTemplate.addArmorEffect 0 e_scrapmetal_willy 0/0/0
@@ -8613,7 +8613,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 113
 ObjectTemplate.maxhitpoints 113
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -9201,7 +9201,6 @@ ObjectTemplate.workOnVehicles 1
 rem ------------------------------------
 ObjectTemplate.setHealth 0 0 0
 ObjectTemplate.addAmmoType 17 1 100 0
-ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
 
 rem *** wz1917mobile_dummySpawnObjRepairSupplyDepot ***
 ObjectTemplate.create SupplyDepot wz1917mobile_dummySpawnObjRepairSupplyDepot
@@ -9766,7 +9765,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 113
 ObjectTemplate.maxhitpoints 113
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 ObjectTemplate.addArmorEffect 40 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -11100,7 +11099,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 82
 ObjectTemplate.maxhitpoints 82
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 rem ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -11357,7 +11356,7 @@ ObjectTemplate.explosionDamage 1
 ObjectTemplate.hasArmor 1
 ObjectTemplate.hitpoints 82
 ObjectTemplate.maxhitpoints 82
-ObjectTemplate.material 33
+ObjectTemplate.material 32
 rem ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1/-1.4
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
@@ -11561,7 +11560,7 @@ rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.Grip c_PGFRollGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
@@ -11577,7 +11576,7 @@ rem mobile gun
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
-ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.Grip c_PGFRollGrip
 rem -------------------------------------
 ObjectTemplate.addTemplate e_wdustWheelFL
 ObjectTemplate.addTemplate e_wdustWheelF
