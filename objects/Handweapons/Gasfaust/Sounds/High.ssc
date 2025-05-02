@@ -5,7 +5,7 @@ newPatch
 ##############
 
 load @ROOT/Sound/@RTD/panzerfaust_fire.wav
-
+stereo
 priority 10
 randomStartPitch 0.02 / 0.02
 
@@ -24,7 +24,7 @@ endEffect
 ### Near ###
 ############
 load @ROOT/Sound/@RTD/panzerfaust_fire.wav
-minDistance 6
+minDistance 16
 dopplerOff
 priority 8
 randomStartPitch 0.02 / 0.02

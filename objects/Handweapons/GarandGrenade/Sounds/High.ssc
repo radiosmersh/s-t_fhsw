@@ -19,116 +19,6 @@ beginEffect
 	param -1
 endEffect
 
-load @ROOT/Sound/@RTD/SoMewa1.wav
-minDistance 1
-randomStartPitch 0.03 / 0.0
-dopplerOff
-priority 0
-*** Time Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Time
-	envelope Ramp
-	param 1.5
-	param 1.5
-	param 0
-	param 1	
-endEffect
-trigger Volume
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 1
-	param 1
-	param 1
-	param -1
-endEffect
-
-load @ROOT/Sound/@RTD/SoMewa2.wav
-minDistance 1
-randomStartPitch 0.03 / 0.0
-dopplerOff
-priority 0
-*** Time Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Time
-	envelope Ramp
-	param 2.9
-	param 2.9
-	param 0
-	param 1	
-endEffect
-trigger Volume
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 1
-	param 1
-	param 1
-	param -1
-endEffect
-
-load @ROOT/Sound/@RTD/SoFa1.wav
-minDistance 1
-randomStartPitch 0.03 / 0.0
-volume .4
-dopplerOff
-priority 0
-*** Time Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Time
-	envelope Ramp
-	param 1.3
-	param 1.3
-	param 0
-	param 1	
-endEffect
-trigger Volume
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 1
-	param 1
-	param 1
-	param -1
-endEffect
-
-load @ROOT/Sound/@RTD/SoFa2.wav
-minDistance 1
-randomStartPitch 0.03 / 0.0
-volume .4
-dopplerOff
-priority 0
-*** Time Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Time
-	envelope Ramp
-	param 3.1
-	param 3.1
-	param 0
-	param 1	
-endEffect
-trigger Volume
-*** Distance Volume ***
-beginEffect
-	controlDestination Volume
-	controlSource Distance
-	envelope Ramp
-	param 1
-	param 1
-	param 1
-	param -1
-endEffect
-
 ############
 ### Near ###
 ############
@@ -211,6 +101,7 @@ load @ROOT/Sound/@RTD/garandgrenfire_dist.wav
 minDistance 6
 dopplerOff
 priority 6
+
 randomStartPitch 0.02 / 0.02
 
 *** Start Volume ***
@@ -252,6 +143,7 @@ trigger Volume
 ###############
 load @ROOT/Sound/@RTD/garandgrenfire_dist.wav
 minDistance 4
+
 dopplerOff
 priority 4
 randomStartPitch 0.02 / 0.02
@@ -296,10 +188,12 @@ trigger Volume
 ##############
 newPatch
 
-load @ROOT/Sound/@RTD/rl2mp18.wav
-minDistance 1
+
+load @ROOT/Sound/@RTD/M1_Final_Reload.wav
 dopplerOff
-priority 1
+minDistance 1
+priority 7
+
 *** Time Volume ***
 beginEffect
 	controlDestination Volume
@@ -323,7 +217,7 @@ beginEffect
 	param -1
 endEffect
 
-load @ROOT/Sound/@RTD/rl2thomp.wav
+load @ROOT/Sound/@RTD/snpreload_clip_put.wav
 minDistance 1
 dopplerOff
 priority 1
@@ -332,8 +226,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param 1.1
-	param 1.1
+	param 2.0
+	param 2.0
 	param 0
 	param 1	
 endEffect
@@ -349,7 +243,7 @@ beginEffect
 	param -1
 endEffect
 
-load @ROOT/Sound/@RTD/snpreload.wav
+load @ROOT/Sound/@RTD/snpreload_clip_in.wav
 minDistance 1
 randomStartPitch 0.02 / 0.02
 dopplerOff
@@ -359,8 +253,118 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param 1.4
-	param 1.4
+	param 2.2
+	param 2.2
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl1rgl.wav
+minDistance 1
+
+dopplerOff
+priority 1
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.6
+	param 3.6
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/rl2rgl.wav
+minDistance 1
+dopplerOff
+priority 1
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 3.8
+	param 3.8
+	param 0
+	param 1	
+endEffect
+trigger Volume
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/M1_Final_Reload.wav
+minDistance 1
+randomStartPitch 0.02 / 0.02
+dopplerOff
+priority 1
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 4.9
+	param 4.9
+	param 0
+	param 1	
+endEffect
+trigger Volume
+
+*** Start Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 1
+	param 1
+	param 1
+	param -1
+endEffect
+
+load @ROOT/Sound/@RTD/M1_Final_Reload_2.wav
+minDistance 1
+randomStartPitch 0.02 / 0.02
+dopplerOff
+priority 1
+*** Time Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 4.9
+	param 4.9
 	param 0
 	param 1	
 endEffect
@@ -518,10 +522,10 @@ beginEffect
 endEffect
 
 load @ROOT/Sound/@RTD/SoMewa3.wav
-minDistance 1
-randomStartPitch 0.03 / 0.0
 dopplerOff
 priority 0
+minDistance 1
+randomStartPitch 0.03 / 0.0
 *** Time Volume ***
 beginEffect
 	controlDestination Volume
@@ -544,7 +548,6 @@ beginEffect
 	param -1
 endEffect
 
-
 ###############
 ### Release ###
 ###############
@@ -553,6 +556,7 @@ newPatch
 load @ROOT/Sound/@RTD/sniprev.wav
 minDistance 30
 randomStartPitch 0.02 / 0.02
+
 dopplerOff
 priority 6
 *** Distance Volume ***
@@ -585,9 +589,10 @@ trigger Volume
 load @ROOT/Sound/@RTD/sniprev.wav
 minDistance 30
 
-randomStartPitch 0.04 / 0.04
 dopplerOff
 priority 6
+randomStartPitch 0.04 / 0.04
+
 *** Start Volume ***
 beginEffect
 	controlDestination Volume
@@ -615,10 +620,11 @@ endEffect
 ###############
 load @ROOT/Sound/@RTD/sniprev.wav
 minDistance 30
-dopplerOff
-priority 6
+
 randomStartPitch 0.04 / 0.04
 
+dopplerOff
+priority 6
 *** Start Volume ***
 beginEffect
 	controlDestination Volume
@@ -659,6 +665,7 @@ trigger Volume
 ###############
 load @ROOT/Sound/@RTD/sniprev.wav
 minDistance 30
+
 dopplerOff
 priority 6
 randomStartPitch 0.04 / 0.04
@@ -702,10 +709,11 @@ trigger Volume
 ###############
 load @ROOT/Sound/@RTD/sniprev.wav
 minDistance 30
-dopplerOff
-priority 6
+
 randomStartPitch 0.04 / 0.04
 
+dopplerOff
+priority 6
 *** Start Volume ***
 beginEffect
 	controlDestination Volume
@@ -740,4 +748,5 @@ beginEffect
 endEffect
 
 trigger Volume
+
 
