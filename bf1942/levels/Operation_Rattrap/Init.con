@@ -52,8 +52,7 @@ game.setKit 1 4 5German_TankCommanderWalterP38M
 game.setTeamSkin 2 BritishSoldier
 game.setKit 2 0 1GB_CloseQuartersStenMk2SP
 game.setKit 2 1 2GB_AssaultDeLisleP
-game.setKit 2 2 3GB_ATGammonP
-rem game.setKit 2 3 4GB_ATPiatP
+game.setKit 2 2 3GB_SpecOpsLewesBombP
 game.setKit 2 3 4GB_AT345RCLP
 game.setKit 2 4 5GB_TankCommander45P
 

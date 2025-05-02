@@ -52,9 +52,11 @@ game.setKit 1 4 5German_EngineerK98
 
 game.setTeamSkin 2 Frenchsoldier
 rem game.setKit 2 0 1Fre_CloseQuartersMas38
-game.setKit 2 0 Cavalry_1Fre_CloseQuartersMas38
+rem game.setKit 2 0 Cavalry_1Fre_CloseQuartersMas38
+game.setKit 2 0 Cavalry_1Fre_OfficerMas38
 game.setKit 2 1 2Fre_AssaultLebel
-game.setKit 2 2 3Fre_TankofficerNo2Smoke
+rem game.setKit 2 2 3Fre_TankofficerNo2Smoke
+game.setKit 2 2 3Fre_ATMAS36HEAT
 rem game.setKit 2 3 4Fre_TankhunterMas38Sticky
 game.setKit 2 3 Cavalry_4Fre_TankhunterMas38Sticky
 game.setKit 2 4 5Fre_EngineerLebel

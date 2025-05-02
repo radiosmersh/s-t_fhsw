@@ -36,7 +36,8 @@ game.setKit 2 0 1Us_OfficerThompsonFM
 game.setKit 2 1 2Us_AssaultGarandWN
 game.setKit 2 2 3Us_GrenadierSpringfield
 game.setKit 2 3 4US_SupportBar
-game.setKit 2 4 5US_EngineerM1CarabineFM
+rem game.setKit 2 4 5US_EngineerM1CarabineFM
+game.setKit 2 4 5US_EngineerM1CarabineSocks
 
 rem *** Active Combat Area ***
 game.setActiveCombatArea 576 768 896 896

@@ -53,7 +53,8 @@ rem game.setKit 1 4 5German_TankCommanderWalterP38Smoke2R
 
 game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1Us_ClosequartersThompsonSmoke2R
-game.setKit 2 1 2Us_AssaultGarand
+rem game.setKit 2 1 2Us_AssaultGarand
+game.setKit 2 1 2Us_AssaultGarandHEAT
 rem game.setKit 2 2 3Us_ATBazooka
 rem game.setKit 2 3 4US_SupportBar
 rem game.setKit 2 4 5US_TankCommanderColtSmoke2R
