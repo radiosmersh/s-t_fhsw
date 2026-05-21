@@ -5,9 +5,11 @@ renderer.diffuseColor 0.250000/0.200000/0.150000
 renderer.specularColor 0.300000/0.300000/0.300000
 renderer.animatedMeshAmbientColor 0.3
 
-textureManager.alternativePath Texture/levels/Karelia
-textureManager.alternativePath Texture/GENERAL_FIN
-textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath bf1942/levels/Karelia/Texture
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_FIN
+textureManager.alternativePath texture/GENERAL_FIN
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath texture/GENERAL_RUS_EUROPE
 textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1944_FALL
 
 shadow.shadowColor 0.500000

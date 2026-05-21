@@ -15,12 +15,14 @@ renderer.fogstart 5
 renderer.fogend 260
 
 rem textureManager.alternativePath Texture/Levels/D-Day
-
 textureManager.alternativePath Texture/Levels/Gold_Beach
-textureManager.alternativePath Texture/GENERAL_BRIT_EUROPE
-textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath texture/SPECIAL_GER_EUROPE_1944_FALL
 textureManager.alternativePath bf1942/Levels/Gold_Beach-1944/Texture
-textureManager.alternativePath texture/Special_skys/goldb
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/goldb
+textureManager.alternativePath texture/SPECIAL_skys/goldb
 
 shadow.shadowColor 0.30
 

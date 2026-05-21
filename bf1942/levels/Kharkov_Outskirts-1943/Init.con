@@ -12,11 +12,16 @@ renderer.animatedMeshAmbientColor 0.2
 shadow.shadowColor 0.4
 
 textureManager.alternativePath Texture/Levels/Kharkov
-textureManager.alternativePath Texture/Special_skys/Kasserine
-textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_WEHRMACHT
-textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
-textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1943_SPRING
-textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1943_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/Kasserine
+textureManager.alternativePath texture/SPECIAL_skys/Kasserine
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_EASTERN_1943_SPRING
+textureManager.alternativePath texture/SPECIAL_GER_EUROPE_EASTERN_1943_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_WEHRMACHT
+textureManager.alternativePath texture/SPECIAL_GER_EUROPE_WEHRMACHT
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_RUS_EUROPE_1943_SPRING
+textureManager.alternativePath texture/SPECIAL_RUS_EUROPE_1943_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath texture/GENERAL_RUS_EUROPE
 
 Game.setViewDistance 375
 Game.spawnPlayers 1
@@ -25,7 +30,8 @@ rem renderer.fogend 375
 
 game.setTeamSkin 1 GermanSoldier
 game.setKit 1 0 1German_OfficerMp40Smoke2R
-game.setKit 1 1 2German_AssaultK98
+rem game.setKit 1 1 2German_AssaultK98
+game.setKit 1 1 2German_AssaultK98HEAT40
 game.setKit 1 2 3German_ATFaustpatrone42
 rem game.setKit 1 2 3German_ATRandomPzf2
 game.setKit 1 3 4German_TankhunterK98Satchel

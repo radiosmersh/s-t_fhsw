@@ -14,11 +14,15 @@ renderer.fogColorVec 0.309803/0.329411/0.364705
 TreeRenderer.billboardlightscale 0.1
 
 textureManager.alternativePath Texture/LEVELS/Pegasus
-textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1945_SPRING
-textureManager.alternativePath Texture/SPECIAL_BRIT_PARATROOPER
-textureManager.alternativePath Texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_1945_SPRING
+textureManager.alternativePath texture/SPECIAL_GER_EUROPE_1945_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_BRIT_PARATROOPER
+textureManager.alternativePath texture/SPECIAL_BRIT_PARATROOPER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath texture/GENERAL_BRIT_EUROPE
 textureManager.alternativePath bf1942/Levels/Pegasus/Texture
-textureManager.alternativePath Texture/Special_skys/pegasus
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/pegasus
+textureManager.alternativePath texture/SPECIAL_skys/pegasus
 
 shadow.shadowColor 0.5
 

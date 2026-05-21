@@ -10,15 +10,21 @@ renderer.specularColor .2/.2/.2
 renderer.animatedMeshAmbientColor 0.3
 
 textureManager.alternativePath Texture/SPECIAL_TurboWrench
-textureManager.alternativePath Texture/GENERAL_BRIT_NAVY
-textureManager.alternativePath Texture/SPECIAL_GER_UNIFORM_KIREGSMARINE
-textureManager.alternativePath Texture\Special_skys\rheinuebung
-textureManager.alternativePath Texture\LEVELS\rheinuebung
+textureManager.alternativePath bf1942/levels/Rheinuebung-1941/texture
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_NAVY
+textureManager.alternativePath texture/GENERAL_BRIT_NAVY
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_UNIFORM_KIREGSMARINE
+textureManager.alternativePath texture/SPECIAL_GER_UNIFORM_KIREGSMARINE
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys\rheinuebung
+textureManager.alternativePath texture/SPECIAL_skys\rheinuebung
 
 shadow.shadowColor 0.4
-
-Game.setViewDistance 750
+Game.setViewDistance 1200
+rem Game.setViewDistance 750
 Game.spawnPlayers 1
+
+renderer.fogstart 0
+renderer.fogend 1200
 
 ObjectTemplate.create Flag BlueFlag
 ObjectTemplate.team 1

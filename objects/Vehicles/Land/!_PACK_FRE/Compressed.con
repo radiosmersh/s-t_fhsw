@@ -116,6 +116,11 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = FRE
 
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
 rem *** AMD35 ***
 ObjectTemplate.create PlayerControlObject AMD35
 ObjectTemplate.setNetworkableInfo AMD35BodyInfo
@@ -197,12 +202,12 @@ ObjectTemplate.setPosition 0.0/0.0/-1.0
 ObjectTemplate.addTemplate AMD35_tow
 ObjectTemplate.setPosition 0.0/-0.0070824/-0.391811
 if v_is_coop == False
-	ObjectTemplate.addTemplate AMD35_Tankdesant_PCO1
-	ObjectTemplate.setPosition -0.87/1.5/-2.35
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate AMD35_Tankdesant_PCO2
-	ObjectTemplate.setPosition 0.87/1.5/-2.35
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate AMD35_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.87/1.5/-2.35
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMD35_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.87/1.5/-2.35
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -933,15 +938,15 @@ ObjectTemplate.maxhitpoints 80
 ObjectTemplate.material 33
 ObjectTemplate.criticalDamage 8
 if v_is_coop == True
-	ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
 else
-	ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
 ObjectTemplate.explosionForceMod 10
 ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 30 e_PanzDamage 1.3/0.78/-1
-ObjectTemplate.addArmorEffect 8 e_PanzFire 1.3/0.78/-1
+ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/0.78/-1
+ObjectTemplate.addArmorEffect 8 e_PanzFire 0/0.78/-1
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
@@ -998,6 +1003,8 @@ ObjectTemplate.addTemplate AMX13Entry
 ObjectTemplate.setPosition 0/0/-1.2
 ObjectTemplate.addTemplate AMX13Engine
 ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate AMX13SupplyDepot
+ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate AMX13_Turret
 ObjectTemplate.setPosition 0/0.8685/-0.2443
 
@@ -1011,14 +1018,25 @@ ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition 1.3/0.78/-1
 ObjectTemplate.setRotation 0/0/-90
 if v_is_coop == False
-	ObjectTemplate.addTemplate AMX13_Tankdesant_PCO1
-	ObjectTemplate.setPosition -1.05/1.65/-1.6
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate AMX13_Tankdesant_PCO2
-	ObjectTemplate.setPosition 1.05/1.65/-1.6
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.05/1.65/-1.6
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.05/1.65/-1.6
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
+
+
+rem *** AMX13SupplyDepot ***
+ObjectTemplate.create SupplyDepot AMX13SupplyDepot
+ObjectTemplate.radius 1
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 13 -1 0.125 0.03
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+
 
 ObjectTemplate.create RotationalBundle AMX13_fan
 ObjectTemplate.geometry AMX13_fan_m1
@@ -1240,7 +1258,7 @@ ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13TrackL.ssc
 ObjectTemplate.geometry AMX13_Track_L_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.createSkeleton animations/AMX13_Track_L.ske
-ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+ObjectTemplate.setAnimatedTextureSpeed -0.0049/0
 rem -------------------------------------
 ObjectTemplate.addTemplate AMX13_Whel_L_spr
 ObjectTemplate.setPosition -1.1/0.3749/2.3346
@@ -1292,7 +1310,7 @@ ObjectTemplate.loadSoundScript ../AMX13/Sounds/AMX13TrackR.ssc
 ObjectTemplate.geometry AMX13_Track_R_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.createSkeleton animations/AMX13_Track_R.ske
-ObjectTemplate.setAnimatedTextureSpeed 0.0049/0
+ObjectTemplate.setAnimatedTextureSpeed -0.0049/0
 rem -------------------------------------
 ObjectTemplate.addTemplate AMX13_Whel_R_spr
 ObjectTemplate.setPosition 1.1/0.3749/2.3346
@@ -1361,15 +1379,15 @@ ObjectTemplate.maxhitpoints 80
 ObjectTemplate.material 33
 ObjectTemplate.criticalDamage 8
 if v_is_coop == True
-	ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
 else
-	ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
 ObjectTemplate.explosionForceMod 10
 ObjectTemplate.hpLostWhileUpSideDown 7
 ObjectTemplate.hpLostWhileDamageFromWater 7
-ObjectTemplate.addArmorEffect 30 e_PanzDamage 1.3/0.78/-1
-ObjectTemplate.addArmorEffect 8 e_PanzFire 1.3/0.78/-1
+ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/0.78/-1
+ObjectTemplate.addArmorEffect 8 e_PanzFire 0/0.78/-1
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
 ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
 ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
@@ -1426,6 +1444,8 @@ ObjectTemplate.addTemplate AMX13Entry
 ObjectTemplate.setPosition 0/0/-1.2
 ObjectTemplate.addTemplate AMX13Engine
 ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate AMX13SupplyDepot
+ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate AMX13_Turret_APCR
 ObjectTemplate.setPosition 0/0.8685/-0.2443
 
@@ -1439,12 +1459,12 @@ ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition 1.3/0.78/-1
 ObjectTemplate.setRotation 0/0/-90
 if v_is_coop == False
-	ObjectTemplate.addTemplate AMX13_Tankdesant_PCO1
-	ObjectTemplate.setPosition -1.05/1.65/-1.6
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate AMX13_Tankdesant_PCO2
-	ObjectTemplate.setPosition 1.05/1.65/-1.6
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.05/1.65/-1.6
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX13_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.05/1.65/-1.6
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -1766,16 +1786,17 @@ rem -------------------------------------
 ObjectTemplate.setMinDev 0.3
 ObjectTemplate.projectileTemplate 75mmL61_Projectile
 ObjectTemplate.projectilePosition 0/0/1
-ObjectTemplate.magSize 12
-ObjectTemplate.numOfMag 3
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 10
 ObjectTemplate.velocity 500
 ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 32.88
-ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.reloadtime 2.0
+ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 25
 ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+ObjectTemplate.AmmoType 13
 
 
 rem *** AMX13GunBarrel_APCR ***
@@ -1804,16 +1825,17 @@ ObjectTemplate.setMinDev 0.3
 ObjectTemplate.projectileTemplate 75mmL61_Projectile
 ObjectTemplate.setTracerTemplate 75mmL61APCR_Projectile CRD_UNIFORM/1/6/0
 ObjectTemplate.projectilePosition 0/0/1
-ObjectTemplate.magSize 12
-ObjectTemplate.numOfMag 3
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 10
 ObjectTemplate.velocity 500
 ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 32.88
-ObjectTemplate.roundOfFire 0.5
+ObjectTemplate.reloadtime 2.0
+ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 25
 ObjectTemplate.setFireCameraShakeAnimationState FireTank75CanonShake
+ObjectTemplate.AmmoType 13
 
 
 rem *** AMX13_Commander_SmokeLauncher ***
@@ -2311,9 +2333,9 @@ ObjectTemplate.maxhitpoints 127
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 12
 if v_is_coop == True
-	ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
 else
-	ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
 ObjectTemplate.explosionForceMod 6
 ObjectTemplate.hpLostWhileUpSideDown 7
@@ -2386,14 +2408,26 @@ ObjectTemplate.addTemplate e_TankExhaust20LinerU
 ObjectTemplate.setPosition 0.9/0.97/-3.66
 ObjectTemplate.setRotation 0/-90/0
 if v_is_coop == False
-	ObjectTemplate.addTemplate AMX50_Tankdesant_PCO1
-	ObjectTemplate.setPosition -1.25/1.9/-3.4
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate AMX50_Tankdesant_PCO2
-	ObjectTemplate.setPosition 1.25/1.9/-3.4
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.25/1.9/-3.4
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.25/1.9/-3.4
+ObjectTemplate.setRotation 90/0/0
 endIf
+
+ObjectTemplate.addTemplate AMX50SupplyDepot
 rem -------------------------------------
+
+
+rem *** AMX50SupplyDepot ***
+ObjectTemplate.create SupplyDepot AMX50SupplyDepot
+ObjectTemplate.radius 1
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 13 -1 0.05 0.03
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
 
 
 rem *** AMX50_Tankdesant_PCO1 ***
@@ -2683,6 +2717,8 @@ ObjectTemplate.addTemplate AMX50_Commander_SmokeLauncher
 ObjectTemplate.setRotation 0/-55/0
 ObjectTemplate.addTemplate AMX50_Commander_CamX
 ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate TankFireExtinguisher15_Alt
+ObjectTemplate.setPosition 0.58/-2.696/0.43
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
 ObjectTemplate.GUIIndex 61
@@ -2691,8 +2727,8 @@ ObjectTemplate.setVehicleIconPos 102/26
 ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_SmokeFixedMulti.dds"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_spotter.tga"
-ObjectTemplate.setSecondaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_Extinguisher.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTHeavyTank
@@ -2717,7 +2753,6 @@ ObjectTemplate.create RotationalBundle AMX50_Commander_CamY
 ObjectTemplate.setNetworkableInfo AMX50TurretMGInfo
 rem ------------------------------------- 
 ObjectTemplate.addTemplate AMX50Camera
-ObjectTemplate.addTemplate Land_Spotter_Alt
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-10/0
 ObjectTemplate.setMaxRotation 0/10/0
@@ -2927,9 +2962,9 @@ ObjectTemplate.maxhitpoints 127
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 15
 if v_is_coop == True
-	ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
 else
-	ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
 ObjectTemplate.explosionForceMod 6
 ObjectTemplate.hpLostWhileUpSideDown 7
@@ -3002,13 +3037,15 @@ ObjectTemplate.addTemplate e_TankExhaust20LinerU
 ObjectTemplate.setPosition 0.9/0.97/-3.66
 ObjectTemplate.setRotation 0/-90/0
 if v_is_coop == False
-	ObjectTemplate.addTemplate AMX50_Tankdesant_PCO1
-	ObjectTemplate.setPosition -1.25/1.9/-3.4
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate AMX50_Tankdesant_PCO2
-	ObjectTemplate.setPosition 1.25/1.9/-3.4
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.25/1.9/-3.4
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate AMX50_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.25/1.9/-3.4
+ObjectTemplate.setRotation 90/0/0
 endIf
+
+ObjectTemplate.addTemplate AMX50SupplyDepot
 rem -------------------------------------
 
 
@@ -3404,16 +3441,17 @@ rem -------------------------------------
 ObjectTemplate.setMinDev 0.34
 ObjectTemplate.projectileTemplate 120mmL60_stereo_Projectile
 ObjectTemplate.projectilePosition 0/0/1
-ObjectTemplate.magSize 6
-ObjectTemplate.numOfMag 8
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 16
 ObjectTemplate.velocity 472.5
 ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 31
-ObjectTemplate.roundOfFire 0.366
+ObjectTemplate.reloadtime 4.56
+ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 25
 ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
+ObjectTemplate.AmmoType 13
 
 rem *** AMX50GunBarrel_APCR ***
 ObjectTemplate.create FireArms AMX50GunBarrel_APCR
@@ -3441,16 +3479,17 @@ ObjectTemplate.setMinDev 0.34
 ObjectTemplate.projectileTemplate 120mmL60_stereo_Projectile
 ObjectTemplate.setTracerTemplate 120mmL60_APCR_stereo_Projectile CRD_UNIFORM/1/6/0
 ObjectTemplate.projectilePosition 0/0/1
-ObjectTemplate.magSize 6
-ObjectTemplate.numOfMag 8
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 16
 ObjectTemplate.velocity 472.5
 ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 31
-ObjectTemplate.roundOfFire 0.366
+ObjectTemplate.reloadtime 4.56
+ObjectTemplate.roundOfFire 10
 ObjectTemplate.fireingForce 20
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 25
 ObjectTemplate.setFireCameraShakeAnimationState FireTank150CanonShake
+ObjectTemplate.AmmoType 13
 
 rem *** AMX50_Commander_SmokeLauncher ***
 ObjectTemplate.create FireArms AMX50_Commander_SmokeLauncher
@@ -3674,9 +3713,9 @@ ObjectTemplate.maxhitpoints 127
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 12
 if v_is_coop == True
-	ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
 else
-	ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
 ObjectTemplate.explosionForceMod 6
 ObjectTemplate.hpLostWhileUpSideDown 7
@@ -3746,12 +3785,12 @@ ObjectTemplate.addTemplate e_TankExhaust10HalfLinerU
 ObjectTemplate.setPosition -1.36/1/-3.45
 ObjectTemplate.setRotation 0/-110/0
 if v_is_coop == False
-	ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO1
-	ObjectTemplate.setPosition -1.4/2/-3.2
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO2
-	ObjectTemplate.setPosition 1.4/2/-3.2
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.4/2/-3.2
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.4/2/-3.2
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -3887,15 +3926,19 @@ ObjectTemplate.aiTemplate Director_PCO2
 rem -------------------------------------
 ObjectTemplate.addTemplate ARL-44_Commander_CamX
 ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate TankFireExtinguisher10_Alt
+ObjectTemplate.setPosition -0.3284/-2.7966/0.6692
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation -2/1/0 0/0/0
 ObjectTemplate.GUIIndex 61
 ObjectTemplate.setPcoId 1
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_ARL-44.dds"
 ObjectTemplate.setVehicleIconPos 86/23
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_spotter.tga"
 ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_Extinguisher.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTHeavyTank
@@ -4183,9 +4226,9 @@ ObjectTemplate.maxhitpoints 127
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 12
 if v_is_coop == True
-	ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
 else
-	ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
 ObjectTemplate.explosionForceMod 6
 ObjectTemplate.hpLostWhileUpSideDown 7
@@ -4255,12 +4298,12 @@ ObjectTemplate.addTemplate e_TankExhaust10HalfLinerU
 ObjectTemplate.setPosition -1.36/1/-3.45
 ObjectTemplate.setRotation 0/-110/0
 if v_is_coop == False
-	ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO1
-	ObjectTemplate.setPosition -1.4/2/-3.2
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO2
-	ObjectTemplate.setPosition 1.4/2/-3.2
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.4/2/-3.2
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate ARL-44_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.4/2/-3.2
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -4898,8 +4941,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot135_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -5207,8 +5250,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot135_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -5282,8 +5325,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot135_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -5357,8 +5400,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot135_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -5528,8 +5571,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot25_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -5835,8 +5878,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot25_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -6005,8 +6048,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot75_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -6345,8 +6388,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot75_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -6420,8 +6463,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot75_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -6495,8 +6538,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot75_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -6702,8 +6745,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_MaginotMG_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -7009,8 +7052,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_MaginotMG_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -7142,8 +7185,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot_ClocheGFM_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 500
+ObjectTemplate.maxhitpoints 500
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -7482,8 +7525,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot_ClocheGFM_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 500
+ObjectTemplate.maxhitpoints 500
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -7611,8 +7654,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot_ClocheJM_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 500
+ObjectTemplate.maxhitpoints 500
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -7864,8 +7907,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot_ClocheJM_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 500
+ObjectTemplate.maxhitpoints 500
 ObjectTemplate.material 813
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -8551,9 +8594,9 @@ ObjectTemplate.maxhitpoints 122
 ObjectTemplate.material 47
 ObjectTemplate.criticalDamage 12
 if v_is_coop == True
-	ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 1
 else
-	ObjectTemplate.hpLostWhileCriticalDamage 0
+ObjectTemplate.hpLostWhileCriticalDamage 0
 endIf
 ObjectTemplate.explosionForceMod 6
 ObjectTemplate.hpLostWhileUpSideDown 7
@@ -8635,12 +8678,12 @@ ObjectTemplate.addTemplate e_TankExhaust10
 ObjectTemplate.setPosition 1.16/1.63/-3.58
 ObjectTemplate.setRotation 0/0/0
 if v_is_coop == False
-	ObjectTemplate.addTemplate CharB1_Tankdesant_PCO1
-	ObjectTemplate.setPosition -1.26/2.5/-1.06
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate CharB1_Tankdesant_PCO2
-	ObjectTemplate.setPosition 1.26/2.5/-1.06
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate CharB1_Tankdesant_PCO1
+ObjectTemplate.setPosition -1.26/2.5/-1.06
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate CharB1_Tankdesant_PCO2
+ObjectTemplate.setPosition 1.26/2.5/-1.06
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -8993,15 +9036,19 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Common_DirectorPCO_Entry
 ObjectTemplate.addTemplate Common_DirectorPCO_Camera
 ObjectTemplate.addTemplate Land_Spotter
+ObjectTemplate.addTemplate TankFireExtinguisher10_Alt
+ObjectTemplate.setPosition 0.0832/-2.888/-0.658635
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/0 0/0/0
 ObjectTemplate.setPcoId 2
 ObjectTemplate.GUIIndex 47
 ObjectTemplate.setVehicleIcon "Vehicle/icon_CharB1.dds"
 ObjectTemplate.setVehicleIconPos 75/48
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_spotter.tga"
 ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_Extinguisher.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCLand
@@ -9213,7 +9260,7 @@ rem *** X0.5 for stereo rangefinder
 ObjectTemplate.setMinDev 0.33
 ObjectTemplate.magSize 75
 ObjectTemplate.numOfMag 1
-ObjectTemplate.velocity 120
+ObjectTemplate.velocity 235
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 0.35
 ObjectTemplate.roundOfFire 0.409
@@ -9233,9 +9280,9 @@ ObjectTemplate.addTemplate e_MuzzSW_50_500_Main
 ObjectTemplate.setPosition 0/0/0.8647
 rem -------------------------------------
 ObjectTemplate.AddRootSpeed 0
-ObjectTemplate.projectileTemplate 47mmL32_Projectile
+ObjectTemplate.projectileTemplate 47mmL32F_Projectile
 ObjectTemplate.projectilePosition 0/0/1
-ObjectTemplate.setMinDev 0.63
+ObjectTemplate.setMinDev 0.6
 ObjectTemplate.magSize 50
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 350
@@ -9345,6 +9392,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9433,6 +9481,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9517,6 +9566,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9599,6 +9649,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9681,6 +9732,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9763,6 +9815,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9841,6 +9894,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9917,6 +9971,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -9989,6 +10044,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -10059,6 +10115,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -11163,6 +11220,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTArtillery
 ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.hasRestrictedExit 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
@@ -12201,6 +12259,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -12800,6 +12859,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTArtillery
 ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -12851,13 +12911,13 @@ ObjectTemplate.setPosition 0.7/0.175/0.002
 ObjectTemplate.setRotation -45/0/0
 rem -------------------------------------
 if v_is_coop == False
-	ObjectTemplate.setMaxSpeed 5/0/0
-	ObjectTemplate.setAcceleration 10/0/0
-	ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 20/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 else
-	ObjectTemplate.setMaxSpeed 15/0/0
-	ObjectTemplate.setAcceleration 71/0/0
-	ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setMaxSpeed 15/0/0
+ObjectTemplate.setAcceleration 71/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 endIf
 
 
@@ -13152,6 +13212,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTArtillery
 ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.hasRestrictedExit 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
@@ -13364,7 +13425,7 @@ ObjectTemplate.setInputToRoll c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.RememberExcessInput 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 3.0
+ObjectTemplate.setTorque 6.0
 ObjectTemplate.setDifferential 1.0
 
 
@@ -13727,6 +13788,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_towed_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
 
@@ -15079,7 +15141,7 @@ ObjectTemplate.addTemplate Land_Spotter
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/1/0 0/0/0
 if v_is_coop == False
-    ObjectTemplate.setPcoId 1
+ObjectTemplate.setPcoId 1
 endIf
 ObjectTemplate.GUIIndex 47
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_FT17.dds"
@@ -16509,6 +16571,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apcat_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -17033,25 +17096,25 @@ ObjectTemplate.AmmoType	17
 rem *** Lorraine37L-Mle1897_SpawnerProjectile ***
 ObjectTemplate.create Projectile Lorraine37L-Mle1897_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.geometry Projectile_Invis_Box6x3x6m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate Lorraine37L-Mle1897_GunDeploySpawner
 rem -------------------------------------
-ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 3
+ObjectTemplate.timeToLive CRD_NONE/3.0/0/0 
+ObjectTemplate.gravityModifier 3.0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 0
 ObjectTemplate.setHasPointPhysics 0
 ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 814
 ObjectTemplate.invisible 1
-ObjectTemplate.material 70
 ObjectTemplate.DetonateOnWaterCollision 0 
 ObjectTemplate.dieAfterColl 0
-ObjectTemplate.drag 0.04 
-ObjectTemplate.mass 800 
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 800
 
 rem *** Lorraine37L-Mle1897_GunDeploySpawner *** 
 ObjectTemplate.create ObjectSpawner Lorraine37L-Mle1897_GunDeploySpawner
@@ -17258,25 +17321,25 @@ ObjectTemplate.AmmoType	17
 rem *** Lorraine37L-Mle1917_SpawnerProjectile ***
 ObjectTemplate.create Projectile Lorraine37L-Mle1917_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.geometry Projectile_Invis_Box6x3x6m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate Lorraine37L-Mle1917_GunDeploySpawner
 rem -------------------------------------
-ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 3
+ObjectTemplate.timeToLive CRD_NONE/3.0/0/0 
+ObjectTemplate.gravityModifier 3.0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 0
 ObjectTemplate.setHasPointPhysics 0
 ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 814
 ObjectTemplate.invisible 1
-ObjectTemplate.material 70
 ObjectTemplate.DetonateOnWaterCollision 0 
 ObjectTemplate.dieAfterColl 0
-ObjectTemplate.drag 0.04 
-ObjectTemplate.mass 800 
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 800
 
 rem *** Lorraine37L-Mle1917_GunDeploySpawner *** 
 ObjectTemplate.create ObjectSpawner Lorraine37L-Mle1917_GunDeploySpawner
@@ -17483,25 +17546,25 @@ ObjectTemplate.AmmoType	17
 rem *** Lorraine37L-SA37_SpawnerProjectile ***
 ObjectTemplate.create Projectile Lorraine37L-SA37_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.geometry Projectile_Invis_Box6x3x6m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate Lorraine37L-SA37_GunDeploySpawner
 rem -------------------------------------
-ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 3
+ObjectTemplate.timeToLive CRD_NONE/3.0/0/0 
+ObjectTemplate.gravityModifier 3.0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 0
 ObjectTemplate.setHasPointPhysics 0
 ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 814
 ObjectTemplate.invisible 1
-ObjectTemplate.material 70
 ObjectTemplate.DetonateOnWaterCollision 0 
 ObjectTemplate.dieAfterColl 0
-ObjectTemplate.drag 0.04 
-ObjectTemplate.mass 800 
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 800
 
 rem *** Lorraine37L-SA37_GunDeploySpawner *** 
 ObjectTemplate.create ObjectSpawner Lorraine37L-SA37_GunDeploySpawner
@@ -17686,6 +17749,11 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = FRE
 
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
 rem *** R35
 rem *** R35_Late
 
@@ -17779,12 +17847,12 @@ ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition -0.77/0.15/-1.63
 ObjectTemplate.setRotation 0/-90/0
 if v_is_coop == False
-	ObjectTemplate.addTemplate R35_Tankdesant_PCO1
-	ObjectTemplate.setPosition -0.48/1.19/-1.32
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate R35_Tankdesant_PCO2
-	ObjectTemplate.setPosition 0.48/1.19/-1.32
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate R35_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.48/1.19/-1.32
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate R35_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.48/1.19/-1.32
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem ----------------------------------
 
@@ -18154,12 +18222,12 @@ ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition -0.77/0.15/-1.63
 ObjectTemplate.setRotation 0/-90/0
 if v_is_coop == False
-	ObjectTemplate.addTemplate R35_Late_Tankdesant_PCO1
-	ObjectTemplate.setPosition -0.48/1.19/-1.32
-	ObjectTemplate.setRotation -90/0/0
-	ObjectTemplate.addTemplate R35_Late_Tankdesant_PCO2
-	ObjectTemplate.setPosition 0.48/1.19/-1.32
-	ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate R35_Late_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.48/1.19/-1.32
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate R35_Late_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.48/1.19/-1.32
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem ----------------------------------
 
@@ -18658,7 +18726,6 @@ ObjectTemplate.setPosition 0/0.35/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/0.2/-2.0 0/0/0
 ObjectTemplate.GUIIndex 19
-ObjectTemplate.setSoldierExitLocation 0/0/-3.1 180/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/icon_sa37.tga"
 ObjectTemplate.setVehicleIconPos 65/57
 ObjectTemplate.setNumberOfWeaponIcons 1
@@ -18668,6 +18735,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_atgun_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -18718,13 +18786,13 @@ ObjectTemplate.addTemplate SA37_wheel_Right
 ObjectTemplate.setPosition 0.691/0.138/0.114
 rem -------------------------------------
 if v_is_coop == False
-	ObjectTemplate.setMaxSpeed 7/0/0
-	ObjectTemplate.setAcceleration 100/0/0
-	ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 40/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 else
-	ObjectTemplate.setMaxSpeed 18/0/0
-	ObjectTemplate.setAcceleration 77/0/0
-	ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setMaxSpeed 18/0/0
+ObjectTemplate.setAcceleration 77/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 endIf
 
 
@@ -18749,11 +18817,11 @@ ObjectTemplate.addTemplate SA37Gunner_Seat
 ObjectTemplate.setPosition -0.4/0.7/-1
 rem -------------------------------------
 if v_is_coop == False
-	ObjectTemplate.setMinRotation -34/0/0
-	ObjectTemplate.setMaxRotation 34/0/0
-	ObjectTemplate.setMaxSpeed 18/0/0
-	ObjectTemplate.setAcceleration 77/0/0
-	ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setMinRotation -34/0/0
+ObjectTemplate.setMaxRotation 34/0/0
+ObjectTemplate.setMaxSpeed 18/0/0
+ObjectTemplate.setAcceleration 77/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 endIf
 
 rem *** SA37GunBase ***
@@ -18818,7 +18886,7 @@ rem *** SA37GunnerSeat ***
 ObjectTemplate.create SeatObject SA37Gunner_Seat
 ObjectTemplate.seatFlags c_SeatShowStandingSoldier
 ObjectTemplate.seatFlags c_SeatIsOutside
-ObjectTemplate.SeatAnimationUpperBody Ub_CrouchATgunGunner
+ObjectTemplate.SeatAnimationUpperBody Ub_LieATgunGunner
 ObjectTemplate.SeatAnimationLowerBody Lb_CrouchTripodGunner
 
 rem *** SA37_leg_Left ***
@@ -19034,7 +19102,6 @@ ObjectTemplate.addTemplate lodSA37mobile
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/0.2/-1 0/0/0
 ObjectTemplate.GUIIndex 19
-ObjectTemplate.setSoldierExitLocation 0/0/-3.1 180/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/icon_sa37.tga"
 ObjectTemplate.setVehicleIconPos 46/64
 ObjectTemplate.setNumberOfWeaponIcons 0
@@ -19099,7 +19166,7 @@ rem *** SA37mobileDriverSeat ***
 ObjectTemplate.create SeatObject SA37mobileDriverSeat
 ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
 ObjectTemplate.seatFlags c_SeatIsOutside
-ObjectTemplate.SeatAnimationUpperBody Ub_CrouchATgunGunner
+ObjectTemplate.SeatAnimationUpperBody Ub_LieATgunGunner
 ObjectTemplate.SeatAnimationLowerBody Lb_StandVehiclePushCrouchSlo
 
 
@@ -19122,7 +19189,7 @@ ObjectTemplate.addTemplate SA37mobile_GunnerTraverseEngine
 ObjectTemplate.setPosition 0/0/-2
 ObjectTemplate.setRotation -90/0/0
 rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation -0.5/0.7/-1 180/0/0
+ObjectTemplate.setSoldierExitLocation -0.5/0.7/-1 0/0/0
 ObjectTemplate.GUIIndex 78
 ObjectTemplate.setVehicleIcon "Vehicle/icon_sa37.tga"
 ObjectTemplate.setVehicleIconPos 69/53
@@ -19133,6 +19200,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
 ObjectTemplate.DirBarYScaleAbove 90
@@ -19220,7 +19288,7 @@ ObjectTemplate.setInputToRoll c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.RememberExcessInput 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 3.0
+ObjectTemplate.setTorque 12.0
 ObjectTemplate.setDifferential 1.0
 
 rem *** SA37mobile_WhelL ***
@@ -20121,8 +20189,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot135_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 48
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -20202,8 +20270,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot25_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 48
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -20279,8 +20347,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot75_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 48
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 3
@@ -20361,8 +20429,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_MaginotMG_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 300
+ObjectTemplate.maxhitpoints 300
 ObjectTemplate.material 48
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -20439,8 +20507,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot_ClocheGFM_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 500
+ObjectTemplate.maxhitpoints 500
 ObjectTemplate.material 48
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2
@@ -20514,8 +20582,8 @@ ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.CullRadiusScale 10
 ObjectTemplate.geometry Bunker_Maginot_ClocheJM_thing_m1
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 100
-ObjectTemplate.maxhitpoints 100
+ObjectTemplate.hitpoints 500
+ObjectTemplate.maxhitpoints 500
 ObjectTemplate.material 48
 ObjectTemplate.explosionForceDamage 0
 ObjectTemplate.explosionRadius 2

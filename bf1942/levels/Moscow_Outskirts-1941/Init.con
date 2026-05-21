@@ -12,12 +12,14 @@ renderer.fogColorVec 0.4196/0.4275/0.4353
 renderer.animatedMeshAmbientColor 0.2
 
 textureManager.alternativePath bf1942/Levels/Moscow_Outskirts-1941/texture
-textureManager.alternativePath Texture/GENERAL_RUS_WINTER
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_RUS_WINTER
+textureManager.alternativePath texture/GENERAL_RUS_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
-textureManager.alternativePath Texture/Special_skys/pavlov
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/pavlov
+textureManager.alternativePath texture/SPECIAL_skys/pavlov
 textureManager.alternativePath Texture/Levels/KharkovWinter
-
 
 shadow.shadowColor 0.550000
 

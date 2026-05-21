@@ -1,5 +1,0 @@
-EnvironmentSound.load Environment.ssc
-
-run harbor.con
-run beach.con
-

@@ -14,8 +14,10 @@ renderer.animatedMeshAmbientColor 0.3
 textureManager.alternativePath Texture/Levels/Gazara
 textureManager.alternativePath Texture/ENVIROMENT_DESERT
 textureManager.alternativePath Texture/SPECIAL_GER_AFRICA_1942_SUMMER
-textureManager.alternativePath Texture/GENERAL_GER_AFRICA
-textureManager.alternativePath Texture/GENERAL_BRIT_AFRICA
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_AFRICA
+textureManager.alternativePath texture/GENERAL_GER_AFRICA
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_AFRICA
+textureManager.alternativePath texture/GENERAL_BRIT_AFRICA
 
 shadow.shadowColor 0.4
 

@@ -4,8 +4,8 @@ newPatch
 ### Close ###
 #############
 load @ROOT/Sound/@RTD/Air40mm/55mmGerat58_ST.wav
-minDistance 2
-relativePosition 0.8/0/-0.5
+minDistance 4
+relativePosition 0/1/-5
 stereo
 priority 10
 
@@ -15,7 +15,7 @@ beginEffect
 	controlSource Distance
 	envelope Ramp
 	param 0
-	param 2
+	param 4
 	param 1
 	param 1
 endEffect
@@ -25,8 +25,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Distance
 	envelope Ramp
-	param 2
-	param 2
+	param 4
+	param 4
 	param 1
 	param -1	
 endEffect
@@ -53,8 +53,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Distance
 	envelope Ramp
-	param 2
-	param 2
+	param 4
+	param 4
 	param 0
 	param 1	
 endEffect

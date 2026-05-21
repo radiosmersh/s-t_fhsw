@@ -9,13 +9,17 @@ renderer.specularColor .3/.3/.3
 renderer.animatedMeshAmbientColor 0.25
 
 textureManager.alternativePath Texture/Levels/Nordwind
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/bulge
 textureManager.alternativePath Texture/Special_skys/bulge
 textureManager.alternativePath bf1942/levels/Operation_Nordwind-1944/texture
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
-textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
 textureManager.alternativePath Texture/Levels/bulge
-textureManager.alternativePath Texture/GENERAL_US_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_WINTER
+textureManager.alternativePath texture/GENERAL_US_WINTER
 
 shadow.shadowColor 0.45
 

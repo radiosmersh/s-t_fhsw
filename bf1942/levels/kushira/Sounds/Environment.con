@@ -1,8 +1,0 @@
-EnvironmentSound.load Environment.ssc
-run musi.con
-run kaeru.con
-run noise.con
-run ogawa.con
-run hayabusa.con
-run March.con
-run DRSB01.con

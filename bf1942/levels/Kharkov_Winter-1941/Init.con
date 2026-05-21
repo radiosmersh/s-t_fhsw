@@ -7,8 +7,10 @@ renderer.animatedMeshAmbientColor 0.3
 
 textureManager.alternativePath Texture/Levels/KharkovWinter
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
-textureManager.alternativePath Texture/GENERAL_RUS_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_RUS_WINTER
+textureManager.alternativePath texture/GENERAL_RUS_WINTER
 textureManager.alternativePath Texture/Levels/Pavlov
 
 shadow.shadowColor 0.5

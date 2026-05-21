@@ -9,13 +9,18 @@ renderer.vertexFogEnable 1
 renderer.fogColorVec  0.7215686275/0.7490196078/0.75294117647
 
 textureManager.alternativePath bf1942/levels/Trois_Ponts-1944/changedtextures
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/bulge
 textureManager.alternativePath texture/Special_skys/bulge
 textureManager.alternativePath Texture/Levels/Nordwind
 textureManager.alternativePath Texture/Levels/Bulge
-textureManager.alternativePath Texture/GENERAL_US
-textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
-textureManager.alternativePath Texture/GENERAL_US_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_WINTER
+textureManager.alternativePath texture/GENERAL_US_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US
+textureManager.alternativePath texture/GENERAL_US
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
 
 shadow.shadowColor 0.4

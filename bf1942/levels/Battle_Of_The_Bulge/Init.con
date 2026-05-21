@@ -14,9 +14,14 @@ shadow.shadowColor 0.4
 textureManager.alternativePath Texture/levels/Bulge
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
 textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_WINTER
-textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
-textureManager.alternativePath Texture/GENERAL_US_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_WINTER
+textureManager.alternativePath texture/GENERAL_US_WINTER
+
+
 
 Game.setViewDistance 300
 Game.spawnPlayers 1

@@ -12,7 +12,8 @@ renderer.animatedMeshAmbientColor 0.30
 textureManager.alternativePath bf1942\levels\Ramelle_Neuville-1944\Textures\
 textureManager.alternativePath bf1942\levels\Ramelle_Neuville-1944\skins\
 textureManager.alternativePath Texture\levels\Ramelle
-textureManager.alternativePath Texture\SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath texture\SPECIAL_GER_EUROPE_1944_FALL
 textureManager.alternativePath Texture\GENERAL_US
 
 
