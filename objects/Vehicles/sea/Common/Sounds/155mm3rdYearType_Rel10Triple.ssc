@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/155mm3rdYearType_Rel10Triple.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/155mm3rdYearType_Rel10Triple.ssc
+	
+#templateLevel LOW
+
+	#include Low/155mm3rdYearType_Rel10Triple.ssc

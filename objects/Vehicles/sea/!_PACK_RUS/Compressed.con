@@ -862,6 +862,7 @@ rem ============================================================================
 
 rem *** Gnevny_HullWing ***
 ObjectTemplate.create Wing Gnevny_HullWing
+ObjectTemplate.setNetworkableInfo GnevnyRudderInfo
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/25/0
 ObjectTemplate.setMaxSpeed 0/15/0
@@ -944,7 +945,7 @@ rem ObjectTemplate.fireingForce 0
 ObjectTemplate.recoilSpeed 6
 ObjectTemplate.recoilSize 10
 ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 1.6
+ObjectTemplate.setMinDev 1
 ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
 
 rem *********************************************************
@@ -974,7 +975,6 @@ ObjectTemplate.numOfMag 1
 ObjectTemplate.magType 0
 rem ObjectTemplate.reloadtime 1
 ObjectTemplate.roundOfFire 0.42
-ObjectTemplate.setMinDev 2.6
 ObjectTemplate.autoReload 1
 ObjectTemplate.velocity 636
 ObjectTemplate.recoilSpeed 10

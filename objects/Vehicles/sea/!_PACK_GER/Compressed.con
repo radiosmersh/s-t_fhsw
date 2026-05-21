@@ -1071,24 +1071,21 @@ ObjectTemplate.setSoldierExitLocation -8.5/8.5/53 180/0/0
 ObjectTemplate.GUIIndex 55
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_Bismarck.tga"
 ObjectTemplate.setVehicleIconPos 70/75
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_380mmSKC34.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_380mmSKC34.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64"
 ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 110
-ObjectTemplate.DirBarYScaleAbove 15
-ObjectTemplate.DirBarYScaleBelow 1
-ObjectTemplate.DirBarYScaleMin -92
-ObjectTemplate.DirBarYScaleMax -75
 ObjectTemplate.sonarPos 1
 ObjectTemplate.submarineData 0 0 0 0 0 16.5 200
 rem ObjectTemplate.submarineData 0 0 0 0 0 20 200
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** BismarckFloaterBreakerFL ***
 ObjectTemplate.create RotationalBundle BismarckFloaterBreakerFL
@@ -1294,7 +1291,7 @@ ObjectTemplate.setRotation 6/0/0
 
 ObjectTemplate.addTemplate BismarckFatTurretWithCamera
 ObjectTemplate.setPosition 0/12.09/51.552
-ObjectTemplate.addTemplate BismarckFatTurretA 
+ObjectTemplate.addTemplate BismarckFatTurretA
 ObjectTemplate.setPosition 0/9.418/70.160
 
 ObjectTemplate.addTemplate BismarckEngine
@@ -1422,8 +1419,6 @@ ObjectTemplate.setRotation 0/-1/0
 ObjectTemplate.addTemplate Bismarck_Prop
 ObjectTemplate.setPosition 0/-4.983/-106.668
 ObjectTemplate.setRotation 0/0/0
-
-ObjectTemplate.addTemplate ShipAlarm3
 
 ObjectTemplate.addTemplate Bismarck_MapModObj
 rem -------------------------------------
@@ -1610,7 +1605,6 @@ ObjectTemplate.addTemplate BismarckFatTurretA
 ObjectTemplate.setPosition 0/9.418/-78.301
 ObjectTemplate.setRotation -179.999/0/0
 
-ObjectTemplate.addTemplate ShipAlarm3
 rem -------------------------------------
 ObjectTemplate.setPcoId 1
 ObjectTemplate.addPcoPosId 0
@@ -1622,23 +1616,19 @@ ObjectTemplate.setSoldierExitLocation 9.7/7.8/-78 180/0/0
 ObjectTemplate.GUIIndex 56
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_Bismarck.tga"
 ObjectTemplate.setVehicleIconPos 23/46
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_380mmSKC34.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_380mmSKC34.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 110
-ObjectTemplate.DirBarYScaleAbove 15
-ObjectTemplate.DirBarYScaleBelow 1
-ObjectTemplate.DirBarYScaleMin -92
-ObjectTemplate.DirBarYScaleMax -75
-ObjectTemplate.DirBarRotate 180
 ObjectTemplate.sonarPos 1
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** BismarckEntryRear ***
 ObjectTemplate.create EntryPoint BismarckEntryRear
@@ -1687,8 +1677,7 @@ ObjectTemplate.create RotationalBundle BismarckFatCannonBase
 ObjectTemplate.setNetworkableInfo BismarckCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/BigTurret.ssc
 rem -------------------------------------
-ObjectTemplate.addTemplate BismarckFatCannon
-ObjectTemplate.addTemplate BismarckFatCannon_PenetrateExploder
+ObjectTemplate.addTemplate BismarckFatCannonAlt
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-30/0
 ObjectTemplate.setMaxRotation 0/1/0
@@ -1702,7 +1691,6 @@ ObjectTemplate.setNetworkableInfo BismarckCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/BigTurret.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate BismarckFatCannon
-ObjectTemplate.addTemplate BismarckFatCannon_PenetrateExploder
 
 ObjectTemplate.addTemplate BismarckCamera0
 ObjectTemplate.setPosition 0/1.6/0.161
@@ -1763,14 +1751,8 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 110
-ObjectTemplate.DirBarYScaleAbove 15
-ObjectTemplate.DirBarYScaleBelow 1
-ObjectTemplate.DirBarYScaleMin -92
-ObjectTemplate.DirBarYScaleMax -75
-ObjectTemplate.DirBarRotate 180
 ObjectTemplate.sonarPos 1
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** BismarckMedTurretWithCameraLeft ***
 ObjectTemplate.create RotationalBundle BismarckMedTurretWithCameraLeft
@@ -1794,7 +1776,6 @@ ObjectTemplate.setNetworkableInfo BismarckCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/MidTower.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate BismarckMediumCannon
-ObjectTemplate.addTemplate BismarckMediumCannon_PenetrateExploder
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-40/0
 ObjectTemplate.setMaxRotation 0/3/0
@@ -1808,7 +1789,6 @@ ObjectTemplate.setNetworkableInfo BismarckCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/MidTower.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate BismarckMediumCannon
-ObjectTemplate.addTemplate BismarckMediumCannon_PenetrateExploder
 ObjectTemplate.addTemplate BismarckCamera0
 ObjectTemplate.setPosition 0/1.12/-0.545
 ObjectTemplate.addTemplate lodShipCockpit2
@@ -1883,14 +1863,8 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 110
-ObjectTemplate.DirBarYScaleAbove 15
-ObjectTemplate.DirBarYScaleBelow 1
-ObjectTemplate.DirBarYScaleMin -92
-ObjectTemplate.DirBarYScaleMax -75
-ObjectTemplate.DirBarRotate 180
 ObjectTemplate.sonarPos 1
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** BismarckMedTurretWithCameraRight ***
 ObjectTemplate.create RotationalBundle BismarckMedTurretWithCameraRight
@@ -2018,6 +1992,7 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
+ObjectTemplate.setHasTurretIcon 1
 
 rem *********************************
 rem *********************************
@@ -2097,6 +2072,7 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** BismarckEntryLeft ***
 ObjectTemplate.create EntryPoint BismarckEntryLeft
@@ -2177,6 +2153,7 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 70
 
 rem *** BismarckHullWing ***
 ObjectTemplate.create Wing BismarckHullWing
+ObjectTemplate.setNetworkableInfo BismarckRudderInfo
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/25/0
 ObjectTemplate.setMaxSpeed 0/15/0
@@ -2241,28 +2218,10 @@ ObjectTemplate.roundOfFire 10
 rem ObjectTemplate.fireingForce 0
 ObjectTemplate.recoilSpeed 6
 ObjectTemplate.recoilSize 10
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.setMinDev 1
 ObjectTemplate.addFireArmsPosition 0.915/0/6.0 0/0/0
 ObjectTemplate.addFireArmsPosition -0.915/0/6.0 0/0/0
 ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
-
-
-rem *** BismarckMediumCannonBarrel_PenetrateExploder ***
-ObjectTemplate.create FireArms BismarckMediumCannon_PenetrateExploder
-ObjectTemplate.setNetworkableInfo ShipFireArmInfo
-rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
-ObjectTemplate.projectilePosition 0/0/-5
-ObjectTemplate.magSize 2
-ObjectTemplate.numOfMag 150
-ObjectTemplate.velocity 437
-ObjectTemplate.reloadtime 10
-ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
-ObjectTemplate.setMinDev 2.6
-ObjectTemplate.addFireArmsPosition 0.915/0/6.0 0/0/0
-ObjectTemplate.addFireArmsPosition -0.915/0/6.0 0/0/0
 
 
 rem *** BismarckFatCannonBarrel ***
@@ -2272,46 +2231,45 @@ ObjectTemplate.aiTemplate BismarckGunAI
 ObjectTemplate.loadSoundScript ../Common/Sounds/380mmSKC34fire_Rel18Twin.ssc
 ObjectTemplate.geometry Bismarck_Fat_Cannon_m1
 rem -------------------------------------
-ObjectTemplate.addTemplate e_MuzzBBGun
-ObjectTemplate.setPosition -1.972/0/14.5
-ObjectTemplate.setRotation -180/0/0
-ObjectTemplate.addTemplate e_MuzzBBGun
-ObjectTemplate.setPosition 1.972/0/14.5
-ObjectTemplate.setRotation -180/0/0
+ObjectTemplate.visibleBarrelTemplate e_MuzzSW_380_750_Main
 rem -------------------------------------
 ObjectTemplate.projectileTemplate Ship38,0cmL52Projectile
-ObjectTemplate.projectilePosition 0/0/-13
+ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 110
 ObjectTemplate.velocity 410
 ObjectTemplate.reloadtime 18
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
-rem ObjectTemplate.fireingForce 5
-ObjectTemplate.recoilSpeed 7
-ObjectTemplate.recoilSize 15
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.setMinDev 1
 ObjectTemplate.addFireArmsPosition -1.972/0/14.5 0/0/0
 ObjectTemplate.addFireArmsPosition 1.972/0/14.5 0/0/0
 ObjectTemplate.setFireCameraShakeAnimationState ShipBigCanon
+ObjectTemplate.setAsynchronyFire 1
 
-rem *** BismarckFatCannonBarrel_PenetrateExploder ***
-ObjectTemplate.create FireArms BismarckFatCannon_PenetrateExploder
+rem *** BismarckFatCannonBarrelAlt ***
+ObjectTemplate.create FireArms BismarckFatCannonAlt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.aiTemplate BismarckGunAI
+ObjectTemplate.loadSoundScript ../Common/Sounds/380mmSKC34fire_Rel18Twin.ssc
+ObjectTemplate.geometry Bismarck_Fat_Cannon_m1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
-ObjectTemplate.projectilePosition 0/0/-13
+ObjectTemplate.visibleBarrelTemplate e_MuzzSW_380_750_Main
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ship38,0cmL52Projectile
+ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 110
 ObjectTemplate.velocity 410
 ObjectTemplate.reloadtime 18
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.roundOfFire 5
+ObjectTemplate.setMinDev 1
 ObjectTemplate.addFireArmsPosition -1.972/0/14.5 0/0/0
 ObjectTemplate.addFireArmsPosition 1.972/0/14.5 0/0/0
-
+ObjectTemplate.setFireCameraShakeAnimationState ShipBigCanon
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.setInputFire c_PIAltFire
 rem ===== EOF =====
 rem ============================================================================
 rem folder = Dithmarschen
@@ -2458,7 +2416,7 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = GER
 
-rem *** Kriegsmarine Troﬂschiff Dithmarschen Class***
+rem *** Kriegsmarine Troschiff Dithmarschen Class***
 rem *** +3000 criticalDamage for sink effect ***
 ObjectTemplate.create PlayerControlObject Dithmarschen
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
@@ -2520,23 +2478,21 @@ ObjectTemplate.setPosition 10/11/-75
 ObjectTemplate.addTemplate DithmarschenFloaterBreakerBR
 rem -------------------------------------
 ObjectTemplate.setPcoId 0
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.addPcoPosId 3
-ObjectTemplate.addPcoPosId 4
-ObjectTemplate.addPcoPosId 5
 ObjectTemplate.setSoldierExitLocation -7.1/14.25/28.32 0/0/0
 ObjectTemplate.GUIIndex 35
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_KM_Dithmarschen.tga"
 ObjectTemplate.setVehicleIconPos 89/89
-ObjectTemplate.setPrimaryAmmoBar ABNone
-ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmC38.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTCarrier
 ObjectTemplate.setToolTipType  TTCarrier
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
 ObjectTemplate.setMinimapIconSize 32
 ObjectTemplate.submarineData 0 0 0 0 0 17.5 200
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** DithmarschenFloaterBreakerFL ***
 ObjectTemplate.create RotationalBundle DithmarschenFloaterBreakerFL
@@ -2703,6 +2659,19 @@ ObjectTemplate.hasMobilePhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Dithmarschen_SupplyDepot
 
+ObjectTemplate.addTemplate SupplyDummyPCO_Spawner
+ObjectTemplate.setPosition 350/0/0
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate SupplyDummyPCO_Spawner
+ObjectTemplate.setPosition -350/0/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate SupplyDummyPCO_Spawner
+ObjectTemplate.setPosition 0/0/350
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate SupplyDummyPCO_Spawner
+ObjectTemplate.setPosition 0/0/-350
+ObjectTemplate.setRotation 270/0/0
+
 ObjectTemplate.addTemplate Dithmarschen_SupplyDepotAir
 ObjectTemplate.setPosition 0/0/75
 ObjectTemplate.addTemplate Dithmarschen_SupplyDepotAir
@@ -2713,7 +2682,17 @@ ObjectTemplate.setPosition 4.10/14.727/27.766
 ObjectTemplate.addTemplate Dithmarschen_Entry 
 ObjectTemplate.setPosition -4.10/14.727/27.766
 ObjectTemplate.addTemplate Dithmarschen_Camera
-ObjectTemplate.setPosition 0/16.35/30.50
+ObjectTemplate.setPosition 0/17.694/29.072
+rem ObjectTemplate.setPosition 0/16.35/30.50
+
+ObjectTemplate.addTemplate 20mmL65C30_360_Base2
+ObjectTemplate.setPosition -8.5/15.2/26
+ObjectTemplate.addTemplate 20mmL65C30_360_Base2
+ObjectTemplate.setPosition 8.5/15.2/26
+ObjectTemplate.addTemplate 20mmL65C30_360_Base2
+ObjectTemplate.setPosition -3/17.8/26
+ObjectTemplate.addTemplate 20mmL65C30_360_Base2
+ObjectTemplate.setPosition 3/17.8/26
 
 ObjectTemplate.addTemplate Dithmarschen_DriverSoldierSpawn1
 ObjectTemplate.setPosition -5.5/12.4/28
@@ -2852,8 +2831,6 @@ ObjectTemplate.addTemplate ShipLadder02
 ObjectTemplate.setPosition 3.268/7.314/29.602
 ObjectTemplate.setRotation 180/0/0
 
-
-
 ObjectTemplate.addTemplate AnimatedGeFlag
 rem ObjectTemplate.setPosition 0/10.513/-90.244
 rem ObjectTemplate.setPosition 0/10.877/-90.383
@@ -2867,8 +2844,7 @@ ObjectTemplate.addTemplate ClimbingNet_3m
 ObjectTemplate.setPosition -11.81/-0.619/-6.70
 ObjectTemplate.setRotation 90/0/0
 
-ObjectTemplate.addTemplate ShipFogHorn
-ObjectTemplate.addTemplate ShipAlarm3
+ObjectTemplate.addTemplate ShipFogHorn_Alt
 
 ObjectTemplate.addTemplate Dithmarschen_MapModObj
 rem -------------------------------------
@@ -3003,13 +2979,20 @@ ObjectTemplate.create EntryPoint Dithmarschen_Entry
 ObjectTemplate.setEntryRadius 3
 
 rem *** Dithmarschen_Camera ***
-ObjectTemplate.create Camera Dithmarschen_Camera
-ObjectTemplate.setMinRotation -90/-20/0
-ObjectTemplate.setMaxRotation 90/20/0
-ObjectTemplate.setMaxSpeed 50/50/0
-ObjectTemplate.setAcceleration 100000/100000/0
+ObjectTemplate.create RotationalBundle Dithmarschen_Camera
+ObjectTemplate.setNetworkableInfo GermanSmallFlak_TurretInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate Dithmarschen_CameraReal
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-80/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 40.0/40.0/0
+ObjectTemplate.setAcceleration 150/150/0
 ObjectTemplate.setInputToYaw c_PIMouseLookX
 ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** Dithmarschen_CameraReal ***
+ObjectTemplate.create Camera Dithmarschen_CameraReal
 
 rem *** Dithmarschen_propeller ***
 ObjectTemplate.create RotationalBundle Dithmarschen_propeller
@@ -3048,11 +3031,6 @@ ObjectTemplate.addTemplate Dithmarschen_Gun_Entry
 ObjectTemplate.addTemplate ShipAlarm3
 rem -------------------------------------
 ObjectTemplate.setPcoId 1
-ObjectTemplate.addPcoPosId 0
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.addPcoPosId 3
-ObjectTemplate.addPcoPosId 4
-ObjectTemplate.addPcoPosId 5
 ObjectTemplate.setSoldierExitLocation 0/0.5/-3 180/0/0
 ObjectTemplate.GUIIndex 41
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_KM_Dithmarschen.tga"
@@ -3066,6 +3044,7 @@ ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 120
 ObjectTemplate.DirBarYScaleAbove 60
@@ -3088,11 +3067,6 @@ ObjectTemplate.addTemplate Dithmarschen_Gun_Entry2
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
 ObjectTemplate.setPcoId 2
-ObjectTemplate.addPcoPosId 0
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 3
-ObjectTemplate.addPcoPosId 4
-ObjectTemplate.addPcoPosId 5
 ObjectTemplate.setSoldierExitLocation 1/0.5/3 0/0/0
 ObjectTemplate.GUIIndex 41
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_KM_Dithmarschen.tga"
@@ -3106,6 +3080,7 @@ ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 120
 ObjectTemplate.DirBarYScaleAbove 60
@@ -3128,11 +3103,6 @@ ObjectTemplate.addTemplate Dithmarschen_Gun_Entry2
 ObjectTemplate.addTemplate ShipBuzzer
 rem -------------------------------------
 ObjectTemplate.setPcoId 3
-ObjectTemplate.addPcoPosId 0
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.addPcoPosId 4
-ObjectTemplate.addPcoPosId 5
 ObjectTemplate.setSoldierExitLocation -1/0.5/3 0/0/0
 ObjectTemplate.GUIIndex 41
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_KM_Dithmarschen.tga"
@@ -3146,6 +3116,7 @@ ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 120
 ObjectTemplate.DirBarYScaleAbove 60
@@ -3273,38 +3244,30 @@ ObjectTemplate.create PlayerControlObject Dithmarschen_AAGun_Gun_LeftPCO
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
 ObjectTemplate.aiTemplate Dithmarschen_GunAALeftAI
 rem -------------------------------------
-ObjectTemplate.addTemplate Dithmarschen_AABAse
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate Dithmarschen_Gun_Entry
-ObjectTemplate.addTemplate flak38_body
-ObjectTemplate.addTemplate ShipBell
+ObjectTemplate.addTemplate 37mmM42_base
+ObjectTemplate.setPosition 9.544/-2.95/60.75
+ObjectTemplate.addTemplate Shield8Edge2radUSCL
+ObjectTemplate.setPosition 9.544/-3.026/60.75
+ObjectTemplate.addTemplate TowerBase_4m
+ObjectTemplate.setPosition 9.544/-3.126/60.75
+ObjectTemplate.addTemplate Dithmarschen_Gun_Entry2
+ObjectTemplate.setPosition 9.544/-4.5/58
 rem -------------------------------------
 ObjectTemplate.setPcoId 4
-ObjectTemplate.addPcoPosId 0
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.addPcoPosId 3
-ObjectTemplate.addPcoPosId 5
-ObjectTemplate.setSoldierExitLocation 3.9/1/-4.1 0/0/0
+ObjectTemplate.setSoldierExitLocation 9.544/-4.5/58 0/0/0
 ObjectTemplate.GUIIndex 41
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_KM_Dithmarschen.tga"
-ObjectTemplate.setVehicleIconPos 95/86
+ObjectTemplate.setVehicleIconPos 128/111
 ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmC38HET+APT.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_37mmM42_HEI+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 120
-ObjectTemplate.DirBarYScaleAbove 60
-ObjectTemplate.DirBarYScaleBelow 10
-ObjectTemplate.DirBarRotate 180
-ObjectTemplate.DirBarYScaleMin -100
-ObjectTemplate.DirBarYScaleMax -30
+ObjectTemplate.setHasTurretIcon 1
 
 rem ***********************************************
 rem *** Anti-Air-Gun Right Side
@@ -3314,38 +3277,26 @@ ObjectTemplate.create PlayerControlObject Dithmarschen_AAGun_Gun_RightPCO
 ObjectTemplate.setNetworkableInfo DithmarschenBodyInfo
 ObjectTemplate.aiTemplate Dithmarschen_GunAALeftAI
 rem -------------------------------------
-ObjectTemplate.addTemplate Dithmarschen_AABAse
-ObjectTemplate.setPosition 0/0/0
-ObjectTemplate.addTemplate Dithmarschen_Gun_Entry
-ObjectTemplate.addTemplate flak38_body
-ObjectTemplate.addTemplate ShipBell
+ObjectTemplate.addTemplate 37mmM42_base
+ObjectTemplate.setPosition -9.544/-4.92/-92.626
+ObjectTemplate.setRotation 180/0/0
 rem -------------------------------------
 ObjectTemplate.setPcoId 5
-ObjectTemplate.addPcoPosId 0
-ObjectTemplate.addPcoPosId 1
-ObjectTemplate.addPcoPosId 2
-ObjectTemplate.addPcoPosId 3
-ObjectTemplate.addPcoPosId 4
-ObjectTemplate.setSoldierExitLocation -3.9/1/-4.1 0/0/0
+ObjectTemplate.setSoldierExitLocation -9.544/-3.8/-91 0/0/0
 ObjectTemplate.GUIIndex 41
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_KM_Dithmarschen.tga"
-ObjectTemplate.setVehicleIconPos 80/93
+ObjectTemplate.setVehicleIconPos 23/65
 ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_20mmC38HET+APT.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_37mmM42_HEI+HET.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
 rem ObjectTemplate.setCrossHairType CHTIcon
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 120
-ObjectTemplate.DirBarYScaleAbove 60
-ObjectTemplate.DirBarYScaleBelow 10
-ObjectTemplate.DirBarRotate 180
-ObjectTemplate.DirBarYScaleMin -100
-ObjectTemplate.DirBarYScaleMax -30
+ObjectTemplate.setHasTurretIcon 1
+
 
 rem **********************************
 rem *** Supply Object              ***
@@ -3355,6 +3306,10 @@ ObjectTemplate.radius 350
 ObjectTemplate.team 1
 
 ObjectTemplate.addVehicleType Dithmarschen -1 13 0
+ObjectTemplate.addVehicleType Dithmarschen_10000 -1 13 0
+ObjectTemplate.addVehicleType Dithmarschen_15000 -1 13 0
+ObjectTemplate.addVehicleType Dithmarschen_20000 -1 13 0
+ObjectTemplate.addVehicleType Dithmarschen_25000 -1 13 0
 
 include ../../../Buildings/Common/RepairIncludes/40_Sea_All.inc
 
@@ -3433,7 +3388,6 @@ rem ============================================================================
 
 rem *** Dithmarschen_Engine ***
 ObjectTemplate.create Engine Dithmarschen_Engine
-rem ObjectTemplate.geometry Daihatsu_m1
 ObjectTemplate.setNetworkableInfo DithmarschenEngineInfo
 ObjectTemplate.loadSoundScript ../Dithmarschen/Sounds/DithmarschenEngine.ssc
 ObjectTemplate.setMinRotation 0/0/-4000
@@ -3450,6 +3404,7 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 120
 
 rem *** Dithmarschen_Rudder1 ***
 ObjectTemplate.create Wing Dithmarschen_Rudder1
+ObjectTemplate.setNetworkableInfo DithmarschenWingInfo
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/25/0
 ObjectTemplate.setMaxSpeed 0/15/0
@@ -3463,6 +3418,7 @@ ObjectTemplate.setFlapLift 2
 
 rem *** Dithmarschen_HullWing ***
 ObjectTemplate.create Wing Dithmarschen_HullWing
+ObjectTemplate.setNetworkableInfo DithmarschenWingInfo
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/25/0
 ObjectTemplate.setMaxSpeed 0/15/0
@@ -3670,6 +3626,7 @@ rem 20mmL65C38_Vierling_+179_X2_Alt
 rem 20mmL65C38_Vierling_-179_X2_Alt_NS
 rem 20mmL65C38_Vierling_+179_X2_Alt_NS
 
+rem 20mmL65C30_360_Base2
 rem 20mmL65C30_-179_Base2_Alt
 rem 20mmL65C30_+179_Base2_Alt
 rem 20mmL65C30_-179_Base2_Alt_NS
@@ -3686,6 +3643,7 @@ ObjectTemplate.geometry 37mmL83SKC30_carriage_m1
 rem ---------------------------------------------------
 ObjectTemplate.addTemplate 37mmL83SKC30_Y2_Alt
 ObjectTemplate.setPosition 0/0.987/-0.171
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem ---------------------------------------------------
 ObjectTemplate.setMinRotation -179/0/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -3701,6 +3659,7 @@ ObjectTemplate.geometry 37mmL83SKC30_carriage_m1
 rem ---------------------------------------------------
 ObjectTemplate.addTemplate 37mmL83SKC30_Y2_Alt
 ObjectTemplate.setPosition 0/0.987/-0.171
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem ---------------------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 179/0/0
@@ -3722,6 +3681,10 @@ ObjectTemplate.setMaxRotation 0/8/0
 ObjectTemplate.setMaxSpeed 0/40.0/0
 ObjectTemplate.setAcceleration 0/150/0
 ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** GermanSmallFlakEntry ***
+ObjectTemplate.create EntryPoint GermanSmallFlakEntry
+ObjectTemplate.setEntryRadius 3
 
 
 rem ===============================================
@@ -3746,6 +3709,8 @@ ObjectTemplate.setRotation 0/-35/0
 ObjectTemplate.addTemplate 20mmL65C38_Vierling_handleY
 ObjectTemplate.setPosition 0.1/0.62/-0.8
 ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 ObjectTemplate.setMinRotation -179/0/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -3772,6 +3737,8 @@ ObjectTemplate.setRotation 0/-35/0
 ObjectTemplate.addTemplate 20mmL65C38_Vierling_handleY
 ObjectTemplate.setPosition 0.1/0.62/-0.8
 ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 179/0/0
@@ -3856,6 +3823,8 @@ ObjectTemplate.setRotation 0/-35/0
 ObjectTemplate.addTemplate 20mmL65C38_Vierling_handleY
 ObjectTemplate.setPosition 0.1/0.62/-0.8
 ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 ObjectTemplate.setMinRotation -179/0/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -3881,6 +3850,8 @@ ObjectTemplate.setRotation 0/-35/0
 ObjectTemplate.addTemplate 20mmL65C38_Vierling_handleY
 ObjectTemplate.setPosition 0.1/0.62/-0.8
 ObjectTemplate.setRotation 0/0/-90
+
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/0/0
 ObjectTemplate.setMaxRotation 179/0/0
@@ -3908,12 +3879,48 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 rem ===============================================
 rem             20mmL65C30
 rem ===============================================
+rem *** 20mmL65C30_360_Base2 ***
+ObjectTemplate.create Bundle 20mmL65C30_360_Base2
+ObjectTemplate.geometry 20mmL65C30_Monopod_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmL65C30_360_X2
+ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate GermanSmallFlakEntry
+rem -------------------------------------
+
+rem *** 20mmL65C30_360_X2 ***
+ObjectTemplate.create RotationalBundle 20mmL65C30_360_X2
+ObjectTemplate.setNetworkableInfo GermanSmallFlak_TurretInfo
+ObjectTemplate.geometry 20mmL65C30_Lafette_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmL65C30_Y2
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 40.0/0/0
+ObjectTemplate.setAcceleration 150/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+rem *** 20mmL65C30_Y2 ***
+ObjectTemplate.create RotationalBundle 20mmL65C30_Y2
+ObjectTemplate.setNetworkableInfo GermanSmallFlak_CannonInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate 20mmL65C30_Gunbarrel
+ObjectTemplate.setPosition 0/0/0.1
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-80/0
+ObjectTemplate.setMaxRotation 0/8/0
+ObjectTemplate.setMaxSpeed 0/40.0/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+
 rem *** 20mmL65C30_-179_Base2_Alt ***
 ObjectTemplate.create Bundle 20mmL65C30_-179_Base2_Alt
 ObjectTemplate.geometry 20mmL65C30_Monopod_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate 20mmL65C30_-179_X2_Alt
 ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 
 rem *** 20mmL65C30_+179_Base2_Alt ***
@@ -3922,6 +3929,7 @@ ObjectTemplate.geometry 20mmL65C30_Monopod_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate 20mmL65C30_+179_X2_Alt
 ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 
 rem *** 20mmL65C30_-179_X2_Alt ***
@@ -3973,6 +3981,7 @@ ObjectTemplate.geometry 20mmL65C30_Monopod_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate 20mmL65C30_-179_X2_Alt_NS
 ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 
 rem *** 20mmL65C30_+179_Base2_Alt_NS ***
@@ -3981,6 +3990,7 @@ ObjectTemplate.geometry 20mmL65C30_Monopod_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate 20mmL65C30_+179_X2_Alt_NS
 ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate GermanSmallFlakEntry
 rem -------------------------------------
 
 rem *** 20mmL65C30_-179_X2_Alt_NS ***
@@ -4093,7 +4103,7 @@ ObjectTemplate.projectileTemplate HE_20x138AASL_Projectile
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.setTracerTemplate APTracer_20x138AASL_Projectile CRD_NONE/2/0/0
 ObjectTemplate.magSize 40
-ObjectTemplate.numOfMag -1
+ObjectTemplate.numOfMag 999
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 5
 ObjectTemplate.velocity 615
@@ -4121,7 +4131,7 @@ ObjectTemplate.projectileTemplate HE_20x138AASL_Projectile
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.setTracerTemplate APTracer_20x138AASL_Projectile CRD_NONE/2/0/0
 ObjectTemplate.magSize 40
-ObjectTemplate.numOfMag -1
+ObjectTemplate.numOfMag 999
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 5
 ObjectTemplate.velocity 615
@@ -4149,7 +4159,7 @@ ObjectTemplate.projectileTemplate HE_20x138AASL_Projectile
 ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.setTracerTemplate APTracer_20x138AASL_Projectile CRD_NONE/3/0/0
 ObjectTemplate.magSize 40
-ObjectTemplate.numOfMag -1
+ObjectTemplate.numOfMag 999
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 5
 ObjectTemplate.velocity 615
@@ -4161,11 +4171,35 @@ ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.AmmoType	4
 
 
+rem *** 20mmL65C30_Gunbarrel ***
+ObjectTemplate.create FireArms 20mmL65C30_Gunbarrel
+ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.aiTemplate GermanSmallFlak_AI_Alt
+ObjectTemplate.loadSoundScript ../../Land/Flak_38/Sounds/Flak38GunBarrel.ssc
+ObjectTemplate.geometry 20mmL65C30_Gun_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_Muzz20mmWC
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.40/2.40
+ObjectTemplate.setRotation 0/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate HE_20x138AASL_Projectile
+ObjectTemplate.setTracerTemplate APTracer_20x138AASL_Projectile CRD_UNIFORM/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 20
+ObjectTemplate.numOfMag 999
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 3
+ObjectTemplate.velocity 615
+ObjectTemplate.roundOfFire 4.7
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.AmmoType	4
+
 rem *** 20mmL65C30_Gunbarrel_Alt ***
 ObjectTemplate.create FireArms 20mmL65C30_Gunbarrel_Alt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.aiTemplate GermanSmallFlak_AI_Alt
-ObjectTemplate.loadSoundScript ../../Land/Flak30/Sounds/Flak30GunBarrel.ssc
+ObjectTemplate.loadSoundScript ../../Land/Flak_38/Sounds/Flak38GunBarrel.ssc
 ObjectTemplate.geometry 20mmL65C30_Gun_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_Muzz20mmWC
@@ -4177,7 +4211,7 @@ ObjectTemplate.projectileTemplate HE_20x138AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x138AASL_Projectile CRD_NONE/2/0/0
 ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.magSize 20
-ObjectTemplate.numOfMag -1
+ObjectTemplate.numOfMag 999
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 3
 ObjectTemplate.velocity 615
@@ -4190,7 +4224,7 @@ rem *** 20mmL65C30_Gunbarrel_Alt_NS ***
 ObjectTemplate.create FireArms 20mmL65C30_Gunbarrel_Alt_NS
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.aiTemplate GermanSmallFlak_AI_Alt
-ObjectTemplate.loadSoundScript ../../Land/Flak30/Sounds/Flak30GunBarrel.ssc
+ObjectTemplate.loadSoundScript ../../Land/Flak_38/Sounds/Flak38GunBarrel.ssc
 ObjectTemplate.geometry 20mmL65C30_Gun_m1
 rem -------------------------------------
 ObjectTemplate.addTemplate e_Muzz20mmWC
@@ -4202,7 +4236,7 @@ ObjectTemplate.projectileTemplate HE_20x138AASL_Projectile
 ObjectTemplate.setTracerTemplate APTracer_20x138AASL_Projectile CRD_NONE/3/0/0
 ObjectTemplate.projectilePosition 0/0/2
 ObjectTemplate.magSize 20
-ObjectTemplate.numOfMag -1
+ObjectTemplate.numOfMag 999
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 3
 ObjectTemplate.velocity 615
@@ -4497,23 +4531,20 @@ ObjectTemplate.setSoldierExitLocation -5.5/6.2/53 180/0/0
 ObjectTemplate.GUIIndex 55
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_PrinzEugen.tga"
 ObjectTemplate.setVehicleIconPos 73/77
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_203mmSKC34.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_203mmSKC34.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_cruiser_64x64"
 ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 110
-ObjectTemplate.DirBarYScaleAbove 15
-ObjectTemplate.DirBarYScaleBelow 1
-ObjectTemplate.DirBarYScaleMin -92
-ObjectTemplate.DirBarYScaleMax -75
 ObjectTemplate.sonarPos 1
 ObjectTemplate.submarineData 0 0 0 0 0 13 200
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** PrinzEugenFloaterBreakerFL ***
 ObjectTemplate.create RotationalBundle PrinzEugenFloaterBreakerFL
@@ -4818,8 +4849,6 @@ ObjectTemplate.setRotation -89.999/0/0
 ObjectTemplate.addTemplate JumpstartSupply
 ObjectTemplate.setPosition 3.5/14.718/-4.808
 
-ObjectTemplate.addTemplate ShipAlarm3
-
 ObjectTemplate.addTemplate PrinzEugen_MapModObj
 rem -------------------------------------
 ObjectTemplate.create Bundle PrinzEugen_MapModObj
@@ -5005,7 +5034,6 @@ ObjectTemplate.addTemplate PrinzEugenFatTurretA
 ObjectTemplate.setPosition 0/6.278/-63.64
 ObjectTemplate.setRotation -179.999/0/0
 
-ObjectTemplate.addTemplate ShipAlarm3
 rem -------------------------------------
 ObjectTemplate.setPcoId 1
 ObjectTemplate.addPcoPosId 0
@@ -5017,23 +5045,19 @@ ObjectTemplate.setSoldierExitLocation 5.7/6/-78 180/0/0
 ObjectTemplate.GUIIndex 56
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_PrinzEugen.tga"
 ObjectTemplate.setVehicleIconPos 23/57
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_203mmSKC34.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/icon_203mmSKC34.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
-ObjectTemplate.artPos 1
-ObjectTemplate.DirBarXScale 110
-ObjectTemplate.DirBarYScaleAbove 15
-ObjectTemplate.DirBarYScaleBelow 1
-ObjectTemplate.DirBarYScaleMin -92
-ObjectTemplate.DirBarYScaleMax -75
-ObjectTemplate.DirBarRotate 180
 ObjectTemplate.sonarPos 1
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** PrinzEugenEntryRear ***
 ObjectTemplate.create EntryPoint PrinzEugenEntryRear
@@ -5098,8 +5122,7 @@ ObjectTemplate.create RotationalBundle PrinzEugenFatCannonBase
 ObjectTemplate.setNetworkableInfo PrinzEugenCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/BigTurret.ssc
 rem -------------------------------------
-ObjectTemplate.addTemplate PrinzEugenFatCannon
-ObjectTemplate.addTemplate PrinzEugenFatCannon_PenetrateExploder
+ObjectTemplate.addTemplate PrinzEugenFatCannonAlt
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-37/0
 ObjectTemplate.setMaxRotation 0/3/0
@@ -5113,7 +5136,6 @@ ObjectTemplate.setNetworkableInfo PrinzEugenCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/BigTurret.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate PrinzEugenFatCannon
-ObjectTemplate.addTemplate PrinzEugenFatCannon_PenetrateExploder
 ObjectTemplate.addTemplate PrinzEugenCamera0
 ObjectTemplate.setPosition 0/1.2/0.10
 ObjectTemplate.addTemplate lodShipCockpit2
@@ -5193,13 +5215,7 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
-rem ObjectTemplate.artPos 1
-rem ObjectTemplate.DirBarXScale 110
-rem ObjectTemplate.DirBarYScaleAbove 15
-rem ObjectTemplate.DirBarYScaleBelow 1
-rem ObjectTemplate.DirBarYScaleMin -92
-rem ObjectTemplate.DirBarYScaleMax -75
-rem ObjectTemplate.DirBarRotate 180
+ObjectTemplate.setHasTurretIcon 1
 
 rem *********************************
 rem *********************************
@@ -5270,13 +5286,7 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
-rem ObjectTemplate.artPos 1
-rem ObjectTemplate.DirBarXScale 110
-rem ObjectTemplate.DirBarYScaleAbove 15
-rem ObjectTemplate.DirBarYScaleBelow 1
-rem ObjectTemplate.DirBarYScaleMin -92
-rem ObjectTemplate.DirBarYScaleMax -75
-rem ObjectTemplate.DirBarRotate 180
+ObjectTemplate.setHasTurretIcon 1
 
 rem *********************************
 rem *********************************
@@ -5320,6 +5330,7 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** PrinzEugenTorpedoWithCameraLeft ***
 ObjectTemplate.create RotationalBundle PrinzEugenTorpedoWithCameraLeft
@@ -5424,6 +5435,7 @@ ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
 ObjectTemplate.setMinimapIconSize 64
+ObjectTemplate.setHasTurretIcon 1
 
 rem *** PrinzEugenTorpedoWithCameraRight ***
 ObjectTemplate.create RotationalBundle PrinzEugenTorpedoWithCameraRight
@@ -5575,6 +5587,7 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 70
 
 rem *** PrinzEugenHullWing ***
 ObjectTemplate.create Wing PrinzEugenHullWing
+ObjectTemplate.setNetworkableInfo PrinzEugenRudderInfo
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/25/0
 ObjectTemplate.setMaxSpeed 0/15/0
@@ -5632,52 +5645,47 @@ ObjectTemplate.aiTemplate PrinzEugenGunAI
 ObjectTemplate.loadSoundScript ../Common/Sounds/203mmSKC34fire_Rel14Twin.ssc
 ObjectTemplate.geometry PrinzEugen_Fat_Cannon_m1
 rem -------------------------------------
-
-rem ObjectTemplate.visibleBarrelTemplate e_MuzzDefGun
-ObjectTemplate.addTemplate e_MuzzMBGun
-ObjectTemplate.setPosition -1.074/0/9.5
-ObjectTemplate.setRotation -180/0/0
-
-ObjectTemplate.addTemplate e_MuzzMBGun
-ObjectTemplate.setPosition 1.074/0/9.5
-ObjectTemplate.setRotation -180/0/0
-
+ObjectTemplate.visibleBarrelTemplate e_MuzzSW_200_1000_Main
 rem -------------------------------------
 ObjectTemplate.projectileTemplate Ship20,3cmL60Projectile
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 120
 ObjectTemplate.velocity 420
 ObjectTemplate.reloadtime 14
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
-rem ObjectTemplate.fireingForce 4
-ObjectTemplate.recoilSpeed 6
-ObjectTemplate.recoilSize 11
+ObjectTemplate.roundOfFire 5
 ObjectTemplate.addFireArmsPosition -1.074/0/9.5 0/0/0
 ObjectTemplate.addFireArmsPosition 1.074/0/9.5 0/0/0
 ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.setMinDev 1
 ObjectTemplate.setFireCameraShakeAnimationState ShipBigCanon
+ObjectTemplate.setAsynchronyFire 1
 
-rem *** PrinzEugenFatCannonBarrel_PenetrateExploder ***
-ObjectTemplate.create FireArms PrinzEugenFatCannon_PenetrateExploder
+rem *** PrinzEugenFatCannonBarrelAlt ***
+ObjectTemplate.create FireArms PrinzEugenFatCannonAlt
 ObjectTemplate.setNetworkableInfo ShipFireArmInfo
+ObjectTemplate.aiTemplate PrinzEugenGunAI
+ObjectTemplate.loadSoundScript ../Common/Sounds/203mmSKC34fire_Rel14Twin.ssc
+ObjectTemplate.geometry PrinzEugen_Fat_Cannon_m1
 rem -------------------------------------
-ObjectTemplate.projectileTemplate ChangeAmmo_FakeProjectile
-rem ObjectTemplate.projectileTemplate PenetrateExploderProjectile200m
-ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.visibleBarrelTemplate e_MuzzSW_200_1000_Main
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ship20,3cmL60Projectile
+ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 2
 ObjectTemplate.numOfMag 120
 ObjectTemplate.velocity 420
 ObjectTemplate.reloadtime 14
 ObjectTemplate.autoReload 1
-ObjectTemplate.roundOfFire 10
+ObjectTemplate.roundOfFire 5
 ObjectTemplate.addFireArmsPosition -1.074/0/9.5 0/0/0
 ObjectTemplate.addFireArmsPosition 1.074/0/9.5 0/0/0
 ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 2.6
-
+ObjectTemplate.setMinDev 1
+ObjectTemplate.setFireCameraShakeAnimationState ShipBigCanon
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.setInputFire c_PIAltFire
 
 rem *** PrinzEugenTorpedorampe ***
 ObjectTemplate.create FireArms PrinzEugenTorpedorampe
@@ -7359,7 +7367,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 645 em_Sub14Damage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub14AI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub14
@@ -7492,7 +7500,7 @@ ObjectTemplate.addTemplate Sub14_Rudder_FrontR_Visible
 ObjectTemplate.setPosition 1.65/-3.01/24.94
 
 ObjectTemplate.addTemplate Sub14_Rudder_Back_UDLeft_Visible
-ObjectTemplate.setPosition -1.5/-1.56/-29.32
+ObjectTemplate.setPosition -0.15/-1.56/-29.32
 ObjectTemplate.addTemplate Sub14_Rudder_Back_UDRight_Visible
 ObjectTemplate.setPosition 0.14/-1.56/-29.32
 
@@ -7659,7 +7667,7 @@ ObjectTemplate.setAutomaticReset 1
 rem *** Sub14_Rudder_Back_Side_Visible ***
 ObjectTemplate.create SimpleObject Sub14_Rudder_Back_Side_Visible
 rem ObjectTemplate.networkableInfo Sub14VisibleWingInfo
-ObjectTemplate.geometry Sub14_Rudder_Back_Side
+ObjectTemplate.geometry Sub14_Rudder_Back_Side_M1
 rem ---------------------------------------------------
 ObjectTemplate.setMinRotation -25/0/0
 ObjectTemplate.setMaxRotation 25/0/0
@@ -7887,7 +7895,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 645 em_Sub14Damage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub14AI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub14
@@ -7981,7 +7989,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 645 em_Sub14Damage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub14AI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub14
@@ -8074,7 +8082,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 645 em_Sub14Damage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub14AI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub14
@@ -8167,7 +8175,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 645 em_Sub14Damage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub14AI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub14
@@ -8628,7 +8636,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7C
@@ -9095,6 +9103,10 @@ rem -------------------------------------
 ObjectTemplate.addTemplate sub7cdeckgun_Camera
 ObjectTemplate.setPosition 0/0.2/-1
 ObjectTemplate.addTemplate lodsub7cdeckgunCockpit
+ObjectTemplate.addTemplate BlockVisibilityUnderwaterEngine
+ObjectTemplate.setPosition 0/0/0.1
+ObjectTemplate.addTemplate BlockVisibilityUnderwaterEngine
+ObjectTemplate.setPosition 0/0.2/-1
 rem -------------------------------------
 
 rem *** sub7cdeckgun_Camera ***
@@ -9287,6 +9299,8 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Sub7c20mmC30Gun
 ObjectTemplate.setPosition 0/0/0.1
 ObjectTemplate.addTemplate Sub7cAACamera
+ObjectTemplate.setPosition 0/0.6/0
+ObjectTemplate.addTemplate BlockVisibilityUnderwaterEngine
 ObjectTemplate.setPosition 0/0.6/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-60/0
@@ -9681,7 +9695,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodU47
@@ -9911,7 +9925,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodU48
@@ -10144,7 +10158,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodU96
@@ -10373,7 +10387,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodU481
@@ -10602,7 +10616,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodU1191
@@ -10854,7 +10868,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -10952,7 +10966,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11050,7 +11064,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11148,7 +11162,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11246,7 +11260,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11344,7 +11358,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11442,7 +11456,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11540,7 +11554,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11638,7 +11652,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -11735,7 +11749,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 250 em_Sub7cDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub7CAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub7Cs
@@ -12107,7 +12121,7 @@ ObjectTemplate.setNetworkableInfo ShipFireArmInfo
 ObjectTemplate.saveInSeparateFile 1
 ObjectTemplate.geometry sub7c20C30_m1
 ObjectTemplate.aiTemplate sub7cAAAi
-ObjectTemplate.loadSoundScript ../../Land/Flak30/Sounds/Flak30GunBarrel.ssc
+ObjectTemplate.loadSoundScript ../../Land/Flak_38/Sounds/Flak38GunBarrel.ssc
 rem -------------------------------------
 ObjectTemplate.addTemplate e_Muzz20mmWC
 ObjectTemplate.startoneffects 1
@@ -12313,7 +12327,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -12580,7 +12594,7 @@ ObjectTemplate.setAutomaticReset 1
 rem *** Sub9B_Rudder_Back_Side_Visible ***
 ObjectTemplate.create SimpleObject Sub9B_Rudder_Back_Side_Visible
 rem ObjectTemplate.networkableInfo Sub9BVisibleWingInfo
-ObjectTemplate.geometry Sub9B_Rudder_Back_Side
+ObjectTemplate.geometry Sub9B_Rudder_Back_Side_M1
 rem ---------------------------------------------------
 ObjectTemplate.setMinRotation -25/0/0
 ObjectTemplate.setMaxRotation 25/0/0
@@ -12740,6 +12754,9 @@ rem -------------------------------------
 ObjectTemplate.addTemplate Sub9Bdeckgun_Camera
 ObjectTemplate.setPosition 0/0.2/-1
 ObjectTemplate.addTemplate lodSub9BdeckgunCockpit
+ObjectTemplate.addTemplate BlockVisibilityUnderwaterEngine
+ObjectTemplate.addTemplate BlockVisibilityUnderwaterEngine
+ObjectTemplate.setPosition 0/0.2/-1
 rem -------------------------------------
 
 rem *** Sub9Bdeckgun_Camera ******
@@ -12929,7 +12946,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -13026,7 +13043,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -13123,7 +13140,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -13220,7 +13237,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -13316,7 +13333,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -13412,7 +13429,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -13508,7 +13525,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -13605,7 +13622,7 @@ ObjectTemplate.team 1
 ObjectTemplate.dontClearTeamOnExit 1
 ObjectTemplate.speedMod 0.5
 ObjectTemplate.addArmorEffect 450 em_Sub9BDamage 0/0/0
-ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub 0/0/0
 ObjectTemplate.aiTemplate Sub9BAI
 rem -------------------------------------
 ObjectTemplate.addTemplate lodSub9B
@@ -15193,7 +15210,7 @@ ObjectTemplate.setPosition -7.0/10.0/-52.0
 ObjectTemplate.addTemplate 37mmL83SKC30_-179_X2_Alt
 ObjectTemplate.setPosition -6.5/12.4/-38.0
 ObjectTemplate.addTemplate 37mmL83SKC30_-179_X2_Alt
-ObjectTemplate.setPosition -5.0/17.8/17.5
+ObjectTemplate.setPosition -3.0/20.2/17.5
 ObjectTemplate.addTemplate 37mmL83SKC30_-179_X2_Alt
 ObjectTemplate.setPosition -5.577/10/41.0
 
@@ -15394,6 +15411,7 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 70
 
 rem *** TirpitzHullWing ***
 ObjectTemplate.create Wing TirpitzHullWing
+ObjectTemplate.setNetworkableInfo TirpitzRudderInfo
 ObjectTemplate.setMinRotation 0/-25/0
 ObjectTemplate.setMaxRotation 0/25/0
 ObjectTemplate.setMaxSpeed 0/15/0
@@ -15460,7 +15478,7 @@ ObjectTemplate.recoilSize 10
 ObjectTemplate.addFireArmsPosition 0.915/0/6.0 0/0/0
 ObjectTemplate.addFireArmsPosition -0.915/0/6.0 0/0/0
 ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.setMinDev 1
 ObjectTemplate.setFireCameraShakeAnimationState ShipCanon
 
 rem *** TirpitzMediumCannonBarrel_PenetrateExploder ***
@@ -15479,7 +15497,7 @@ ObjectTemplate.roundOfFire 10
 ObjectTemplate.addFireArmsPosition 0.915/0/6.0 0/0/0
 ObjectTemplate.addFireArmsPosition -0.915/0/6.0 0/0/0
 ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.setMinDev 1
 
 rem *** TirpitzFatCannonBarrel ***
 ObjectTemplate.create FireArms TirpitzFatCannon
@@ -15509,7 +15527,7 @@ ObjectTemplate.recoilSize 15
 ObjectTemplate.addFireArmsPosition -1.972/0/14.5 0/0/0
 ObjectTemplate.addFireArmsPosition 1.972/0/14.5 0/0/0
 ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.setMinDev 1
 ObjectTemplate.setFireCameraShakeAnimationState ShipBigCanon
 
 rem *** TirpitzFatCannonBarrel_PenetrateExploder ***
@@ -15528,7 +15546,7 @@ ObjectTemplate.roundOfFire 10
 ObjectTemplate.addFireArmsPosition -1.972/0/14.5 0/0/0
 ObjectTemplate.addFireArmsPosition 1.972/0/14.5 0/0/0
 ObjectTemplate.AmmoType	3
-ObjectTemplate.setMinDev 2.6
+ObjectTemplate.setMinDev 1
 
 rem ===== EOF =====
 rem ============================================================================
@@ -15572,6 +15590,7 @@ GeometryTemplate.setLodDistance 4 200
 GeometryTemplate.setLodDistance 5 500
 
 GeometryTemplate.create StandardMesh TSBoot61_Hull_L1
+GeometryTemplate.file SBoot_GER_S61_l1
 
 rem ===== EOF =====
 rem ============================================================================
@@ -16566,6 +16585,7 @@ ObjectTemplate.setNoPropellerEffectAtSpeed 120
 
 rem *** TSBoot_Rudder_Stern ***
 ObjectTemplate.create Wing TSBoot_Rudder_Stern
+ObjectTemplate.setNetworkableInfo TSBootWingInfo
 ObjectTemplate.setMinRotation 0/-9/0
 ObjectTemplate.setMaxRotation 0/9/0
 ObjectTemplate.setMaxSpeed 0/18/0
@@ -16579,6 +16599,7 @@ ObjectTemplate.setFlapLift 2
 
 rem *** TSBoot_Rudder_Aft ***
 ObjectTemplate.create Wing TSBoot_Rudder_Aft
+ObjectTemplate.setNetworkableInfo TSBootWingInfo
 ObjectTemplate.setMinRotation 0/-9/0
 ObjectTemplate.setMaxRotation 0/9/0
 ObjectTemplate.setMaxSpeed 0/18/0
