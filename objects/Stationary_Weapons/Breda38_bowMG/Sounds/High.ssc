@@ -44,8 +44,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param 1.97
-	param 1.97
+	param 0.97
+	param 0.97
 	param 0
 	param 1	
 endEffect
@@ -71,8 +71,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param 2.5
-	param 2.5
+	param 1.5
+	param 1.5
 	param 0
 	param 1	
 endEffect
@@ -97,8 +97,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param 2.9
-	param 2.9
+	param 1.9
+	param 1.9
 	param 0
 	param 1	
 endEffect
@@ -124,8 +124,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param 3.28
-	param 3.28
+	param 2.28
+	param 2.28
 	param 0
 	param 1	
 endEffect

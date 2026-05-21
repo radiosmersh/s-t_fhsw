@@ -12,10 +12,13 @@ renderer.animatedMeshDiffuseFactor 0.55
 textureManager.alternativePath Texture/LEVELS/STALINGRAD
 textureManager.alternativePath Texture/Levels/Pavlov
 textureManager.alternativePath bf1942/levels/Stalingrad_RedSquare/Texture
-textureManager.alternativePath Texture/GENERAL_RUS_WINTER
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_RUS_WINTER
+textureManager.alternativePath texture/GENERAL_RUS_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
-textureManager.alternativePath Texture/Special_skys/pavlov
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/pavlov
+textureManager.alternativePath texture/SPECIAL_skys/pavlov
 
 shadow.shadowColor 0.500000
 

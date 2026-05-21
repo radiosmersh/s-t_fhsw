@@ -200,12 +200,12 @@ ObjectTemplate.addTemplate e_TankExhaust20U
 ObjectTemplate.setPosition -0.91/0.88/-2.61
 ObjectTemplate.setRotation -25/0/90
 if v_is_coop == False
-    ObjectTemplate.addTemplate 14TP_Tankdesant_PCO1
-    ObjectTemplate.setPosition -0.55/1.73/-1.33
-    ObjectTemplate.setRotation -90/0/0
-    ObjectTemplate.addTemplate 14TP_Tankdesant_PCO2
-    ObjectTemplate.setPosition 0.55/1.73/-1.33
-    ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate 14TP_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.55/1.73/-1.33
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate 14TP_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.55/1.73/-1.33
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem ----------------------------------
 
@@ -832,12 +832,12 @@ ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition -0.91/0.88/-1.91
 ObjectTemplate.setRotation -25/0/90
 if v_is_coop == False
-    ObjectTemplate.addTemplate 7tp_Tankdesant_PCO1
-    ObjectTemplate.setPosition -0.58/1.75/-1.45
-    ObjectTemplate.setRotation -90/0/0
-    ObjectTemplate.addTemplate 7tp_Tankdesant_PCO2
-    ObjectTemplate.setPosition 0.58/1.75/-1.45
-    ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate 7tp_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.58/1.75/-1.45
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate 7tp_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.58/1.75/-1.45
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -1555,6 +1555,11 @@ rem sauce = Objects.con
 rem ============================================================================
 rem ===== COMPRESS = POL
 
+Var v_is_coop
+console.useRelativePaths 0
+run bf1942/game/is_coop.con
+console.useRelativePaths 1
+
 rem *** 7tpTwin
 rem *** 7tpTwin13mm
 
@@ -1648,12 +1653,12 @@ ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition 0.69/0.25/-2.55
 ObjectTemplate.setRotation 15/90/0
 if v_is_coop == False
-    ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO1
-    ObjectTemplate.setPosition -0.58/1.75/-1.45
-    ObjectTemplate.setRotation -90/0/0
-    ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO2
-    ObjectTemplate.setPosition 0.58/1.75/-1.45
-    ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.58/1.75/-1.45
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate 7tpTwin_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.58/1.75/-1.45
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -1931,12 +1936,12 @@ ObjectTemplate.addTemplate e_TankExhaust20
 ObjectTemplate.setPosition 0.69/0.25/-2.55
 ObjectTemplate.setRotation 15/90/0
 if v_is_coop == False
-    ObjectTemplate.addTemplate 7tpTwin13mm_Tankdesant_PCO1
-    ObjectTemplate.setPosition -0.58/1.75/-1.45
-    ObjectTemplate.setRotation -90/0/0
-    ObjectTemplate.addTemplate 7tpTwin13mm_Tankdesant_PCO2
-    ObjectTemplate.setPosition 0.58/1.75/-1.45
-    ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate 7tpTwin13mm_Tankdesant_PCO1
+ObjectTemplate.setPosition -0.58/1.75/-1.45
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate 7tpTwin13mm_Tankdesant_PCO2
+ObjectTemplate.setPosition 0.58/1.75/-1.45
+ObjectTemplate.setRotation 90/0/0
 endIf
 rem -------------------------------------
 
@@ -2950,25 +2955,25 @@ ObjectTemplate.AmmoType	17
 rem *** c7p-wz1897_SpawnerProjectile ***
 ObjectTemplate.create Projectile c7p-wz1897_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.geometry Projectile_Invis_Box6x3x6m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate c7p-wz1897_GunDeploySpawner
 rem -------------------------------------
-ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 3
+ObjectTemplate.timeToLive CRD_NONE/3.0/0/0 
+ObjectTemplate.gravityModifier 3.0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 0
 ObjectTemplate.setHasPointPhysics 0
 ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 814
 ObjectTemplate.invisible 1
-ObjectTemplate.material 70
 ObjectTemplate.DetonateOnWaterCollision 0 
 ObjectTemplate.dieAfterColl 0
-ObjectTemplate.drag 0.04 
-ObjectTemplate.mass 800 
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 800
 
 rem *** c7p-wz1897_GunDeploySpawner *** 
 ObjectTemplate.create ObjectSpawner c7p-wz1897_GunDeploySpawner
@@ -3197,25 +3202,25 @@ ObjectTemplate.AmmoType	17
 rem *** c7p-wz1917_SpawnerProjectile ***
 ObjectTemplate.create Projectile c7p-wz1917_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.geometry Projectile_Invis_Box6x3x6m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate c7p-wz1917_GunDeploySpawner
 rem -------------------------------------
-ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 3
+ObjectTemplate.timeToLive CRD_NONE/3.0/0/0 
+ObjectTemplate.gravityModifier 3.0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 0
 ObjectTemplate.setHasPointPhysics 0
 ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 814
 ObjectTemplate.invisible 1
-ObjectTemplate.material 70
 ObjectTemplate.DetonateOnWaterCollision 0 
 ObjectTemplate.dieAfterColl 0
-ObjectTemplate.drag 0.04 
-ObjectTemplate.mass 800 
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 800
 
 rem *** c7p-wz1917_GunDeploySpawner *** 
 ObjectTemplate.create ObjectSpawner c7p-wz1917_GunDeploySpawner
@@ -3444,25 +3449,25 @@ ObjectTemplate.AmmoType	17
 rem *** c7p-wz36_SpawnerProjectile ***
 ObjectTemplate.create Projectile c7p-wz36_SpawnerProjectile
 ObjectTemplate.createNotInGrid 1 
-ObjectTemplate.geometry Projectile_Invis_Box3x2x3m_m1
+ObjectTemplate.geometry Projectile_Invis_Box6x3x6m_m1
 ObjectTemplate.saveInSeparateFile 1 
 rem -------------------------------------
 ObjectTemplate.addTemplate c7p-wz36_GunDeploySpawner
 rem -------------------------------------
-ObjectTemplate.timeToLive CRD_NONE/2.5/0/0 
-ObjectTemplate.gravityModifier 3
+ObjectTemplate.timeToLive CRD_NONE/3.0/0/0 
+ObjectTemplate.gravityModifier 3.0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.setHasMobilePhysics 1
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 0
 ObjectTemplate.setHasPointPhysics 0
 ObjectTemplate.hasCollisionEffect 0
+ObjectTemplate.material 814
 ObjectTemplate.invisible 1
-ObjectTemplate.material 70
 ObjectTemplate.DetonateOnWaterCollision 0 
 ObjectTemplate.dieAfterColl 0
-ObjectTemplate.drag 0.04 
-ObjectTemplate.mass 800 
+ObjectTemplate.drag 0.1
+ObjectTemplate.mass 800
 
 rem *** c7p-wz36_GunDeploySpawner *** 
 ObjectTemplate.create ObjectSpawner c7p-wz36_GunDeploySpawner
@@ -4916,49 +4921,6 @@ ObjectTemplate.setToolTipType  VTApc
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
-rem *** wz29AAGunnerPCO ***
-ObjectTemplate.create PlayerControlObject wz29AAGunnerPCO
-ObjectTemplate.setNetworkableInfo wz29BodyInfo
-ObjectTemplate.aiTemplate wz29Cannon
-rem -------------------------------------
-ObjectTemplate.addTemplate wz29Entry
-ObjectTemplate.addTemplate wz29_MGgunRear
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 1.5/0/-0.8 0/0/0
-ObjectTemplate.GUIIndex 69
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_wz29.dds"
-ObjectTemplate.setVehicleIconPos 46/37
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmwz25.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTApc
-ObjectTemplate.setToolTipType  VTApc
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
-ObjectTemplate.hasRestrictedExit 1
-
-rem *** wz29TurretGunnerPCO ***
-ObjectTemplate.create PlayerControlObject wz29TurretGunnerPCO
-ObjectTemplate.setNetworkableInfo wz29BodyInfo
-ObjectTemplate.aiTemplate wz29Cannon
-rem -------------------------------------
-ObjectTemplate.addTemplate wz29Entry
-ObjectTemplate.addTemplate wz29_MGgunRear
-rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation 1.5/0/-0.8 0/0/0
-ObjectTemplate.GUIIndex 69
-ObjectTemplate.setVehicleIcon "Vehicle/Icon_wz29.dds"
-ObjectTemplate.setVehicleIconPos 58/29
-ObjectTemplate.setNumberOfWeaponIcons 1
-ObjectTemplate.setPrimaryAmmoIcon "Ammo/icon_7,92mmwz25.tga"
-ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTNone
-ObjectTemplate.setVehicleCategory VCLand
-ObjectTemplate.setVehicleType  VTApc
-ObjectTemplate.setToolTipType  VTApc
-ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
-ObjectTemplate.hasRestrictedExit 1
 
 rem *** wz29_MGgunRear ***
 ObjectTemplate.create RotationalBundle wz29_MGgunRear
@@ -5446,6 +5408,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTArtillery
 ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.hasRestrictedExit 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
@@ -5529,7 +5492,7 @@ ObjectTemplate.setInputToRoll c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.RememberExcessInput 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 3.0
+ObjectTemplate.setTorque 6.0
 ObjectTemplate.setDifferential 1.0
 
 
@@ -5727,6 +5690,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_towed_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
 
@@ -6427,6 +6391,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTArtillery
 ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -6479,13 +6444,13 @@ ObjectTemplate.setPosition 0.7/0.175/0.002
 ObjectTemplate.setRotation -45/0/0
 rem -------------------------------------
 if v_is_coop == False
-	ObjectTemplate.setMaxSpeed 5/0/0
-	ObjectTemplate.setAcceleration 10/0/0
-	ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setMaxSpeed 10/0/0
+ObjectTemplate.setAcceleration 20/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 else
-	ObjectTemplate.setMaxSpeed 8/0/0
-	ObjectTemplate.setAcceleration 100/0/0
-	ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setMaxSpeed 8/0/0
+ObjectTemplate.setAcceleration 100/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 endIf
 
 
@@ -6931,6 +6896,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7019,6 +6985,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7103,6 +7070,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7185,6 +7153,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7267,6 +7236,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7349,6 +7319,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7427,6 +7398,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7503,6 +7475,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7575,6 +7548,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -7645,6 +7619,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 28
@@ -8757,6 +8732,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTArtillery
 ObjectTemplate.setToolTipType TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.hasRestrictedExit 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
@@ -9072,6 +9048,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_atgun_towed_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
 
@@ -9787,6 +9764,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_artillery_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -11111,7 +11089,6 @@ ObjectTemplate.setPosition 0/0.4/0
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/0.5/-2.0 0/0/0
 ObjectTemplate.GUIIndex 19
-ObjectTemplate.setSoldierExitLocation 0/0/-3.1 180/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wz36.tga"
 ObjectTemplate.setVehicleIconPos 51/69
 ObjectTemplate.setNumberOfWeaponIcons 1
@@ -11121,6 +11098,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_atgun_16x16.tga"
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
@@ -11160,13 +11138,13 @@ ObjectTemplate.addTemplate Wz36_RotatingCrank
 ObjectTemplate.setPosition -0.29/0.27/-0.115
 rem -------------------------------------
 if v_is_coop == False
-	ObjectTemplate.setMaxSpeed 5/0/0
-	ObjectTemplate.setAcceleration 10/0/0
-	ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 40/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
 else
-	ObjectTemplate.setMaxSpeed 26/0/0
-	ObjectTemplate.setAcceleration 93/0/0
-	ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setMaxSpeed 26/0/0
+ObjectTemplate.setAcceleration 93/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 endIf
 
 rem ***Wz36_RotatingCrank***
@@ -11199,11 +11177,11 @@ ObjectTemplate.addTemplate Wz36GunnerCameraHolder
 ObjectTemplate.setPosition -0.3/0.8/0
 rem -------------------------------------
 if v_is_coop == False
-	ObjectTemplate.setMinRotation -25/0/0
-	ObjectTemplate.setMaxRotation 25/0/0
-	ObjectTemplate.setMaxSpeed 26/0/0
-	ObjectTemplate.setAcceleration 93/0/0
-	ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 26/0/0
+ObjectTemplate.setAcceleration 93/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
 endIf
 
 rem *** Wz36CannonBase ***
@@ -11374,7 +11352,6 @@ ObjectTemplate.addTemplate lodWz36mobile
 rem -------------------------------------
 ObjectTemplate.setSoldierExitLocation 0/0.5/-2.0 0/0/0
 ObjectTemplate.GUIIndex 19
-ObjectTemplate.setSoldierExitLocation 0/0/-3.1 180/0/0
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wz36.tga"
 ObjectTemplate.setVehicleIconPos 72/90
 ObjectTemplate.setNumberOfWeaponIcons 0
@@ -11382,6 +11359,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_atgun_16x16.tga"
 
 
@@ -11454,7 +11432,7 @@ ObjectTemplate.addTemplate Wz36mobile_GunnerTraverseEngine
 ObjectTemplate.setPosition 0/0/-2
 ObjectTemplate.setRotation -90/0/0
 rem -------------------------------------
-ObjectTemplate.setSoldierExitLocation -0.5/0.7/-1 180/0/0
+ObjectTemplate.setSoldierExitLocation -0.5/0.7/-1 0/0/0
 ObjectTemplate.GUIIndex 78
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_Wz36.tga"
 ObjectTemplate.setVehicleIconPos 54/76
@@ -11465,6 +11443,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.artPos 1
 ObjectTemplate.DirBarXScale 180
 ObjectTemplate.DirBarYScaleAbove 90
@@ -11550,7 +11529,7 @@ ObjectTemplate.setInputToRoll c_PIYaw
 ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.RememberExcessInput 0
 ObjectTemplate.setEngineType c_ETPlane
-ObjectTemplate.setTorque 3.0
+ObjectTemplate.setTorque 12.0
 ObjectTemplate.setDifferential 1.0
 
 rem *** Wz36mobile_WhelL ***
@@ -11691,6 +11670,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon ""
 
 rem *** lodWz36mobile_towed ***
@@ -11744,6 +11724,7 @@ ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setHasTurretIcon 1
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_atgun_towed_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
 

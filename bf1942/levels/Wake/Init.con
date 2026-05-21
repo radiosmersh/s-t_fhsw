@@ -14,9 +14,12 @@ renderer.animatedMeshAmbientColor 0.25
 textureManager.alternativePath Texture/SPECIAL_US_SBD_Navy
 textureManager.alternativePath Texture/levels/Wake
 textureManager.alternativePath bf1942/levels/Wake/Textures
-textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1941
-textureManager.alternativePath Texture/GENERAL_US_PACIFIC
-textureManager.alternativePath Texture/GENERAL_JAP_SNLF
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_US_PACIFIC_1941
+textureManager.alternativePath texture/SPECIAL_US_PACIFIC_1941
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_PACIFIC
+textureManager.alternativePath texture/GENERAL_US_PACIFIC
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_JAP_SNLF
+textureManager.alternativePath texture/GENERAL_JAP_SNLF
 
 shadow.shadowColor 0.6
 

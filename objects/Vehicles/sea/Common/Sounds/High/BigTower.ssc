@@ -82,7 +82,7 @@ beginEffect
 	param -1	
 endEffect
 
-oad @ROOT/Sound/@RTD/VESTRTYAW.wav
+load @ROOT/Sound/@RTD/VESTRTYAW.wav
 loop
 minDistance 10
 volume .6

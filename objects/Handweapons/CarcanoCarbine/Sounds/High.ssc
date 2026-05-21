@@ -2,8 +2,9 @@ newPatch
 ##############
 ### Stereo ###
 ##############
-load @ROOT/Sound/@RTD/carcano_firest.wav
+load @ROOT/Sound/@RTD/Carcano_ST.wav
 stereo
+volume 0.9
 dopplerOff
 priority 10
 randomStartPitch 0.02 / 0.02
@@ -19,7 +20,7 @@ beginEffect
 	param -1
 endEffect
 
-load @ROOT/Sound/@RTD/snpreloadST.wav
+load @ROOT/Sound/@RTD/snpreload_2.wav
 stereo
 minDistance 1
 randomStartPitch 0.02 / 0.02
@@ -31,8 +32,8 @@ beginEffect
 	controlDestination Volume
 	controlSource Time
 	envelope Ramp
-	param .7
-	param .7
+	param 0.3
+	param 0.3
 	param 0
 	param 1	
 endEffect
@@ -163,7 +164,7 @@ endEffect
 ############
 ### Near ###
 ############
-load @ROOT/Sound/@RTD/carcano_fire.wav
+load @ROOT/Sound/@RTD/Carcano_MO.wav
 dopplerOff
 minDistance 6
 priority 10
@@ -194,7 +195,7 @@ endEffect
 ###############
 ### Far 100 ###
 ###############
-load @ROOT/Sound/@RTD/carcano_fire.wav
+load @ROOT/Sound/@RTD/Carcano_MO.wav
 dopplerOff
 minDistance 5.5
 priority 8
@@ -238,7 +239,7 @@ trigger Volume
 ###############
 ### Far 200 ###
 ###############
-load @ROOT/Sound/@RTD/carcano_fire.wav
+load @ROOT/Sound/@RTD/Carcano_MO.wav
 minDistance 5
 dopplerOff
 priority 6
@@ -281,7 +282,7 @@ trigger Volume
 ###############
 ### Far 300 ###
 ###############
-load @ROOT/Sound/@RTD/carcano_fire.wav
+load @ROOT/Sound/@RTD/Carcano_MO.wav
 minDistance 4
 dopplerOff
 priority 4

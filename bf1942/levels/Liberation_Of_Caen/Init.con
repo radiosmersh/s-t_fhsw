@@ -13,9 +13,11 @@ renderer.animatedMeshAmbientColor 0.28
 
 textureManager.alternativePath Texture/Levels/Caen
 textureManager.alternativePath bf1942/Levels/Liberation_of_Caen/Textures
-textureManager.alternativePath Texture/GENERAL_Canadian
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_Canadian
+textureManager.alternativePath texture/GENERAL_Canadian
 textureManager.alternativePath Texture/Canadian
-textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_EASTERN_1944_FALL
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_EASTERN_1944_FALL
+textureManager.alternativePath texture/SPECIAL_GER_EUROPE_EASTERN_1944_FALL
 
 
 shadow.shadowColor 0.5

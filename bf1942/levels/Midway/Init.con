@@ -15,9 +15,12 @@ renderer.animatedMeshAmbientColor 0.3
 textureManager.alternativePath Texture/SPECIAL_US_SBD_Navy
 textureManager.alternativePath bf1942/levels/Midway-1942/Texture
 textureManager.alternativePath Texture/LEVELS/Midway
-textureManager.alternativePath Texture/GENERAL_JAP_NAVY
-textureManager.alternativePath Texture/GENERAL_US_NAVY
-textureManager.alternativePath Texture/GENERAL_US_PACIFIC
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_JAP_NAVY
+textureManager.alternativePath texture/GENERAL_JAP_NAVY
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_NAVY
+textureManager.alternativePath texture/GENERAL_US_NAVY
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_PACIFIC
+textureManager.alternativePath texture/GENERAL_US_PACIFIC
 
 
 shadow.shadowColor 0.6

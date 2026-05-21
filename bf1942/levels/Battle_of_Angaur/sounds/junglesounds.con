@@ -1,8 +1,0 @@
-
-
-rem *** junglesound ***
-ObjectTemplate.create SimpleObject junglesound
-ObjectTemplate.saveInSeparateFile 1
-ObjectTemplate.loadSoundScript junglesounds.ssc
-ObjectTemplate.triggerRadius 440
-

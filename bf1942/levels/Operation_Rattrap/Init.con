@@ -14,10 +14,13 @@ textureManager.alternativePath Texture/Levels/RatTrap
 textureManager.alternativePath bf1942/levels/Operation_Rattrap/Textures/
 textureManager.alternativePath Texture/Levels/elalamein
 textureManager.alternativePath Texture/ENVIROMENT_DESERT
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_DESERT
 textureManager.alternativePath Texture/SPECIAL_US_AFRICA_1943_SPRING
 textureManager.alternativePath texture/GENERAL_US_DESERT
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_AFRICA
 textureManager.alternativePath texture/SPECIAL_GER_AFRICA_1943_SUMMER
 textureManager.alternativePath Texture/GENERAL_GER_AFRICA
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_AFRICA
 textureManager.alternativePath Texture/GENERAL_BRIT_AFRICA
 shadow.shadowColor 0.6
 

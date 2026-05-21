@@ -12,16 +12,22 @@ renderer.diffuseColor 0.4/0.38/0.25
 renderer.specularColor .2/.2/.2
 renderer.animatedMeshAmbientColor 0.3
 
-textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_USMCM4A3
-textureManager.alternativePath Texture/SPECIAL_JAP_TANK_26REGIMENT
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_US_PACIFIC_USMCM4A3
+textureManager.alternativePath texture/SPECIAL_US_PACIFIC_USMCM4A3
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_JAP_TANK_26REGIMENT
+textureManager.alternativePath texture/SPECIAL_JAP_TANK_26REGIMENT
 textureManager.alternativePath Texture/levels/IwoJima
 textureManager.alternativePath bf1942/levels/Iwo_Jima/Textures
-textureManager.alternativePath Texture/CAMO
-textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1944_SPRING
-textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1943_SPRING
-textureManager.alternativePath Texture/GENERAL_US_PACIFIC
-textureManager.alternativePath Texture/GENERAL_JAP_ARMY
-textureManager.alternativePath Texture/SPECIAL_JAP_PACIFIC_1943_SUMMER
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_US_PACIFIC_1944_SPRING
+textureManager.alternativePath texture/SPECIAL_US_PACIFIC_1944_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_US_PACIFIC_1943_SPRING
+textureManager.alternativePath texture/SPECIAL_US_PACIFIC_1943_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_PACIFIC
+textureManager.alternativePath texture/GENERAL_US_PACIFIC
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_JAP_PACIFIC_1943_SUMMER
+textureManager.alternativePath texture/SPECIAL_JAP_PACIFIC_1943_SUMMER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_JAP_ARMY
+textureManager.alternativePath texture/GENERAL_JAP_ARMY
 
 shadow.shadowColor 0.6
 
@@ -57,14 +63,14 @@ endrem
 
 game.setTeamSkin 1 JapaneseSoldier
 game.setKit 1 0 1Jap_Officer100SMGSmokeDP
-game.setKit 1 1 2Jap_AssaultType5P
+game.setKit 1 1 2Jap_AssaultType5AAP
 game.setKit 1 2 3Jap_AntiTankType4_90mmDP
 game.setKit 1 3 4Jap_SupportType99P
 game.setKit 1 4 5Jap_EngineerHEATExtType3ATP
 
 game.setTeamSkin 2 USSoldier
 game.setKit 2 0 1USMC_OfficerM2CarbineSmoke2R
-game.setKit 2 1 2USMC_AssaultGarand
+game.setKit 2 1 2Us_AssaultGarandHEAT
 game.setKit 2 2 3USN_PilotD44
 game.setKit 2 3 4USMC_SupportBAR
 game.setKit 2 4 5USMC_EngineerM2Carbine

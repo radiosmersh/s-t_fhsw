@@ -12,11 +12,15 @@ renderer.animatedMeshAmbientColor 0.25/0.25/0.25
 textureManager.alternativePath Texture/SPECIAL_US_Fletcher_noCAMO
 textureManager.alternativePath Texture/levels/Tarawa
 textureManager.alternativePath bf1942/levels/Tarawa-1943/Textures
-textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1944_SPRING
-textureManager.alternativePath Texture/SPECIAL_US_PACIFiC_1943_SPRING
-textureManager.alternativePath Texture/GENERAL_US_PACIFIC
-textureManager.alternativePath Texture/GENERAL_JAP_SNLF
-textureManager.alternativePath Texture\Special_skys\tarawa
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_US_PACIFIC_1944_SPRING
+textureManager.alternativePath texture/SPECIAL_US_PACIFIC_1944_SPRING
+textureManager.alternativePath Texture/SPECIAL_US_PACIFIC_1943_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_PACIFIC
+textureManager.alternativePath texture/GENERAL_US_PACIFIC
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_JAP_SNLF
+textureManager.alternativePath texture/GENERAL_JAP_SNLF
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys\tarawa
+textureManager.alternativePath texture/SPECIAL_skys\tarawa
 
 shadow.shadowColor 0.36/0.36/0.38
 

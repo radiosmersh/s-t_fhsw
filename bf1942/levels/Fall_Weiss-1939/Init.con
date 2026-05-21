@@ -7,11 +7,12 @@ renderer.specularColor .3/.3/.3
 renderer.animatedMeshAmbientColor 0.2
 renderer.vertexFogEnable 1 
 renderer.fogColorVec .529441/.380392/.227451
-
 textureManager.alternativePath Texture/Levels/Poland
-textureManager.alternativePath texture\GENERAL_POL
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_POL
+textureManager.alternativePath texture/GENERAL_POL
 textureManager.alternativePath texture\ENVIROMENT_FALL
-textureManager.alternativePath Texture\Special_skys\fallwei
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys\fallwei
+textureManager.alternativePath texture/SPECIAL_skys\fallwei
 textureManager.alternativePath bf1942\levels\Fall_Weiss-1939\Texture
 
 renderer.globalLodPercent 1

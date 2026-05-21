@@ -12,14 +12,19 @@ renderer.animatedMeshAmbientColor 0.25
 shadow.shadowColor 0.4
 
 textureManager.alternativePath Texture/Foy
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_US_UNIFORM_WINTER_ALT
 textureManager.alternativePath Texture/SPECIAL_US_UNIFORM_WINTER_ALT
 textureManager.alternativePath bf1942/levels/BATTLE_OF_FOY/texture
-textureManager.alternativePath Texture/Special_skys/bulge
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/bulge
+textureManager.alternativePath texture/SPECIAL_skys/bulge
 textureManager.alternativePath Texture/Levels/bulge
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
-textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
-textureManager.alternativePath Texture/GENERAL_US_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_WINTER
+textureManager.alternativePath texture/GENERAL_US_WINTER
 
 Game.setViewDistance 350
 Game.spawnPlayers 1

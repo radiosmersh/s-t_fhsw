@@ -16,11 +16,16 @@ shadow.shadowColor 0.5
 
 textureManager.alternativePath Texture\LEVELS\Storm
 textureManager.alternativePath Texture/ENVIROMENT_WINTER
-textureManager.alternativePath Texture/SPECIAL_GER_EUROPE_1944_WINTER
-textureManager.alternativePath Texture/GENERAL_GER_WINTER_1943
-textureManager.alternativePath Texture/GENERAL_GER_WINTER
-textureManager.alternativePath Texture/GENERAL_RUS_WINTER
-textureManager.alternativePath Texture/Special_skys/valirisk
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_1944_WINTER
+textureManager.alternativePath texture/SPECIAL_GER_EUROPE_1944_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath texture/GENERAL_GER_WINTER_1943
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_WINTER
+textureManager.alternativePath texture/GENERAL_GER_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_RUS_WINTER
+textureManager.alternativePath texture/GENERAL_RUS_WINTER
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/valirisk
+textureManager.alternativePath texture/SPECIAL_skys/valirisk
 
 Game.setViewDistance 300
 rem Game.setViewDistance 395

@@ -1,6 +1,0 @@
-##############
-### FABRIC ###
-##############
-newPatch
-load @ROOT/Sound/@RTD/silence.wav
-volume 0

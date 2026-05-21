@@ -14,14 +14,19 @@ renderer.fogstart 300
 renderer.fogend 400
 
 textureManager.alternativePath bf1942/levels/Transcarpathia-1944/Texture
-textureManager.alternativePath Texture/Special_skys/Fallwei
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/Fallwei
+textureManager.alternativePath texture/SPECIAL_skys/Fallwei
 textureManager.alternativePath Textute/ENVIROMENT_FALL
 textureManager.alternativePath Texture/SPECIAL_HUN_UNIFORM_PARA
 textureManager.alternativePath Texture/SPECIAL_HUN_TANK_CAMO
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_HUN
+
 textureManager.alternativePath Texture/GENERAL_HUN
 textureManager.alternativePath texture/SPECIAL_GER_EUROPE_1944_FALL
-textureManager.alternativePath Texture/GENERAL_RUS_EUROPE
-textureManager.alternativePath Texture/SPECIAL_RUS_EUROPE_1943
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_RUS_EUROPE_1943
+textureManager.alternativePath texture/SPECIAL_RUS_EUROPE_1943
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_RUS_EUROPE
+textureManager.alternativePath texture/GENERAL_RUS_EUROPE
 
 shadow.shadowColor 0.5
 

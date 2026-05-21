@@ -10,14 +10,17 @@ renderer.ambientColor 0.120000/0.100000/0.080000
 renderer.diffuseColor 0.500000/0.470000/0.400000
 renderer.specularColor 0.300000/0.300000/0.300000
 renderer.animatedMeshAmbientColor 0.3
-
 textureManager.alternativePath bf1942/levels/Bizerte-1943/Texture
 textureManager.alternativePath Texture\ENVIROMENT_DESERT
-textureManager.alternativePath Texture\GENERAL_US_DESERT
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_DESERT
+textureManager.alternativePath texture/GENERAL_US_DESERT
 textureManager.alternativePath Texture\GENERAL_ITALY
-textureManager.alternativePath Texture\SPECIAL_GER_AFRICA_1943_SUMMER
-textureManager.alternativePath Texture\SPECIAL_GER_AFRICA_1942_SUMMER
-textureManager.alternativePath Texture\GENERAL_GER_AFRICA
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_AFRICA_1943_SUMMER
+textureManager.alternativePath texture/SPECIAL_GER_AFRICA_1943_SUMMER
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_AFRICA_1942_SUMMER
+textureManager.alternativePath texture/SPECIAL_GER_AFRICA_1942_SUMMER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_AFRICA
+textureManager.alternativePath texture/GENERAL_GER_AFRICA
 
 shadow.shadowColor 0.550000
 

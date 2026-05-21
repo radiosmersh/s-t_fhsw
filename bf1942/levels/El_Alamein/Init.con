@@ -11,9 +11,14 @@ renderer.animatedMeshAmbientColor 0.3
 textureManager.alternativePath Texture/Levels/elalamein
 textureManager.alternativePath Texture/levels/Supercharge
 textureManager.alternativePath Texture/ENVIROMENT_DESERT
-textureManager.alternativePath Texture/GENERAL_GER_AFRICA
-textureManager.alternativePath Texture/SPECIAL_GER_AFRICA_1943_SUMMER
-textureManager.alternativePath Texture/GENERAL_BRIT_AFRICA
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_AFRICA_1943_SUMMER
+textureManager.alternativePath texture/SPECIAL_GER_AFRICA_1943_SUMMER
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_AFRICA
+textureManager.alternativePath texture/GENERAL_GER_AFRICA
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_AFRICA
+textureManager.alternativePath texture/GENERAL_BRIT_AFRICA
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_DESERT
+textureManager.alternativePath texture/GENERAL_US_DESERT
 shadow.shadowColor 0.6
 
 Game.setViewDistance 1050

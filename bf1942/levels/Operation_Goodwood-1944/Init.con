@@ -18,11 +18,15 @@ renderer.fogColorVec 0.7882/0.8118/0.8510
 TreeRenderer.billboardlightscale 0.3
 
 textureManager.alternativePath Texture\LEVELS\Goodwood
-textureManager.alternativePath Texture\GENERAL_BRIT_EUROPE
-textureManager.alternativePath Texture\SPECIAL_BRIT_EUROPE_1944_SPRING
-textureManager.alternativePath Texture\Special_skys\OperationGoodwood
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_BRIT_EUROPE_1944_SPRING
+textureManager.alternativePath texture/SPECIAL_BRIT_EUROPE_1944_SPRING
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath texture/GENERAL_BRIT_EUROPE
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys\OperationGoodwood
+textureManager.alternativePath texture/SPECIAL_skys\OperationGoodwood
 textureManager.alternativePath Texture\LEVELS\OperationGoodwood
-textureManager.alternativePath Texture\SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_GER_EUROPE_1944_FALL
+textureManager.alternativePath texture/SPECIAL_GER_EUROPE_1944_FALL
 
 shadow.shadowColor 0.400000
 

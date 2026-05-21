@@ -18,9 +18,12 @@ renderer.animatedMeshAmbientColor 0.3
 textureManager.alternativePath Texture/SPECIAL_US_SBD_Navy
 textureManager.alternativePath bf1942/levels/Midway-1942/Texture
 rem textureManager.alternativePath Texture/LEVELS/midway
-textureManager.alternativePath Texture/GENERAL_JAP_NAVY
-textureManager.alternativePath Texture/GENERAL_US_NAVY
-textureManager.alternativePath Texture/GENERAL_US_PACIFIC
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_JAP_NAVY
+textureManager.alternativePath texture/GENERAL_JAP_NAVY
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_NAVY
+textureManager.alternativePath texture/GENERAL_US_NAVY
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_PACIFIC
+textureManager.alternativePath texture/GENERAL_US_PACIFIC
 
 shadow.shadowColor 0.6
 
@@ -28,7 +31,7 @@ Game.setViewDistance 1500
 rem Game.setViewDistance 500
 Game.spawnPlayers 1
 
-Physics.airDensityZeroAtHeight 2100
+Physics.airDensityZeroAtHeight 1500
 
 rem 
 rem *** Define flags ***
@@ -105,4 +108,5 @@ run Sounds/Environment
 rem *** Set team 1 ***
 game.setBeforeSpawnCameraPosition 1 550/140/6000
 rem *** Set team 2 ***
-game.setBeforeSpawnCameraPosition 2 7856/140/400
+game.setBeforeSpawnCameraPosition 2 7100/140/4200
+ren game.setBeforeSpawnCameraPosition 2 7856/140/400

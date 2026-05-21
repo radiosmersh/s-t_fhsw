@@ -1,4 +1,0 @@
-EnvironmentSound.load Environment.ssc
-run ambience1.con
-run War_ambience1.con
-run War_ambience2.con

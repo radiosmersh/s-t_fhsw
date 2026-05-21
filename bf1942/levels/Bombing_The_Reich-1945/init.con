@@ -12,11 +12,16 @@ renderer.animatedMeshAmbientColor 0.2
 textureManager.alternativePath Texture/Levels/BombingTheReich
 textureManager.alternativePath ../../bf1942/levels/Bombing_The_Reich-1945/texture
 textureManager.alternativePath ../../bf1942/levels/Bombing_the_Reich-1945/textures
-textureManager.alternativePath texture/Special_skys/night
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_skys/night
+textureManager.alternativePath texture/SPECIAL_skys/night
 textureManager.alternativePath texture/ENVIROMENT_NIGHT
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_BRIT_NIGHT
 textureManager.alternativePath texture/GENERAL_BRIT_NIGHT
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_NIGHT
 textureManager.alternativePath texture/GENERAL_US_NIGHT
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL_GER/texture/GENERAL_GER_NIGHT
 textureManager.alternativePath texture/GENERAL_GER_NIGHT
+textureManager.alternativePath Texture/Levels/BombingTheReich
 
 shadow.shadowColor 0.5
 
@@ -30,7 +35,8 @@ Physics.airDensityZeroAtHeight 2000
 game.setTeamSkin 1 GermanSoldier
 game.setKit 1 0 1German_PilotWalterP38SignalNight
 game.setKit 1 1 2German_PilotWalterP38SignalNight
-game.setKit 1 2 3German_PilotWalterP38SignalNight
+rem game.setKit 1 2 3German_PilotWalterP38SignalNight
+game.setKit 1 2 3German_AAFliegerfaust
 game.setKit 1 3 4German_PilotWalterP38SignalNight
 game.setKit 1 4 5German_TankCommanderWalterP38SignalNight
 

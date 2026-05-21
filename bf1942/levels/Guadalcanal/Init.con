@@ -7,15 +7,17 @@ renderer.specularColor .3/.3/.3
 renderer.vertexFogEnable 1 
 renderer.fogColorVec 0.86/0.9/0.98
 renderer.animatedMeshAmbientColor 0.3
-
+textureManager.alternativePath Texture/Levels/GuadalCanal
 textureManager.alternativePath Texture/SPECIAL_US_SBD_Navy
 textureManager.alternativePath Texture/US_Marines_Camo-J
-textureManager.alternativePath Texture/levels/guadalcanal
-textureManager.alternativePath Texture/GENERAL_US_PACIFIC
-textureManager.alternativePath Texture/GENERAL_US
+textureManager.alternativePath bf1942/levels/_TEXTURE_SPECIAL/texture/SPECIAL_JAP_TANK_JUNGLE
+textureManager.alternativePath texture/SPECIAL_JAP_TANK_JUNGLE
 textureManager.alternativePath Texture/SPECIAL_JAP_ARTILLERY_GREEN
-textureManager.alternativePath Texture/SPECIAL_JAP_TANK_JUNGLE
 textureManager.alternativePath Texture/GENERAL_JAP_ARMY
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US_PACIFIC
+textureManager.alternativePath texture/GENERAL_US_PACIFIC
+textureManager.alternativePath bf1942/levels/_TEXTURE_GENERAL/texture/GENERAL_US
+textureManager.alternativePath texture/GENERAL_US
 
 renderer.globalLodPercent 1
 
